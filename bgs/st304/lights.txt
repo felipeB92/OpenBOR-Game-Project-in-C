@@ -1,0 +1,17 @@
+name		st4_lights
+type		panel
+shadow		0
+speed		5
+scroll		-0.2
+noquake		1 1
+
+anim idle
+	loop	1
+	delay	10
+	offset	1 160
+	frame	data/bgs/sor3_st4/lights00.gif
+	frame	data/bgs/sor3_st4/lights01.gif
+	frame	data/bgs/sor3_st4/lights02.gif
+	frame	data/bgs/sor3_st4/lights03.gif
+	frame	data/bgs/sor3_st4/lights02.gif
+	frame	data/bgs/sor3_st4/lights01.gif

@@ -1,0 +1,816 @@
+##MAIN
+name				Jet3
+type				enemy
+hostile				player npc
+candamage			player npc obstacle
+
+##LIFE
+health				1 #SCRIPT
+
+##POWER
+offense 			1 #SCRIPT
+
+##SPEED
+speed				1 #SCRIPT
+
+##JUMP
+jumpheight 			1 #SCRIPT
+
+##ENERGY
+mp					120
+mprate  			1 #SCRIPT
+
+##GRAB
+grabdistance 		30 #36/33/30
+grabfinish 			1 #PLAYER=0/ENEMY=1
+
+##WEIGHT/HEIGHT
+antigravity			-3 #-3/-6/-9
+height				82
+
+##MISC
+jugglepoints		30
+risetime			170
+riseinv				0.4 1 #HEROES 0.4 - ENEMY 0 - BOSS 0.4
+makeinv				2 0
+atchain				1
+weapons				none none none none
+gfxshadow			1 1
+dust				dust
+aimove				chase #ENEMY ONLY
+
+##SCRIPTS
+didhitscript		data/scripts/didhit/jet.c
+onblockpscript		data/scripts/onblockp/default.c
+ondrawscript		data/scripts/ondraw/jet.c
+onspawnscript		data/scripts/onspawn/jet.c
+animationscript	 	data/scripts/animation/default.c
+takedamagescript	data/scripts/takedamage/default.c
+
+##ICONS
+icon				data/chars/jet/icon.gif 1
+
+##DIESOUND
+diesound			data/voices/BossDie1.wav
+
+##REMAPS
+remap				data/chars/jet/idle00.gif data/chars/jet/alter1.gif
+remap				data/chars/jet/idle00.gif data/chars/jet/alter2.gif
+remap				data/chars/jet/idle00.gif data/chars/jet/alter3.gif
+remap				data/chars/jet/idle00.gif data/chars/jet/alter4.gif
+remap				data/chars/jet/idle00.gif data/chars/jet/alter5.gif
+
+##ANIMATIONS#############################################################################
+
+anim spawn
+	loop	0
+	delay	1
+	offset	158 181
+		seta 	90
+	frame	data/chars/jet/idle00.gif
+
+anim idle #STATIC FLY
+	loop	1
+	delay	4
+	offset	158 181
+	bbox 	144 106 24 77
+		seta 	40
+	@cmd clearL
+	frame	data/chars/jet/idle00.gif
+		seta 	42
+	frame	data/chars/jet/idle01.gif
+		seta 	44
+	frame	data/chars/jet/idle02.gif
+		seta 	46
+	frame	data/chars/jet/idle03.gif
+		seta 	48
+	frame	data/chars/jet/idle00.gif
+		seta 	46
+	frame	data/chars/jet/idle01.gif
+		seta 	44
+	frame	data/chars/jet/idle02.gif
+		seta 	42
+	frame	data/chars/jet/idle03.gif
+		seta 	40
+	frame	data/chars/jet/idle00.gif
+		seta 	38
+	frame	data/chars/jet/idle01.gif
+		seta 	36
+	frame	data/chars/jet/idle02.gif
+		seta 	34
+	frame	data/chars/jet/idle03.gif
+		seta 	32
+	frame	data/chars/jet/idle00.gif
+		seta 	34
+	frame	data/chars/jet/idle01.gif
+		seta 	36
+	frame	data/chars/jet/idle02.gif
+		seta 	38
+	frame	data/chars/jet/idle03.gif
+
+anim walk
+	loop	1
+	delay	4
+	offset	158 181
+	bbox 	146 110 23 73
+		seta 	40
+	frame	data/chars/jet/walk00.gif
+		seta 	42
+	frame	data/chars/jet/walk01.gif
+		seta 	44
+	frame	data/chars/jet/walk00.gif
+		seta 	46
+	frame	data/chars/jet/walk01.gif
+		seta 	48
+	frame	data/chars/jet/walk00.gif
+		seta 	46
+	frame	data/chars/jet/walk01.gif
+		seta 	44
+	frame	data/chars/jet/walk00.gif
+		seta 	42
+	frame	data/chars/jet/walk01.gif
+		seta 	40
+	frame	data/chars/jet/walk00.gif
+		seta 	38
+	frame	data/chars/jet/walk01.gif
+		seta 	36
+	frame	data/chars/jet/walk00.gif
+		seta 	34
+	frame	data/chars/jet/walk01.gif
+		seta 	32
+	frame	data/chars/jet/walk00.gif
+		seta 	34
+	frame	data/chars/jet/walk01.gif
+		seta 	36
+	frame	data/chars/jet/walk00.gif
+		seta 	38
+	frame	data/chars/jet/walk01.gif
+
+anim backwalk
+	loop	1
+	delay	4
+	offset	158 181
+	bbox 	144 106 25 77
+		seta 	40
+	frame	data/chars/jet/backwalk00.gif
+		seta 	42
+	frame	data/chars/jet/backwalk01.gif
+		seta 	44
+	frame	data/chars/jet/backwalk02.gif
+		seta 	46
+	frame	data/chars/jet/backwalk03.gif
+		seta 	48
+	frame	data/chars/jet/backwalk00.gif
+		seta 	46
+	frame	data/chars/jet/backwalk01.gif
+		seta 	44
+	frame	data/chars/jet/backwalk02.gif
+		seta 	42
+	frame	data/chars/jet/backwalk03.gif
+		seta 	40
+	frame	data/chars/jet/backwalk00.gif
+		seta 	38
+	frame	data/chars/jet/backwalk01.gif
+		seta 	36
+	frame	data/chars/jet/backwalk02.gif
+		seta 	34
+	frame	data/chars/jet/backwalk03.gif
+		seta 	32
+	frame	data/chars/jet/backwalk00.gif
+		seta 	34
+	frame	data/chars/jet/backwalk01.gif
+		seta 	36
+	frame	data/chars/jet/backwalk02.gif
+		seta 	38
+	frame	data/chars/jet/backwalk03.gif
+	
+anim run
+	loop	1
+	delay	4
+	offset	158 181
+	bbox 	146 110 23 73
+		seta 	40
+	frame	data/chars/jet/run00.gif
+		seta 	42
+	frame	data/chars/jet/run01.gif
+		seta 	44
+	frame	data/chars/jet/run02.gif
+		seta 	46
+	frame	data/chars/jet/run03.gif
+		seta 	48
+	frame	data/chars/jet/run00.gif
+		seta 	46
+	frame	data/chars/jet/run01.gif
+		seta 	44
+	frame	data/chars/jet/run02.gif
+		seta 	42
+	frame	data/chars/jet/run03.gif
+		seta 	40
+	frame	data/chars/jet/run00.gif
+		seta 	38
+	frame	data/chars/jet/run01.gif
+		seta 	36
+	frame	data/chars/jet/run02.gif
+		seta 	34
+	frame	data/chars/jet/run03.gif
+		seta 	32
+	frame	data/chars/jet/run00.gif
+		seta 	34
+	frame	data/chars/jet/run01.gif
+		seta 	36
+	frame	data/chars/jet/run02.gif
+		seta 	38
+	frame	data/chars/jet/run03.gif
+
+anim grabbed
+	loop	0
+	delay	8
+	offset	158 181
+	bbox 	147 114 31 69
+	frame	data/chars/jet/grabbed00.gif
+
+anim land
+	bouncefactor 0
+	loop	0
+	delay	4
+	offset	158 181
+	@cmd landSafe
+	@cmd flipRandom
+	@cmd leaper -1.8 1.8 0
+	@cmd deGravity 1
+	frame	data/chars/jet/a102.gif
+	frame	data/chars/jet/a103.gif
+	frame	data/chars/jet/a104.gif
+	frame	data/chars/jet/a105.gif
+	frame	data/chars/jet/backwalk00.gif
+	frame	data/chars/jet/backwalk01.gif
+	frame	data/chars/jet/backwalk02.gif
+	frame	data/chars/jet/backwalk03.gif
+	@cmd deGravity 0
+		seta	48
+	frame	data/chars/jet/backwalk00.gif
+		seta	46
+	@cmd cancel 40 120 -999 0 -12 12 "ANI_ATTACK2"
+	frame	data/chars/jet/backwalk01.gif
+		seta	44
+	frame	data/chars/jet/backwalk02.gif
+		seta	42
+	frame	data/chars/jet/backwalk03.gif
+		seta	40
+	frame	data/chars/jet/backwalk00.gif
+		seta	38
+	frame	data/chars/jet/backwalk01.gif
+		seta	36
+	frame	data/chars/jet/backwalk02.gif
+		seta	34
+	frame	data/chars/jet/backwalk03.gif
+	
+anim pain #UP
+	loop	0
+	delay	4
+	offset	158 181
+	bbox 	143 117 30 66
+	frame	data/chars/jet/pain00.gif
+	frame	data/chars/jet/pain01.gif
+	frame	data/chars/jet/pain00.gif
+	frame	data/chars/jet/pain01.gif
+	frame	data/chars/jet/pain00.gif
+	frame	data/chars/jet/pain01.gif
+	frame	data/chars/jet/pain00.gif
+	frame	data/chars/jet/pain01.gif
+	@cmd aniChange 1 "ANI_FOLLOW5"
+	frame	data/chars/jet/pain01.gif
+
+anim pain2 #DOWN
+	loop	0
+	delay	4
+	offset	158 181
+	bbox 	147 114 33 69
+	frame	data/chars/jet/pain200.gif
+	frame	data/chars/jet/pain201.gif
+	frame	data/chars/jet/pain200.gif
+	frame	data/chars/jet/pain201.gif
+	frame	data/chars/jet/pain200.gif
+	frame	data/chars/jet/pain201.gif
+	frame	data/chars/jet/pain200.gif
+	frame	data/chars/jet/pain201.gif
+	@cmd aniChange 1 "ANI_FOLLOW5"
+	frame	data/chars/jet/pain201.gif
+
+anim fall #NORMAL
+	landframe 2
+	loop	0
+	delay	32
+	offset	158 181
+	bbox 	137 113 41 57
+	@cmd deGravity 0
+	frame	data/chars/jet/fall00.gif
+		delay	999
+	@cmd cancelFall 100 "ANI_LAND"
+	frame	data/chars/jet/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Falling.wav
+	frame	data/chars/jet/fall01.gif
+
+anim burn #BURNED FALL
+	landframe 2
+	loop	1 0 2
+	delay	3
+	offset	158 181
+	bbox 	137 113 41 57
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	@cmd deGravity 0
+	frame	data/chars/jet/fall00.gif
+	@cmd spawn01 "smoke" 0 50 0
+	drawmethod tintmode 2
+	drawmethod tintcolor 255
+	frame	data/chars/jet/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	nodrawmethod
+	sound	data/sounds/Falling.wav
+	frame	data/chars/jet/fall01.gif
+
+anim shock #SHOCKED FALL
+	landframe 2
+	loop	1 0 2
+	delay	3
+	offset	158 181
+	bbox 	137 113 41 57
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	@cmd deGravity 0
+	frame	data/chars/jet/fall00.gif
+	drawmethod tintmode 2
+	drawmethod tintcolor -255
+	frame	data/chars/jet/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	nodrawmethod
+	sound	data/sounds/Falling.wav
+	frame	data/chars/jet/fall01.gif
+	
+anim fall6 #SPIN FALL
+	landframe 4
+	loop	1 0 4
+	delay	3
+	offset	158 181
+	@cmd deGravity 0
+	frame	data/chars/jet/fall600.gif
+	frame	data/chars/jet/fall601.gif
+	frame	data/chars/jet/fall602.gif
+	frame	data/chars/jet/fall603.gif
+		delay	8
+	sound	data/sounds/Falling.wav
+	frame	data/chars/jet/fall01.gif
+
+anim fall7 #GRABSTART POSITION
+	loop	0
+	delay	1000
+	offset	158 181
+	frame	data/chars/jet/fall700.gif
+	frame	data/chars/jet/fall701.gif
+	frame	data/chars/jet/fall702.gif
+	frame	data/chars/jet/fall703.gif
+	frame	data/chars/jet/fall704.gif
+	frame	data/chars/jet/fall705.gif
+
+anim fall8 #FINISH/THROW TYPE 3
+	landframe 2
+	loop	0
+	delay	32
+	offset	158 181
+	bbox 	137 113 41 57
+	hitfx	data/sounds/MediumKick.wav
+	@cmd deGravity 0
+	attack 137 113 41 57 4 1 0 0 0 12
+	frame	data/chars/jet/fall00.gif
+		delay	999
+	@cmd cancelFall 100 "ANI_LAND"
+	frame	data/chars/jet/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Falling.wav
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/jet/fall01.gif
+
+anim fall9 #FINISH/THROW TYPE 2
+	landframe 2
+	loop	0
+	delay	32
+	offset	158 181
+	bbox 	141 121 37 57
+	hitfx	data/sounds/MediumKick.wav
+	@cmd deGravity 0
+	attack 141 121 37 57 4 1 0 0 0 12
+	frame	data/chars/jet/fall900.gif
+		delay	999
+	@cmd cancelFall 100 "ANI_LAND"
+	frame	data/chars/jet/fall900.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Falling.wav
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/jet/fall01.gif
+
+anim rise
+	loop	0
+	delay	32
+	offset	158 181
+	frame	data/chars/jet/rise00.gif
+		delay	4
+	@cmd leaper 0 1.8 0
+	@cmd deGravity 1
+	sound	data/sounds/Wind3.wav
+	frame	data/chars/jet/rise01.gif
+	frame	data/chars/jet/rise02.gif
+	frame	data/chars/jet/rise01.gif
+	@cmd looper 2 4
+	@cmd deGravity 0
+		seta	46
+	frame	data/chars/jet/backwalk00.gif
+		seta	44
+	frame	data/chars/jet/backwalk01.gif
+		seta	42
+	frame	data/chars/jet/backwalk02.gif
+		seta	40
+	frame	data/chars/jet/backwalk03.gif
+
+anim attack1 #GRAB/LONG RANGE CHARGE
+	range 0 400
+	rangea -999 0
+	followanim 1
+	followcond 4
+	fastattack 1
+	jugglecost 0
+	forcedirection 0
+	landframe 2
+	loop	1 0 2
+	delay	4
+	offset	158 181
+	bbox 	145 109 24 74
+	@cmd leaper 0 -3 0
+	frame	data/chars/jet/a100.gif
+	frame	data/chars/jet/a101.gif
+	@cmd cancelRandom 60 600 0 0 120 "ANI_FOLLOW3"
+	attack 145 109 40 74 0 0 1 1 0 12
+	dropv 0 1 0
+	frame	data/chars/jet/a100.gif
+	@cmd aniChange 1 "ANI_FOLLOW2"
+	frame	data/chars/jet/a101.gif
+	
+anim follow1 #SLAM
+	attackone 0
+	fastattack 1
+	jugglecost 0
+	forcedirection 0
+	landframe 5
+	loop	0
+	delay	16
+	offset	158 181
+	hitfx	data/sounds/MediumKick.wav
+	sound	data/sounds/Throw.wav
+	@cmd grabStart2
+	@cmd position 0 20 10 0 -1
+	frame	data/chars/jet/grab00.gif
+		delay	4
+	@cmd position 0 20 10 0 0
+	@cmd leaper 0 1 0
+	sound	data/voices/Jet1.wav
+	frame	data/chars/jet/grab01.gif
+	@cmd position 0 20 10 0 0
+	@cmd leaper 0 3 0
+	sound	data/sounds/Wind3.wav
+	frame	data/chars/jet/grab01.gif
+	@cmd position 0 20 10 0 0
+	@cmd leaper 0 9 0
+	frame	data/chars/jet/grab01.gif
+		delay	999
+	@cmd looper 3 11
+	@cmd position 4 20 -1 0 0
+	@cmd deGravity -90
+	@cmd leaper 0 -90 0
+	sound	data/sounds/Wind3.wav
+	frame	data/chars/jet/throw00.gif
+		delay	12
+	attack 144 133 52 49 16 1 0 0 0 12
+	@cmd spawn01 "quakehigh" 0 0 0
+	sound	data/sounds/Slam.wav
+	frame	data/chars/jet/throw00.gif
+		delay	6
+	@cmd depost
+	@cmd slam 48 2 -3 1.5 0 0
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/jet/throw00.gif
+	@cmd dasher 2 0 0
+	frame	data/chars/jet/throw00.gif
+	frame	data/chars/jet/throw00.gif
+	frame	data/chars/jet/throw00.gif
+	frame	data/chars/jet/throw00.gif
+	@cmd aniChange 1 "ANI_FOLLOW5"
+	frame	data/chars/jet/throw00.gif
+
+anim follow2 #LONG RANGE CHARGE
+	fastattack 1
+	jugglecost 10
+	forcedirection -1
+	loop	0
+	delay	4
+	offset	158 181
+	bbox 	144 111 37 58
+	hitfx	data/sounds/HighPunch.wav
+	frame	data/chars/jet/a102.gif
+	frame	data/chars/jet/a103.gif
+	frame	data/chars/jet/a104.gif
+	@cmd target 5.5 5.5
+	frame	data/chars/jet/a105.gif
+		delay	6
+	attack 158 123 57 25 18 1 0 0 10 12
+	@cmd dasher 0.5 0 0
+	bbox 127 132 60 16
+	frame	data/chars/jet/a106.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	@cmd dasher 1.5 0 0
+	frame	data/chars/jet/a107.gif
+	attack 158 123 57 25 18 1 0 0 10 12
+	@cmd dasher 2.5 0 0
+	sound	data/sounds/Wind3.wav
+	frame	data/chars/jet/a108.gif
+		delay	4
+	attack 0 0 0 0 0 0 0 0 0 0
+	@cmd dashTarget
+	frame	data/chars/jet/a109.gif
+	attack 158 123 57 25 18 1 0 0 10 12
+	@cmd dashTarget
+	frame	data/chars/jet/a106.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	@cmd dashTarget
+	frame	data/chars/jet/a107.gif
+	attack 158 123 57 25 18 1 0 0 10 12
+	@cmd dashTarget
+	frame	data/chars/jet/a108.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	@cmd dashTarget
+	frame	data/chars/jet/a109.gif
+	@cmd looper 8 3
+	@cmd aniChange 1 "ANI_FOLLOW5"
+	frame	data/chars/jet/a109.gif
+	
+anim attack2 #SHORT RANGE CHARGE
+	range 0 200
+	rangea -999 0
+	fastattack 1
+	jugglecost 10
+	forcedirection -1
+	landframe 18
+	loop	1 14 18
+	delay	4
+	offset	158 181
+	bbox 	144 106 25 77
+	hitfx	data/sounds/HighKick.wav
+	@cmd deGravity 1
+	@cmd leaper 0 1.5 0
+	frame	data/chars/jet/backwalk00.gif
+	frame	data/chars/jet/backwalk01.gif
+	frame	data/chars/jet/backwalk00.gif
+	frame	data/chars/jet/backwalk01.gif
+	frame	data/chars/jet/backwalk00.gif
+	frame	data/chars/jet/backwalk01.gif
+	frame	data/chars/jet/backwalk00.gif
+	frame	data/chars/jet/backwalk01.gif
+	frame	data/chars/jet/backwalk00.gif
+	frame	data/chars/jet/backwalk01.gif
+	frame	data/chars/jet/backwalk00.gif
+	@cmd deGravity 0
+	frame	data/chars/jet/backwalk01.gif
+		delay	4
+	sound	data/sounds/Wind3.wav
+	@cmd leaper 4 -4 0
+	attack 141 147 36 36 24 1 0 0 0 12
+	bbox 	137 124 37 43
+	frame	data/chars/jet/a200.gif
+	sound	data/voices/Jet2.wav
+	frame	data/chars/jet/a201.gif
+	frame	data/chars/jet/a200.gif
+	frame	data/chars/jet/a201.gif
+	frame	data/chars/jet/a200.gif
+	frame	data/chars/jet/a201.gif
+	@cmd leaper 4 0 0
+	frame	data/chars/jet/a200.gif
+	frame	data/chars/jet/a201.gif
+	frame	data/chars/jet/a200.gif
+	frame	data/chars/jet/a201.gif
+	@cmd leaper 3 0 0
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/jet/a200.gif
+	frame	data/chars/jet/a201.gif
+	@cmd leaper 2 0 0
+	frame	data/chars/jet/a200.gif
+	frame	data/chars/jet/a201.gif
+	@cmd leaper 1 0 0
+	@cmd cancelRandom 0 400 0 0 0 "ANI_ATTACK1"
+	frame	data/chars/jet/a200.gif
+	frame	data/chars/jet/a201.gif
+	@cmd aniChange 1 "ANI_FOLLOW5"
+	frame	data/chars/jet/a201.gif
+
+anim special #FRONT JET FIRE
+	fastattack 1
+	jugglecost 0
+	forcedirection 0
+	energycost 2 2
+	hitflash burn
+	loop	0
+	delay	4
+	offset	158 181
+	@cmd cancelBack "ANI_FOLLOW6"
+	sound	data/sounds/Fire.wav
+	burn 152 118 32 27 24 2 0 0 10 12
+	frame	data/chars/jet/backwalk02.gif
+	frame	data/chars/jet/backwalk00.gif
+	frame	data/chars/jet/backwalk02.gif
+	frame	data/chars/jet/backwalk00.gif
+	frame	data/chars/jet/backwalk02.gif
+	frame	data/chars/jet/backwalk00.gif
+	frame	data/chars/jet/backwalk02.gif
+	frame	data/chars/jet/backwalk00.gif
+	@cmd aniChange 1 "ANI_FOLLOW5"
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/jet/backwalk01.gif
+	
+anim follow3 #RAGE GRAB
+	fastattack 1
+	jugglecost 0
+	forcedirection 0
+	energycost 120 1 6
+	loop	0
+	delay	4
+	offset	158 181
+	@cmd spawnBind "RageSpend" 14 16 -1
+	@cmd spawnBind "RageFull" 0 0 1
+	frame	data/chars/jet/a102.gif
+	frame	data/chars/jet/a103.gif
+	frame	data/chars/jet/a102.gif
+	frame	data/chars/jet/a103.gif	
+	frame	data/chars/jet/a102.gif
+	frame	data/chars/jet/a103.gif	
+	@cmd target 10 10
+	@cmd dashTarget
+	attack 148 122 48 32 0 0 1 1 0 12
+	dropv 0 1 0
+	sound	data/sounds/Wind3.wav
+	frame	data/chars/jet/rage00.gif
+	@cmd dashTarget
+	frame	data/chars/jet/rage01.gif
+	@cmd dashTarget
+	frame	data/chars/jet/rage00.gif
+	@cmd dashTarget
+	frame	data/chars/jet/rage01.gif
+	@cmd looper 8 3
+	@cmd dasher 4 0 0
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/jet/a102.gif
+	@cmd dasher 3 0 0
+	frame	data/chars/jet/a103.gif
+	@cmd dasher 2 0 0
+	frame	data/chars/jet/a102.gif
+	@cmd dasher 1 0 0
+	frame	data/chars/jet/a103.gif	
+	@cmd leaper 0 1.8 0
+	@cmd deGravity 1
+	frame	data/chars/jet/rise01.gif
+	frame	data/chars/jet/rise02.gif
+	frame	data/chars/jet/rise01.gif
+	frame	data/chars/jet/rise02.gif
+	frame	data/chars/jet/rise01.gif
+	frame	data/chars/jet/rise02.gif
+	frame	data/chars/jet/rise01.gif
+	frame	data/chars/jet/rise02.gif
+	@cmd deGravity 0
+		seta	46
+	frame	data/chars/jet/backwalk00.gif
+		seta	44
+	frame	data/chars/jet/backwalk01.gif
+		seta	42
+	frame	data/chars/jet/backwalk02.gif
+		seta	40
+	frame	data/chars/jet/backwalk03.gif
+	
+anim follow4 #RAGE SLAM
+	landframe 5
+	energycost 120 1 6
+	loop	0
+	delay	16
+	offset	158 181
+	@cmd grabStart2
+	@cmd position 0 20 10 0 -1
+	@cmd dasher 0 0 0
+	sound	data/sounds/Throw.wav
+	frame	data/chars/jet/grab00.gif
+		delay	4
+	@cmd position 0 20 10 0 0
+	@cmd leaper 0 3 0
+	sound	data/voices/Jet1.wav
+	frame	data/chars/jet/grab01.gif
+	@cmd position 0 20 10 0 0
+	@cmd leaper 0 9 0
+	sound	data/sounds/Wind3.wav
+	frame	data/chars/jet/grab01.gif
+	@cmd position 0 20 10 0 0
+	@cmd leaper 0 18 0
+	frame	data/chars/jet/grab01.gif
+		delay	999
+	@cmd looper 3 11
+	@cmd position 4 20 -1 0 0
+	@cmd deGravity -2000
+	@cmd leaper 0 -1500 0
+	sound	data/sounds/Wind3.wav
+	frame	data/chars/jet/throw00.gif
+		delay	12
+	attack 144 116 52 66 32 1 1 0 0 12
+	dropv 3 4 0
+	@cmd spawn01 "quakehigh" 0 0 0
+	@cmd spawn01 "fall" 10 0 1
+	sound	data/sounds/Slam.wav
+	frame	data/chars/jet/throw00.gif
+		delay	4
+	attack 0 0 0 0 0 0 0 0 0 0
+	@cmd depost
+	@cmd slam 80 2 -3 6 0 0
+	frame	data/chars/jet/throw00.gif
+		delay	4
+	@cmd dasher 4 0 0
+	frame	data/chars/jet/throw00.gif
+	@cmd looper 7 3
+	@cmd leaper 0 1.8 0
+	@cmd deGravity 1
+	frame	data/chars/jet/a102.gif
+	frame	data/chars/jet/a103.gif
+	frame	data/chars/jet/a104.gif
+	frame	data/chars/jet/a105.gif
+	frame	data/chars/jet/backwalk00.gif
+	frame	data/chars/jet/backwalk01.gif
+	frame	data/chars/jet/backwalk02.gif
+	frame	data/chars/jet/backwalk03.gif
+	@cmd deGravity 0
+		seta	46
+	frame	data/chars/jet/backwalk00.gif
+		seta	44
+	frame	data/chars/jet/backwalk01.gif
+		seta	42
+	frame	data/chars/jet/backwalk02.gif
+		seta	40
+	@cmd clearL
+	frame	data/chars/jet/backwalk03.gif
+	
+anim follow5 #FLY UP
+	loop	0
+	delay	4
+	offset	158 181
+	bbox 	144 111 37 58
+	@cmd leaper 0 1.8 0
+	@cmd deGravity 1
+	frame	data/chars/jet/a102.gif
+	frame	data/chars/jet/a103.gif
+	frame	data/chars/jet/a104.gif
+	frame	data/chars/jet/a105.gif
+	bbox 	144 106 25 77
+	frame	data/chars/jet/backwalk00.gif
+	frame	data/chars/jet/backwalk01.gif
+	frame	data/chars/jet/backwalk02.gif
+	frame	data/chars/jet/backwalk03.gif
+	@cmd looper 4 1
+	@cmd deGravity 0
+		seta	46
+	frame	data/chars/jet/backwalk00.gif
+		seta	44
+	frame	data/chars/jet/backwalk01.gif
+		seta	42
+	frame	data/chars/jet/backwalk02.gif
+		seta	40
+	@cmd clearL
+	frame	data/chars/jet/backwalk03.gif
+	
+anim follow6 #BACK JET FIRE
+	fastattack 1
+	jugglecost 0
+	forcedirection 0
+	hitflash burn
+	loop	0
+	delay	4
+	offset	158 181
+	sound	data/sounds/Fire.wav
+	burn 119 110 43 36 24 2 0 0 10 12
+	frame	data/chars/jet/run01.gif
+	frame	data/chars/jet/run00.gif
+	frame	data/chars/jet/run01.gif
+	frame	data/chars/jet/run00.gif
+	frame	data/chars/jet/run01.gif
+	frame	data/chars/jet/run00.gif
+	frame	data/chars/jet/run01.gif
+	frame	data/chars/jet/run00.gif
+	@cmd aniChange 1 "ANI_FOLLOW5"
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/jet/run01.gif

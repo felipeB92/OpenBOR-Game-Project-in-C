@@ -1,0 +1,315 @@
+name	Zombie
+health	100
+speed	4
+type	Enemy
+gfxshadow	1
+hostile				player npc
+candamage			player npc obstacle
+JUMPHEIGHT 1 1
+Jumpheight 3
+falldie 1
+atchain    1 1 2
+#weapons				Zombie_knife none None none
+icon	data/chars/Enemys/Zombie/icon.gif 1
+diesound data/Sounds/splash.wav
+running	20	3	3	1	1
+
+##LOADS
+#load				Zombie_knife
+
+
+remap data/chars/Enemys/Zombie/idle00.gif data/chars/Enemys/Zombie/alter1.gif
+remap data/chars/Enemys/Zombie/idle00.gif data/chars/Enemys/Zombie/alter2.gif
+remap data/chars/Enemys/Zombie/idle00.gif data/chars/Enemys/Zombie/alter3.gif
+remap data/chars/Enemys/Zombie/idle00.gif data/chars/Enemys/Zombie/alter4.gif
+
+anim	spawn
+	loop	0
+	delay	80
+	offset	76 118
+	frame   data/chars/Enemys/Zombie/Rise01.gif
+	delay	60
+	frame   data/chars/Enemys/Zombie/Rise00.gif
+	frame   data/chars/Enemys/Zombie/Rise01.gif
+		delay  60
+	frame  data/chars/Enemys/Zombie/Rise00.gif
+		offset  83  115
+		delay  30
+	frame   data/chars/Enemys/Zombie/Rise02.gif
+
+
+
+anim idle
+	loop	1
+	delay	9
+	offset	86 117
+	bbox	68 54 32 64
+	frame   data/chars/Enemys/Zombie/idle00.gif
+	frame   data/chars/Enemys/Zombie/idle01.gif
+	frame   data/chars/Enemys/Zombie/idle02.gif
+	frame   data/chars/Enemys/Zombie/idle01.gif
+
+
+
+anim walk
+	loop	1
+	delay	16
+	offset	84 116
+	bbox	72 55 24 61
+	jumpframe  7  1  0.002  0
+	landframe  8
+	frame	data/chars/Enemys/Zombie/walk00.gif
+	frame	data/chars/Enemys/Zombie/walk01.gif
+	frame	data/chars/Enemys/Zombie/walk00.gif
+	frame	data/chars/Enemys/Zombie/walk01.gif
+	frame	data/chars/Enemys/Zombie/walk00.gif
+	frame	data/chars/Enemys/Zombie/walk01.gif
+	frame	data/chars/Enemys/Zombie/walk00.gif
+	frame	data/chars/Enemys/Zombie/walk01.gif
+	frame	data/chars/Enemys/Zombie/walk00.gif
+	frame	data/chars/Enemys/Zombie/walk01.gif
+	frame	data/chars/Enemys/Zombie/walk00.gif
+	frame	data/chars/Enemys/Zombie/walk01.gif
+	frame	data/chars/Enemys/Zombie/walk00.gif
+	frame	data/chars/Enemys/Zombie/walk01.gif
+
+anim get
+	loop	0
+	delay	10
+	offset	81 114
+	frame	data/chars/Enemys/Zombie/get00.gif
+
+
+anim jump
+	loop	0
+	delay	30
+	offset	76 118
+	bbox	62 48 44 68
+	frame	data/chars/Enemys/Zombie/jump00.gif
+
+
+
+
+anim attack1
+	loop	0
+	delay	6
+        Range 0 40
+	offset	80 118
+	bbox	66 47 27 72
+		Attack1  0
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/Enemys/Zombie/a100.gif
+		attack1  87  72  31  17  7
+		offset  84  120
+		delay  10
+	frame	data/chars/Enemys/Zombie/a101.gif
+		Attack1  0
+		delay  6
+	frame	data/chars/Enemys/Zombie/a100.gif
+
+anim attack2
+	loop	0
+	delay	6
+	offset	76 118
+	bbox	65 47 28 71
+		Attack1  0
+        hitfx	data/sounds/golpes/MEdio.wav
+	frame	data/chars/Enemys/Zombie/a100.gif
+		attack1  75  57  49  13  7  1  0  0  0  20
+		delay  20
+	frame	data/chars/Enemys/Zombie/a200.gif
+		Attack1  0
+	frame	data/chars/Enemys/Zombie/a100.gif
+
+anim Freespecial
+	loop	0
+	delay	6
+        Range 40 80
+	offset	76 118
+	bbox	65 47 28 71
+		Attack1  0
+        hitfx	data/sounds/golpes/MEdio.wav
+	frame	data/chars/Enemys/Zombie/a100.gif
+		attack1  73  58  59  20  7  1  0  0  0  20
+		delay  25
+	frame	data/chars/Enemys/Zombie/a200.gif
+		Attack1  0
+	frame	data/chars/Enemys/Zombie/a100.gif
+
+
+
+
+
+
+
+anim grabbed
+	loop	0
+	delay	100
+	offset	83 112
+	bbox	69 48 28 65
+	frame	data/chars/Enemys/Zombie/grabbed00.gif
+
+
+
+anim pain
+	loop	0
+	offset	81 119
+	bbox	64 47 27 71
+	delay	15
+	frame	data/chars/Enemys/Zombie/pain00.gif
+		offset  78  117
+	frame	data/chars/Enemys/Zombie/pain01.gif
+
+anim pain2
+	loop	0
+	offset	83 118
+	bbox	63 53 32 63
+	delay	15
+	frame	data/chars/Enemys/Zombie/pain200.gif
+	frame	data/chars/Enemys/Zombie/pain201.gif
+
+anim pain4
+	loop	0
+	offset	76 118
+	bbox	64 47 27 71
+	delay	250
+	frame	data/chars/Enemys/Zombie/pain00.gif
+
+anim pain5
+	loop	0
+	offset	76 118
+	delay	10
+	frame	data/chars/Enemys/Zombie/pain00.gif
+		move  10
+	frame	data/chars/Enemys/Zombie/fall705.gif
+		offset  65  118
+		move  30
+		delay  10
+	frame	data/chars/Enemys/Zombie/fall603.gif
+		offset  75  121
+        quakeframe 4 2 2
+        Sound	data/Sounds/Efeitos/Estrondo.wav
+	frame	data/chars/Enemys/Zombie/fall900.gif
+		move  1
+		movea  5
+	frame  data/chars/Enemys/Zombie/fall900.gif
+		movea  -5
+	frame  data/chars/Enemys/Zombie/fall900.gif
+		offset  76  118
+		delay  50
+		move  0
+		movea  0
+		Attack1  0
+	frame	data/chars/Enemys/Zombie/Fall01.gif
+		delay  10
+	frame	data/chars/Enemys/Zombie/Rise00.gif
+	frame	data/chars/Enemys/Zombie/Rise01.gif
+		offset  84  117
+	frame  data/chars/Enemys/Zombie/Rise02.gif
+
+
+anim death
+	loop	0
+	offset	76 118
+	delay	20
+	frame	data/chars/Enemys/Zombie/d00.gif
+	frame	data/chars/Enemys/Zombie/d01.gif
+	frame	data/chars/Enemys/Zombie/d02.gif
+	frame	data/chars/Enemys/Zombie/d03.gif
+	frame	data/chars/Enemys/Zombie/d04.gif
+	frame	data/chars/Enemys/Zombie/d05.gif
+	frame	data/chars/Enemys/Zombie/d06.gif
+
+
+
+anim death5
+	loop	0
+	offset	76 118
+	delay	10
+	frame	data/chars/Enemys/Zombie/pain00.gif
+		move  10
+	frame	data/chars/Enemys/Zombie/fall705.gif
+		offset  65  118
+		move  30
+		delay  10
+	frame	data/chars/Enemys/Zombie/fall603.gif
+		offset  75  121
+	frame	data/chars/Enemys/Zombie/fall900.gif
+		move  1
+		movea  5
+	frame  data/chars/Enemys/Zombie/fall900.gif
+		movea  -5
+	frame  data/chars/Enemys/Zombie/fall900.gif
+		offset  76  118
+		delay  50
+		move  0
+		movea  0
+	frame	data/chars/Enemys/Zombie/d00.gif
+	frame	data/chars/Enemys/Zombie/d01.gif
+	frame	data/chars/Enemys/Zombie/d02.gif
+	frame	data/chars/Enemys/Zombie/d03.gif
+	frame	data/chars/Enemys/Zombie/d04.gif
+	frame	data/chars/Enemys/Zombie/d05.gif
+	frame	data/chars/Enemys/Zombie/d06.gif
+
+
+
+anim fall
+	loop	0
+	offset	76 118
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Zombie/fall701.gif
+		attack  41
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Zombie/fall00.gif
+		Attack1  0
+	frame	data/chars/Enemys/Zombie/fall01.gif
+
+anim fall3
+	loop	0
+	offset	76 118
+	delay	5
+	jumpframe  0  3  -3  0
+	landframe  8
+		bbox  69  55  31  59
+		Attack1  0
+	frame	data/chars/Enemys/Zombie/fall705.gif
+	frame	data/chars/Enemys/Zombie/fall600.gif
+	frame	data/chars/Enemys/Zombie/fall601.gif
+	frame	data/chars/Enemys/Zombie/fall602.gif
+	frame	data/chars/Enemys/Zombie/fall705.gif
+	frame	data/chars/Enemys/Zombie/fall600.gif
+	frame	data/chars/Enemys/Zombie/fall601.gif
+	frame	data/chars/Enemys/Zombie/fall602.gif
+	frame	data/chars/Enemys/Zombie/fall705.gif
+	frame	data/chars/Enemys/Zombie/fall600.gif
+	frame	data/chars/Enemys/Zombie/fall601.gif
+	frame	data/chars/Enemys/Zombie/fall602.gif
+	frame  data/chars/Enemys/Zombie/fall705.gif
+	frame  data/chars/Enemys/Zombie/fall600.gif
+		Attack1  0
+		bbox  0
+		move  0
+	frame  data/chars/Enemys/Zombie/fall01.gif
+
+anim rise
+	loop	0
+	offset	76 118
+	delay	10
+	frame	data/chars/Enemys/Zombie/Rise00.gif
+	frame	data/chars/Enemys/Zombie/Rise01.gif
+		offset  83  115
+	frame	data/chars/Enemys/Zombie/Rise02.gif
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	82 112
+	bbox	69 64 28 52
+	frame	data/chars/Enemys/Zombie/jumpland00.gif
+

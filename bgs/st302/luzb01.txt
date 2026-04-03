@@ -1,0 +1,20 @@
+name			Luzb01 #GROUND
+type			panel
+shadow			0
+speed			10
+setlayer		1000
+alpha 1
+
+anim idle
+	loop	1
+	delay	40
+	offset	0 0
+	frame	data/Bgs/St302/blink00.gif
+	frame	data/Bgs/St302/blink01.gif
+	frame	data/Bgs/St302/blink02.gif
+	frame	data/Bgs/St302/blink03.gif
+	frame	data/Bgs/St302/blink04.gif
+	frame	data/Bgs/St302/blink05.gif
+	frame	data/Bgs/St302/blink00.gif
+
+

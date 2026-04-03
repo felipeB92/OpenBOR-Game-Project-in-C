@@ -1,0 +1,376 @@
+music		data/bgs/St401/Lv401a.bor
+bossmusic	data/music/boss1.bor
+scrollspeed 0.5#1
+stagenumber 1
+background	data/bgs/st401/Back00.gif 0 0 
+panel		data/bgs/St401/Pn01.gif
+frontpanel      data/bgs/St05/Front02.gif
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	125 20
+spawn2  	130 35
+spawn3  	135  50
+
+light		128 -128
+at			0
+
+
+spawn  Alarme401
+Flip 1
+	coords  0  0
+	at  0
+
+spawn  Fog401
+	coords  400  200
+	at  0
+
+spawn  Signal401
+map    4
+	coords  628  200
+	at  0
+
+
+spawn  Fog401
+map    1
+	coords  825  200
+	at  0
+
+spawn  Signal401
+flip   1
+	coords  1100  200
+	at  0
+
+
+spawn  Ash401
+	coords  1220  200
+	at  0
+
+
+spawn  Fog401
+map    4
+	coords  1304  200
+	at  0
+
+spawn  Jonny
+map    1
+health 50
+	coords  500  250
+	at  100
+
+
+spawn  Donovan
+health 50
+	coords  500  220
+	at  100
+
+wait  
+at    200
+
+Group  4  4
+at    200
+
+spawn  Pipe
+	coords  -50  220 5
+	at  200
+
+spawn  Knife
+	coords  -50  250 5
+	at  200
+
+spawn  Galsia
+map    1
+health 50
+	coords  -200  250
+	at  200
+
+
+spawn  Donovan
+health 50
+	coords  -200  220
+	at  200
+
+
+spawn  vice
+health 50
+	coords  500  250
+	at  200
+
+
+spawn  slum
+health 50
+	coords  500  220
+	at  200
+
+spawn  vice
+health 50
+	coords  500  220
+	at  300
+
+spawn  vice
+health 50
+	coords  500  250
+	at  400
+
+wait  
+at    500
+
+Group  4  4
+at    500
+
+
+spawn  Signal
+map    1
+health 70
+	coords  -200  250
+	at  500
+
+
+spawn  Signal
+health 50
+	coords  -200  220
+	at  500
+
+spawn  Galsia
+health 50
+	coords  500  250
+	at  500
+
+
+spawn  Donovan
+health 50
+	coords  500  220
+	at  500
+
+spawn  Signal
+map    1
+health 50
+	coords  -200  250
+	at  500
+
+
+spawn  Signal
+health 50
+	coords  -200  220
+	at  500
+
+spawn  Galsia
+map    2
+health 70
+	coords  500  250
+	at  500
+
+
+spawn  Donovan
+health 50
+	coords  250  220 200
+	at  500
+
+
+spawn  Box02
+Item   Knife
+map    1
+	coords  500  220
+	at  501
+
+spawn  Box02
+Item   Apple
+map    1
+	coords  600  230
+	at  501
+
+spawn  Signal
+map    1
+health 70
+	coords  550  250
+	at  600
+
+
+spawn  Signal
+health 50
+	coords  500  220
+	at  700
+
+spawn  Signal
+health 50
+	coords  500  250
+	at  800
+
+
+wait  
+at    900
+
+Group  4  4
+at    900
+
+spawn  fog
+health 70
+	coords  -200  250
+	at  900
+
+
+spawn  Signal
+health 50
+	coords  -200  220
+	at  900
+
+spawn  Jonny
+health 70
+	coords  500  250
+	at  900
+
+
+spawn  Donovan
+map    1
+health 70
+	coords  500  220
+	at  900
+
+spawn  Signal
+map    1
+health 50
+	coords  -200  250
+	at  900
+
+
+spawn  Signal
+health 50
+	coords  -200  220
+	at  900
+
+spawn  Galsia
+map    2
+health 70
+	coords  500  250
+	at  900
+
+
+spawn  Slum
+health 50
+	coords  -100  220
+	at  900
+
+
+
+
+
+
+wait  
+at    1340
+
+Group  4  4
+at    1340
+
+spawn  Slum
+map    1
+health 70
+	coords  500  250
+	at  1340
+
+spawn  Vice
+map    1
+health 70
+	coords  500  220
+	at  1340
+
+spawn  Signal
+health 50
+	coords  -200  220
+	at  1340
+
+spawn  Knife
+	coords  500  250 5
+	at  1340
+
+spawn  Galsia
+map    2
+health 70
+	coords  550  250
+	at  1340
+
+spawn  Bigben401
+Flip 1
+	coords  40  200
+	at  1340
+
+spawn  Fog
+map    2
+health 90
+	coords  550  250
+	at  1340
+
+spawn  fog
+health 70
+	coords  -200  250
+	at  1340
+
+
+spawn  Signal
+health 50
+	coords  -200  220
+	at  1340
+
+spawn  Vice
+map    2
+health 70
+	coords  500  250
+	at  1340
+
+
+spawn  Donovan
+map    1
+health 70
+	coords  500  220
+	at  1340
+
+spawn  Signal
+map    1
+health 50
+	coords  -200  250
+	at  1340
+
+
+spawn  Signal
+health 50
+	coords  -200  220
+	at  1340
+
+spawn  Galsia
+map    2
+health 70
+	coords  500  250
+	at  1340
+
+spawn  Bigben401
+Flip 1
+	coords  40  200
+	at  1340
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

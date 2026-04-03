@@ -1,0 +1,11 @@
+name			Mx302 #GROUND
+type			None
+setlayer 7
+
+anim idle
+	loop	0
+	delay	20
+	offset	0 0
+	frame	data/Bgs/st305/Mx100.gif
+
+

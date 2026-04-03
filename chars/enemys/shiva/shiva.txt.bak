@@ -1,0 +1,488 @@
+name	Shiva
+health	400
+speed	16
+aggression 99
+risetime 90
+riseinv				0.4 1
+falldie                         1
+hostile				player npc
+candamage			player npc obstacle
+escapehits			2
+mp			        60
+mprate  			5
+aimove				chase
+type	Enemy
+gfxshadow	1
+JUMPHEIGHT 1 1
+Jumpheight 3
+atchain    1 2 3
+icon	data/chars/Enemys/Shiva/icon.gif 1
+diesound data/voices/bossdie1.wav
+running	20	3	3	1	1
+#onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+#ondrawscript 		data/scripts/player_ondrawscript.c
+
+##LOADS
+
+
+remap data/chars/Enemys/Shiva/idle00.gif data/chars/Enemys/Shiva/alter1.gif
+remap data/chars/Enemys/Shiva/idle00.gif data/chars/Enemys/Shiva/alter2.gif
+remap data/chars/Enemys/Shiva/idle00.gif data/chars/Enemys/Shiva/alter3.gif
+
+anim	spawn
+	loop	0
+	delay	8
+	offset	138 192
+	jumpframe  0  3 0  2
+	landframe  6
+	frame   data/chars/Enemys/Shiva/jump00.gif
+	frame   data/chars/Enemys/Shiva/jump01.gif
+	frame   data/chars/Enemys/Shiva/jump01.gif
+	frame   data/chars/Enemys/Shiva/jump01.gif
+	frame   data/chars/Enemys/Shiva/jump01.gif
+	frame   data/chars/Enemys/Shiva/jump00.gif
+	frame   data/chars/Enemys/Shiva/jumpland00.gif
+
+
+
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	138 192
+	bbox	122 111 35 81
+	frame	data/chars/Enemys/Shiva/Idle00.gif
+	frame	data/chars/Enemys/Shiva/Idle01.gif
+	frame	data/chars/Enemys/Shiva/Idle02.gif
+	frame   data/chars/Enemys/Shiva/Idle01.gif
+
+
+
+anim walk
+	loop	1
+	delay	14
+	offset	138 192
+	bbox	124 111 31 63
+	jumpframe  6  1  1  0
+	landframe  8
+	frame	data/chars/Enemys/Shiva/walk00.gif
+	frame	data/chars/Enemys/Shiva/walk01.gif
+	frame	data/chars/Enemys/Shiva/walk02.gif
+	frame	data/chars/Enemys/Shiva/walk03.gif
+	frame	data/chars/Enemys/Shiva/walk04.gif
+	frame	data/chars/Enemys/Shiva/walk05.gif
+
+
+anim get
+	loop	0
+	delay	10
+	offset	138 192
+	frame	data/chars/Enemys/Shiva/get00.gif
+
+
+anim jump
+	loop	0
+	delay	15
+	offset	138 192
+	bbox	124 119 41 70
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Shiva/jump00.gif
+		bbox  125  108  37  57
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Shiva/jump01.gif
+
+anim jumpATTACK
+	loop	0
+	delay	15
+        Range 100 120
+	offset	138 192
+	bbox	124 119 41 70
+        sound	data/voices/Shiva1.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Shiva/jumpatk00.gif
+
+
+
+anim Upper
+	loop	0
+	delay	6
+	offset	138 192
+	bbox	111 137 38 54
+		Attack1  0
+        hitfx	data/sounds/golpes/forte.wav
+        sound	data/voices/Shiva1.wav
+	frame	data/chars/Enemys/Shiva/finalcrash00.gif
+	frame	data/chars/Enemys/Shiva/finalcrash01.gif
+	frame	data/chars/Enemys/Shiva/finalcrash02.gif
+	frame	data/chars/Enemys/Shiva/finalcrash03.gif
+		attack3  162  107  70  78  20  1  0  0  0  20
+	frame	data/chars/Enemys/Shiva/finalcrash04.gif
+		attack3  146  91  59  74  20  1  0  0  0  20
+	frame	data/chars/Enemys/Shiva/finalcrash05.gif
+		move  -5
+		Attack1  0
+	frame	data/chars/Enemys/Shiva/finalcrash06.gif
+	frame	data/chars/Enemys/Shiva/finalcrash07.gif
+	frame	data/chars/Enemys/Shiva/finalcrash08.gif
+		Attack1  0
+	frame	data/chars/Enemys/Shiva/finalcrash09.gif
+
+
+
+anim freeSpecial
+	loop	0
+	delay	5
+        Range 60 100
+	offset	138 192
+		Attack1  0
+        hitfx	data/sounds/golpes/forte.wav
+		move  10
+        sound	data/voices/Shiva1.wav
+	frame	data/chars/Enemys/Shiva/special00.gif
+	frame	data/chars/Enemys/Shiva/special01.gif
+	frame	data/chars/Enemys/Shiva/special02.gif
+	frame	data/chars/Enemys/Shiva/special03.gif
+		attack1  121  90  66  58  20  1  0  0  0  20
+	frame	data/chars/Enemys/Shiva/special04.gif
+		attack1  131  107  78  49  20  1  0  0  0  20
+	frame	data/chars/Enemys/Shiva/special05.gif
+		attack1  140  131  65  58  20  1  0  0  0  20
+	frame	data/chars/Enemys/Shiva/special06.gif
+		Attack1  0
+	frame	data/chars/Enemys/Shiva/special07.gif
+
+
+
+anim freeSpecial2
+	loop	0
+		Range  100  150
+	delay	5
+        Range  120 150
+	offset	138 192
+		Attack1  0
+        hitfx	data/sounds/golpes/forte.wav
+		move  10
+	frame	data/chars/Enemys/Shiva/Get00.gif
+		hitfx  data/sounds/golpes/forte.wav
+	frame  data/chars/Enemys/Shiva/special200.gif
+		attack1  124  98  50  53  15  1  0  0  0  20
+	frame	data/chars/Enemys/Shiva/special201.gif
+		attack1  136  118  66  56  15  1  0  0  0  20
+		delay  7
+	frame	data/chars/Enemys/Shiva/special202.gif
+	frame	data/chars/Enemys/Shiva/special203.gif
+		Attack1  0
+	frame  data/chars/Enemys/Shiva/get00.gif
+
+anim freeSpecial3
+	loop	0
+	delay	4
+        Range 150 250
+	offset	138 192
+                Followcond 1
+                followanim 1
+		Attack1  142  148  49  45  0  0  0  0  0  20
+        hitfx	data/sounds/golpes/forte.wav
+		move  10
+        sound	data/sounds/Slide2.wav
+	frame	data/chars/Enemys/Shiva/Run00.gif
+	frame	data/chars/Enemys/Shiva/Run01.gif
+	frame	data/chars/Enemys/Shiva/Run00.gif
+	frame	data/chars/Enemys/Shiva/Run01.gif
+	frame	data/chars/Enemys/Shiva/Run00.gif
+	frame	data/chars/Enemys/Shiva/Run01.gif
+	frame	data/chars/Enemys/Shiva/Run00.gif
+	frame	data/chars/Enemys/Shiva/Run01.gif
+	frame	data/chars/Enemys/Shiva/Run00.gif
+	frame	data/chars/Enemys/Shiva/Run01.gif
+	frame	data/chars/Enemys/Shiva/Run00.gif
+	frame	data/chars/Enemys/Shiva/Run01.gif
+	frame	data/chars/Enemys/Shiva/Run00.gif
+	frame	data/chars/Enemys/Shiva/Run01.gif
+	frame	data/chars/Enemys/Shiva/Run00.gif
+	frame	data/chars/Enemys/Shiva/Run01.gif
+	frame	data/chars/Enemys/Shiva/Run00.gif
+	frame	data/chars/Enemys/Shiva/Run01.gif
+
+anim follow1
+	loop	0
+	delay	6
+	offset	138 192
+	bbox	111 137 38 54
+		Attack1  0
+        hitfx	data/sounds/golpes/forte.wav
+        sound	data/voices/Shiva1.wav
+	frame	data/chars/Enemys/Shiva/finalcrash00.gif
+	frame	data/chars/Enemys/Shiva/finalcrash01.gif
+	frame	data/chars/Enemys/Shiva/finalcrash02.gif
+	frame	data/chars/Enemys/Shiva/finalcrash03.gif
+		attack3  162  107  70  78  20  1  0  0  0  20
+	frame	data/chars/Enemys/Shiva/finalcrash04.gif
+		attack3  146  91  59  74  20  1  0  0  0  20
+	frame	data/chars/Enemys/Shiva/finalcrash05.gif
+		move  -5
+		Attack1  0
+	frame	data/chars/Enemys/Shiva/finalcrash06.gif
+	frame	data/chars/Enemys/Shiva/finalcrash07.gif
+	frame	data/chars/Enemys/Shiva/finalcrash08.gif
+		Attack1  0
+	frame	data/chars/Enemys/Shiva/finalcrash09.gif
+
+
+
+
+anim Special
+	loop	0
+	delay	8
+        mponly 1
+	energycost 0 1
+	offset	138 192
+		Attack1  0
+        hitfx	data/sounds/golpes/forte.wav
+		move  -10
+        sound	data/voices/Shiva1.wav
+	frame	data/chars/Enemys/Shiva/finalcrash09.gif
+	frame	data/chars/Enemys/Shiva/finalcrash08.gif
+	frame	data/chars/Enemys/Shiva/finalcrash07.gif
+	frame	data/chars/Enemys/Shiva/finalcrash06.gif
+	frame	data/chars/Enemys/Shiva/finalcrash05.gif
+	frame	data/chars/Enemys/Shiva/finalcrash08.gif
+	frame	data/chars/Enemys/Shiva/finalcrash09.gif
+
+anim Special2
+	loop	0
+	delay	8
+        mponly 1
+	energycost 0 1
+	offset	138 192
+		Attack1  0
+        hitfx	data/sounds/golpes/Medio.wav
+		move  -10
+        sound	data/voices/Shiva1.wav
+	frame	data/chars/Enemys/Shiva/finalcrash09.gif
+	frame	data/chars/Enemys/Shiva/finalcrash08.gif
+	frame	data/chars/Enemys/Shiva/finalcrash07.gif
+	frame	data/chars/Enemys/Shiva/finalcrash06.gif
+	frame	data/chars/Enemys/Shiva/finalcrash05.gif
+	frame	data/chars/Enemys/Shiva/finalcrash08.gif
+	frame	data/chars/Enemys/Shiva/finalcrash09.gif
+
+
+
+anim attack1
+	loop	0
+	delay	8
+        Range 0 60
+	offset	138 192
+	bbox	135 113 31 79
+		Attack1  0
+        hitfx	data/sounds/golpes/Medio.wav
+		movez  0
+	frame	data/chars/Enemys/Shiva/a100.gif
+		attack1  165  121  53  34  10  0  0  0  0  20
+	frame	data/chars/Enemys/Shiva/a101.gif
+		attack1  140  139  50  35  10  0  0  0  0  20
+	frame	data/chars/Enemys/Shiva/a102.gif
+		Attack1  0
+	frame  data/chars/Enemys/Shiva/a103.gif
+
+anim attack2
+	loop	0
+	delay	6
+	offset	138 192
+	bbox	135 120 31 63
+		Attack1  0
+        hitfx	data/sounds/golpes/forte.wav
+	frame	data/chars/Enemys/Shiva/a200.gif
+		attack2  162  128  65  29  10  0  0  0  0  20
+		delay  10
+	frame	data/chars/Enemys/Shiva/a201.gif
+		Attack1  0
+		delay  6
+	frame	data/chars/Enemys/Shiva/a202.gif
+		delay  15
+	frame	data/chars/Enemys/Shiva/a203.gif
+
+anim attack3
+	loop	0
+	delay	6
+	offset	138 192
+	bbox	121 115 35 50
+		Attack1  0
+        sound	data/voices/Shiva1.wav
+        hitfx	data/sounds/golpes/forte.wav
+	frame	data/chars/Enemys/Shiva/a300.gif
+		attack3  139  130  65  26  15  1  0  0  0  20
+	frame	data/chars/Enemys/Shiva/a301.gif
+		attack3  135  96  51  52  15  1  0  0  0  20
+	frame	data/chars/Enemys/Shiva/a302.gif
+		delay  15
+		attack3  135  89  31  84  15  1  0  0  0  20
+	frame	data/chars/Enemys/Shiva/a303.gif
+		Attack1  0
+	frame	data/chars/Enemys/Shiva/a304.gif
+
+
+
+
+anim grabbed
+	loop	0
+	delay	100
+	offset	138 192
+	bbox	122 128 39 52
+	frame	data/chars/Enemys/Shiva/grabbed00.gif
+
+
+
+anim pain
+	loop	0
+	offset	138 192
+	bbox	118 119 36 62
+	delay	15
+	frame	data/chars/Enemys/Shiva/pain00.gif
+	frame	data/chars/Enemys/Shiva/pain01.gif
+
+anim pain2
+	loop	0
+	offset	138 192
+	bbox	132 125 32 54
+	delay	15
+	frame	data/chars/Enemys/Shiva/pain200.gif
+	frame	data/chars/Enemys/Shiva/pain201.gif
+
+anim pain4
+	loop	0
+	offset	138 192
+	bbox	111 115 46 73
+	delay	250
+	frame	data/chars/Enemys/Shiva/pain00.gif
+
+anim pain5
+	loop	0
+	offset	138 192
+	delay	10
+	frame	data/chars/Enemys/Shiva/pain00.gif
+		move  10
+	frame	data/chars/Enemys/Shiva/fall705.gif
+		move  30
+		delay  10
+	frame	data/chars/Enemys/Shiva/fall603.gif
+        quakeframe 4 2 2
+        Sound	data/Sounds/Efeitos/Estrondo.wav
+		Attack1  0
+	frame	data/chars/Enemys/Shiva/fall900.gif
+		move  1
+		movea  5
+	frame  data/chars/Enemys/Shiva/fall900.gif
+		movea  -5
+	frame  data/chars/Enemys/Shiva/fall900.gif
+		delay  50
+		move  0
+		movea  0
+		Attack1  0
+	frame	data/chars/Enemys/Shiva/Fall01.gif
+		delay  10
+	frame	data/chars/Enemys/Shiva/Rise00.gif
+	frame	data/chars/Enemys/Shiva/Rise01.gif
+	frame  data/chars/Enemys/Shiva/Rise02.gif
+	frame  data/chars/Enemys/Shiva/Rise03.gif
+
+
+anim death
+	loop	0
+	offset	138 192
+	delay	20
+	jumpframe  0  1  -1  0
+	landframe  2
+	frame	data/chars/Enemys/Shiva/fall701.gif
+	frame  data/chars/Enemys/Shiva/fall00.gif
+	frame	data/chars/Enemys/Shiva/fall01.gif
+
+
+anim death5
+	loop	0
+	offset	138 192
+	delay	10
+	frame	data/chars/Enemys/Shiva/pain00.gif
+		move  10
+	frame	data/chars/Enemys/Shiva/fall705.gif
+		move  30
+		delay  10
+	frame	data/chars/Enemys/Shiva/fall603.gif
+		attack1  121  167  60  43  15  1  0  0  0  20
+	frame	data/chars/Enemys/Shiva/fall900.gif
+		move  1
+		movea  5
+	frame  data/chars/Enemys/Shiva/fall900.gif
+		movea  -5
+	frame  data/chars/Enemys/Shiva/fall900.gif
+		delay  50
+		move  0
+		movea  0
+		Attack1  0
+	frame	data/chars/Enemys/Shiva/Fall01.gif
+
+
+anim fall
+	loop	0
+	offset	138 192
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Shiva/fall701.gif
+		attack  41
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Shiva/fall00.gif
+		Attack1  0
+	frame	data/chars/Enemys/Shiva/fall01.gif
+
+anim fall3
+	loop	0
+	offset	138 192
+	delay	5
+	jumpframe  0  3  -3  0
+	landframe  8
+		bbox  130  111  45  77
+		Attack1  0
+	frame	data/chars/Enemys/Shiva/fall705.gif
+	frame	data/chars/Enemys/Shiva/fall600.gif
+	frame	data/chars/Enemys/Shiva/fall601.gif
+	frame	data/chars/Enemys/Shiva/fall602.gif
+	frame	data/chars/Enemys/Shiva/fall705.gif
+	frame	data/chars/Enemys/Shiva/fall600.gif
+	frame	data/chars/Enemys/Shiva/fall601.gif
+	frame	data/chars/Enemys/Shiva/fall602.gif
+	frame	data/chars/Enemys/Shiva/fall705.gif
+	frame	data/chars/Enemys/Shiva/fall600.gif
+	frame	data/chars/Enemys/Shiva/fall601.gif
+	frame	data/chars/Enemys/Shiva/fall602.gif
+	frame  data/chars/Enemys/Shiva/fall705.gif
+	frame  data/chars/Enemys/Shiva/fall600.gif
+		Attack1  0
+		bbox  0
+		move  0
+	frame  data/chars/Enemys/Shiva/fall01.gif
+
+anim rise
+	loop	0
+	offset	138 192
+	delay	5
+	frame	data/chars/Enemys/Shiva/Rise00.gif
+	frame	data/chars/Enemys/Shiva/Rise01.gif
+	frame	data/chars/Enemys/Shiva/Rise02.gif
+	frame	data/chars/Enemys/Shiva/Rise03.gif
+	frame	data/chars/Enemys/Shiva/Rise04.gif
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	138 192
+	bbox	122 152 35 40
+	frame	data/chars/Enemys/Shiva/jumpland00.gif
+

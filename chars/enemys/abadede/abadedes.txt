@@ -1,0 +1,17 @@
+# Hit flash
+name	abadedes
+candamage  Player obstacle npc pshot
+type	none
+alpha		1
+setlayer -1
+anim idle
+	loop	1
+	delay	2
+	offset	152 201
+		delay  15
+	frame	data/chars/Enemys/abadede/Sp.gif
+	frame	data/chars/Enemys/Fred/a302.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/Enemys/Fred/a302.gif
+
+

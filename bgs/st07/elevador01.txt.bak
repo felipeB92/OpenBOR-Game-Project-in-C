@@ -1,0 +1,39 @@
+name			Elevador01 #GROUND
+type			None
+setlayer -30
+offscreenkill	9000
+
+anim idle
+	loop	0
+	delay	1
+	offset	0 5684
+        quakeframe 2 2 2
+        sound   Data/sounds/elevator_start.wav
+		movea  -5
+	frame	data/Bgs/St07/E00.gif
+	frame	data/Bgs/St07/E00.gif
+	frame	data/Bgs/St07/E00.gif
+	frame	data/Bgs/St07/E00.gif
+	frame	data/Bgs/St07/E00.gif
+	frame	data/Bgs/St07/E00.gif
+	frame	data/Bgs/St07/E00.gif
+	frame	data/Bgs/St07/E00.gif
+	frame	data/Bgs/St07/E00.gif
+	frame	data/Bgs/St07/E00.gif
+	frame	data/Bgs/St07/E00.gif
+	frame	data/Bgs/St07/E00.gif
+	frame	data/Bgs/St07/E00.gif
+	frame	data/Bgs/St07/E00.gif
+	frame	data/Bgs/St07/E00.gif
+	frame	data/Bgs/St07/E00.gif
+	frame	data/Bgs/St07/E00.gif
+	frame	data/Bgs/St07/E00.gif
+	frame	data/Bgs/St07/E00.gif
+	frame	data/Bgs/St07/E00.gif
+	frame	data/Bgs/St07/E00.gif
+	frame	data/Bgs/St07/E00.gif
+	frame	data/Bgs/St07/E00.gif
+	frame	data/Bgs/St07/E00.gif
+	frame	data/Bgs/St07/E00.gif
+		movea  0
+	frame	data/Bgs/St07/E00.gif

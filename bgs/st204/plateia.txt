@@ -1,0 +1,20 @@
+name			Plateia #GROUND
+speed		8
+#scroll		-0.5
+shadow		0
+noquake 	1 1
+type			Panel
+setlayer -50
+
+anim idle
+	loop	1
+	delay	16
+	offset	0 0
+	frame	data/Bgs/St204/people00.gif
+	frame	data/Bgs/St204/people01.gif
+	frame	data/Bgs/St204/people02.gif
+	frame	data/Bgs/St204/people03.gif
+	
+	
+
+

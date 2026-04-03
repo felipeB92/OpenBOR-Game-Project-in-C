@@ -1,0 +1,27 @@
+name			Alarme401 #GROUND
+type			None
+setlayer 5
+
+anim idle
+	loop	1
+	delay	20
+	offset	0 0
+        Sound   Data/sounds/alarm.wav
+	frame	data/Bgs/St401/l00.gif
+	frame	data/Bgs/St401/l01.gif
+	frame	data/Bgs/St401/l02.gif
+	frame	data/Bgs/St401/l03.gif
+	frame	data/Bgs/St401/l04.gif
+	frame	data/Bgs/St401/l05.gif
+	frame	data/Bgs/St401/l06.gif
+	frame	data/Bgs/St401/l07.gif
+	frame	data/Bgs/St401/l00.gif
+	frame	data/Bgs/St401/l01.gif
+	frame	data/Bgs/St401/l02.gif
+	frame	data/Bgs/St401/l03.gif
+	frame	data/Bgs/St401/l04.gif
+	frame	data/Bgs/St401/l05.gif
+	frame	data/Bgs/St401/l06.gif
+	frame	data/Bgs/St401/l07.gif
+
+

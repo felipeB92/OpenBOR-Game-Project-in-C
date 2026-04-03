@@ -1,0 +1,110 @@
+name			Neox_Missile_Fake
+type			none
+subtype			chase
+health			1
+nolife			1
+lifespan		6
+death			1
+remove			0
+nomove			1 0
+gfxshadow		1 1
+antigravity		100
+stealth			2 2
+ondrawscript	data/scripts/ondraw/neox_missile_fake.c
+animationscript	data/scripts/animation/default.c
+
+anim idle
+	followanim 1
+	followcond 1
+	fastattack 0
+	jugglecost 20
+	forcedirection 0
+	hitflash burn
+	loop	0
+	delay	4
+	offset	36 27
+	sound	data/sounds/Wind3.wav
+	burn 24 10025 12 3 20 2 1 0 0 12
+	dropv 4 4 0
+	frame	data/chars/robotx/missile/missile00.gif #LEFT-RIGHT
+	frame	data/chars/robotx/missile/missile01.gif
+	frame	data/chars/robotx/missile/missile00.gif
+	frame	data/chars/robotx/missile/missile01.gif
+	@cmd looper 2 9999
+	burn 27 10018 9 9 20 2 1 0 0 12
+	dropv 4 4 0
+	frame	data/chars/robotx/missile/missile02.gif #DIAGONAL DOWN
+	frame	data/chars/robotx/missile/missile03.gif
+	frame	data/chars/robotx/missile/missile02.gif
+	frame	data/chars/robotx/missile/missile03.gif
+	@cmd looper 6 9999
+	burn 27 10026 9 9 20 2 1 0 0 12
+	dropv 4 4 0
+	frame	data/chars/robotx/missile/missile04.gif #DIAGONAL UP
+	frame	data/chars/robotx/missile/missile05.gif
+	frame	data/chars/robotx/missile/missile04.gif
+	frame	data/chars/robotx/missile/missile05.gif
+	@cmd looper 10 9999
+	burn 34 10016 3 11 20 2 1 0 0 12
+	dropv 4 4 0
+	frame	data/chars/robotx/missile/missile06.gif #DOWN
+	frame	data/chars/robotx/missile/missile07.gif
+	frame	data/chars/robotx/missile/missile06.gif
+	frame	data/chars/robotx/missile/missile07.gif
+	@cmd looper 14 9999
+	burn 34 10026 3 11 20 2 1 0 0 12
+	dropv 4 4 0
+	frame	data/chars/robotx/missile/missile08.gif #UP
+	frame	data/chars/robotx/missile/missile09.gif
+	frame	data/chars/robotx/missile/missile08.gif
+	frame	data/chars/robotx/missile/missile09.gif
+	@cmd looper 18 9999
+	frame	data/chars/robotx/missile/empty.gif
+	
+anim follow1 #EXPLOSION
+	fastattack 0
+	jugglecost 20
+	forcedirection 0
+	hitflash burn
+	loop	0
+	delay	2
+	offset	36 27
+	@cmd spawnBind "destruction" 0 0 1
+	frame	data/chars/robotx/missile/empty.gif
+	burn 12 10000 50 50 20 2 1 0 0 12
+	dropv 4 4 0
+	frame	data/chars/robotx/missile/empty.gif
+	@cmd suicide
+	frame	data/chars/robotx/missile/empty.gif
+	
+anim fall #EXPLOSION
+	fastattack 0
+	jugglecost 20
+	forcedirection 0
+	hitflash burn
+	loop	0
+	delay	2
+	offset	36 27
+	@cmd spawnBind "destruction" 0 0 1
+	frame	data/chars/robotx/missile/empty.gif
+	burn 12 10000 50 50 20 2 1 0 0 12
+	dropv 4 4 0
+	frame	data/chars/robotx/missile/empty.gif
+	@cmd suicide
+	frame	data/chars/robotx/missile/empty.gif
+	
+anim death #EXPLOSION
+	fastattack 0
+	jugglecost 20
+	forcedirection 0
+	hitflash burn
+	loop	0
+	delay	2
+	offset	36 27
+	@cmd spawnBind "destruction" 0 0 1
+	frame	data/chars/robotx/missile/empty.gif
+	burn 12 10000 50 50 20 2 1 0 0 12
+	dropv 4 4 0
+	frame	data/chars/robotx/missile/empty.gif
+	@cmd suicide
+	frame	data/chars/robotx/missile/empty.gif

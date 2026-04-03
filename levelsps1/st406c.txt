@@ -1,0 +1,336 @@
+music		data/bgs/St405/Lv405b.bor
+bossmusic	data/music/boss1.bor
+
+###BACKGROUND
+background		data/bgs/St406/back02.gif
+
+###BGLAYER/PANEL
+panel			data/bgs/St406/pN02.gif	none	none
+
+###MISC
+Frontpanel		data/bgs/St05/Front02.gif
+#order			a
+settime			99
+scrollspeed 	0.5
+stagenumber 	6
+cameratype 1
+backgroundSpeed 1 40
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	30 30  150
+spawn2  	35 30 150
+spawn3  	40 30  150
+
+light		128 -128
+at			0
+
+
+
+
+spawn  Box
+flip   1
+Item   Gold
+	coords  230 200
+	at  0
+
+spawn  Box
+flip   1
+Item   Cash
+	coords  320 200
+	at  0
+
+
+spawn  Box
+flip   1
+Item   Pipe
+	coords  300 250
+	at  0
+
+spawn  Box
+flip   1
+Item   Apple
+	coords  450 250
+	at  0
+
+spawn  Box04
+Item   Knife
+	coords  50 220
+	at  0
+
+
+wait 
+at 100
+
+Group 4 4
+at 100
+
+spawn  hakuyo
+map    3
+health 90
+	coords  400 220 150
+	at  100
+
+
+spawn  HAkuyo
+map    1
+health 90
+	coords  450 260 150
+	at  100
+
+
+spawn  Tiger
+flip   1
+health 90
+	coords  150 250 150
+	at  100
+
+
+spawn  Tiger
+map    4
+health 90
+	coords  100 250 150
+	at  100
+
+
+spawn  Haku_oh
+map    3
+health 90
+	coords  400 220 150
+	at  100
+
+spawn  Sword
+	coords  450 260 140
+	at  100
+
+
+spawn  Kusanagi
+map    1
+health 90
+	coords  450 260 150
+	at  100
+
+
+spawn  Haku_oh
+flip   1
+health 90
+	coords  150 250 150
+	at  100
+
+spawn  Kunai
+	coords  100 250 140
+	at  100
+
+
+spawn  Kusanagi
+map    4
+health 90
+	coords  100 250 150
+	at  100
+
+
+
+
+
+
+
+wait 
+at 400
+
+Group 5 5
+at 200
+
+
+spawn  Zice
+map    1
+health 150
+	coords  500 220
+	at  400
+
+
+spawn  Zelectra
+health 150
+	coords  -100 250
+	at  400
+
+spawn  Zumbie
+map    2
+health 150
+	coords  500 220
+	at  400
+
+
+spawn  Moto
+	coords  500 260
+	at  400
+
+
+spawn  Zice
+MAP    3
+health 150
+	coords  -100 250
+	at  400
+
+
+spawn  Zombie
+map    2
+health 150
+	coords  -100 220
+	at  400
+
+spawn  Box04
+Item   Chicken
+	coords  550 220
+	at  400
+
+spawn  Box04
+2pItem   Chicken
+	coords  600 220
+	at  400
+
+
+spawn  Moto
+alias  Fog
+health 90
+	coords  500 260
+	at  450
+
+
+spawn  maclean
+map    3
+health 100
+	coords  500 230
+	at  500
+
+spawn  macleod
+Item   Gold
+	coords  650 200
+	at  550
+
+spawn  Electra
+Item   Gold
+	coords  650 200
+	at  550
+
+
+
+
+
+wait 
+at 701
+
+Group 4 4
+at 701
+
+spawn  Shiva
+boss   1
+health 500
+	coords  500 220 150
+	at  701
+
+spawn  Electra
+map    1
+health 70
+	coords  500 220
+	at  701
+
+spawn  NOra
+map    1
+health 100
+	coords  -100 240 155
+	at  701
+
+spawn  Signal
+map    1
+health 70
+	coords  500 220
+	at  701
+
+spawn  GArnet
+map    1
+health 70
+	coords  -100 220
+	at  701
+
+
+spawn  Zombie
+map    1
+health 70
+	coords  -100 240
+	at  701
+
+spawn  maclean
+map    3
+health 100
+	coords  500 230
+	at  701
+
+spawn  macleod
+Item   Gold
+	coords  650 200
+	at  701
+
+spawn  Electra
+Item   Gold
+	coords  650 200
+	at  701
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

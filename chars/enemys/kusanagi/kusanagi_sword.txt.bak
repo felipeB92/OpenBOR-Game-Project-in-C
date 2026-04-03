@@ -1,0 +1,235 @@
+name	Kusanagi_Sword
+health	100
+speed	12
+falldie 1
+type	Enemy
+gfxshadow	1
+hostile				player npc
+candamage			player npc obstacle
+JUMPHEIGHT 1 1
+Jumpheight 3
+atchain    1 1 2
+diesound data/voices/die2.wav
+running	20	3	3	1	1
+
+##LOADS
+
+
+
+remap data/chars/Enemys/Kusanagi/idle00.gif data/chars/Enemys/Kusanagi/alter1.gif
+remap data/chars/Enemys/Kusanagi/idle00.gif data/chars/Enemys/Kusanagi/alter2.gif
+remap data/chars/Enemys/Kusanagi/idle00.gif data/chars/Enemys/Kusanagi/alter3.gif
+remap data/chars/Enemys/Kusanagi/idle00.gif data/chars/Enemys/Kusanagi/alter4.gif
+remap data/chars/Enemys/Kusanagi/idle00.gif data/chars/Enemys/Kusanagi/alter5.gif
+
+
+anim	spawn
+	loop	0
+	delay	8
+	bbox	129 111 37 70
+		offset  145  182
+	frame   data/chars/Enemys/Kusanagi/Sword/idle00.gif
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	145 182
+	bbox	130 113 32 69
+	frame   data/chars/Enemys/Kusanagi/Sword/idle00.gif
+	frame   data/chars/Enemys/Kusanagi/Sword/idle01.gif
+	frame   data/chars/Enemys/Kusanagi/Sword/idle02.gif
+	frame   data/chars/Enemys/Kusanagi/Sword/idle03.gif
+
+
+anim walk
+	loop	1
+	delay	10
+	offset	145 182
+	bbox	129 108 35 76
+	jumpframe  6  1  1  0
+	landframe  8
+	frame	data/chars/Enemys/Kusanagi/Sword/walk00.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk01.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk02.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk03.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk00.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk01.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk02.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk03.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk00.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk01.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk02.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk03.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk00.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk01.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk02.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk03.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk00.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk01.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk02.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk03.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk00.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk01.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk02.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk03.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk00.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk00.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk01.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk02.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk03.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk00.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk01.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk02.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk03.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk00.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk01.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk02.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk03.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk00.gif
+		attack1  74  56  51  24  1  0  0  0  0  10
+	frame	data/chars/Enemys/Kusanagi/Sword/a101.gif
+		Attack1  0
+	frame	data/chars/Enemys/Kusanagi/Sword/walk02.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/walk03.gif
+
+
+anim get
+	loop	0
+	delay	10
+	offset	145 182
+	frame	data/chars/Enemys/Kusanagi/Sword/get00.gif
+
+
+anim jump
+	loop	0
+	delay	30
+	offset	145 198
+	bbox	123 128 48 44
+	frame	data/chars/Enemys/Kusanagi/Sword/jumpland00.gif
+
+anim jumpattack
+	loop	0
+	delay	6
+        range   90 100
+	offset	145 182
+	bbox	130 136 40 42
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/Enemys/Kusanagi/Sword/kick01.gif
+	delay	30
+		attack1  155  158  50  30  10  1  0  0  0  20
+	frame	data/chars/Enemys/Kusanagi/Sword/kick02.gif
+
+
+
+
+anim attack1
+	loop	0
+	delay	6
+        Range 0 80
+	offset	145 182
+	bbox	135 111 25 72
+	hitfx	data/sounds/Cutter.wav
+	sound	data/sounds/Whoosh2.wav
+		Attack1  0
+	frame	data/chars/Enemys/Kusanagi/Sword/a100.gif
+		attack1  162  86  63  53  25  1  0  0  0  10
+	frame	data/chars/Enemys/Kusanagi/Sword/a101.gif
+		attack1  152  126  77  26  25  1  0  0  0  10
+	frame	data/chars/Enemys/Kusanagi/Sword/a102.gif
+		attack1  103  122  61  26  25  1  0  0  0  10
+	frame	data/chars/Enemys/Kusanagi/Sword/a103.gif
+		Attack1  0
+	frame	data/chars/Enemys/Kusanagi/Sword/a104.gif
+
+
+
+anim freespecial
+	loop	0
+	delay	6
+        Range 50 70
+	offset	145 182
+	bbox	125 132 46 39
+	jumpframe  0  3  -3  0
+	landframe  8
+        	hitfx	data/sounds/Cutter.wav
+	sound	data/sounds/Whoosh2.wav
+		Attack1  117  123  55  50  15  1  0  0  0  20
+	frame	data/chars/Enemys/Kusanagi/Sword/Jump00.gif
+        sound	data/sounds/Whoosh2.wav
+	frame	data/chars/Enemys/Kusanagi/Sword/Jump01.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/Jump02.gif 
+        sound	data/sounds/Whoosh2.wav
+	frame	data/chars/Enemys/Kusanagi/Sword/Jump03.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/Jump00.gif
+        sound	data/sounds/Whoosh2.wav
+	frame	data/chars/Enemys/Kusanagi/Sword/Jump01.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/jumpatk00.gif
+		attack1  154  138  40  25  10  1  0  0  0  20
+	frame	data/chars/Enemys/Kusanagi/Sword/jumpatk01.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/jumpatk01.gif
+
+anim freespecial2
+	loop	0
+	delay	6
+        Range 150 200
+	offset	145 182
+	bbox	125 132 46 39
+	jumpframe  0  3  3  0
+	landframe  8
+        hitfx	data/sounds/golpes/Fraco.wav
+		Attack1  118  122  53  49  15  1  0  0  0  20
+	frame	data/chars/Enemys/Kusanagi/Sword/Jump00.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/Jump01.gif
+        sound	data/sounds/Whoosh2.wav
+	frame	data/chars/Enemys/Kusanagi/Sword/Jump02.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/Jump03.gif
+        sound	data/sounds/Whoosh2.wav
+	frame	data/chars/Enemys/Kusanagi/Sword/Jump00.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/Jump01.gif
+        sound	data/sounds/Whoosh2.wav
+	frame	data/chars/Enemys/Kusanagi/Sword/jumpatk00.gif
+		attack1  154  138  40  25  10  1  0  0  0  20
+	frame	data/chars/Enemys/Kusanagi/Sword/jumpatk01.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/jumpatk01.gif
+
+anim Upper
+	loop	0
+	delay	6
+	offset	145 182
+	bbox	125 132 46 39
+	jumpframe  0  3  0  0
+	landframe  8
+        hitfx	data/sounds/golpes/Fraco.wav
+		Attack1  123  126  47  45  15  1  0  0  0  20
+	frame	data/chars/Enemys/Kusanagi/Sword/Jump00.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/Jump01.gif
+        sound	data/sounds/Whoosh.wav
+	frame	data/chars/Enemys/Kusanagi/Sword/Jump02.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/Jump03.gif
+        sound	data/sounds/Whoosh2.wav
+	frame	data/chars/Enemys/Kusanagi/Sword/Jump00.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/Jump01.gif
+        sound	data/sounds/Whoosh.wav
+	frame	data/chars/Enemys/Kusanagi/Sword/jumpatk00.gif
+		attack1  154  138  40  25  10  1  0  0  0  20
+	frame	data/chars/Enemys/Kusanagi/Sword/jumpatk01.gif
+	frame	data/chars/Enemys/Kusanagi/Sword/jumpatk01.gif
+
+
+
+
+
+
+
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	145 182
+	bbox	128 133 46 41
+	frame	data/chars/Enemys/Kusanagi/Sword/jumpland00.gif
+

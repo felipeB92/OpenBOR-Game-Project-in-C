@@ -1,0 +1,686 @@
+#levels
+
+timeloc    150 11 180 320 1  
+#timeicon    data/chars/misc/tiempo/tiempo.gif 145 5
+timeicon    data/sprites/time.gif 0 0
+#rush	1	1.5	Combo	3	3	Max_Combo	1	1
+hiscorebg  1
+loadingbg  1 55 200 200 1000 1000
+loadingbg2 1 55 200 200 1000 1000
+completebg 1
+maxplayers 3
+
+#-------menu 
+
+Lbarsize 		126 5 1 1 0 -500 -500 1 -500
+Mpbarsize 		42 5 1 1 0 -500 -500 1 -500
+Rush			1 1 HIT 1 1 _
+Timeloc 		999 999 0 0 1
+Scoreformat 	0
+
+
+
+
+p1smenu			87  240	71 	210
+p2smenu			245 240 221	210
+p3smenu			385 240 371	210
+p4smenu			450 265 399	210
+
+p1icon			8   4
+p2icon			165 4
+p3icon			322 4
+p4icon			361 4
+
+p1namej 		29  4 29  10 19  4
+p2namej 		186 4 186 10 181 4
+p3namej 		343 4 343 10 338 4
+p4namej 		389 4 389 10 379 4
+
+p1score 		29  4 999 999 29  12
+p2score 		186 4 999 999 186 12
+p3score 		343 4 999 999 343 12
+p4score 		384 4 999 999 384 12
+
+p1life			8   23
+p2life			165 23
+p3life			322 23
+p4life			361 21
+
+p1lifex 		138 22 9
+p2lifex 		295 22 9
+p3lifex 		452 22 9
+p4lifex 		600 22 9
+
+p1lifen 		145 15 4
+p2lifen 		305 15 3
+p3lifen 		459 15 5
+p4lifen 		461 14 6
+
+p1mp			92  14
+p2mp			249 14 
+p3mp			406 14  
+p4mp			461 10 
+
+mp1icon			999 999
+mp2icon			999 999
+mp3icon			999 999
+mp4icon			999 999
+
+p1rush			20  66 8   66 999 999 999 999
+p2rush			177 66 165 66 999 999 999 999
+p3rush			334 66 322 66 999 999 999 999
+p4rush			362 66 390 66 999 999 999 999
+
+e1icon			8   32
+e2icon			165 32
+e3icon			322 32
+e4icon			361 29
+
+e1name			31  32
+e2name			188 32
+e3name			345 32
+e4name			384 32
+
+e1life			8   51
+e2life			165 51
+e3life			322 51
+e4life			361 51
+
+
+#-------------------
+
+
+set	    Streets_of_rage
+lives         5
+credits       99
+nosame	      1 1
+continuescore 2
+canSave       2
+custfade 100
+
+
+
+
+#------------------
+
+
+
+z 160 260
+
+file	data/levels/T.txt
+
+z 160 260
+
+file	data/levels/St01.txt
+
+next
+
+z 150 260
+
+file	data/levels/St02.txt
+
+next
+
+
+z 185 268
+
+file	data/levels/St03.txt
+
+next
+
+
+z 185 268
+
+file	data/levels/St04.txt
+
+next
+
+
+z 185 268
+
+file	data/levels/St05.txt
+
+next
+
+
+z 185 268
+
+file	data/levels/St06.txt
+
+next
+
+
+z 185 268
+
+file	data/levels/St07.txt
+
+next
+
+
+z 170 275
+
+file	data/levels/St08.txt
+
+Scene      data/scenes/ending.txt
+
+Scene      data/scenes/Unl.txt
+
+
+end
+
+#-------------------
+
+
+set	    Streets_of_rage_II
+lives         5
+credits       99
+nosame	      1 1
+continuescore 2
+canSave       2
+custfade 100
+
+
+
+
+#-------------------
+
+
+
+
+
+
+z	150 466
+
+file	data/levels/St201a.txt
+
+z	210 270
+
+file	data/levels/St201b.txt
+
+z	210 270
+
+file	data/levels/St201c.txt
+
+Next
+
+
+z	210 270
+
+file	data/levels/St202a.txt
+
+
+z	225 270
+
+file	data/levels/St202b.txt
+
+
+z	210 270
+
+file	data/levels/St202c.txt
+
+Next
+
+
+z	175 270
+
+file	data/levels/St203a.txt
+
+z	140 426
+
+file	data/levels/St203b.txt
+
+
+z	220 270
+
+file	data/levels/St203c.txt
+
+z	220 270
+
+file	data/levels/St203d.txt
+
+z	220 270
+
+file	data/levels/St203E.txt
+
+z	175 270
+
+file	data/levels/St203F.txt
+
+z	175 270
+
+file	data/levels/St203G.txt
+
+Next
+
+
+z	220 270
+
+file	data/levels/St204a.txt
+
+z	220 270
+
+file	data/levels/St204b.txt
+
+z	220 270
+
+file	data/levels/St204c.txt
+
+z	180 270
+
+file	data/levels/St204D.txt
+
+next
+
+z	210 270
+
+file	data/levels/St205a.txt
+
+
+
+z	210 270
+
+file	data/levels/St205b.txt
+
+z	225 280
+
+file	data/levels/St205c.txt
+
+next
+
+z	170 270
+
+file	data/levels/St206a.txt
+
+
+z	152 461
+
+file	data/levels/St206b.txt
+
+next
+
+z	215 275
+
+file	data/levels/St207a.txt
+
+z	215 270
+
+file	data/levels/St207b.txt
+
+
+z	220 270
+
+file	data/levels/St207c.txt
+
+next
+
+
+
+z	210 270
+
+file	data/levels/St208a.txt
+
+
+z	230 270
+
+file	data/levels/St208b.txt
+
+z	200 270
+
+file	data/levels/St208c.txt
+
+
+Scene      data/scenes/ending2.txt
+
+Scene      data/scenes/Unl.txt
+
+end
+
+#-------------------
+
+
+set	    Streets_of_rage_III
+lives         5
+credits       99
+nosame	      1 1
+continuescore 2
+canSave       2
+custfade 100
+
+
+
+
+#-------------------
+
+
+
+z	160 260
+
+file	data/levels/St301a.txt
+
+z	175 260
+
+file	data/levels/St301b.txt
+
+
+z	220 260
+
+file	data/levels/St301c.txt
+
+next
+
+
+z	175 260
+
+file	data/levels/St302a.txt
+
+z	175 260
+
+file	data/levels/St302b.txt
+
+z	195 260
+
+file	data/levels/St302c.txt
+
+next
+
+
+z	220 270
+
+file	data/levels/St303a.txt
+
+z	220 270
+
+file	data/levels/St303b.txt
+
+
+z	220 270
+
+file	data/levels/St303c.txt
+
+z	220 270
+
+file	data/levels/St303D.txt
+
+next
+
+z	220 270
+
+file	data/levels/St304a.txt
+
+
+z	220 270
+
+file	data/levels/St304b.txt
+
+z	220 270
+
+file	data/levels/St304c.txt
+
+Next
+
+
+z	220 270
+
+file	data/levels/St305a.txt
+
+
+z	220 270
+
+file	data/levels/St305b.txt
+
+
+
+
+z	220 270
+
+file	data/levels/St305c.txt
+
+
+
+
+z	220 270
+
+file	data/levels/St305D.txt
+
+
+z	220 270
+
+file	data/levels/St305E.txt
+
+
+
+
+z	205 270
+
+file	data/levels/St305f.txt
+
+
+Next
+
+
+
+z	170 270
+
+file	data/levels/St306a.txt
+
+z	170 270
+
+file	data/levels/St306b.txt
+
+z	170 270
+
+file	data/levels/St306c.txt
+
+
+z	220 270
+
+file	data/levels/St306D.txt
+
+Next
+
+
+z	220 270
+
+file	data/levels/St307a.txt
+
+z	165 270
+
+file	data/levels/St307b.txt
+
+
+z	220 270
+
+file	data/levels/St307c.txt
+
+Next
+
+
+z	220 270
+
+file	data/levels/St308a.txt
+
+z	160 270
+
+file	data/levels/St308b.txt
+
+z	215 270
+
+file	data/levels/St308c.txt
+
+
+z	160 270
+
+file	data/levels/St308d.txt
+
+Scene      data/scenes/ending3.txt
+
+Scene      data/scenes/Unl.txt
+
+end
+
+
+#-------------------
+
+
+set	    Streets_of_rage_revenge_of_Zero 
+lives         5
+credits       99
+nosame	      1 1
+continuescore 2
+canSave       2
+custfade 100
+
+
+
+
+#------------------
+
+
+
+
+z 205 275
+
+file	data/levels/St401a.txt
+
+z 205 275
+
+file	data/levels/St401b.txt
+
+Next
+
+
+z 188 225
+
+file	data/levels/St402a.txt
+
+z 205 275
+
+file	data/levels/St402b.txt
+
+Next
+
+
+z 205 275
+
+file	data/levels/St403a.txt
+
+z 205 275
+
+file	data/levels/St403b.txt
+
+z 180 275
+
+file	data/levels/St403c.txt
+
+Next
+
+z 235 275
+
+file	data/levels/St404a.txt
+
+
+z 170 275
+
+file	data/levels/St404b.txt
+
+z 195 275
+
+file	data/levels/St404c.txt
+
+Next
+
+
+z 222 275
+
+file	data/levels/St405a.txt
+
+
+z 230 275
+
+file	data/levels/St405b.txt
+
+
+
+z 205 275
+
+file	data/levels/St405c.txt
+
+Next
+
+
+z 225 275
+
+file	data/levels/St406a.txt
+
+z 200 275
+
+file	data/levels/St406b.txt
+
+
+z 200 275
+
+file	data/levels/St406c.txt
+
+next
+
+z 210 275
+
+file	data/levels/St407a.txt
+
+
+
+z 210 275
+
+file	data/levels/St407b.txt
+
+
+z 210 275
+
+file	data/levels/St407c.txt
+
+
+
+z 200 275
+
+file	data/levels/St407D.txt
+
+Scene      data/scenes/ending4.txt
+
+Scene      data/scenes/Unl.txt
+
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

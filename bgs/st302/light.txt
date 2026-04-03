@@ -1,0 +1,16 @@
+name		st2_light
+type		panel
+speed		5
+scroll		-1
+shadow		0
+alpha		1
+setlayer	1000
+lifespan	2
+
+anim idle
+	loop	1
+	delay	2
+	offset	150 200
+	frame	data/bgs/sor3_st2/light00.gif
+		delay	3
+	frame	data/bgs/sor3_st2/light01.gif

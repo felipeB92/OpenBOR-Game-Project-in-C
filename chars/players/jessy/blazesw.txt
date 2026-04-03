@@ -1,0 +1,48 @@
+##MAIN
+name				BlazeSW
+type				none
+
+##MISC
+antigravity			100
+
+##SCRIPTS
+ondrawscript		data/scripts/ondraw/channel.c
+
+##REMAPS
+remap				data/chars/blaze/idle00.gif data/chars/blaze/alter1.gif
+remap				data/chars/blaze/idle00.gif data/chars/blaze/alter2.gif
+remap				data/chars/blaze/idle00.gif data/chars/blaze/alter3.gif
+
+##ANIMATIONS#############################################################################
+
+anim freespecial
+	loop	0
+	delay	1000
+	offset	127 179
+	frame	data/chars/blaze/knife/special00.gif
+	frame	data/chars/blaze/knife/special00.gif
+	frame	data/chars/blaze/knife/special01.gif
+	frame	data/chars/blaze/knife/special02.gif
+	frame	data/chars/blaze/knife/special03.gif
+	frame	data/chars/blaze/knife/special04.gif
+	frame	data/chars/blaze/knife/special05.gif
+	frame	data/chars/blaze/knife/special06.gif
+	frame	data/chars/blaze/knife/special07.gif
+	frame	data/chars/blaze/knife/special05.gif
+	frame	data/chars/blaze/knife/special03.gif
+	frame	data/chars/blaze/knife/special04.gif
+	frame	data/chars/blaze/knife/special05.gif
+	frame	data/chars/blaze/knife/special06.gif
+	frame	data/chars/blaze/knife/special01.gif
+	frame	data/chars/blaze/knife/special02.gif
+	frame	data/chars/blaze/knife/special03.gif
+	frame	data/chars/blaze/knife/special04.gif
+	frame	data/chars/blaze/knife/special05.gif
+	frame	data/chars/blaze/knife/special06.gif
+	frame	data/chars/blaze/knife/special07.gif
+	frame	data/chars/blaze/knife/special05.gif
+	frame	data/chars/blaze/knife/special03.gif
+	frame	data/chars/blaze/knife/special04.gif
+	frame	data/chars/blaze/knife/special05.gif
+	frame	data/chars/blaze/knife/special06.gif
+	frame	data/chars/blaze/knife/special00.gif

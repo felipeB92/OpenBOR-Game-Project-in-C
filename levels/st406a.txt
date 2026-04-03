@@ -1,0 +1,370 @@
+music		data/bgs/St406/Lv406a.bor
+bossmusic	data/music/boss2.bor
+
+###BACKGROUND
+background			data/bgs/St305/City00.gif
+
+###BGLAYER/PANEL
+panel			data/bgs/St406/pN00.gif	none	none
+
+###MISC
+Frontpanel			data/bgs/St05/Front02.gif
+#order			a
+settime			99
+scrollspeed 	0.5
+stagenumber 	5
+cameratype 1
+backgroundSpeed 1 40
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	30 30  150
+spawn2  	35 30 150
+spawn3  	40 30  150
+
+light		128 -128
+at			0
+
+
+spawn  Cidade03
+flip   1
+	coords  0 0
+	at  0
+
+spawn  Donovan_b
+map    1
+health 60
+	coords  355 215
+	at  0
+
+
+spawn  Lixo01
+Item   Sword
+	coords  270 225
+	at  0
+
+spawn  Lixo01
+Item   pipe
+	coords  450 225
+	at  0
+
+spawn  Vento
+       flip 1
+	coords  500  0
+	at  100
+
+
+
+spawn  Zumbie
+map    1
+health 150
+	coords  500 220
+	at  100
+
+
+spawn  Zumbie
+health 150
+	coords  500 250
+	at  120
+
+wait 
+at 200
+
+Group 5 5
+at 200
+
+
+spawn  Zoombie
+map    1
+health 150
+	coords  500 220
+	at  200
+
+
+spawn  Zoombie
+health 150
+	coords  -100 250
+	at  200
+
+spawn  Zumbie
+map    2
+health 150
+	coords  500 220
+	at  200
+
+
+spawn  Zumbie
+MAP    3
+health 150
+	coords  -100 250
+	at  200
+
+spawn  Vento
+       flip 1
+	coords  500  0
+	at  200
+
+
+spawn  Zoombie
+map    2
+health 150
+	coords  -100 220
+	at  200
+
+
+spawn  Zoombie
+map    3
+health 150
+	coords  -100 250
+	at  200
+
+spawn  Box03
+Item   Gold
+	coords  650 225
+	at  201
+
+spawn  Vento
+       flip 1
+	coords  500  0
+	at  201
+
+spawn  Box03
+Item   Apple
+	coords  650 225
+	at  375
+
+
+
+wait 
+at 700
+
+Group 1 3
+at 700
+
+spawn  Zelectra
+health 150
+	coords  300 260 150
+	at  700
+
+
+spawn  Zelectra
+map    2
+health 150
+	coords  310 220 150
+	at  700
+
+
+spawn  Zelectra
+Flip   1
+map    1
+health 150
+	coords  100 240 150
+	at  700
+
+wait 
+at 701
+
+Group 4 4
+at 701
+
+spawn  _Galsia
+map    1
+health 70
+	coords  232 220
+	at  701
+
+spawn  Vento
+       flip 1
+	coords  500  0
+	at  701
+
+spawn  _Vice
+map    1
+health 70
+	coords  232 220
+	at  701
+
+spawn  Bigben
+map    1
+health 100
+	coords  350 240 155
+	at  701
+
+spawn  Donovan
+map    1
+health 70
+	coords  500 220
+	at  701
+
+spawn  Slum
+map    1
+health 70
+	coords  -100 220
+	at  701
+
+
+spawn  Signal
+map    1
+health 70
+	coords  -100 240
+	at  701
+
+spawn  Fog
+map    1
+health 70
+	coords  500 220
+	at  701
+
+spawn  Jack
+map    1
+health 150
+	coords  -100 220
+	at  701
+
+spawn  Vento
+       flip 1
+	coords  500  0
+	at  701
+
+Group 9 9
+at 702
+
+spawn  Bloqueio
+flip   1
+2pItem  Chicken
+	coords  677 260
+	at  702
+
+
+spawn  Bloqueio
+Flip   1
+Item  Chicken
+	coords  650 230
+	at  702
+
+
+spawn  Zice
+map    2
+health 150
+	coords  500 240
+	at  750
+
+spawn  Zoombie
+map    1
+health 150
+	coords  500 260
+	at  750
+
+spawn  Zombie
+map    1
+health 150
+	coords  500 220
+	at  800
+
+spawn  ZUmbie
+map    1
+health 150
+	coords  500 220
+	at  800
+
+spawn  Vento
+       flip 1
+	coords  500  0
+	at  900
+
+Group 4 4
+at 1370
+
+
+spawn  Zice
+health 150
+	coords  500 240
+	at  1370
+
+spawn  Zelectra
+health 150
+	coords  300 240 150
+	at  1370
+
+spawn  Gorgoro
+health 250
+	coords  500 240
+	at  1370
+
+spawn  Gorgoro
+map    1
+health 250
+	coords  -100 240
+	at  1370
+
+spawn  Vento
+       flip 1
+	coords  500  0
+	at  1370
+
+spawn  Zice
+map    1
+health 150
+	coords  500 240
+	at  1370
+
+spawn  ZUmbie
+map    2
+health 150
+	coords  -100 220
+	at  1370
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

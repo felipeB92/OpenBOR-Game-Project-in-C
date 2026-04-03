@@ -1,0 +1,221 @@
+##MAIN
+name				Blaze_Bike
+type				none
+hostile				none
+candamage			player enemy npc obstacle
+
+##LIFE
+health				0
+
+##POWER
+offense 			1 #SCRIPT
+
+##SPEED
+speed				1 #SCRIPT
+
+##JUMP
+jumpheight			1 #SCRIPT
+
+##ENERGY
+mp					0
+mprate  			1 #SCRIPT
+
+##GRAB
+grabdistance 		18 #36/33/30
+grabfinish 			0 #PLAYER=0/ENEMY=1
+
+##WEIGHT/HEIGHT
+antigravity			-3 #-3/-6/-9
+height				75
+
+##MISC
+jugglepoints		30
+guardpoints			20
+guardrate			4
+risetime			170
+riseinv				0.4 1 #HEROES 0.4 - ENEMY 0 - BOSS 0.4
+makeinv				2 0
+atchain				1
+weapons				none none none none
+gfxshadow			1 1
+dust				dust
+facing				1
+nodrop				2
+cantgrab			1
+modelflag			3
+
+##SCRIPTS
+didhitscript		data/scripts/didhit/moto.c
+onmodelcopyscript	data/scripts/onmodelcopy/default.c
+animationscript	 	data/scripts/animation/default.c
+script				data/scripts/updateentity/moto.c
+
+##ICONS
+icon				data/chars/blaze/icon.gif 1
+
+##PARROWS
+parrow				data/sprites/parrow.gif 	-15 -140
+parrow2				data/sprites/parrow2.gif 	-15 -140
+parrow3				data/sprites/parrow3.gif 	-15 -140
+parrow4				data/sprites/parrow4.gif 	-15 -140
+
+##DIESOUND
+diesound			data/voices/Blaze1.wav
+
+##REMAPS
+remap				data/chars/blaze/idle00.gif data/chars/blaze/alter1.gif
+remap				data/chars/blaze/idle00.gif data/chars/blaze/alter2.gif
+remap				data/chars/blaze/idle00.gif data/chars/blaze/alter3.gif
+
+##COMMANDS
+com 				a2	freespecial9 #NITRO
+
+##ANIMATIONS#############################################################################
+
+anim idle
+	idle 	1 #REDUNTANT BUT NEEDED TO AVOID PLAYERS TO FREEZE DURING LEVEL START AND MODEL CHANGE TO BIKE TYPE, MAYBE ENGINE BUG
+	loop	1
+	delay	2
+	offset	127 179
+	bbox 	77 106 49 75
+	frame	data/chars/blaze/bike/idle00.gif
+	frame	data/chars/blaze/bike/idle01.gif
+	
+anim walk
+	idle 	1 #REDUNTANT BUT NEEDED TO AVOID PLAYERS TO FREEZE DURING LEVEL START AND MODEL CHANGE TO BIKE TYPE, MAYBE ENGINE BUG
+	fastattack 0
+	jugglecost 31
+	forcedirection 2
+	loop	1
+	delay	2
+	offset	127 179
+	bbox 	77 108 58 73
+	hitfx	data/sounds/HighPunch.wav
+	attack 127 138 54 43 24 0 0 0 10 12
+	frame	data/chars/blaze/bike/walkright00.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/blaze/bike/walkright01.gif
+	
+anim up
+	idle 	1 #REDUNTANT BUT NEEDED TO AVOID PLAYERS TO FREEZE DURING LEVEL START AND MODEL CHANGE TO BIKE TYPE, MAYBE ENGINE BUG
+	fastattack 0
+	jugglecost 31
+	forcedirection 2
+	loop	1
+	delay	2
+	offset	127 179
+	bbox 	77 109 53 72
+	hitfx	data/sounds/HighPunch.wav
+	attack 127 138 54 43 24 0 0 0 10 12
+	frame	data/chars/blaze/bike/walkup00.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/blaze/bike/walkup01.gif
+	
+anim down
+	idle 	1 #REDUNTANT BUT NEEDED TO AVOID PLAYERS TO FREEZE DURING LEVEL START AND MODEL CHANGE TO BIKE TYPE, MAYBE ENGINE BUG
+	fastattack 0
+	jugglecost 31
+	forcedirection 2
+	loop	1
+	delay	2
+	offset	127 179
+	bbox 	77 111 53 70
+	hitfx	data/sounds/HighPunch.wav
+	attack 127 138 54 43 24 0 0 0 10 12
+	frame	data/chars/blaze/bike/walkdown00.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/blaze/bike/walkdown01.gif
+	
+anim backwalk
+	idle 	1 #REDUNTANT BUT NEEDED TO AVOID PLAYERS TO FREEZE DURING LEVEL START AND MODEL CHANGE TO BIKE TYPE, MAYBE ENGINE BUG
+	fastattack 0
+	jugglecost 31
+	forcedirection 2
+	loop	1
+	delay	2
+	offset	127 179
+	bbox 	77 106 49 75
+	hitfx	data/sounds/HighPunch.wav
+	attack 127 138 54 43 24 0 0 0 10 12
+	frame	data/chars/blaze/bike/idle00.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/blaze/bike/idle01.gif
+	
+anim jumpdelay
+	loop	0
+	delay	2
+	offset	127 179
+	frame	data/chars/blaze/bike/jumpdelay00.gif
+	frame	data/chars/blaze/bike/jumpland00.gif
+	
+anim jump
+	fastattack 0
+	jugglecost 31
+	forcedirection 2
+	loop	1
+	delay	2
+	offset	127 179
+	hitfx	data/sounds/HighPunch.wav
+	attack 127 135 54 43 24 0 0 0 10 12
+	frame	data/chars/blaze/bike/jump00.gif
+	frame	data/chars/blaze/bike/jump01.gif
+	
+anim walkoff
+	fastattack 0
+	jugglecost 31
+	forcedirection 2
+	loop	1
+	delay	2
+	offset	127 179
+	hitfx	data/sounds/HighPunch.wav
+	sound	data/sounds/Run3.wav
+	@cmd jump 1
+	attack 127 135 54 43 24 0 0 0 10 12
+	frame	data/chars/blaze/bike/jump00.gif
+	frame	data/chars/blaze/bike/jump01.gif
+	
+anim jumpland
+	loop	0
+	delay	2
+	offset	127 179
+	frame	data/chars/blaze/bike/jumpdelay00.gif
+	frame	data/chars/blaze/bike/jumpland00.gif
+	
+anim pain
+	loop	0
+	delay	2
+	offset	127 179
+	frame	data/chars/blaze/bike/pain00.gif
+	frame	data/chars/blaze/bike/pain01.gif
+	idle 1
+	frame	data/chars/blaze/bike/pain00.gif
+	frame	data/chars/blaze/bike/pain01.gif
+	
+anim fall
+	loop	0
+	delay	2
+	offset	127 179
+	frame	data/chars/blaze/bike/pain00.gif
+	@cmd spawnBind "destruction" 0 40 1
+	frame	data/chars/blaze/bike/pain01.gif
+	
+anim freespecial9 #USE NITRO
+	@cmd lockAni "currentLeader" "other" #THIS WILL LOCK NITRO ANIMATION IF THIS PLAYER IS NOT A LEADER
+	fastattack 0
+	jugglecost 31
+	forcedirection 2
+	energycost 5 1
+	loop	0
+	delay	2
+	offset	127 179
+	hitfx	data/sounds/HighPunch.wav
+	frame	data/chars/blaze/bike/idle00.gif
+	sound	data/sounds/Nitro.wav
+	frame	data/chars/blaze/bike/idle01.gif
+	@cmd spawnBind "nitro" -55 33 -1
+	attack4 127 138 54 43 24 0 0 0 10 12
+	frame	data/chars/blaze/bike/walkright01.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/blaze/bike/walkright00.gif
+	@cmd keyLoop "attack2" 2
+	frame	data/chars/blaze/bike/walkright01.gif

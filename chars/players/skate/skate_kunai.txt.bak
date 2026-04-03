@@ -1,0 +1,216 @@
+name	Skate_Kunai
+health	100
+speed	18
+type	none
+antigrab 2
+gfxshadow	1
+candamage			enemy npc obstacle
+JUMPHEIGHT 1 1
+Jumpheight 3
+icon	data/chars/players/Skate/icon.gif
+diesound data/sounds/Skatedie.wav
+running	28	3	3	1	1
+
+Com d d freespecial5
+Com u u freespecial6
+
+
+Load KunaiT
+
+
+
+remap data/chars/players/Skate/idle00.gif data/chars/players/Skate/alter1.gif
+remap data/chars/players/Skate/idle00.gif data/chars/players/Skate/alter2.gif
+remap data/chars/players/Skate/idle00.gif data/chars/players/Skate/alter3.gif
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	155 175
+	bbox	142 115 21 59
+	frame   data/chars/players/Skate/Kunai/idle00.gif
+	frame   data/chars/players/Skate/Kunai/idle01.gif
+	frame   data/chars/players/Skate/Kunai/idle02.gif
+	frame   data/chars/players/Skate/Kunai/idle03.gif
+
+
+
+
+anim walk
+	loop	1
+	delay	1
+	offset	155 175
+	bbox	139 109 24 68
+	jumpframe  0  0.001  0.001  0
+	landframe  1
+	frame	data/chars/players/Skate/Kunai/walk00.gif
+	frame	data/chars/players/Skate/Kunai/walk00.gif
+	delay	14
+	frame	data/chars/players/Skate/Kunai/walk00.gif
+	frame	data/chars/players/Skate/Kunai/walk01.gif
+	frame	data/chars/players/Skate/Kunai/walk02.gif
+	frame	data/chars/players/Skate/Kunai/walk03.gif
+	frame	data/chars/players/Skate/Kunai/walk04.gif
+	frame	data/chars/players/Skate/Kunai/walk05.gif
+
+
+anim get
+	loop	0
+	delay	10
+	offset	155 175
+	frame	data/chars/players/Skate/Kunai/get00.gif
+
+
+anim jump
+	loop	0
+	delay	5
+	offset	155 175
+	bbox	142 115 27 40
+	frame	data/chars/players/Skate/Kunai/jump00.gif
+	frame	data/chars/players/Skate/Kunai/jump01.gif
+
+
+
+
+anim jumpattack
+	loop	0
+	delay	7
+	offset	155 175
+	bbox	110 103 31 42
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Skate/Kunai/jumpatk00.gif
+		bbox  120  122  39  33
+		attack1  136  135  56  34  10  1  0  0  0  10
+	frame	data/chars/players/Skate/Kunai/jumpatk01.gif
+		attack1  136  132  54  35  10  1  0  0  0  10
+		delay  10
+	frame	data/chars/players/Skate/Kunai/jumpatk02.gif
+		Attack1  0
+	frame	data/chars/players/Skate/Kunai/jumpatk03.gif
+	frame	data/chars/players/Skate/Kunai/jumpatk04.gif
+
+
+
+anim jumpattack2
+	loop	0
+	delay	7
+	offset	155 175
+	bbox	127 126 45 30
+	attack	135 146 29 34 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Skate/Kunai/jumpatk200.gif
+
+anim jumpforward
+	loop	0
+	delay	7
+	offset	155 175
+	bbox	131 113 39 39
+	attack	138 134 59 27 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/soco.wav
+	frame	data/chars/players/Skate/Kunai/fjumpatk01.gif
+
+
+anim runjumpattack
+	loop	0
+	delay	7
+	offset	155 175
+	bbox	124 126 28 37
+	attack	138 137 45 25 7 0
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Skate/Kunai/jumpatk300.gif
+
+anim runattack
+	loop	0
+	delay	4
+	offset	155 175
+	bbox	136 138 31 40
+        hitfx	data/sounds/Armas/Corte.wav
+        Sound	data/sounds/golpes/Chut.wav
+		Attack1  0
+	frame	data/chars/players/Skate/Kunai/get00.gif
+		bbox  135  159  39  19
+		attack  98  160  99  17  15  1  0  0  0  20
+		hitfx  data/sounds/Armas/Corte.wav
+		Sound  data/sounds/golpes/Chut.wav
+		move  10
+	frame  data/chars/players/Skate/Kunai/runatk00.gif
+	frame	data/chars/players/Skate/Kunai/runatk01.gif
+	frame	data/chars/players/Skate/Kunai/runatk00.gif
+	frame	data/chars/players/Skate/Kunai/runatk01.gif
+	frame	data/chars/players/Skate/Kunai/runatk00.gif
+	frame	data/chars/players/Skate/Kunai/runatk01.gif
+		Attack1  0
+		move  4
+	frame	data/chars/players/Skate/Kunai/runatk02.gif
+		bbox  134  139  37  36
+		move  0
+	frame	data/chars/players/Skate/Kunai/Get00.gif
+
+
+anim attack1
+	loop	0
+	delay	6
+	offset	155 175
+	bbox	144 107 22 65
+		Attack1  0
+	sound	data/sounds/armas/Whoosh.wav
+        hitfx	data/sounds/Armas/Corte.wav
+	frame	data/chars/players/Skate/Kunai/a100.gif
+		attack1  144  124  62  15  15  1  0  0  0  15
+	frame	data/chars/players/Skate/Kunai/a101.gif
+		Attack1  0
+	frame	data/chars/players/Skate/Kunai/a102.gif
+
+anim Special2
+	loop	0
+	delay	6
+	offset	155 175
+	bbox	138 109 25 69
+		Attack1  0
+        custknife Kunait
+        throwframe 2 40
+	sound	data/sounds/armas/Whoosh.wav
+        hitfx	data/sounds/Armas/Corte.wav
+	frame	data/chars/players/Skate/Kunai/a100.gif
+		attack1  139  125  58  18  15  1  0  0  0  15
+	frame	data/chars/players/Skate/Kunai/a101.gif
+		Attack1  0
+	frame	data/chars/players/Skate/Kunai/a103.gif
+	frame	data/chars/players/Skate/Kunai/a104.gif
+
+
+
+anim run
+        loop    1
+        delay  10
+	offset	155 175
+	bbox	139 120 35 43
+	jumpframe  0  0.001  0.001  0
+	landframe  1
+        frame	data/chars/players/Skate/Kunai/run00.gif
+        frame	data/chars/players/Skate/Kunai/run01.gif
+        frame	data/chars/players/Skate/Kunai/run02.gif
+        frame	data/chars/players/Skate/Kunai/run03.gif
+        frame	data/chars/players/Skate/Kunai/run04.gif
+        frame	data/chars/players/Skate/Kunai/run05.gif
+
+
+
+
+
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	155 175
+	bbox	144 130 26 42
+	frame	data/chars/players/Skate/Kunai/jumpland00.gif
+

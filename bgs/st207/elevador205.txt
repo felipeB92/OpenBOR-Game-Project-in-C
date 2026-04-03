@@ -1,0 +1,59 @@
+name			elevador205 #GROUND
+type			None
+setlayer -54
+noquake 	1 1
+offscreenkill	5000
+onblockwscript	data/scripts/bounceF.c
+animationscript 	data/scripts/ani0020.h
+ondrawscript 		data/scripts/player_ondrawscript.c
+
+Load Elevador01
+Load Elevador02
+
+anim idle
+	loop	0
+	offset	0 0
+		delay  8
+	@cmd  spawn01  "Elevador01"  0  0  0
+	frame	data/Bgs/St207/e301.gif
+	frame	data/Bgs/St207/e302.gif
+	frame	data/Bgs/St207/e303.gif
+	frame	data/Bgs/St207/e304.gif
+	frame	data/Bgs/St207/e305.gif
+	frame	data/Bgs/St207/e306.gif
+	frame	data/Bgs/St207/e307.gif
+	frame	data/Bgs/St207/e308.gif
+	frame	data/Bgs/St207/e309.gif
+	frame	data/Bgs/St207/e310.gif
+	frame	data/Bgs/St207/e311.gif
+	frame	data/Bgs/St207/e312.gif
+	frame	data/Bgs/St207/e313.gif
+	frame	data/Bgs/St207/e400.gif
+	frame	data/Bgs/St207/e401.gif
+	frame	data/Bgs/St207/e402.gif
+	frame	data/Bgs/St207/e403.gif
+	frame	data/Bgs/St207/e404.gif
+	frame	data/Bgs/St207/e405.gif
+	frame	data/Bgs/St207/e406.gif
+	frame	data/Bgs/St207/e407.gif
+	frame	data/Bgs/St207/e408.gif
+	frame	data/Bgs/St207/e409.gif
+	frame	data/Bgs/St207/e410.gif
+	frame	data/Bgs/St207/e411.gif
+	frame	data/Bgs/St207/e412.gif
+	frame	data/Bgs/St207/e413.gif
+	frame	data/Bgs/St207/e414.gif
+	frame	data/Bgs/St207/e415.gif
+	frame	data/Bgs/St207/e416.gif
+	frame	data/Bgs/St207/e417.gif
+	frame	data/Bgs/St207/e418.gif
+	frame	data/Bgs/St207/e419.gif
+	frame	data/Bgs/St207/e420.gif
+	frame	data/Bgs/St207/e421.gif
+	frame	data/Bgs/St207/e422.gif
+	frame	data/Bgs/St207/e423.gif
+	frame	data/Bgs/St207/e424.gif
+	frame	data/Bgs/St207/e425.gif
+	@cmd  spawn01  "Elevador02"  0  0  0
+	frame	data/Bgs/St207/e425.gif
+

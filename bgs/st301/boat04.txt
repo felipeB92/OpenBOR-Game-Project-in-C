@@ -1,0 +1,79 @@
+name    	Boat04
+health	 	10
+type    	Enemy
+nomove  	1 1
+noflip 1 
+falldie    1
+Notgrab 1
+hostile player
+candamage player
+subject_to_platform 0
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_hole 0
+subject_to_screen 0
+subject_to_gravity 0
+setlayer -80
+offscreenkill	1500
+nolife 1
+onblockwscript	data/scripts/bounceF.c
+animationscript 	data/scripts/ani0020.h
+ondrawscript 		data/scripts/player_ondrawscript.c
+
+Load Ash
+Load Donovan
+Load Boat05
+
+
+anim idle
+	loop	0
+		offset  150  190
+		delay  8
+		move  10
+	frame	data/BGS/st301/Boat11.gif
+        frame	data/BGS/st301/Boat11.gif
+        frame	data/BGS/st301/Boat11.gif
+        frame	data/BGS/st301/Boat11.gif
+        frame	data/BGS/st301/Boat11.gif
+        frame	data/BGS/st301/Boat11.gif
+        frame	data/BGS/st301/Boat11.gif
+        frame	data/BGS/st301/Boat11.gif
+        frame	data/BGS/st301/Boat11.gif
+        frame	data/BGS/st301/Boat11.gif
+        frame	data/BGS/st301/Boat11.gif
+        frame	data/BGS/st301/Boat11.gif
+        frame	data/BGS/st301/Boat11.gif
+        frame	data/BGS/st301/Boat11.gif
+        frame	data/BGS/st301/Boat11.gif
+	frame	data/BGS/st301/Boat11.gif
+        frame	data/BGS/st301/Boat11.gif
+        frame	data/BGS/st301/Boat11.gif
+        frame	data/BGS/st301/Boat11.gif
+        frame	data/BGS/st301/Boat11.gif
+        frame	data/BGS/st301/Boat11.gif
+        frame	data/BGS/st301/Boat11.gif
+        frame	data/BGS/st301/Boat11.gif
+        frame	data/BGS/st301/Boat11.gif
+        frame	data/BGS/st301/Boat11.gif
+        frame	data/BGS/st301/Boat11.gif
+        frame	data/BGS/st301/Boat11.gif
+        frame	data/BGS/st301/Boat11.gif
+        frame	data/BGS/st301/Boat11.gif
+        frame	data/BGS/st301/Boat11.gif
+		move 0
+		delay  30
+        frame	data/BGS/st301/Boat11.gif
+        @cmd	shooter2 "Donovan"  0        20       0     0        3         0.5
+        frame	data/BGS/st301/Boat12.gif
+        @cmd	shooter2 "Donnovan" 0        20       5     0         3         0.5
+        frame	data/BGS/st301/Boat13.gif
+        @cmd	shooter2 "Donovan" 0        20       10     0        3         0.5
+        frame	data/BGS/st301/Boat01.gif
+        @cmd	shooter2 "Donovan" 0        20       20     0        3         0.5
+        frame	data/BGS/st301/Boat00.gif
+        @cmd	shooter2 "ash" 0            20       30     0        3         0.5		
+        @cmd  spawn01  "Boat05"  0  0  0
+        frame	data/BGS/st301/Boat00.gif
+        @cmd killentity getlocalvar("self")
+        frame	data/BGS/st301/Boat00.gif
+

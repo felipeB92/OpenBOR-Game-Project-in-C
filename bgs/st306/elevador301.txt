@@ -1,0 +1,57 @@
+name			elevador301 #GROUND
+type			None
+setlayer -59
+noquake 	1 1
+#offscreenkill	1000
+onblockwscript	data/scripts/bounceF.c
+animationscript 	data/scripts/ani0020.h
+ondrawscript 		data/scripts/player_ondrawscript.c
+
+Load Elevador01
+Load Elevador02
+
+anim idle
+	loop	0
+	offset	0 0
+		delay  10
+	@cmd  spawn01  "Elevador01"  0  0  0
+	frame	data/Bgs/St306/e00.gif
+	frame	data/Bgs/St306/e01.gif
+	frame	data/Bgs/St306/e02.gif
+	frame	data/Bgs/St306/e03.gif
+	frame	data/Bgs/St306/e04.gif
+	frame	data/Bgs/St306/e05.gif
+	frame	data/Bgs/St306/e06.gif
+	frame	data/Bgs/St306/e07.gif
+	frame	data/Bgs/St306/e08.gif
+	frame	data/Bgs/St306/e09.gif
+	frame	data/Bgs/St306/e10.gif
+	frame	data/Bgs/St306/e11.gif
+	frame	data/Bgs/St306/e12.gif
+	frame	data/Bgs/St306/e13.gif
+	frame	data/Bgs/St306/e14.gif
+	frame	data/Bgs/St306/e15.gif
+	frame	data/Bgs/St306/e16.gif
+	frame	data/Bgs/St306/e17.gif
+	frame	data/Bgs/St306/e00.gif
+	frame	data/Bgs/St306/e01.gif
+	frame	data/Bgs/St306/e02.gif
+	frame	data/Bgs/St306/e03.gif
+	frame	data/Bgs/St306/e04.gif
+	frame	data/Bgs/St306/e05.gif
+	frame	data/Bgs/St306/e06.gif
+	frame	data/Bgs/St306/e07.gif
+	frame	data/Bgs/St306/e08.gif
+	frame	data/Bgs/St306/e09.gif
+	frame	data/Bgs/St306/e10.gif
+	frame	data/Bgs/St306/e11.gif
+	frame	data/Bgs/St306/e12.gif
+	frame	data/Bgs/St306/e13.gif
+	frame	data/Bgs/St306/e14.gif
+	frame	data/Bgs/St306/e15.gif
+	frame	data/Bgs/St306/e16.gif
+	frame	data/Bgs/St306/e17.gif
+	@cmd  spawn01  "Elevador02"  0  0  0
+	frame	data/Bgs/St306/e17.gif
+
+

@@ -1,0 +1,16 @@
+name		st2_city1
+type		panel
+shadow		0
+speed		8
+noquake 	1 1
+
+anim idle
+	loop	1
+	delay	9
+	offset	1 163
+	frame	data/bgs/sor2_st2/city00.gif
+	frame	data/bgs/sor2_st2/city01.gif
+	frame	data/bgs/sor2_st2/city02.gif
+	frame	data/bgs/sor2_st2/city03.gif
+	frame	data/bgs/sor2_st2/city04.gif
+	frame	data/bgs/sor2_st2/city05.gif

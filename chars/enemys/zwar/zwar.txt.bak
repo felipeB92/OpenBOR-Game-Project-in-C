@@ -1,0 +1,512 @@
+name	Zwar
+health	900
+speed	8
+aimove				chase
+aggression 99
+riseinv				0.4 1
+falldie 1
+hostile				player npc
+candamage			player npc obstacle
+escapehits			2
+mp			        60
+mprate  			5
+type	Enemy
+gfxshadow	1
+JUMPHEIGHT 1 1
+Jumpheight 3
+atchain    1 2 3 4
+icon	data/chars/Enemys/Zwar/icon.gif 1
+diesound data/voices/bossdie1.wav
+running	20	3	3	1	1
+onblockwscript	data/scripts/bounceF.c
+animationscript 	data/scripts/ani0020.h
+ondrawscript 		data/scripts/player_ondrawscript.c
+
+##LOADS
+Load Trapos02
+Load Tiro01
+Load Missil
+Load Rfire
+Load Head
+Load Mx302
+Load Boom01
+
+remap data/chars/Enemys/Zwar/idle00.gif data/chars/Enemys/Zwar/alter1.gif
+
+
+anim	spawn
+	loop	0
+	delay	400
+	offset	94 139
+	frame   data/chars/Enemys/Zwar/Spw00.gif
+	delay	10
+	frame   data/chars/Enemys/Zwar/Spw01.gif
+	frame   data/chars/Enemys/Zwar/Spw02.gif
+	frame   data/chars/Enemys/Zwar/Spw03.gif
+
+
+
+
+anim idle
+	loop	1
+	delay	25
+	offset	94 139
+	bbox	82 48 45 91
+	frame	data/chars/Enemys/Zwar/Idle00.gif
+	frame	data/chars/Enemys/Zwar/Idle01.gif
+	frame	data/chars/Enemys/Zwar/Idle02.gif
+	frame   data/chars/Enemys/Zwar/Idle01.gif
+
+
+
+anim walk
+	loop	1
+	delay	10
+	offset	102 153
+	bbox	78 47 51 77
+	frame	data/chars/Enemys/Zwar/Walk00.gif
+	frame	data/chars/Enemys/Zwar/Walk01.gif
+	frame	data/chars/Enemys/Zwar/Walk02.gif
+	frame	data/chars/Enemys/Zwar/Walk03.gif
+	frame	data/chars/Enemys/Zwar/Walk04.gif
+	frame	data/chars/Enemys/Zwar/Walk05.gif
+	frame	data/chars/Enemys/Zwar/Walk06.gif
+	frame	data/chars/Enemys/Zwar/Walk07.gif
+	frame	data/chars/Enemys/Zwar/Walk08.gif
+	frame	data/chars/Enemys/Zwar/Walk09.gif
+	frame	data/chars/Enemys/Zwar/Walk10.gif
+	frame	data/chars/Enemys/Zwar/Walk11.gif
+	frame	data/chars/Enemys/Zwar/Walk12.gif
+	frame	data/chars/Enemys/Zwar/Walk13.gif
+	frame	data/chars/Enemys/Zwar/Walk14.gif
+	frame	data/chars/Enemys/Zwar/Walk15.gif
+
+anim Backwalk
+	loop	1
+	delay	10
+	offset	102 152
+	bbox	77 43 54 113
+	frame	data/chars/Enemys/Zwar/Walk15.gif
+	frame	data/chars/Enemys/Zwar/Walk14.gif
+	frame	data/chars/Enemys/Zwar/Walk13.gif
+	frame	data/chars/Enemys/Zwar/Walk12.gif
+	frame	data/chars/Enemys/Zwar/Walk11.gif
+	frame	data/chars/Enemys/Zwar/Walk10.gif
+	frame	data/chars/Enemys/Zwar/Walk09.gif
+	frame	data/chars/Enemys/Zwar/Walk08.gif
+	frame	data/chars/Enemys/Zwar/Walk07.gif
+	frame	data/chars/Enemys/Zwar/Walk06.gif
+	frame	data/chars/Enemys/Zwar/Walk05.gif
+	frame	data/chars/Enemys/Zwar/Walk04.gif
+	frame	data/chars/Enemys/Zwar/Walk03.gif
+	frame	data/chars/Enemys/Zwar/Walk02.gif
+	frame	data/chars/Enemys/Zwar/Walk01.gif
+	frame	data/chars/Enemys/Zwar/Walk00.gif
+
+
+
+
+
+
+
+anim jump
+	loop	0
+	delay	30
+	offset	91 159
+	bbox	85 36 43 95
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Zwar/JumP00.gif
+
+anim jumpattack
+	loop	1
+	delay	8
+        Range 100 150
+	offset	125 192
+	bbox	46 29 56 70
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  91  63  99  72  10  1  0  0  0  10
+	frame	data/chars/Enemys/Zwar/Ja101.gif
+		Attack1  0
+	frame	data/chars/Enemys/Zwar/Ja102.gif
+		attack1  91  63  99  72  10  1  0  0  0  10
+	frame	data/chars/Enemys/Zwar/Ja103.gif
+		Attack1  0
+	frame	data/chars/Enemys/Zwar/Ja104.gif
+
+
+
+
+
+
+anim freeSpecial
+	loop	0
+		offset  74  141
+        Range 150 200
+		delay  5
+		bbox  49  44  64  99
+	frame	data/chars/Enemys/Zwar/fs101.gif
+	frame	data/chars/Enemys/Zwar/fs102.gif
+		attack2  79  78  96  26  15  1  0  0  1  15
+	frame	data/chars/Enemys/Zwar/fs103.gif
+		attack2  80  73  147  36  15  1  0  0  1  15
+	frame	data/chars/Enemys/Zwar/fs104.gif
+		attack2  70  74  205  36  15  1  0  0  1  15
+	frame	data/chars/Enemys/Zwar/fs105.gif
+	frame	data/chars/Enemys/Zwar/fs106.gif
+		Attack1  0
+	frame	data/chars/Enemys/Zwar/fs107.gif
+	frame	data/chars/Enemys/Zwar/fs108.gif
+		delay  5
+	frame	data/chars/Enemys/Zwar/fs109.gif
+	frame	data/chars/Enemys/Zwar/fs110.gif
+	frame	data/chars/Enemys/Zwar/fs111.gif
+	frame	data/chars/Enemys/Zwar/fs112.gif
+	frame	data/chars/Enemys/Zwar/fs113.gif
+
+
+
+
+
+anim freeSpecial2
+	loop	0
+	delay	3
+        Range 200 250
+	offset	93 140
+		Attack1  0
+        hitfx	data/sounds/golpes/forte.wav
+		move  10
+	frame	data/chars/Enemys/Zwar/Dash00.gif
+	frame	data/chars/Enemys/Zwar/Dash01.gif
+	frame	data/chars/Enemys/Zwar/Dash02.gif
+	frame	data/chars/Enemys/Zwar/Dash00.gif
+	frame	data/chars/Enemys/Zwar/Dash01.gif
+	frame	data/chars/Enemys/Zwar/Dash02.gif
+	frame	data/chars/Enemys/Zwar/Dash00.gif
+	frame	data/chars/Enemys/Zwar/Dash01.gif
+	frame	data/chars/Enemys/Zwar/Dash02.gif
+	frame	data/chars/Enemys/Zwar/Dash00.gif
+	frame	data/chars/Enemys/Zwar/Dash01.gif
+	frame	data/chars/Enemys/Zwar/Dash02.gif
+	frame	data/chars/Enemys/Zwar/Dash00.gif
+	frame	data/chars/Enemys/Zwar/Dash01.gif
+	frame	data/chars/Enemys/Zwar/Dash02.gif
+	frame	data/chars/Enemys/Zwar/Dash00.gif
+	frame	data/chars/Enemys/Zwar/Dash01.gif
+	frame	data/chars/Enemys/Zwar/Dash02.gif
+	frame	data/chars/Enemys/Zwar/Dash00.gif
+	frame	data/chars/Enemys/Zwar/Dash01.gif
+	frame	data/chars/Enemys/Zwar/Dash02.gif
+	frame	data/chars/Enemys/Zwar/Dash00.gif
+	frame	data/chars/Enemys/Zwar/Dash01.gif
+	frame	data/chars/Enemys/Zwar/Dash02.gif
+	frame	data/chars/Enemys/Zwar/Dash00.gif
+	frame	data/chars/Enemys/Zwar/Dash01.gif
+	frame	data/chars/Enemys/Zwar/Dash02.gif
+
+
+
+
+
+
+
+
+
+anim Upper
+	loop	0
+	delay	8
+	offset	76 171
+		Attack1  0
+        hitfx	data/sounds/golpes/forte.wav
+		move  5
+	frame	data/chars/Enemys/Zwar/U00.gif
+	frame	data/chars/Enemys/Zwar/U01.gif
+		attack1  92  14  53  118  10  1  0  0  0  10
+		delay  16
+	frame	data/chars/Enemys/Zwar/U02.gif
+		delay  8
+		Attack1  0
+	frame	data/chars/Enemys/Zwar/U03.gif
+	frame	data/chars/Enemys/Zwar/U04.gif
+
+
+
+
+anim Special
+	loop	0
+	delay	4
+        mponly 1
+	energycost 30 1
+	offset	91 171
+		Attack1  0
+	frame	data/chars/Enemys/Zwar/sp100.gif
+	frame	data/chars/Enemys/Zwar/sp101.gif
+	frame	data/chars/Enemys/Zwar/sp102.gif
+	frame	data/chars/Enemys/Zwar/sp103.gif
+	frame	data/chars/Enemys/Zwar/sp104.gif
+	frame	data/chars/Enemys/Zwar/sp105.gif
+	frame	data/chars/Enemys/Zwar/sp106.gif
+	frame	data/chars/Enemys/Zwar/sp107.gif
+	frame	data/chars/Enemys/Zwar/sp108.gif
+	frame	data/chars/Enemys/Zwar/sp109.gif
+		move  100
+	frame	data/chars/Enemys/Zwar/00.gif
+	frame  data/chars/Enemys/Zwar/00.gif
+	frame  data/chars/Enemys/Zwar/00.gif
+		move  0
+	frame	data/chars/Enemys/Zwar/sp109.gif
+	frame	data/chars/Enemys/Zwar/sp108.gif
+	frame	data/chars/Enemys/Zwar/sp107.gif
+	frame	data/chars/Enemys/Zwar/sp106.gif
+	frame	data/chars/Enemys/Zwar/sp105.gif
+	frame	data/chars/Enemys/Zwar/sp104.gif
+	frame	data/chars/Enemys/Zwar/sp103.gif
+	frame	data/chars/Enemys/Zwar/sp102.gif
+	frame	data/chars/Enemys/Zwar/sp101.gif
+	frame	data/chars/Enemys/Zwar/sp100.gif
+
+
+anim Special2
+	loop	0
+	delay	4
+        mponly 1
+	energycost 30 1
+	offset	91 171
+		Attack1  0
+	frame	data/chars/Enemys/Zwar/sp100.gif
+	frame	data/chars/Enemys/Zwar/sp101.gif
+	frame	data/chars/Enemys/Zwar/sp102.gif
+	frame	data/chars/Enemys/Zwar/sp103.gif
+	frame	data/chars/Enemys/Zwar/sp104.gif
+	frame	data/chars/Enemys/Zwar/sp105.gif
+	frame	data/chars/Enemys/Zwar/sp106.gif
+	frame	data/chars/Enemys/Zwar/sp107.gif
+	frame	data/chars/Enemys/Zwar/sp108.gif
+	frame	data/chars/Enemys/Zwar/sp109.gif
+		move  100
+	frame	data/chars/Enemys/Zwar/00.gif
+	frame  data/chars/Enemys/Zwar/00.gif
+	frame  data/chars/Enemys/Zwar/00.gif
+		move  0
+	frame	data/chars/Enemys/Zwar/sp109.gif
+	frame	data/chars/Enemys/Zwar/sp108.gif
+	frame	data/chars/Enemys/Zwar/sp107.gif
+	frame	data/chars/Enemys/Zwar/sp106.gif
+	frame	data/chars/Enemys/Zwar/sp105.gif
+	frame	data/chars/Enemys/Zwar/sp104.gif
+	frame	data/chars/Enemys/Zwar/sp103.gif
+	frame	data/chars/Enemys/Zwar/sp102.gif
+	frame	data/chars/Enemys/Zwar/sp101.gif
+	frame	data/chars/Enemys/Zwar/sp100.gif
+
+
+
+
+
+
+
+anim attack1
+	loop	0
+	delay	5
+        Range 0 100
+	offset	69 136
+	bbox	43 52 65 83
+        hitfx	data/sounds/golpes/Medio.wav
+	frame	data/chars/Enemys/Zwar/a100.gif
+		attack1  118  55  63  41  10  0  0  0  0  20
+	frame	data/chars/Enemys/Zwar/a101.gif
+	frame	data/chars/Enemys/Zwar/a102.gif
+		Attack1  0
+	frame	data/chars/Enemys/Zwar/a103.gif
+		attack2  87  63  96  37  10  1  0  0  0  20
+	frame	data/chars/Enemys/Zwar/a104.gif
+	frame	data/chars/Enemys/Zwar/a105.gif
+		Attack1  0
+	frame	data/chars/Enemys/Zwar/a106.gif
+
+
+
+
+
+
+anim grabbed
+	loop	0
+	delay	100
+	offset	91 115
+	bbox	58 17 50 96
+	frame	data/chars/Enemys/Zwar/Pain200.gif
+
+
+
+anim pain
+	loop	0
+	offset	85 118
+	bbox	50 25 48 93
+	delay	15
+	frame	data/chars/Enemys/Zwar/pain00.gif
+	frame	data/chars/Enemys/Zwar/pain01.gif
+
+anim pain2
+	loop	0
+	offset	87 113
+	bbox	58 13 45 99
+	delay	15
+	frame	data/chars/Enemys/Zwar/pain200.gif
+	frame	data/chars/Enemys/Zwar/pain201.gif
+
+anim pain4
+	loop	0
+	offset	89 117
+	bbox	52 26 52 92
+	delay	250
+	frame	data/chars/Enemys/Zwar/pain00.gif
+
+anim pain5
+	loop	0
+	offset	88 117
+	delay	10
+	frame	data/chars/Enemys/Zwar/pain00.gif
+		move  10
+		offset  88  133
+	frame	data/chars/Enemys/Zwar/fall705.gif
+		move  30
+		delay  10
+	frame	data/chars/Enemys/Zwar/fall603.gif
+        quakeframe 4 2 2
+        Sound	data/Sounds/Efeitos/Estrondo.wav
+		Attack1  0
+		offset  88  126
+	frame	data/chars/Enemys/Zwar/fall900.gif
+		move  1
+		movea  5
+	frame  data/chars/Enemys/Zwar/fall900.gif
+		movea  -5
+	frame  data/chars/Enemys/Zwar/fall900.gif
+		delay  50
+		move  0
+		movea  0
+		Attack1  0
+		offset  70  126
+	frame	data/chars/Enemys/Zwar/Fall01.gif
+		delay  5
+		offset  57  126
+	frame	data/chars/Enemys/Zwar/Rise00.gif
+	frame	data/chars/Enemys/Zwar/Rise01.gif
+	frame  data/chars/Enemys/Zwar/Rise02.gif
+		offset  66  126
+	frame  data/chars/Enemys/Zwar/Rise03.gif
+
+
+anim death
+	loop	0
+	offset	89 118
+	delay	20
+	jumpframe  0  1  -1  0
+	landframe  2
+	frame	data/chars/Enemys/Zwar/fall701.gif
+	frame  data/chars/Enemys/Zwar/fall00.gif
+	frame	data/chars/Enemys/Zwar/fall01.gif
+		@cmd  spawn01  "Boom01"  0 0  0
+	frame  data/chars/Enemys/Zwar/fall00.gif
+		@cmd  spawn01  "Boom01"  10 0  0
+	frame	data/chars/Enemys/Zwar/fall01.gif
+		@cmd  spawn01  "Boom01"  -10 10  0
+	frame	data/chars/Enemys/Zwar/fall01.gif
+		@cmd  spawn01  "Boom01"  10 -10  0
+	frame	data/chars/Enemys/Zwar/fall01.gif
+
+
+anim death5
+	loop	0
+	offset	92 118
+	delay	10
+	frame	data/chars/Enemys/Zwar/pain00.gif
+		move  10
+		offset  92  135
+	frame	data/chars/Enemys/Zwar/fall705.gif
+		move  30
+		delay  10
+	frame	data/chars/Enemys/Zwar/fall603.gif
+		Attack1  0
+		offset  76  127
+	frame	data/chars/Enemys/Zwar/fall900.gif
+		move  1
+		movea  5
+	frame  data/chars/Enemys/Zwar/fall900.gif
+		movea  -5
+	frame  data/chars/Enemys/Zwar/fall900.gif
+		delay  50
+		move  0
+		movea  0
+		Attack1  0
+		@cmd  spawn01  "Boom01"  0 0  0
+	frame  data/chars/Enemys/Zwar/fall00.gif
+		@cmd  spawn01  "Boom01"  10 0  0
+	frame	data/chars/Enemys/Zwar/fall01.gif
+		@cmd  spawn01  "Boom01"  -10 10  0
+	frame	data/chars/Enemys/Zwar/fall01.gif
+		@cmd  spawn01  "Boom01"  10 -10  0
+	frame	data/chars/Enemys/Zwar/fall01.gif
+
+
+anim fall
+	loop	0
+	offset	84 116
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Zwar/fall701.gif
+		attack  41
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Zwar/fall00.gif
+		Attack1  0
+	frame	data/chars/Enemys/Zwar/fall01.gif
+
+anim fall3
+	loop	0
+	offset	93 136
+	delay	5
+	jumpframe  0  3  -3  0
+	landframe  8
+		bbox  57  39  58  96
+		Attack1  0
+	frame	data/chars/Enemys/Zwar/fall705.gif
+	frame	data/chars/Enemys/Zwar/fall600.gif
+	frame	data/chars/Enemys/Zwar/fall601.gif
+	frame	data/chars/Enemys/Zwar/fall602.gif
+	frame	data/chars/Enemys/Zwar/fall705.gif
+	frame	data/chars/Enemys/Zwar/fall600.gif
+	frame	data/chars/Enemys/Zwar/fall601.gif
+	frame	data/chars/Enemys/Zwar/fall602.gif
+	frame	data/chars/Enemys/Zwar/fall705.gif
+	frame	data/chars/Enemys/Zwar/fall600.gif
+	frame	data/chars/Enemys/Zwar/fall601.gif
+	frame	data/chars/Enemys/Zwar/fall602.gif
+	frame  data/chars/Enemys/Zwar/fall705.gif
+	frame  data/chars/Enemys/Zwar/fall600.gif
+		Attack1  0
+		bbox  0
+		move  0
+		offset  74  127
+	frame  data/chars/Enemys/Zwar/fall01.gif
+
+anim rise
+	loop	0
+	offset	79 131
+	delay	12
+	frame	data/chars/Enemys/Zwar/Rise00.gif
+	frame	data/chars/Enemys/Zwar/Rise01.gif
+	frame	data/chars/Enemys/Zwar/Rise02.gif
+		offset  67  125
+	frame	data/chars/Enemys/Zwar/Rise03.gif
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	101 130
+	bbox	82 54 49 77
+	frame	data/chars/Enemys/Zwar/jumpland00.gif
+

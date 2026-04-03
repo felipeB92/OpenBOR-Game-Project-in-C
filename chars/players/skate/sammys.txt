@@ -1,0 +1,82 @@
+##MAIN
+name				SammyS
+type				none
+
+##MISC
+antigravity			100
+
+##SCRIPTS
+ondrawscript		data/scripts/ondraw/channel.c
+
+##REMAPS
+remap				data/chars/sammy/idle00.gif data/chars/sammy/alter1.gif
+remap				data/chars/sammy/idle00.gif data/chars/sammy/alter2.gif
+remap				data/chars/sammy/idle00.gif data/chars/sammy/alter3.gif
+
+##ANIMATIONS#############################################################################
+
+anim freespecial #RAGE
+	loop	0
+	delay	1000
+	offset	153 175
+	frame	data/chars/sammy/rage00.gif
+	frame	data/chars/sammy/rage01.gif
+	frame	data/chars/sammy/rage02.gif
+	frame	data/chars/sammy/rage03.gif
+	frame	data/chars/sammy/rage03.gif
+	frame	data/chars/sammy/rage04.gif
+	frame	data/chars/sammy/rage04.gif
+	frame	data/chars/sammy/rage05.gif
+	frame	data/chars/sammy/rage05.gif
+	frame	data/chars/sammy/rage06.gif
+	frame	data/chars/sammy/rage06.gif
+	frame	data/chars/sammy/jumpland00.gif
+	
+anim follow3 #RAGE
+	loop	0
+	delay	1000
+	offset	153 175
+	frame	data/chars/sammy/rage00.gif
+	frame	data/chars/sammy/rage01.gif
+	frame	data/chars/sammy/rage02.gif
+	frame	data/chars/sammy/rage03.gif
+	frame	data/chars/sammy/rage03.gif
+	frame	data/chars/sammy/rage04.gif
+	frame	data/chars/sammy/rage04.gif
+	frame	data/chars/sammy/rage05.gif
+	frame	data/chars/sammy/rage05.gif
+	frame	data/chars/sammy/rage06.gif
+	frame	data/chars/sammy/rage06.gif
+	frame	data/chars/sammy/jumpland00.gif
+	
+anim freespecial4 #SUPER
+	loop	0
+	delay	1000
+	offset	153 175
+	frame	data/chars/sammy/dodge00.gif
+	frame	data/chars/sammy/dodge01.gif
+	frame	data/chars/sammy/dodge02.gif
+	frame	data/chars/sammy/dodge03.gif
+	frame	data/chars/sammy/dodge04.gif
+	frame	data/chars/sammy/counter00.gif
+	frame	data/chars/sammy/counter01.gif
+	frame	data/chars/sammy/counter02.gif
+	frame	data/chars/sammy/counter03.gif
+	frame	data/chars/sammy/counter04.gif
+	frame	data/chars/sammy/counter05.gif
+	frame	data/chars/sammy/counter05.gif
+	
+anim follow7 #COUNTER
+	loop	0
+	delay	1000
+	offset	153 175
+	frame	data/chars/sammy/dodge00.gif
+	frame	data/chars/sammy/dodge01.gif
+	frame	data/chars/sammy/dodge02.gif
+	frame	data/chars/sammy/dodge03.gif
+	frame	data/chars/sammy/dodge04.gif
+	frame	data/chars/sammy/dodge01.gif
+	frame	data/chars/sammy/dodge02.gif
+	frame	data/chars/sammy/dodge03.gif
+	frame	data/chars/sammy/dodge04.gif
+	frame	data/chars/sammy/dodge05.gif

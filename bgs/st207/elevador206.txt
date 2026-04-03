@@ -1,0 +1,25 @@
+name			elevador206 #GROUND
+type			None
+setlayer 5
+offscreenkill	5000
+onblockwscript	data/scripts/bounceF.c
+animationscript 	data/scripts/ani0020.h
+ondrawscript 		data/scripts/player_ondrawscript.c
+
+Load Elevador01
+Load Elevador02
+
+anim idle
+	loop	0
+	offset	0 0
+		delay  15
+	frame	data/Bgs/St207/e500.gif
+	frame	data/Bgs/St207/e501.gif
+	frame	data/Bgs/St207/e502.gif
+	frame	data/Bgs/St207/e503.gif
+	frame	data/Bgs/St207/e504.gif
+	frame	data/Bgs/St207/e505.gif
+	frame	data/Bgs/St207/e506.gif
+	@cmd  spawn01  "Elevador02"  0  0  0
+	frame	data/Bgs/St207/e507.gif
+

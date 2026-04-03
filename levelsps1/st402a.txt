@@ -1,0 +1,223 @@
+music		data/bgs/St402/Lv402a.bor
+bossmusic	data/music/boss1.bor
+
+###BACKGROUND
+background		data/bgs/St402/back00.gif	1 1 0 0 0 0 1 -1 1 0
+bglayer			data/bgs/St402/back01.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.5
+
+###SKY
+bglayer			data/bgs/St402/bg000.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.6
+bglayer			data/bgs/St402/bg001.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.7
+bglayer			data/bgs/St402/bg002.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.8
+bglayer			data/bgs/St402/bg003.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.9
+
+###GRASS
+bglayer			data/bgs/St402/bg00.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.5
+bglayer			data/bgs/St402/bg01.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.6
+bglayer			data/bgs/St402/bg02.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.7
+bglayer			data/bgs/St402/bg03.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.8
+bglayer			data/bgs/St402/bg04.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.9
+
+###BGLAYER/PANEL
+bglayer			data/bgs/St402/bg05.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 1
+bglayer			data/bgs/St402/pn00.gif 0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 1
+panel			data/bgs/St402/pN01.gif	none	none
+
+###MISC
+fglayer			data/bgs/St05/Front02.gif 			1000 1 1 0 0 0 0 -1 -1 1 2
+#order			a
+settime			99
+bgspeed 15 0
+Rock 2
+scrollspeed 	0.5
+stagenumber 	2
+cameratype 1
+backgroundSpeed 1 40
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	126 0  0
+spawn2  	131 0
+spawn3  	136  0
+
+light		128 -128
+at			0
+
+
+
+Hole  -261  228  -7  0  267  266  41
+Hole  413  233  0  0  139  157  48
+
+
+Group 2 2
+at  0
+
+spawn  Truck402a
+flip   1
+	coords  -200  250
+	at  0
+
+
+spawn  Galsia
+map    1
+health 50
+	coords  250  200 150
+	at  0
+
+spawn  HakuB02
+flip   1
+	coords  -100  220
+	at  0
+
+Group 3 3
+at  0
+
+
+spawn  delay
+flip   1
+	coords  -100  220
+	at  0
+
+spawn  HakuB01
+flip   1
+	coords  -150  220
+	at  0
+
+
+
+
+spawn  Truck402b
+flip   1
+	coords  -200  250
+	at  0
+
+
+spawn  HakuB01
+flip   1
+	coords  -150  220
+	at  0
+
+spawn  delay
+flip   1
+	coords  -100  220
+	at  0
+
+spawn  HakuB02
+flip   1
+	coords  -100  220
+	at  0
+
+spawn  delay
+flip   1
+	coords  -100  220
+	at  0
+
+spawn  HakuB01
+flip   1
+	coords  -150  220
+	at  0
+
+
+spawn  Truck402c
+flip   1
+	coords  -200  250
+	at  0
+
+
+spawn  HakuB01
+flip   1
+	coords  -150  220
+	at  0
+
+spawn  delay
+flip   1
+	coords  -100  220
+	at  0
+
+spawn  HakuB02
+flip   1
+	coords  -100  220
+	at  0
+
+spawn  delay
+flip   1
+	coords  -100  220
+	at  0
+
+spawn  HakuB01
+flip   1
+	coords  -150  220
+	at  0
+
+
+spawn  Truck402a
+flip   1
+	coords  -200  250
+	at  0
+
+
+spawn  HakuB01
+flip   1
+	coords  -150  220
+	at  0
+
+spawn  delay
+flip   1
+	coords  -100  220
+	at  0
+
+spawn  HakuB02
+flip   1
+	coords  -100  220
+	at  0
+
+spawn  delay
+flip   1
+	coords  -100  220
+	at  0
+
+spawn  HakuB01
+flip   1
+	coords  -150  220
+	at  0
+
+spawn  Truck402D
+flip   1
+	coords  -200  250
+	at  0
+
+
+spawn  HakuB01
+flip   1
+	coords  -150  220
+	at  0
+
+spawn  delay
+flip   1
+	coords  -100  220
+	at  0
+
+spawn  HakuB02
+flip   1
+	coords  -100  220
+	at  0
+
+spawn  delay
+flip   1
+	coords  -100  220
+	at  0
+
+spawn  HakuB01
+flip   1
+	coords  -150  220
+	at  0
+
+

@@ -1,0 +1,41 @@
+name			st6_panel1
+type			enemy
+subtype			notgrab
+subject_to_wall	0
+health			1000000
+nolife			1
+nomove			1 1
+gfxshadow		1 1
+noatflash		1
+flash			flash
+stealth			2
+animationscript	data/scripts/animation/default.c
+
+anim idle #ENABLED
+	loop	1
+	delay	24
+	offset	49 76
+	bbox 	37 14 21 69
+	platform 1 88 20 20 78 78 22 1000
+	@cmd aniEcount 1 "ANI_FOLLOW1" 3
+	frame	data/bgs/sor3_st6/panel00.gif
+	@cmd aniEcount 1 "ANI_FOLLOW1" 3
+	frame	data/bgs/sor3_st6/panel01.gif
+	
+anim follow1 #DISABLED
+	loop	1
+	delay	24
+	offset	49 76
+	bbox 	37 14 21 69
+	platform 1 88 20 20 78 78 22 1000
+	@cmd aniEcount 0 "ANI_IDLE" 2
+	frame	data/bgs/sor3_st6/panel00.gif
+	@cmd aniEcount 0 "ANI_IDLE" 2
+	frame	data/bgs/sor3_st6/panel03.gif
+	
+anim pain #GET HIT
+	loop	0
+	delay	8
+	offset	49 76
+	platform 1 88 20 20 78 78 22 1000
+	frame	data/bgs/sor3_st6/panel02.gif

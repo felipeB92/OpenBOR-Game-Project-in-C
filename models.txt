@@ -1,0 +1,523 @@
+colourselect 1
+#nodropen 
+nolost 1 
+versusdamage 1
+nocost    0
+autoland  2
+maxfreespecials 19
+maxattacks 20
+maxattacktypes 19
+maxups  2
+maxdowns  2
+maxwalks  2
+maxidles  2
+maxfollows 90
+maxfreespecials 50
+spdirection 1 1 1 1
+lifescore 30000
+credscore 80000
+noaircancel 2
+#nocheats 1 
+
+
+
+# Players
+
+load	Adam_		data/chars/Players/Adam_/Adam_.txt
+load	_Adam		data/chars/Players/Adam_/_Adam.txt
+
+know	T00	data/chars/Players/T00.txt
+
+
+load	axel		data/chars/Players/axel/axel.txt
+know	axel_pipe	data/chars/Players/axel/axel_Pipe.txt
+know	axel_Knife	data/chars/Players/axel/axel_Knife.txt
+know	axel_Kunai	data/chars/Players/axel/axel_Kunai.txt
+know	axel_sword	data/chars/Players/axel/axel_sword.txt
+
+load	Blaze		data/chars/Players/Blaze/Blaze.txt
+know	Blaze_pipe	data/chars/Players/Blaze/Blaze_pipe.txt
+know	Blaze_Knife	data/chars/Players/Blaze/Blaze_Knife.txt
+know	Blaze_Kunai	data/chars/Players/Blaze/Blaze_Kunai.txt
+know	Blaze_Sword	data/chars/Players/Blaze/Blaze_Sword.txt
+
+load	Adam		data/chars/Players/Adam/Adam.txt
+know	Adam_pipe	data/chars/Players/Adam/Adam_pipe.txt
+know	Adam_Knife	data/chars/Players/Adam/Adam_Knife.txt
+know	Adam_Kunai	data/chars/Players/Adam/Adam_Kunai.txt
+know	Adam_Sword	data/chars/Players/Adam/Adam_Sword.txt
+
+
+
+load	MAx		data/chars/Players/Max/Max.txt
+know	MAx_kunai	data/chars/Players/Max/Max_kunai.txt
+know	MAx_Knife	data/chars/Players/Max/Max_Knife.txt
+know	MAx_Pipe	data/chars/Players/Max/Max_Pipe.txt
+know	MAx_Sword	data/chars/Players/Max/Max_Sword.txt
+
+
+
+load	Skate		data/chars/Players/Skate/Skate.txt
+know	Skate_Kunai	data/chars/Players/Skate/Skate_Kunai.txt
+know	Skate_Knife	data/chars/Players/Skate/Skate_KNife.txt
+know	Skate_Sword	data/chars/Players/Skate/Skate_Sword.txt
+know	Skate_pipe	data/chars/Players/Skate/Skate_pipe.txt
+
+load	Zan		data/chars/Players/Zan/Zan.txt
+know	Zan_powerball	data/chars/Players/Zan/Zan_Powerball.txt
+know	powerball	data/chars/Players/Zan/Powerball.txt
+
+load	_shiva_		data/chars/Players/Shiva/_Shiva_.txt
+
+load	_Roo_		data/chars/Players/Roo/_Roo_.txt
+
+load	_Rick_		data/chars/Players/Rick/_Rick_.txt
+know	_RickM_		data/chars/Players/Rick/_RickM_.txt
+
+
+load	Hayate		data/chars/Players/Hayate/Hayate.txt
+know	HayateP01	data/chars/Players/Hayate/HayateP01.txt
+know	HayateP02	data/chars/Players/Hayate/HayateP02.txt
+
+
+load	jessy		data/chars/Players/jessy/jessy.txt
+know	jessy_Pipe	data/chars/Players/jessy/jessy_Pipe.txt
+know	jessy_Knife	data/chars/Players/jessy/jessy_Knife.txt
+know	jessy_Kunai	data/chars/Players/jessy/jessy_Kunai.txt
+know	jessy_Sword	data/chars/Players/jessy/jessy_Sword.txt
+load	jessyP		data/chars/Players/jessy/jessyP.txt
+
+load	Hanzo		data/chars/Players/HAnzo/Hanzo.txt
+know	Hanzo_Shock	data/chars/Players/HAnzo/Hanzo_Shock.txt
+know	ShockT  	data/chars/Players/HAnzo/Shockt.txt
+
+load	Terry		data/chars/Players/Terry/Terry.txt
+know	TerryP		data/chars/Players/Terry/TerryP.txt
+know	PW01		data/chars/Players/Terry/PW01.txt
+know	PW02		data/chars/Players/Terry/PW02.txt
+know	PG01		data/chars/Players/Terry/PG01.txt
+
+
+# armas
+
+know	Nada		data/chars/Armas/NAda.txt
+know	Pipe		data/chars/Armas/Pipe.txt
+know	Pipet		data/chars/Armas/Pipet.txt
+know	Knife		data/chars/Armas/Knife.txt
+know	Knifet		data/chars/Armas/Knifet.txt
+know	Kunai		data/chars/Armas/Kunai.txt
+know	KunaiT		data/chars/Armas/KunaiT.txt
+know	sword		data/chars/Armas/sword.txt
+know	swordt		data/chars/Armas/swordt.txt
+
+
+
+
+# Inimigos
+
+
+know    Donovan		data/chars/Enemys/donovan/donovan.txt
+know    _Donovan	data/chars/Enemys/donovan/_donovan.txt
+know    Donovan_	data/chars/Enemys/donovan/donovan_.txt
+know    Donovan_B	data/chars/Enemys/donovan/donovan_B.txt
+know    Donovan_A	data/chars/Enemys/donovan/donovan_A.txt
+know    Donovan_pipe	data/chars/Enemys/donovan/donovan_pipe.txt
+know    Galsia		data/chars/Enemys/galsia/galsia.txt
+know    Galsia_		data/chars/Enemys/galsia/galsia_.txt
+know    Galsia_B	data/chars/Enemys/galsia/galsia_B.txt
+know    Galsia_A	data/chars/Enemys/galsia/galsia_A.txt
+know    _Galsia		data/chars/Enemys/galsia/_galsia.txt
+know    Galsia_knife	data/chars/Enemys/galsia/galsia_knife.txt
+know    signal		data/chars/Enemys/signal/signal.txt
+know    signal_		data/chars/Enemys/signal/signal_.txt
+know    Fog		data/chars/Enemys/Fog/Fog.txt
+know    Fog_		data/chars/Enemys/Fog/Fog_.txt
+know    Fog_B		data/chars/Enemys/Fog/Fog_B.txt
+know    G_Fog		data/chars/Enemys/Fog/G_Fog.txt
+know    Moto		data/chars/Enemys/Fog/Moto.txt
+know    Moto02		data/chars/Enemys/Fog/Moto02.txt
+know    Motofall	data/chars/Enemys/Fog/Motofall.txt
+know    Fog_pipe	data/chars/Enemys/Fog/Fog_Pipe.txt
+know    haku_oh		data/chars/Enemys/haku_oh/haku_oh.txt
+know    _haku_oh	data/chars/Enemys/haku_oh/_haku_oh.txt
+know    nora		data/chars/Enemys/Nora/nora.txt
+know    _nora		data/chars/Enemys/Nora/_nora.txt
+know    electra		data/chars/Enemys/electra/electra.txt
+know    Zelectra	data/chars/Enemys/Zelectra/Zelectra.txt
+know    electra_	data/chars/Enemys/electra/electra_.txt
+know    _electra	data/chars/Enemys/electra/_electra.txt
+know    Antonio		data/chars/Enemys/Antonio/Antonio.txt
+know    clown		data/chars/Enemys/clown/clown.txt
+know    clown_		data/chars/Enemys/clown/clown_.txt
+know    Machado		data/chars/Enemys/clown/Machado.txt
+know    Tocha		data/chars/Enemys/clown/Tocha.txt
+know    Fred		data/chars/Enemys/Fred/Fred.txt
+know    Freds		data/chars/Enemys/Fred/Freds.txt
+know    abadede		data/chars/Enemys/abadede/abadede.txt
+know    abadedeS	data/chars/Enemys/abadede/abadedeS.txt
+know    Bob		data/chars/Enemys/Bob/Bob.txt
+know    Bobf00		data/chars/Enemys/Bob/Bobf00.txt
+know    Bobf01		data/chars/Enemys/Bob/Bobf01.txt
+know    Bobf02		data/chars/Enemys/Bob/Bobf02.txt
+know    Bobf03		data/chars/Enemys/Bob/Bobf03.txt
+know    Bobf04		data/chars/Enemys/Bob/Bobf04.txt
+know    Fireball	data/chars/Enemys/Bob/Fireball.txt
+know    Yasha		data/chars/Enemys/Yasha/Yasha.txt
+know    MRX		data/chars/Enemys/MRX/MRX.txt
+know    MRX4		data/chars/Enemys/MRX/MRX4.txt
+know    MRX_		data/chars/Enemys/MRX/MRX_.txt
+know    Tiro01		data/chars/Enemys/MRX/Tiro01.txt
+know    Tiro02		data/chars/Enemys/MRX/Tiro02.txt
+know    Tiro03		data/chars/Enemys/MRX/Tiro03.txt
+know    Tiro04		data/chars/Enemys/MRX/Tiro04.txt
+know    Tiro05		data/chars/Enemys/MRX/Tiro05.txt
+know    cap		data/chars/Enemys/MRX/cap.txt
+know    cap2		data/chars/Enemys/MRX/cap2.txt
+know    JAck		data/chars/Enemys/JAck/JAck.txt
+know    Barbon		data/chars/Enemys/barbon/Barbon.txt
+know    Barbon_		data/chars/Enemys/barbon/Barbon_.txt
+know    Trapos		data/chars/Enemys/Barbon/Trapos.txt
+know    Hakuyo		data/chars/Enemys/Hakuyo/Hakuyo.txt
+know    Hakuyo_		data/chars/Enemys/Hakuyo/Hakuyo_.txt
+know    jet		data/chars/Enemys/Jet/Jet.txt
+know    Kusanagi	data/chars/Enemys/Kusanagi/Kusanagi.txt
+know    Kusanagi_	data/chars/Enemys/Kusanagi/Kusanagi_.txt
+know    Kusanagi_Sword	data/chars/Enemys/Kusanagi/Kusanagi_Sword.txt
+know    Kusanagi_Kunai	data/chars/Enemys/Kusanagi/Kusanagi_Kunai.txt
+know    Star	        data/chars/Enemys/Kusanagi/Star.txt
+know    Alien	        data/chars/Enemys/Alien/Alien.txt
+know    Alien_	        data/chars/Enemys/Alien/Alien_.txt
+know    AlienB	        data/chars/Enemys/AlienB/AlienB.txt
+know    AlienC	        data/chars/Enemys/AlienC/AlienC.txt
+know    Meiovo	        data/chars/Enemys/Alien/Meiovo.txt
+know    Vene	        data/chars/Enemys/Alien/Vene.txt
+know    zamza	        data/chars/Enemys/Zamza/Zamza.txt
+know    Bigben	        data/chars/Enemys/BigBen/Bigben.txt
+know    _Bigben	        data/chars/Enemys/BigBen/_Bigben.txt
+know    Bigf01	        data/chars/Enemys/BigBen/Bigf01.txt
+know    Bigf02	        data/chars/Enemys/BigBen/Bigf02.txt
+know    Bigf03	        data/chars/Enemys/BigBen/Bigf03.txt
+know    Bigf04	        data/chars/Enemys/BigBen/Bigf04.txt
+know    Raven	        data/chars/Enemys/raven/raven.txt
+know    Bear	        data/chars/Enemys/Bear/Bear.txt
+know    Bear_	        data/chars/Enemys/Bear/Bear_.txt
+know    particle        data/chars/Enemys/particle/particle.txt
+know    particleZ       data/chars/Enemys/particle/particleZ.txt
+know    Laser           data/chars/Enemys/particle/Laser.txt
+know    Shiva           data/chars/Enemys/Shiva/Shiva.txt
+know    _Shiva          data/chars/Enemys/Shiva/_Shiva.txt
+know    Shiva_N           data/chars/Enemys/Shiva/Shiva_N.txt
+know    Slum            data/chars/Enemys/Slum/Slum.txt
+know    Slum_           data/chars/Enemys/Slum/Slum_.txt
+know    Vice            data/chars/Enemys/Vice/Vice.txt
+know    zice            data/chars/Enemys/zice/zice.txt
+know    garnet          data/chars/Enemys/Garnet/Garnet.txt
+know    garnet_         data/chars/Enemys/Garnet/Garnet_.txt
+know    _Slum           data/chars/Enemys/Slum/_Slum.txt
+know    _Vice           data/chars/Enemys/Vice/_Vice.txt
+know    _garnet         data/chars/Enemys/Garnet/_Garnet.txt
+know    MaCleod         data/chars/Enemys/MaCleod/MaCleod.txt
+know    MaCleod_        data/chars/Enemys/MaCleod/MaCleod_.txt
+know    maclean         data/chars/Enemys/maclean/maclean.txt
+know    maclean_        data/chars/Enemys/maclean/maclean_.txt
+know    mcbride         data/chars/Enemys/mcbride/mcbride.txt
+know    mcbride_        data/chars/Enemys/mcbride/mcbride_.txt
+know    Tiro06          data/chars/Enemys/MaCleod/Tiro06.txt
+know    Ash             data/chars/Enemys/Ash/Ash.txt
+know    Bruce           data/chars/Enemys/Bruce/Bruce.txt
+know    Roo             data/chars/Enemys/Roo/Roo.txt
+know    Monalisa        data/chars/Enemys/Monalisa/MonaLisa.txt
+know    Monalisa_       data/chars/Enemys/Monalisa/MonaLisa_.txt
+know    MonaWave        data/chars/Enemys/Monalisa/MonaWave.txt
+know 	axel_E		data/chars/Players/axel/axel_E.txt
+know 	Blaze_E		data/chars/Players/Blaze/Blaze_E.txt
+know 	Adam_E		data/chars/Players/Adam/Adam_E.txt
+know 	Tiger		data/chars/Enemys/Tiger/Tiger.txt
+know 	Tiger_		data/chars/Enemys/Tiger/Tiger_.txt
+know 	Yamato		data/chars/Enemys/Yamato/Yamato.txt
+know 	Yamato_		data/chars/Enemys/Yamato/Yamato_.txt
+know 	star02		data/chars/Enemys/Yamato/Star02.txt
+know 	RobotX		data/chars/Enemys/RobotX/RobotX.txt
+know 	RobotZ		data/chars/Enemys/RobotX/RobotZ.txt
+know 	Robot		data/chars/Enemys/RobotX/Robot.txt
+know 	Trapos02	data/chars/Enemys/RobotX/Trapos02.txt
+know 	Missil  	data/chars/Enemys/RobotX/Missil.txt
+know 	Rfire   	data/chars/Enemys/RobotX/Rfire.txt
+know 	Head    	data/chars/Enemys/RobotX/Head.txt
+know 	Jet_Jr    	data/chars/Enemys/Jet_Jr/Jet_Jr.txt
+know 	Rocket    	data/chars/Enemys/Rocket/Rocket.txt
+know 	P1      	data/chars/Enemys/P1/p1.txt
+know 	PZ      	data/chars/Enemys/P1/pZ.txt
+know 	nEOx      	data/chars/Enemys/NeoX/nEOx.txt
+know 	Skeleton      	data/chars/Enemys/Skeleton/Skeleton.txt
+know 	harakiri      	data/chars/Enemys/harakiri/harakiri.txt
+know 	Star03      	data/chars/Enemys/harakiri/Star03.txt
+know 	Jonny      	data/chars/Enemys/Jonny/Jonny.txt
+know 	Zombie      	data/chars/Enemys/Zombie/Zombie.txt
+know 	Zumbie      	data/chars/Enemys/Zumbie/Zumbie.txt
+know 	Zoombie      	data/chars/Enemys/Zoombie/Zoombie.txt
+know 	GordoZ      	data/chars/Enemys/GordoZ/GordoZ.txt
+know 	Gorgoro      	data/chars/Enemys/GorGoro/Gorgoro.txt
+know 	_Gorgoro      	data/chars/Enemys/GorGoro/_Gorgoro.txt
+know 	Armadura      	data/chars/Enemys/Armadura/Armadura.txt
+know 	_Rick      	data/chars/Enemys/Rick/_Rick.txt
+know 	Rick      	data/chars/Enemys/Rick/Rick.txt
+know 	Rick_M      	data/chars/Enemys/Rick/Rick_M.txt
+know 	Zwar      	data/chars/Enemys/Zwar/Zwar.txt
+know 	DashT      	data/chars/Enemys/Zwar/DashT.txt
+
+
+
+
+
+
+# Senarios
+
+know	L01		data/Bgs/St01/L01.txt
+know	L02		data/Bgs/St01/L02.txt
+know	L03		data/Bgs/St01/L03.txt
+know	L04		data/Bgs/St01/L04.txt
+know	L05		data/Bgs/St01/L05.txt
+know	L06		data/Bgs/St01/L06.txt
+know	L07		data/Bgs/St01/L07.txt
+know	Barl		data/Bgs/St01/Barl.txt
+know	Porta		data/Bgs/St01/porta.txt
+know	Cafe		data/Bgs/St01/cafe.txt
+
+know	Poster		data/Bgs/St02/Poster.txt
+know	vento		data/Bgs/St02/Vento.txt
+know	Gota		data/Bgs/St02/Gota.txt
+
+know	Onda		data/Bgs/St03/Onda.txt
+know	Chuva		data/Bgs/St03/Chuva.txt
+
+know	Buraco		data/Bgs/St04/Buraco.txt
+
+know	Prensa01	data/Bgs/St06/Prensa01.txt
+know	Prensa02	data/Bgs/St06/Prensa02.txt
+
+know	elevador01	data/Bgs/St07/elevador01.txt
+know	elevador02	data/Bgs/St07/elevador02.txt
+
+know	Mx01		data/Bgs/St08/Mx01.txt
+know	Mx02		data/Bgs/St08/Mx02.txt
+
+know	L201		data/Bgs/St201/L201.txt
+know	L202		data/Bgs/St201/L202.txt
+know	L203		data/Bgs/St201/L203.txt
+know	Luz01		data/Bgs/St201/Luz01.txt
+know	Luz02		data/Bgs/St201/Luz02.txt
+know	Buraco00	data/Bgs/St201/Buraco00.txt
+know	piano		data/Bgs/St201/piano.txt
+know	Barman		data/Bgs/St201/Barman.txt
+know	Chuva02		data/Bgs/St201/Chuva02.txt
+know	Gotas02		data/Bgs/St201/Gotas02.txt
+
+know	Cidade01	data/Bgs/St202/Cidade01.txt
+know	Cidade02	data/Bgs/St202/Cidade02.txt
+know	Truck01 	data/Bgs/St202/truck01.txt
+know	Truck02 	data/Bgs/St202/truck02.txt
+know	Truck03 	data/Bgs/St202/truck03.txt
+know	TruckF  	data/Bgs/St202/truckF.txt
+know	Luz03		data/Bgs/St202/Luz03.txt
+
+know	Parque01a	data/Bgs/St203/Parque01a.txt
+know	Parque01b	data/Bgs/St203/Parque01b.txt
+know	Parque01c	data/Bgs/St203/Parque01c.txt
+know	Parque01D	data/Bgs/St203/Parque01d.txt
+know	Luz04   	data/Bgs/St203/Luz04.txt
+know	Luz05   	data/Bgs/St203/Luz05.txt
+know	Luz06   	data/Bgs/St203/Luz06.txt
+know	Luz07   	data/Bgs/St203/Luz07.txt
+know	Nevoa   	data/Bgs/St203/Nevoa.txt
+
+know	Plateia   	data/Bgs/St204/Plateia.txt
+
+know	Alm01      	data/Bgs/St205/Alm01.txt
+know	Alm02      	data/Bgs/St205/Alm02.txt
+
+know	Praia      	data/Bgs/St206/praia.txt
+
+know	Esteira01      	data/Bgs/St207/Esteira01.txt
+know	Esteira01s     	data/Bgs/St207/Esteira01s.txt
+know	Esteira02      	data/Bgs/St207/Esteira02.txt
+know	Esteira02s     	data/Bgs/St207/Esteira02s.txt
+know	Esteira03      	data/Bgs/St207/Esteira03.txt
+know	Esteira03s      data/Bgs/St207/Esteira03s.txt
+know	elevador201     data/Bgs/St207/elevador201.txt
+know	elevador202     data/Bgs/St207/elevador202.txt
+know	elevador203     data/Bgs/St207/elevador203.txt
+know	elevador204     data/Bgs/St207/elevador204.txt
+know	elevador205     data/Bgs/St207/elevador205.txt
+know	elevador206     data/Bgs/St207/elevador206.txt
+know	Back200         data/Bgs/St207/BAck200.txt
+know	Back201         data/Bgs/St207/BAck201.txt
+
+know	Mx200           data/Bgs/St208/Mx200.txt
+know	Mx201           data/Bgs/St208/Mx201.txt
+know	Mx202           data/Bgs/St208/Mx202.txt
+know	Sh200           data/Bgs/St208/Sh200.txt
+
+know	Luz08           data/Bgs/St301/Luz08.txt
+know	Ondas           data/Bgs/St301/Ondas.txt
+know	Boat01          data/Bgs/St301/Boat01.txt
+know	Boat02          data/Bgs/St301/Boat02.txt
+know	Boat03          data/Bgs/St301/Boat03.txt
+know	Boat04          data/Bgs/St301/Boat04.txt
+know	Boat05          data/Bgs/St301/Boat05.txt
+know	Gatos           data/Bgs/St301/Gatos.txt
+know	Delay           data/Bgs/St301/delay.txt
+know	Sc              data/Bgs/St301/Sc.txt
+
+know	L302              data/Bgs/St302/L302.txt
+know	Semaphore         data/Bgs/St302/Semaphore.txt
+know	telefones         data/Bgs/St302/telefones.txt
+know	PEssoas           data/Bgs/St302/Pessoas.txt
+know	Dance             data/Bgs/St302/Dance.txt
+know	LuzB00            data/Bgs/St302/LuzB00.txt
+know	LuzB01            data/Bgs/St302/LuzB01.txt
+know	BAr00             data/Bgs/St302/Bar00.txt
+
+know	LuzB03            data/Bgs/St303/LuzB03.txt
+know	LuzB04            data/Bgs/St303/LuzB04.txt
+know	Track             data/Bgs/St303/Track.txt
+
+know	Trilho01          data/Bgs/St304/Trilho01.txt
+know	Trilho02          data/Bgs/St304/Trilho02.txt
+know	Train01           data/Bgs/St304/Train01.txt
+know	Train02           data/Bgs/St304/Train02.txt
+know	Fundo00           data/Bgs/St304/Fundo00.txt
+know	Cabana01          data/Bgs/St304/Cabana01.txt
+know	Cabana02          data/Bgs/St304/Cabana02.txt
+know	Cabana03          data/Bgs/St304/Cabana03.txt
+know	Cabana04          data/Bgs/St304/Cabana04.txt
+
+know	LuzB05            data/Bgs/St305/LuzB05.txt
+know	LuzB06            data/Bgs/St305/LuzB06.txt
+know	Mx300             data/Bgs/St305/Mx300.txt
+know	Mx301             data/Bgs/St305/Mx301.txt
+know	Mx302             data/Bgs/St305/Mx302.txt
+know	Cidade03          data/Bgs/St305/Cidade03.txt
+
+know	Elevador301       data/Bgs/St306/Elevador301.txt
+know	Cidade04          data/Bgs/St306/Cidade04.txt
+know	LuzB07            data/Bgs/St306/luzb07.txt
+
+know	Mansao            data/Bgs/St307/mansao.txt
+know	Fonte             data/Bgs/St307/Fonte.txt
+know	Pessoas02         data/Bgs/St307/Pessoas02.txt
+know	Stage             data/Bgs/St307/Stage.txt
+know	TV                data/Bgs/St307/TV.txt
+
+know	Esteira04      	data/Bgs/St308/Esteira04.txt
+know	Esteira04s     	data/Bgs/St308/Esteira04s.txt
+know	Esteira05      	data/Bgs/St308/Esteira05.txt
+know	Esteira05s     	data/Bgs/St308/Esteira05s.txt
+know	Esteira06      	data/Bgs/St308/Esteira06.txt
+know	Esteira06sa     data/Bgs/St308/Esteira06sa.txt
+know	Esteira06sb     data/Bgs/St308/Esteira06sb.txt
+know	Esteira06sc     data/Bgs/St308/Esteira06sc.txt
+know	Luzb08     	data/Bgs/St308/Luzb08.txt
+know	Fundo300     	data/Bgs/St308/Fundo300.txt
+know	Raio     	data/Bgs/St308/Raio.txt
+know	Zero300     	data/Bgs/St308/Zero300.txt
+know	aLARMEb     	data/Bgs/St308/aLARMEb.txt
+
+know	aLARME401     	data/Bgs/St401/aLARME401.txt
+know	Fog401     	data/Bgs/St401/Fog401.txt
+know	Signal401     	data/Bgs/St401/Signal401.txt
+know	Ash401     	data/Bgs/St401/Ash401.txt
+know	Bigben401     	data/Bgs/St401/Bigben401.txt
+know	Luz401     	data/Bgs/St401/Luz401.txt
+know	HEli401     	data/Bgs/St401/Heli401.txt
+
+know	HakuB01     	data/Bgs/St402/HAkuB01.txt
+know	HakuB02     	data/Bgs/St402/HAkuB02.txt
+know	Truck402a     	data/Bgs/St402/Truck402a.txt
+know	Truck402b     	data/Bgs/St402/Truck402b.txt
+know	Truck402c     	data/Bgs/St402/Truck402c.txt
+know	Truck402D     	data/Bgs/St402/Truck402D.txt
+
+know	Corda403     	data/Bgs/St403/Corda403.txt
+
+know	poste404    	data/Bgs/St404/Poste404.txt
+
+
+know	Shiva407a    	data/Bgs/St407/Shiva407a.txt
+know	MX407a    	data/Bgs/St407/Mx407a.txt
+know	MX407b    	data/Bgs/St407/Mx407b.txt
+know	MX407c    	data/Bgs/St407/Mx407c.txt
+know	MX407D    	data/Bgs/St407/Mx407D.txt
+know	NAve407    	data/Bgs/St407/Nave407.txt
+know	Front407   	data/Bgs/St407/Front407.txt
+know	PC407   	data/Bgs/St407/PC407.txt
+know	PC407b   	data/Bgs/St407/PC407b.txt
+
+
+
+
+# Objetos
+
+know	cabine		data/chars/Objetos/Cabine.txt
+know	Lata		data/chars/Objetos/Lata.txt
+know	Lata02		data/chars/Objetos/Lata02.txt
+know	Lata03		data/chars/Objetos/Lata03.txt
+know	Tires		data/chars/Objetos/Tires.txt
+know	Tires02		data/chars/Objetos/Tires02.txt
+know	Cone		data/chars/Objetos/Cone.txt
+know	Bloqueio	data/chars/Objetos/Bloqueio.txt
+know	Bloqueio02	data/chars/Objetos/Bloqueio02.txt
+know	Pino		data/chars/Objetos/Pino.txt
+know	Duto		data/chars/Objetos/Duto.txt
+know	Box		data/chars/Objetos/Box.txt
+know	Box02		data/chars/Objetos/Box02.txt
+know	Box03		data/chars/Objetos/Box03.txt
+know	Box04		data/chars/Objetos/Box04.txt
+know	Kart01		data/chars/Objetos/Kart01.txt
+know	Kart02		data/chars/Objetos/Kart02.txt
+know	Lixo01		data/chars/Objetos/Lixo01.txt
+know	Lixo02		data/chars/Objetos/Lixo02.txt
+know	Lixo03		data/chars/Objetos/Lixo03.txt
+know	menu		data/chars/Objetos/menu.txt
+know	Cadeira		data/chars/Objetos/cadeira.txt
+know	Mesa		data/chars/Objetos/Mesa.txt
+know	Mesa02		data/chars/Objetos/Mesa02.txt
+know	arcade		data/chars/Objetos/arcade.txt
+know	Ovo		data/chars/Objetos/Ovo.txt
+know	Boom01		data/chars/Objetos/Boom01.txt
+know	Boom02		data/chars/Objetos/Boom02.txt
+know	Granada		data/chars/Objetos/granada.txt
+know	Sandbag		data/chars/Objetos/sandbag.txt
+know	Vaso 		data/chars/Objetos/VAso.txt
+know	Lanterna	data/chars/Objetos/Lanterna.txt
+know	Bau 		data/chars/Objetos/Bau.txt
+know	Estatua01 	data/chars/Objetos/Estatua01.txt
+know	Estatua02 	data/chars/Objetos/Estatua02.txt
+know	Painel  	data/chars/Objetos/Painel.txt
+know	Axe		data/chars/Objetos/Axe.txt
+
+
+# Intens
+
+know	Apple		data/chars/Itens/apple.txt
+know	chicken		data/chars/Itens/chicken.txt
+know	cash		data/chars/Itens/cash.txt
+know	Gold		data/chars/Itens/Gold.txt
+know	1up		data/chars/Itens/1up.txt
+
+
+
+
+
+# Coisas avulsas
+load	Flash		data/chars/Objetos/flash.txt
+
+
+
+
+
+
+
+
+
+

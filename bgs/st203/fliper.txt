@@ -1,0 +1,10 @@
+name		st3_fliper
+type		none
+setlayer	1000
+shadow		0
+
+anim idle
+	loop	0
+	delay	2
+	offset	1 180
+	frame	data/bgs/sor2_st3/fliper00.gif

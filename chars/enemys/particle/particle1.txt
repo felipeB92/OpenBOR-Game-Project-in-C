@@ -1,0 +1,819 @@
+##MAIN
+name				Particle1
+type				enemy
+hostile				player npc
+candamage			player npc obstacle
+
+##LIFE
+health				1 #SCRIPT
+
+##POWER
+offense 			1 #SCRIPT
+
+##SPEED
+speed				1 #SCRIPT
+
+##JUMP
+jumpheight 			1 #SCRIPT
+
+##ENERGY
+mp					120
+mprate  			1 #SCRIPT
+
+##GRAB
+grabdistance 		33 #36/33/30
+grabfinish 			1 #PLAYER=0/ENEMY=1
+
+##WEIGHT/HEIGHT
+antigravity			-9 #-3/-6/-9
+height				92
+
+##MISC
+jugglepoints		30
+guardpoints			20
+guardrate			4
+risetime			170
+riseinv				0.4 1 #HEROES 0.4 - ENEMY 0 - BOSS 0.4
+makeinv				2 0
+atchain				1
+weapons				none none none none
+gfxshadow			1 1
+dust				dust
+aimove				avoid #ENEMY ONLY
+death				2
+noatflash 			1
+flash				flash
+
+##SCRIPTS
+onblockpscript		data/scripts/onblockp/default.c
+ondrawscript		data/scripts/ondraw/particle.c
+onspawnscript		data/scripts/onspawn/particle.c
+animationscript	 	data/scripts/animation/default.c
+takedamagescript	data/scripts/takedamage/armor_robots.c
+
+##ICONS
+icon				data/chars/particle/icon.gif 1
+
+##DIESOUND
+diesound			data/voices/Die5.wav
+
+##REMAPS
+remap				data/chars/particle/idle00.gif data/chars/particle/alter1.gif
+remap				data/chars/particle/idle00.gif data/chars/particle/alter2.gif
+remap				data/chars/particle/idle00.gif data/chars/particle/alter3.gif
+
+##ANIMATIONS#############################################################################
+
+anim spawn
+	loop	0
+	delay	1
+	offset	143 192
+	frame	data/chars/particle/idle00.gif
+
+anim idle
+	loop	1
+	delay	8
+	offset	143 192
+	bbox 	129 102 28 92
+	@cmd clearL
+	frame	data/chars/particle/idle00.gif
+	frame	data/chars/particle/idle01.gif
+
+anim walk
+	loop	1
+	delay	4
+	offset	143 192
+	bbox 	133 109 28 85
+	sound	data/sounds/Run4.wav
+	frame	data/chars/particle/walk00.gif
+	frame	data/chars/particle/walk01.gif
+	frame	data/chars/particle/walk00.gif
+	frame	data/chars/particle/walk01.gif
+	
+anim backwalk
+	loop	1
+	delay	4
+	offset	143 192
+	bbox 	133 109 28 85
+	sound	data/sounds/Run4.wav
+	frame	data/chars/particle/backwalk00.gif
+	frame	data/chars/particle/backwalk01.gif
+
+anim get
+	loop	0
+	delay	16
+	offset	143 192
+	frame	data/chars/particle/get00.gif
+
+anim grabbed
+	loop	0
+	delay	8
+	offset	143 192
+	bbox 	133 109 28 85
+	frame	data/chars/particle/grabbed00.gif
+	
+anim jumpdelay
+	loop	0
+	delay	12
+	offset	143 192
+	bbox 	129 105 28 89
+	frame	data/chars/particle/smalljump00.gif
+	bbox 	129 109 28 85
+	frame	data/chars/particle/smalljump01.gif
+	bbox 	129 117 28 77
+	frame	data/chars/particle/smalljump02.gif
+	bbox 	129 109 28 85
+	frame	data/chars/particle/smalljump03.gif
+
+anim walkoff
+	loop	0
+	delay	30
+	offset	143 192
+	bbox 	129 94 28 98
+	@cmd jump 1
+	frame	data/chars/particle/smalljump04.gif
+	
+anim jumpland
+	loop	0
+	delay	12
+	offset	143 192
+	bbox 	129 102 28 92
+	@cmd spawn01 "quakelow" 0 0 0
+	sound	data/sounds/Jumpland3.wav
+	frame	data/chars/particle/smalljump05.gif
+	bbox 	129 105 28 89
+	frame	data/chars/particle/smalljump06.gif
+	frame	data/chars/particle/smalljump07.gif
+
+anim pain #UP
+	loop	0
+	delay	4
+	offset	143 192
+	bbox 	123 106 28 88
+	frame	data/chars/particle/pain00.gif
+	frame	data/chars/particle/pain01.gif
+	frame	data/chars/particle/pain00.gif
+	frame	data/chars/particle/pain01.gif
+	frame	data/chars/particle/pain00.gif
+	frame	data/chars/particle/pain01.gif
+	frame	data/chars/particle/pain00.gif
+	frame	data/chars/particle/pain01.gif
+
+anim pain2 #DOWN
+	loop	0
+	delay	4
+	offset	143 192
+	bbox 	133 117 28 77
+	frame	data/chars/particle/pain200.gif
+	frame	data/chars/particle/pain201.gif
+	frame	data/chars/particle/pain200.gif
+	frame	data/chars/particle/pain201.gif
+	frame	data/chars/particle/pain200.gif
+	frame	data/chars/particle/pain201.gif
+	frame	data/chars/particle/pain200.gif
+	frame	data/chars/particle/pain201.gif
+
+anim fall #NORMAL
+	landframe 1
+	loop	0
+	delay	999
+	offset	143 192
+	bbox 	116 123 46 47
+	frame	data/chars/particle/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Iron4.wav
+	frame	data/chars/particle/fall01.gif
+
+anim burn #BURNED FALL
+	landframe 2
+	loop	1 0 2
+	delay	3
+	offset	143 192
+	bbox 	116 123 46 47
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	frame	data/chars/particle/fall00.gif
+	@cmd spawn01 "smoke" 0 50 0
+	drawmethod tintmode 2
+	drawmethod tintcolor 255
+	frame	data/chars/particle/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	nodrawmethod
+	sound	data/sounds/Iron4.wav
+	frame	data/chars/particle/fall01.gif
+
+anim shock #SHOCKED FALL
+	landframe 2
+	loop	1 0 2
+	delay	3
+	offset	143 192
+	bbox 	116 123 46 47
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame	data/chars/particle/fall00.gif
+	drawmethod tintmode 2
+	drawmethod tintcolor -255
+	frame	data/chars/particle/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	nodrawmethod
+	sound	data/sounds/Iron4.wav
+	frame	data/chars/particle/fall01.gif
+	
+anim fall6 #SPIN FALL
+	landframe 4
+	loop	1 0 4
+	delay	3
+	offset	143 192
+	frame	data/chars/particle/fall600.gif
+	frame	data/chars/particle/fall601.gif
+	frame	data/chars/particle/fall602.gif
+	frame	data/chars/particle/fall603.gif
+		delay	8
+	sound	data/sounds/Iron4.wav
+	frame	data/chars/particle/fall01.gif
+
+anim fall7 #GRABSTART POSITION
+	loop	0
+	delay	1000
+	offset	143 192
+	frame	data/chars/particle/fall700.gif
+	frame	data/chars/particle/fall701.gif
+	frame	data/chars/particle/fall702.gif
+	frame	data/chars/particle/fall703.gif
+	frame	data/chars/particle/fall704.gif
+	frame	data/chars/particle/fall705.gif
+
+anim fall8 #FINISH/THROW TYPE 3
+	landframe 1
+	loop	0
+	delay	999
+	offset	143 192
+	bbox 	116 123 46 47
+	hitfx	data/sounds/MediumKick.wav
+	attack 116 123 46 47 4 1 0 0 0 12
+	frame	data/chars/particle/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Iron4.wav
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/particle/fall01.gif
+
+anim fall9 #FINISH/THROW TYPE 2
+	landframe 1
+	loop	0
+	delay	999
+	offset	143 192
+	bbox 	129 122 28 77
+	hitfx	data/sounds/MediumKick.wav
+	attack 129 122 28 77 4 1 0 0 0 12
+	frame	data/chars/particle/fall900.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Iron4.wav
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/particle/fall01.gif
+	
+anim death #EXPLOSION
+	loop	0
+	delay	16
+	offset	143 192
+	@cmd spawnBind "explosion" 0 15 1
+	frame	data/chars/particle/fall01.gif
+	@cmd spawnBind "explosion" -30 15 1
+	frame	data/chars/particle/fall01.gif
+	@cmd spawnBind "explosion" 30 15 1
+	frame	data/chars/particle/fall01.gif
+	@cmd spawnBind "explosion" 0 15 1
+	frame	data/chars/particle/fall01.gif
+		delay	64
+	frame	data/chars/particle/fall01.gif
+
+anim rise
+	loop	0
+	delay	8
+	offset	143 192
+		move  36
+	frame	data/chars/particle/rise00.gif
+		move  0
+	frame	data/chars/particle/rise01.gif
+	frame	data/chars/particle/rise02.gif
+
+anim attack1 #FRONT SPIKEBALL
+	range 0 120
+	fastattack 1
+	jugglecost 20
+	forcedirection -1
+	loop	0
+	delay	2
+	offset	143 192
+	bbox 	129 102 28 92
+	hitfx	data/sounds/Clash4.wav
+	sound	data/sounds/Whoosh3.wav
+	frame	data/chars/particle/a100.gif
+	frame	data/chars/particle/a101.gif
+	attack 158 117 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a102.gif
+	attack 171 117 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a103.gif
+	attack 182 117 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a104.gif
+	attack 192 117 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a105.gif
+	attack 200 117 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a106.gif
+	attack 206 117 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a107.gif
+	attack 210 117 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a108.gif
+	attack 213 117 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a109.gif
+	attack 210 117 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a108.gif
+	attack 206 117 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a107.gif
+	attack 200 117 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a106.gif
+	attack 192 117 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a105.gif
+	attack 182 117 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a104.gif
+	attack 171 117 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a103.gif
+	attack 158 117 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a102.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/particle/a101.gif
+	frame	data/chars/particle/a100.gif
+
+anim attack2 #CIRCLE SPIKEBALL
+	range 80 160
+	fastattack 1
+	jugglecost 20
+	forcedirection 0
+	loop	0
+	delay	2
+	offset	143 192
+	bbox 	129 102 28 92
+	hitfx	data/sounds/Clash4.wav
+	sound	data/sounds/Whoosh3.wav
+	frame	data/chars/particle/a200.gif
+	frame	data/chars/particle/a201.gif
+	attack 177 119 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a202.gif
+	attack 177 122 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a203.gif
+	attack 176 126 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a204.gif
+	attack 174 128 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a205.gif
+	attack 169 132 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a206.gif
+	attack 165 134 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a207.gif
+	attack 158 136 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a208.gif
+	attack 151 138 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a209.gif
+	attack 145 138 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a210.gif
+	attack 137 139 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a211.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/particle/a212.gif
+	attack 120 138 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a213.gif
+	attack 112 136 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a214.gif
+	attack 104 133 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a215.gif
+	attack 98 130 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a216.gif
+	attack 92 126 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a217.gif
+	attack 89 121 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a218.gif
+	attack 86 117 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a219.gif
+	attack 86 112 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a220.gif
+	attack 86 106 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a221.gif
+	attack 90 101 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a222.gif
+	attack 96 96 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a223.gif
+	attack 103 91 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a224.gif
+	attack 111 87 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a225.gif
+	attack 122 84 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a226.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/particle/a227.gif
+	attack 145 80 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a228.gif
+	attack 156 81 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a229.gif
+	attack 169 81 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a230.gif
+	@cmd aniChange 0 "ANI_FOLLOW1"
+	frame	data/chars/particle/a230.gif
+
+anim follow1
+	fastattack 1
+	jugglecost 20
+	forcedirection -1
+	loop	0
+	delay	2
+	offset	143 192
+	bbox 	129 102 28 92
+	hitfx	data/sounds/Clash4.wav
+	sound	data/sounds/Whoosh3.wav
+	attack 183 83 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a231.gif
+	attack 194 86 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a232.gif
+	attack 206 92 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a233.gif
+	attack 215 96 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a234.gif
+	attack 222 103 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a235.gif
+	attack 226 110 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a236.gif
+	attack 231 117 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a237.gif
+	attack 229 123 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a238.gif
+	attack 228 131 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a239.gif
+	attack 222 139 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a240.gif
+	attack 215 145 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a241.gif
+	attack 203 152 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a242.gif
+	attack 192 157 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a243.gif
+	attack 177 162 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a244.gif
+	attack 160 164 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a245.gif
+	attack 145 165 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a246.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/particle/a247.gif
+	attack 111 165 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a248.gif
+	attack 93 161 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a249.gif
+	attack 79 157 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a250.gif
+	attack 63 150 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a251.gif
+	attack 51 144 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a252.gif
+	attack 45 134 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a253.gif
+	attack 41 124 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a254.gif
+	attack 39 115 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a255.gif
+	attack 43 107 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a256.gif
+	attack 48 99 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a257.gif
+	attack 55 91 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a258.gif
+	attack 66 84 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a259.gif
+	attack 81 78 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a260.gif
+	attack 95 74 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a261.gif
+	attack 112 71 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a262.gif
+	@cmd aniChange 0 "ANI_FOLLOW2"
+	frame	data/chars/particle/a262.gif
+
+anim follow2
+	fastattack 1
+	jugglecost 20
+	forcedirection -1
+	loop	0
+	delay	2
+	offset	143 192
+	bbox 	129 102 28 92
+	hitfx	data/sounds/Clash4.wav
+	sound	data/sounds/Whoosh3.wav
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/particle/a263.gif
+	attack 145 69 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a264.gif
+	attack 159 71 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a265.gif
+	attack 175 73 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a266.gif
+	attack 190 78 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a267.gif
+	attack 200 82 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a268.gif
+	attack 211 89 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a269.gif
+	attack 218 95 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a270.gif
+	attack 224 103 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a271.gif
+	attack 225 110 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a272.gif
+	attack 226 117 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a273.gif
+	attack 222 123 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a274.gif
+	attack 218 129 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a275.gif
+	attack 211 136 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a276.gif
+	attack 202 140 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a277.gif
+	attack 191 145 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a278.gif
+	attack 181 148 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a279.gif
+	attack 168 150 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a280.gif
+	attack 155 150 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a281.gif
+	attack 145 151 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a282.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/particle/a283.gif
+	attack 123 147 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a284.gif
+	attack 113 144 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a285.gif
+	attack 106 140 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a286.gif
+	attack 98 135 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a287.gif
+	attack 94 131 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a288.gif
+	attack 91 126 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a289.gif
+	attack 90 121 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a290.gif
+	attack 90 117 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a291.gif
+	attack 93 112 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a292.gif
+	attack 96 108 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a293.gif
+	attack 102 104 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a294.gif
+	@cmd aniChange 0 "ANI_FOLLOW3"
+	frame	data/chars/particle/a294.gif
+
+anim follow3
+	fastattack 1
+	jugglecost 20
+	forcedirection -1
+	loop	0
+	delay	2
+	offset	143 192
+	bbox 	129 102 28 92
+	hitfx	data/sounds/Clash4.wav
+	sound	data/sounds/Whoosh3.wav
+	attack 107 101 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a295.gif
+	attack 115 99 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a296.gif
+	attack 122 97 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a297.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/particle/a298.gif
+	attack 138 96 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a299.gif
+	attack 145 96 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a2100.gif
+	attack 151 97 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a2101.gif
+	attack 157 99 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a2102.gif
+	attack 163 101 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a2103.gif
+	attack 166 103 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a2104.gif
+	attack 170 106 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a2105.gif
+	attack 172 109 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a2106.gif
+	attack 173 111 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a2107.gif
+	attack 173 114 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a2108.gif
+	attack 172 117 23 19 20 1 0 0 20 12
+	frame	data/chars/particle/a2109.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/particle/a2110.gif
+	frame	data/chars/particle/a2111.gif
+	frame	data/chars/particle/a2112.gif
+	frame	data/chars/particle/a2113.gif
+	frame	data/chars/particle/a2114.gif
+	frame	data/chars/particle/a2115.gif
+	frame	data/chars/particle/a2116.gif
+	frame	data/chars/particle/a2117.gif
+	frame	data/chars/particle/a2118.gif
+	frame	data/chars/particle/a2119.gif
+	frame	data/chars/particle/a2120.gif
+	frame	data/chars/particle/a2121.gif
+
+anim special #SHOCK
+	fastattack 1
+	jugglecost 5
+	forcedirection 0
+	energycost 2 2
+	hitflash shock
+	loop	0
+	delay	3
+	offset	143 192
+	sound	data/sounds/Shock.wav
+	frame	data/chars/particle/special00.gif
+	frame	data/chars/particle/special01.gif
+	frame	data/chars/particle/special00.gif
+	frame	data/chars/particle/special01.gif
+	shock 114 109 61 85 20 1 0 0 0 12
+	frame	data/chars/particle/special02.gif
+	frame	data/chars/particle/special03.gif
+	frame	data/chars/particle/special04.gif
+	frame	data/chars/particle/special03.gif
+	frame	data/chars/particle/special02.gif
+	frame	data/chars/particle/special03.gif
+	frame	data/chars/particle/special04.gif
+	frame	data/chars/particle/special03.gif
+	
+anim freespecial #LASER
+	range 60 450
+	rangea 0 0
+	loop	0
+	delay	6
+	offset	143 192
+	bbox 	129 105 28 89
+	sound	data/voices/Attack7.wav
+	frame	data/chars/particle/laser00.gif
+	bbox 	129 109 28 85
+	frame	data/chars/particle/laser01.gif
+	bbox 	129 117 28 77
+	frame	data/chars/particle/laser02.gif
+	bbox 	129 128 28 66
+	frame	data/chars/particle/laser03.gif
+	bbox 	129 133 28 61
+	frame	data/chars/particle/laser04.gif
+		delay	2
+	frame	data/chars/particle/laser05.gif
+	frame	data/chars/particle/laser06.gif
+		delay	6
+	@cmd looper 5 7
+	frame	data/chars/particle/laser07.gif
+	@cmd shoot "particle_laser" 0 0 0 6 0 0
+	sound	data/sounds/LaserShot.wav
+	frame	data/chars/particle/laser08.gif
+	frame	data/chars/particle/laser09.gif
+	frame	data/chars/particle/laser10.gif
+	bbox 	129 128 28 66
+	frame	data/chars/particle/laser11.gif
+	bbox 	129 117 28 77
+	frame	data/chars/particle/laser12.gif
+	bbox 	129 109 28 85
+	frame	data/chars/particle/laser13.gif
+	bbox 	129 105 28 89
+	frame	data/chars/particle/laser14.gif
+	bbox 	129 102 28 92
+	frame	data/chars/particle/laser15.gif
+
+anim freespecial2 #SMALL JUMP ADVANCE
+	range 50 200
+	rangea 0 100
+	rangez -50 50
+	landframe 6
+	loop	0
+	delay	6
+	offset	143 192
+	bbox 	129 105 28 89
+	frame	data/chars/particle/smalljump00.gif
+	bbox 	129 109 28 85
+	frame	data/chars/particle/smalljump01.gif
+	bbox 	129 117 28 77
+	frame	data/chars/particle/smalljump02.gif
+	bbox 	129 109 28 85
+	frame	data/chars/particle/smalljump03.gif
+	@cmd target 1.3 1.3
+	@cmd leapTarget 2
+	bbox 	129 94 28 98
+	sound	data/sounds/Jumping.wav
+	frame	data/chars/particle/smalljump04.gif
+		delay	999
+	frame	data/chars/particle/smalljump04.gif
+		delay	6
+	bbox 	129 102 28 92
+	@cmd spawn01 "quakelow" 0 0 0
+	sound	data/sounds/Jumpland3.wav
+	frame	data/chars/particle/smalljump05.gif
+	bbox 	129 105 28 89
+	frame	data/chars/particle/smalljump06.gif
+	frame	data/chars/particle/smalljump07.gif
+
+anim freespecial3 #HIGH JUMP ADVANCE
+	range 200 400
+	rangea 0 100
+	rangez -50 50
+	landframe 7
+	loop	0
+	delay	6
+	offset	143 192
+	bbox 	129 105 28 89
+	frame	data/chars/particle/highjump00.gif
+	bbox 	129 109 28 85
+	frame	data/chars/particle/highjump01.gif
+	bbox 	129 117 28 77
+	frame	data/chars/particle/highjump02.gif
+	bbox 	129 128 28 66
+	frame	data/chars/particle/highjump03.gif
+		delay	8
+	@cmd targetJump
+	@cmd leapJump
+	bbox 	129 84 28 109
+	sound	data/sounds/Wind3.wav
+	frame	data/chars/particle/highjump04.gif
+	frame	data/chars/particle/highjump05.gif
+		delay	999
+	frame	data/chars/particle/highjump06.gif
+		delay	2
+	bbox 	129 88 28 97
+	frame	data/chars/particle/highjump07.gif
+	bbox 	129 92 28 86
+	frame	data/chars/particle/highjump08.gif
+		delay	6
+	bbox 	129 117 28 77
+	@cmd spawn01 "quakelow" 0 0 0
+	sound	data/sounds/Jumpland3.wav
+	frame	data/chars/particle/highjump09.gif
+	bbox 	129 128 28 66
+	frame	data/chars/particle/highjump10.gif
+	bbox 	129 117 28 77
+	frame	data/chars/particle/highjump11.gif
+	bbox 	129 109 28 85
+	frame	data/chars/particle/highjump12.gif
+	bbox 	129 105 28 89
+	frame	data/chars/particle/highjump13.gif
+	
+anim freespecial4 #RAGE
+	range 60 450
+	rangea 0 0
+	energycost 120 1 6
+	loop	0
+	delay	3
+	offset	143 192
+	@cmd spawnBind "RageSpend" 0 0 -1
+	@cmd spawnBind "RageFull" 0 0 1
+	sound	data/voices/Attack7.wav
+	frame	data/chars/particle/laser00.gif
+	frame	data/chars/particle/laser01.gif
+	frame	data/chars/particle/laser02.gif
+	frame	data/chars/particle/laser03.gif
+	frame	data/chars/particle/laser04.gif
+	frame	data/chars/particle/laser05.gif
+		delay	6
+	frame	data/chars/particle/laser06.gif
+		delay	4
+	frame	data/chars/particle/laser07.gif
+	@cmd shoot "particle_laserR" 0 0 0 9 0 0
+	sound	data/sounds/LaserShot.wav
+	frame	data/chars/particle/laser08.gif
+		delay	6
+	@cmd looper 7 7
+	frame	data/chars/particle/laser09.gif
+	frame	data/chars/particle/laser10.gif
+	frame	data/chars/particle/laser11.gif
+	frame	data/chars/particle/laser12.gif
+	frame	data/chars/particle/laser13.gif
+	frame	data/chars/particle/laser14.gif
+	frame	data/chars/particle/laser15.gif
+
+anim freespecial5 #SUICIDE
+	range -60 60
+	rangea 0 0
+	loop	0
+	delay	4
+	offset	143 192
+	bbox 	129 102 28 92
+	sound	data/voices/Attack6.wav
+	frame	data/chars/particle/idle00.gif
+	frame	data/chars/particle/idle01.gif
+	frame	data/chars/particle/idle00.gif
+	frame	data/chars/particle/idle01.gif
+	@cmd looper 0 4
+	@cmd hurtPerc 20
+	frame	data/chars/particle/idle00.gif

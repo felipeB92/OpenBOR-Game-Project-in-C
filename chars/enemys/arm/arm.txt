@@ -1,0 +1,208 @@
+##MAIN
+name				Arm
+type				enemy
+subtype				notgrab
+hostile				player npc
+candamage			player npc
+
+##LIFE
+health				1 #SCRIPT
+
+##SPEED
+speed				8
+
+##MISC
+gfxshadow			1 1
+facing				1
+nodrop				2
+death				1
+nodieblink			3
+noatflash			1
+flash				flash
+aimove				chase
+
+##SCRIPTS
+onspawnscript		data/scripts/onspawn/arm.c
+ondrawscript 		data/scripts/ondraw/arm.c
+animationscript		data/scripts/animation/default.c
+takedamagescript 	data/scripts/takedamage/arm.c
+
+##ICONS
+icon				data/chars/arm/icon.gif
+
+##DIESOUND
+diesound			data/voices/Die5.wav
+
+##ANIMATIONS#############################################################################
+
+anim idle #CHASE
+	loop	1
+	delay	8
+	offset	100 299
+		seta	120
+	frame	data/chars/arm/arm00.gif
+	frame	data/chars/arm/arm01.gif
+	frame	data/chars/arm/arm02.gif
+	frame	data/chars/arm/arm03.gif
+	frame	data/chars/arm/arm04.gif
+	frame	data/chars/arm/arm05.gif
+	frame	data/chars/arm/arm06.gif
+	frame	data/chars/arm/arm05.gif
+	frame	data/chars/arm/arm04.gif
+	frame	data/chars/arm/arm03.gif
+	frame	data/chars/arm/arm02.gif
+	frame	data/chars/arm/arm01.gif
+	
+anim run #CHASE
+	loop	1
+	delay	8
+	offset	100 299
+		seta	120
+	frame	data/chars/arm/arm00.gif
+	frame	data/chars/arm/arm01.gif
+	frame	data/chars/arm/arm02.gif
+	frame	data/chars/arm/arm03.gif
+	frame	data/chars/arm/arm04.gif
+	frame	data/chars/arm/arm05.gif
+	frame	data/chars/arm/arm06.gif
+	frame	data/chars/arm/arm05.gif
+	frame	data/chars/arm/arm04.gif
+	frame	data/chars/arm/arm03.gif
+	frame	data/chars/arm/arm02.gif
+	frame	data/chars/arm/arm01.gif
+	
+anim attack1 #CHASE
+	range 0 1
+	loop	0
+	delay	8
+	offset	100 299
+		seta	120
+	frame	data/chars/arm/arm00.gif
+	frame	data/chars/arm/arm01.gif
+	frame	data/chars/arm/arm02.gif
+	frame	data/chars/arm/arm03.gif
+	frame	data/chars/arm/arm04.gif
+	frame	data/chars/arm/arm05.gif
+	frame	data/chars/arm/arm06.gif
+	frame	data/chars/arm/arm05.gif
+	frame	data/chars/arm/arm04.gif
+	frame	data/chars/arm/arm03.gif
+	frame	data/chars/arm/arm02.gif
+	frame	data/chars/arm/arm01.gif
+	
+anim attack2 #NORMAL ATTACK
+	range 999 999
+	fastattack 1
+	jugglecost 31
+	forcedirection 0
+	loop	0
+	delay	8
+	offset	100 299
+	hitfx	data/sounds/StrongPunch.wav
+	sound	data/sounds/Alarm.wav
+		seta	120
+	frame	data/chars/arm/arm06.gif
+	frame	data/chars/arm/arm07.gif
+	frame	data/chars/arm/arm08.gif
+	frame	data/chars/arm/arm09.gif
+		delay	2
+		seta	0
+	attack 86 222 30 78 24 1 1 0 0 12
+	sound	data/sounds/Wind3.wav
+	frame	data/chars/arm/arm09.gif
+	frame	data/chars/arm/arm09.gif
+	@cmd landFrame
+		delay	64
+	bbox 	86 222 30 78
+	sound	data/sounds/Jumpland3.wav
+	frame	data/chars/arm/arm09.gif
+	@cmd leaper 0 6 0
+	attack 0 0 0 0 0 0 0 0 0 0
+	sound	data/sounds/Door.wav
+	frame	data/chars/arm/arm06.gif
+		seta	120
+	frame	data/chars/arm/arm06.gif
+	
+anim attack3 #SHOCK ATTACK
+	range 999 999
+	fastattack 1
+	jugglecost 31
+	forcedirection 0
+	hitflash shock
+	loop	0
+	delay	4
+	offset	100 299
+	hitfx	data/sounds/StrongPunch.wav
+	sound	data/sounds/Alarm.wav
+		seta	120
+	frame	data/chars/arm/arm10.gif
+	frame	data/chars/arm/arm11.gif
+	frame	data/chars/arm/arm10.gif
+	frame	data/chars/arm/arm11.gif
+	frame	data/chars/arm/arm10.gif
+	frame	data/chars/arm/arm11.gif
+	frame	data/chars/arm/arm10.gif
+	frame	data/chars/arm/arm11.gif
+		delay	2
+		seta	0
+	shock 86 222 30 68 48 3 1 0 0 12
+	sound	data/sounds/Wind3.wav
+	frame	data/chars/arm/arm06.gif
+	frame	data/chars/arm/arm06.gif
+	@cmd landFrame
+		delay	64
+	bbox 	86 222 30 68
+	sound	data/sounds/Jumpland3.wav
+	frame	data/chars/arm/arm06.gif
+	@cmd leaper 0 6 0
+	attack 0 0 0 0 0 0 0 0 0 0
+	sound	data/sounds/Door.wav
+	frame	data/chars/arm/arm06.gif
+		seta	120
+	frame	data/chars/arm/arm06.gif
+	
+anim pain
+	loop	0
+	delay	8
+	offset	100 299
+	bbox 	86 222 30 68
+	frame	data/chars/arm/arm06.gif
+		delay	64
+	@cmd leaper 0 6 0
+	sound	data/sounds/Door.wav
+	frame	data/chars/arm/arm06.gif
+		seta	120
+	frame	data/chars/arm/arm06.gif
+	
+anim death #EXPLOSION
+	loop	0
+	delay	6
+	offset	100 299
+	@cmd spawnBind "destruction" 0 55 1
+	@cmd setVar "removeWall" 1
+	frame	data/chars/arm/arm12.gif
+	frame	data/chars/arm/arm13.gif
+	frame	data/chars/arm/arm14.gif
+	frame	data/chars/arm/arm15.gif
+	frame	data/chars/arm/arm12.gif
+	frame	data/chars/arm/arm13.gif
+	frame	data/chars/arm/arm14.gif
+	frame	data/chars/arm/arm15.gif
+	frame	data/chars/arm/arm12.gif
+	frame	data/chars/arm/arm13.gif
+	frame	data/chars/arm/arm14.gif
+	frame	data/chars/arm/arm15.gif
+	frame	data/chars/arm/arm12.gif
+	frame	data/chars/arm/arm13.gif
+	frame	data/chars/arm/arm14.gif
+	frame	data/chars/arm/arm15.gif
+	frame	data/chars/arm/arm12.gif
+	frame	data/chars/arm/arm13.gif
+	frame	data/chars/arm/arm14.gif
+	frame	data/chars/arm/arm15.gif
+	frame	data/chars/arm/arm12.gif
+	frame	data/chars/arm/arm13.gif
+	frame	data/chars/arm/arm14.gif
+	frame	data/chars/arm/arm15.gif
+		delay	128
+	frame	data/chars/arm/arm12.gif

@@ -1,0 +1,14 @@
+name		Fonte
+type		panel
+shadow		0
+speed		5
+scroll		-0.06
+setlayer	-60
+noquake		1 1
+
+anim idle
+	loop	1
+	delay	16
+	offset	0 0
+	frame	data/bgs/St307/fountain00.gif
+	frame	data/bgs/st307/fountain01.gif

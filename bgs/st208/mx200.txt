@@ -1,0 +1,27 @@
+name			Mx200 #GROUND
+type			None
+setlayer 5
+offscreenkill	5000
+onblockwscript	data/scripts/bounceF.c
+animationscript 	data/scripts/ani0020.h
+ondrawscript 		data/scripts/player_ondrawscript.c
+
+Load Elevador02
+
+anim idle
+	loop	0
+	offset	0 0
+		delay  10
+	frame	data/Bgs/St208/e00.gif
+	frame	data/Bgs/St208/e01.gif
+	frame	data/Bgs/St208/e02.gif
+	frame	data/Bgs/St208/e03.gif
+	frame	data/Bgs/St208/e04.gif
+	frame	data/Bgs/St208/e05.gif
+	frame	data/Bgs/St208/e06.gif
+	frame	data/Bgs/St208/e07.gif
+	frame	data/Bgs/St208/e08.gif
+	frame	data/Bgs/St208/e09.gif
+	@cmd  spawn01  "Elevador02"  0  0  0
+	frame	data/Bgs/St208/e10.gif
+

@@ -1,0 +1,30 @@
+name		st2_people
+type		none
+shadow		0
+antigravity	100
+setlayer	-1
+
+anim idle
+	loop	1
+	delay	6
+	offset	1 1
+	frame	data/bgs/sor3_st2/people00.gif
+	frame	data/bgs/sor3_st2/people01.gif
+	frame	data/bgs/sor3_st2/people02.gif
+	frame	data/bgs/sor3_st2/people03.gif
+	frame	data/bgs/sor3_st2/people04.gif
+	frame	data/bgs/sor3_st2/people05.gif
+	frame	data/bgs/sor3_st2/people06.gif
+	frame	data/bgs/sor3_st2/people07.gif
+	frame	data/bgs/sor3_st2/people08.gif
+	frame	data/bgs/sor3_st2/people09.gif
+	frame	data/bgs/sor3_st2/people10.gif
+	frame	data/bgs/sor3_st2/people11.gif
+	frame	data/bgs/sor3_st2/people12.gif
+	frame	data/bgs/sor3_st2/people13.gif
+	frame	data/bgs/sor3_st2/people14.gif
+	frame	data/bgs/sor3_st2/people15.gif
+	frame	data/bgs/sor3_st2/people16.gif
+	frame	data/bgs/sor3_st2/people17.gif
+	frame	data/bgs/sor3_st2/people18.gif
+	frame	data/bgs/sor3_st2/people19.gif

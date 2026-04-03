@@ -1,0 +1,13 @@
+name			st3_gate1
+type			none	
+shadow			0
+animationscript data/scripts/animation/default.c
+
+load			st3_gate1S
+
+anim idle
+	loop	0
+	delay	6
+	offset	1 180
+	@cmd spawn01 "st3_gate1S" 170 130 70
+	frame	data/bgs/sor3_st3/gate100.gif

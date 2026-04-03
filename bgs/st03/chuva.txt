@@ -1,0 +1,93 @@
+name			Chuva #GROUND
+type			None
+setlayer 999
+alpha 1
+offscreenkill	1000
+
+anim idle
+	loop	0
+	delay	7
+	offset	0 0
+		move  0
+	frame	data/Bgs/St03/rain00.gif
+	frame	data/Bgs/St03/rain01.gif
+	frame	data/Bgs/St03/rain02.gif
+	frame	data/Bgs/St03/rain03.gif
+	frame	data/Bgs/St03/rain04.gif
+	frame	data/Bgs/St03/rain05.gif
+	frame	data/Bgs/St03/rain06.gif
+	frame	data/Bgs/St03/rain07.gif
+	frame	data/Bgs/St03/rain08.gif
+	frame	data/Bgs/St03/rain09.gif
+	frame	data/Bgs/St03/rain10.gif
+	frame	data/Bgs/St03/rain11.gif
+	frame	data/Bgs/St03/rain12.gif
+	frame	data/Bgs/St03/rain13.gif
+	frame	data/Bgs/St03/rain14.gif
+	frame	data/Bgs/St03/rain15.gif
+	frame	data/Bgs/St03/rain16.gif
+	frame	data/Bgs/St03/rain17.gif
+	frame	data/Bgs/St03/rain18.gif
+	frame	data/Bgs/St03/rain19.gif
+	frame	data/Bgs/St03/rain00.gif
+	frame	data/Bgs/St03/rain01.gif
+	frame	data/Bgs/St03/rain02.gif
+	frame	data/Bgs/St03/rain03.gif
+	frame	data/Bgs/St03/rain04.gif
+	frame	data/Bgs/St03/rain05.gif
+	frame	data/Bgs/St03/rain06.gif
+	frame	data/Bgs/St03/rain07.gif
+	frame	data/Bgs/St03/rain08.gif
+	frame	data/Bgs/St03/rain09.gif
+	frame	data/Bgs/St03/rain10.gif
+	frame	data/Bgs/St03/rain11.gif
+	frame	data/Bgs/St03/rain12.gif
+	frame	data/Bgs/St03/rain13.gif
+	frame	data/Bgs/St03/rain14.gif
+	frame	data/Bgs/St03/rain15.gif
+	frame	data/Bgs/St03/rain16.gif
+	frame	data/Bgs/St03/rain17.gif
+	frame	data/Bgs/St03/rain18.gif
+	frame	data/Bgs/St03/rain19.gif
+	frame	data/Bgs/St03/rain00.gif
+	frame	data/Bgs/St03/rain01.gif
+	frame	data/Bgs/St03/rain02.gif
+	frame	data/Bgs/St03/rain03.gif
+	frame	data/Bgs/St03/rain04.gif
+	frame	data/Bgs/St03/rain05.gif
+	frame	data/Bgs/St03/rain06.gif
+	frame	data/Bgs/St03/rain07.gif
+	frame	data/Bgs/St03/rain08.gif
+	frame	data/Bgs/St03/rain09.gif
+	frame	data/Bgs/St03/rain10.gif
+	frame	data/Bgs/St03/rain11.gif
+	frame	data/Bgs/St03/rain12.gif
+	frame	data/Bgs/St03/rain13.gif
+	frame	data/Bgs/St03/rain14.gif
+	frame	data/Bgs/St03/rain15.gif
+	frame	data/Bgs/St03/rain16.gif
+	frame	data/Bgs/St03/rain17.gif
+	frame	data/Bgs/St03/rain18.gif
+	frame	data/Bgs/St03/rain19.gif
+	frame	data/Bgs/St03/rain00.gif
+	frame	data/Bgs/St03/rain01.gif
+	frame	data/Bgs/St03/rain02.gif
+	frame	data/Bgs/St03/rain03.gif
+	frame	data/Bgs/St03/rain04.gif
+	frame	data/Bgs/St03/rain05.gif
+	frame	data/Bgs/St03/rain06.gif
+	frame	data/Bgs/St03/rain07.gif
+	frame	data/Bgs/St03/rain08.gif
+	frame	data/Bgs/St03/rain09.gif
+	frame	data/Bgs/St03/rain10.gif
+	frame	data/Bgs/St03/rain11.gif
+	frame	data/Bgs/St03/rain12.gif
+	frame	data/Bgs/St03/rain13.gif
+	frame	data/Bgs/St03/rain14.gif
+	frame	data/Bgs/St03/rain15.gif
+	frame	data/Bgs/St03/rain16.gif
+	frame	data/Bgs/St03/rain17.gif
+	frame	data/Bgs/St03/rain18.gif
+	offset	-999 -999
+	frame	data/Bgs/St03/rain19.gif
+

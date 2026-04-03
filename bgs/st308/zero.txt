@@ -1,0 +1,72 @@
+name			st8_dr_zero
+type			none
+shadow			0
+setlayer		-3
+ondrawscript	data/scripts/ondraw/zero.c
+animationscript	data/scripts/animation/default.c
+
+load			arm
+
+anim spawn
+	loop	0
+	delay	16
+	offset	32 44
+	@cmd spawnVar "arm" "arm" 0 0 100 0
+	frame	data/bgs/sor3_st8/zero00.gif #RIGHT HAND FRAME
+
+anim idle
+	loop	0
+	delay	4
+	offset	32 44
+	frame	data/bgs/sor3_st8/zero00.gif #RIGHT HAND FRAME
+	frame	data/bgs/sor3_st8/zero01.gif #RIGHT HAND FRAME
+	frame	data/bgs/sor3_st8/zero02.gif #RIGHT HAND FRAME
+	frame	data/bgs/sor3_st8/zero03.gif #RIGHT HAND FRAME
+	@cmd looper 0 3
+	frame	data/bgs/sor3_st8/zero04.gif #LEFT HAND FRAME
+	frame	data/bgs/sor3_st8/zero04.gif #LEFT HAND FRAME
+	frame	data/bgs/sor3_st8/zero05.gif #LEFT HAND FRAME
+	frame	data/bgs/sor3_st8/zero06.gif #LEFT HAND FRAME
+	@cmd looper 5 6
+	frame	data/bgs/sor3_st8/zero00.gif #RIGHT HAND FRAME
+	frame	data/bgs/sor3_st8/zero00.gif #RIGHT HAND FRAME
+	frame	data/bgs/sor3_st8/zero01.gif #RIGHT HAND FRAME
+	frame	data/bgs/sor3_st8/zero02.gif #RIGHT HAND FRAME
+	frame	data/bgs/sor3_st8/zero03.gif #RIGHT HAND FRAME
+	@cmd looper 9 6
+	frame	data/bgs/sor3_st8/zero04.gif #LEFT HAND FRAME
+	frame	data/bgs/sor3_st8/zero04.gif #LEFT HAND FRAME
+	frame	data/bgs/sor3_st8/zero05.gif #LEFT HAND FRAME
+	frame	data/bgs/sor3_st8/zero06.gif #LEFT HAND FRAME
+	@cmd looper 14 3
+	@cmd aniChange 0 "ANI_FOLLOW1"
+	frame	data/bgs/sor3_st8/zero06.gif #LEFT HAND FRAME
+	
+anim follow1 #LAUGH
+	loop	0
+	delay	16
+	offset	32 44
+	frame	data/bgs/sor3_st8/zero07.gif
+	frame	data/bgs/sor3_st8/zero08.gif
+	frame	data/bgs/sor3_st8/zero09.gif
+	@cmd aniChange 0 "ANI_IDLE"
+	frame	data/bgs/sor3_st8/zero09.gif
+	
+anim follow2 #EXPLOSION
+	loop	0
+	delay	32
+	offset	32 44
+	frame	data/bgs/sor3_st8/zero10.gif
+	@cmd spawnBind "destruction" 0 40 10
+	frame	data/bgs/sor3_st8/zero10.gif
+	@cmd spawnBind "destruction" -50 40 10
+	frame	data/bgs/sor3_st8/zero10.gif
+	@cmd spawnBind "destruction" 50 40 10
+	frame	data/bgs/sor3_st8/zero10.gif
+		delay	64
+	frame	data/bgs/sor3_st8/zero10.gif
+		delay	32
+	@cmd dasher 0 0 0.5
+	frame	data/bgs/sor3_st8/zero10.gif
+	@cmd suicide
+	frame	data/bgs/sor3_st8/zero10.gif

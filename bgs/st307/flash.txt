@@ -1,0 +1,15 @@
+name			st7_flash
+type			none
+shadow			0
+animationscript data/scripts/animation/default.c
+
+anim idle
+	loop	0
+	delay	8
+	offset	1200 1200
+	sound	data/sounds/CameraFlash.wav
+	drawmethod alpha 6
+	drawmethod channel 0.3
+	frame	data/bgs/sor3_st7/flash00.gif
+	@cmd suicide
+	frame	data/bgs/sor3_st7/flash00.gif

@@ -1,0 +1,30 @@
+name			HAyateP01 #GROUND
+type			None
+candamage	        enemy npc obstacle
+nolife 1
+noname 1
+alpha  1
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	54 89
+		attack3  22  52  68  37  25  1  0  0  0  15
+	frame	data/chars/players/HAyate/p100.gif
+		attack3  19  53  76  35  25  1  0  0  0  15
+	frame	data/chars/players/HAyate/p101.gif
+		attack3  17  28  81  56  25  1  0  0  0  20
+	frame	data/chars/players/HAyate/p102.gif
+		attack3  17  14  85  72  25  1  0  0  0  20
+	frame	data/chars/players/HAyate/p104.gif
+	frame	data/chars/players/HAyate/p105.gif
+		attack3  8  9  113  73  25  1  0  0  0  20
+	frame	data/chars/players/HAyate/p106.gif
+		Attack1  0
+	frame	data/chars/players/HAyate/p107.gif
+	frame	data/chars/players/HAyate/p108.gif
+	frame	data/chars/players/HAyate/empty.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/players/HAyate/empty.gif
+

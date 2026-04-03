@@ -1,0 +1,29 @@
+name			Poster #GROUND
+type			None
+setlayer 5
+offscreenkill	1000
+
+anim idle
+	loop	1
+	delay	400
+	offset	0 0
+	frame	data/Bgs/St02/poster01.gif
+		delay  10
+	frame	data/Bgs/St02/Poster02.gif
+	frame	data/Bgs/St02/poster01.gif
+	frame	data/Bgs/St02/Poster02.gif
+	frame	data/Bgs/St02/poster01.gif
+	frame	data/Bgs/St02/Poster02.gif
+	frame	data/Bgs/St02/poster01.gif
+	frame	data/Bgs/St02/Poster02.gif
+	frame	data/Bgs/St02/poster01.gif
+	frame	data/Bgs/St02/Poster02.gif
+	frame	data/Bgs/St02/poster01.gif
+	frame	data/Bgs/St02/Poster02.gif
+	frame	data/Bgs/St02/poster01.gif
+	frame	data/Bgs/St02/Poster02.gif
+	frame	data/Bgs/St02/poster01.gif
+	frame	data/Bgs/St02/Poster02.gif
+	frame	data/Bgs/St02/poster01.gif
+	frame	data/Bgs/St02/Poster02.gif
+

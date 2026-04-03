@@ -1,0 +1,66 @@
+name			st3_lamps
+type			panel
+shadow			0
+speed			5
+scroll			-1.13
+setlayer		1010
+animationscript	data/scripts/animation/default.c
+
+load			st3_trash1
+load			st3_trash2
+
+anim idle
+	loop	1
+	delay	24
+	offset	1 180
+	frame	data/bgs/sor3_st3/lamps00.gif
+	frame	data/bgs/sor3_st3/lamps01.gif
+		delay	18
+	@cmd looper 0 2
+	@cmd sampleRandom "data/sounds/wind.wav" 50 "data/sounds/wind2.wav" 50 0
+	frame	data/bgs/sor3_st3/lamps00.gif
+	frame	data/bgs/sor3_st3/lamps01.gif
+	frame	data/bgs/sor3_st3/lamps02.gif  
+	frame	data/bgs/sor3_st3/lamps01.gif
+		delay	12
+	@cmd looper 4 4
+	frame	data/bgs/sor3_st3/lamps02.gif
+	@cmd spawnScreen "st3_trash2" 480 140 240
+	frame	data/bgs/sor3_st3/lamps01.gif
+	frame	data/bgs/sor3_st3/lamps02.gif  
+	frame	data/bgs/sor3_st3/lamps03.gif
+	@cmd looper 8 8
+	frame	data/bgs/sor3_st3/lamps02.gif
+	frame	data/bgs/sor3_st3/lamps01.gif
+		delay	240
+	frame	data/bgs/sor3_st3/lamps00.gif
+	@cmd aniRandom "ANI_IDLE2"
+	frame	data/bgs/sor3_st3/lamps00.gif
+	
+anim idle2
+	loop	1
+	delay	24
+	offset	1 180
+	frame	data/bgs/sor3_st3/lamps00.gif
+	frame	data/bgs/sor3_st3/lamps04.gif
+		delay	18
+	@cmd looper 0 2
+	@cmd sampleRandom "data/sounds/wind.wav" 50 "data/sounds/wind2.wav" 50 0
+	frame	data/bgs/sor3_st3/lamps00.gif
+	@cmd spawnScreen "st3_trash1" 0 0 230
+	frame	data/bgs/sor3_st3/lamps04.gif
+	frame	data/bgs/sor3_st3/lamps05.gif  
+	frame	data/bgs/sor3_st3/lamps04.gif
+		delay	12
+	@cmd looper 4 4
+	frame	data/bgs/sor3_st3/lamps05.gif
+	frame	data/bgs/sor3_st3/lamps04.gif
+	frame	data/bgs/sor3_st3/lamps05.gif  
+	frame	data/bgs/sor3_st3/lamps06.gif
+	@cmd looper 8 8
+	frame	data/bgs/sor3_st3/lamps05.gif
+	frame	data/bgs/sor3_st3/lamps04.gif
+		delay	240
+	frame	data/bgs/sor3_st3/lamps00.gif
+	@cmd aniRandom "ANI_IDLE"
+	frame	data/bgs/sor3_st3/lamps00.gif

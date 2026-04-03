@@ -1,0 +1,27 @@
+##MAIN
+name				KusanagiS
+type				none
+
+##MISC
+antigravity			100
+
+##SCRIPTS
+ondrawscript		data/scripts/ondraw/channel.c
+
+##REMAPS
+remap				data/chars/kusanagi/idle00.gif data/chars/kusanagi/alter1.gif
+remap				data/chars/kusanagi/idle00.gif data/chars/kusanagi/alter2.gif
+remap				data/chars/kusanagi/idle00.gif data/chars/kusanagi/alter3.gif
+remap				data/chars/kusanagi/idle00.gif data/chars/kusanagi/alter4.gif
+remap				data/chars/kusanagi/idle00.gif data/chars/kusanagi/alter5.gif
+
+##ANIMATIONS#############################################################################
+
+anim idle #EVADE
+	loop	0
+	delay	1000
+	offset	145 181
+	frame	data/chars/kusanagi/evade00.gif
+	frame	data/chars/kusanagi/evade00.gif
+	frame	data/chars/kusanagi/evade00.gif
+	frame	data/chars/kusanagi/evade00.gif

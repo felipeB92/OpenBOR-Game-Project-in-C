@@ -1,0 +1,13 @@
+name			st3_entrance3
+type			none	
+shadow			0
+animationscript data/scripts/animation/default.c
+
+load			st3_entrance3S
+
+anim idle
+	loop	0
+	delay	6
+	offset	1 180
+	@cmd spawn01 "st3_entrance3S" 580 120 20
+	frame	data/bgs/sor2_st3/pn00c.gif

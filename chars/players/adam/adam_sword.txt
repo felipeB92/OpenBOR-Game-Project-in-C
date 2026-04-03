@@ -1,0 +1,173 @@
+name	Adam_sword
+health	100
+speed	12
+type	none
+antigrab 2
+gfxshadow	1
+candamage			enemy npc obstacle
+JUMPHEIGHT 1 1
+Jumpheight 3
+icon	data/chars/players/Adam/icon.gif
+diesound data/sounds/Adamdie.wav
+running	20	3	3	1	1
+
+Load SwordT
+
+Com d d freespecial5
+Com u u freespecial6
+
+
+
+remap data/chars/players/Adam/idle00.gif data/chars/players/Adam/alter1.gif
+remap data/chars/players/Adam/idle00.gif data/chars/players/Adam/alter2.gif
+remap data/chars/players/Adam/idle00.gif data/chars/players/Adam/alter3.gif
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	136 171
+	bbox	122 93 33 64
+	frame   data/chars/players/Adam/sword/idle00.gif
+	frame   data/chars/players/Adam/sword/idle01.gif
+	frame   data/chars/players/Adam/sword/idle02.gif
+	frame   data/chars/players/Adam/sword/idle03.gif
+
+
+
+
+anim walk
+	loop	1
+	delay	1
+	offset	136 171
+	bbox	121 93 30 75
+	jumpframe  0  0.001  0.001  0
+	landframe  1
+	frame	data/chars/players/Adam/sword/walk00.gif
+	frame	data/chars/players/Adam/sword/walk00.gif
+	delay	14
+	frame	data/chars/players/Adam/sword/walk00.gif
+	frame	data/chars/players/Adam/sword/walk01.gif
+	frame	data/chars/players/Adam/sword/walk02.gif
+	frame	data/chars/players/Adam/sword/walk03.gif
+	frame	data/chars/players/Adam/sword/walk04.gif
+	frame	data/chars/players/Adam/sword/walk05.gif
+
+
+anim get
+	loop	0
+	delay	10
+	offset	136 171
+	frame	data/chars/players/Adam/sword/get00.gif
+
+
+anim jump
+	loop	0
+	delay	5
+	offset	136 171
+	bbox	119 86 38 66
+	frame	data/chars/players/Adam/sword/jump00.gif
+	frame	data/chars/players/Adam/sword/jump01.gif
+
+
+
+
+anim jumpattack
+	loop	0
+	delay	7
+	offset	136 171
+	bbox	121 93 31 48
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Adam/sword/jumpatk00.gif
+		attack1  139  82  38  59  10  1  0  0  0  20
+		delay  15
+	frame	data/chars/players/Adam/sword/jumpatk01.gif
+
+
+
+anim jumpattack2
+	loop	0
+	delay	7
+	offset	136 171
+	bbox	115 95 39 43
+	attack	114 125 45 24 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Adam/sword/jumpatk200.gif
+
+anim jumpforward
+	loop	0
+	delay	7
+	offset	136 171
+	bbox	117 91 35 39
+	attack	108 126 83 33 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/soco.wav
+	frame	data/chars/players/Adam/sword/fjumpatk01.gif
+
+
+anim runjumpattack
+	loop	0
+	delay	7
+	offset	136 171
+	bbox	106 95 45 33
+	attack	132 104 68 28 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Adam/sword/jumpatk301.gif
+
+anim attack1
+	loop	0
+	delay	9
+	offset	136 171
+	bbox	123 100 31 64
+		Attack1  0
+	sound	data/sounds/armas/Whoosh2.wav
+        hitfx	data/sounds/Armas/Corte2.wav
+	frame	data/chars/players/Adam/sword/a100.gif
+		attack1  163  110  89  21  25  1  0  0  0  15
+		delay  15
+	frame	data/chars/players/Adam/sword/a101.gif
+
+anim Special2
+	loop	0
+	delay	9
+	offset	136 171
+	bbox	123 100 31 64
+		Attack1  0
+        custknife Swordt
+        throwframe 2 45
+	sound	data/sounds/armas/Whoosh2.wav
+        hitfx	data/sounds/Armas/Corte2.wav
+	frame	data/chars/players/Adam/sword/a100.gif
+	frame	data/chars/players/Adam/sword/a101.gif
+	frame	data/chars/players/Adam/sword/a102.gif
+
+
+
+anim run
+        loop    1
+        delay  10
+	offset	136 171
+	bbox	124 104 30 51
+	jumpframe  0  0.001  0.001  0
+	landframe  1
+        frame	data/chars/players/Adam/sword/run00.gif
+        frame	data/chars/players/Adam/sword/run01.gif
+        frame	data/chars/players/Adam/sword/run02.gif
+        frame	data/chars/players/Adam/sword/run03.gif
+        frame	data/chars/players/Adam/sword/run04.gif
+        frame	data/chars/players/Adam/sword/run05.gif
+
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	136 171
+	bbox	124 111 44 44
+	frame	data/chars/players/Adam/sword/jumpland00.gif
+

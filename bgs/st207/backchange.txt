@@ -1,0 +1,14 @@
+name		st7_backchange
+type		panel
+shadow		0
+speed		5
+setlayer	-60
+noquake		1 1
+
+anim idle
+	loop	0
+	delay	4000
+	offset	0 0
+	frame	data/bgs/sor2_st7/back01.gif
+	frame	data/bgs/sor2_st7/back02.gif
+	frame	data/bgs/sor2_st7/back03.gif

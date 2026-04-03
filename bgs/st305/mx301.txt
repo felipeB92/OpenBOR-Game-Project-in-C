@@ -1,0 +1,13 @@
+name			Mx301 #GROUND
+type			None
+setlayer 6
+
+anim idle
+	loop	0
+	delay	20
+	offset	0 0
+	frame	data/Bgs/st305/mx07.gif
+	delay	60
+	frame	data/Bgs/st305/mx08.gif
+	frame	data/Bgs/st305/empty.gif
+

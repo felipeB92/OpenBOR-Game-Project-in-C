@@ -1,0 +1,248 @@
+name	EDY
+health	200
+speed	9
+type	enemy
+gfxshadow			1 1
+noquake 1
+#falldie 1
+icon	data/chars/enemy/EDY/icon.gif 1
+icondie	data/chars/enemy/EDY/iconD.gif 1
+diesound data/sounds/Morte/DieMan1.wav
+atchain    1 2 3
+aimove chase
+subject_to_wall 1
+subject_to_hole 1
+subject_to_obstacle 1
+subject_to_platform 1
+subject_to_gravity 1
+candamage  player  obstacle
+hostile player
+remap   data/chars/enemy/EDY/Idle01.gif   data/chars/enemy/EDY/map01.gif
+remap   data/chars/enemy/EDY/Idle01.gif   data/chars/enemy/EDY/map02.gif
+remap   data/chars/enemy/EDY/Idle01.gif   data/chars/enemy/EDY/map03.gif
+
+onblockwscript	data/scripts/bounceF.c
+
+
+anim	attack1
+	range	0 80
+	loop	0
+	delay	6
+	offset	31 100
+        hitflash	FlashFr
+	bbox	19 -1 30 53
+        Sound	data/sounds/golpes/Soco.wav
+	hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/enemy/EDY/a101.gif
+	attack	53 9 58 21 8 0 0 0 0 0
+        Sound	data/sounds/Vozes/Man1.wav
+		delay  20
+		bbox  25  7  40  47
+	frame	data/chars/enemy/EDY/a102.gif
+	delay	8
+		Attack1  0
+		bbox  27  6  34  51
+	frame	data/chars/enemy/EDY/a103.gif
+
+anim	attack2
+	loop	0
+	delay	5
+	offset	42 111
+        hitflash	FlashMe
+	bbox	13 10 25 49
+	Sound	data/sounds/golpes/soco.wav
+	hitfx	data/sounds/golpes/Medio.wav
+	frame	data/chars/enemy/EDY/a201.gif
+		Attack1  0
+	frame	data/chars/enemy/EDY/a202.gif
+		attack1  37  27  65  28  8  0  0  0  0  0
+		delay  15
+	frame	data/chars/enemy/EDY/a203.gif
+		Attack1  0
+		delay  5
+	frame	data/chars/enemy/EDY/a202.gif
+
+anim	attack3
+	loop	0
+	delay	7
+	offset	44 126
+        hitflash	Flashfo
+	bbox	30 35 38 60
+	Sound	data/sounds/golpes/Chut.wav
+	hitfx	data/sounds/golpes/Medio.wav
+		move  10
+	frame	data/chars/enemy/EDY/a301.gif
+	attack	52 22 40 59 8 1 0 0 0 0
+	frame	data/chars/enemy/EDY/a302.gif
+		attack1  38  15  25  49  8  1  0  0  0  0
+	frame	data/chars/enemy/EDY/a303.gif
+		attack1  34  24  34  33  8  1  0  0  0  0
+		delay  15
+		move  0
+	frame	data/chars/enemy/EDY/a304.gif
+		delay  5
+		Attack1  0
+	frame	data/chars/enemy/EDY/a301.gif
+
+anim	Jump
+	loop	0
+	offset	30 93
+	bbox	22 -1 34 52
+	delay	10
+	frame	data/chars/enemy/EDY/j01.gif
+	frame	data/chars/enemy/EDY/j02.gif
+	frame	data/chars/enemy/EDY/j03.gif
+	frame	data/chars/enemy/EDY/j02.gif
+	frame	data/chars/enemy/EDY/j01.gif
+
+anim	Jumpattack
+        range	80 120
+	loop	0
+        hitflash	Flashfo
+	hitfx	data/sounds/golpes/Medio.wav
+	offset	35 104
+	bbox	12 5 36 50
+	delay	10
+	frame	data/chars/enemy/EDY/ja101.gif
+	delay	50
+	Sound	data/sounds/golpes/Chut.wav
+		attack1  49  40  57  51  15  1  0  0  10  10
+	frame	data/chars/enemy/EDY/ja102.gif
+
+
+
+
+anim	fall
+	landframe	2 dust
+	loop	0
+	delay	60
+	offset	35 100
+	frame	data/chars/enemy/EDY/fall01.gif
+	delay	20
+	attack	0 0 0 0 0 0
+		offset  67  73
+	frame	data/chars/enemy/EDY/fall02.gif
+		offset  65  70
+        frame	data/chars/enemy/EDY/fall03.gif
+
+anim	fall3
+	landframe	2 dust
+	loop	0
+	delay	60
+	offset	20 100
+		bbox  20  24  76  40
+	frame	data/chars/enemy/EDY/fall01.gif
+	delay	20
+	attack	0 0 0 0 0 0
+		offset  72  82
+		bbox  23  26  54  50
+	frame	data/chars/enemy/EDY/fall02.gif
+		offset  71  73
+		bbox  0
+        frame	data/chars/enemy/EDY/fall03.gif
+
+anim	Shock
+	landframe	4 dust
+	loop	0
+	delay	20
+	offset	135 142
+	frame	data/chars/enemy/EDY/shok01.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/enemy/EDY/shok02.gif
+	frame	data/chars/enemy/EDY/shok01.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/enemy/EDY/shok02.gif
+		offset  73  72
+        frame	data/chars/enemy/EDY/fall03.gif
+
+anim	Death
+	loop	0
+	delay	60
+		offset  70  73
+        frame	data/chars/enemy/EDY/fall03.gif
+
+
+anim	grabbed
+	loop	0
+	delay	50
+	offset	41 98
+	bbox	11 4 46 66
+	frame	data/chars/enemy/EDY/Pain100.gif
+
+
+
+anim	idle
+	loop	0
+	offset	38 101
+	bbox	19 0 37 65
+	delay	10
+
+	frame	data/chars/enemy/EDY/Idle01.gif
+	frame	data/chars/enemy/EDY/Idle02.gif
+	frame	data/chars/enemy/EDY/Idle03.gif
+	frame	data/chars/enemy/EDY/Idle04.gif
+	frame	data/chars/enemy/EDY/Idle05.gif
+	frame	data/chars/enemy/EDY/Idle06.gif
+	frame	data/chars/enemy/EDY/Idle07.gif
+	frame	data/chars/enemy/EDY/Idle08.gif
+	frame	data/chars/enemy/EDY/Idle09.gif
+
+anim	pain
+	loop	0
+	delay	6
+	offset	44 98
+	bbox	16 3 40 52
+	frame	data/chars/enemy/EDY/pain02.gif
+	frame	data/chars/enemy/EDY/pain200.gif
+	delay	35
+	frame	data/chars/enemy/EDY/pain02.gif
+
+anim	pain2
+	loop	0
+	delay	6
+	offset	48 99
+	bbox	16 9 39 52
+	frame	data/chars/enemy/EDY/pain01.gif
+	frame	data/chars/enemy/EDY/pain100.gif
+	delay	35
+	frame	data/chars/enemy/EDY/pain01.gif
+
+
+anim	rise
+	loop	0
+	offset	69 74
+	delay	20
+	frame	data/chars/enemy/EDY/fall03.gif
+		offset  40  77
+	frame	data/chars/enemy/EDY/rise01.gif
+		delay  6
+	frame	data/chars/enemy/EDY/Rise02.gif
+	frame	data/chars/enemy/EDY/Rise03.gif
+
+
+
+anim	walk
+	loop	1
+	offset	36 108
+	bbox	13 3 42 66
+	delay	8
+	frame	data/chars/enemy/EDY/walk01.gif
+	frame	data/chars/enemy/EDY/walk02.gif
+	frame	data/chars/enemy/EDY/walk03.gif
+	frame	data/chars/enemy/EDY/walk04.gif
+	frame	data/chars/enemy/EDY/walk05.gif
+	frame	data/chars/enemy/EDY/walk06.gif
+
+
+anim	Backwalk
+	loop	1
+	offset	35 112
+	bbox	15 1 41 63
+	delay	8
+	frame	data/chars/enemy/EDY/walk06.gif
+	frame	data/chars/enemy/EDY/walk05.gif
+	frame	data/chars/enemy/EDY/walk04.gif
+	frame	data/chars/enemy/EDY/walk03.gif
+	frame	data/chars/enemy/EDY/walk02.gif
+	frame	data/chars/enemy/EDY/walk01.gif
+

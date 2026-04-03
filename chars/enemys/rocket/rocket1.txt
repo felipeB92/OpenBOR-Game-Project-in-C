@@ -1,0 +1,629 @@
+##MAIN
+name				Rocket1
+type				enemy
+hostile				player npc
+candamage			player npc obstacle
+
+##LIFE
+health				1 #SCRIPT
+
+##POWER
+offense 			1 #SCRIPT
+
+##SPEED
+speed				1 #SCRIPT
+
+##JUMP
+jumpheight 			1 #SCRIPT
+
+##ENERGY
+mp					120
+mprate  			1 #SCRIPT
+
+##GRAB
+grabdistance 		30 #36/33/30
+grabfinish 			1 #PLAYER=0/ENEMY=1
+
+##WEIGHT/HEIGHT
+antigravity			-3 #-3/-6/-9
+height				89
+
+##MISC
+jugglepoints		30
+risetime			170
+riseinv				0 1 #HEROES 0.4 - ENEMY 0 - BOSS 0.4
+makeinv				2 0
+atchain				1
+weapons				none none none none
+gfxshadow			1 1
+dust				dust
+aimove				chase #ENEMY ONLY
+
+##SCRIPTS
+onblockpscript		data/scripts/onblockp/default.c
+ondrawscript		data/scripts/ondraw/rocket.c
+onspawnscript		data/scripts/onspawn/rocket.c
+animationscript	 	data/scripts/animation/default.c
+
+##ICONS
+icon				data/chars/rocket/rocket/icon.gif 1
+
+##DIESOUND
+diesound			data/voices/BossDie2.wav
+
+##ANIMATIONS#############################################################################
+
+anim spawn
+	loop	0
+	delay	1
+	offset	153 191
+		seta 	90
+	frame	data/chars/rocket/rocket/idle00.gif
+
+anim idle #STATIC FLY
+	loop	1
+	delay	4
+	offset	153 191
+	bbox 	140 105 26 88
+		seta 	40
+	@cmd clearL
+	frame	data/chars/rocket/rocket/idle00.gif
+		seta 	42
+	frame	data/chars/rocket/rocket/idle01.gif
+		seta 	44
+	frame	data/chars/rocket/rocket/idle00.gif
+		seta 	46
+	frame	data/chars/rocket/rocket/idle01.gif
+		seta 	48
+	frame	data/chars/rocket/rocket/idle00.gif
+		seta 	46
+	frame	data/chars/rocket/rocket/idle01.gif
+		seta 	44
+	frame	data/chars/rocket/rocket/idle00.gif
+		seta 	42
+	frame	data/chars/rocket/rocket/idle01.gif
+		seta 	40
+	frame	data/chars/rocket/rocket/idle00.gif
+		seta 	38
+	frame	data/chars/rocket/rocket/idle01.gif
+		seta 	36
+	frame	data/chars/rocket/rocket/idle00.gif
+		seta 	34
+	frame	data/chars/rocket/rocket/idle01.gif
+		seta 	32
+	frame	data/chars/rocket/rocket/idle00.gif
+		seta 	34
+	frame	data/chars/rocket/rocket/idle01.gif
+		seta 	36
+	frame	data/chars/rocket/rocket/idle00.gif
+		seta 	38
+	frame	data/chars/rocket/rocket/idle01.gif
+
+anim walk
+	loop	1
+	delay	4
+	offset	153 191
+	bbox 	140 110 30 83
+		seta 	40
+	frame	data/chars/rocket/rocket/walk00.gif
+		seta 	42
+	frame	data/chars/rocket/rocket/walk01.gif
+		seta 	44
+	frame	data/chars/rocket/rocket/walk00.gif
+		seta 	46
+	frame	data/chars/rocket/rocket/walk01.gif
+		seta 	48
+	frame	data/chars/rocket/rocket/walk00.gif
+		seta 	46
+	frame	data/chars/rocket/rocket/walk01.gif
+		seta 	44
+	frame	data/chars/rocket/rocket/walk00.gif
+		seta 	42
+	frame	data/chars/rocket/rocket/walk01.gif
+		seta 	40
+	frame	data/chars/rocket/rocket/walk00.gif
+		seta 	38
+	frame	data/chars/rocket/rocket/walk01.gif
+		seta 	36
+	frame	data/chars/rocket/rocket/walk00.gif
+		seta 	34
+	frame	data/chars/rocket/rocket/walk01.gif
+		seta 	32
+	frame	data/chars/rocket/rocket/walk00.gif
+		seta 	34
+	frame	data/chars/rocket/rocket/walk01.gif
+		seta 	36
+	frame	data/chars/rocket/rocket/walk00.gif
+		seta 	38
+	frame	data/chars/rocket/rocket/walk01.gif
+
+anim backwalk
+	loop	1
+	delay	4
+	offset	153 191
+	bbox 	140 110 30 83
+		seta 	40
+	frame	data/chars/rocket/rocket/backwalk00.gif
+		seta 	42
+	frame	data/chars/rocket/rocket/backwalk01.gif
+		seta 	44
+	frame	data/chars/rocket/rocket/backwalk00.gif
+		seta 	46
+	frame	data/chars/rocket/rocket/backwalk01.gif
+		seta 	48
+	frame	data/chars/rocket/rocket/backwalk00.gif
+		seta 	46
+	frame	data/chars/rocket/rocket/backwalk01.gif
+		seta 	44
+	frame	data/chars/rocket/rocket/backwalk00.gif
+		seta 	42
+	frame	data/chars/rocket/rocket/backwalk01.gif
+		seta 	40
+	frame	data/chars/rocket/rocket/backwalk00.gif
+		seta 	38
+	frame	data/chars/rocket/rocket/backwalk01.gif
+		seta 	36
+	frame	data/chars/rocket/rocket/backwalk00.gif
+		seta 	34
+	frame	data/chars/rocket/rocket/backwalk01.gif
+		seta 	32
+	frame	data/chars/rocket/rocket/backwalk00.gif
+		seta 	34
+	frame	data/chars/rocket/rocket/backwalk01.gif
+		seta 	36
+	frame	data/chars/rocket/rocket/backwalk00.gif
+		seta 	38
+	frame	data/chars/rocket/rocket/backwalk01.gif
+	
+anim run
+	loop	1
+	delay	4
+	offset	153 191
+	bbox 	140 110 30 83
+		seta 	40
+	frame	data/chars/rocket/rocket/walk00.gif
+		seta 	42
+	frame	data/chars/rocket/rocket/walk01.gif
+		seta 	44
+	frame	data/chars/rocket/rocket/walk00.gif
+		seta 	46
+	frame	data/chars/rocket/rocket/walk01.gif
+		seta 	48
+	frame	data/chars/rocket/rocket/walk00.gif
+		seta 	46
+	frame	data/chars/rocket/rocket/walk01.gif
+		seta 	44
+	frame	data/chars/rocket/rocket/walk00.gif
+		seta 	42
+	frame	data/chars/rocket/rocket/walk01.gif
+		seta 	40
+	frame	data/chars/rocket/rocket/walk00.gif
+		seta 	38
+	frame	data/chars/rocket/rocket/walk01.gif
+		seta 	36
+	frame	data/chars/rocket/rocket/walk00.gif
+		seta 	34
+	frame	data/chars/rocket/rocket/walk01.gif
+		seta 	32
+	frame	data/chars/rocket/rocket/walk00.gif
+		seta 	34
+	frame	data/chars/rocket/rocket/walk01.gif
+		seta 	36
+	frame	data/chars/rocket/rocket/walk00.gif
+		seta 	38
+	frame	data/chars/rocket/rocket/walk01.gif
+
+anim grabbed
+	loop	0
+	delay	8
+	offset	153 191
+	bbox 	140 115 33 78
+	frame	data/chars/rocket/rocket/grabbed00.gif
+
+anim land
+	bouncefactor 0
+	loop	0
+	delay	4
+	offset	153 191
+	@cmd landSafe
+	@cmd flipRandom
+	@cmd leaper -1.8 1.8 0
+	@cmd deGravity 1
+	frame	data/chars/rocket/rocket/land00.gif
+	frame	data/chars/rocket/rocket/land01.gif
+	frame	data/chars/rocket/rocket/land00.gif
+	frame	data/chars/rocket/rocket/land01.gif
+	frame	data/chars/rocket/rocket/backwalk00.gif
+	frame	data/chars/rocket/rocket/backwalk01.gif
+	frame	data/chars/rocket/rocket/backwalk00.gif
+	frame	data/chars/rocket/rocket/backwalk01.gif
+	@cmd deGravity 0
+		seta	48
+	frame	data/chars/rocket/rocket/backwalk00.gif
+		seta	46
+	@cmd cancel 40 120 -999 0 -12 12 "ANI_ATTACK2"
+	frame	data/chars/rocket/rocket/backwalk01.gif
+		seta	44
+	frame	data/chars/rocket/rocket/backwalk00.gif
+		seta	42
+	frame	data/chars/rocket/rocket/backwalk01.gif
+		seta	40
+	frame	data/chars/rocket/rocket/backwalk00.gif
+		seta	38
+	frame	data/chars/rocket/rocket/backwalk01.gif
+		seta	36
+	frame	data/chars/rocket/rocket/backwalk00.gif
+		seta	34
+	frame	data/chars/rocket/rocket/backwalk01.gif
+	
+anim pain #UP
+	loop	0
+	delay	4
+	offset	153 191
+	bbox 	133 114 30 79
+	frame	data/chars/rocket/rocket/pain00.gif
+	frame	data/chars/rocket/rocket/pain01.gif
+	frame	data/chars/rocket/rocket/pain00.gif
+	frame	data/chars/rocket/rocket/pain01.gif
+	frame	data/chars/rocket/rocket/pain00.gif
+	frame	data/chars/rocket/rocket/pain01.gif
+	frame	data/chars/rocket/rocket/pain00.gif
+	frame	data/chars/rocket/rocket/pain01.gif
+	@cmd aniChange 1 "ANI_FOLLOW4"
+	frame	data/chars/rocket/rocket/pain01.gif
+
+anim pain2 #DOWN
+	loop	0
+	delay	4
+	offset	153 191
+	bbox 	140 122 36 71
+	frame	data/chars/rocket/rocket/pain200.gif
+	frame	data/chars/rocket/rocket/pain201.gif
+	frame	data/chars/rocket/rocket/pain200.gif
+	frame	data/chars/rocket/rocket/pain201.gif
+	frame	data/chars/rocket/rocket/pain200.gif
+	frame	data/chars/rocket/rocket/pain201.gif
+	frame	data/chars/rocket/rocket/pain200.gif
+	frame	data/chars/rocket/rocket/pain201.gif
+	@cmd aniChange 1 "ANI_FOLLOW4"
+	frame	data/chars/rocket/rocket/pain201.gif
+
+anim fall #NORMAL
+	landframe 2
+	loop	0
+	delay	32
+	offset	153 191
+	bbox 	125 126 45 56
+	@cmd deGravity 0
+	frame	data/chars/rocket/rocket/fall00.gif
+		delay	999
+	@cmd cancelFall 100 "ANI_LAND"
+	frame	data/chars/rocket/rocket/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Falling.wav
+	frame	data/chars/rocket/rocket/fall01.gif
+
+anim burn #BURNED FALL
+	landframe 2
+	loop	1 0 2
+	delay	3
+	offset	153 191
+	bbox 	125 126 45 56
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	@cmd deGravity 0
+	frame	data/chars/rocket/rocket/fall00.gif
+	@cmd spawn01 "smoke" 0 50 0
+	drawmethod tintmode 2
+	drawmethod tintcolor 255
+	frame	data/chars/rocket/rocket/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	nodrawmethod
+	sound	data/sounds/Falling.wav
+	frame	data/chars/rocket/rocket/fall01.gif
+
+anim shock #SHOCKED FALL
+	landframe 2
+	loop	1 0 2
+	delay	3
+	offset	153 191
+	bbox 	125 126 45 56
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	@cmd deGravity 0
+	frame	data/chars/rocket/rocket/fall00.gif
+	drawmethod tintmode 2
+	drawmethod tintcolor -255
+	frame	data/chars/rocket/rocket/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	nodrawmethod
+	sound	data/sounds/Falling.wav
+	frame	data/chars/rocket/rocket/fall01.gif
+	
+anim fall6 #SPIN FALL
+	landframe 4
+	loop	1 0 4
+	delay	3
+	offset	153 191
+	@cmd deGravity 0
+	frame	data/chars/rocket/rocket/fall600.gif
+	frame	data/chars/rocket/rocket/fall601.gif
+	frame	data/chars/rocket/rocket/fall602.gif
+	frame	data/chars/rocket/rocket/fall603.gif
+		delay	8
+	sound	data/sounds/Falling.wav
+	frame	data/chars/rocket/rocket/fall01.gif
+
+anim fall7 #GRABSTART POSITION
+	loop	0
+	delay	1000
+	offset	153 191
+	frame	data/chars/rocket/rocket/fall700.gif
+	frame	data/chars/rocket/rocket/fall701.gif
+	frame	data/chars/rocket/rocket/fall702.gif
+	frame	data/chars/rocket/rocket/fall703.gif
+	frame	data/chars/rocket/rocket/fall704.gif
+	frame	data/chars/rocket/rocket/fall705.gif
+
+anim fall8 #FINISH/THROW TYPE 3
+	landframe 2
+	loop	0
+	delay	32
+	offset	153 191
+	bbox 	125 126 45 56
+	hitfx	data/sounds/MediumKick.wav
+	@cmd deGravity 0
+	attack 125 126 45 56 4 1 0 0 0 12
+	frame	data/chars/rocket/rocket/fall00.gif
+		delay	999
+	@cmd cancelFall 100 "ANI_LAND"
+	frame	data/chars/rocket/rocket/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Falling.wav
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/rocket/rocket/fall01.gif
+
+anim fall9 #FINISH/THROW TYPE 2
+	landframe 2
+	loop	0
+	delay	32
+	offset	153 191
+	bbox 	131 126 36 65
+	hitfx	data/sounds/MediumKick.wav
+	@cmd deGravity 0
+	attack 131 126 36 65 4 1 0 0 0 12
+	frame	data/chars/rocket/rocket/fall900.gif
+		delay	999
+	@cmd cancelFall 100 "ANI_LAND"
+	frame	data/chars/rocket/rocket/fall900.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Falling.wav
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/rocket/rocket/fall01.gif
+
+anim rise
+	loop	0
+	delay	12
+	offset	153 191
+	frame	data/chars/rocket/rocket/rise00.gif
+	frame	data/chars/rocket/rocket/rise01.gif
+	frame	data/chars/rocket/rocket/rise02.gif
+		delay	4
+	@cmd leaper 0 1.8 0
+	@cmd deGravity 1
+	sound	data/sounds/Wind3.wav
+	frame	data/chars/rocket/rocket/rise04.gif
+	frame	data/chars/rocket/rocket/rise03.gif
+	frame	data/chars/rocket/rocket/rise04.gif
+	@cmd looper 4 4
+	@cmd deGravity 0
+		seta	46
+	frame	data/chars/rocket/rocket/backwalk00.gif
+		seta	44
+	frame	data/chars/rocket/rocket/backwalk01.gif
+		seta	42
+	frame	data/chars/rocket/rocket/backwalk00.gif
+		seta	40
+	frame	data/chars/rocket/rocket/backwalk01.gif
+
+anim attack1 #GRAB/LONG RANGE CHARGE
+	range 0 400
+	rangea -999 0
+	followanim 1
+	followcond 4
+	fastattack 1
+	jugglecost 0
+	forcedirection 0
+	landframe 2
+	loop	1 0 2
+	delay	4
+	offset	153 191
+	bbox 	141 105 25 88
+	@cmd leaper 0 -3 0
+	frame	data/chars/rocket/rocket/a100.gif
+	frame	data/chars/rocket/rocket/a101.gif
+	attack 141 105 25 88 0 0 1 1 0 12
+	dropv 0 1 0
+	frame	data/chars/rocket/rocket/a100.gif
+	@cmd aniChange 1 "ANI_FOLLOW2"
+	frame	data/chars/rocket/rocket/a100.gif
+	
+anim follow1 #SLAM
+	attackone 0
+	fastattack 1
+	jugglecost 0
+	forcedirection 0
+	landframe 5
+	loop	0
+	delay	16
+	offset	153 191
+	hitfx	data/sounds/MediumKick.wav
+	sound	data/sounds/Throw.wav
+	@cmd grabStart2
+	@cmd position 0 30 10 -1 -1
+	frame	data/chars/rocket/rocket/grab00.gif
+		delay	4
+	@cmd position 0 30 10 -1 0
+	@cmd leaper 0 1 0
+	sound	data/voices/Attack2.wav
+	frame	data/chars/rocket/rocket/grab01.gif
+	@cmd position 0 30 10 -1 0
+	@cmd leaper 0 3 0
+	sound	data/sounds/Wind3.wav
+	frame	data/chars/rocket/rocket/grab00.gif
+	@cmd position 0 30 10 -1 0
+	@cmd leaper 0 9 0
+	frame	data/chars/rocket/rocket/grab01.gif
+		delay	999
+	@cmd looper 3 11
+	@cmd position 4 20 -1 -1 0
+	@cmd deGravity -90
+	@cmd leaper 0 -90 0
+	sound	data/sounds/Wind3.wav
+	frame	data/chars/rocket/rocket/throw00.gif
+		delay	12
+	attack 139 137 54 56 16 1 0 0 0 12
+	@cmd spawn01 "quakehigh" 0 0 0
+	sound	data/sounds/Slam.wav
+	frame	data/chars/rocket/rocket/throw00.gif
+		delay	6
+	@cmd depost
+	@cmd slam 48 2 -3 1.5 0 0
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/rocket/rocket/throw00.gif
+	@cmd dasher 2 0 0
+	frame	data/chars/rocket/rocket/throw00.gif
+	frame	data/chars/rocket/rocket/throw00.gif
+	frame	data/chars/rocket/rocket/throw00.gif
+	frame	data/chars/rocket/rocket/throw00.gif
+	@cmd aniChange 1 "ANI_FOLLOW4"
+	frame	data/chars/rocket/rocket/throw00.gif
+
+anim follow2 #LONG RANGE CHARGE
+	fastattack 1
+	jugglecost 10
+	forcedirection -1
+	loop	0
+	delay	4
+	offset	153 191
+	bbox 	140 122 36 71
+	hitfx	data/sounds/HighPunch.wav
+	frame	data/chars/rocket/rocket/a102.gif
+	@cmd target 5.5 5.5
+	frame	data/chars/rocket/rocket/a103.gif
+		delay	6
+	attack 132 134 73 31 12 1 0 0 10 12
+	@cmd dasher 0.5 0 0
+	bbox 116 140 70 25
+	frame	data/chars/rocket/rocket/a104.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	@cmd dasher 1.5 0 0
+	frame	data/chars/rocket/rocket/a105.gif
+	attack 132 134 73 31 12 1 0 0 10 12
+	@cmd dasher 2.5 0 0
+	sound	data/sounds/Wind3.wav
+	frame	data/chars/rocket/rocket/a106.gif
+		delay	4
+	attack 0 0 0 0 0 0 0 0 0 0
+	@cmd dashTarget
+	frame	data/chars/rocket/rocket/a107.gif
+	attack 132 134 73 31 12 1 0 0 10 12
+	@cmd dashTarget
+	frame	data/chars/rocket/rocket/a108.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	@cmd dashTarget
+	frame	data/chars/rocket/rocket/a109.gif
+	attack 132 134 73 31 12 1 0 0 10 12
+	@cmd dashTarget
+	frame	data/chars/rocket/rocket/a110.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	@cmd dashTarget
+	frame	data/chars/rocket/rocket/a111.gif
+	@cmd looper 6 3
+	@cmd aniChange 1 "ANI_FOLLOW4"
+	frame	data/chars/rocket/rocket/a111.gif
+	
+anim attack2 #SHORT RANGE CHARGE
+	range 0 200
+	rangea -999 0
+	fastattack 1
+	jugglecost 10
+	forcedirection -1
+	landframe 18
+	loop	1 14 18
+	delay	4
+	offset	153 191
+	bbox 	140 110 30 83
+	hitfx	data/sounds/HighKick.wav
+	@cmd deGravity 1
+	@cmd leaper 0 1.5 0
+	frame	data/chars/rocket/rocket/backwalk00.gif
+	frame	data/chars/rocket/rocket/backwalk01.gif
+	frame	data/chars/rocket/rocket/backwalk00.gif
+	frame	data/chars/rocket/rocket/backwalk01.gif
+	frame	data/chars/rocket/rocket/backwalk00.gif
+	frame	data/chars/rocket/rocket/backwalk01.gif
+	frame	data/chars/rocket/rocket/backwalk00.gif
+	frame	data/chars/rocket/rocket/backwalk01.gif
+	frame	data/chars/rocket/rocket/backwalk00.gif
+	frame	data/chars/rocket/rocket/backwalk01.gif
+	frame	data/chars/rocket/rocket/backwalk00.gif
+	@cmd deGravity 0
+	frame	data/chars/rocket/rocket/backwalk01.gif
+		delay	4
+	sound	data/sounds/Wind3.wav
+	@cmd leaper 4 -4 0
+	attack 146 152 47 41 24 1 0 0 0 12
+	bbox 	137 126 41 46
+	frame	data/chars/rocket/rocket/a200.gif
+	frame	data/chars/rocket/rocket/a201.gif
+	frame	data/chars/rocket/rocket/a200.gif
+	frame	data/chars/rocket/rocket/a201.gif
+	frame	data/chars/rocket/rocket/a200.gif
+	frame	data/chars/rocket/rocket/a201.gif
+	@cmd leaper 4 0 0
+	frame	data/chars/rocket/rocket/a200.gif
+	frame	data/chars/rocket/rocket/a201.gif
+	frame	data/chars/rocket/rocket/a200.gif
+	frame	data/chars/rocket/rocket/a201.gif
+	@cmd leaper 3 0 0
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/rocket/rocket/a200.gif
+	frame	data/chars/rocket/rocket/a201.gif
+	@cmd leaper 2 0 0
+	frame	data/chars/rocket/rocket/a200.gif
+	frame	data/chars/rocket/rocket/a201.gif
+	@cmd leaper 1 0 0
+	@cmd cancelRandom -400 400 0 0 0 "ANI_ATTACK1"
+	frame	data/chars/rocket/rocket/a200.gif
+	frame	data/chars/rocket/rocket/a201.gif
+	@cmd aniChange 1 "ANI_FOLLOW4"
+	frame	data/chars/rocket/rocket/a201.gif
+	
+anim follow4 #FLY UP
+	loop	0
+	delay	4
+	offset	153 191
+	bbox 	140 115 33 78
+	@cmd leaper 0 1.8 0
+	@cmd deGravity 1
+	frame	data/chars/rocket/rocket/rise04.gif
+	frame	data/chars/rocket/rocket/rise03.gif
+	frame	data/chars/rocket/rocket/rise04.gif
+	@cmd looper 1 4
+	@cmd deGravity 0
+		seta	46
+	bbox 	140 110 30 83
+	frame	data/chars/rocket/rocket/backwalk00.gif
+		seta	44
+	frame	data/chars/rocket/rocket/backwalk01.gif
+		seta	42
+	frame	data/chars/rocket/rocket/backwalk00.gif
+		seta	40
+	@cmd clearL
+	frame	data/chars/rocket/rocket/backwalk01.gif

@@ -1,0 +1,255 @@
+music		data/bgs/St405/Lv405a.bor
+bossmusic	data/music/boss3.bor
+
+###BACKGROUND
+background			data/bgs/St405/back01.gif
+
+###BGLAYER/PANEL
+panel			data/bgs/St405/pN01.gif	none	none
+
+###MISC
+Frontpanel			data/bgs/St405/Front01.gif
+#order			a
+settime			99
+bgspeed 25 0
+Rock 2
+scrollspeed 	0.5
+stagenumber 	5
+cameratype 1
+backgroundSpeed 1 40
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	30 30  150
+spawn2  	35 30 150
+spawn3  	40 30  150
+
+light		128 -128
+at			0
+
+
+Wait
+at 0
+
+group 4 4
+at 0
+
+spawn  Donovan_B
+map    2
+health 80
+	coords  350 225
+	at  0
+
+
+spawn  Fog_
+map    2
+health 80
+	coords  450 245
+	at  0
+
+spawn  Signal_
+map    2
+health 80
+	coords  270 225
+	at  0
+
+spawn  jonny
+map    2
+health 80
+	coords  550 250
+	at  0
+
+
+spawn  Galsia
+health 50
+	coords  550 250
+	at  0
+
+spawn  HAku_oh
+health 70
+	coords  550 250
+	at  0
+
+group 9 9
+at 1
+
+
+spawn  Nora
+health 70
+	coords  500 230
+	at  100
+
+spawn  Electra
+health 70
+	coords  500 260
+	at  200
+
+
+spawn  Nora
+health 70
+	coords  500 230
+	at  300
+
+spawn  Electra
+health 70
+	coords  500 260
+	at  400
+
+
+Wait
+at 790
+
+group 4 4
+at 790
+
+
+spawn  Vice
+health 70
+	coords  -100 230
+	at  790
+
+spawn  Vice
+health 70
+	coords  -100 260
+	at  790
+
+
+spawn  Vice
+health 70
+	coords  500 230
+	at  790
+
+spawn  Vice
+health 70
+	coords  500 260
+	at  790
+
+spawn  slum
+health 70
+	coords  -100 230
+	at  790
+
+spawn  slum
+health 70
+	coords  -100 260
+	at  790
+
+
+spawn  slum
+health 70
+	coords  500 230
+	at  790
+
+spawn  slum
+health 70
+	coords  500 260
+	at  790
+
+
+group 9 9
+at 791
+
+
+spawn  Donovan_B
+health 50
+	coords  520 225
+	at  800
+
+spawn  Donovan_B
+health 50
+	coords  520 225
+	at  1027
+
+
+spawn  Galsia_
+map    5
+health 90
+	coords  520 263
+	at  1075
+
+spawn  Galsia_
+map    5
+health 90
+	coords  520 244
+	at  1118
+
+spawn  HAku_Oh
+map    5
+health 90
+	coords  300 244 150
+	at  1500
+
+group 4 4
+at 1500
+
+spawn  Kusanagi
+flip   1
+map    3
+health 90
+	coords  100 244 150
+	at  1500
+
+spawn  Fog
+map    4
+health 100
+	coords  -100 230
+	at  790
+
+spawn  Fog
+map    4
+health 100
+	coords  -100 260
+	at  790
+
+spawn  Fog
+map    4
+health 100
+	coords  550 230
+	at  790
+
+spawn  Pipe
+	coords  520 260
+	at  790
+
+spawn  Fog
+map    4
+health 100
+	coords  550 260
+	at  790
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

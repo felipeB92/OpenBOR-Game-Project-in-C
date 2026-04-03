@@ -1,0 +1,148 @@
+name			Robotx_ShockRay
+type			none
+health			1
+nolife			1
+lifespan		4
+remove			0
+shadow			0
+antigravity		100
+alpha			1
+didhitscript	data/scripts/didhit/robotx_shockray.c
+animationscript	data/scripts/animation/default.c
+
+anim idle
+	fastattack 1
+	jugglecost 0
+	forcedirection 0
+	loop	0
+	delay	3
+	offset	100 168
+	hitfx	data/sounds/HighPunch.wav
+	sound	data/sounds/Shock.wav
+	attack 32 32 136 136 2 0 0 0 0 12
+	seal 1 1
+	frame	data/chars/robotx/shock/shock00.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/robotx/shock/shock01.gif
+	attack 32 32 136 136 2 0 0 0 0 12
+	seal 1 1
+	frame	data/chars/robotx/shock/shock00.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/robotx/shock/shock01.gif
+	attack 32 32 136 136 2 0 0 0 0 12
+	seal 1 1
+	frame	data/chars/robotx/shock/shock00.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/robotx/shock/shock01.gif
+	attack 32 32 136 136 2 0 0 0 0 12
+	seal 1 1
+	frame	data/chars/robotx/shock/shock00.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/robotx/shock/shock01.gif
+	attack 32 32 136 136 2 0 0 0 0 12
+	seal 1 1
+	frame	data/chars/robotx/shock/shock00.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/robotx/shock/shock01.gif
+	attack 32 32 136 136 2 0 0 0 0 12
+	seal 1 1
+	frame	data/chars/robotx/shock/shock00.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/robotx/shock/shock01.gif
+	attack 32 32 136 136 2 0 0 0 0 12
+	seal 1 1
+	frame	data/chars/robotx/shock/shock00.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	hitflash shock
+	frame	data/chars/robotx/shock/shock01.gif
+	attack 32 32 136 136 2 0 0 0 0 12
+	seal 1 1
+	frame	data/chars/robotx/shock/shock00.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	hitflash flash
+	frame	data/chars/robotx/shock/shock01.gif ### 15 FRAMES
+	attack 32 32 136 136 2 0 0 0 0 12
+	seal 1 1
+	frame	data/chars/robotx/shock/shock00.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/robotx/shock/shock01.gif
+	attack 32 32 136 136 2 0 0 0 0 12
+	seal 1 1
+	frame	data/chars/robotx/shock/shock00.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/robotx/shock/shock01.gif
+	attack 32 32 136 136 2 0 0 0 0 12
+	seal 1 1
+	frame	data/chars/robotx/shock/shock00.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/robotx/shock/shock01.gif
+	attack 32 32 136 136 2 0 0 0 0 12
+	seal 1 1
+	frame	data/chars/robotx/shock/shock00.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/robotx/shock/shock01.gif
+	attack 32 32 136 136 2 0 0 0 0 12
+	seal 1 1
+	frame	data/chars/robotx/shock/shock00.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/robotx/shock/shock01.gif
+	attack 32 32 136 136 2 0 0 0 0 12
+	seal 1 1
+	frame	data/chars/robotx/shock/shock00.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/robotx/shock/shock01.gif
+	attack 32 32 136 136 2 0 0 0 0 12
+	seal 1 1
+	frame	data/chars/robotx/shock/shock00.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	hitflash shock
+	frame	data/chars/robotx/shock/shock01.gif
+	attack 32 32 136 136 2 0 0 0 0 12
+	seal 1 1
+	frame	data/chars/robotx/shock/shock00.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	hitflash flash
+	frame	data/chars/robotx/shock/shock01.gif ### 31 FRAMES
+	attack 32 32 136 136 2 0 0 0 0 12
+	seal 1 1
+	frame	data/chars/robotx/shock/shock00.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/robotx/shock/shock01.gif
+	attack 32 32 136 136 2 0 0 0 0 12
+	seal 1 1
+	frame	data/chars/robotx/shock/shock00.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/robotx/shock/shock01.gif
+	attack 32 32 136 136 2 0 0 0 0 12
+	seal 1 1
+	frame	data/chars/robotx/shock/shock00.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/robotx/shock/shock01.gif
+	attack 32 32 136 136 2 0 0 0 0 12
+	seal 1 1
+	frame	data/chars/robotx/shock/shock00.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/robotx/shock/shock01.gif
+	attack 32 32 136 136 2 0 0 0 0 12
+	seal 1 1
+	frame	data/chars/robotx/shock/shock00.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/robotx/shock/shock01.gif
+	attack 32 32 136 136 2 0 0 0 0 12
+	seal 1 1
+	frame	data/chars/robotx/shock/shock00.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/robotx/shock/shock01.gif
+	attack 32 32 136 136 2 0 0 0 0 12
+	seal 1 1
+	frame	data/chars/robotx/shock/shock00.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	hitflash shock
+	frame	data/chars/robotx/shock/shock01.gif
+	shock 32 32 136 136 12 3 0 0 10 12
+	seal 1 1
+	dropv 3 4 0
+	frame	data/chars/robotx/shock/shock00.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	@cmd suicide
+	frame	data/chars/robotx/shock/shock01.gif ### 47 FRAMES

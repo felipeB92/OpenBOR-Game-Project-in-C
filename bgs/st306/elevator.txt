@@ -1,0 +1,86 @@
+name			st6_elevator #ELEVATOR ANIMATED BGLAYER
+type			none
+shadow			0
+setlayer		-1000
+onspawnscript	data/scripts/onspawn/elevator.c
+animationscript	data/scripts/animation/default.c
+script			data/scripts/updateentity/st6_panel.c
+
+load			st6_panel1
+load			st6_panel2
+load			st6_door1
+load			st6_door2
+load			st6_door3
+load			st6_door4
+load			st6_exit
+load			st6_locks
+load			st6_gas
+load			P10
+load			P11
+load			P12
+load			McBride0
+load			Maclean0
+load			Macleod0
+
+anim spawn
+	loop	0
+	delay	32
+	offset	1 277
+	@cmd spawnVar "st6_panel1" "panel1" 85 0 194 0
+	@cmd spawnVar "st6_panel2" "panel2" 33 0 246 0
+	@cmd spawnBind "st6_door1" 768 0 -125
+	@cmd spawnBind "st6_door2" 952 0 -125
+	@cmd spawnBind "st6_door3" 768 0 428
+	@cmd spawnBind "st6_door4" 952 0 428
+	@cmd spawnBind "st6_exit" 1208 0 -125
+	@cmd spawnBind "st6_locks" 1171 0 -168
+	@cmd spawnBind "st6_gas" 762 0 123
+	@cmd spawnBind "st6_gas" 1018 0 123
+	@cmd spawnBind "st6_gas" 1018 0 -153
+	@cmd spawnBind "st6_gas" 1018 0 400
+	frame	data/bgs/sor3_st6/bg00.gif
+	
+anim idle
+	loop	0
+	delay	416
+	offset	1 277
+	@cmd addBlockade 0
+	frame	data/bgs/sor3_st6/bg00.gif
+	
+anim follow1 #MOVE UP
+	loop	0
+	delay	416
+	offset	1 277
+	sound	data/sounds/elevator.wav
+	@cmd leaper 0 0 0.332855
+	@cmd spawn01 "quakehigh" 0 0 0
+	@cmd addBlockade 900
+	frame	data/bgs/sor3_st6/bg00.gif
+		delay	128
+	@cmd leaper 0 0 0
+	@cmd savePos
+	frame	data/bgs/sor3_st6/bg00.gif
+	@cmd spawnScreenZ "P10" 300 300 -60
+	@cmd spawnScreenZ "P11" 350 350 -60
+	@cmd spawnScreenZ "P12" 400 400 -60
+	@cmd aniChange 1 "ANI_IDLE"
+	frame	data/bgs/sor3_st6/bg00.gif
+	
+anim follow2 #MOVE DOWN
+	loop	0
+	delay	416
+	offset	1 277
+	sound	data/sounds/elevator.wav
+	@cmd leaper 0 0 -0.332855
+	@cmd spawn01 "quakehigh" 0 0 0
+	@cmd addBlockade 900
+	frame	data/bgs/sor3_st6/bg00.gif
+		delay	128
+	@cmd leaper 0 0 0
+	@cmd savePos
+	frame	data/bgs/sor3_st6/bg00.gif
+	@cmd spawnScreenZ "McBride0" 300 300 -60
+	@cmd spawnScreenZ "Maclean0" 350 350 -60
+	@cmd spawnScreenZ "Macleod0" 400 400 -60
+	@cmd aniChange 1 "ANI_IDLE"
+	frame	data/bgs/sor3_st6/bg00.gif

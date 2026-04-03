@@ -1,0 +1,180 @@
+name	Adam_Kunai
+health	100
+speed	12
+type	none
+antigrab 2
+gfxshadow	1
+candamage			enemy npc obstacle
+JUMPHEIGHT 1 1
+Jumpheight 3
+icon	data/chars/players/Adam/icon.gif
+diesound data/sounds/Adamdie.wav
+running	20	3	3	1	1
+
+Load KunaiT
+
+Com d d freespecial5
+Com u u freespecial6
+
+
+
+remap data/chars/players/Adam/idle00.gif data/chars/players/Adam/alter1.gif
+remap data/chars/players/Adam/idle00.gif data/chars/players/Adam/alter2.gif
+remap data/chars/players/Adam/idle00.gif data/chars/players/Adam/alter3.gif
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	136 172
+	bbox	121 92 34 80
+	frame   data/chars/players/Adam/Kunai/idle00.gif
+	frame   data/chars/players/Adam/Kunai/idle01.gif
+	frame   data/chars/players/Adam/Kunai/idle02.gif
+	frame   data/chars/players/Adam/Kunai/idle03.gif
+
+
+
+
+anim walk
+	loop	1
+	delay	1
+	offset	136 172
+	bbox	123 94 29 63
+	jumpframe  0  0.001  0.001  0
+	landframe  1
+	frame	data/chars/players/Adam/Kunai/walk00.gif
+	frame	data/chars/players/Adam/Kunai/walk00.gif
+	delay	14
+	frame	data/chars/players/Adam/Kunai/walk00.gif
+	frame	data/chars/players/Adam/Kunai/walk01.gif
+	frame	data/chars/players/Adam/Kunai/walk02.gif
+	frame	data/chars/players/Adam/Kunai/walk03.gif
+	frame	data/chars/players/Adam/Kunai/walk04.gif
+	frame	data/chars/players/Adam/Kunai/walk05.gif
+
+
+anim get
+	loop	0
+	delay	10
+	offset	136 172
+	frame	data/chars/players/Adam/Kunai/get00.gif
+
+
+anim jump
+	loop	0
+	delay	5
+	offset	136 172
+	bbox	120 85 36 49
+	frame	data/chars/players/Adam/Kunai/jump00.gif
+	frame	data/chars/players/Adam/Kunai/jump01.gif
+
+
+
+
+anim jumpattack
+	loop	0
+	delay	7
+	offset	136 172
+	bbox	115 91 39 48
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Adam/Kunai/jumpatk00.gif
+		bbox  119  84  30  68
+		attack1  142  82  39  57  10  1  0  0  0  20
+	frame	data/chars/players/Adam/Kunai/jumpatk01.gif
+
+
+
+anim jumpattack2
+	loop	0
+	delay	7
+	offset	136 172
+	bbox	112 96 40 38
+	attack	105 127 58 27 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Adam/Kunai/jumpatk200.gif
+
+anim jumpforward
+	loop	0
+	delay	7
+	offset	136 172
+	bbox	119 89 30 44
+	attack	110 120 84 42 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/soco.wav
+	frame	data/chars/players/Adam/Kunai/fjumpatk01.gif
+
+
+anim runjumpattack
+	loop	0
+	delay	7
+	offset	136 172
+	bbox	117 93 37 43
+	attack	141 108 60 32 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Adam/Kunai/jumpatk301.gif
+
+anim attack1
+	loop	0
+	delay	6
+	offset	136 172
+	bbox	134 96 27 64
+		Attack1  0
+	sound	data/sounds/armas/Whoosh.wav
+        hitfx	data/sounds/Armas/Corte.wav
+	frame	data/chars/players/Adam/Kunai/a100.gif
+		attack1  160  122  66  16  15  1  0  0  0  15
+	frame	data/chars/players/Adam/Kunai/a101.gif
+		Attack1  0
+	frame	data/chars/players/Adam/Kunai/a100.gif
+
+anim Special2
+	loop	0
+	delay	6
+	offset	136 172
+	bbox	134 96 27 64
+		Attack1  0
+        custknife Kunait
+        throwframe 2 45
+	sound	data/sounds/armas/Whoosh.wav
+        hitfx	data/sounds/Armas/Corte.wav
+	frame	data/chars/players/Adam/Kunai/a100.gif
+	frame	data/chars/players/Adam/Kunai/a101.gif
+		Attack1  0
+	frame	data/chars/players/Adam/Kunai/a102.gif
+	frame	data/chars/players/Adam/Kunai/a103.gif
+
+
+
+anim run
+        loop    1
+        delay  10
+	offset	136 172
+	bbox	122 98 30 60
+	jumpframe  0  0.001  0.001  0
+	landframe  1
+        frame	data/chars/players/Adam/Kunai/run00.gif
+        frame	data/chars/players/Adam/Kunai/run01.gif
+        frame	data/chars/players/Adam/Kunai/run02.gif
+        frame	data/chars/players/Adam/Kunai/run03.gif
+        frame	data/chars/players/Adam/Kunai/run04.gif
+        frame	data/chars/players/Adam/Kunai/run05.gif
+
+
+
+
+
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	136 172
+	bbox	128 111 36 51
+	frame	data/chars/players/Adam/Kunai/jumpland00.gif
+

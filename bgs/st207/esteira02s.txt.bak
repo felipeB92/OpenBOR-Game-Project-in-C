@@ -1,0 +1,17 @@
+name			Esteira02s
+type			none
+shadow			0
+antigravity 	100
+onblockwscript	data/scripts/bounceF.c
+animationscript 	data/scripts/ani0020.h
+ondrawscript 		data/scripts/player_ondrawscript.c
+
+anim idle
+	loop	0
+	delay	42
+	offset	1 32
+	@cmd dasher 0.2 0 0
+	platform 126 -10 304 178 64 0.001
+	frame	data/bgs/st207/empty.gif
+	@cmd suicide
+	frame	data/bgs/st207/empty.gif

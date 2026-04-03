@@ -1,0 +1,625 @@
+##MAIN
+name				Ash0
+type				enemy
+hostile				player npc
+candamage			player npc obstacle
+
+##LIFE
+health				1 #SCRIPT
+
+##POWER
+offense 			1 #SCRIPT
+
+##SPEED
+speed				1 #SCRIPT
+
+##JUMP
+jumpheight 			1 #SCRIPT
+
+##GRAB
+grabdistance 		36 #36/33/30
+grabfinish 			1 #PLAYER=0/ENEMY=1
+
+##WEIGHT/HEIGHT
+antigravity			-9 #-3/-6/-9
+height				93
+
+##MISC
+jugglepoints		30
+risetime			170
+riseinv				0.4 1 #HEROES 0.4 - ENEMY 0 - BOSS 0.4
+makeinv				2 0
+atchain				1 1 2 3
+weapons				none none none none
+gfxshadow			1 1
+dust				dust
+aimove				chase #ENEMY ONLY
+blockodds 			1
+nopassiveblock		1
+death				2
+nodieblink			3
+
+##SCRIPTS
+onblockpscript		data/scripts/onblockp/default.c
+onspawnscript		data/scripts/onspawn/ash.c
+ondeathscript		data/scripts/ondeath/ash.c
+animationscript	 	data/scripts/animation/default.c
+
+##ICONS
+icon				data/chars/ash/icon.gif 1
+
+##DIESOUND
+diesound			data/voices/Die2.wav
+
+##REMAPS
+remap				data/chars/ash/idle00.gif data/chars/ash/alter1.gif
+remap				data/chars/ash/idle00.gif data/chars/ash/alter2.gif
+remap				data/chars/ash/idle00.gif data/chars/ash/alter3.gif
+
+##ANIMATIONS#############################################################################
+
+anim spawn #WAIT SPAWN
+	fshadow 0
+	loop	0
+	delay	64
+	offset	171 188
+	@cmd minz 0
+	@cmd setLayer -50
+	frame	data/chars/ash/boat00.gif
+	@cmd aniChange 0 "ANI_FOLLOW1"
+	frame	data/chars/ash/boat00.gif
+	
+anim follow1 #WAIT LOOP
+	fshadow 0
+	loop	1
+	delay	16
+	offset	171 188
+	@cmd setLayer -50
+	frame	data/chars/ash/boat00.gif
+	@cmd aniEcount 0 "ANI_FOLLOW2" 1
+	@cmd stealth 2
+	frame	data/chars/ash/boat00.gif
+	
+anim follow2 #LOOP STOP
+	fshadow 0
+	loop	0
+	delay	8
+	offset	171 188
+	frame	data/chars/ash/boat00.gif
+		offset	171 168
+	@cmd musicPlay "22.ogg"
+	frame	data/chars/ash/jumpdelay00.gif
+	frame	data/chars/ash/jumpdelay01.gif
+	frame	data/chars/ash/jumpdelay02.gif
+		offset	171 188
+	fshadow 1
+	@cmd setLayer 0
+	@cmd leaper 0 3.5 0.5
+	@cmd reseTime
+	sound	data/sounds/Jumping.wav
+	frame	data/chars/ash/jump00.gif
+		delay	2
+	frame	data/chars/ash/jump00.gif
+	@cmd landFrame
+		delay	8
+	@cmd minz 1
+	@cmd stealth 0
+	sound	data/sounds/Jumpland2.wav
+	@cmd spawn01 "quakelow" 0 0 0
+	frame	data/chars/ash/jumpland00.gif
+	frame	data/chars/ash/jumpland01.gif
+
+anim idle
+	loop	1
+	delay	12
+	offset	171 188
+	bbox 	159 100 23 90
+	@cmd clearL
+	frame	data/chars/ash/idle00.gif
+	frame	data/chars/ash/idle01.gif
+	frame	data/chars/ash/idle02.gif
+	frame	data/chars/ash/idle03.gif
+	frame	data/chars/ash/idle04.gif
+	frame	data/chars/ash/idle05.gif
+
+anim walk
+	loop	1
+	delay	20
+	offset	171 188
+	bbox 	163 103 25 87
+	sound	data/sounds/Run.wav
+	frame	data/chars/ash/walk00.gif
+	frame	data/chars/ash/walk01.gif
+	frame	data/chars/ash/walk02.gif
+	sound	data/sounds/Run2.wav
+	frame	data/chars/ash/walk03.gif
+	frame	data/chars/ash/walk04.gif
+	frame	data/chars/ash/walk05.gif
+
+anim get
+	loop	0
+	delay	16
+	offset	171 188
+	frame	data/chars/ash/get00.gif
+	
+anim grab
+	loop	0
+	delay	16
+	offset	171 188
+	bbox 	155 106 24 84
+	frame	data/chars/ash/grab00.gif
+
+anim grabbed
+	loop	0
+	delay	8
+	offset	171 188
+	bbox 	157 121 33 69
+	frame	data/chars/ash/grabbed00.gif
+	
+anim jumpdelay
+	loop	0
+	delay	8
+	offset	171 188
+	bbox 	154 147 36 43
+	frame	data/chars/ash/jumpdelay00.gif
+	bbox 	156 123 37 67
+	frame	data/chars/ash/jumpdelay01.gif
+	bbox 	167 100 23 90
+	frame	data/chars/ash/jumpdelay02.gif
+
+anim walkoff
+	loop	0
+	delay	4
+	offset	171 188
+	bbox 	168 92 20 87
+	@cmd jump 1
+	frame	data/chars/ash/jump00.gif
+	
+anim jumpland
+	loop	0
+	delay	8
+	offset	171 188
+	bbox 	156 123 37 67
+	sound	data/sounds/Jumpland2.wav
+	@cmd spawn01 "quakelow" 0 0 0
+	frame	data/chars/ash/jumpland00.gif
+	bbox 	167 100 23 90
+	frame	data/chars/ash/jumpland01.gif
+
+anim pain #UP
+	loop	0
+	delay	4
+	offset	171 188
+	bbox 	133 115 47 75
+	frame	data/chars/ash/pain00.gif
+	frame	data/chars/ash/pain01.gif
+	frame	data/chars/ash/pain00.gif
+	frame	data/chars/ash/pain01.gif
+	frame	data/chars/ash/pain00.gif
+	frame	data/chars/ash/pain01.gif
+	frame	data/chars/ash/pain00.gif
+	frame	data/chars/ash/pain01.gif
+	frame	data/chars/ash/pain00.gif
+	frame	data/chars/ash/pain01.gif
+	frame	data/chars/ash/pain00.gif
+	frame	data/chars/ash/pain01.gif
+
+anim pain2 #DOWN
+	loop	0
+	delay	4
+	offset	171 188
+	bbox 	146 111 36 79
+	frame	data/chars/ash/pain200.gif
+	frame	data/chars/ash/pain201.gif
+	frame	data/chars/ash/pain200.gif
+	frame	data/chars/ash/pain201.gif
+	frame	data/chars/ash/pain200.gif
+	frame	data/chars/ash/pain201.gif
+	frame	data/chars/ash/pain200.gif
+	frame	data/chars/ash/pain201.gif
+	frame	data/chars/ash/pain200.gif
+	frame	data/chars/ash/pain201.gif
+	frame	data/chars/ash/pain200.gif
+	frame	data/chars/ash/pain201.gif
+
+anim fall #NORMAL
+	landframe 1
+	loop	0
+	delay	999
+	offset	171 188
+	bbox 	143 118 55 44
+	frame	data/chars/ash/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Falling.wav
+	frame	data/chars/ash/fall01.gif
+
+anim burn #BURNED FALL
+	landframe 2
+	loop	1 0 2
+	delay	3
+	offset	171 188
+	bbox 	143 118 55 44
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	frame	data/chars/ash/fall00.gif
+	@cmd spawn01 "smoke" 0 50 0
+	drawmethod tintmode 2
+	drawmethod tintcolor 255
+	frame	data/chars/ash/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	nodrawmethod
+	sound	data/sounds/Falling.wav
+	frame	data/chars/ash/fall01.gif
+
+anim shock #SHOCKED FALL
+	landframe 2
+	loop	1 0 2
+	delay	3
+	offset	171 188
+	bbox 	143 118 55 44
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame	data/chars/ash/fall00.gif
+	drawmethod tintmode 2
+	drawmethod tintcolor -255
+	frame	data/chars/ash/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	nodrawmethod
+	sound	data/sounds/Falling.wav
+	frame	data/chars/ash/fall01.gif
+	
+anim fall6 #SPIN FALL
+	landframe 4
+	loop	1 0 4
+	delay	3
+	offset	171 188
+	frame	data/chars/ash/fall600.gif
+	frame	data/chars/ash/fall601.gif
+	frame	data/chars/ash/fall602.gif
+	frame	data/chars/ash/fall603.gif
+		delay	8
+	sound	data/sounds/Falling.wav
+	frame	data/chars/ash/fall01.gif
+
+anim fall7 #GRABSTART POSITION
+	loop	0
+	delay	1000
+	offset	171 188
+	frame	data/chars/ash/fall700.gif
+	frame	data/chars/ash/fall701.gif
+	frame	data/chars/ash/fall702.gif
+	frame	data/chars/ash/fall703.gif
+	frame	data/chars/ash/fall704.gif
+	frame	data/chars/ash/fall705.gif
+
+anim fall8 #FINISH/THROW TYPE 3
+	landframe 1
+	loop	0
+	delay	999
+	offset	171 188
+	bbox 	143 118 55 44
+	hitfx	data/sounds/MediumKick.wav
+	attack 143 118 55 44 4 1 0 0 0 12
+	frame	data/chars/ash/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Falling.wav
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/ash/fall01.gif
+
+anim fall9 #FINISH/THROW TYPE 2
+	landframe 1
+	loop	0
+	delay	999
+	offset	171 188
+	bbox 	157 125 39 64
+	hitfx	data/sounds/MediumKick.wav
+	attack 157 125 39 64 4 1 0 0 0 12
+	frame	data/chars/ash/fall900.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Falling.wav
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/ash/fall01.gif
+	
+anim death #CRY
+	loop	0
+	delay	24
+	offset	171 188
+	frame	data/chars/ash/fall01.gif
+		delay	8
+	frame	data/chars/ash/cry00.gif
+	frame	data/chars/ash/cry01.gif
+	frame	data/chars/ash/cry00.gif
+	frame	data/chars/ash/cry01.gif
+	frame	data/chars/ash/cry00.gif
+	frame	data/chars/ash/cry01.gif
+	frame	data/chars/ash/cry00.gif
+	frame	data/chars/ash/cry01.gif
+		delay	32
+	frame	data/chars/ash/cry01.gif
+	@cmd looper 1 4
+	frame	data/chars/ash/cry01.gif
+
+anim rise
+	loop	0
+	delay	24
+	offset	171 188
+	frame	data/chars/ash/rise00.gif
+	frame	data/chars/ash/rise01.gif
+	frame	data/chars/ash/rise02.gif
+	frame	data/chars/ash/rise03.gif
+
+anim attack1
+	range 20 50
+	rangea 0 0
+	fastattack 1
+	jugglecost 10
+	forcedirection -1
+	loop	0
+	delay	6
+	offset	171 188
+	bbox 	149 103 25 87
+	hitfx	data/sounds/StrongPunch.wav
+	sound	data/sounds/StrongAttack.wav
+	frame	data/chars/ash/a100.gif
+	bbox 	155 103 25 87
+	frame	data/chars/ash/a101.gif
+	attack 164 120 46 16 4 0 0 0 15 12
+	frame	data/chars/ash/a102.gif
+	
+anim attack2
+	range 20 50
+	rangea 0 0
+	fastattack 1
+	jugglecost 10
+	forcedirection -1
+	loop	0
+	delay	6
+	offset	171 188
+	bbox 	149 103 25 87
+	hitfx	data/sounds/StrongPunch.wav
+	sound	data/sounds/StrongAttack.wav
+	frame	data/chars/ash/a100.gif
+	bbox 	155 103 25 87
+	frame	data/chars/ash/a101.gif
+	attack 164 120 46 16 4 0 0 0 10 12
+	frame	data/chars/ash/a102.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/ash/a101.gif
+	attack 164 120 46 16 4 0 0 0 15 12
+	frame	data/chars/ash/a102.gif
+	
+anim attack3
+	range 20 50
+	rangea 0 0
+	fastattack 1
+	jugglecost 10
+	forcedirection -1
+	loop	0
+	delay	6
+	offset	171 188
+	bbox 	149 103 25 87
+	hitfx	data/sounds/StrongPunch.wav
+	sound	data/sounds/StrongAttack.wav
+	frame	data/chars/ash/a100.gif
+	bbox 	155 103 25 87
+	frame	data/chars/ash/a101.gif
+	attack 164 120 46 16 4 0 0 0 10 12
+	frame	data/chars/ash/a102.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/ash/a101.gif
+	attack 164 120 46 16 4 0 0 0 10 12
+	frame	data/chars/ash/a102.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/ash/a101.gif
+	attack 164 120 46 16 4 0 0 0 30 12
+	frame	data/chars/ash/a102.gif
+	
+anim grabattack #FRONT SLAM
+	loop	0
+	delay	8
+	offset	171 188
+	@cmd grabStart
+	@cmd position 5 20 40 0 0
+	frame	data/chars/ash/slam00.gif
+		delay	32
+	@cmd position 5 -10 40 0 0
+	frame	data/chars/ash/slam01.gif
+		delay	8
+	@cmd position 3 0 40 0 0
+	frame	data/chars/ash/slam02.gif
+	@cmd position 4 30 -1 0 0
+	@cmd spawn01 "quakehigh" 0 0 0
+	sound	data/sounds/Slam.wav
+	frame	data/chars/ash/slam03.gif
+	@cmd depost
+	@cmd slam 18 2 -1.5 3 0 0
+	@cmd leaper -1 3 0
+	frame	data/chars/ash/slam03.gif
+		delay	2
+	frame	data/chars/ash/slam03.gif
+	@cmd landFrame
+		delay	8
+	sound	data/sounds/Jumpland2.wav
+	@cmd spawn01 "quakelow" 0 0 0
+	frame	data/chars/ash/jumpland00.gif
+	@cmd clearL
+	frame	data/chars/ash/jumpland01.gif
+	
+anim grabattack2 #THROW
+	loop	0
+	delay	8
+	offset	171 188
+	@cmd grabStart
+	@cmd position 5 20 40 0 0
+	frame	data/chars/ash/throw00.gif
+	@cmd position 5 -10 40 0 0
+	frame	data/chars/ash/throw01.gif
+	@cmd position 2 -30 75 0 0
+	frame	data/chars/ash/throw02.gif
+	@cmd position 4 -90 15 0 0
+	frame	data/chars/ash/throw03.gif
+		delay	32
+	@cmd depost
+	@cmd throw 12 2 2 2 0 0
+	frame	data/chars/ash/throw03.gif
+		delay	8
+	@cmd clearL
+	frame	data/chars/ash/throw04.gif
+	
+anim jumpattack
+	range 40 120
+	rangea 0 100
+	fastattack 1
+	jugglecost 10
+	forcedirection -1
+	loop	0
+	delay	24
+	offset	171 188
+	bbox 	168 92 20 87
+	hitfx	data/sounds/HighKick.wav
+	sound	data/sounds/Jumping2.wav
+	@cmd targetJump
+	@cmd leapJump
+	frame	data/chars/ash/jump00.gif
+	attack 134 138 84 46 8 1 0 0 10 12
+	bbox 	151 94 33 75
+	sound	data/voices/Ash1.wav
+	frame	data/chars/ash/jumpatk00.gif
+	
+anim freespecial #GRAB RUN
+	range 120 180
+	rangea 0 0
+	rangez -999 999
+	followanim 3
+	followcond 4
+	attackone 1
+	fastattack 1
+	jugglecost 5
+	forcedirection -1
+	loop	0
+	delay	8
+	offset	171 188
+	bbox 	163 103 25 87
+	sound	data/sounds/Run.wav
+	frame	data/chars/ash/walk00.gif
+	frame	data/chars/ash/walk01.gif
+	frame	data/chars/ash/walk02.gif
+	sound	data/sounds/Run2.wav
+	frame	data/chars/ash/walk03.gif
+	frame	data/chars/ash/walk04.gif
+	frame	data/chars/ash/walk05.gif
+		delay	4
+	sound	data/sounds/Run.wav
+	frame	data/chars/ash/walk00.gif
+	frame	data/chars/ash/walk01.gif
+	frame	data/chars/ash/walk02.gif
+	sound	data/sounds/Run2.wav
+	frame	data/chars/ash/walk03.gif
+	frame	data/chars/ash/walk04.gif
+	frame	data/chars/ash/walk05.gif
+	@cmd target 4 4
+	@cmd dashTarget
+	attack 163 103 25 87 0 0 1 1 0 12
+	dropv 0 1 0
+	bbox 	0 0 0 0
+	sound	data/sounds/Run.wav
+	frame	data/chars/ash/walk00.gif
+	@cmd dashTarget
+	frame	data/chars/ash/walk01.gif
+	@cmd dashTarget
+	frame	data/chars/ash/walk02.gif
+	@cmd dashTarget
+	sound	data/sounds/Run2.wav
+	frame	data/chars/ash/walk03.gif
+	@cmd dashTarget
+	frame	data/chars/ash/walk04.gif
+	@cmd dashTarget
+	frame	data/chars/ash/walk05.gif
+	@cmd looper 14 1
+	@cmd dasher 0 0 0
+	frame	data/chars/ash/walk00.gif
+	
+anim follow3 #ANIMATION FOR DOGRAB ONLY
+	loop	0
+	delay	16
+	offset	171 188
+	@cmd doGrab
+	frame	data/chars/ash/grab00.gif
+	
+anim freespecial2 #BLITZ
+	range 80 120
+	rangea 0 0
+	rangez -6 6
+	fastattack 1
+	jugglecost 10
+	forcedirection -1
+	loop	0
+	delay	6
+	offset	171 188
+	bbox 	149 103 25 87
+	hitfx	data/sounds/StrongPunch.wav
+	sound	data/sounds/StrongAttack.wav
+	@cmd dasher 2 0 0
+	frame	data/chars/ash/a100.gif
+	@cmd dasher 2 0 0
+	bbox 	155 103 25 87
+	sound	data/voices/Ash1.wav
+	frame	data/chars/ash/a101.gif
+	@cmd dasher 2 0 0
+	attack 164 120 46 16 4 0 0 0 10 12
+	frame	data/chars/ash/a102.gif
+	@cmd dasher 1 0 0
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/ash/a101.gif
+	@cmd dasher 1 0 0
+	attack 164 120 46 16 4 0 0 0 10 12
+	frame	data/chars/ash/a102.gif
+	@cmd dasher 0.5 0 0
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/ash/a101.gif
+		delay	12
+	@cmd dasher 0 0 0
+	attack 164 120 46 16 4 1 0 0 30 12
+	frame	data/chars/ash/a102.gif
+	
+anim freespecial3 #JUMP ADVANCE/EVADE
+	range 60 80
+	rangea 0 100
+	rangez -50 50
+	loop	0
+	delay	8
+	offset	171 188
+	bbox 	154 147 36 43
+	frame	data/chars/ash/jumpdelay00.gif
+	bbox 	156 123 37 67
+	frame	data/chars/ash/jumpdelay01.gif
+	bbox 	167 100 23 90
+	frame	data/chars/ash/jumpdelay02.gif
+	@cmd leapRandom 2.1 3.7 1
+	@cmd jump 1
+	bbox 	168 92 20 87
+	sound	data/sounds/Jumping2.wav
+	frame	data/chars/ash/jump00.gif
+	
+anim freespecial4 #LAUGH
+	range 120 180
+	rangea 0 100
+	rangez -999 999
+	loop	0
+	delay	12
+	offset	171 188
+	bbox 	159 100 23 90
+	sound	data/voices/Ash1.wav
+	frame	data/chars/ash/laugh00.gif
+	frame	data/chars/ash/laugh01.gif
+	frame	data/chars/ash/laugh02.gif
+	frame	data/chars/ash/laugh01.gif
+	frame	data/chars/ash/laugh02.gif
+	frame	data/chars/ash/laugh01.gif
+	frame	data/chars/ash/laugh02.gif
+	frame	data/chars/ash/laugh00.gif

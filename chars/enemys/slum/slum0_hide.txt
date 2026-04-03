@@ -1,0 +1,418 @@
+##MAIN
+name				Slum0_Hide
+type				enemy
+hostile				player npc
+candamage			player npc obstacle
+
+##LIFE
+health				1 #SCRIPT
+
+##POWER
+offense 			1 #SCRIPT
+
+##SPEED
+speed				1 #SCRIPT
+
+##JUMP
+jumpheight 			1 #SCRIPT
+
+##WEIGHT/HEIGHT
+antigravity			-6 #-3/-6/-9
+height				77
+
+##MISC
+jugglepoints		30
+guardpoints			20
+guardrate			4
+risetime			170
+riseinv				0 1 #HEROES 0.4 - ENEMY 0 - BOSS 0.4
+makeinv				2 0
+atchain				1 1 2
+weapons				none none none none
+gfxshadow			1 1
+dust				dust
+blockodds 			1
+bflash				block
+nopassiveblock		1
+
+##SCRIPTS
+didblockscript		data/scripts/didblock/no_counter.c
+onblockpscript		data/scripts/onblockp/default.c
+onspawnscript		data/scripts/onspawn/slum.c
+animationscript	 	data/scripts/animation/default.c
+
+##ICONS
+icon				data/chars/slum/icon.gif 1
+
+##DIESOUND
+diesound			data/voices/Die4.wav
+
+##REMAPS
+remap				data/chars/slum/idle00.gif data/chars/slum/alter1.gif
+remap				data/chars/slum/idle00.gif data/chars/slum/alter2.gif
+remap				data/chars/slum/idle00.gif data/chars/slum/alter3.gif
+remap				data/chars/slum/idle00.gif data/chars/slum/alter4.gif
+
+##ANIMATIONS#############################################################################
+
+anim spawn
+	fshadow 0
+	loop	0
+	delay	12
+	offset	139 175
+	@cmd minz 0
+	drawmethod tintmode 2
+	drawmethod tintcolor 0_0_0
+	frame	data/chars/slum/hide00.gif
+	@cmd delayDetect
+	fshadow 1
+	@cmd dasher 0 0 0.5
+	drawmethod tintmode 2
+	drawmethod tintcolor 0_0_0
+	frame	data/chars/slum/walk00.gif
+	drawmethod tintmode 2
+	drawmethod tintcolor 20_20_20
+	frame	data/chars/slum/walk01.gif
+	drawmethod tintmode 2
+	drawmethod tintcolor 40_40_40
+	frame	data/chars/slum/walk02.gif
+	drawmethod tintmode 2
+	drawmethod tintcolor 80_80_80
+	frame	data/chars/slum/walk03.gif
+	drawmethod tintmode 2
+	drawmethod tintcolor 120_120_120
+	frame	data/chars/slum/walk00.gif
+	drawmethod tintmode 2
+	drawmethod tintcolor 160_160_160
+	frame	data/chars/slum/walk01.gif
+	drawmethod tintmode 2
+	drawmethod tintcolor 200_200_200
+	@cmd minz 1
+	frame	data/chars/slum/walk02.gif
+	nodrawmethod
+	bbox 	127 102 23 75
+	frame	data/chars/slum/walk03.gif
+
+anim idle
+	loop	1
+	delay	16
+	offset	139 175
+	bbox 	127 102 23 75
+	@cmd clearL
+	frame	data/chars/slum/idle00.gif
+	frame	data/chars/slum/idle01.gif
+	frame	data/chars/slum/idle02.gif
+	frame	data/chars/slum/idle03.gif
+
+anim walk
+	loop	1
+	delay	12
+	offset	139 175
+	bbox 	127 102 23 75
+	frame	data/chars/slum/walk00.gif
+	frame	data/chars/slum/walk01.gif
+	frame	data/chars/slum/walk02.gif
+	frame	data/chars/slum/walk03.gif
+	
+anim get
+	loop	0
+	delay	16
+	offset	139 175
+	frame	data/chars/slum/get00.gif
+	
+anim grabbed
+	loop	0
+	delay	8
+	offset	139 175
+	bbox 	127 115 27 62
+	frame	data/chars/slum/grabbed00.gif
+	
+anim jumpdelay
+	loop	0
+	delay	12
+	offset	139 175
+	bbox 	130 131 28 45
+	frame	data/chars/slum/jumpdelay00.gif
+
+anim walkoff
+	loop	0
+	delay	12
+	offset	139 175
+	bbox 	133 106 17 70
+	@cmd jump 1
+	frame	data/chars/slum/jump00.gif
+	
+anim jumpland
+	loop	0
+	delay	12
+	offset	139 175
+	bbox 	130 131 28 45
+	sound	data/sounds/Jumpland.wav
+	frame	data/chars/slum/jumpland00.gif
+	
+anim guardbreak
+	loop	0
+	delay	4
+	offset	139 175
+	bbox 	127 115 27 62
+	@cmd spawnBind "guardbreak" 0 50 0
+	drawmethod tintmode 6
+	drawmethod tintcolor 0
+	frame	data/chars/slum/grabbed00.gif
+	nodrawmethod
+	frame	data/chars/slum/grabbed01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 0
+	frame	data/chars/slum/grabbed00.gif
+	nodrawmethod
+	frame	data/chars/slum/grabbed01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 0
+	frame	data/chars/slum/grabbed00.gif
+	nodrawmethod
+	frame	data/chars/slum/grabbed01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 0
+	frame	data/chars/slum/grabbed00.gif
+	nodrawmethod
+	frame	data/chars/slum/grabbed01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 0
+	frame	data/chars/slum/grabbed00.gif
+	nodrawmethod
+	frame	data/chars/slum/grabbed01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 0
+	frame	data/chars/slum/grabbed00.gif
+	nodrawmethod
+	frame	data/chars/slum/grabbed01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 0
+	frame	data/chars/slum/grabbed00.gif
+	nodrawmethod
+	frame	data/chars/slum/grabbed01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 0
+	frame	data/chars/slum/grabbed00.gif
+	nodrawmethod
+	frame	data/chars/slum/grabbed01.gif
+
+anim pain #UP
+	loop	0
+	delay	4
+	offset	139 175
+	bbox 	126 99 21 78
+	frame	data/chars/slum/pain00.gif
+	frame	data/chars/slum/pain01.gif
+	frame	data/chars/slum/pain00.gif
+	frame	data/chars/slum/pain01.gif
+	frame	data/chars/slum/pain00.gif
+	frame	data/chars/slum/pain01.gif
+	frame	data/chars/slum/pain00.gif
+	frame	data/chars/slum/pain01.gif
+	frame	data/chars/slum/pain00.gif
+	frame	data/chars/slum/pain01.gif
+	frame	data/chars/slum/pain00.gif
+	frame	data/chars/slum/pain01.gif
+
+anim pain2 #DOWN
+	loop	0
+	delay	4
+	offset	139 175
+	bbox 	130 118 29 54
+	frame	data/chars/slum/pain200.gif
+	frame	data/chars/slum/pain201.gif
+	frame	data/chars/slum/pain200.gif
+	frame	data/chars/slum/pain201.gif
+	frame	data/chars/slum/pain200.gif
+	frame	data/chars/slum/pain201.gif
+	frame	data/chars/slum/pain200.gif
+	frame	data/chars/slum/pain201.gif
+	frame	data/chars/slum/pain200.gif
+	frame	data/chars/slum/pain201.gif
+	frame	data/chars/slum/pain200.gif
+	frame	data/chars/slum/pain201.gif
+
+anim fall #NORMAL
+	landframe 1
+	loop	0
+	delay	999
+	offset	139 175
+	bbox 	106 119 43 36
+	frame	data/chars/slum/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Falling.wav
+	frame	data/chars/slum/fall01.gif
+
+anim burn #BURNED FALL
+	landframe 2
+	loop	1 0 2
+	delay	3
+	offset	139 175
+	bbox 	106 119 43 36
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	frame	data/chars/slum/fall00.gif
+	@cmd spawn01 "smoke" 0 50 0
+	drawmethod tintmode 2
+	drawmethod tintcolor 255
+	frame	data/chars/slum/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	nodrawmethod
+	sound	data/sounds/Falling.wav
+	frame	data/chars/slum/fall01.gif
+
+anim shock #SHOCKED FALL
+	landframe 2
+	loop	1 0 2
+	delay	3
+	offset	139 175
+	bbox 	106 119 43 36
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame	data/chars/slum/fall00.gif
+	drawmethod tintmode 2
+	drawmethod tintcolor -255
+	frame	data/chars/slum/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	nodrawmethod
+	sound	data/sounds/Falling.wav
+	frame	data/chars/slum/fall01.gif
+	
+anim fall6 #SPIN FALL
+	landframe 4
+	loop	1 0 4
+	delay	3
+	offset	139 175
+	frame	data/chars/slum/fall600.gif
+	frame	data/chars/slum/fall601.gif
+	frame	data/chars/slum/fall602.gif
+	frame	data/chars/slum/fall603.gif
+		delay	8
+	sound	data/sounds/Falling.wav
+	frame	data/chars/slum/fall01.gif
+
+anim fall7 #GRABSTART POSITION
+	loop	0
+	delay	1000
+	offset	139 175
+	frame	data/chars/slum/fall700.gif
+	frame	data/chars/slum/fall701.gif
+	frame	data/chars/slum/fall702.gif
+	frame	data/chars/slum/fall703.gif
+	frame	data/chars/slum/fall704.gif
+	frame	data/chars/slum/fall705.gif
+
+anim fall8 #FINISH/THROW TYPE 3
+	landframe 1
+	loop	0
+	delay	999
+	offset	139 175
+	bbox 	106 119 43 36
+	hitfx	data/sounds/MediumKick.wav
+	attack 106 119 43 36 4 1 0 0 0 12
+	frame	data/chars/slum/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Falling.wav
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/slum/fall01.gif
+
+anim fall9 #FINISH/THROW TYPE 2
+	landframe 1
+	loop	0
+	delay	999
+	offset	139 175
+	bbox 	122 125 28 52
+	hitfx	data/sounds/MediumKick.wav
+	attack 122 125 28 52 4 1 0 0 0 12
+	frame	data/chars/slum/fall900.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Falling.wav
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/slum/fall01.gif
+
+anim rise
+	loop	0
+	delay	16
+	offset	139 175
+	frame	data/chars/slum/rise00.gif
+	frame	data/chars/slum/rise01.gif
+	frame	data/chars/slum/rise00.gif
+	frame	data/chars/slum/rise02.gif
+
+anim attack1
+	range 20 40
+	rangea 0 0
+	fastattack 1
+	jugglecost 10
+	forcedirection -1
+	loop	0
+	delay	8
+	offset	139 175
+	bbox 	127 102 23 75
+	hitfx	data/sounds/LowPunch.wav
+	sound	data/sounds/LowAttack.wav
+	frame	data/chars/slum/a100.gif
+	attack 144 110 43 13 2 0 0 0 10 12
+	frame	data/chars/slum/a101.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/slum/a102.gif
+	
+anim attack2
+	range 20 40
+	rangea 0 0
+	fastattack 1
+	jugglecost 10
+	forcedirection -1
+	loop	0
+	delay	8
+	offset	139 175
+	bbox 	127 102 20 75
+	hitfx	data/sounds/MediumPunch.wav
+	sound	data/sounds/MediumAttack.wav
+	frame	data/chars/slum/a200.gif
+	bbox 	130 102 23 75
+	sound	data/voices/Attack2.wav
+	frame	data/chars/slum/a201.gif
+	bbox 	135 102 23 75
+	frame	data/chars/slum/a202.gif
+		delay	16
+	attack 149 110 45 13 4 1 0 0 10 12
+	frame	data/chars/slum/a203.gif
+		delay	8
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/slum/a204.gif
+	bbox 	130 102 23 75
+	frame	data/chars/slum/a205.gif
+	bbox 	127 102 21 75
+	frame	data/chars/slum/a206.gif
+	
+anim freespecial #KICK
+	range 40 60
+	rangea 0 0
+	fastattack 1
+	jugglecost 10
+	forcedirection -1
+	loop	0
+	delay	32
+	offset	139 175
+	bbox 	132 107 23 70
+	hitfx	data/sounds/HighKick.wav
+	sound	data/sounds/HighAttack.wav
+	attack 139 126 57 22 8 1 0 0 30 12
+	frame	data/chars/slum/kick00.gif
+	
+anim block
+	range 0 100
+	rangea 0 100
+	rangez -50 50
+	loop	0
+	delay	64
+	offset	139 175
+	bbox 	132 108 20 68
+	frame	data/chars/slum/block00.gif

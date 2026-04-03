@@ -1,0 +1,735 @@
+##MAIN
+name				Neox1
+type				enemy
+hostile				player npc
+candamage			player npc obstacle
+
+##LIFE
+health				1 #SCRIPT
+
+##POWER
+offense 			1 #SCRIPT
+
+##SPEED
+speed				1 #SCRIPT
+
+##JUMP
+jumpheight 			1 #SCRIPT
+
+##ENERGY
+mp					120
+mprate  			1 #SCRIPT
+
+##GRAB
+grabdistance 		33 #36/33/30
+grabfinish 			1 #PLAYER=0/ENEMY=1
+
+##WEIGHT/HEIGHT
+antigravity			-9 #-3/-6/-9
+height				89
+
+##MISC
+jugglepoints		30
+guardpoints			20
+guardrate			4
+risetime			170
+riseinv				0.4 1 #HEROES 0.4 - ENEMY 0 - BOSS 0.4
+makeinv				2 0
+atchain				1
+weapons				none none none none
+gfxshadow			1 1
+dust				dust
+aimove				chase #ENEMY ONLY
+escapehits			2 #ENEMY ONLY
+death				2
+noatflash 			1
+flash				flash
+
+##SCRIPTS
+didhitscript		data/scripts/didhit/neox.c
+onblockpscript		data/scripts/onblockp/default.c
+ondrawscript		data/scripts/ondraw/neox.c
+onspawnscript		data/scripts/onspawn/neox.c
+animationscript	 	data/scripts/animation/default.c
+takedamagescript	data/scripts/takedamage/armor_robots.c
+
+##ICONS
+icon				data/chars/neox/icon.gif 1
+
+##DIESOUND
+diesound			data/voices/Die5.wav
+
+##REMAPS
+remap				data/chars/neox/idle00.gif data/chars/neox/alter1.gif
+remap				data/chars/neox/idle00.gif data/chars/neox/alter2.gif
+remap				data/chars/neox/idle00.gif data/chars/neox/alter3.gif
+remap				data/chars/neox/idle00.gif data/chars/neox/alter4.gif
+
+##ANIMATIONS#############################################################################
+
+anim spawn
+	loop	0
+	delay	1
+	offset	125 192
+	frame	data/chars/neox/idle00.gif
+
+anim idle
+	loop	1
+	delay	3
+	offset	125 192
+	bbox 	109 108 47 87
+	@cmd clearL
+	frame	data/chars/neox/idle00.gif
+	frame	data/chars/neox/idle01.gif
+	frame	data/chars/neox/idle00.gif
+	frame	data/chars/neox/idle01.gif
+	bbox 	102 108 40 82
+	frame	data/chars/neox/idle02.gif
+	frame	data/chars/neox/idle03.gif
+	frame	data/chars/neox/idle02.gif
+	frame	data/chars/neox/idle03.gif
+	bbox 	105 108 22 82
+	frame	data/chars/neox/idle04.gif
+	frame	data/chars/neox/idle05.gif
+	frame	data/chars/neox/idle04.gif
+	frame	data/chars/neox/idle05.gif
+	bbox 	95 107 46 83
+	frame	data/chars/neox/idle06.gif
+	frame	data/chars/neox/idle07.gif
+	frame	data/chars/neox/idle06.gif
+	frame	data/chars/neox/idle07.gif
+	bbox 	102 106 42 87
+	frame	data/chars/neox/idle08.gif
+	frame	data/chars/neox/idle09.gif
+	frame	data/chars/neox/idle08.gif
+	frame	data/chars/neox/idle09.gif
+	bbox 	113 106 27 91
+	frame	data/chars/neox/idle10.gif
+	frame	data/chars/neox/idle11.gif
+	frame	data/chars/neox/idle10.gif
+	frame	data/chars/neox/idle11.gif
+	bbox 	110 105 42 92
+	frame	data/chars/neox/idle12.gif
+	frame	data/chars/neox/idle13.gif
+	frame	data/chars/neox/idle12.gif
+	frame	data/chars/neox/idle13.gif
+
+anim walk
+	loop	1
+	delay	3
+	offset	125 192
+	bbox 	109 108 47 87
+	frame	data/chars/neox/idle00.gif
+	frame	data/chars/neox/idle01.gif
+	frame	data/chars/neox/idle00.gif
+	frame	data/chars/neox/idle01.gif
+	bbox 	102 108 40 82
+	frame	data/chars/neox/idle02.gif
+	frame	data/chars/neox/idle03.gif
+	frame	data/chars/neox/idle02.gif
+	frame	data/chars/neox/idle03.gif
+	bbox 	105 108 22 82
+	frame	data/chars/neox/idle04.gif
+	frame	data/chars/neox/idle05.gif
+	frame	data/chars/neox/idle04.gif
+	frame	data/chars/neox/idle05.gif
+	bbox 	95 107 46 83
+	frame	data/chars/neox/idle06.gif
+	frame	data/chars/neox/idle07.gif
+	frame	data/chars/neox/idle06.gif
+	frame	data/chars/neox/idle07.gif
+	bbox 	102 106 42 87
+	frame	data/chars/neox/idle08.gif
+	frame	data/chars/neox/idle09.gif
+	frame	data/chars/neox/idle08.gif
+	frame	data/chars/neox/idle09.gif
+	bbox 	113 106 27 91
+	frame	data/chars/neox/idle10.gif
+	frame	data/chars/neox/idle11.gif
+	frame	data/chars/neox/idle10.gif
+	frame	data/chars/neox/idle11.gif
+	bbox 	110 105 42 92
+	frame	data/chars/neox/idle12.gif
+	frame	data/chars/neox/idle13.gif
+	frame	data/chars/neox/idle12.gif
+	frame	data/chars/neox/idle13.gif
+
+anim run
+	loop	1
+	delay	3
+	offset	125 192
+	bbox 	109 108 47 87
+	frame	data/chars/neox/idle00.gif
+	frame	data/chars/neox/idle01.gif
+	frame	data/chars/neox/idle00.gif
+	frame	data/chars/neox/idle01.gif
+	bbox 	102 108 40 82
+	frame	data/chars/neox/idle02.gif
+	frame	data/chars/neox/idle03.gif
+	frame	data/chars/neox/idle02.gif
+	frame	data/chars/neox/idle03.gif
+	bbox 	105 108 22 82
+	frame	data/chars/neox/idle04.gif
+	frame	data/chars/neox/idle05.gif
+	frame	data/chars/neox/idle04.gif
+	frame	data/chars/neox/idle05.gif
+	bbox 	95 107 46 83
+	frame	data/chars/neox/idle06.gif
+	frame	data/chars/neox/idle07.gif
+	frame	data/chars/neox/idle06.gif
+	frame	data/chars/neox/idle07.gif
+	bbox 	102 106 42 87
+	frame	data/chars/neox/idle08.gif
+	frame	data/chars/neox/idle09.gif
+	frame	data/chars/neox/idle08.gif
+	frame	data/chars/neox/idle09.gif
+	bbox 	113 106 27 91
+	frame	data/chars/neox/idle10.gif
+	frame	data/chars/neox/idle11.gif
+	frame	data/chars/neox/idle10.gif
+	frame	data/chars/neox/idle11.gif
+	bbox 	110 105 42 92
+	frame	data/chars/neox/idle12.gif
+	frame	data/chars/neox/idle13.gif
+	frame	data/chars/neox/idle12.gif
+	frame	data/chars/neox/idle13.gif
+
+anim grabbed
+	loop	0
+	delay	8
+	offset	125 192
+	bbox 	102 114 44 82
+	frame	data/chars/neox/grabbed00.gif
+	
+anim jumpdelay
+	loop	0
+	delay	8
+	offset	125 192
+	bbox 	107 117 41 80
+	frame	data/chars/neox/jumpgrab00.gif
+	bbox 	110 124 40 74
+	frame	data/chars/neox/jumpgrab01.gif
+	bbox 	109 118 39 79
+	frame	data/chars/neox/jumpgrab02.gif
+	
+anim walkoff
+	loop	0
+	delay	12
+	offset	125 192
+	bbox 	111 101 35 94
+	@cmd jump 1
+	frame	data/chars/neox/jumpgrab04.gif
+	
+anim jumpland
+	loop	0
+	delay	8
+	offset	125 192
+	bbox 	111 107 35 93
+	@cmd spawn01 "quakelow" 0 0 0
+	sound	data/sounds/Jumpland3.wav
+	frame	data/chars/neox/jumpgrab06.gif
+	bbox 	109 118 39 79
+	frame	data/chars/neox/jumpgrab07.gif
+	bbox 	110 124 40 74
+	frame	data/chars/neox/jumpgrab08.gif
+	bbox 	107 117 41 80
+	frame	data/chars/neox/jumpgrab09.gif
+
+anim pain #UP
+	loop	0
+	delay	4
+	offset	125 192
+	bbox 	108 108 32 88
+	frame	data/chars/neox/pain00.gif
+	frame	data/chars/neox/pain01.gif
+	frame	data/chars/neox/pain00.gif
+	frame	data/chars/neox/pain01.gif
+	frame	data/chars/neox/pain00.gif
+	frame	data/chars/neox/pain01.gif
+	frame	data/chars/neox/pain00.gif
+	frame	data/chars/neox/pain01.gif
+
+anim pain2 #DOWN
+	loop	0
+	delay	4
+	offset	125 192
+	bbox 	102 114 44 82
+	frame	data/chars/neox/pain200.gif
+	frame	data/chars/neox/pain201.gif
+	frame	data/chars/neox/pain200.gif
+	frame	data/chars/neox/pain201.gif
+	frame	data/chars/neox/pain200.gif
+	frame	data/chars/neox/pain201.gif
+	frame	data/chars/neox/pain200.gif
+	frame	data/chars/neox/pain201.gif
+
+anim fall #NORMAL
+	landframe 2
+	loop	0
+	delay	32
+	offset	125 192
+	bbox 	96 108 57 62
+	frame	data/chars/neox/fall00.gif
+		delay	999
+	frame	data/chars/neox/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Jumpland3.wav
+	frame	data/chars/neox/fall01.gif
+
+anim burn #BURNED FALL
+	landframe 2
+	loop	1 0 2
+	delay	3
+	offset	125 192
+	bbox 	96 108 57 62
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	frame	data/chars/neox/fall00.gif
+	@cmd spawn01 "smoke" 0 50 0
+	drawmethod tintmode 2
+	drawmethod tintcolor 255
+	frame	data/chars/neox/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	nodrawmethod
+	sound	data/sounds/Jumpland3.wav
+	frame	data/chars/neox/fall01.gif
+
+anim shock #SHOCKED FALL
+	landframe 2
+	loop	1 0 2
+	delay	3
+	offset	125 192
+	bbox 	96 108 57 62
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame	data/chars/neox/fall00.gif
+	drawmethod tintmode 2
+	drawmethod tintcolor -255
+	frame	data/chars/neox/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	nodrawmethod
+	sound	data/sounds/Jumpland3.wav
+	frame	data/chars/neox/fall01.gif
+	
+anim fall6 #SPIN FALL
+	landframe 4
+	loop	1 0 4
+	delay	3
+	offset	125 192
+	frame	data/chars/neox/fall600.gif
+	frame	data/chars/neox/fall601.gif
+	frame	data/chars/neox/fall602.gif
+	frame	data/chars/neox/fall603.gif
+		delay	8
+	sound	data/sounds/Jumpland3.wav
+	frame	data/chars/neox/fall01.gif
+
+anim fall7 #GRABSTART POSITION
+	loop	0
+	delay	1000
+	offset	125 192
+	frame	data/chars/neox/fall700.gif
+	frame	data/chars/neox/fall701.gif
+	frame	data/chars/neox/fall702.gif
+	frame	data/chars/neox/fall703.gif
+	frame	data/chars/neox/fall704.gif
+	frame	data/chars/neox/fall705.gif
+
+anim fall8 #FINISH/THROW TYPE 3
+	landframe 2
+	loop	0
+	delay	32
+	offset	125 192
+	bbox 	96 108 57 62
+	hitfx	data/sounds/MediumKick.wav
+	attack 96 108 57 62 4 1 0 0 0 12
+	frame	data/chars/neox/fall00.gif
+		delay	999
+	frame	data/chars/neox/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Jumpland3.wav
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/neox/fall01.gif
+
+anim fall9 #FINISH/THROW TYPE 2
+	landframe 2
+	loop	0
+	delay	32
+	offset	125 192
+	bbox 	108 127 42 66
+	hitfx	data/sounds/MediumKick.wav
+	attack 108 127 42 66 4 1 0 0 0 12
+	frame	data/chars/neox/fall900.gif
+		delay	999
+	frame	data/chars/neox/fall900.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Jumpland3.wav
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/neox/fall01.gif
+	
+anim death #EXPLOSION
+	loop	0
+	delay	16
+	offset	125 192
+	@cmd spawnBind "explosion" 0 15 1
+	frame	data/chars/neox/fall01.gif
+	@cmd spawnBind "explosion" -30 15 1
+	frame	data/chars/neox/fall01.gif
+	@cmd spawnBind "explosion" 30 15 1
+	frame	data/chars/neox/fall01.gif
+	@cmd spawnBind "explosion" 0 15 1
+	frame	data/chars/neox/fall01.gif
+		delay	64
+	frame	data/chars/neox/fall01.gif
+
+anim rise
+	loop	0
+	delay	12
+	offset	125 192
+	frame	data/chars/neox/rise00.gif
+	frame	data/chars/neox/rise01.gif
+
+anim attack1 #JAB
+	range 0 60
+	rangea 0 100
+	fastattack 1
+	jugglecost 5
+	forcedirection -1
+	loop	0
+	delay	8
+	offset	125 192
+	bbox 	104 109 32 88
+	hitfx	data/sounds/HighPunch.wav
+	sound	data/sounds/HighAttack.wav
+	frame	data/chars/neox/a100.gif
+	bbox 	104 117 38 79
+	frame	data/chars/neox/a101.gif
+	attack 119 115 60 26 16 1 0 0 10 12
+	bbox 	104 119 41 78
+	frame	data/chars/neox/a102.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	bbox 	104 117 38 79
+	frame	data/chars/neox/a103.gif
+	bbox 	104 109 32 88
+	frame	data/chars/neox/a104.gif
+	
+anim attack2 #PUNCH
+	range 0 60
+	rangea 0 100
+	fastattack 1
+	jugglecost 5
+	forcedirection -1
+	loop	0
+	delay	8
+	offset	125 192
+	bbox 	110 105 42 92
+	hitfx	data/sounds/MediumPunch.wav
+	sound	data/sounds/MediumAttack.wav
+	frame	data/chars/neox/a200.gif
+	bbox 	105 105 46 91
+	frame	data/chars/neox/a201.gif
+	bbox 	112 105 33 87
+	frame	data/chars/neox/a202.gif
+	bbox 	116 105 30 83
+	frame	data/chars/neox/a203.gif
+	attack 127 110 39 38 4 1 0 0 10 12
+	bbox 	110 107 38 82
+	frame	data/chars/neox/a204.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	bbox 	116 105 30 83
+	frame	data/chars/neox/a205.gif
+	bbox 	110 105 42 92
+	frame	data/chars/neox/a206.gif
+	
+anim attack3 #PUNCH
+	range 0 60
+	rangea 0 100
+	fastattack 1
+	jugglecost 5
+	forcedirection -1
+	loop	0
+	delay	8
+	offset	125 192
+	bbox 	110 105 42 92
+	hitfx	data/sounds/MediumPunch.wav
+	sound	data/sounds/MediumAttack.wav
+	frame	data/chars/neox/a300.gif
+	bbox 	110 104 36 91
+	frame	data/chars/neox/a301.gif
+	bbox 	112 107 38 84
+	frame	data/chars/neox/a302.gif
+	attack 119 113 42 38 4 1 0 0 10 12
+	bbox 	109 113 41 69
+	frame	data/chars/neox/a303.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	bbox 	112 107 38 84
+	frame	data/chars/neox/a304.gif
+	bbox 	110 105 42 92
+	frame	data/chars/neox/a305.gif
+	
+anim attack4 #LOW KICK
+	range 0 60
+	rangea 0 100
+	fastattack 1
+	jugglecost 5
+	forcedirection -1
+	loop	0
+	delay	8
+	offset	125 192
+	bbox 	104 109 32 88
+	hitfx	data/sounds/HighKick.wav
+	sound	data/sounds/HighAttack.wav
+	frame	data/chars/neox/a400.gif
+	bbox 	100 111 34 86
+	frame	data/chars/neox/a401.gif
+	bbox 	97 117 35 85
+	frame	data/chars/neox/a402.gif
+	bbox 	101 116 36 86
+	frame	data/chars/neox/a403.gif
+		delay	16
+	attack 137 150 61 47 8 1 0 0 10 12
+	bbox 	112 118 37 84
+	frame	data/chars/neox/a404.gif
+		delay	8
+	attack 0 0 0 0 0 0 0 0 0 0
+	bbox 	101 116 36 86
+	frame	data/chars/neox/a405.gif
+	bbox 	100 111 34 86
+	frame	data/chars/neox/a406.gif
+	
+anim attack5 #HAMMER PUNCH
+	range 0 60
+	rangea 0 100
+	fastattack 1
+	jugglecost 5
+	forcedirection -1
+	loop	0
+	delay	8
+	offset	125 192
+	bbox 	102 104 33 91
+	hitfx	data/sounds/StrongPunch.wav
+	sound	data/sounds/StrongAttack.wav
+	frame	data/chars/neox/a500.gif
+	frame	data/chars/neox/a501.gif
+	frame	data/chars/neox/a502.gif
+	frame	data/chars/neox/a503.gif
+	frame	data/chars/neox/a504.gif
+		delay	16
+	attack 124 113 37 40 8 1 0 0 10 12
+	bbox 	107 118 34 78
+	frame	data/chars/neox/a505.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	bbox 	102 104 33 91
+	frame	data/chars/neox/a506.gif
+	
+anim special #GRAB SPECIAL
+	fastattack 1
+	jugglecost 0
+	forcedirection 0
+	energycost 2 2
+	hitflash escape
+	loop	0
+	delay	32
+	offset	125 192
+	attack 107 109 55 32 0 0 1 0 0 12
+	sound	data/sounds/HighAttack.wav
+	frame	data/chars/neox/special00.gif
+	
+anim follow1 #GRAB BREAKER
+	loop	0
+	delay	32
+	offset	125 192
+	@cmd grabStart2
+	@cmd position 1 20 0 -1 -1
+	sound	data/sounds/Throw.wav
+	frame	data/chars/neox/special01.gif
+		delay	48
+	@cmd position 5 20 50 -1 0
+	@cmd spawn01 "flash" 22 90 1
+	sound	data/sounds/MediumKick.wav
+	frame	data/chars/neox/special02.gif
+		delay	16
+	@cmd looper 1 2
+	@cmd depost
+	@cmd slam 24 1 -2 2 0 0
+	@cmd spawn01 "flash" 22 90 0
+	sound	data/sounds/MediumKick.wav
+	frame	data/chars/neox/special02.gif
+	@cmd clearL
+	frame	data/chars/neox/special02.gif
+	
+anim special2 #JAB
+	fastattack 1
+	jugglecost 5
+	forcedirection -1
+	energycost 2 2
+	loop	0
+	delay	8
+	offset	125 192
+	bbox 	104 109 32 88
+	hitfx	data/sounds/HighPunch.wav
+	sound	data/sounds/HighAttack.wav
+	frame	data/chars/neox/a100.gif
+	bbox 	104 117 38 79
+	frame	data/chars/neox/a101.gif
+	attack 119 115 60 26 16 1 0 0 10 12
+	bbox 	104 119 41 78
+	frame	data/chars/neox/a102.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	bbox 	104 117 38 79
+	frame	data/chars/neox/a103.gif
+	bbox 	104 109 32 88
+	frame	data/chars/neox/a104.gif
+	
+anim freespecial #DASH
+	range 60 120
+	rangea 0 100
+	rangez -36 36
+	fastattack 1
+	jugglecost 10
+	forcedirection -1
+	loop	0
+	delay	8
+	offset	125 192
+	hitfx	data/sounds/HighPunch.wav
+	sound	data/sounds/Wind3.wav
+	frame	data/chars/neox/dash00.gif
+	frame	data/chars/neox/dash01.gif
+	frame	data/chars/neox/dash02.gif
+	@cmd target 4 2
+	frame	data/chars/neox/dash03.gif
+		delay	2
+	@cmd leapTarget 2
+	attack 118 99 47 71 16 1 0 0 10 12
+	bbox 	118 99 34 71
+	frame	data/chars/neox/dash04.gif
+	frame	data/chars/neox/dash04.gif
+	@cmd landFrame
+		delay	12
+	attack 0 0 0 0 0 0 0 0 0 0
+	bbox 	104 109 32 88
+	@cmd spawn01 "quakelow" 0 0 0
+	sound	data/sounds/Jumpland3.wav
+	frame	data/chars/neox/dash05.gif
+	
+anim freespecial2 #JUMP GRAB
+	range 60 120
+	rangea 0 100
+	rangez -36 36
+	fastattack 1
+	jugglecost 0
+	forcedirection 0
+	loop	0
+	delay	8
+	offset	125 192
+	bbox 	107 117 41 80
+	frame	data/chars/neox/jumpgrab00.gif
+	bbox 	110 124 40 74
+	frame	data/chars/neox/jumpgrab01.gif
+	bbox 	109 118 39 79
+	frame	data/chars/neox/jumpgrab02.gif
+	@cmd targetJump
+	@cmd leapJump
+	bbox 	111 107 35 93
+	sound	data/sounds/Jumping2.wav
+	frame	data/chars/neox/jumpgrab03.gif
+	bbox 	111 101 35 94
+	frame	data/chars/neox/jumpgrab04.gif
+		delay	2
+	attack 112 123 45 47 0 0 1 1 0 12
+	dropv 0 1 0
+	bbox 	103 90 40 85
+	sound	data/sounds/HighAttack.wav
+	frame	data/chars/neox/jumpgrab05.gif
+	frame	data/chars/neox/jumpgrab05.gif
+	@cmd landFrame
+		delay	12
+	attack 0 0 0 0 0 0 0 0 0 0
+	bbox 	111 107 35 93
+	@cmd spawn01 "quakelow" 0 0 0
+	sound	data/sounds/Jumpland3.wav
+	frame	data/chars/neox/jumpgrab06.gif
+	bbox 	109 118 39 79
+	frame	data/chars/neox/jumpgrab07.gif
+	bbox 	110 124 40 74
+	frame	data/chars/neox/jumpgrab08.gif
+	bbox 	107 117 41 80
+	frame	data/chars/neox/jumpgrab09.gif
+	
+anim follow2 #JUMP THROW
+	loop	0
+	delay	16
+	offset	125 192
+	@cmd jump 0
+	@cmd grabStart2
+	@cmd position 3 -20 35 -1 -1
+	@cmd leaper 2 -1 0
+	sound	data/sounds/Throw2.wav
+	frame	data/chars/neox/throw01.gif
+	@cmd position 3 -20 35 -1 0
+	frame	data/chars/neox/throw01.gif
+	@cmd position 4 90 50 1 0
+	frame	data/chars/neox/throw02.gif
+	@cmd depost
+	@cmd slam 24 2 -2 2 0 0
+	frame	data/chars/neox/throw02.gif
+	frame	data/chars/neox/throw02.gif
+	@cmd landFrame
+		delay	12
+		move	48
+	@cmd spawn01 "quakelow" 0 0 0
+	sound	data/sounds/Jumpland3.wav
+	frame	data/chars/neox/jumpgrab07.gif
+		move	0
+	frame	data/chars/neox/jumpgrab08.gif
+	@cmd clearL
+	frame	data/chars/neox/jumpgrab09.gif
+	
+anim freespecial3 #SINGLE MISSILE
+	range 200 240
+	rangea 0 0
+	rangez -999 999
+	loop	0
+	delay	48
+	offset	125 192
+	bbox 	108 120 45 56
+	sound	data/voices/Attack7.wav
+	frame	data/chars/neox/missile01.gif
+	@cmd shoot "neox_missile" 15 69 1 1 0 0
+	@cmd spawn01 "smoke" 15 70 1
+	frame	data/chars/neox/missile02.gif
+	frame	data/chars/neox/missile01.gif
+	
+anim freespecial4 #RAGE MISSILE
+	range 60 240
+	rangea 0 100
+	rangez -999 999
+	energycost 120 1 6
+	loop	0
+	delay	24
+	offset	125 192
+	@cmd spawnBind "RageSpend" 0 -1 0
+	@cmd spawnBind "RageFull" 0 0 1
+	sound	data/voices/Attack7.wav
+	frame	data/chars/neox/missile00.gif
+	frame	data/chars/neox/missile01.gif
+	@cmd shoot "neox_missile" 15 69 1 1 0 0
+	@cmd spawn01 "smoke" 15 70 1
+	frame	data/chars/neox/missile02.gif
+	frame	data/chars/neox/missile01.gif
+	@cmd shoot "neox_missile" 15 69 1 1 0 0
+	@cmd spawn01 "smoke" 25 60 1
+	frame	data/chars/neox/missile02.gif
+	frame	data/chars/neox/missile01.gif
+	@cmd shoot "neox_missile" 15 69 1 1 0 0
+	@cmd spawn01 "smoke" 5 70 1
+	frame	data/chars/neox/missile02.gif
+	frame	data/chars/neox/missile01.gif
+	@cmd shoot "neox_missile" 15 69 1 1 0 0
+	@cmd spawn01 "smoke" 15 60 1
+	frame	data/chars/neox/missile02.gif

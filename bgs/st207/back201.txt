@@ -1,0 +1,17 @@
+name			BAck201 #GROUND
+type			None
+setlayer -55
+noquake 	1 1
+#offscreenkill	1000
+
+
+anim idle
+	loop	0
+	offset	0 0
+		delay  400
+	frame	data/Bgs/St207/back01.gif
+	frame	data/Bgs/St207/back02.gif
+	frame	data/Bgs/St207/back03.gif
+
+
+

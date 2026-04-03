@@ -1,0 +1,10 @@
+name		st3_elevatorG #ENTITY ELEVATOR GROUND AT TOP FLOOR
+type		none	
+shadow		0
+setlayer	-3
+
+anim idle
+	loop	0
+	delay	6
+	offset	1 780
+	frame	data/bgs/sor3_st3/pn03.gif

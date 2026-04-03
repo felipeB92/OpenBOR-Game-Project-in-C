@@ -1,0 +1,37 @@
+##MAIN
+name				ParticleS
+type				none
+
+##MISC
+antigravity			100
+
+##SCRIPTS
+ondrawscript		data/scripts/ondraw/channel.c
+
+##REMAPS
+remap				data/chars/particle/idle00.gif data/chars/particle/alter1.gif
+remap				data/chars/particle/idle00.gif data/chars/particle/alter2.gif
+remap				data/chars/particle/idle00.gif data/chars/particle/alter3.gif
+
+##ANIMATIONS#############################################################################
+
+anim freespecial4
+	loop	0
+	delay	1000
+	offset	143 192
+	frame	data/chars/particle/laser00.gif
+	frame	data/chars/particle/laser01.gif
+	frame	data/chars/particle/laser02.gif
+	frame	data/chars/particle/laser03.gif
+	frame	data/chars/particle/laser04.gif
+	frame	data/chars/particle/laser05.gif
+	frame	data/chars/particle/laser06.gif
+	frame	data/chars/particle/laser07.gif
+	frame	data/chars/particle/laser08.gif
+	frame	data/chars/particle/laser09.gif
+	frame	data/chars/particle/laser10.gif
+	frame	data/chars/particle/laser11.gif
+	frame	data/chars/particle/laser12.gif
+	frame	data/chars/particle/laser13.gif
+	frame	data/chars/particle/laser14.gif
+	frame	data/chars/particle/laser15.gif

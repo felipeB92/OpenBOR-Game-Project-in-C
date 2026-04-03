@@ -1,0 +1,14 @@
+name			Luzb04 #GROUND
+type		none
+shadow		0
+antigravity	100
+setlayer		5
+
+anim idle
+	loop	1
+	delay	8
+	offset	0 0
+	frame	data/Bgs/St303/siren00.gif
+	frame	data/Bgs/St303/siren01.gif
+	frame	data/Bgs/St303/siren02.gif
+	frame	data/Bgs/St303/siren03.gif

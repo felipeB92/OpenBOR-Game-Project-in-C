@@ -1,0 +1,15 @@
+name		 st2_disco2
+type		 panel
+speed		 5
+scroll		-0.5
+shadow		 0
+setlayer	 85
+ondrawscript data/scripts/ondraw/disco.c
+
+anim idle
+	loop	1
+	delay	160
+	offset	92 1
+	frame	data/bgs/sor3_st2/disco00.gif
+		delay	160
+	frame	data/bgs/sor3_st2/disco00.gif

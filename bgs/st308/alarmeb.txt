@@ -1,0 +1,15 @@
+name	  	 	aLARMEb
+type	  	 	none
+shadow	  	 	0
+aLPHA 1
+setlayer	       10
+
+anim idle
+	loop	1
+	delay	48
+	offset	0 0
+	frame	data/bgs/st308/emergency00.gif
+	frame	data/bgs/st308/emergency01.gif
+	frame	data/bgs/St308/emergency00.gif
+	frame	data/bgs/St308/emergency02.gif
+	

@@ -1,0 +1,14 @@
+name			Vento #GROUND
+type			None
+setlayer 99
+offscreenkill	1000
+
+anim idle
+	loop	1
+	delay	3
+	offset	0 0
+		move  -15
+		movea  -3
+	frame	data/Bgs/St02/Vento01.gif
+	frame	data/Bgs/St02/Vento02.gif
+

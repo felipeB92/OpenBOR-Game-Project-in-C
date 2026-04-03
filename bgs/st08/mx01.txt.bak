@@ -1,0 +1,12 @@
+name			Mx01 #GROUND
+type			None
+setlayer 5
+
+anim idle
+	loop	0
+	delay	20
+	offset	40 84
+	frame	data/Bgs/St08/mrx02.gif
+	delay	60
+	frame	data/Bgs/St08/mrx03.gif
+

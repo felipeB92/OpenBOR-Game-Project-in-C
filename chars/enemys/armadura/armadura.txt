@@ -1,0 +1,252 @@
+name	Armadura
+health	300
+speed	1
+noflip 1
+nopain 1
+nodrop 2
+Nomove 0 1
+CANTGRAB 1
+riseinv				0.4 1
+hostile				player npc
+candamage			player npc obstacle
+Noblink 0
+falldie 1
+aimove				chase
+aggression 99
+mp			        60
+mprate  			5
+type	Enemy
+gfxshadow	1
+JUMPHEIGHT 1 1
+Jumpheight 3
+risetime  5
+atchain    1 2
+icon	data/chars/Enemys/Armadura/icon.gif 1
+diesound			data/voices/bossDie3.wav
+running	20	3	3	1	1
+onblockwscript	data/scripts/bounceF.c
+animationscript 	data/scripts/ani0020.h
+ondrawscript 		data/scripts/player_ondrawscript.c
+
+##LOADS
+load axe
+
+
+anim spawn
+	loop	0
+	delay	200
+	offset	42 133
+        hitfx	data/sounds/Armas/Corte.wav
+		bbox  26  34  33  101
+		attack1  57  42  20  57  10  1  0  0  0  10
+	frame	data/chars/Enemys/Armadura/walk1.gif
+		delay  5
+		hitfx  data/sounds/Armas/Corte.wav
+		Attack1  0
+	frame  data/chars/Enemys/Armadura/walk1.gif
+
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	42 133
+	bbox	28 38 32 97
+        hitfx	data/sounds/Armas/Corte.wav
+		attack1  59  48  18  45  10  1  0  0  0  10
+	frame   data/chars/Enemys/Armadura/walk1.gif
+		hitfx  data/sounds/Armas/Corte.wav
+		Attack1  0
+	frame  data/chars/Enemys/Armadura/walk1.gif
+
+
+
+anim walk
+	loop	1
+	delay	25
+	offset	42 133
+	bbox 	32 35 26 101
+	sound	data/sounds/Run2.wav
+        hitfx	data/sounds/Armas/Corte.wav
+		attack1  59  48  19  49  10  1  0  0  0  10
+	frame   data/chars/Enemys/Armadura/walk1.gif
+		Attack1  0
+	frame   data/chars/Enemys/Armadura/walk2.gif
+		sound  data/sounds/Run2.wav
+		attack1  56  45  18  52  10  1  0  0  0  10
+	frame   data/chars/Enemys/Armadura/walk3.gif
+		Attack1  0
+	frame   data/chars/Enemys/Armadura/walk4.gif
+
+anim backwalk
+	loop	1
+	delay	25
+	offset	42 133
+	bbox 	26 32 35 101
+        hitfx	data/sounds/Armas/Corte.wav
+		attack1  60  44  17  53  10  1  0  0  0  10
+	frame   data/chars/Enemys/Armadura/walk4.gif
+		Attack1  0
+		sound  data/sounds/Run2.wav
+	frame   data/chars/Enemys/Armadura/walk3.gif
+		attack1  63  42  15  55  10  1  0  0  0  10
+	frame   data/chars/Enemys/Armadura/walk2.gif
+		Attack1  0
+		sound  data/sounds/Run2.wav
+	frame   data/chars/Enemys/Armadura/walk1.gif
+
+
+
+
+
+
+
+anim attack1
+	loop	0
+	delay	6
+        Range 0 60
+	offset	42 133
+	bbox	26 35 33 98
+		Attack1  1  2  30  31  10  1  0  0  0  10
+	sound	data/sounds/armas/Whoosh3.wav
+        hitfx	data/sounds/Armas/Corte.wav
+	frame	data/chars/Enemys/Armadura/attack1a.gif
+		attack1  55  39  40  41  10  1  0  0  0  10
+		bbox  26  42  35  96
+	frame	data/chars/Enemys/Armadura/attack1b.gif
+	frame	data/chars/Enemys/Armadura/attack1c.gif
+		attack1  43  41  51  77  10  1  0  0  0  10
+	frame	data/chars/Enemys/Armadura/attack1d.gif
+		Attack1  0
+	frame	data/chars/Enemys/Armadura/attack1e.gif
+
+
+
+
+anim Freespecial
+	loop	0
+	delay	8
+        Range 160 170
+	offset	42 133
+		bbox  23  44  35  93
+		attack1  59  44  21  56  10  1  0  0  0  10
+		sound  data/sounds/armas/Whoosh2.wav
+	frame	data/chars/Enemys/Armadura/attack1a.gif
+        @cmd	shooter2 "Axe"  15        70       0     3        2         0
+		attack1  62  61  16  54  10  1  0  0  0  10
+	frame	data/chars/Enemys/Armadura/attack2a.gif
+	frame	data/chars/Enemys/Armadura/attack2b.gif
+		Attack1  0
+		delay  60
+	frame	data/chars/Enemys/Armadura/attack2c.gif
+
+anim Freespecial2
+	loop	0
+		Attack1  0
+		bbox  24  36  35  99
+		offset  42  133
+		delay  60
+	frame  data/chars/Enemys/Armadura/Walk1.gif
+	delay	12
+        Range -100 0
+        hitfx	data/sounds/Armas/Corte.wav
+		bbox  24  48  34  85
+		attack1  56  59  23  52  10  1  0  0  0  10
+		drawmethod  256  256  0  0  0  1  -1
+	frame	data/chars/Enemys/Armadura/attack1c.gif
+		bbox  0
+		move  0
+		Attack1  0
+	frame	data/chars/Enemys/Armadura/T00.gif
+		move  -20
+	frame	data/chars/Enemys/Armadura/T01.gif
+	frame  data/chars/Enemys/Armadura/T01.gif
+	frame  data/chars/Enemys/Armadura/T01.gif
+	frame  data/chars/Enemys/Armadura/T01.gif
+		move  0
+	frame	data/chars/Enemys/Armadura/T00.gif
+		bbox  17  33  32  57
+	frame  data/chars/Enemys/Armadura/attack1c.gif
+
+anim Freespecial3
+	loop	0
+		Attack1  0
+		bbox  24  36  35  99
+		offset  42  133
+		delay  60
+	frame  data/chars/Enemys/Armadura/Walk1.gif
+	delay	12
+        Range -150 -100
+        hitfx	data/sounds/Armas/Corte.wav
+		bbox  24  48  34  85
+		attack1  56  59  23  52  10  1  0  0  0  10
+		drawmethod  256  256  0  0  0  1  -1
+	frame	data/chars/Enemys/Armadura/attack1c.gif
+		bbox  0
+		move  0
+		Attack1  0
+	frame	data/chars/Enemys/Armadura/T00.gif
+		move  -40
+	frame	data/chars/Enemys/Armadura/T01.gif
+	frame  data/chars/Enemys/Armadura/T01.gif
+	frame  data/chars/Enemys/Armadura/T01.gif
+	frame  data/chars/Enemys/Armadura/T01.gif
+		move  0
+	frame	data/chars/Enemys/Armadura/T00.gif
+		bbox  17  33  32  57
+	frame  data/chars/Enemys/Armadura/attack1c.gif
+
+
+anim Freespecial4
+	loop	0
+		Attack1  0
+		bbox  24  36  35  99
+		offset  42  133
+		delay  60
+	frame  data/chars/Enemys/Armadura/Walk1.gif
+	delay	12
+        Range -300 -150
+        hitfx	data/sounds/Armas/Corte.wav
+		bbox  24  48  34  85
+		attack1  56  59  23  52  10  1  0  0  0  10
+		drawmethod  256  256  0  0  0  1  -1
+	frame	data/chars/Enemys/Armadura/attack1c.gif
+		bbox  0
+		move  0
+		Attack1  0
+	frame	data/chars/Enemys/Armadura/T00.gif
+		move  -60
+	frame	data/chars/Enemys/Armadura/T01.gif
+	frame  data/chars/Enemys/Armadura/T01.gif
+	frame  data/chars/Enemys/Armadura/T01.gif
+	frame  data/chars/Enemys/Armadura/T01.gif
+		move  0
+	frame	data/chars/Enemys/Armadura/T00.gif
+		bbox  17  33  32  57
+	frame  data/chars/Enemys/Armadura/attack1c.gif
+
+
+
+
+anim death
+	loop	0
+	offset	42 133
+	delay	20
+	frame	data/chars/Enemys/Armadura/death1a.gif
+	frame	data/chars/Enemys/Armadura/death1b.gif
+	frame	data/chars/Enemys/Armadura/death1c.gif
+	frame	data/chars/Enemys/Armadura/death1d.gif
+	frame	data/chars/Enemys/Armadura/death1e.gif
+	frame	data/chars/Enemys/Armadura/death1f.gif
+	frame	data/chars/Enemys/Armadura/death1g.gif
+
+
+
+
+
+anim rise
+	loop	0
+	offset	42 133
+	delay	10
+	frame	data/chars/Enemys/Armadura/walk1.gif
+

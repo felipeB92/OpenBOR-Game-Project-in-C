@@ -1,0 +1,422 @@
+music		data/bgs/St402/Lv402b.bor
+bossmusic	data/music/boss3.bor
+
+###BACKGROUND
+background		data/bgs/St402/back00.gif	1 1 0 0 0 0 1 1 1 0
+bglayer			data/bgs/St402/back01.gif	1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.5
+
+###SKY
+bglayer			data/bgs/St402/bg000.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.6
+bglayer			data/bgs/St402/bg001.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.7
+bglayer			data/bgs/St402/bg002.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.8
+bglayer			data/bgs/St402/bg003.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.9
+
+###GRASS
+bglayer			data/bgs/St402/bg00.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.5
+bglayer			data/bgs/St402/bg01.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.6
+bglayer			data/bgs/St402/bg02.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.7
+bglayer			data/bgs/St402/bg03.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.8
+bglayer			data/bgs/St402/bg04.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.9
+
+###BGLAYER/PANEL
+panel			data/bgs/St402/pN02.gif	none	none
+
+###MISC
+Frontpanel			data/bgs/St402/Front02.gif
+#order			a
+settime			99
+scrollspeed 	0.5
+stagenumber 	2
+cameratype 1
+backgroundSpeed 1 40
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	126 0  0
+spawn2  	131 0
+spawn3  	136  0
+
+light		128 -128
+at			0
+
+spawn  LAta02
+Item   Apple
+	coords  300 220
+	at  0
+
+spawn  LAta02
+2pItem   Apple
+	coords  350 220
+	at  0
+
+
+spawn  Fog_B
+flip   1
+health 80
+	coords  -100 220
+	at  100
+
+spawn  Fog_B
+map    1
+health 80
+	coords  500 260
+	at  150
+
+wait
+at   200
+
+Group 5  5
+at   200
+
+spawn  Fog
+map    1
+health 80
+	coords  500 260
+	at  200
+
+spawn  Vice
+map    1
+health 70
+	coords  -100 260
+	at  200
+
+spawn  Donovan
+map    1
+health 70
+	coords  500 220
+	at  200
+
+spawn  Moto
+alias  Fog
+health 70
+	coords  500 220
+	at  200
+
+spawn  Moto02
+Flip   1
+map    3
+health 50
+	coords  -100 260
+	at  200
+
+
+spawn  Fog
+map    1
+health 80
+	coords  500 260
+	at  300
+
+spawn  Fog
+map    1
+health 70
+	coords  500 220
+	at  300
+
+spawn  Signal
+map    1
+health 70
+	coords  500 220
+	at  400
+
+
+wait
+at   500
+
+Group 5  5
+at   500
+
+spawn  Moto02
+Flip   1
+map    2
+	coords  -100 220
+	at  500
+
+
+spawn  Moto02
+Flip   1
+map    3
+	coords  -150 240
+	at  500
+
+
+spawn  Moto02
+Flip   1
+map    1
+	coords  -200 260
+	at  500
+
+
+spawn  Bigben
+map    2
+health 70
+	coords  500 220 150
+	at  500
+
+spawn  Bigben
+map    1
+health 70
+	coords  500 260 150
+	at  500
+
+spawn  JAck
+health 200
+	coords  -100 240
+	at  500
+
+Group 9  9
+at   501
+
+
+spawn  Box
+Item Pipe
+	coords  500 260
+	at  500
+
+
+
+spawn  Box
+2pItem Pipe
+	coords  500 220
+	at  600
+
+
+
+spawn  Galsia
+map    2
+health 70
+	coords  500 220
+	at  500
+
+
+
+spawn  Signal
+health 50
+	coords  500 220
+	at  600
+
+spawn  JOnny
+map    2
+health 70
+	coords  500 240
+	at  600
+
+spawn  Signal
+map    3
+health 80
+	coords  500 260
+	at  600
+
+spawn  Fog
+health 70
+	coords  500 260
+	at  700
+
+spawn  Vice
+health 50
+	coords  500 220
+	at  800
+
+wait
+at   900
+
+Group 5  5
+at   900
+
+
+spawn  Slum
+health 50
+	coords  500 260
+	at  900
+
+
+spawn  Donovan
+map    1
+health 70
+	coords  -100 260
+	at  900
+
+
+spawn  Jonny
+map    2
+health 70
+	coords  500 220
+	at  900
+
+spawn  Galsia
+map    1
+health 70
+	coords  -100 220
+	at  900
+
+spawn  Box
+Item Chicken
+	coords  500 260
+	at  901
+
+
+spawn  Box
+2pItem Chicken
+	coords  500 260
+	at  1050
+
+
+
+wait
+at   1500
+
+Group 3  3
+at   1500
+
+
+spawn  Skeleton
+health 80
+	coords  197 184
+	at  1500
+
+
+spawn  Skeleton
+health 80
+	coords  300 184
+	at  1500
+
+
+spawn  Skeleton
+health 80
+	coords  375 184
+	at  1500
+
+
+spawn  Skeleton
+health 80
+	coords  197 184
+	at  1500
+
+
+spawn  Skeleton
+health 80
+	coords  300 184
+	at  1500
+
+
+spawn  Skeleton
+health 80
+	coords  375 184
+	at  1500
+
+
+spawn  Skeleton
+map    1
+health 90
+	coords  197 184
+	at  1500
+
+
+spawn  Skeleton
+map    1
+health 90
+	coords  300 184
+	at  1500
+
+
+spawn  Skeleton
+map    1
+health 90
+	coords  375 184
+	at  1500
+
+spawn  Skeleton
+map    2
+health 100
+	coords  197 184
+	at  1500
+
+
+spawn  Skeleton
+map    2
+health 100
+	coords  300 184
+	at  1500
+
+
+spawn  Skeleton
+map    2
+health 100
+	coords  375 184
+	at  1500
+
+wait
+at   1501
+
+Group 4  4
+at   1501
+
+spawn  Skeleton
+map    4
+health 150
+	coords  197 184
+	at  1501
+
+
+spawn  Skeleton
+map    4
+health 150
+	coords  300 184
+	at  1501
+
+
+spawn  Skeleton
+map    4
+health 150
+	coords  375 184
+	at  1501
+
+spawn  Delay
+	coords  375 184
+	at  1501
+
+spawn  harakiri
+Boss   1
+	coords  300 184
+	at  1501
+
+
+spawn  Skeleton
+map    4
+health 150
+	coords  197 184
+	at  1501
+
+
+spawn  Skeleton
+map    4
+health 150
+	coords  300 184
+	at  1501
+
+
+spawn  Skeleton
+map    4
+health 150
+	coords  375 184
+	at  1501
+
+
+
+
+
+
+
+
+
+
+
+
+

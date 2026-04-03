@@ -1,0 +1,14 @@
+name		st4_people
+type		panel
+shadow		0
+speed		5
+
+anim idle
+	loop	1
+	delay	16
+	offset	1 1
+	sound	data/sounds/Crowd3.wav
+	frame	data/bgs/sor2_st4/people00.gif
+	frame	data/bgs/sor2_st4/people01.gif
+	frame	data/bgs/sor2_st4/people02.gif
+	frame	data/bgs/sor2_st4/people03.gif

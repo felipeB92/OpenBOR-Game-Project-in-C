@@ -1,0 +1,40 @@
+name			PG01 #GROUND
+type			None
+candamage	        enemy npc obstacle
+nolife 1
+noname 1
+alpha  1
+
+
+anim idle
+	loop	1
+	delay	3
+	offset	67 139
+	frame	data/chars/players/Terry/p300.gif
+		attack3  55  68  52  71  25  1  0  0  0  20
+	frame	data/chars/players/Terry/p301.gif
+		attack3  46  52  67  87  25  1  0  0  0  20
+	frame	data/chars/players/Terry/p302.gif
+		attack3  38  18  90  121  25  1  0  0  0  20
+	frame	data/chars/players/Terry/p303.gif
+		attack3  34  17  94  123  25  1  0  0  0  20
+	frame	data/chars/players/Terry/p304.gif
+	frame	data/chars/players/Terry/p305.gif
+	frame	data/chars/players/Terry/p306.gif
+	frame	data/chars/players/Terry/p307.gif
+	frame	data/chars/players/Terry/p308.gif
+		attack3  33  37  84  101  25  1  0  0  0  20
+	frame	data/chars/players/Terry/p309.gif
+	frame	data/chars/players/Terry/p310.gif
+	frame	data/chars/players/Terry/p311.gif
+		attack3  40  74  62  66  25  1  0  0  0  20
+	frame	data/chars/players/Terry/p312.gif
+		attack3  41  89  54  52  25  1  0  0  0  20
+	frame	data/chars/players/Terry/p313.gif
+	frame	data/chars/players/Terry/p314.gif
+		Attack1  0
+	frame	data/chars/players/Terry/p315.gif
+	frame	data/chars/players/Terry/empty.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/players/Terry/empty.gif
+

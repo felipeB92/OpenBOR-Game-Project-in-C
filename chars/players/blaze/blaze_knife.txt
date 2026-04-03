@@ -1,0 +1,239 @@
+name	Blaze_Knife
+health	100
+speed	12
+type	none
+antigrab 2
+gfxshadow	1
+candamage			enemy npc obstacle
+JUMPHEIGHT 1 1
+Jumpheight 3
+icon	data/chars/players/Blaze/icon.gif
+diesound data/sounds/Blazedie.wav
+running	20	3	3	1	1
+
+Com d d freespecial5
+Com u u freespecial6
+
+load Knifet
+
+
+
+remap data/chars/players/Blaze/idle00.gif data/chars/players/Blaze/alter1.gif
+remap data/chars/players/Blaze/idle00.gif data/chars/players/Blaze/alter2.gif
+remap data/chars/players/Blaze/idle00.gif data/chars/players/Blaze/alter3.gif
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	128 181
+	bbox	116 106 25 75
+	frame   data/chars/players/Blaze/Knife/idle00.gif
+	frame   data/chars/players/Blaze/Knife/idle01.gif
+	frame   data/chars/players/Blaze/Knife/idle02.gif
+	frame   data/chars/players/Blaze/Knife/idle03.gif
+
+
+
+
+anim walk
+	loop	1
+	delay	1
+	offset	128 181
+	bbox	117 106 28 76
+	jumpframe  0  0.001  0.001  0
+	landframe  1
+	frame	data/chars/players/Blaze/Knife/walk00.gif
+	frame	data/chars/players/Blaze/Knife/walk00.gif
+	delay	14
+	frame	data/chars/players/Blaze/Knife/walk00.gif
+	frame	data/chars/players/Blaze/Knife/walk01.gif
+	frame	data/chars/players/Blaze/Knife/walk02.gif
+	frame	data/chars/players/Blaze/Knife/walk03.gif
+	frame	data/chars/players/Blaze/Knife/walk04.gif
+	frame	data/chars/players/Blaze/Knife/walk05.gif
+
+
+anim get
+	loop	0
+	delay	10
+	offset	128 181
+	frame	data/chars/players/Blaze/Knife/get00.gif
+
+
+anim jump
+	loop	0
+	delay	5
+	offset	128 181
+	bbox	116 107 29 55
+	frame	data/chars/players/Blaze/Knife/jump00.gif
+	frame	data/chars/players/Blaze/Knife/jump01.gif
+
+
+
+
+anim jumpattack
+	loop	0
+	delay	7
+	offset	128 181
+	bbox	110 103 31 42
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Blaze/Knife/jumpatk00.gif
+	frame	data/chars/players/Blaze/Knife/jumpatk01.gif
+		attack1  136  132  54  35  10  1  0  0  0  10
+		delay  25
+	frame	data/chars/players/Blaze/Knife/jumpatk02.gif
+		Attack1  0
+		delay  10
+	frame	data/chars/players/Blaze/Knife/jumpatk03.gif
+	frame	data/chars/players/Blaze/Knife/jumpatk04.gif
+
+
+
+anim jumpattack2
+	loop	0
+	delay	7
+	offset	128 181
+	bbox	113 112 31 39
+	attack	108 137 53 32 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Blaze/Knife/jumpatk200.gif
+
+anim jumpforward
+	loop	0
+	delay	7
+	offset	128 181
+	bbox	102 111 34 30
+	attack	130 130 62 31 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/soco.wav
+	frame	data/chars/players/Blaze/Knife/fjumpatk01.gif
+
+
+anim runjumpattack
+	loop	0
+	delay	7
+	offset	128 181
+	bbox	84 105 50 42
+	attack	116 138 39 38 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Blaze/Knife/jumpatk300.gif
+
+anim attack1
+	loop	0
+	delay	6
+	offset	128 181
+	bbox	119 108 30 74
+		Attack1  0
+	sound	data/sounds/armas/Whoosh.wav
+        hitfx	data/sounds/Armas/Corte.wav
+	frame	data/chars/players/Blaze/Knife/a100.gif
+		attack1  139  125  58  18  15  1  0  0  0  15
+	frame	data/chars/players/Blaze/Knife/a101.gif
+		Attack1  0
+	frame	data/chars/players/Blaze/Knife/a100.gif
+
+
+anim Special2
+	loop	0
+	delay	6
+	offset	128 181
+	bbox	119 108 30 74
+		Attack1  0
+	sound	data/sounds/armas/Whoosh.wav
+        hitfx	data/sounds/Armas/Corte.wav
+        custknife Knifet
+        throwframe 2 40
+	frame	data/chars/players/Blaze/Knife/a100.gif
+	frame	data/chars/players/Blaze/Knife/a101.gif
+		Attack1  0
+	frame	data/chars/players/Blaze/Knife/a102.gif
+	frame	data/chars/players/Blaze/Knife/a103.gif
+
+
+anim runattack
+	loop	0
+	delay	7
+	offset	128 181
+	bbox	115 112 34 42
+	attack1	97 121 59 24 7 0  0  0  0  20
+        hitfx	data/sounds/armas/Corte.wav
+	sound	data/sounds/armas/Whoosh.wav
+		move  5
+	frame	data/chars/players/Blaze/Knife/blitz00.gif
+		Attack1  0
+	frame	data/chars/players/Blaze/Knife/blitz01.gif
+		attack2  123  150  35  32  5  0  0  0  0  20
+	frame	data/chars/players/Blaze/Knife/blitz02.gif
+		Attack1  0
+	frame	data/chars/players/Blaze/Knife/blitz03.gif
+		attack3  119  72  50  104  25  1  0  0  0  20
+	frame	data/chars/players/Blaze/Knife/blitz04.gif
+	frame	data/chars/players/Blaze/Knife/blitz05.gif
+		Attack1  0
+	frame	data/chars/players/Blaze/Knife/blitz06.gif
+	frame	data/chars/players/Blaze/Knife/blitz07.gif
+	frame  data/chars/players/Blaze/Knife/jumpland00.gif
+
+
+anim special
+	loop	0
+	delay	7
+	offset	128 181
+        energycost 20 1
+        MpOnly 1
+        hitfx	data/sounds/armas/Corte.wav
+	sound	data/sounds/armas/Whoosh.wav
+		Attack1  0
+	frame	data/chars/players/Blaze/Knife/special00.gif
+		attack1  121  119  45  32  10  0  0  0  0  20
+	frame	data/chars/players/Blaze/Knife/special01.gif
+		attack1  107  89  60  54  10  0  0  0  0  20
+	frame	data/chars/players/Blaze/Knife/special02.gif
+		Attack1  0
+	frame	data/chars/players/Blaze/Knife/special03.gif
+	sound	data/sounds/armas/Whoosh.wav
+	frame	data/chars/players/Blaze/Knife/special04.gif
+		attack3  96  116  92  27  15  1  0  0  0  20
+	frame	data/chars/players/Blaze/Knife/special05.gif
+	frame	data/chars/players/Blaze/Knife/special06.gif
+		Attack1  0
+	frame	data/chars/players/Blaze/Knife/special07.gif
+
+
+
+
+
+
+anim run
+        loop    1
+        delay  10
+	offset	128 181
+	bbox	118 112 34 50
+	jumpframe  0  0.001  0.001  0
+	landframe  1
+        frame	data/chars/players/Blaze/Knife/run00.gif
+        frame	data/chars/players/Blaze/Knife/run01.gif
+        frame	data/chars/players/Blaze/Knife/run02.gif
+        frame	data/chars/players/Blaze/Knife/run03.gif
+        frame	data/chars/players/Blaze/Knife/run04.gif
+        frame	data/chars/players/Blaze/Knife/run05.gif
+
+
+
+
+
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	128 181
+	bbox	113 115 30 61
+	frame	data/chars/players/Blaze/Knife/jumpland00.gif
+

@@ -1,0 +1,439 @@
+name	Adam
+health	100
+mp 20
+#mprate 1
+speed	12
+type	player
+gfxshadow	1
+candamage			enemy npc obstacle
+antigrab 2
+JUMPHEIGHT 1 1
+Jumpheight 3
+atchain    1 1 2 3
+weapons				Adam_Knife Adam_Sword Adam_pipe Adam_Kunai
+icon	data/chars/players/Adam/icon.gif 1
+diesound data/sounds/Adamdie.wav
+running	20	3	2	1	1
+
+
+Load Adam_Knife
+Load Adam_Pipe
+Load Adam_Kunai
+Load Adam_Sword
+
+remap data/chars/players/Adam/idle00.gif data/chars/players/Adam/alter1.gif
+remap data/chars/players/Adam/idle00.gif data/chars/players/Adam/alter2.gif
+remap data/chars/players/Adam/idle00.gif data/chars/players/Adam/alter3.gif
+
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	136 172
+	bbox	121 95 35 78
+	frame   data/chars/players/Adam/idle00.gif
+	frame   data/chars/players/Adam/idle01.gif
+	frame   data/chars/players/Adam/idle02.gif
+	frame   data/chars/players/Adam/idle03.gif
+
+
+
+anim walk
+	loop	1
+	delay	14
+	offset	136 172
+	bbox	120 92 35 76
+	frame	data/chars/players/Adam/walk01.gif
+	frame	data/chars/players/Adam/walk02.gif
+	frame	data/chars/players/Adam/walk03.gif
+	frame	data/chars/players/Adam/walk04.gif
+	frame	data/chars/players/Adam/walk05.gif
+
+
+anim get
+	loop	0
+	delay	10
+	offset	136 172
+	frame	data/chars/players/Adam/get00.gif
+
+
+anim jump
+	loop	0
+	delay	5
+	offset	136 172
+	bbox	118 87 43 61
+	frame	data/chars/players/Adam/jump00.gif
+	frame	data/chars/players/Adam/jump01.gif
+
+
+
+
+anim jumpattack
+	loop	0
+	delay	7
+	offset	136 172
+	bbox	126 95 30 54
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Adam/jumpatk00.gif
+		attack1  134  81  45  58  8  1  0  0  0  20
+		delay  20
+	frame	data/chars/players/Adam/jumpatk01.gif
+
+
+
+anim jumpattack2
+	loop	0
+	delay	7
+	offset	136 172
+	bbox	113 88 36 36
+	attack	109 122 57 30 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Adam/jumpatk200.gif
+
+anim jumpforward
+	loop	0
+	delay	7
+	offset	136 172
+	bbox	122 91 29 37
+	attack	110 120 81 39 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/soco.wav
+	frame	data/chars/players/Adam/fjumpatk01.gif
+
+
+anim runjumpattack
+	loop	0
+	delay	3
+	offset	136 172
+	bbox	111 99 38 31
+	attack	147 104 56 36 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Adam/jumpatk301.gif
+
+anim attack1
+	loop	0
+	delay	6
+	offset	136 172
+	bbox	126 90 23 81
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/fraco.wav
+	frame	data/chars/players/Adam/a100.gif
+		attack1  141  104  39  17  7  0  0  0  0  5
+	frame	data/chars/players/Adam/a101.gif
+
+
+anim attack2
+	loop	0
+	delay	6
+	offset	136 172
+	bbox	50 52 30 72
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Medio.wav
+	frame	data/chars/players/Adam/a200.gif
+		attack2  156  107  41  31  7  0  0  0  0  5
+		bbox  138  98  33  73
+	frame	data/chars/players/Adam/a201.gif
+		attack2  156  85  30  51  7  0  0  0  0  5
+	frame	data/chars/players/Adam/a202.gif
+
+anim attack3
+	loop	0
+	delay	8
+	offset	136 172
+	bbox	110 95 40 78
+        Sound	data/sounds/golpes/Chut.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/players/Adam/a300.gif
+	frame	data/chars/players/Adam/a301.gif
+		attack1  139  102  62  29  10  1  0  0  0  5
+	frame	data/chars/players/Adam/a302.gif
+		Attack1  0
+	frame	data/chars/players/Adam/a303.gif
+	frame	data/chars/players/Adam/a304.gif
+
+anim run
+        loop    1
+        delay  10
+	offset	136 172
+	bbox	121 98 34 66
+        frame	data/chars/players/Adam/run00.gif
+        frame	data/chars/players/Adam/run01.gif
+		bbox  114  95  42  66
+        frame	data/chars/players/Adam/run02.gif
+        frame	data/chars/players/Adam/run03.gif
+        frame	data/chars/players/Adam/run04.gif
+        frame	data/chars/players/Adam/run05.gif
+
+
+
+anim grab
+	loop	0
+	delay	100
+	offset	136 172
+	bbox	126 93 32 80
+        cancel	0 9 0 f freespecial
+	frame	data/chars/players/Adam/grab00.gif
+
+
+
+
+anim Freespecial
+	loop	0
+	delay	10
+	offset	130 225
+        cancel	6 9 0 a freespecial2
+        hitfx	data/sounds/efeitos/silencio.wav
+		move  11
+		attack4  116  161  35  67  0  0  0  0  0  20
+	frame	data/chars/players/Adam/vault00.gif
+		offset  136  225
+		attack4  125  165  31  60  0  0  0  0  20  1
+	frame	data/chars/players/Adam/vault01.gif
+		Attack1  0
+	frame	data/chars/players/Adam/vault02.gif
+	frame	data/chars/players/Adam/vault03.gif
+		offset  150  225
+	frame	data/chars/players/Adam/vault04.gif
+		offset  142  172
+		delay  1
+		move  0
+	frame	data/chars/players/Adam/grab01.gif
+	frame	data/chars/players/Adam/grab01.gif
+		delay  50
+	frame	data/chars/players/Adam/grab01.gif
+		delay  10
+	Sound	data/chars/players/Adam/Adam2.wav
+	frame	data/chars/players/Adam/a400.gif
+		attack1  100  98  44  42  15  1  0  0  0  20
+	frame	data/chars/players/Adam/a401.gif
+		attack1  113  88  31  51  15  1  0  0  0  20
+	frame	data/chars/players/Adam/a402.gif
+
+
+anim Freespecial2
+	loop	0
+	delay	10
+	offset	142 172
+        hitfx	data/sounds/efeitos/silencio.wav
+	Sound	data/chars/players/Adam/Adam2.wav
+		attack5  126  110  31  60  15  0  0  0  0  1
+	frame	data/chars/players/Adam/slam200.gif
+		Attack1  0
+	frame	data/chars/players/Adam/slam201.gif
+	frame	data/chars/players/Adam/slam202.gif
+		delay  30
+		attack1  179  137  51  37  10  1  0  0  0  20
+	frame	data/chars/players/Adam/slam203.gif
+		delay  10
+		Attack1  0
+	frame	data/chars/players/Adam/slam204.gif
+
+
+anim throw
+	loop	0
+	delay	10
+	offset	136 172
+	Sound	data/chars/players/Adam/Adam1.wav
+	frame	data/chars/players/Adam/throw00.gif
+	frame	data/chars/players/Adam/throw01.gif
+		attack1  42  98  47  37  10  1  0  0  0  20
+	frame	data/chars/players/Adam/throw02.gif
+		Attack1  0
+	frame	data/chars/players/Adam/throw03.gif
+	frame	data/chars/players/Adam/throw01.gif
+
+
+
+anim pain
+	loop	0
+	offset	136 172
+	bbox	117 94 33 54
+	delay	15
+	frame	data/chars/players/Adam/pain00.gif
+	frame	data/chars/players/Adam/pain01.gif
+
+anim pain2
+	loop	0
+	offset	136 172
+	bbox	119 109 42 52
+	delay	15
+	frame	data/chars/players/Adam/pain200.gif
+		bbox  121  106  36  55
+	frame	data/chars/players/Adam/pain201.gif
+
+
+anim fall
+	loop	0
+	offset	136 172
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/players/Adam/fall00.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/players/Adam/fall00.gif
+		Attack1  0
+	frame	data/chars/players/Adam/fall01.gif
+
+anim fall3
+	loop	0
+	offset	136 172
+	delay	10
+	attack	123 106 40 55 12 1
+		bbox  124  106  37  55
+	frame	data/chars/players/Adam/fall705.gif
+	frame	data/chars/players/Adam/fall600.gif
+	frame	data/chars/players/Adam/fall601.gif
+	frame	data/chars/players/Adam/fall602.gif
+		Attack1  0
+		bbox  0
+	frame  data/chars/players/Adam/fall01.gif
+
+anim rise
+	loop	0
+	offset	136 172
+	delay	10
+	frame	data/chars/players/Adam/Rise00.gif
+	frame	data/chars/players/Adam/Rise01.gif
+	frame	data/chars/players/Adam/Rise02.gif
+
+
+anim special2
+        energycost 20 1
+        MpOnly 1
+	loop	0
+	delay	8
+	offset	136 172
+        hitfx	data/sounds/golpes/forte.wav
+		attack1  0  0  0  0  25  0
+	Sound	data/chars/players/Adam/Adam2.wav
+		move  5
+	frame	data/chars/players/Adam/special00.gif
+		attack3  117  134  44  29  25  1  0  0  0  20
+	frame	data/chars/players/Adam/special01.gif
+		attack3  148  128  46  42  25  1  0  0  0  20
+	frame	data/chars/players/Adam/special02.gif
+		attack3  124  104  56  53  25  1  0  0  0  20
+	frame	data/chars/players/Adam/special03.gif
+		attack3  91  91  44  48  25  1  0  0  0  20
+	frame	data/chars/players/Adam/special04.gif
+		attack3  96  93  59  46  25  1  0  0  0  20
+	frame	data/chars/players/Adam/special05.gif
+		attack3  148  86  43  59  25  1  0  0  0  20
+	frame	data/chars/players/Adam/special06.gif
+		Attack1  146  83  32  46
+	frame	data/chars/players/Adam/special07.gif
+	frame	data/chars/players/Adam/special08.gif
+	frame	data/chars/players/Adam/special09.gif
+
+anim special
+        energycost 20 1
+        MpOnly 1
+	loop	0
+	delay	8
+	offset	136 172
+        hitfx	data/sounds/golpes/forte.wav
+	Sound	data/chars/players/Adam/Adam2.wav
+		attack3  106  89  35  34  25  1  0  0  0  20
+	frame	data/chars/players/Adam/special200.gif
+		attack3  135  112  34  39  25  1  0  0  0  20
+	frame	data/chars/players/Adam/special201.gif
+		attack3  165  109  58  38  25  1  0  0  0  20
+	frame	data/chars/players/Adam/special202.gif
+		attack3  145  109  54  26  25  1  0  0  0  20
+	frame	data/chars/players/Adam/special203.gif
+		attack3  93  97  51  27  25  1  0  0  0  20
+	frame	data/chars/players/Adam/special204.gif
+	frame	data/chars/players/Adam/special205.gif
+		attack3  139  102  79  27  25  1  0  0  0  20
+	frame	data/chars/players/Adam/special206.gif
+		attack3  159  109  72  26  25  1  0  0  0  20
+	frame	data/chars/players/Adam/special207.gif
+	frame	data/chars/players/Adam/special208.gif
+		Attack1  0
+	frame	data/chars/players/Adam/special209.gif
+
+
+
+anim runattack
+ 	loop	0
+ 	delay	8
+ 	offset	136 172
+ 	bbox	140 107 32 40
+		move  5
+        hitfx	data/sounds/golpes/forte.wav
+	Sound	data/chars/players/Adam/Adam2.wav
+		attack3  109  104  75  31  15  0  0  0  0  20
+ 	frame	data/chars/players/Adam/special300.gif
+		delay  7
+		hitfx  data/sounds/golpes/forte.wav
+		Sound  data/chars/players/Adam/Adam2.wav
+		Attack1  0
+	frame  data/chars/players/Adam/special300.gif
+		attack1  109  104  75  31  15  0  0  0  0  20
+	frame  data/chars/players/Adam/special300.gif
+		Attack1  0
+	frame  data/chars/players/Adam/special300.gif
+ 	frame	data/chars/players/Adam/special301.gif
+		attack3  129  102  72  29  15  1  0  0  0  20
+ 	frame	data/chars/players/Adam/special302.gif
+		move  0
+		delay  15
+ 	frame	data/chars/players/Adam/special303.gif
+
+
+anim grabattack
+	loop	0
+	offset	136 172
+	bbox	121 99 35 73
+	delay	10
+        hitfx	data/sounds/golpes/fraco.wav
+        Sound	data/sounds/golpes/Chut.wav
+		Attack1  0
+	frame	data/chars/players/Adam/a304.gif
+		attack2  148  113  26  40  5  0
+	frame	data/chars/players/Adam/a303.gif
+		Attack1  0
+	frame  data/chars/players/Adam/a304.gif
+
+
+anim grabattack2
+                loop	0
+	offset	136 172
+	bbox	112 95 39 75
+	delay	10
+		Attack1  0
+        hitfx	data/sounds/golpes/Forte.wav
+	Sound	data/chars/players/Adam/Adam1.wav
+	frame	data/chars/players/Adam/a301.gif
+		attack2  137  104  66  33  10  1  0  0  0  20
+	frame	data/chars/players/Adam/a302.gif
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	136 172
+	bbox	126 109 38 43
+	frame	data/chars/players/Adam/jumpland00.gif
+
+anim attackbackward
+ 	loop	0
+ 	delay	10
+ 	offset	136 172
+ 	bbox	119 98 40 55
+        hitfx	data/sounds/golpes/Medio.wav
+        Sound	data/sounds/golpes/soco.wav
+ 	frame	data/chars/players/Adam/aboth01.gif
+		attack1  88  98  40  34  10  1  0  0  0  20
+ 	frame	data/chars/players/Adam/aboth02.gif
+		Attack1  0
+ 	frame	data/chars/players/Adam/aboth03.gif
+

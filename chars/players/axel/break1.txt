@@ -1,0 +1,1046 @@
+##MAIN
+name				Break1
+type				enemy
+hostile				player npc
+candamage			player npc obstacle
+
+##LIFE
+health				1 #SCRIPT
+
+##POWER
+offense 			1 #SCRIPT
+
+##SPEED
+speed				1 #SCRIPT
+
+##JUMP
+jumpheight 			1 #SCRIPT
+
+##ENERGY
+mp					120
+mprate  			1 #SCRIPT
+
+##GRAB
+grabdistance 		33 #36/33/30
+grabfinish 			1 #PLAYER=0/ENEMY=1
+
+##WEIGHT/HEIGHT
+antigravity			-6 #-3/-6/-9
+height				74
+
+##MISC
+jugglepoints		30
+guardpoints			20
+guardrate			4
+risetime			170
+riseinv				0.4 1 #HEROES 0.4 - ENEMY 0 - BOSS 0.4
+makeinv				2 0
+atchain				1 1 2 3
+weapons				none none none none
+gfxshadow			1 1
+dust				dust
+aimove				chase #ENEMY ONLY
+escapehits			2 #ENEMY ONLY
+blockodds 			1
+bflash				block
+nopassiveblock		1
+death				2
+
+##SCRIPTS
+didblockscript		data/scripts/didblock/default.c
+didhitscript		data/scripts/didhit/default.c
+onblockpscript		data/scripts/onblockp/default.c
+ondrawscript		data/scripts/ondraw/break.c
+onspawnscript		data/scripts/onspawn/break.c
+animationscript	 	data/scripts/animation/default.c
+takedamagescript	data/scripts/takedamage/break.c
+
+##ICONS
+icon				data/chars/axel/iconb.gif 1
+
+##DIESOUND
+diesound			data/voices/Die5.wav
+
+##REMAPS
+remap				data/chars/axel/idle00.gif data/chars/axel/alter1.gif
+remap				data/chars/axel/idle00.gif data/chars/axel/alter2.gif
+remap				data/chars/axel/idle00.gif data/chars/axel/alter3.gif
+
+##ANIMATIONS#############################################################################
+
+anim spawn
+	loop	0
+	delay	1
+	offset	62 126
+	frame	data/chars/axel/idle00.gif
+
+anim idle
+	loop	1
+	delay	16
+	offset	62 126
+	bbox 	50 55 23 74
+	@cmd clearL
+	frame	data/chars/axel/idle00.gif
+	frame	data/chars/axel/idle01.gif
+	frame	data/chars/axel/idle02.gif
+	frame	data/chars/axel/idle03.gif
+	frame	data/chars/axel/idle00.gif
+	frame	data/chars/axel/idle01.gif
+	frame	data/chars/axel/idle02.gif
+	frame	data/chars/axel/idle03.gif
+
+anim walk
+	loop	1
+	delay	16
+	offset	62 126
+	bbox 	54 49 20 79
+	frame	data/chars/axel/walk00.gif
+	frame	data/chars/axel/walk01.gif
+	frame	data/chars/axel/walk02.gif
+	frame	data/chars/axel/walk03.gif
+	frame	data/chars/axel/walk04.gif
+	frame	data/chars/axel/walk05.gif
+	
+anim backwalk
+	loop	1
+	delay	16
+	offset	62 126
+	bbox 	54 49 20 79
+	frame	data/chars/axel/walk05.gif
+	frame	data/chars/axel/walk04.gif
+	frame	data/chars/axel/walk03.gif
+	frame	data/chars/axel/walk02.gif
+	frame	data/chars/axel/walk01.gif
+	frame	data/chars/axel/walk00.gif
+	
+anim run
+	loop	1
+	delay	14
+	offset	62 126
+	bbox 	61 60 20 68
+	frame	data/chars/axel/run00.gif
+	frame	data/chars/axel/run01.gif
+	sound	data/sounds/Run.wav
+	frame	data/chars/axel/run02.gif
+	frame	data/chars/axel/run03.gif
+	frame	data/chars/axel/run04.gif
+	sound	data/sounds/Run2.wav
+	frame	data/chars/axel/run05.gif
+	
+anim get
+	loop	0
+	delay	16
+	offset	62 126
+	frame	data/chars/axel/get00.gif
+	
+anim grab
+	loop	0
+	delay	16
+	offset	62 126
+	bbox 	60 54 17 74
+	@cmd vaultStuck 40 40 20
+	frame	data/chars/axel/grab00.gif
+
+anim grabbed
+	loop	0
+	delay	8
+	offset	62 126
+	bbox 	50 65 24 62
+	frame	data/chars/axel/grabbed00.gif
+	
+anim land
+	loop	0
+	delay	30
+	offset	62 126
+	@cmd landSafe
+	sound	data/sounds/Jumping.wav
+	frame	data/chars/axel/jump00.gif
+	frame	data/chars/axel/jump01.gif
+	
+anim jumpdelay
+	loop	0
+	delay	12
+	offset	62 126
+	bbox 	52 70 25 58
+	frame	data/chars/axel/jumpdelay00.gif
+
+anim walkoff
+	loop	0
+	delay	30
+	offset	62 126
+	bbox 	56 50 19 61
+	@cmd jump 1
+	frame	data/chars/axel/jump00.gif
+	frame	data/chars/axel/jump01.gif
+	
+anim jumpland
+	loop	0
+	delay	12
+	offset	62 126
+	bbox 	52 70 25 58
+	sound	data/sounds/Jumpland.wav
+	frame	data/chars/axel/jumpland00.gif
+	
+anim guardbreak
+	loop	0
+	delay	4
+	offset	62 126
+	bbox 	50 65 24 62
+	@cmd spawnBind "guardbreak" 0 50 0
+	drawmethod tintmode 6
+	drawmethod tintcolor 0
+	frame	data/chars/axel/grabbed00.gif
+	nodrawmethod
+	frame	data/chars/axel/grabbed01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 0
+	frame	data/chars/axel/grabbed00.gif
+	nodrawmethod
+	frame	data/chars/axel/grabbed01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 0
+	frame	data/chars/axel/grabbed00.gif
+	nodrawmethod
+	frame	data/chars/axel/grabbed01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 0
+	frame	data/chars/axel/grabbed00.gif
+	nodrawmethod
+	frame	data/chars/axel/grabbed01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 0
+	frame	data/chars/axel/grabbed00.gif
+	nodrawmethod
+	frame	data/chars/axel/grabbed01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 0
+	frame	data/chars/axel/grabbed00.gif
+	nodrawmethod
+	frame	data/chars/axel/grabbed01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 0
+	frame	data/chars/axel/grabbed00.gif
+	nodrawmethod
+	frame	data/chars/axel/grabbed01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 0
+	frame	data/chars/axel/grabbed00.gif
+	nodrawmethod
+	frame	data/chars/axel/grabbed01.gif
+
+anim pain #UP
+	loop	0
+	delay	4
+	offset	62 126
+	bbox 	51 57 21 71
+	frame	data/chars/axel/pain00.gif
+	frame	data/chars/axel/pain01.gif
+	frame	data/chars/axel/pain00.gif
+	frame	data/chars/axel/pain01.gif
+	frame	data/chars/axel/pain00.gif
+	frame	data/chars/axel/pain01.gif
+	frame	data/chars/axel/pain00.gif
+	frame	data/chars/axel/pain01.gif
+
+anim pain2 #DOWN
+	loop	0
+	delay	4
+	offset	62 126
+	bbox 	47 66 31 60
+	frame	data/chars/axel/pain200.gif
+	frame	data/chars/axel/pain201.gif
+	frame	data/chars/axel/pain200.gif
+	frame	data/chars/axel/pain201.gif
+	frame	data/chars/axel/pain200.gif
+	frame	data/chars/axel/pain201.gif
+	frame	data/chars/axel/pain200.gif
+	frame	data/chars/axel/pain201.gif
+
+anim fall #NORMAL
+	landframe 1
+	loop	0
+	delay	999
+	offset	62 126
+	bbox 	39 75 41 34
+	frame	data/chars/axel/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Falling.wav
+	frame	data/chars/axel/fall01.gif
+	
+anim burn #BURNED FALL
+	landframe 2
+	loop	1 0 2
+	delay	3
+	offset	62 126
+	bbox 	39 75 41 34
+	drawmethod tintmode 6	
+	drawmethod tintcolor 255
+	frame	data/chars/axel/fall00.gif
+	@cmd spawn01 "smoke" 0 50 0
+	drawmethod tintmode 2	
+	drawmethod tintcolor 255
+	frame	data/chars/axel/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	nodrawmethod
+	sound	data/sounds/Falling.wav
+	frame	data/chars/axel/fall01.gif
+	
+anim shock #SHOCKED FALL
+	landframe 2
+	loop	1 0 2
+	delay	3
+	offset	62 126
+	bbox 	39 75 41 34
+	drawmethod tintmode 6	
+	drawmethod tintcolor -255
+	frame	data/chars/axel/fall00.gif
+	drawmethod tintmode 2	
+	drawmethod tintcolor -255
+	frame	data/chars/axel/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	nodrawmethod
+	sound	data/sounds/Falling.wav
+	frame	data/chars/axel/fall01.gif
+	
+anim fall6 #SPIN FALL
+	landframe 4
+	loop	1 0 4
+	delay	3
+	offset	62 126
+	frame	data/chars/axel/fall600.gif
+	frame	data/chars/axel/fall601.gif
+	frame	data/chars/axel/fall602.gif
+	frame	data/chars/axel/fall603.gif
+		delay	8
+	sound	data/sounds/Falling.wav
+	frame	data/chars/axel/fall01.gif
+	
+anim fall7 #GRABSTART POSITION
+	loop	0
+	delay	1000
+	offset	62 126
+	frame	data/chars/axel/fall700.gif
+	frame	data/chars/axel/fall701.gif
+	frame	data/chars/axel/fall702.gif
+	frame	data/chars/axel/fall703.gif
+	frame	data/chars/axel/fall704.gif
+	frame	data/chars/axel/fall705.gif
+	
+anim fall8 #FINISH/THROW TYPE 3
+	landframe 2
+	loop	0
+	delay	30
+	offset	62 126
+	bbox 	39 75 41 34
+	hitfx	data/sounds/MediumKick.wav
+	attack 39 75 41 34 4 1 0 0 0 12
+	frame	data/chars/axel/fall00.gif
+		delay	999
+	@cmd cancelFall 50 "ANI_LAND"
+	frame	data/chars/axel/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Falling.wav
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/axel/fall01.gif
+	
+anim fall9 #FINISH/THROW TYPE 2
+	landframe 2
+	loop	0
+	delay	30
+	offset	62 126
+	bbox 	52 90 32 35
+	hitfx	data/sounds/MediumKick.wav
+	attack 52 90 32 35 4 1 0 0 0 12
+	frame	data/chars/axel/fall900.gif
+		delay	999
+	@cmd cancelFall 50 "ANI_LAND"
+	frame	data/chars/axel/fall900.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Falling.wav
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/axel/fall01.gif
+	
+anim death #EXPLOSION
+	loop	0
+	delay	16
+	offset	62 126
+	@cmd spawnBind "explosion" 0 15 1
+	frame	data/chars/axel/fall01.gif
+	@cmd spawnBind "explosion" -30 15 1
+	frame	data/chars/axel/fall01.gif
+	@cmd spawnBind "explosion" 30 15 1
+	frame	data/chars/axel/fall02.gif
+	@cmd spawnBind "explosion" 0 15 1
+	frame	data/chars/axel/fall02.gif
+		delay	180
+	frame	data/chars/axel/fall02.gif
+	
+anim rise
+	loop	0
+	delay	16
+	offset	62 126
+	frame	data/chars/axel/rise00.gif
+	frame	data/chars/axel/rise01.gif
+	frame	data/chars/axel/rise00.gif
+	frame	data/chars/axel/rise02.gif
+	
+anim riseattack
+	range 60 120
+	loop	0
+	delay	2
+	offset	62 126
+	@cmd flipRandom
+	@cmd dasher 2 0 0
+	@cmd copyMove
+	frame	data/chars/axel/dodge00.gif
+		delay	8
+	@cmd pasteMove
+	frame	data/chars/axel/dodge01.gif
+	@cmd pasteMove
+	frame	data/chars/axel/dodge02.gif
+	@cmd pasteMove
+	frame	data/chars/axel/dodge03.gif
+	@cmd pasteMove
+	frame	data/chars/axel/dodge04.gif
+		delay	16
+	@cmd dasher 0 0 0
+	frame	data/chars/axel/dodge05.gif
+	
+anim attack1
+	range 20 40
+	rangea 0 0
+	fastattack 1
+	jugglecost 5
+	forcedirection -1
+	loop	0
+	delay	4
+	offset	62 126
+	bbox 	50 55 23 74
+	hitfx	data/sounds/LowPunch.wav
+	sound	data/sounds/LowAttack.wav
+	frame	data/chars/axel/a100.gif
+	attack 62 61 42 13 2 0 0 0 5 12
+	frame	data/chars/axel/a101.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/axel/a100.gif
+
+anim attack2
+	range 20 40
+	rangea 0 0
+	fastattack 1
+	jugglecost 5
+	forcedirection -1
+	loop	0
+	delay	4
+	offset	62 126
+	bbox 	55 53 22 75
+	hitfx	data/sounds/MediumPunch.wav
+	sound	data/sounds/MediumAttack.wav
+	frame	data/chars/axel/a200.gif
+		delay	8
+	bbox 	66 55 17 73
+	attack 77 60 45 14 4 0 0 0 10 12
+	frame	data/chars/axel/a201.gif
+		delay	4
+	bbox 	55 53 22 75
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/axel/a200.gif
+
+anim attack3
+	range 20 40
+	rangea 0 0
+	fastattack 1
+	jugglecost 5
+	forcedirection -1
+	loop	0
+	delay	6
+	offset	62 126
+	bbox 	55 51 20 77
+	hitfx	data/sounds/MediumKick.wav
+	frame	data/chars/axel/a300.gif
+	sound	data/sounds/MediumAttack.wav
+	frame	data/chars/axel/a301.gif
+	bbox 	49 62 27 66
+	attack 62 73 58 23 4 0 0 0 10 12
+	frame	data/chars/axel/a302.gif
+	sound	data/sounds/HighAttack.wav
+	bbox 	55 51 20 77
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/axel/a303.gif
+		delay	12
+	hitfx	data/sounds/HighKick.wav
+	bbox 	49 62 27 66
+	attack 64 60 48 33 8 1 0 0 10 12
+	frame	data/chars/axel/a304.gif
+		delay	8
+	bbox 	55 51 20 77
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/axel/a305.gif
+	frame	data/chars/axel/a306.gif
+
+anim grabattack #HEADBUTT
+	attackone 0
+	fastattack 1
+	jugglecost 5
+	forcedirection -1
+	loop	0
+	delay	6
+	offset	62 126
+	bbox 	59 55 21 73
+	hitfx	data/sounds/HighPunch.wav
+	sound	data/sounds/HighAttack.wav
+	frame	data/chars/axel/grabatk00.gif
+		delay	24
+	bbox	 55 56 27 72
+	sound	data/voices/Axel2.wav
+	frame	data/chars/axel/grabatk01.gif
+	bbox 	59 61 27 67
+	attack 74 61 25 27 8 1 0 0 10 12
+	frame	data/chars/axel/grabatk02.gif
+	
+anim grabattack2 #VAULT FRONT TO BACK
+	loop	0
+	delay	8
+	offset	30 189
+	frame	data/chars/axel/vault00.gif
+	frame	data/chars/axel/vault01.gif
+	frame	data/chars/axel/vault02.gif
+	frame	data/chars/axel/vault03.gif
+	frame	data/chars/axel/vault04.gif
+		delay	2
+		offset	62 126
+	@cmd vaultFix
+	frame	data/chars/axel/grab00.gif
+	@cmd cancelVault "ANI_GRABDOWN2"
+	bbox 	60 54 17 74
+	frame	data/chars/axel/grab00.gif
+	
+anim grabup2 #VAULT BACK TO FRONT
+	loop	0
+	delay	8
+	offset	30 189
+	frame	data/chars/axel/vault00.gif
+	frame	data/chars/axel/vault01.gif
+	frame	data/chars/axel/vault02.gif
+	frame	data/chars/axel/vault03.gif
+	frame	data/chars/axel/vault04.gif
+		delay	2
+		offset	62 126
+	@cmd vaultFix
+	frame	data/chars/axel/idle00.gif
+	bbox 	50 55 23 74
+	frame	data/chars/axel/idle00.gif
+	
+anim grabforward #KNEE
+	attackone 0
+	fastattack 1
+	jugglecost 5
+	forcedirection -1
+	loop	0
+	delay	8
+	offset	62 126
+	bbox 	77 50 16 78
+	hitfx	data/sounds/LowKick.wav
+	sound	data/sounds/LowAttack.wav
+	attack2 82 72 28 25 2 0 0 0 15 12
+	frame	data/chars/axel/fgrabatk00.gif
+
+anim grabforward2 #KNEE END
+	attackone 0
+	fastattack 1
+	jugglecost 5
+	forcedirection -1
+	loop	0
+	delay	6
+	offset	62 126
+	bbox 	77 50 16 78
+	hitfx	data/sounds/MediumKick.wav
+	sound	data/sounds/MediumAttack.wav
+	attack2 82 72 28 25 2 0 0 0 15 12
+	frame	data/chars/axel/fgrabatk200.gif
+	bbox 	62 50 14 78
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/axel/fgrabatk201.gif
+		delay	12
+	hitfx	data/sounds/MediumKick.wav
+	sound	data/sounds/MediumAttack.wav
+	bbox 	63 57 16 71
+	attack2 69 73 28 25 4 1 0 0 15 12
+	frame	data/chars/axel/fgrabatk202.gif
+		delay	6
+	bbox 	62 50 14 78
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/axel/fgrabatk203.gif
+
+anim grabbackward #THROW
+	loop	0
+	delay	24
+	offset	62 126
+	@cmd grabStart
+	@cmd position 0 5 0 0 0
+	sound	data/voices/Axel2.wav
+	frame	data/chars/axel/throw00.gif
+		delay	8
+	@cmd position 5 -5 5 0 0
+	frame	data/chars/axel/throw01.gif
+	@cmd position 2 -30 25 0 0
+	frame	data/chars/axel/throw02.gif
+		delay	24
+	@cmd depost
+	@cmd throw 12 2 2 2 0 0
+	frame	data/chars/axel/throw03.gif
+		delay	8
+	@cmd clearL
+	frame	data/chars/axel/throw01.gif
+	
+anim grabdown2 #BACK SLAM
+	loop	0
+	delay	24
+	offset	62 126
+	@cmd grabStart
+	@cmd position 0 15 0 0 1
+	sound	data/voices/Axel2.wav
+	frame	data/chars/axel/slam00.gif
+		delay	8
+	@cmd position 3 10 5 0 0
+	frame	data/chars/axel/slam01.gif
+	@cmd position 2 -15 55 0 -1
+	frame	data/chars/axel/slam02.gif
+		delay	4
+	@cmd position 2 -40 30 0 0
+	frame	data/chars/axel/slam03.gif
+		delay	12
+	@cmd position 4 -55 -1 0 0
+	@cmd spawn01 "quakehigh" 0 0 0
+	sound	data/sounds/Slam.wav
+	frame	data/chars/axel/slam04.gif
+	@cmd leaper 1 2.5 0
+	@cmd depost
+	@cmd slam 18 2 2 2 0 0
+	frame	data/chars/axel/slam04.gif
+		delay	2
+	frame	data/chars/axel/slam05.gif
+	@cmd landFrame
+		delay	8
+	sound	data/sounds/Jumpland.wav
+	frame	data/chars/axel/slam06.gif
+	@cmd clearL
+	frame	data/chars/axel/slam07.gif
+	
+anim jumpattack #JUMP STATIC/FORWARD
+	range 70 90
+	rangea -100 100
+	rangez -999 999
+	fastattack 1
+	jugglecost 5
+	forcedirection -1
+	loop	0
+	delay	8
+	offset	62 126
+	bbox 	56 50 19 61
+	hitfx	data/sounds/HighKick.wav
+	sound	data/sounds/Jumping.wav
+	@cmd targetJump
+	@cmd leapJump
+	frame	data/chars/axel/jump00.gif
+	frame	data/chars/axel/jump01.gif
+	bbox 	54 52 25 45
+	sound	data/sounds/HighAttack.wav
+	frame	data/chars/axel/fjumpatk00.gif
+	attack 52 75 57 27 8 1 0 0 10 12
+	bbox 	43 52 25 45
+	sound	data/voices/Axel2.wav
+	frame	data/chars/axel/fjumpatk01.gif
+
+anim jumpattack2 #JUMP UP
+	range 70 90
+	rangea -100 100
+	rangez -999 999
+	fastattack 1
+	jugglecost 5
+	forcedirection -1
+	loop	0
+	delay	8
+	offset	62 126
+	bbox 	56 50 19 61
+	hitfx	data/sounds/HighKick.wav
+	sound	data/sounds/Jumping.wav
+	@cmd targetJump
+	@cmd leapJump
+	frame	data/chars/axel/jump00.gif
+	frame	data/chars/axel/jump01.gif
+		delay	4
+	bbox 	44 74 54 22
+	sound	data/sounds/HighAttack.wav
+	frame	data/chars/axel/jumpatk300.gif
+	attack 62 70 38 30 8 0 0 0 10 12
+	sound	data/voices/Axel2.wav
+	frame	data/chars/axel/jumpatk300.gif
+
+anim special #DEFENSIVE SPECIAL
+	fastattack 1
+	jugglecost 5
+	forcedirection 0
+	energycost 2 2
+	loop	0
+	delay	6
+	offset	62 126
+	hitfx	data/sounds/HighPunch.wav
+	sound	data/sounds/Fire.wav
+	frame	data/chars/axel/special00.gif
+	attack 72 64 64 40 16 1 0 0 20 12
+	frame	data/chars/axel/special01.gif
+	attack 44 26 64 54 16 1 0 0 20 12
+	frame	data/chars/axel/special02.gif
+	attack 10 25 58 43 16 1 0 0 20 12
+	frame	data/chars/axel/special03.gif
+	attack 21 56 76 47 16 1 0 0 20 12
+	frame	data/chars/axel/special04.gif
+	attack 85 78 63 37 16 1 0 0 20 12
+	frame	data/chars/axel/special05.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/axel/special06.gif
+	frame	data/chars/axel/special07.gif
+	
+anim special2 #DEFENSIVE SPECIAL
+	fastattack 1
+	jugglecost 5
+	forcedirection 0
+	energycost 2 2
+	loop	0
+	delay	6
+	offset	62 126
+	hitfx	data/sounds/HighPunch.wav
+	sound	data/sounds/Fire.wav
+	frame	data/chars/axel/special00.gif
+	attack 72 64 64 40 16 1 0 0 20 12
+	frame	data/chars/axel/special01.gif
+	attack 44 26 64 54 16 1 0 0 20 12
+	frame	data/chars/axel/special02.gif
+	attack 10 25 58 43 16 1 0 0 20 12
+	frame	data/chars/axel/special03.gif
+	attack 21 56 76 47 16 1 0 0 20 12
+	frame	data/chars/axel/special04.gif
+	attack 85 78 63 37 16 1 0 0 20 12
+	frame	data/chars/axel/special05.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/axel/special06.gif
+	frame	data/chars/axel/special07.gif
+	
+anim freespecial #RAGE
+	range 20 40
+	rangea 0 0
+	fastattack 1
+	jugglecost 0
+	forcedirection -1
+	energycost 120 1 6
+	loop	0
+	delay	24
+	offset	62 126
+	hitfx	data/sounds/HighPunch.wav
+	sound	data/voices/Axel2.wav
+	@cmd spawnBind "RageSpend" 0 0 -1
+	@cmd spawnBind "RageFull" 0 0 1
+	frame	data/chars/axel/rage00.gif
+		delay	2
+	frame	data/chars/axel/rage00.gif
+	attack 72 78 44 41 4 0 0 0 5 12
+	seal 1 1
+	frame	data/chars/axel/rage01.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	sound	data/sounds/HighAttack.wav
+	frame	data/chars/axel/rage02.gif
+	frame	data/chars/axel/rage03.gif
+		delay	1
+	@cmd looper 1 11
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/axel/rage04.gif
+		delay	4
+	hitfx	data/sounds/SpecialAttack6.wav
+	hitflash firehit
+	burn 66 69 35 36 32 4 0 0 30 12
+	seal 1 1
+	dropv 5 2 0
+	frame	data/chars/axel/rage04.gif
+	burn 65 44 32 37 32 4 0 0 5 12
+	seal 1 1
+	dropv 5 2 0
+	frame	data/chars/axel/rage05.gif
+		delay	24
+	@cmd leaper 1 3 0
+	burn 63 26 30 50 32 4 0 0 5 12
+	seal 1 1
+	dropv 5 2 0
+	frame	data/chars/axel/rage06.gif
+		delay	2
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/axel/special211.gif
+	@cmd landFrame
+		delay	8
+	sound	data/sounds/Jumpland.wav
+	frame	data/chars/axel/special212.gif
+	frame	data/chars/axel/special213.gif
+	
+anim freespecial2 #OFFENSIVE SPECIAL
+	range 20 40
+	rangea 0 0
+	fastattack 1
+	jugglecost 5
+	forcedirection -1
+	loop	0
+	delay	6
+	offset	62 126
+	bbox 	50 64 23 64
+	hitfx	data/sounds/MediumPunch.wav
+	sound	data/sounds/SpecialAttack2.wav
+	attack 61 66 42 20 4 0 0 0 12 12
+	frame	data/chars/axel/special200.gif
+	bbox 	59 70 22 58
+	attack 0 0 0 0 0 0 0 0 0 0
+	sound	data/sounds/HighAttack.wav
+	frame	data/chars/axel/special201.gif
+	bbox 	55 57 19 71
+	attack 66 59 38 29 4 0 0 0 12 12
+	frame	data/chars/axel/special202.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	bbox 	59 55 15 73
+	sound	data/sounds/HighAttack.wav
+	frame	data/chars/axel/special203.gif
+	attack 70 57 34 33 4 0 0 0 12 12
+	bbox 	57 58 21 70
+	frame	data/chars/axel/special204.gif
+	bbox 	55 64 21 64
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/axel/special205.gif
+	bbox 	55 71 27 57
+	hitfx	data/sounds/HighPunch.wav
+	sound	data/sounds/HighAttack.wav
+	frame	data/chars/axel/special206.gif
+	bbox 	63 61 20 67
+	attack 73 68 31 34 4 0 0 0 12 12
+	frame	data/chars/axel/special207.gif
+	bbox 	58 55 17 73
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/axel/special208.gif
+	bbox 	48 57 23 71
+	sound	data/sounds/HighAttack.wav
+	frame	data/chars/axel/special209.gif
+	attack 61 66 42 20 4 0 0 0 12 12
+	bbox 	50 64 23 64
+	frame	data/chars/axel/special200.gif
+	bbox 	59 70 22 58
+	attack 0 0 0 0 0 0 0 0 0 0
+	sound	data/sounds/HighAttack.wav
+	frame	data/chars/axel/special201.gif
+	hitfx	data/sounds/MediumPunch.wav
+	bbox 	55 57 19 71
+	attack 66 59 38 29 4 0 0 0 12 12
+	frame	data/chars/axel/special202.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	bbox 	59 55 15 73
+	sound	data/sounds/HighAttack.wav
+	frame	data/chars/axel/special203.gif
+	attack 70 57 34 33 4 0 0 0 12 12
+	bbox 	57 58 21 70
+	frame	data/chars/axel/special204.gif
+	bbox 	55 64 21 64
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/axel/special205.gif
+	bbox 	55 71 27 57
+	sound	data/sounds/HighAttack.wav
+	frame	data/chars/axel/special206.gif
+	hitfx	data/sounds/HighPunch.wav
+	bbox 	63 61 20 67
+	attack 73 68 31 34 16 1 0 0 12 12
+	frame	data/chars/axel/special207.gif
+	bbox 	58 55 17 73
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/axel/special208.gif
+		delay	30
+	@cmd leaper 0 2.5 0
+	bbox 	60 51 17 53
+	frame	data/chars/axel/special210.gif
+		delay	2
+	bbox 	46 57 19 44
+	frame	data/chars/axel/special211.gif
+	@cmd landFrame
+		delay	8
+	bbox 	52 62 19 66
+	sound	data/sounds/Jumpland.wav
+	frame	data/chars/axel/special212.gif
+	bbox 	54 69 28 59
+	frame	data/chars/axel/special213.gif
+	
+anim freespecial3 #GRANDUPPER
+	range 30 60
+	rangea 0 100
+	fastattack 1
+	jugglecost 5
+	forcedirection -1
+	loop	0
+	delay	4
+	offset	62 126
+	hitfx	data/sounds/StrongPunch.wav
+	sound	data/sounds/SpecialAttack.wav
+	frame	data/chars/axel/runatk00.gif
+	@cmd dasher 1.5 0 0
+	attack2 68 98 32 30 2 0 0 0 20 12
+	sound	data/voices/Break1.wav
+	frame	data/chars/axel/runatk01.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/axel/runatk02.gif
+	attack2 68 98 32 30 2 0 0 0 20 12
+	frame	data/chars/axel/runatk01.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	@cmd cancelHit 20 60 0 0 120 "ANI_FREESPECIAL"
+	frame	data/chars/axel/runatk02.gif
+		delay	3
+	attack 65 66 42 38 2 0 0 0 20 12
+	bbox 	55 60 22 69
+	frame	data/chars/axel/runatk03.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/axel/runatk03.gif
+	@cmd dasher 0.5 0 0
+	attack 71 50 43 30 2 1 0 0 20 12
+	bbox 	59 54 23 75
+	frame	data/chars/axel/runatk04.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/axel/runatk04.gif
+		delay	6
+	@cmd dasher 0 0 0
+	bbox 	46 49 24 79
+	attack 62 14 24 43 4 1 0 0 10 12
+	frame	data/chars/axel/runatk05.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/axel/runatk06.gif
+		delay	18
+	frame	data/chars/axel/runatk07.gif
+	
+anim freespecial4 #SUPER
+	range 30 60
+	rangea 0 0
+	fastattack 1
+	jugglecost 5
+	forcedirection -1
+	energycost 40 1 6
+	loop	0
+	delay	4
+	offset	62 126
+	hitfx	data/sounds/StrongPunch.wav
+	@cmd spawnBind "super" 0 0 1
+	frame	data/chars/axel/runatk00.gif
+	@cmd dasher 1 0 0
+	attack2 68 98 32 30 4 0 0 0 20 12
+	sound	data/voices/Axel2.wav
+	frame	data/chars/axel/runatk01.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/axel/runatk02.gif
+	attack2 68 98 32 30 4 0 0 0 20 12
+	frame	data/chars/axel/runatk01.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/axel/runatk02.gif
+	hitfx	data/sounds/HighPunch.wav
+	@cmd dasher 1 0 0.5
+	sound	data/sounds/HighAttack.wav
+	frame	data/chars/axel/rage00.gif
+	attack 72 78 44 41 4 0 0 0 5 12
+	frame	data/chars/axel/rage01.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/axel/rage02.gif
+	frame	data/chars/axel/rage03.gif
+	@cmd dasher 1 0 -0.5
+	sound	data/sounds/HighAttack.wav
+	frame	data/chars/axel/rage00.gif
+	attack 66 69 35 36 12 1 0 0 12 12
+	dropv 4 1 0
+	frame	data/chars/axel/rage04.gif
+	attack 65 44 32 37 12 1 0 0 5 12
+	dropv 4 1 0
+	frame	data/chars/axel/rage05.gif
+		delay	30
+	@cmd leaper 1.25 2.5 0
+	attack 63 26 30 50 12 1 0 0 5 12
+	frame	data/chars/axel/rage06.gif
+		delay	2
+	attack 0 0 0 0 0 0 0 0 0 0
+	bbox 46 57 19 44
+	frame	data/chars/axel/special211.gif
+	@cmd landFrame
+		delay	8
+	bbox 52 62 19 66
+	sound	data/sounds/Jumpland.wav
+	frame	data/chars/axel/special212.gif
+	bbox 54 69 28 59
+	frame	data/chars/axel/special213.gif
+	
+anim follow7 #COUNTER
+	fastattack 1
+	jugglecost 5
+	forcedirection -1
+	energycost 40 1 6
+	loop	0
+	delay	4
+	offset	62 126
+	hitfx	data/sounds/HighPunch.wav
+	sound	data/sounds/HighAttack.wav
+	@cmd spawnBind "Counter" 0 0 1
+	frame	data/chars/axel/rage03.gif
+	@cmd block 0
+	frame	data/chars/axel/rage00.gif
+	attack 66 69 35 36 16 1 0 0 12 12
+	dropv 4 1 0
+	frame	data/chars/axel/rage04.gif
+	attack 65 44 32 37 16 1 0 0 5 12
+	dropv 4 1 0
+	frame	data/chars/axel/rage05.gif
+		delay	30
+	@cmd leaper 1.25 2.5 0
+	attack 63 26 30 50 16 1 0 0 5 12
+	frame	data/chars/axel/rage06.gif
+		delay	2
+	attack 0 0 0 0 0 0 0 0 0 0
+	bbox 	46 57 19 44
+	frame	data/chars/axel/special211.gif
+	@cmd landFrame
+		delay	8
+	bbox 	52 62 19 66
+	sound	data/sounds/Jumpland.wav
+	frame	data/chars/axel/special212.gif
+	bbox 	54 69 28 59
+	frame	data/chars/axel/special213.gif
+	
+anim follow10 #DODGE
+	loop	0
+	delay	2
+	offset	62 126
+	@cmd dashRandom 1 1
+	@cmd copyMove
+	frame	data/chars/axel/dodge00.gif
+		delay	8
+	@cmd pasteMove
+	frame	data/chars/axel/dodge01.gif
+	@cmd pasteMove
+	frame	data/chars/axel/dodge02.gif
+	@cmd pasteMove
+	frame	data/chars/axel/dodge03.gif
+	@cmd pasteMove
+	frame	data/chars/axel/dodge04.gif
+		delay	16
+	@cmd dasher 0 0 0
+	frame	data/chars/axel/dodge05.gif
+	
+anim block
+	range 0 100
+	rangea 0 100
+	rangez -50 50
+	loop	0
+	delay	96
+	offset	62 126
+	bbox 	50 61 22 68
+	@cmd cancelRandom 0 80 0 999 0 "ANI_FOLLOW10"
+	frame	data/chars/axel/block00.gif

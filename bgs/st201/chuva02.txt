@@ -1,0 +1,30 @@
+name			Chuva02 #GROUND
+type			None
+alpha 1
+setlayer 999
+
+anim idle
+	loop	1
+	delay	6
+	offset	0 0
+	frame	data/Bgs/St201/rain00.gif
+	frame	data/Bgs/St201/rain01.gif
+	frame	data/Bgs/St201/rain02.gif
+	frame	data/Bgs/St201/rain03.gif
+	frame	data/Bgs/St201/rain04.gif
+	frame	data/Bgs/St201/rain05.gif
+	frame	data/Bgs/St201/rain06.gif
+	frame	data/Bgs/St201/rain07.gif
+	frame	data/Bgs/St201/rain08.gif
+	frame	data/Bgs/St201/rain09.gif
+	frame	data/Bgs/St201/rain10.gif
+	frame	data/Bgs/St201/rain11.gif
+	frame	data/Bgs/St201/rain12.gif
+	frame	data/Bgs/St201/rain13.gif
+	frame	data/Bgs/St201/rain14.gif
+	frame	data/Bgs/St201/rain15.gif
+	frame	data/Bgs/St201/rain16.gif
+	frame	data/Bgs/St201/rain17.gif
+	frame	data/Bgs/St201/rain18.gif
+	frame	data/Bgs/St201/rain19.gif
+

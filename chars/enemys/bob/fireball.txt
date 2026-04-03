@@ -1,0 +1,24 @@
+# Hit flash
+
+speed	8
+name	Fireball
+candamage  Player obstacle npc pshot
+type	pshot
+alpha 1
+
+
+anim idle
+	loop	1
+	delay	5
+	offset	27 120
+        hitfx	data/sounds/golpes/forte.wav
+		attack1  28  37  38  26  15  1  0  0  0  10
+	frame	data/chars/Enemys/Bob/fireball00.gif
+	frame	data/chars/Enemys/Bob/fireball01.gif
+	frame	data/chars/Enemys/Bob/fireball02.gif
+	frame	data/chars/Enemys/Bob/fireball03.gif
+	frame	data/chars/Enemys/Bob/fireball04.gif
+	frame	data/chars/Enemys/Bob/fireball05.gif
+	frame	data/chars/Enemys/Bob/fireball06.gif
+	frame	data/chars/Enemys/Bob/fireball07.gif
+

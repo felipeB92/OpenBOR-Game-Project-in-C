@@ -1,0 +1,14 @@
+name		st4_lamps
+type		none
+shadow		0
+antigravity	100
+setlayer	-50
+
+anim idle
+	loop	1
+	delay	14
+	offset	1 180
+	frame	data/bgs/sor3_st4/lamps00.gif
+	frame	data/bgs/sor3_st4/lamps01.gif
+	frame	data/bgs/sor3_st4/lamps02.gif
+	frame	data/bgs/sor3_st4/lamps01.gif

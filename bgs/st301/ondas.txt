@@ -1,0 +1,22 @@
+name			Ondas #GROUND
+hadow			0
+speed			5
+scroll			0.2
+setlayer		-200
+noquake 		1 1
+type			Panel
+
+
+anim idle
+	loop	1
+	delay	36
+	offset	0 0
+	frame	data/Bgs/St301/waves00.gif
+	frame	data/Bgs/St301/waves01.gif
+	frame	data/Bgs/St301/waves02.gif
+	frame	data/Bgs/St301/waves03.gif
+
+	
+	
+
+

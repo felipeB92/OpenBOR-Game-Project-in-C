@@ -1,0 +1,15 @@
+name			BArl #GROUND
+type			None
+setlayer 5
+
+anim idle
+	loop	1
+	delay	25
+	offset	0 0
+	frame	data/Bgs/St01/barL01.gif
+	frame	data/Bgs/St01/barL02.gif
+	frame	data/Bgs/St01/barL03.gif
+	frame	data/Bgs/St01/barL04.gif
+	frame	data/Bgs/St01/barL03.gif
+	frame	data/Bgs/St01/barL02.gif
+

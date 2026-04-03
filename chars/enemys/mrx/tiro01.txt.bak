@@ -1,0 +1,17 @@
+# Hit flash
+
+speed	13
+name	Tiro01
+candamage  Player obstacle npc pshot
+type	pshot
+
+
+anim idle
+	loop	1
+	delay	5
+	offset	27 110
+        hitfx	data/sounds/golpes/forte.wav
+		attack1  28  37  38  26  15  1  0  0  0  10
+	frame	data/chars/Enemys/Mrx/p01.gif
+
+

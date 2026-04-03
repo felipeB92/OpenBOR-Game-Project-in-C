@@ -1,0 +1,35 @@
+##MAIN
+name				RocketS
+type				none
+
+##MISC
+antigravity			100
+
+##SCRIPTS
+ondrawscript		data/scripts/ondraw/channel.c
+
+##REMAPS
+remap				data/chars/rocket/idle00.gif data/chars/rocket/alter1.gif
+remap				data/chars/rocket/idle00.gif data/chars/rocket/alter2.gif
+remap				data/chars/rocket/idle00.gif data/chars/rocket/alter3.gif
+remap				data/chars/rocket/idle00.gif data/chars/rocket/alter4.gif
+
+##ANIMATIONS#############################################################################
+	
+anim follow3 #RAGE
+	loop	0
+	delay	1000
+	offset	150 187
+	frame	data/chars/rocket/rage00.gif
+	frame	data/chars/rocket/rage00.gif
+	frame	data/chars/rocket/rage00.gif
+	frame	data/chars/rocket/rage00.gif
+	frame	data/chars/rocket/rage00.gif
+	frame	data/chars/rocket/rage00.gif
+	frame	data/chars/rocket/rise04.gif
+	frame	data/chars/rocket/rise03.gif
+	frame	data/chars/rocket/rise04.gif
+	frame	data/chars/rocket/backwalk00.gif
+	frame	data/chars/rocket/backwalk01.gif
+	frame	data/chars/rocket/backwalk00.gif
+	frame	data/chars/rocket/backwalk01.gif

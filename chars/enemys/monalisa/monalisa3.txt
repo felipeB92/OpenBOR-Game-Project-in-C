@@ -1,0 +1,553 @@
+##MAIN
+name				Monalisa3
+type				enemy
+hostile				player npc
+candamage			player npc obstacle
+
+##LIFE
+health				1 #SCRIPT
+
+##POWER
+offense 			1 #SCRIPT
+
+##SPEED
+speed				1 #SCRIPT
+
+##JUMP
+jumpheight 			1 #SCRIPT
+
+##ENERGY
+mp					120
+mprate  			1 #SCRIPT
+
+##GRAB
+grabdistance 		33 #36/33/30
+grabfinish 			1 #PLAYER=0/ENEMY=1
+
+##WEIGHT/HEIGHT
+antigravity			-3 #-3/-6/-9
+height				80
+
+##MISC
+jugglepoints		30
+risetime			170
+riseinv				0.4 1 #HEROES 0.4 - ENEMY 0 - BOSS 0.4
+makeinv				2 0
+atchain				1
+weapons				none none none none
+gfxshadow			1 1
+dust				dust
+aimove				chase #ENEMY ONLY
+
+##SCRIPTS
+didhitscript		data/scripts/didhit/default.c
+onblockpscript		data/scripts/onblockp/default.c
+ondrawscript		data/scripts/ondraw/monalisa.c
+onspawnscript		data/scripts/onspawn/monalisa.c
+animationscript	 	data/scripts/animation/default.c
+takedamagescript	data/scripts/takedamage/default.c
+
+##ICONS
+icon				data/chars/monalisa/icon.gif 1
+
+##DIESOUND
+diesound			data/voices/Blaze1.wav
+
+##REMAPS
+remap				data/chars/monalisa/idle00.gif data/chars/monalisa/alter1.gif
+remap				data/chars/monalisa/idle00.gif data/chars/monalisa/alter2.gif
+remap				data/chars/monalisa/idle00.gif data/chars/monalisa/alter3.gif
+
+##ANIMATIONS#############################################################################
+
+anim spawn
+	loop	0
+	delay	8
+	offset	144 196
+	frame	data/chars/monalisa/idle00.gif
+	
+anim follow1 #CALL SISTER
+	loop	0
+	delay	24
+	offset	144 196
+	hitfx	data/sounds/HighKick.wav
+	sound	data/sounds/Jumping.wav
+	@cmd leaper 0.4 2.4 0
+	frame	data/chars/monalisa/jump00.gif
+	frame	data/chars/monalisa/jump01.gif
+		delay	6
+	@cmd flip
+	@cmd leaper 1 6 0
+	@cmd jump 1
+	frame	data/chars/monalisa/jump02.gif
+	frame	data/chars/monalisa/jump03.gif
+	frame	data/chars/monalisa/jump04.gif
+	frame	data/chars/monalisa/jump05.gif
+	frame	data/chars/monalisa/jump02.gif
+	frame	data/chars/monalisa/jump03.gif
+	frame	data/chars/monalisa/jump04.gif
+	@cmd target 4 4
+	frame	data/chars/monalisa/jump05.gif
+		delay	2
+	@cmd leapTarget -4
+	bbox 	141 122 24 50
+	sound	data/sounds/HighAttack.wav
+	frame	data/chars/monalisa/a100.gif
+	attack 141 147 60 27 8 1 0 0 10 12
+	sound	data/voices/Attack5.wav
+	frame	data/chars/monalisa/a100.gif
+
+anim idle
+	loop	1
+	delay	16
+	offset	144 196
+	bbox 	132 120 20 78
+	@cmd clearL
+	frame	data/chars/monalisa/idle00.gif
+	frame	data/chars/monalisa/idle01.gif
+	bbox 	134 121 20 77
+	frame	data/chars/monalisa/idle02.gif
+	frame	data/chars/monalisa/idle03.gif
+	
+anim walk
+	loop	1
+	delay	12
+	offset	144 196
+	bbox 	135 121 17 77
+	frame	data/chars/monalisa/walk00.gif
+	frame	data/chars/monalisa/walk01.gif
+	frame	data/chars/monalisa/walk02.gif
+	frame	data/chars/monalisa/walk03.gif
+	frame	data/chars/monalisa/walk04.gif
+	frame	data/chars/monalisa/walk05.gif
+	
+anim backwalk
+	loop	1
+	delay	12
+	offset	144 196
+	bbox 	135 121 17 77
+	frame	data/chars/monalisa/walk05.gif
+	frame	data/chars/monalisa/walk04.gif
+	frame	data/chars/monalisa/walk03.gif
+	frame	data/chars/monalisa/walk02.gif
+	frame	data/chars/monalisa/walk01.gif
+	frame	data/chars/monalisa/walk00.gif
+	
+anim get
+	loop	0
+	delay	16
+	offset	144 196
+	frame	data/chars/monalisa/get00.gif
+	
+anim grab
+	loop	0
+	delay	16
+	offset	144 196
+	bbox 	132 121 23 77
+	frame	data/chars/monalisa/grab00.gif
+	
+anim grabbed
+	loop	0
+	delay	8
+	offset	144 196
+	bbox 	131 134 32 64
+	frame	data/chars/monalisa/grabbed00.gif
+	
+anim land
+	loop	0
+	delay	30
+	offset	144 196
+	@cmd landSafe
+	sound	data/sounds/Jumping.wav
+	frame	data/chars/monalisa/jump00.gif
+	frame	data/chars/monalisa/jump01.gif
+	
+anim jumpdelay
+	loop	0
+	delay	12
+	offset	144 196
+	bbox 	130 143 31 55
+	frame	data/chars/monalisa/jumpdelay00.gif
+
+anim walkoff
+	loop	0
+	delay	24
+	offset	144 196
+	bbox 	136 114 19 62
+	@cmd jump 1
+	frame	data/chars/monalisa/jump00.gif
+	bbox 	135 120 27 62
+	frame	data/chars/monalisa/jump01.gif
+	
+anim jumpland
+	loop	0
+	delay	12
+	offset	144 196
+	bbox 	130 143 31 55
+	sound	data/sounds/Jumpland.wav
+	frame	data/chars/monalisa/jumpland00.gif
+	
+anim pain #UP
+	loop	0
+	delay	4
+	offset	144 196
+	bbox 	134 121 23 77
+	frame	data/chars/monalisa/pain00.gif
+	frame	data/chars/monalisa/pain01.gif
+	frame	data/chars/monalisa/pain00.gif
+	frame	data/chars/monalisa/pain01.gif
+	frame	data/chars/monalisa/pain00.gif
+	frame	data/chars/monalisa/pain01.gif
+	frame	data/chars/monalisa/pain00.gif
+	frame	data/chars/monalisa/pain01.gif
+
+anim pain2 #DOWN
+	loop	0
+	delay	4
+	offset	144 196
+	bbox 	133 128 29 69
+	frame	data/chars/monalisa/pain200.gif
+	frame	data/chars/monalisa/pain201.gif
+	frame	data/chars/monalisa/pain200.gif
+	frame	data/chars/monalisa/pain201.gif
+	frame	data/chars/monalisa/pain200.gif
+	frame	data/chars/monalisa/pain201.gif
+	frame	data/chars/monalisa/pain200.gif
+	frame	data/chars/monalisa/pain201.gif
+	
+anim fall #NORMAL
+	landframe 1
+	loop	0
+	delay	999
+	offset	144 196
+	bbox 	125 131 35 50
+	frame	data/chars/monalisa/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Falling.wav
+	frame	data/chars/monalisa/fall01.gif
+	
+anim burn #BURNED FALL
+	landframe 2
+	loop	1 0 2
+	delay	3
+	offset	144 196
+	bbox 	125 131 35 50
+	drawmethod tintmode 6	
+	drawmethod tintcolor 255
+	frame	data/chars/monalisa/fall00.gif
+	@cmd spawn01 "smoke" 0 50 0
+	drawmethod tintmode 2	
+	drawmethod tintcolor 255
+	frame	data/chars/monalisa/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	nodrawmethod
+	sound	data/sounds/Falling.wav
+	frame	data/chars/monalisa/fall01.gif
+	
+anim shock #SHOCKED FALL
+	landframe 2
+	loop	1 0 2
+	delay	3
+	offset	144 196
+	bbox 	125 131 35 50
+	drawmethod tintmode 6	
+	drawmethod tintcolor -255
+	frame	data/chars/monalisa/fall00.gif
+	drawmethod tintmode 2	
+	drawmethod tintcolor -255
+	frame	data/chars/monalisa/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	nodrawmethod
+	sound	data/sounds/Falling.wav
+	frame	data/chars/monalisa/fall01.gif
+	
+anim fall6 #SPIN FALL
+	landframe 4
+	loop	1 0 4
+	delay	3
+	offset	144 196
+	frame	data/chars/monalisa/fall600.gif
+	frame	data/chars/monalisa/fall601.gif
+	frame	data/chars/monalisa/fall602.gif
+	frame	data/chars/monalisa/fall603.gif
+		delay	8
+	sound	data/sounds/Falling.wav
+	frame	data/chars/monalisa/fall01.gif
+
+anim fall7 #GRABSTART POSITION
+	loop	0
+	delay	1000
+	offset	144 196
+	frame	data/chars/monalisa/fall700.gif
+	frame	data/chars/monalisa/fall701.gif
+	frame	data/chars/monalisa/fall702.gif
+	frame	data/chars/monalisa/fall703.gif
+	frame	data/chars/monalisa/fall704.gif
+	frame	data/chars/monalisa/fall705.gif
+	
+anim fall8 #FINISH/THROW TYPE 3
+	landframe 2
+	loop	0
+	delay	30
+	offset	144 196
+	bbox 	125 131 35 50
+	hitfx	data/sounds/MediumKick.wav
+	attack 125 131 35 50 4 1 0 0 0 12
+	frame	data/chars/monalisa/fall00.gif
+		delay	999
+	@cmd cancelFall 50 "ANI_LAND"
+	frame	data/chars/monalisa/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Falling.wav
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/monalisa/fall01.gif
+	
+anim fall9 #FINISH/THROW TYPE 2
+	landframe 2
+	loop	0
+	delay	30
+	offset	144 196
+	bbox 	129 139 27 58
+	hitfx	data/sounds/MediumKick.wav
+	attack 129 139 27 58 4 1 0 0 0 12
+	frame	data/chars/monalisa/fall900.gif
+		delay	999
+	@cmd cancelFall 50 "ANI_LAND"
+	frame	data/chars/monalisa/fall900.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Falling.wav
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/monalisa/fall01.gif
+	
+anim rise
+	loop	0
+	delay	12
+	offset	144 196
+	frame	data/chars/monalisa/rise00.gif
+	frame	data/chars/monalisa/rise01.gif
+	frame	data/chars/monalisa/rise00.gif
+	frame	data/chars/monalisa/rise02.gif
+	frame	data/chars/monalisa/rise03.gif
+	
+anim attack1
+	range 40 80
+	rangea 0 0
+	fastattack 1
+	jugglecost 5
+	forcedirection -1
+	loop	0
+	delay	2
+	offset	144 196
+	bbox 	141 122 24 50
+	hitfx	data/sounds/MediumKick.wav
+	sound	data/sounds/MediumAttack.wav
+	@cmd leaper 3 1.5 0
+	attack 141 147 60 27 4 0 0 0 10 12
+	dropv 4 1 0
+	frame	data/chars/monalisa/a100.gif
+	frame	data/chars/monalisa/a100.gif
+	@cmd landFrame
+		delay	12
+	bbox 	130 143 31 55
+	frame	data/chars/monalisa/jumpland00.gif
+	
+anim grabattack #THROW
+	loop	0
+	delay	24
+	offset	144 196
+	@cmd grabStart
+	@cmd position 5 10 5 0 0
+	sound	data/voices/Attack5.wav
+	frame	data/chars/monalisa/throw00.gif
+		delay	8
+	@cmd position 2 -30 10 0 0
+	frame	data/chars/monalisa/throw01.gif
+	@cmd position 4 -55 10 0 0
+	frame	data/chars/monalisa/throw02.gif
+		delay	16
+	@cmd depost
+	@cmd throw 12 2 2 3 0 0
+	frame	data/chars/monalisa/throw02.gif
+	@cmd clearL
+	frame	data/chars/monalisa/throw02.gif
+	
+anim grabattack2 #SLAM
+	loop	0
+	delay	24
+	offset	144 196
+	@cmd grabStart
+	@cmd position 2 -20 55 0 0
+	sound	data/voices/Attack5.wav
+	frame	data/chars/monalisa/slam00.gif
+		delay	12
+	@cmd position 2 -40 30 0 0
+	frame	data/chars/monalisa/slam01.gif
+	@cmd position 4 -60 -1 0 0
+	@cmd spawn01 "quakehigh" 0 0 0
+	sound	data/sounds/Slam.wav
+	frame	data/chars/monalisa/slam02.gif
+		delay	16
+	@cmd depost
+	@cmd slam 18 2 2 3 0 0
+	frame	data/chars/monalisa/slam02.gif
+	@cmd clearL
+	frame	data/chars/monalisa/slam03.gif
+	
+anim jumpattack #JUMP STATIC/FORWARD
+	range 40 160
+	rangea 0 100
+	fastattack 1
+	jugglecost 5
+	forcedirection -1
+	loop	1 8 10
+	delay	6
+	offset	144 196
+	bbox 	136 114 19 62
+	hitfx	data/sounds/MediumPunch.wav
+	sound	data/sounds/Jumping.wav
+	@cmd targetJump
+	@cmd leapJump
+	frame	data/chars/monalisa/jump00.gif
+	bbox 	135 120 27 62
+	frame	data/chars/monalisa/jump01.gif
+	bbox 	139 143 25 25
+	frame	data/chars/monalisa/jump02.gif
+	frame	data/chars/monalisa/jump03.gif
+	frame	data/chars/monalisa/jump04.gif
+	frame	data/chars/monalisa/jump05.gif
+		delay	12
+	attack 141 147 60 27 4 1 0 0 10 12
+	bbox 	141 122 24 50
+	sound	data/sounds/MediumAttack.wav
+	frame	data/chars/monalisa/a100.gif
+	attack 99 147 60 27 4 1 0 0 10 12
+	bbox 	135 122 24 50
+	sound	data/voices/Attack5.wav
+	frame	data/chars/monalisa/a101.gif
+	attack 141 147 60 27 4 1 0 0 10 12
+	bbox 	141 122 24 50
+	sound	data/sounds/MediumAttack.wav
+	frame	data/chars/monalisa/a100.gif
+	attack 99 147 60 27 4 1 0 0 10 12
+	bbox 	135 122 24 50
+	sound	data/sounds/MediumAttack.wav
+	frame	data/chars/monalisa/a101.gif
+	
+anim jumpattack2 #JUMP DOWN
+	range 40 160
+	rangea 0 100
+	fastattack 1
+	jugglecost 5
+	forcedirection -1
+	loop	0
+	delay	6
+	offset	144 196
+	bbox 	136 114 19 62
+	hitfx	data/sounds/HighKick.wav
+	sound	data/sounds/Jumping.wav
+	@cmd leaper 1 3.9 0
+	@cmd target 2.3 2.3
+	frame	data/chars/monalisa/jump00.gif
+	bbox 	135 120 27 62
+	frame	data/chars/monalisa/jump01.gif
+	bbox 	139 143 25 25
+	frame	data/chars/monalisa/jump02.gif
+	frame	data/chars/monalisa/jump03.gif
+	frame	data/chars/monalisa/jump04.gif
+	frame	data/chars/monalisa/jump05.gif
+		delay	2
+	@cmd leapTarget -2.3
+	bbox 	141 122 24 50
+	sound	data/sounds/HighAttack.wav
+	frame	data/chars/monalisa/a100.gif
+	attack 141 147 60 27 8 1 0 0 10 12
+	sound	data/voices/Attack5.wav
+	frame	data/chars/monalisa/a100.gif
+	
+anim freespecial #SHOCKWAVE
+	range 80 120
+	rangea 0 0
+	loop	0
+	delay	8
+	offset	144 196
+	bbox 	130 124 24 77
+	sound	data/voices/Attack5.wav
+	frame	data/chars/monalisa/shockwave00.gif
+	bbox 	130 136 24 65
+	frame	data/chars/monalisa/shockwave01.gif
+		delay	24
+	bbox 	130 156 32 45
+	frame	data/chars/monalisa/shockwave02.gif
+	@cmd shoot "monalisa_wave" 20 0 0 4 0 0
+	frame	data/chars/monalisa/shockwave03.gif
+	
+anim freespecial2 #JUMP ADVANCE
+	range 50 100
+	rangea 0 100
+	rangez -50 50
+	loop	1 3 7
+	delay	12
+	offset	144 196
+	bbox 	130 143 31 55
+	frame	data/chars/monalisa/jumpdelay00.gif
+		delay	6
+	bbox 	136 114 19 62
+	@cmd targetJump
+	@cmd leapJump
+	@cmd jump 1
+	sound	data/sounds/Jumping.wav
+	frame	data/chars/monalisa/jump00.gif
+	bbox 	135 120 27 62
+	sound	data/voices/Attack5.wav
+	frame	data/chars/monalisa/jump01.gif
+	bbox 	139 143 25 25
+	frame	data/chars/monalisa/jump02.gif
+	frame	data/chars/monalisa/jump03.gif
+	frame	data/chars/monalisa/jump04.gif
+	frame	data/chars/monalisa/jump05.gif
+	
+anim freespecial3 #JUMP EVADE
+	range 50 100
+	rangea 0 100
+	rangez -50 50
+	loop	0
+	delay	12
+	offset	144 196
+	frame	data/chars/monalisa/evade00.gif
+	frame	data/chars/monalisa/evade01.gif
+	@cmd leaper -1 3 0
+	sound	data/sounds/Jumping.wav
+	frame	data/chars/monalisa/evade02.gif	
+	frame	data/chars/monalisa/evade03.gif
+	frame	data/chars/monalisa/evade04.gif
+	frame	data/chars/monalisa/evade05.gif
+		delay	2
+	frame	data/chars/monalisa/evade06.gif
+	@cmd landFrame
+		delay	12
+	sound	data/sounds/Jumpland.wav
+	frame	data/chars/monalisa/jumpland00.gif
+	
+anim freespecial4 #RAGE
+	range 80 160
+	rangea 0 0
+	energycost 120 1 6
+	loop	0
+	delay	6
+	offset	144 196
+	@cmd spawnBind "RageSpend" 0 -1 0
+	@cmd spawnBind "RageFull" 0 0 1
+	frame	data/chars/monalisa/shockwave00.gif
+	frame	data/chars/monalisa/shockwave01.gif
+	frame	data/chars/monalisa/shockwave02.gif
+	sound	data/voices/Attack5.wav
+	frame	data/chars/monalisa/shockwave03.gif
+		delay	24
+	frame	data/chars/monalisa/shockwave03.gif
+	@cmd shoot "monalisa_waveR" 20 0 0 4 0 0
+	frame	data/chars/monalisa/shockwave03.gif

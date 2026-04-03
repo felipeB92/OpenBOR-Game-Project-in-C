@@ -1,0 +1,31 @@
+# Hit flash
+
+speed	8
+name	Rfire
+Noname 1
+candamage  Player obstacle npc pshot
+type	None
+alpha 1
+
+
+anim idle
+	loop	0
+	delay	5
+	offset	152 201
+        hitfx	data/sounds/golpes/forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Bob/fire00.gif
+	frame	data/chars/Enemys/Bob/fire01.gif
+	frame	data/chars/Enemys/Bob/fire02.gif
+	frame	data/chars/Enemys/Bob/fire03.gif
+	frame	data/chars/Enemys/Bob/fire01.gif
+	frame	data/chars/Enemys/Bob/fire02.gif
+	frame	data/chars/Enemys/Bob/fire03.gif
+	frame	data/chars/Enemys/Bob/fire01.gif
+	frame	data/chars/Enemys/Bob/fire02.gif
+	frame	data/chars/Enemys/Bob/fire03.gif
+	frame	data/chars/Enemys/Bob/fire04.gif
+	frame	data/chars/Enemys/Bob/empty.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/Enemys/Bob/empty.gif
+

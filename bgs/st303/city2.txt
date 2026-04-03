@@ -1,0 +1,18 @@
+name		st3_city2
+type		panel
+shadow		0
+speed		5
+scroll		0.2
+setlayer	-60
+noquake		1 1
+
+anim idle
+	loop	1
+	delay	12
+	offset	1 160
+	frame	data/bgs/sor3_st3/city200.gif
+	frame	data/bgs/sor3_st3/city201.gif
+	frame	data/bgs/sor3_st3/city202.gif
+	frame	data/bgs/sor3_st3/city203.gif
+	frame	data/bgs/sor3_st3/city202.gif
+	frame	data/bgs/sor3_st3/city201.gif

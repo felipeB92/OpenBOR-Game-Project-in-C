@@ -1,0 +1,16 @@
+name			Corda403 #GROUND
+type			None
+
+anim idle
+	loop	0
+	delay	20
+	offset	0 0
+	frame	data/Bgs/St403/Corda00.gif
+	frame	data/Bgs/St403/Corda01.gif
+	frame	data/Bgs/St403/Corda02.gif
+	frame	data/Bgs/St403/Corda03.gif
+	frame	data/Bgs/St403/Corda04.gif
+	frame	data/Bgs/St403/Corda05.gif
+	frame	data/Bgs/St403/Corda06.gif
+
+

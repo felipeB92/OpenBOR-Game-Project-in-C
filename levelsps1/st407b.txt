@@ -1,0 +1,307 @@
+music		data/Bgs/St407/lv407a.bor
+bossmusic	data/music/boss2.bor
+
+###BACKGROUND
+background			data/bgs/St407/Back01.gif
+
+###BGLAYER/PANEL
+panel			data/bgs/St407/pN01.gif	none	none
+
+###MISC
+Frontpanel			data/bgs/St05/Front02.gif
+#order			a
+settime			99
+scrollspeed 	0.5
+stagenumber 	7
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	30 30  150
+spawn2  	35 30 150
+spawn3  	40 30  150
+
+light		128 -128
+at			0
+
+Wall  480  226  2  0  120  50  28  300
+Wall  348  279  10  0  121  78  24  400
+Wall  1704  231  -52  0  103  108  30  400
+
+
+spawn  MX407D
+Flip   1
+	coords  0 230
+	at  0
+
+spawn  Front407
+Flip   1
+	coords  0 0
+	at  0
+
+
+spawn  Box02
+Item   Pipe
+Map    1
+	coords  168 225
+	at  0
+
+spawn  Box02
+Item   Gold
+Map    1
+	coords  230 250
+	at  0
+
+wait 
+at 0
+
+Group 3 3
+at 0
+
+
+
+spawn  P1
+Map    2
+health 100
+	coords  600 250
+	at  0
+
+
+spawn  P1
+Map    2
+health 100
+	coords  600 200
+	at  0
+
+spawn  P1
+Map    2
+health 100
+	coords  600 200
+	at  0
+
+
+spawn  P1
+Map    1
+health 100
+	coords  600 200
+	at  0
+
+
+spawn  P1
+Map    1
+health 100
+	coords  600 200
+	at  0
+
+spawn  lata03
+Item   Knife
+	coords  500 220
+	at  300
+
+spawn  Lata03
+Item   Kunai
+	coords  530 240
+	at  300
+
+spawn  Lata03
+Item   Apple
+	coords  600 235
+	at  300
+
+
+wait 
+at 500
+
+Group 3 3
+at 500
+
+
+
+spawn  AlienC
+health 150
+	coords  700 260
+	at  500
+
+
+spawn  Alien_
+Map    1
+health 150
+	coords  600 210
+	at  500
+
+spawn  AlienB
+Map    1
+health 150
+	coords  400 250 150
+	at  500
+
+
+spawn  P1
+map    3
+health 100
+	coords  700 260
+	at  500
+
+
+spawn  p1
+Map    3
+health 100
+	coords  600 210
+	at  500
+
+
+
+spawn  particle
+map    3
+health 200
+	coords  700 260
+	at  500
+
+
+spawn  p1
+Map    3
+health 100
+	coords  600 210
+	at  500
+
+spawn  Box02
+Item   Apple
+	coords  500 220
+	at  550
+
+
+spawn  Box02
+2pItem   Apple
+	coords  600 235
+	at  550
+
+
+wait 
+at 1000
+
+Group 3 3
+at 1000
+
+spawn  AlienC
+health 150
+	coords  650 240
+	at  1000
+
+
+spawn  AlienC
+Map    1
+health 150
+	coords  600 210
+	at  1000
+
+spawn  AlienC
+Map    2
+health 150
+	coords  630 260 
+	at  1000
+
+spawn  Robot
+health 150
+	coords  650 240
+	at  1000
+
+
+spawn  Robot
+Map    1
+health 150
+	coords  600 210
+	at  1000
+
+spawn  P1
+health 150
+	coords  630 260 
+	at  1000
+
+spawn  Ovo
+Item   Cash
+	coords  500 220
+	at  1001
+
+
+spawn  OVo
+Item   Sword
+	coords  500 250
+	at  1001
+
+
+spawn  Alien
+map    4
+health 200
+	coords  550 260 
+	at  1001
+
+spawn  Alien
+map    4
+health 200
+	coords  550 230 
+	at  1100
+
+
+
+wait 
+at 1300
+
+Group 3 3
+at 1300
+
+
+spawn  Alien
+map    4
+health 200
+	coords  600 260 
+	at  1300
+
+spawn  AlienC
+map    4
+health 200
+	coords  600 260 
+	at  1300
+
+spawn  AlienB
+map    4
+health 200
+	coords  -100 260 
+	at  1300
+
+
+spawn  AlienC
+map    4
+health 200
+	coords  -100 260 
+	at  1300
+
+spawn  p1
+Map    3
+health 200
+	coords  600 210
+	at  1300
+
+spawn  Robot
+health 150
+	coords  600 210
+	at  1300
+
+
+spawn  particle
+health 300
+	coords  700 260
+	at  1300
+
+
+
+
+
+

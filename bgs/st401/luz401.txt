@@ -1,0 +1,12 @@
+name			Luz401 #GROUND
+type			None
+setlayer -80
+Alpha 1
+
+anim idle
+	loop	1
+	delay	5
+	offset	236 28
+	frame	data/Bgs/St401/Ligth01.gif
+	frame	data/Bgs/St401/Ligth02.gif
+

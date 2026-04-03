@@ -1,0 +1,40 @@
+name			Porta #GROUND
+type			None
+setlayer 1
+
+
+anim spawn
+	loop	0
+	delay	100
+	offset	0 0
+	frame	data/Bgs/St01/Porta01.gif
+		delay  5
+        sound   data/Sounds/gate.wav
+	frame	data/Bgs/St01/Porta02.gif
+	frame	data/Bgs/St01/Porta03.gif
+	frame	data/Bgs/St01/Porta04.gif
+	frame	data/Bgs/St01/Porta05.gif
+	frame	data/Bgs/St01/Porta06.gif
+	frame	data/Bgs/St01/Porta07.gif
+	frame	data/Bgs/St01/Porta08.gif
+	frame	data/Bgs/St01/Porta09.gif
+		delay  300
+	frame	data/Bgs/St01/Porta10.gif
+	        delay	5
+        sound   data/Sounds/gate.wav
+	frame	data/Bgs/St01/Porta09.gif
+	frame	data/Bgs/St01/Porta08.gif
+	frame	data/Bgs/St01/Porta07.gif
+	frame	data/Bgs/St01/Porta06.gif
+	frame	data/Bgs/St01/Porta05.gif
+	frame	data/Bgs/St01/Porta04.gif
+	frame	data/Bgs/St01/Porta03.gif
+	frame	data/Bgs/St01/Porta02.gif
+
+
+anim idle
+	loop	0
+	delay	20
+	offset	0 0
+	frame	data/Bgs/St01/Porta01.gif
+

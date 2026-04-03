@@ -1,0 +1,112 @@
+name			Yamato_Star #THROWNED
+type			none
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		1 1
+noatflash 		1
+flash			noflash
+didhitscript	data/scripts/didhit/default.c
+animationscript	data/scripts/animation/default.c
+
+anim idle #LEFT/RIGHT
+	landframe 2
+	attackone 1
+	fastattack 1
+	jugglecost 5
+	forcedirection -1
+	hitflash blood
+	loop	1 0 2
+	delay	8
+	offset	25 29
+	bbox 	19 25 12 7
+	hitfx	data/sounds/Cutter.wav
+	attack 19 25 12 7 8 1 0 0 0 12
+	frame	data/chars/yamato/star/star00.gif
+	frame	data/chars/yamato/star/star01.gif
+	@cmd aniChange 0 "ANI_FOLLOW4"
+	frame	data/chars/yamato/star/star00.gif
+	
+anim follow1 #DIAGONAL RIGHT
+	landframe 2
+	attackone 1
+	fastattack 1
+	jugglecost 5
+	forcedirection -1
+	hitflash blood
+	loop	1 0 2
+	delay	8
+	offset	25 29
+	bbox 	21 24 9 9
+	hitfx	data/sounds/Cutter.wav
+	attack 21 24 9 9 8 1 0 0 0 12
+	frame	data/chars/yamato/star/star02.gif
+	frame	data/chars/yamato/star/star03.gif
+	@cmd aniChange 0 "ANI_FOLLOW4"
+	frame	data/chars/yamato/star/star02.gif
+	
+anim follow2 #DIAGONAL LEFT
+	landframe 2
+	attackone 1
+	fastattack 1
+	jugglecost 5
+	forcedirection -1
+	hitflash blood
+	loop	1 0 2
+	delay	8
+	offset	25 29
+	bbox 	21 24 9 9
+	hitfx	data/sounds/Cutter.wav
+	attack 21 24 9 9 8 1 0 0 0 12
+	frame	data/chars/yamato/star/star04.gif
+	frame	data/chars/yamato/star/star05.gif
+	@cmd aniChange 0 "ANI_FOLLOW4"
+	frame	data/chars/yamato/star/star04.gif
+	
+anim follow3 #DOWN
+	landframe 2
+	attackone 1
+	fastattack 1
+	jugglecost 5
+	forcedirection 0
+	hitflash blood
+	loop	1 0 2
+	delay	8
+	offset	25 29
+	bbox 	21 22 7 12
+	hitfx	data/sounds/Cutter.wav
+	attack 21 22 7 12 8 1 0 0 0 12
+	frame	data/chars/yamato/star/star06.gif
+	frame	data/chars/yamato/star/star07.gif
+	@cmd aniChange 0 "ANI_FOLLOW4"
+	frame	data/chars/yamato/star/star06.gif
+
+anim follow4 #GROUND
+	attackone 1
+	fastattack 1
+	jugglecost 5
+	forcedirection 0
+	hitflash blood
+	loop	0
+	delay	96
+	offset	25 29
+	shadowcoords 25 33
+	hitfx	data/sounds/Cutter.wav
+	@cmd stop
+	@cmd spawn01 "flash" 0 0 0
+	sound	data/sounds/Clash.wav
+	attack 20 24 9 8 8 1 0 0 0 12
+	frame	data/chars/yamato/star/star08.gif
+	@cmd suicide
+	frame	data/chars/yamato/star/star08.gif
+
+anim fall
+	loop	0
+	delay	8
+	offset	25 29
+	shadowcoords 25 33
+	@cmd spawn01 "flash" 0 0 0
+	@cmd leaper -1 2 0.025
+	sound	data/sounds/Clash.wav
+	frame	data/chars/yamato/star/star08.gif
+	frame	data/chars/yamato/star/star08.gif

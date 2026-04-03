@@ -1,0 +1,19 @@
+# Hit flash
+
+speed	12
+name	Vene
+candamage  Player obstacle npc pshot
+type	pshot
+alpha 1
+
+
+anim idle
+	loop	1
+	delay	5
+	offset	27 120
+        hitfx	data/sounds/golpes/forte.wav
+		attack1  28  37  38  26  15  1  0  0  0  10
+	frame   data/chars/Enemys/Alien/p01.gif
+	frame   data/chars/Enemys/Alien/p02.gif
+
+

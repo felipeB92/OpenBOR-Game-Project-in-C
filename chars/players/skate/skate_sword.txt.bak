@@ -1,0 +1,191 @@
+name	Skate_Sword
+health	100
+speed	18
+type	none
+antigrab 2
+gfxshadow	1
+candamage			enemy npc obstacle
+JUMPHEIGHT 1 1
+Jumpheight 3
+icon	data/chars/players/Skate/icon.gif
+diesound data/sounds/Skatedie.wav
+running	28	3	3	1	1
+
+Com d d freespecial5
+Com u u freespecial6
+
+
+Load SwordT
+
+
+
+remap data/chars/players/Skate/idle00.gif data/chars/players/Skate/alter1.gif
+remap data/chars/players/Skate/idle00.gif data/chars/players/Skate/alter2.gif
+remap data/chars/players/Skate/idle00.gif data/chars/players/Skate/alter3.gif
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	155 175
+	bbox	142 115 21 59
+	frame   data/chars/players/Skate/Sword/idle00.gif
+	frame   data/chars/players/Skate/Sword/idle01.gif
+	frame   data/chars/players/Skate/Sword/idle02.gif
+	frame   data/chars/players/Skate/Sword/idle03.gif
+
+
+
+
+anim walk
+	loop	1
+	delay	1
+	offset	155 175
+	bbox	139 109 24 68
+	jumpframe  0  0.001  0.001  0
+	landframe  1
+	frame	data/chars/players/Skate/Sword/walk00.gif
+	frame	data/chars/players/Skate/Sword/walk00.gif
+	delay	14
+	frame	data/chars/players/Skate/Sword/walk00.gif
+	frame	data/chars/players/Skate/Sword/walk00.gif
+	frame	data/chars/players/Skate/Sword/walk01.gif
+	frame	data/chars/players/Skate/Sword/walk02.gif
+	frame	data/chars/players/Skate/Sword/walk03.gif
+	frame	data/chars/players/Skate/Sword/walk04.gif
+	frame	data/chars/players/Skate/Sword/walk05.gif
+
+
+anim get
+	loop	0
+	delay	10
+	offset	155 175
+	frame	data/chars/players/Skate/Sword/get00.gif
+
+
+anim jump
+	loop	0
+	delay	5
+	offset	155 175
+	bbox	142 115 27 40
+	frame	data/chars/players/Skate/Sword/jump00.gif
+	frame	data/chars/players/Skate/Sword/jump01.gif
+
+
+
+
+anim jumpattack
+	loop	0
+	delay	7
+	offset	155 175
+	bbox	110 103 31 42
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Skate/Sword/jumpatk00.gif
+		bbox  120  122  39  33
+		attack1  136  135  56  34  10  1  0  0  0  10
+	frame	data/chars/players/Skate/Sword/jumpatk01.gif
+		attack1  136  132  54  35  10  1  0  0  0  10
+		delay  10
+	frame	data/chars/players/Skate/Sword/jumpatk02.gif
+		Attack1  0
+	frame	data/chars/players/Skate/Sword/jumpatk03.gif
+	frame	data/chars/players/Skate/Sword/jumpatk04.gif
+
+
+
+anim jumpattack2
+	loop	0
+	delay	7
+	offset	155 175
+	bbox	127 126 45 30
+	attack	135 146 29 34 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Skate/Sword/jumpatk200.gif
+
+anim jumpforward
+	loop	0
+	delay	7
+	offset	155 175
+	bbox	131 113 39 39
+	attack	138 134 59 27 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/soco.wav
+	frame	data/chars/players/Skate/Sword/fjumpatk01.gif
+
+
+anim runjumpattack
+	loop	0
+	delay	7
+	offset	155 175
+	bbox	124 126 28 37
+	attack	138 137 45 25 7 0
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Skate/Sword/jumpatk300.gif
+
+
+anim attack1
+	loop	0
+	delay	8
+	offset	155 175
+	bbox	144 107 22 65
+		Attack1  0
+	sound	data/sounds/armas/Whoosh2.wav
+        hitfx	data/sounds/Armas/Corte2.wav
+	frame	data/chars/players/Skate/Sword/a100.gif
+		attack1  142  132  75  16  25  1  0  0  0  15
+	frame	data/chars/players/Skate/Sword/a101.gif
+		attack1  146  155  38  30  25  1  0  0  0  15
+	frame	data/chars/players/Skate/Sword/a102.gif
+		Attack1  0
+	frame	data/chars/players/Skate/Sword/a103.gif
+
+anim Special2
+	loop	0
+	delay	6
+	offset	155 175
+	bbox	138 109 25 69
+		Attack1  0
+        custknife Swordt
+        throwframe 2 40
+	sound	data/sounds/armas/Whoosh2.wav
+        hitfx	data/sounds/Armas/Corte2.wav
+	frame	data/chars/players/Skate/Sword/a100.gif
+		attack1  139  126  80  27  15  1  0  0  0  15
+	frame	data/chars/players/Skate/Sword/a101.gif
+		Attack1  0
+	frame	data/chars/players/Skate/Sword/a104.gif
+
+
+
+anim run
+        loop    1
+        delay  10
+	offset	155 175
+	bbox	139 120 35 43
+	jumpframe  0  0.001  0.001  0
+	landframe  1
+        frame	data/chars/players/Skate/Sword/run00.gif
+        frame	data/chars/players/Skate/Sword/run01.gif
+        frame	data/chars/players/Skate/Sword/run02.gif
+        frame	data/chars/players/Skate/Sword/run03.gif
+        frame	data/chars/players/Skate/Sword/run04.gif
+        frame	data/chars/players/Skate/Sword/run05.gif
+
+
+
+
+
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	155 175
+	bbox	144 130 26 42
+	frame	data/chars/players/Skate/Sword/jumpland00.gif
+

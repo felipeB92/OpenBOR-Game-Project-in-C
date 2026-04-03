@@ -1,0 +1,12 @@
+name			Luz02 #GROUND
+type			None
+setlayer 5
+
+anim idle
+	loop	1
+	delay	8
+	offset	0 0
+	frame	data/Bgs/St201/light00.gif
+	frame	data/Bgs/St201/light01.gif
+
+

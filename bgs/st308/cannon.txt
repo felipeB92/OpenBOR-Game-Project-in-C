@@ -1,0 +1,47 @@
+name			st8_cannon
+type			none
+candamage		player enemy npc obstacle
+nolife			1
+nomove			1 1
+shadow			0
+animationscript	data/scripts/animation/default.c
+
+load			st8_laser
+
+anim spawn #WAIT SPAWN
+	loop	0
+	delay	12
+	offset	1 160
+	frame	data/bgs/sor3_st8/cannon00.gif
+	@cmd aniChange 0 "ANI_FOLLOW1"
+	frame	data/bgs/sor3_st8/cannon00.gif
+	
+anim follow1 #WAIT LOOP
+	loop	1
+	delay	24
+	offset	1 160
+	frame	data/bgs/sor3_st8/cannon00.gif
+	@cmd aniXpos 0 0 "ANI_IDLE"
+	frame	data/bgs/sor3_st8/cannon00.gif
+
+anim idle #LOOP STOP
+	loop	1
+	delay	300
+	offset	1 160
+	frame	data/bgs/sor3_st8/cannon01.gif
+		delay	8
+	sound	data/voices/Attack6.wav
+	frame	data/bgs/sor3_st8/cannon00.gif
+	frame	data/bgs/sor3_st8/cannon01.gif
+	frame	data/bgs/sor3_st8/cannon00.gif
+	frame	data/bgs/sor3_st8/cannon01.gif
+	frame	data/bgs/sor3_st8/cannon00.gif
+	frame	data/bgs/sor3_st8/cannon01.gif
+	frame	data/bgs/sor3_st8/cannon00.gif
+	frame	data/bgs/sor3_st8/cannon01.gif
+	@cmd shoot "st8_laser" 587 24 1 0 0 3
+	@cmd shoot "st8_laser" 994 24 1 0 0 3
+	@cmd shoot "st8_laser" 1243 24 1 0 0 3
+	@cmd shoot "st8_laser" 1451 63 -40 0 0 3
+	sound	data/sounds/LaserShot.wav
+	frame	data/bgs/sor3_st8/cannon01.gif

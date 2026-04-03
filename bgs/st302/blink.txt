@@ -1,0 +1,64 @@
+name			st2_blink
+type			panel
+shadow			0
+speed			10
+setlayer		1000
+animationscript	data/scripts/animation/default.c
+
+anim idle
+	loop	0
+	delay	2
+	offset	1 1
+	drawmethod alpha 1
+	frame	data/bgs/sor3_st2/blink00.gif
+	frame	data/bgs/sor3_st2/blink01.gif
+	frame	data/bgs/sor3_st2/blink02.gif
+	frame	data/bgs/sor3_st2/blink01.gif
+	frame	data/bgs/sor3_st2/blink00.gif
+	frame	data/bgs/sor3_st2/blink03.gif
+	frame	data/bgs/sor3_st2/blink04.gif
+	frame	data/bgs/sor3_st2/blink03.gif
+	@cmd looper 0 29
+	frame	data/bgs/sor3_st2/blink00.gif
+	@cmd aniChange 0 "ANI_FOLLOW1"
+	frame	data/bgs/sor3_st2/blink00.gif
+	
+anim follow1
+	loop	0
+	delay	40
+	offset	1 1
+	drawmethod alpha 3
+	frame	data/bgs/sor3_st2/blink05.gif
+	drawmethod alpha 1
+	frame	data/bgs/sor3_st2/blink05.gif
+	drawmethod alpha 3
+	frame	data/bgs/sor3_st2/blink05.gif
+	drawmethod alpha 1
+	frame	data/bgs/sor3_st2/blink05.gif
+	drawmethod alpha 3
+	frame	data/bgs/sor3_st2/blink05.gif
+	drawmethod alpha 1
+	frame	data/bgs/sor3_st2/blink05.gif
+	drawmethod alpha 3
+	frame	data/bgs/sor3_st2/blink05.gif
+	drawmethod alpha 1
+	frame	data/bgs/sor3_st2/blink05.gif
+	drawmethod alpha 6
+	drawmethod channel 0.8 0 0
+	frame	data/bgs/sor3_st2/blink05.gif
+	drawmethod channel 0.2
+	frame	data/bgs/sor3_st2/blink05.gif
+	drawmethod channel 0 0.8 0
+	frame	data/bgs/sor3_st2/blink05.gif
+	drawmethod channel 0.2
+	frame	data/bgs/sor3_st2/blink05.gif
+	drawmethod channel 0 0 0.8
+	frame	data/bgs/sor3_st2/blink05.gif
+	drawmethod channel 0.2
+	frame	data/bgs/sor3_st2/blink05.gif
+	drawmethod channel 0.8 0 0
+	frame	data/bgs/sor3_st2/blink05.gif
+	drawmethod channel 0 0.8 0
+	frame	data/bgs/sor3_st2/blink05.gif
+	@cmd aniChange 0 "ANI_IDLE"
+	frame	data/bgs/sor3_st2/blink05.gif

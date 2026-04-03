@@ -1,0 +1,192 @@
+music		data/bgs/St208/bossX.bor
+bossmusic	data/music/boss2.bor
+
+###BACKGROUND
+background			data/bgs/St407/Back00b.gif 0.85 1 0 0 0 0 -1 1 0 0 0 0 0 0 0
+bglayer 			data/bgs/St407/Back00a.gif 0.85 1 0 0 0 0 -1 1 1 0 1 3 10 0.3
+
+###BGLAYER/PANEL
+panel			data/bgs/St407/pN00.gif	none	none
+
+###MISC
+Frontpanel			data/bgs/St05/Front02.gif
+#order			a
+settime			99
+scrollspeed 	0.5
+stagenumber 	7
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	30 30  150
+spawn2  	35 30 150
+spawn3  	40 30  150
+
+light		128 -128
+at			0
+
+
+
+spawn  Shiva407a
+	coords  0 205
+	at  0
+
+
+wait
+at 0
+
+
+Group 1 1
+at 0
+
+
+
+
+spawn  MrX4
+alias  Mr_X
+health 400
+	coords  350 210
+	at  0
+
+spawn  Delay
+	coords  350 210
+	at  0
+
+Group 9  9
+at 1
+
+music     data/Bgs/St407/lv407a.bor
+	at 1
+
+spawn  OVO
+Item   Apple
+	coords  550 210
+	at  1
+
+spawn  OVO
+2pItem   Apple
+	coords  500 250
+	at  1
+
+spawn  OVO
+Item   Sword
+	coords  700 210
+	at  1
+
+spawn  OVO
+2pItem   Pipe
+	coords  600 250
+	at  1
+
+
+spawn  Alien
+health 150
+	coords  500 250
+	at  250
+
+
+spawn  Alien
+Map    1
+health 150
+	coords  500 210
+	at  300
+
+
+
+
+wait
+at 350
+
+Group 2  2
+at 350
+
+
+spawn  MX407b
+	coords  260 230
+	at  350
+
+
+spawn  Delay
+	coords  350 210
+	at  350
+
+spawn  Delay
+	coords  350 210
+	at  350
+
+
+
+
+Group 3  3
+at 351
+
+
+
+spawn  AlienB
+Flip   1
+Map    1
+health 150
+	coords  100 210 150
+	at  351
+
+spawn  AlienC
+Map    2
+health 150
+	coords  450 210 150
+	at  351
+
+spawn  Shiva_N
+Alias  Shiva
+FLip   1
+	coords  -10 235
+	at  351
+
+
+spawn  Alien_
+Flip   1
+Map    3
+health 150
+	coords  150 260 150
+	at  351
+
+spawn  AlienC
+health 150
+	coords  400 250 150
+	at  351
+
+spawn  AlienB
+Flip   1
+Map    3
+health 150
+	coords  100 210 150
+	at  351
+
+spawn  AlienC
+Map    1
+health 150
+	coords  450 210 150
+	at  351
+
+
+spawn  Alien_
+Flip   1
+Map    4
+health 150
+	coords  150 260 150
+	at  351
+
+spawn  AlienC
+Map    2
+health 150
+	coords  400 250 150
+	at  351
+
+

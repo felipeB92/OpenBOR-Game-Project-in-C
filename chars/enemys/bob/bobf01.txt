@@ -1,0 +1,21 @@
+# Hit flash
+
+speed	8
+name	Bobf01
+candamage  Player obstacle npc pshot
+type	None
+alpha 1
+setlayer 20
+
+
+anim idle
+	loop	0
+	delay	5
+	offset	152 201
+        hitfx	data/sounds/golpes/forte.wav
+		attack1  160  70  97  97  20  1  0  0  0  25
+	frame	data/chars/Enemys/Bob/fire01.gif
+	frame	data/chars/Enemys/Bob/empty.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/Enemys/Bob/empty.gif
+

@@ -1,0 +1,15 @@
+name			Buraco00 #GROUND
+type			None
+setlayer 99
+
+anim idle
+	loop	0
+	offset	32 73
+		delay  8
+	frame	data/Bgs/St201/buraco00.gif
+	frame	data/Bgs/St201/buraco01.gif
+	frame	data/Bgs/St201/buraco02.gif
+	frame	data/Bgs/St201/buraco01.gif
+	frame	data/Bgs/St201/buraco00.gif
+	frame	data/Bgs/St201/back02.gif
+

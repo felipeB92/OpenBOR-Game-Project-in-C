@@ -1,0 +1,14 @@
+name		semaphore
+type		panel
+shadow		0
+speed		5
+scroll		-0.6
+setlayer	1000
+
+anim idle
+	loop	1
+	delay	16
+	offset	1 1
+	frame	data/bgs/st302/semaphore00.gif
+	frame	data/bgs/st302/semaphore01.gif
+	frame	data/bgs/st302/semaphore02.gif

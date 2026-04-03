@@ -1,0 +1,100 @@
+name		 	st2_lamp
+type		 	none
+shadow		 	0
+antigravity	 	100
+ondrawscript 	data/scripts/ondraw/lamp.c
+animationscript	data/scripts/animation/default.c
+
+anim idle
+	loop	1
+	delay	2
+	offset	1 180
+	frame	data/bgs/sor2_st2/lamp00.gif
+		delay	3
+	frame	data/bgs/sor2_st2/lamp01.gif
+	
+anim follow1
+	loop	0
+	delay	2
+	offset	1 180
+	frame	data/bgs/sor2_st2/lamp02.gif
+		delay	3
+	frame	data/bgs/sor2_st2/lamp03.gif
+		delay	2
+	frame	data/bgs/sor2_st2/lamp02.gif
+		delay	3
+	frame	data/bgs/sor2_st2/lamp03.gif
+		delay	2
+	frame	data/bgs/sor2_st2/lamp00.gif
+		delay	3
+	frame	data/bgs/sor2_st2/lamp01.gif
+		delay	2
+	frame	data/bgs/sor2_st2/lamp00.gif
+		delay	3
+	frame	data/bgs/sor2_st2/lamp01.gif
+		delay	2
+	frame	data/bgs/sor2_st2/lamp04.gif
+		delay	3
+	frame	data/bgs/sor2_st2/lamp05.gif
+		delay	2
+	frame	data/bgs/sor2_st2/lamp04.gif
+		delay	3
+	frame	data/bgs/sor2_st2/lamp05.gif
+		delay	2
+	frame	data/bgs/sor2_st2/lamp00.gif
+		delay	3
+	frame	data/bgs/sor2_st2/lamp01.gif
+		delay	2
+	frame	data/bgs/sor2_st2/lamp00.gif
+		delay	3
+	frame	data/bgs/sor2_st2/lamp01.gif
+		delay	2
+	frame	data/bgs/sor2_st2/lamp02.gif
+		delay	3
+	frame	data/bgs/sor2_st2/lamp03.gif
+		delay	2
+	frame	data/bgs/sor2_st2/lamp02.gif
+		delay	3
+	frame	data/bgs/sor2_st2/lamp03.gif
+		delay	2
+	frame	data/bgs/sor2_st2/lamp00.gif
+		delay	3
+	frame	data/bgs/sor2_st2/lamp01.gif
+		delay	2
+	frame	data/bgs/sor2_st2/lamp00.gif
+		delay	3
+	frame	data/bgs/sor2_st2/lamp01.gif
+		delay	2
+	frame	data/bgs/sor2_st2/lamp04.gif
+		delay	3
+	frame	data/bgs/sor2_st2/lamp05.gif
+		delay	2
+	frame	data/bgs/sor2_st2/lamp04.gif
+		delay	3
+	frame	data/bgs/sor2_st2/lamp05.gif
+		delay	2
+	frame	data/bgs/sor2_st2/lamp00.gif
+		delay	3
+	frame	data/bgs/sor2_st2/lamp01.gif
+		delay	2
+	frame	data/bgs/sor2_st2/lamp00.gif
+		delay	3
+	frame	data/bgs/sor2_st2/lamp01.gif
+		delay	2
+	frame	data/bgs/sor2_st2/lamp02.gif
+		delay	3
+	frame	data/bgs/sor2_st2/lamp03.gif
+		delay	2
+	frame	data/bgs/sor2_st2/lamp02.gif
+		delay	3
+	frame	data/bgs/sor2_st2/lamp03.gif
+		delay	2
+	frame	data/bgs/sor2_st2/lamp00.gif
+		delay	3
+	frame	data/bgs/sor2_st2/lamp01.gif
+		delay	2
+	frame	data/bgs/sor2_st2/lamp00.gif
+		delay	3
+	frame	data/bgs/sor2_st2/lamp01.gif
+	@cmd aniChange 0 "ANI_IDLE"
+	frame	data/bgs/sor2_st2/lamp00.gif

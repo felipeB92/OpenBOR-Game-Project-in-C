@@ -1,0 +1,453 @@
+name			Nave407 #GROUND
+type			None
+setlayer 5
+offscreenkill	1000
+
+anim idle
+	loop	0
+	delay	3
+	offset	0 240
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 230
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 220
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 210
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 200
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 190
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 180
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 170
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 160
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 150
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 140
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 130
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 120
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 110
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 100
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 90
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 80
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 70
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 60
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 50
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 40
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 30
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 20
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 10
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	offset	0 0
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 10
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 20
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 30
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 40
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 50
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 60
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 70
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 80
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 90
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 100
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 120
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 130
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 140
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 150
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 160
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 170
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 180
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 190
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 200
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 210
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 220
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 230
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 240
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	offset	0 250
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	frame   data/Bgs/st407/s02.gif
+	frame   data/Bgs/st407/s01.gif
+	offset	0 260
+	frame   data/Bgs/st407/s01.gif
+	@cmd killentity getlocalvar("self")
+	frame   data/Bgs/st407/s02.gif
+

@@ -1,0 +1,15 @@
+name			Ash401 #GROUND
+type			None
+setlayer -5
+
+remap data/chars/Enemys/Ash/idle00.gif data/chars/Enemys/Ash/alter1.gif
+remap data/chars/Enemys/Ash/idle00.gif data/chars/Enemys/Ash/alter2.gif
+remap data/chars/Enemys/Ash/idle00.gif data/chars/Enemys/Ash/alter3.gif
+
+
+anim idle
+	loop	1
+	offset	171 188
+	delay	16
+	frame	data/chars/Enemys/Ash/cry00.gif
+        frame	data/chars/Enemys/Ash/cry01.gif

@@ -1,0 +1,10 @@
+name			parque01d #GROUND
+type			None
+setlayer 80
+
+anim idle
+	loop	1
+	delay	30
+	offset	0 0
+	frame	data/Bgs/St203/gate00.gif
+

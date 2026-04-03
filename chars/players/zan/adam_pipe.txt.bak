@@ -1,0 +1,149 @@
+name	Adam_pipe
+health	100
+speed	12
+type	none
+gfxshadow	1
+candamage			enemy npc obstacle
+JUMPHEIGHT 1 1
+Jumpheight 3
+icon	data/chars/players/Adam/icon.gif
+diesound data/sounds/Adamdie.wav
+running	20	3	3	1	1
+
+
+
+remap data/chars/players/Adam/idle00.gif data/chars/players/Adam/alter1.gif
+remap data/chars/players/Adam/idle00.gif data/chars/players/Adam/alter2.gif
+remap data/chars/players/Adam/idle00.gif data/chars/players/Adam/alter3.gif
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	136 172
+	bbox	122 92 30 79
+	frame   data/chars/players/Adam/pipe/idle00.gif
+	frame   data/chars/players/Adam/pipe/idle01.gif
+	frame   data/chars/players/Adam/pipe/idle02.gif
+	frame   data/chars/players/Adam/pipe/idle03.gif
+
+
+
+
+anim walk
+	loop	1
+	delay	14
+	offset	136 171
+	bbox	123 92 29 68
+	frame	data/chars/players/Adam/pipe/walk01.gif
+	frame	data/chars/players/Adam/pipe/walk02.gif
+	frame	data/chars/players/Adam/pipe/walk03.gif
+	frame	data/chars/players/Adam/pipe/walk04.gif
+	frame	data/chars/players/Adam/pipe/walk05.gif
+
+
+anim get
+	loop	0
+	delay	10
+	offset	136 172
+	frame	data/chars/players/Adam/pipe/get00.gif
+
+
+anim jump
+	loop	0
+	delay	5
+	offset	136 172
+	bbox	123 87 35 70
+	frame	data/chars/players/Adam/pipe/jump00.gif
+	frame	data/chars/players/Adam/pipe/jump01.gif
+
+
+
+
+anim jumpattack
+	loop	0
+	delay	7
+	offset	136 172
+	bbox	120 91 38 55
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Adam/pipe/jumpatk00.gif
+		attack1  138  82  41  71  10  1  0  0  0  20
+		delay  30
+	frame	data/chars/players/Adam/pipe/jumpatk01.gif
+
+
+
+anim jumpattack2
+	loop	0
+	delay	7
+	offset	136 171
+	bbox	115 93 37 37
+	attack	111 129 51 21 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Adam/pipe/jumpatk200.gif
+
+anim jumpforward
+	loop	0
+	delay	7
+	offset	136 171
+	bbox	113 92 39 43
+	attack	110 124 82 35 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/soco.wav
+	frame	data/chars/players/Adam/pipe/fjumpatk01.gif
+
+
+anim runjumpattack
+	loop	0
+	delay	7
+	offset	136 171
+	bbox	116 91 37 54
+	attack	151 104 51 29 7 0
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Adam/pipe/jumpatk301.gif
+
+anim attack1
+	loop	0
+	delay	6
+	offset	136 172
+	bbox	119 100 37 69
+		Attack1  0
+	sound	data/sounds/armas/Whoosh3.wav
+        hitfx	data/sounds/Armas/Pipe.wav
+	frame	data/chars/players/Adam/pipe/a100.gif
+		attack1  179  111  76  27  15  1  0  0  0  15
+		bbox  138  79  42  92
+	frame	data/chars/players/Adam/pipe/a101.gif
+
+
+
+anim run
+        loop    1
+        delay  10
+	offset	136 171
+	bbox	122 93 32 74
+        frame	data/chars/players/Adam/pipe/run00.gif
+        frame	data/chars/players/Adam/pipe/run01.gif
+        frame	data/chars/players/Adam/pipe/run02.gif
+        frame	data/chars/players/Adam/pipe/run03.gif
+        frame	data/chars/players/Adam/pipe/run04.gif
+        frame	data/chars/players/Adam/pipe/run05.gif
+
+
+
+
+
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	136 171
+	bbox	123 111 42 51
+	frame	data/chars/players/Adam/pipe/jumpland00.gif
+

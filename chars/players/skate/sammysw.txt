@@ -1,0 +1,48 @@
+##MAIN
+name				SammySW
+type				none
+
+##MISC
+antigravity			100
+
+##SCRIPTS
+ondrawscript		data/scripts/ondraw/channel.c
+
+##REMAPS
+remap				data/chars/sammy/idle00.gif data/chars/sammy/alter1.gif
+remap				data/chars/sammy/idle00.gif data/chars/sammy/alter2.gif
+remap				data/chars/sammy/idle00.gif data/chars/sammy/alter3.gif
+
+##ANIMATIONS#############################################################################
+
+anim freespecial
+	loop	0
+	delay	1000
+	offset	153 175
+	frame	data/chars/sammy/rage00.gif
+	frame	data/chars/sammy/kunai/runatk00.gif
+	frame	data/chars/sammy/kunai/runatk01.gif
+	frame	data/chars/sammy/kunai/runatk00.gif
+	frame	data/chars/sammy/kunai/runatk01.gif
+	frame	data/chars/sammy/kunai/runatk02.gif
+	frame	data/chars/sammy/kunai/jump02.gif
+	frame	data/chars/sammy/kunai/jump03.gif
+	frame	data/chars/sammy/kunai/jump04.gif
+	frame	data/chars/sammy/kunai/jump05.gif
+	
+anim follow3
+	loop	0
+	delay	1000
+	offset	153 175
+	frame	data/chars/sammy/rage00.gif
+	frame	data/chars/sammy/rage01.gif
+	frame	data/chars/sammy/rage02.gif
+	frame	data/chars/sammy/rage03.gif
+	frame	data/chars/sammy/rage03.gif
+	frame	data/chars/sammy/rage04.gif
+	frame	data/chars/sammy/rage04.gif
+	frame	data/chars/sammy/rage05.gif
+	frame	data/chars/sammy/rage05.gif
+	frame	data/chars/sammy/rage06.gif
+	frame	data/chars/sammy/rage06.gif
+	frame	data/chars/sammy/jumpland00.gif

@@ -1,0 +1,18 @@
+name			Esteira04S
+type			none
+shadow			0
+setlayer		-10
+onblockwscript	data/scripts/bounceF.c
+animationscript 	data/scripts/ani0020.h
+ondrawscript 		data/scripts/player_ondrawscript.c
+
+
+anim idle
+	loop	0
+	delay	128
+	offset	1 116
+	@cmd dasher -0.2 0 0
+	platform 0 240 305 545 116 0.001
+	frame	data/bgs/st308/machine00.gif
+	@cmd suicide
+	frame	data/bgs/St308/machine00.gif

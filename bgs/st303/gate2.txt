@@ -1,0 +1,10 @@
+name		st3_gate2
+type		none	
+shadow		0
+setlayer	1000
+
+anim idle
+	loop	0
+	delay	6
+	offset	1 180
+	frame	data/bgs/sor3_st3/gate200.gif

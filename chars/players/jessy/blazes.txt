@@ -1,0 +1,64 @@
+##MAIN
+name				BlazeS
+type				none
+
+##MISC
+antigravity			100
+
+##SCRIPTS
+ondrawscript		data/scripts/ondraw/channel.c
+
+##REMAPS
+remap				data/chars/blaze/idle00.gif data/chars/blaze/alter1.gif
+remap				data/chars/blaze/idle00.gif data/chars/blaze/alter2.gif
+remap				data/chars/blaze/idle00.gif data/chars/blaze/alter3.gif
+
+##ANIMATIONS#############################################################################
+
+anim freespecial #RAGE
+	loop	0
+	delay	1000
+	offset	127 179
+	frame	data/chars/blaze/rage00.gif
+	frame	data/chars/blaze/rage01.gif
+	frame	data/chars/blaze/rage02.gif
+	frame	data/chars/blaze/rage03.gif
+	frame	data/chars/blaze/rage04.gif
+	frame	data/chars/blaze/rage05.gif
+	frame	data/chars/blaze/rage06.gif
+	frame	data/chars/blaze/rage04.gif
+	frame	data/chars/blaze/rage05.gif
+	frame	data/chars/blaze/rage06.gif
+	frame	data/chars/blaze/rage07.gif
+	
+anim freespecial4 #SUPER
+	loop	0
+	delay	1000
+	offset	127 179
+	frame	data/chars/blaze/jumpdelay00.gif
+	frame	data/chars/blaze/jump00.gif
+	frame	data/chars/blaze/counter00.gif
+	frame	data/chars/blaze/counter01.gif
+	frame	data/chars/blaze/counter02.gif
+	frame	data/chars/blaze/counter03.gif
+	frame	data/chars/blaze/special05.gif
+	frame	data/chars/blaze/special06.gif
+	frame	data/chars/blaze/special07.gif
+	frame	data/chars/blaze/counter04.gif
+	frame	data/chars/blaze/counter05.gif
+	frame	data/chars/blaze/jumpland00.gif
+	
+anim follow7 #COUNTER
+	loop	0
+	delay	1000
+	offset	127 179
+	frame	data/chars/blaze/jumpdelay00.gif
+	frame	data/chars/blaze/jump00.gif
+	frame	data/chars/blaze/counter00.gif
+	frame	data/chars/blaze/counter01.gif
+	frame	data/chars/blaze/counter02.gif
+	frame	data/chars/blaze/counter03.gif
+	frame	data/chars/blaze/special05.gif
+	frame	data/chars/blaze/special06.gif
+	frame	data/chars/blaze/special07.gif	
+	frame	data/chars/blaze/jumpland00.gif

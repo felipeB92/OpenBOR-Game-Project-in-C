@@ -1,0 +1,300 @@
+name	Axel1
+health	100
+speed	12
+type	player
+gfxshadow	1
+icon	data/chars/players/axel/axel1.gif
+diesound data/sounds/axeldie.wav
+running	20	3	3	1	1
+
+remap data/chars/players/axel/idle00.gif data/chars/players/axel/alter1.gif
+remap data/chars/players/axel/idle00.gif data/chars/players/axel/alter2.gif
+remap data/chars/players/axel/idle00.gif data/chars/players/axel/alter3.gif
+
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	35 83
+	bbox	19 17 35 66
+	frame   data/chars/players/axel/idle00.gif
+	frame   data/chars/players/axel/idle01.gif
+	frame   data/chars/players/axel/idle02.gif
+	frame   data/chars/players/axel/idle03.gif
+	frame   data/chars/players/axel/idle00.gif
+	frame   data/chars/players/axel/idle01.gif
+	frame   data/chars/players/axel/idle02.gif
+	frame   data/chars/players/axel/idle03.gif
+	frame   data/chars/players/axel/idle00.gif
+	frame   data/chars/players/axel/idle01.gif
+	frame   data/chars/players/axel/idle02.gif
+	frame   data/chars/players/axel/idle03.gif
+	frame   data/chars/players/axel/idle00.gif
+	frame   data/chars/players/axel/idle01.gif
+	frame   data/chars/players/axel/idle02.gif
+	frame   data/chars/players/axel/idle03.gif
+	frame   data/chars/players/axel/idle00.gif
+	frame   data/chars/players/axel/idle01.gif
+	frame   data/chars/players/axel/idle02.gif
+	frame   data/chars/players/axel/idle03.gif
+	frame	data/chars/players/axel/idle04.gif
+	frame	data/chars/players/axel/idle05.gif
+	frame	data/chars/players/axel/idle06.gif
+
+
+
+anim walk
+	loop	1
+	delay	14
+	offset	25 79
+	bbox	6 3 42 77
+	frame	data/chars/players/axel/walk01.gif
+	frame	data/chars/players/axel/walk02.gif
+	frame	data/chars/players/axel/walk03.gif
+	frame	data/chars/players/axel/walk04.gif
+	frame	data/chars/players/axel/walk05.gif
+
+
+anim get
+	loop	0
+	delay	10
+	offset	23 56
+	frame	data/chars/players/axel/get00.gif
+
+
+anim jump
+	loop	0
+	delay	5
+	offset	32 80
+	bbox	21 6 34 56
+	frame	data/chars/players/axel/jump00.gif
+	frame	data/chars/players/axel/jump01.gif
+
+
+
+
+anim jumpattack
+	loop	0
+	delay	7
+	offset	27 72
+	bbox	3 6 46 77
+	sound	data/sounds/axgrunt.wav
+	frame	data/chars/players/axel/jumpatk00.gif
+	frame	data/chars/players/axel/jumpatk01.gif
+	frame	data/chars/players/axel/jumpatk02.gif
+	frame	data/chars/players/axel/jumpatk03.gif
+	frame	data/chars/players/axel/jumpatk04.gif
+
+
+
+anim jumpattack2
+	loop	0
+	delay	7
+	offset	20 57
+	bbox	7 4 40 58
+	attack	14 37 35 28 7 0
+	frame	data/chars/players/axel/jumpatk200.gif
+
+anim attack1
+	loop	0
+	delay	5
+	offset	23 75
+	bbox	9 4 35 71
+	attack	36 11 32 15 7
+	frame	data/chars/players/axel/a100.gif
+	frame	data/chars/players/axel/a101.gif
+
+
+anim attack2
+	loop	0
+	delay	20
+	offset	21 76
+	bbox	14 3 42 72
+	attack	39 11 40 12 7
+	frame	data/chars/players/axel/a200.gif
+	frame	data/chars/players/axel/a201.gif
+
+anim attack3
+	loop	0
+	delay	3
+	offset	39 74
+	bbox	14 5 43 73
+	frame	data/chars/players/axel/a300.gif
+	frame	data/chars/players/axel/a301.gif
+	frame	data/chars/players/axel/a302.gif
+	frame	data/chars/players/axel/a303.gif
+	frame	data/chars/players/axel/a304.gif
+	frame	data/chars/players/axel/a306.gif
+
+
+anim run
+        loop    1
+        delay  10
+	offset	40 79
+	bbox	14 2 26 80
+        frame	data/chars/players/axel/run00.gif
+        frame	data/chars/players/axel/run01.gif
+        frame	data/chars/players/axel/run02.gif
+        frame	data/chars/players/axel/run03.gif
+        frame	data/chars/players/axel/run04.gif
+        frame	data/chars/players/axel/run05.gif
+
+
+
+anim grab
+	loop	0
+	delay	100
+	offset	33 84
+	bbox	19 10 38 76
+	frame	data/chars/players/axel/grab00.gif
+
+anim throw
+	loop	0
+	delay	10
+	offset	45 71
+	frame	data/chars/players/axel/throw00.gif
+	frame	data/chars/players/axel/throw01.gif
+	frame	data/chars/players/axel/throw02.gif
+	frame	data/chars/players/axel/throw03.gif
+	frame	data/chars/players/axel/throw01.gif
+
+
+
+anim pain
+	loop	0
+	offset	23 82
+	bbox	6 13 38 72
+	delay	10
+	frame	data/chars/players/axel/pain00.gif
+	frame	data/chars/players/axel/pain01.gif
+
+anim pain2
+	loop	0
+	offset	23 82
+	bbox	6 13 38 72
+	delay	10
+	frame	data/chars/players/axel/pain200.gif
+	frame	data/chars/players/axel/pain201.gif
+
+
+anim fall
+	loop	0
+	offset	35 53
+	delay	40
+	attack	4 8 69 48 12 1
+	frame	data/chars/players/axel/fall00.gif
+	offset	47 36
+	frame	data/chars/players/axel/fall01.gif
+
+anim fall3
+	loop	0
+	offset	35 53
+	delay	40
+	attack	4 8 69 48 12 1
+	frame	data/chars/players/axel/fall705.gif
+	frame	data/chars/players/axel/fall600.gif
+	frame	data/chars/players/axel/fall601.gif
+	frame	data/chars/players/axel/fall602.gif
+
+anim rise
+	loop	0
+	offset	36 53
+	delay	10
+	frame	data/chars/players/axel/Rise00.gif
+	frame	data/chars/players/axel/Rise01.gif
+	frame	data/chars/players/axel/Rise02.gif
+
+
+anim special
+	loop	0
+	delay	8
+	offset	83 118
+	frame	data/chars/players/axel/special00.gif
+	frame	data/chars/players/axel/special01.gif
+	frame	data/chars/players/axel/special02.gif
+	frame	data/chars/players/axel/special03.gif
+	frame	data/chars/players/axel/special04.gif
+	frame	data/chars/players/axel/special05.gif
+	frame	data/chars/players/axel/special06.gif
+	frame	data/chars/players/axel/special07.gif
+
+anim special2
+	loop	0
+	delay	8
+	offset	83 118
+	frame	data/chars/players/axel/special200.gif
+	frame	data/chars/players/axel/special201.gif
+	frame	data/chars/players/axel/special202.gif
+	frame	data/chars/players/axel/special203.gif
+	frame	data/chars/players/axel/special204.gif
+	frame	data/chars/players/axel/special205.gif
+	frame	data/chars/players/axel/special206.gif
+	frame	data/chars/players/axel/special207.gif
+	frame	data/chars/players/axel/special208.gif
+	frame	data/chars/players/axel/special209.gif
+	frame	data/chars/players/axel/special210.gif
+	frame	data/chars/players/axel/special211.gif
+	frame	data/chars/players/axel/special212.gif
+	frame	data/chars/players/axel/special213.gif
+
+
+
+
+anim runattack
+ 	loop	0
+ 	delay	7
+ 	offset	58 125
+ 	bbox	45 69 37 57
+ 	frame	data/chars/players/axel/runatk00.gif
+ 	frame	data/chars/players/axel/runatk01.gif
+ 	frame	data/chars/players/axel/runatk02.gif
+ 	frame	data/chars/players/axel/runatk03.gif
+ 	frame	data/chars/players/axel/runatk04.gif
+ 	frame	data/chars/players/axel/runatk05.gif
+ 	frame	data/chars/players/axel/runatk06.gif
+ 	frame	data/chars/players/axel/runatk07.gif
+
+
+
+
+anim grabattack
+	loop	0
+	offset	36 90
+	bbox	30 15 20 75
+                attack	44 21 31 16 12 0
+	delay	10
+	frame	data/chars/players/axel/fgrabatk00.gif
+                attack	0
+
+
+anim grabattack2
+                loop	0
+	offset	36 86
+	bbox	21 15 37 76
+	delay	10
+	frame	data/chars/players/axel/grabatk00.gif
+	frame	data/chars/players/axel/grabatk01.gif
+	frame	data/chars/players/axel/grabatk02.gif
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	17 62
+	bbox	5 6 35 56
+	frame	data/chars/players/axel/jumpland00.gif
+
+anim attackbackward
+ 	loop	0
+ 	delay	10
+ 	offset	59 83
+ 	bbox	48 5 25 75
+
+ 	frame	data/chars/players/axel/aboth01.gif
+ 	frame	data/chars/players/axel/aboth02.gif
+ 	frame	data/chars/players/axel/aboth03.gif
+
+
+

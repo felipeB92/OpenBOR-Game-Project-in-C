@@ -1,0 +1,11 @@
+name			Truck03 #GROUND
+type			None
+setlayer 4
+
+anim idle
+	loop	1
+	delay	30
+	offset	0 0
+	frame	data/Bgs/St202/tf00.gif
+	frame	data/Bgs/St202/tf01.gif
+

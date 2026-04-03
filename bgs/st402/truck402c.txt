@@ -1,0 +1,143 @@
+name    	Truck402c
+health	 	10
+type    	Enemy
+nomove  	1 1
+noflip 1
+falldie    1
+Notgrab 1
+hostile player
+candamage player
+subject_to_platform 0
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_hole 0
+subject_to_screen 0
+subject_to_gravity 0
+antigravity		100
+setlayer -80
+offscreenkill	1500
+nolife 1
+onblockwscript	data/scripts/bounceF.c
+animationscript 	data/scripts/ani0020.h
+ondrawscript 		data/scripts/player_ondrawscript.c
+
+Load Vice
+Load Slum
+
+
+anim idle
+	loop	0
+		offset  256  178
+		delay  8
+		move  10
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+		move  0
+        Delay   10
+	frame	data/BGS/st402/Truck300.gif
+	frame	data/BGS/st402/Truck300.gif
+        @cmd	shooter2 "Galsia" 90          80       0     0        1         0.5
+	frame	data/BGS/st402/Truck301.gif
+	frame	data/BGS/st402/Truck301.gif
+        @cmd	shooter2 "Vice" 25      80        0     0        1         0.5
+	frame	data/BGS/st402/Truck302.gif
+	frame	data/BGS/st402/Truck302.gif
+        @cmd	shooter2 "Galsia" -35        80        0     0        1         0.5
+	frame	data/BGS/st402/Truck303.gif
+	frame	data/BGS/st402/Truck303.gif
+        @cmd	shooter2 "Slum" -100       80        0     0        1         0.5
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+		move  10
+        Delay   8
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+      @cmd killentity getlocalvar("self")
+	frame	data/BGS/st402/Truck00.gif
+

@@ -1,0 +1,376 @@
+##MAIN
+name				Donovan2_Wait
+type				enemy
+hostile				player npc
+candamage			player npc obstacle
+
+##LIFE
+health				1 #SCRIPT
+
+##POWER
+offense 			1 #SCRIPT
+
+##SPEED
+speed				1 #SCRIPT
+
+##JUMP
+jumpheight 			1 #SCRIPT
+
+##WEIGHT/HEIGHT
+antigravity			-6 #-3/-6/-9
+height				75
+
+##MISC
+jugglepoints		30
+risetime			170
+riseinv				0 1 #HEROES 0.4 - ENEMY 0 - BOSS 0.4
+makeinv				2 0
+atchain				1 1 2
+weapons				none none donovan_pipe none
+gfxshadow			1 1
+dust				dust
+
+##SCRIPTS
+onblockpscript		data/scripts/onblockp/default.c
+onspawnscript		data/scripts/onspawn/donovan.c
+onmodelcopyscript	data/scripts/onmodelcopy/default.c
+animationscript	 	data/scripts/animation/default.c
+
+##ICONS
+icon				data/chars/donovan/icon.gif 1
+
+##DIESOUND
+diesound			data/voices/Die1.wav
+
+##REMAPS
+remap				data/chars/donovan/idle00.gif data/chars/donovan/alter1.gif
+remap				data/chars/donovan/idle00.gif data/chars/donovan/alter2.gif
+remap				data/chars/donovan/idle00.gif data/chars/donovan/alter3.gif
+remap				data/chars/donovan/idle00.gif data/chars/donovan/alter4.gif
+
+##LOADS
+load				donovan_pipe
+
+##ANIMATIONS#############################################################################
+
+anim spawn #WAIT SPAWN
+	loop	0
+	delay	16
+	offset	140 182
+	@cmd aniChange 0 "ANI_FOLLOW1"
+	frame	data/chars/donovan/jumpdelay00.gif
+	
+anim follow1 #WAIT LOOP
+	loop	1
+	delay	16
+	offset	140 182
+	bbox 	127 142 29 41
+	@cmd cancel -999 100 -999 999 -999 999 "ANI_FOLLOW2"
+	frame	data/chars/donovan/jumpdelay00.gif
+	
+anim follow2 #LOOP STOP
+	loop	0
+	delay	16
+	offset	140 182
+	bbox 	128 110 23 74
+	frame	data/chars/donovan/idle00.gif
+	
+anim idle
+	loop	1
+	delay	16
+	offset	140 182
+	bbox 	128 110 23 74
+	@cmd clearL
+	frame	data/chars/donovan/idle00.gif
+	frame	data/chars/donovan/idle01.gif
+	frame	data/chars/donovan/idle02.gif
+	frame	data/chars/donovan/idle01.gif
+
+anim walk
+	loop	1
+	delay	16
+	offset	140 182
+	bbox 	128 110 23 74
+	frame	data/chars/donovan/walk00.gif
+	frame	data/chars/donovan/walk01.gif
+	frame	data/chars/donovan/walk02.gif
+	frame	data/chars/donovan/walk03.gif
+
+anim get
+	loop	0
+	delay	16
+	offset	140 182
+	frame	data/chars/donovan/get00.gif
+
+anim grabbed
+	loop	0
+	delay	8
+	offset	140 182
+	bbox 	128 119 23 64
+	frame	data/chars/donovan/grabbed00.gif
+	
+anim jumpdelay
+	loop	0
+	delay	12
+	offset	140 182
+	bbox 	127 142 29 41
+	frame	data/chars/donovan/jumpdelay00.gif
+	
+anim walkoff
+	loop	0
+	delay	30
+	offset	140 182
+	bbox 	127 111 24 65
+	@cmd jump 1
+	frame	data/chars/donovan/jump00.gif
+	
+anim jumpland
+	loop	0
+	delay	12
+	offset	140 182
+	bbox 	127 142 29 41
+	sound	data/sounds/Jumpland.wav
+	frame	data/chars/donovan/jumpland00.gif
+
+anim pain #UP
+	loop	0
+	delay	4
+	offset	140 182
+	bbox 	121 118 26 66
+	frame	data/chars/donovan/pain00.gif
+	frame	data/chars/donovan/pain01.gif
+	frame	data/chars/donovan/pain00.gif
+	frame	data/chars/donovan/pain01.gif
+	frame	data/chars/donovan/pain00.gif
+	frame	data/chars/donovan/pain01.gif
+	frame	data/chars/donovan/pain00.gif
+	frame	data/chars/donovan/pain01.gif
+	frame	data/chars/donovan/pain00.gif
+	frame	data/chars/donovan/pain01.gif
+	frame	data/chars/donovan/pain00.gif
+	frame	data/chars/donovan/pain01.gif
+
+anim pain2 #DOWN
+	loop	0
+	delay	4
+	offset	140 182
+	bbox 	125 122 32 62
+	frame	data/chars/donovan/pain200.gif
+	frame	data/chars/donovan/pain201.gif
+	frame	data/chars/donovan/pain200.gif
+	frame	data/chars/donovan/pain201.gif
+	frame	data/chars/donovan/pain200.gif
+	frame	data/chars/donovan/pain201.gif
+	frame	data/chars/donovan/pain200.gif
+	frame	data/chars/donovan/pain201.gif
+	frame	data/chars/donovan/pain200.gif
+	frame	data/chars/donovan/pain201.gif
+	frame	data/chars/donovan/pain200.gif
+	frame	data/chars/donovan/pain201.gif
+
+anim fall #NORMAL
+	landframe 1
+	loop	0
+	delay	999
+	offset	140 182
+	bbox 	107 125 39 46
+	frame	data/chars/donovan/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Falling.wav
+	frame	data/chars/donovan/fall01.gif
+
+anim burn #BURNED FALL
+	landframe 2
+	loop	1 0 2
+	delay	3
+	offset	140 182
+	bbox 	107 125 39 46
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	frame	data/chars/donovan/fall00.gif
+	@cmd spawn01 "smoke" 0 50 0
+	drawmethod tintmode 2
+	drawmethod tintcolor 255
+	frame	data/chars/donovan/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	nodrawmethod
+	sound	data/sounds/Falling.wav
+	frame	data/chars/donovan/fall01.gif
+
+anim shock #SHOCKED FALL
+	landframe 2
+	loop	1 0 2
+	delay	3
+	offset	140 182
+	bbox 	107 125 39 46
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame	data/chars/donovan/fall00.gif
+	drawmethod tintmode 2
+	drawmethod tintcolor -255
+	frame	data/chars/donovan/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	nodrawmethod
+	sound	data/sounds/Falling.wav
+	frame	data/chars/donovan/fall01.gif
+	
+anim fall6 #SPIN FALL
+	landframe 4
+	loop	1 0 4
+	delay	3
+	offset	140 182
+	frame	data/chars/donovan/fall600.gif
+	frame	data/chars/donovan/fall601.gif
+	frame	data/chars/donovan/fall602.gif
+	frame	data/chars/donovan/fall603.gif
+		delay	8
+	sound	data/sounds/Falling.wav
+	frame	data/chars/donovan/fall01.gif
+
+anim fall7 #GRABSTART POSITION
+	loop	0
+	delay	1000
+	offset	140 182
+	frame	data/chars/donovan/fall700.gif
+	frame	data/chars/donovan/fall701.gif
+	frame	data/chars/donovan/fall702.gif
+	frame	data/chars/donovan/fall703.gif
+	frame	data/chars/donovan/fall704.gif
+	frame	data/chars/donovan/fall705.gif
+
+anim fall8 #FINISH/THROW TYPE 3
+	landframe 1
+	loop	0
+	delay	999
+	offset	140 182
+	bbox 	107 125 39 46
+	hitfx	data/sounds/MediumKick.wav
+	attack 107 125 39 46 4 1 0 0 0 12
+	frame	data/chars/donovan/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Falling.wav
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/donovan/fall01.gif
+
+anim fall9 #FINISH/THROW TYPE 2
+	landframe 1
+	loop	0
+	delay	999
+	offset	140 182
+	bbox 	121 133 31 48
+	hitfx	data/sounds/MediumKick.wav
+	attack 121 133 31 48 4 1 0 0 0 12
+	frame	data/chars/donovan/fall900.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Falling.wav
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/donovan/fall01.gif
+
+anim rise
+	loop	0
+	delay	16
+	offset	140 182
+	frame	data/chars/donovan/rise00.gif
+	frame	data/chars/donovan/rise01.gif
+	frame	data/chars/donovan/rise00.gif
+	frame	data/chars/donovan/rise02.gif
+
+anim attack1
+	range 20 60
+	rangea 0 0
+	fastattack 1
+	jugglecost 10
+	forcedirection -1
+	loop	0
+	delay	8
+	offset	140 182
+	bbox 	128 110 23 74
+	hitfx	data/sounds/WeakPunch.wav
+	sound	data/sounds/WeakAttack.wav
+	frame	data/chars/donovan/a100.gif
+	bbox 	134 111 24 73
+	frame	data/chars/donovan/a101.gif
+	attack 152 121 46 16 2 0 0 0 10 12
+	frame	data/chars/donovan/a102.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/donovan/a101.gif
+	bbox 	128 110 23 74
+	frame	data/chars/donovan/a100.gif
+
+anim attack2 #UPPER
+	range 20 80
+	rangea 0 200
+	fastattack 1
+	jugglecost 20
+	forcedirection -1
+	loop	0
+	delay	8
+	offset	140 182
+	bbox 	132 108 30 76
+	hitfx	data/sounds/StrongPunch.wav
+	sound	data/sounds/StrongAttack.wav
+	frame	data/chars/donovan/a200.gif
+	bbox 	138 108 24 76
+	attack 156 111 34 29 8 1 0 0 10 12
+	frame	data/chars/donovan/a201.gif
+	attack 146 88 28 29 8 1 0 0 10 12
+	frame	data/chars/donovan/a202.gif
+		delay	16
+	attack 152 88 28 29 8 1 0 0 10 12
+	frame	data/chars/donovan/a203.gif
+		delay	8
+		move  12
+	attack 0 0 0 0 0 0 0 0 0 0
+	bbox 	128 110 23 74
+	frame	data/chars/donovan/a204.gif
+
+anim freespecial #HAMMER
+	range 20 40
+	rangea 0 0
+	fastattack 1
+	jugglecost 10
+	forcedirection -1
+	loop	0
+	delay	8
+	offset	140 182
+	bbox 	119 103 22 81
+	hitfx	data/sounds/StrongPunch.wav
+	sound	data/sounds/StrongAttack.wav
+	frame	data/chars/donovan/a300.gif
+	bbox 	127 103 22 81
+	frame	data/chars/donovan/a301.gif
+	attack 144 122 27 29 8 1 0 0 20 12
+	bbox 	134 118 29 66
+	frame	data/chars/donovan/a302.gif
+		delay	16
+	frame	data/chars/donovan/a303.gif
+	
+anim upper
+	fastattack 1
+	jugglecost 20
+	forcedirection -1
+	loop	0
+	delay	8
+	offset	140 182
+	bbox 	132 108 30 76
+	hitfx	data/sounds/StrongPunch.wav
+	sound	data/sounds/StrongAttack.wav
+	frame	data/chars/donovan/a200.gif
+	bbox 	138 108 24 76
+	attack 156 111 34 29 8 1 0 0 10 12
+	frame	data/chars/donovan/a201.gif
+	attack 146 88 28 29 8 1 0 0 10 12
+	frame	data/chars/donovan/a202.gif
+		delay	16
+	attack 152 88 28 29 8 1 0 0 10 12
+	frame	data/chars/donovan/a203.gif
+		delay	8
+		move  12
+	attack 0 0 0 0 0 0 0 0 0 0
+	bbox 	128 110 23 74
+	frame	data/chars/donovan/a204.gif

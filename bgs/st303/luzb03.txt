@@ -1,0 +1,20 @@
+name			Luzb03 #GROUND
+type			panel
+shadow			0
+speed			5
+scroll			-1.13
+setlayer		1010
+
+anim idle
+	loop	1
+	delay	400
+	offset	0 0
+	frame	data/Bgs/St303/lamps00.gif
+	delay	12
+	frame	data/Bgs/St303/lamps01.gif
+	frame	data/Bgs/St303/lamps02.gif
+	frame	data/Bgs/St303/lamps03.gif
+	frame	data/Bgs/St303/lamps04.gif
+	frame	data/Bgs/St303/lamps05.gif
+	frame	data/Bgs/St303/lamps06.gif
+

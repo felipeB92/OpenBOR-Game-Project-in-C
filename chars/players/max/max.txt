@@ -1,0 +1,488 @@
+name	Max
+health	120
+mp 20
+#mprate 1
+speed	9
+type	player
+gfxshadow	1
+candamage			enemy npc obstacle
+antigrab 2
+riseinv				0.4 1
+JUMPHEIGHT 1 1
+Jumpheight 3
+atchain    1 1 2 3
+weapons				Max_Knife Max_Sword Max_pipe Max_Kunai
+icon	data/chars/players/Max/icon.gif 1
+diesound data/sounds/Maxdie.wav
+running	20	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+animationscript 	data/scripts/ani0020.h
+#ondrawscript 		data/scripts/player_ondrawscript.c
+
+Com d d freespecial5
+Com u u freespecial6
+
+Load T00
+
+
+Load Max_Knife
+Load Max_Pipe
+Load Max_Kunai
+Load Max_Sword
+
+remap data/chars/players/Max/idle00.gif data/chars/players/Max/alter1.gif
+remap data/chars/players/Max/idle00.gif data/chars/players/Max/alter2.gif
+remap data/chars/players/Max/idle00.gif data/chars/players/Max/alter3.gif
+
+
+
+
+
+
+anim idle
+	loop	1
+	delay	21
+	offset	150 190
+	bbox	131 107 40 85
+	frame   data/chars/players/Max/idle00.gif
+	frame   data/chars/players/Max/idle01.gif
+	frame   data/chars/players/Max/idle02.gif
+	frame   data/chars/players/Max/idle03.gif
+
+
+
+anim walk
+	loop	1
+	delay	1
+	offset	150 190
+	bbox	142 107 36 61
+	jumpframe  0  0.001  0.001  0
+	landframe  1
+	frame	data/chars/players/Max/walk00.gif
+	frame	data/chars/players/Max/walk00.gif
+	delay	14
+	frame	data/chars/players/Max/walk00.gif
+	frame	data/chars/players/Max/walk01.gif
+	frame	data/chars/players/Max/walk02.gif
+	frame	data/chars/players/Max/walk03.gif
+	frame	data/chars/players/Max/walk04.gif
+	frame	data/chars/players/Max/walk05.gif
+
+
+anim get
+	loop	0
+	delay	10
+	offset	150 190
+	frame	data/chars/players/Max/get00.gif
+
+
+anim jump
+	loop	0
+	delay	5
+	offset	150 190
+	bbox	139 102 35 46
+	frame	data/chars/players/Max/jump00.gif
+	frame	data/chars/players/Max/jump01.gif
+
+
+
+
+anim jumpattack
+	loop	0
+	delay	7
+	offset	150 190
+	bbox	142 104 32 47
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Max/jumpatk00.gif
+		attack1  157  124  53  33  15  1  0  0  0  20
+		delay  20
+	frame	data/chars/players/Max/jumpatk01.gif
+
+
+
+anim jumpattack2
+	loop	0
+	delay	7
+	offset	150 190
+	bbox	135 113 39 38
+	attack	169 105 23 29 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Max/jumpatk200.gif
+		bbox  113  88  36  36
+		hitfx  data/sounds/golpes/Forte.wav
+		Sound  data/sounds/golpes/Chut.wav
+		attack1  162  141  21  43  7  1
+	frame  data/chars/players/Max/jumpatk201.gif
+
+anim jumpforward
+	loop	0
+	delay	7
+	offset	150 190
+	bbox	123 114 48 44
+	attack	140 141 46 37 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/soco.wav
+	frame	data/chars/players/Max/fjumpatk00.gif
+		attack1  150  131  64  28  10  1
+	frame	data/chars/players/Max/fjumpatk01.gif
+
+
+
+anim runjumpattack
+	loop	0
+	delay	3
+	offset	150 190
+	bbox	139 122 46 39
+	attack	154 144 27 40 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Max/jumpatk201.gif
+
+anim attack1
+	loop	0
+	delay	6
+	offset	150 190
+	bbox	132 104 31 83
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/fraco.wav
+	frame	data/chars/players/Max/a100.gif
+	frame	data/chars/players/Max/a101.gif
+		attack1  156  87  26  42  10  0  0  0  0  10
+	frame	data/chars/players/Max/a102.gif
+		attack1  161  125  50  25  10  0  0  0  0  10
+	frame	data/chars/players/Max/a103.gif
+
+
+anim attack2
+	loop	0
+	delay	6
+	offset	150 190
+	bbox	135 108 31 81
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Medio.wav
+	frame	data/chars/players/Max/a200.gif
+		attack2  135  137  34  19  10  0  0  0  0  10
+		bbox  138  98  33  73
+	frame	data/chars/players/Max/a201.gif
+		attack2  165  128  49  25  10  0  0  0  0  10
+	frame	data/chars/players/Max/a202.gif
+		attack2  160  118  38  15  10  0  0  0  0  10
+	frame	data/chars/players/Max/a203.gif
+		Attack1  0
+	frame	data/chars/players/Max/a204.gif
+
+anim attack3
+	loop	0
+	delay	8
+	offset	150 190
+	bbox	139 109 26 59
+        Sound	data/sounds/golpes/Chut.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/players/Max/a300.gif
+	frame	data/chars/players/Max/a301.gif
+		attack1  168  123  55  37  15  1  0  0  0  10
+	frame	data/chars/players/Max/a302.gif
+		attack1  166  143  39  48  15  1  0  0  0  5
+	frame	data/chars/players/Max/a303.gif
+		Attack1  0
+	frame	data/chars/players/Max/a304.gif
+
+anim run
+        loop    1
+        delay  10
+	offset	150 190
+	bbox	148 106 48 56
+	jumpframe  0  0.001  0.001  0
+	landframe  1
+        frame	data/chars/players/Max/run00.gif
+        frame	data/chars/players/Max/run01.gif
+        frame	data/chars/players/Max/run02.gif
+        frame	data/chars/players/Max/run03.gif
+        frame	data/chars/players/Max/run04.gif
+        frame	data/chars/players/Max/run05.gif
+
+
+
+anim grab
+	loop	0
+	delay	100
+	offset	150 190
+	bbox	139 101 28 79
+        cancel	0 9 0 j freespecial
+	frame	data/chars/players/Max/grab00.gif
+
+
+
+
+anim Freespecial
+	loop	0
+	delay	10
+	offset	150 190
+        cancel	6 9 0 a freespecial2
+        hitfx	data/sounds/efeitos/silencio.wav
+		move  15
+		attack4  161  122  39  68  0  0  0  0  0  20
+	frame	data/chars/players/Max/special00.gif
+		attack4  132  124  31  68  0  0  0  0  0  20
+	frame	data/chars/players/Max/special00.gif
+		Attack1  0
+	frame	data/chars/players/Max/special02.gif
+	frame	data/chars/players/Max/special03.gif
+		move  0
+		delay  1
+	frame	data/chars/players/Max/Grab01.gif
+	frame  data/chars/players/Max/Grab01.gif
+		delay  50
+	frame  data/chars/players/Max/Grab01.gif
+		delay  10
+	frame	data/chars/players/Max/a400.gif
+		attack2  95  121  42  61  15  1  0  0  0  10
+	frame	data/chars/players/Max/a401.gif
+		Attack1  0
+	frame	data/chars/players/Max/a400.gif
+
+
+
+anim Freespecial2
+	loop	0
+	delay	10
+	offset	150 190
+        hitfx	data/sounds/efeitos/silencio.wav
+	Sound	data/chars/players/Max/Max2.wav
+		attack5  110  124  47  65  30  0  0  0  0  1
+	frame	data/chars/players/Max/slam200.gif
+		Attack1  0
+	frame	data/chars/players/Max/slam201.gif
+	frame	data/chars/players/Max/slam202.gif
+		delay  30
+		attack1  176  170  75  23  10  1  0  0  0  20
+	frame	data/chars/players/Max/slam203.gif
+		delay  10
+		Attack1  0
+	frame	data/chars/players/Max/slam204.gif
+
+anim Freespecial5
+	loop	0
+	delay	10
+        offset	150 190
+	frame	data/chars/players/Max/get00.gif
+        Movez 7
+        Move 2
+	delay	5
+	frame	data/chars/players/Max/dodge01.gif
+	frame	data/chars/players/Max/dodge02.gif
+	frame	data/chars/players/Max/dodge03.gif
+	frame	data/chars/players/Max/dodge04.gif
+        Movez 0
+        Move 0
+	delay	10
+	frame	data/chars/players/Max/get00.gif
+
+anim Freespecial6
+	loop	0
+	delay	10
+        offset	150 190
+	frame	data/chars/players/Max/dodge00.gif
+        Movez -7
+        Move 2
+	delay	5
+	frame	data/chars/players/Max/dodge01.gif
+	frame	data/chars/players/Max/dodge02.gif
+	frame	data/chars/players/Max/dodge03.gif
+	frame	data/chars/players/Max/dodge04.gif
+        Moveza 0
+        Movea 0
+	delay	10
+	frame	data/chars/players/Max/dodge05.gif
+
+anim throw
+	loop	0
+	delay	10
+	offset	150 190
+	Sound	data/chars/players/Max/Max1.wav
+	frame	data/chars/players/Max/throw00.gif
+	@cmd  spawn01  "T00"  0  0  0
+	frame	data/chars/players/Max/throw01.gif
+		Attack1  0
+	frame	data/chars/players/Max/throw02.gif
+	frame	data/chars/players/Max/throw02.gif
+	frame	data/chars/players/Max/Get00.gif
+
+
+
+anim pain
+	loop	0
+	offset	150 190
+	bbox	142 109 28 83
+	delay	15
+	frame	data/chars/players/Max/pain00.gif
+	frame	data/chars/players/Max/pain01.gif
+
+anim pain2
+	loop	0
+	offset	150 190
+	bbox	125 120 56 41
+	delay	15
+	frame	data/chars/players/Max/pain200.gif
+		bbox  121  106  36  55
+	frame	data/chars/players/Max/pain201.gif
+
+
+anim fall
+	loop	0
+	offset	150 190
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/players/Max/fall00.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/players/Max/fall00.gif
+		Attack1  0
+		offset  150  188
+	frame	data/chars/players/Max/fall01.gif
+
+anim fall3
+	loop	0
+	offset	150 185
+	delay	10
+	attack	123 106 40 55 12 1
+		bbox  124  106  37  55
+	frame	data/chars/players/Max/fall705.gif
+	frame	data/chars/players/Max/fall600.gif
+	frame	data/chars/players/Max/fall601.gif
+	frame	data/chars/players/Max/fall602.gif
+		Attack1  0
+		bbox  0
+	frame  data/chars/players/Max/fall01.gif
+
+anim rise
+	loop	0
+	offset	150 190
+	delay	10
+	frame	data/chars/players/Max/Rise00.gif
+	frame	data/chars/players/Max/Rise01.gif
+	frame	data/chars/players/Max/Rise02.gif
+
+
+anim special
+        energycost 20 1
+        MpOnly 1
+	loop	0
+	delay	8
+	offset	150 190
+        hitfx	data/sounds/golpes/forte.wav
+		attack1  0  0  0  0  25  0
+	Sound	data/chars/players/Max/Max2.wav
+		move  0
+	frame	data/chars/players/Max/special00.gif
+		attack3  157  126  50  33  35  1  0  0  0  20
+	frame	data/chars/players/Max/special01.gif
+		Attack1  0
+	frame	data/chars/players/Max/special02.gif
+		attack3  83  121  53  42  35  1  0  0  0  20
+	frame	data/chars/players/Max/special03.gif
+		attack3  125  113  53  26  35  1  0  0  0  20
+	frame	data/chars/players/Max/special04.gif
+		Attack1  0
+	frame	data/chars/players/Max/special05.gif
+
+anim special2
+        energycost 20 1
+        MpOnly 1
+	loop	0
+	delay	8
+	offset	150 190
+        hitfx	data/sounds/golpes/forte.wav
+	Sound	data/chars/players/Max/Max2.wav
+		Attack1  0
+	frame	data/chars/players/Max/special200.gif
+		attack3  160  113  48  50  35  1  0  0  0  20
+		move  10
+	frame	data/chars/players/Max/special201.gif
+	frame	data/chars/players/Max/special202.gif
+	frame	data/chars/players/Max/special203.gif
+		Attack1  0
+	frame	data/chars/players/Max/special204.gif
+	frame	data/chars/players/Max/special205.gif
+	frame	data/chars/players/Max/special206.gif
+	frame	data/chars/players/Max/special207.gif
+	frame	data/chars/players/Max/special208.gif
+
+
+
+anim runattack
+ 	loop	0
+ 	delay	8
+ 	offset	150 190
+ 	bbox	129 129 35 46
+		move  5
+        hitfx	data/sounds/golpes/forte.wav
+	Sound	data/chars/players/Max/Max2.wav
+		Attack1  0
+ 	frame	data/chars/players/Max/slide00.gif
+		attack2  169  151  64  39  20  1  0  0  0  20
+		move  10
+ 	frame	data/chars/players/Max/slide01.gif
+	frame  data/chars/players/Max/slide01.gif
+	frame  data/chars/players/Max/slide01.gif
+ 	frame	data/chars/players/Max/slide01.gif
+ 	frame	data/chars/players/Max/slide01.gif
+ 	frame	data/chars/players/Max/slide02.gif
+
+
+
+anim grabattack
+	loop	0
+	offset	150 190
+	bbox	139 101 40 74
+	delay	10
+        hitfx	data/sounds/golpes/fraco.wav
+        Sound	data/sounds/golpes/Chut.wav
+		Attack1  0
+	frame	data/chars/players/Max/fgrabatk01.gif
+		attack2  161  123  43  51  5  0
+	frame	data/chars/players/Max/fgrabatk00.gif
+		Attack1  0
+	frame	data/chars/players/Max/fgrabatk01.gif
+
+
+anim grabattack2
+                loop	0
+	offset	150 190
+	bbox	144 118 26 55
+	delay	10
+		Attack1  0
+        hitfx	data/sounds/golpes/Forte.wav
+	Sound	data/chars/players/Max/Max1.wav
+	frame	data/chars/players/Max/fgrabatk200.gif
+	frame	data/chars/players/Max/fgrabatk201.gif
+		attack1  153  122  43  29  15  1  0  0  0  20
+	frame	data/chars/players/Max/fgrabatk202.gif
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	150 190
+	bbox	144 123 26 39
+	frame	data/chars/players/Max/jumpland00.gif
+
+anim attackbackward
+ 	loop	0
+ 	delay	10
+ 	offset	150 190
+ 	bbox	141 108 37 60
+        hitfx	data/sounds/golpes/Medio.wav
+        Sound	data/sounds/golpes/soco.wav
+ 	frame	data/chars/players/Max/aboth01.gif
+		attack1  100  139  52  32  10  1  0  0  0  20
+ 	frame	data/chars/players/Max/aboth02.gif
+		Attack1  0
+ 	frame	data/chars/players/Max/aboth03.gif
+

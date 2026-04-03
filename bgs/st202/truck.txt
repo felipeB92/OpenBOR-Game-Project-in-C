@@ -1,0 +1,20 @@
+name			st2_truck
+type			panel
+shadow			0
+speed			5
+scroll			-0.5
+setlayer		-10
+animationscript data/scripts/animation/default.c
+
+anim idle
+	loop	1 1 5
+	delay	6
+	offset	1 180
+	@cmd spawn01 "quakelow" 0 0 0
+	@cmd samplePlay "data/sounds/truck.wav" 1
+	frame	data/bgs/sor2_st2/truck00.gif
+	@cmd spawn01 "quakelow" 0 0 0
+	frame	data/bgs/sor2_st2/truck00.gif
+	frame	data/bgs/sor2_st2/truck01.gif
+	frame	data/bgs/sor2_st2/truck00.gif
+	frame	data/bgs/sor2_st2/truck01.gif

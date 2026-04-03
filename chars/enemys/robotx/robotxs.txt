@@ -1,0 +1,27 @@
+##MAIN
+name				RobotxS
+type				none
+
+##MISC
+antigravity			100
+
+##SCRIPTS
+ondrawscript		data/scripts/ondraw/channel.c
+
+##REMAPS
+remap				data/chars/robotx/idle00.gif data/chars/robotx/alter1.gif
+remap				data/chars/robotx/idle00.gif data/chars/robotx/alter2.gif
+remap				data/chars/robotx/idle00.gif data/chars/robotx/alter3.gif
+
+##ANIMATIONS#############################################################################
+	
+anim freespecial5 #RAGE
+	loop	0
+	delay	1000
+	offset	136 176
+	frame	data/chars/robotx/rage00.gif
+	frame	data/chars/robotx/rage01.gif
+	frame	data/chars/robotx/rage02.gif
+	frame	data/chars/robotx/rage01.gif
+	frame	data/chars/robotx/rage02.gif
+	frame	data/chars/robotx/rage01.gif

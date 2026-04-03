@@ -1,0 +1,12 @@
+name		BAr00
+type		none
+shadow		0
+antigravity	100
+setlayer	5
+
+anim idle
+	loop	1
+	delay	4
+	offset	1 1
+	frame	data/bgs/st302/bar00.gif
+	frame	data/bgs/st302/bar01.gif

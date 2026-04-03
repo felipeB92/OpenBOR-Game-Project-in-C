@@ -1,0 +1,25 @@
+name		st5_lights
+type		none
+shadow		0
+antigravity	100
+
+anim idle
+	loop	1
+	delay	4
+	offset	1 180
+	frame	data/bgs/sor3_st5/lights00.gif
+	frame	data/bgs/sor3_st5/lights01.gif
+	frame	data/bgs/sor3_st5/lights00.gif
+	frame	data/bgs/sor3_st5/lights01.gif
+	frame	data/bgs/sor3_st5/lights00.gif
+	frame	data/bgs/sor3_st5/lights01.gif
+	frame	data/bgs/sor3_st5/lights00.gif
+	frame	data/bgs/sor3_st5/lights01.gif
+	frame	data/bgs/sor3_st5/lights02.gif
+	frame	data/bgs/sor3_st5/lights03.gif
+	frame	data/bgs/sor3_st5/lights02.gif
+	frame	data/bgs/sor3_st5/lights03.gif
+	frame	data/bgs/sor3_st5/lights02.gif
+	frame	data/bgs/sor3_st5/lights03.gif
+	frame	data/bgs/sor3_st5/lights02.gif
+	frame	data/bgs/sor3_st5/lights03.gif

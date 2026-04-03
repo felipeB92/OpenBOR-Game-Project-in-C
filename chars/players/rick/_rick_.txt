@@ -1,0 +1,389 @@
+name	_Rick_
+alias Rick
+health	100
+mp 20
+#mprate 1
+speed	8
+type	player
+secret				0 1
+riseinv				0.4 1
+gfxshadow	1
+candamage			enemy npc obstacle
+antigrab 2
+JUMPHEIGHT 1 1
+Jumpheight 3
+atchain    1 1 2 3
+weapons				_RickM_ _RickM_ _RickM_ _RickM_
+icon	data/chars/Enemys/Rick/iconP.gif
+diesound data/sounds/Rickdie.wav
+running	25	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+animationscript 	data/scripts/ani0020.h
+#ondrawscript 		data/scripts/player_ondrawscript.c
+
+Load T00
+Load _RickM_
+
+Com d d freespecial5
+Com u u freespecial6
+
+
+
+remap data/chars/Enemys/Rick/idle00.gif data/chars/Enemys/Rick/alter1.gif
+remap data/chars/Enemys/Rick/idle00.gif data/chars/Enemys/Rick/alter2.gif
+remap data/chars/Enemys/Rick/idle00.gif data/chars/Enemys/Rick/alter3.gif
+
+
+
+anim idle
+	loop	1
+	delay	25
+	offset	147 192
+	bbox	130 118 35 71
+	frame   data/chars/Enemys/Rick/idle00.gif
+	frame   data/chars/Enemys/Rick/idle01.gif
+	frame   data/chars/Enemys/Rick/idle02.gif
+	frame   data/chars/Enemys/Rick/idle01.gif
+
+
+anim walk
+	loop	1
+	delay	1
+	offset	147 195
+	bbox	134 112 26 83
+	jumpframe  0  0.001  0.001  0
+	landframe  1
+	frame	data/chars/Enemys/Rick/walk00.gif
+	frame	data/chars/Enemys/Rick/walk00.gif
+	delay	14
+	frame	data/chars/Enemys/Rick/walk00.gif
+	frame	data/chars/Enemys/Rick/walk01.gif
+	frame	data/chars/Enemys/Rick/walk02.gif
+	frame	data/chars/Enemys/Rick/walk03.gif
+	frame	data/chars/Enemys/Rick/walk04.gif
+	frame	data/chars/Enemys/Rick/walk05.gif
+	frame	data/chars/Enemys/Rick/walk04.gif
+	frame	data/chars/Enemys/Rick/walk03.gif
+
+
+anim get
+	loop	0
+	delay	10
+	offset	150 194
+	frame	data/chars/Enemys/Rick/get00.gif
+
+
+anim jump
+	loop	0
+	delay	5
+	offset	138 203
+	bbox	116 104 50 70
+	frame	data/chars/Enemys/Rick/jump00.gif
+	frame	data/chars/Enemys/Rick/jump01.gif
+
+
+
+
+anim jumpattack
+	loop	0
+	delay	30
+	offset	138 192
+	bbox	120 110 38 54
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+		attack1  144  128  69  34  10  1  0  0  0  15
+	frame	data/chars/Enemys/Rick/jumpattack00.gif
+
+
+
+anim jumpattack2
+	loop	0
+	delay	7
+	offset	151 190
+	bbox	136 120 47 51
+	attack	144 129 69 28 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/Enemys/Rick/jumpattack00.gif
+
+anim jumpforward
+	loop	0
+	delay	7
+	offset	146 171
+	bbox	123 113 43 43
+	attack	138 124 76 32 10 1  0  0  0  15
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/soco.wav
+	frame	data/chars/Enemys/Rick/jumpattack00.gif
+
+
+anim attack1
+	loop	0
+	delay	6
+	offset	149 192
+	bbox	136 111 28 82
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/fraco.wav
+	frame	data/chars/Enemys/Rick/a100.gif
+		attack1  163  123  50  29  7  0  0  0  0  5
+	frame	data/chars/Enemys/Rick/a101.gif
+		Attack1  0
+		delay  3
+	frame	data/chars/Enemys/Rick/a100.gif
+
+
+anim attack2
+	loop	0
+	delay	6
+	offset	153 192
+	bbox	131 118 34 74
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Medio.wav
+	frame	data/chars/Enemys/Rick/a200.gif
+		attack2  155  135  63  34  7  0  0  0  0  5
+		delay  10
+	frame	data/chars/Enemys/Rick/a201.gif
+		Attack1  0
+		delay  3
+	frame	data/chars/Enemys/Rick/a200.gif
+
+anim attack3
+	loop	0
+	delay	8
+	offset	138 192
+	bbox	126 114 25 78
+        Sound	data/sounds/golpes/Chut.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/Enemys/Rick/a300.gif
+		attack1  161  87  33  69  10  1  0  0  0  15
+		delay  20
+	frame	data/chars/Enemys/Rick/a301.gif
+
+
+
+
+
+
+anim grab
+	loop	0
+	delay	100
+	offset	151 192
+	bbox	133 115 37 77
+        cancel	0 9 0 j freespecial
+	frame	data/chars/Enemys/Rick/grab00.gif
+
+anim throw
+	loop	0
+	delay	10
+	offset	153 192
+	sound	data/voices/Rick1.wav
+	frame	data/chars/Enemys/Rick/throw01.gif
+	@cmd  spawn01  "T00"  0  0  0
+	frame	data/chars/Enemys/Rick/throw03.gif
+		Attack1  0
+	frame	data/chars/Enemys/Rick/throw02.gif
+	frame	data/chars/Enemys/Rick/throw02.gif
+	frame  data/chars/Enemys/Rick/throw01.gif
+
+
+
+anim Freespecial5
+	loop	0
+	delay	10
+        offset	144 192
+	frame	data/chars/Enemys/Rick/Jumpland00.gif
+        Movez 7
+        Move 2
+	delay	5
+	frame	data/chars/Enemys/Rick/jump00.gif
+	frame	data/chars/Enemys/Rick/jump01.gif
+	frame	data/chars/Enemys/Rick/jump01.gif
+	frame	data/chars/Enemys/Rick/jump01.gif
+        Movez 0
+        Move 0
+	delay	10
+	frame	data/chars/Enemys/Rick/get00.gif
+
+anim Freespecial6
+	loop	0
+	delay	10
+        offset	145 192
+	frame	data/chars/Enemys/Rick/Jumpland00.gif
+        Movez -7
+        Move 2
+	delay	5
+	frame	data/chars/Enemys/Rick/jump00.gif
+	frame	data/chars/Enemys/Rick/jump01.gif
+	frame	data/chars/Enemys/Rick/jump01.gif
+	frame	data/chars/Enemys/Rick/jump01.gif
+        Movez 0
+        Move 0
+	delay	10
+	frame	data/chars/Enemys/Rick/get00.gif
+
+
+
+
+anim pain
+	loop	0
+	offset	142 187
+	bbox	117 110 39 76
+	delay	15
+	frame	data/chars/Enemys/Rick/pain00.gif
+	frame	data/chars/Enemys/Rick/pain01.gif
+
+anim pain2
+	loop	0
+	offset	149 179
+	bbox	131 107 35 74
+	delay	15
+	frame	data/chars/Enemys/Rick/pain200.gif
+	frame	data/chars/Enemys/Rick/pain201.gif
+
+
+anim fall
+	loop	0
+	offset	146 162
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Rick/fall00.gif
+		attack  30
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Rick/fall00.gif
+		Attack1  0
+		offset  146  192
+	frame	data/chars/Enemys/Rick/fall01.gif
+
+anim fall3
+	loop	0
+	offset	142 185
+	delay	10
+	attack	111 122 59 52 12 1
+		bbox  112  121  56  53
+	frame	data/chars/Enemys/Rick/fall705.gif
+	frame	data/chars/Enemys/Rick/fall600.gif
+	frame	data/chars/Enemys/Rick/fall601.gif
+	frame	data/chars/Enemys/Rick/fall602.gif
+		Attack1  0
+		bbox  0
+		offset  142  193
+	frame  data/chars/Enemys/Rick/fall01.gif
+
+anim rise
+	loop	0
+	offset	138 192
+	delay	10
+	frame	data/chars/Enemys/Rick/Rise00.gif
+	frame	data/chars/Enemys/Rick/Rise01.gif
+		offset  146  198
+	frame	data/chars/Enemys/Rick/Rise02.gif
+
+
+anim special
+        energycost 20 1
+        MpOnly 1
+	loop	0
+	delay	7
+	offset	138 192
+        hitfx	data/sounds/golpes/forte.wav
+        sound	data/voices/Rick1.wav
+		Attack1  0
+	frame	data/chars/Enemys/Rick/special00.gif
+		attack3  129  106  70  44  25  1  0  0  0  15
+	frame	data/chars/Enemys/Rick/special01.gif
+		attack3  127  105  43  58  25  1  0  0  0  20
+	frame	data/chars/Enemys/Rick/special02.gif
+		attack3  92  118  59  46  25  1  0  0  0  20
+	frame	data/chars/Enemys/Rick/special03.gif
+		attack3  117  140  29  39  25  1  0  0  0  20
+	frame	data/chars/Enemys/Rick/special04.gif
+
+
+
+anim special2
+        energycost 20 1
+        MpOnly 1
+	loop	0
+	delay	7
+	offset	138 192
+        hitfx	data/sounds/golpes/forte.wav
+        sound	data/voices/Rick1.wav
+		Attack1  0
+	frame	data/chars/Enemys/Rick/special00.gif
+		attack3  151  107  50  50  25  1  0  0  0  15
+	frame	data/chars/Enemys/Rick/special01.gif
+		attack3  132  111  41  58  25  1  0  0  0  20
+	frame	data/chars/Enemys/Rick/special02.gif
+		attack3  92  119  54  43  25  1  0  0  0  20
+	frame	data/chars/Enemys/Rick/special03.gif
+		attack3  115  144  30  42  25  1  0  0  0  20
+	frame	data/chars/Enemys/Rick/special04.gif
+		offset  152  194
+		Attack1  0
+	frame	data/chars/Enemys/Rick/get00.gif
+
+
+
+
+
+
+
+
+anim grabattack
+	loop	0
+	offset	153 194
+	bbox	134 114 38 83
+	delay	5
+        hitfx	data/sounds/golpes/fraco.wav
+		Attack1  0
+	frame	data/chars/Enemys/Rick/a200.gif
+		attack2  157  127  62  45  7  0  0  0  0  15
+		delay  10
+	frame	data/chars/Enemys/Rick/a201.gif
+		bbox  134  114  38  83
+		delay  5
+		hitfx  data/sounds/golpes/fraco.wav
+		Attack1  0
+	frame  data/chars/Enemys/Rick/a200.gif
+
+
+anim grabattack2
+                loop	0
+	offset	157 189
+	bbox	124 110 42 87
+	delay	6
+		Attack1  0
+        hitfx	data/sounds/golpes/Forte.wav
+	Sound	data/chars/Enemys/Rick/Rick1.wav
+	frame	data/chars/Enemys/Rick/grabattack00.gif
+		attack1  147  115  41  54  15  1  0  0  0  15
+	frame	data/chars/Enemys/Rick/grabattack01.gif
+		delay  30
+	frame	data/chars/Enemys/Rick/grabattack01.gif
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	145 192
+	bbox	125 123 41 69
+	frame	data/chars/Enemys/Rick/jumpland00.gif
+
+anim attackbackward
+ 	loop	0
+ 	delay	10
+ 	offset	138 192
+ 	bbox	127 111 25 84
+        hitfx	data/sounds/golpes/Medio.wav
+        Sound	data/sounds/golpes/soco.wav
+ 	frame	data/chars/Enemys/Rick/special04.gif
+		attack1  95  123  46  33  10  1  0  0  0  20
+		bbox  129  109  32  79
+ 	frame	data/chars/Enemys/Rick/special03.gif
+		Attack1  0
+ 	frame	data/chars/Enemys/Rick/special04.gif
+

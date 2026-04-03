@@ -1,0 +1,124 @@
+##MAIN
+name				YamatoS
+type				none
+
+##MISC
+antigravity			100
+
+##SCRIPTS
+ondrawscript		data/scripts/ondraw/channel.c
+
+##REMAPS
+remap				data/chars/yamato/idle00.gif data/chars/yamato/alter1.gif
+remap				data/chars/yamato/idle00.gif data/chars/yamato/alter2.gif
+remap				data/chars/yamato/idle00.gif data/chars/yamato/alter3.gif
+remap				data/chars/yamato/idle00.gif data/chars/yamato/alter4.gif
+remap				data/chars/yamato/idle00.gif data/chars/yamato/alter5.gif
+
+##ANIMATIONS#############################################################################
+
+anim idle #SPAWN BROTHERS
+	loop	0
+	delay	1000
+	offset	157 180
+	frame	data/chars/yamato/spin00.gif
+
+anim freespecial2 #DOUBLE SLASH DOWN
+	loop	0
+	delay	1000
+	offset	157 180
+	frame	data/chars/yamato/spin00.gif
+	frame	data/chars/yamato/spin00.gif
+	frame	data/chars/yamato/spin00.gif
+	frame	data/chars/yamato/spin00.gif
+	frame	data/chars/yamato/spin00.gif
+	frame	data/chars/yamato/spin00.gif
+	frame	data/chars/yamato/a200.gif
+	frame	data/chars/yamato/a201.gif
+	frame	data/chars/yamato/a202.gif
+	frame	data/chars/yamato/a203.gif
+	frame	data/chars/yamato/a204.gif
+	frame	data/chars/yamato/spin00.gif
+	frame	data/chars/yamato/spin00.gif
+	frame	data/chars/yamato/spin00.gif
+	frame	data/chars/yamato/spin00.gif
+	frame	data/chars/yamato/spin00.gif
+	
+anim freespecial3 #DOUBLE SLASH UP
+	loop	0
+	delay	1000
+	offset	157 180
+	frame	data/chars/yamato/spin00.gif
+	frame	data/chars/yamato/spin00.gif
+	frame	data/chars/yamato/spin00.gif
+	frame	data/chars/yamato/spin00.gif
+	frame	data/chars/yamato/spin00.gif
+	frame	data/chars/yamato/spin00.gif
+	frame	data/chars/yamato/a200.gif
+	frame	data/chars/yamato/a201.gif
+	frame	data/chars/yamato/a202.gif
+	frame	data/chars/yamato/a203.gif
+	frame	data/chars/yamato/a204.gif
+	frame	data/chars/yamato/spin00.gif
+	frame	data/chars/yamato/spin00.gif
+	frame	data/chars/yamato/spin00.gif
+	frame	data/chars/yamato/spin00.gif
+	frame	data/chars/yamato/spin00.gif
+	
+anim freespecial5 #DASH
+	loop	0
+	delay	1000
+	offset	157 180
+	drawmethod alpha 6
+	frame	data/chars/yamato/spin00.gif
+	frame	data/chars/yamato/run00.gif
+	frame	data/chars/yamato/run01.gif
+	frame	data/chars/yamato/run02.gif
+	frame	data/chars/yamato/run01.gif
+	frame	data/chars/yamato/run00.gif
+	frame	data/chars/yamato/run01.gif
+	frame	data/chars/yamato/run02.gif
+	frame	data/chars/yamato/run01.gif
+	frame	data/chars/yamato/run00.gif
+	frame	data/chars/yamato/run01.gif
+	frame	data/chars/yamato/run02.gif
+	frame	data/chars/yamato/run01.gif
+	frame	data/chars/yamato/run00.gif
+	frame	data/chars/yamato/run01.gif
+	frame	data/chars/yamato/run02.gif
+	frame	data/chars/yamato/run01.gif
+	
+anim special2 #DASH
+	loop	0
+	delay	1000
+	offset	157 180
+	frame	data/chars/yamato/spin00.gif
+	frame	data/chars/yamato/run00.gif
+	frame	data/chars/yamato/run01.gif
+	frame	data/chars/yamato/run02.gif
+	frame	data/chars/yamato/run01.gif
+	frame	data/chars/yamato/run00.gif
+	frame	data/chars/yamato/run01.gif
+	frame	data/chars/yamato/run02.gif
+	frame	data/chars/yamato/run01.gif
+	frame	data/chars/yamato/run00.gif
+	frame	data/chars/yamato/run01.gif
+	frame	data/chars/yamato/run02.gif
+	frame	data/chars/yamato/run01.gif
+	frame	data/chars/yamato/run00.gif
+	frame	data/chars/yamato/run01.gif
+	frame	data/chars/yamato/run02.gif
+	frame	data/chars/yamato/run01.gif
+	
+anim freespecial6 #RAGE
+	loop	0
+	delay	1000
+	offset	157 180
+	frame	data/chars/yamato/spin00.gif
+	frame	data/chars/yamato/spin00.gif
+	frame	data/chars/yamato/spin00.gif
+	frame	data/chars/yamato/spin00.gif
+	frame	data/chars/yamato/spin00.gif
+	frame	data/chars/yamato/spin00.gif
+	frame	data/chars/yamato/spin00.gif
+	frame	data/chars/yamato/spin00.gif

@@ -1,0 +1,594 @@
+##MAIN
+name				Barbon2
+type				enemy
+hostile				player npc
+candamage			player npc obstacle
+
+##LIFE
+health				1 #SCRIPT
+
+##POWER
+offense 			1 #SCRIPT
+
+##SPEED
+speed				1 #SCRIPT
+
+##JUMP
+jumpheight 			1 #SCRIPT
+
+##ENERGY
+mp					120
+mprate  			1 #SCRIPT
+
+##GRAB
+grabdistance 		39 #36/33/30
+grabfinish 			1 #PLAYER=0/ENEMY=1
+
+##WEIGHT/HEIGHT
+antigravity			-6 #-3/-6/-9
+height				84
+
+##MISC
+jugglepoints		30
+guardpoints			20
+guardrate			4
+risetime			170
+riseinv				0.4 1 #HEROES 0.4 - ENEMY 0 - BOSS 0.4
+makeinv				2 0
+atchain				1 1 1 2
+weapons				none none none none
+gfxshadow			1 1
+dust				dust
+aimove				avoidz #ENEMY ONLY
+blockodds 			1
+bflash				block
+nopassiveblock		1
+
+##SCRIPTS
+didblockscript		data/scripts/didblock/default.c
+didhitscript		data/scripts/didhit/default.c
+onblockpscript		data/scripts/onblockp/default.c
+ondrawscript		data/scripts/ondraw/barbon.c
+onspawnscript		data/scripts/onspawn/barbon.c
+animationscript	 	data/scripts/animation/default.c
+takedamagescript	data/scripts/takedamage/default.c
+
+##ICONS
+icon				data/chars/barbon/icon.gif 1
+
+##DIESOUND
+diesound			data/voices/BossDie1.wav
+
+##REMAPS
+remap				data/chars/barbon/idle00.gif data/chars/barbon/alter1.gif
+remap				data/chars/barbon/idle00.gif data/chars/barbon/alter2.gif
+remap				data/chars/barbon/idle00.gif data/chars/barbon/alter3.gif
+
+##ANIMATIONS#############################################################################
+
+anim spawn
+	loop	0
+	delay	1
+	offset	143 192
+	frame	data/chars/barbon/idle00.gif
+
+anim idle
+	loop	1
+	delay	16
+	offset	143 192
+	bbox 	128 112 32 82
+	@cmd clearL
+	frame	data/chars/barbon/idle00.gif
+	frame	data/chars/barbon/idle01.gif
+	frame	data/chars/barbon/idle02.gif
+	frame	data/chars/barbon/idle01.gif
+	
+anim walk
+	loop	1
+	delay	16
+	offset	143 192
+	bbox 	128 112 32 82
+	frame	data/chars/barbon/walk00.gif
+	frame	data/chars/barbon/walk01.gif
+	frame	data/chars/barbon/walk02.gif
+	frame	data/chars/barbon/walk01.gif
+
+anim get
+	loop	0
+	delay	16
+	offset	143 192
+	frame	data/chars/barbon/get00.gif
+	
+anim grab
+	loop	0
+	delay	16
+	offset	143 192
+	bbox 	128 110 33 84
+	frame	data/chars/barbon/grab00.gif
+	
+anim grabbed
+	loop	0
+	delay	8
+	offset	143 192
+	bbox 	132 118 35 76
+	frame	data/chars/barbon/grabbed00.gif
+	
+anim jumpdelay
+	loop	0
+	delay	12
+	offset	143 192
+	bbox 	138 129 30 65
+	frame	data/chars/barbon/jumpdelay00.gif
+	
+anim walkoff
+	loop	0
+	delay	12
+	offset	143 192
+	bbox 	126 126 22 68
+	@cmd jump 1
+	frame	data/chars/barbon/jump00.gif
+	
+anim jumpland
+	loop	0
+	delay	12
+	offset	143 192
+	bbox 	138 129 30 65
+	sound	data/sounds/Jumpland.wav
+	frame	data/chars/barbon/jumpland00.gif
+	
+anim guardbreak
+	loop	0
+	delay	4
+	offset	143 192
+	bbox 	132 118 35 76
+	@cmd spawnBind "guardbreak" 0 50 0
+	drawmethod tintmode 6
+	drawmethod tintcolor 0
+	frame	data/chars/barbon/grabbed00.gif
+	nodrawmethod
+	frame	data/chars/barbon/grabbed01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 0
+	frame	data/chars/barbon/grabbed00.gif
+	nodrawmethod
+	frame	data/chars/barbon/grabbed01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 0
+	frame	data/chars/barbon/grabbed00.gif
+	nodrawmethod
+	frame	data/chars/barbon/grabbed01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 0
+	frame	data/chars/barbon/grabbed00.gif
+	nodrawmethod
+	frame	data/chars/barbon/grabbed01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 0
+	frame	data/chars/barbon/grabbed00.gif
+	nodrawmethod
+	frame	data/chars/barbon/grabbed01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 0
+	frame	data/chars/barbon/grabbed00.gif
+	nodrawmethod
+	frame	data/chars/barbon/grabbed01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 0
+	frame	data/chars/barbon/grabbed00.gif
+	nodrawmethod
+	frame	data/chars/barbon/grabbed01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 0
+	frame	data/chars/barbon/grabbed00.gif
+	nodrawmethod
+	frame	data/chars/barbon/grabbed01.gif
+
+anim pain #UP
+	loop	0
+	delay	4
+	offset	143 192
+	bbox 	119 107 32 87
+	frame	data/chars/barbon/pain00.gif
+	frame	data/chars/barbon/pain01.gif
+	frame	data/chars/barbon/pain00.gif
+	frame	data/chars/barbon/pain01.gif
+	frame	data/chars/barbon/pain00.gif
+	frame	data/chars/barbon/pain01.gif
+	frame	data/chars/barbon/pain00.gif
+	frame	data/chars/barbon/pain01.gif
+
+anim pain2 #DOWN
+	loop	0
+	delay	4
+	offset	143 192
+	bbox 	125 120 32 73
+	frame	data/chars/barbon/pain200.gif
+	frame	data/chars/barbon/pain201.gif
+	frame	data/chars/barbon/pain200.gif
+	frame	data/chars/barbon/pain201.gif
+	frame	data/chars/barbon/pain200.gif
+	frame	data/chars/barbon/pain201.gif
+	frame	data/chars/barbon/pain200.gif
+	frame	data/chars/barbon/pain201.gif
+	
+anim fall #NORMAL
+	landframe 1
+	loop	0
+	delay	999
+	offset	143 192
+	bbox 	118 116 56 43
+	frame	data/chars/barbon/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Falling.wav
+	frame	data/chars/barbon/fall01.gif
+	
+anim burn #BURNED FALL
+	landframe 2
+	loop	1 0 2
+	delay	3
+	offset	143 192
+	bbox 	118 116 56 43
+	drawmethod tintmode 6	
+	drawmethod tintcolor 255
+	frame	data/chars/barbon/fall00.gif
+	@cmd spawn01 "smoke" 0 50 0
+	drawmethod tintmode 2	
+	drawmethod tintcolor 255
+	frame	data/chars/barbon/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	nodrawmethod
+	sound	data/sounds/Falling.wav
+	frame	data/chars/barbon/fall01.gif
+	
+anim shock #SHOCKED FALL
+	landframe 2
+	loop	1 0 2
+	delay	3
+	offset	143 192
+	bbox 	118 116 56 43
+	drawmethod tintmode 6	
+	drawmethod tintcolor -255
+	frame	data/chars/barbon/fall00.gif
+	drawmethod tintmode 2	
+	drawmethod tintcolor -255
+	frame	data/chars/barbon/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	nodrawmethod
+	sound	data/sounds/Falling.wav
+	frame	data/chars/barbon/fall01.gif
+	
+anim fall6 #SPIN FALL
+	landframe 4
+	loop	1 0 4
+	delay	3
+	offset	143 192
+	frame	data/chars/barbon/fall600.gif
+	frame	data/chars/barbon/fall601.gif
+	frame	data/chars/barbon/fall602.gif
+	frame	data/chars/barbon/fall603.gif
+		delay	8
+	sound	data/sounds/Falling.wav
+	frame	data/chars/barbon/fall01.gif
+
+anim fall7 #GRABSTART POSITION
+	loop	0
+	delay	1000
+	offset	143 192
+	frame	data/chars/barbon/fall700.gif
+	frame	data/chars/barbon/fall701.gif
+	frame	data/chars/barbon/fall702.gif
+	frame	data/chars/barbon/fall703.gif
+	frame	data/chars/barbon/fall704.gif
+	frame	data/chars/barbon/fall705.gif
+	
+anim fall8 #FINISH/THROW TYPE 3
+	landframe 1
+	loop	0
+	delay	999
+	offset	143 192
+	bbox 	118 116 56 43
+	hitfx	data/sounds/MediumKick.wav
+	attack 118 116 56 43 4 1 0 0 0 12
+	frame	data/chars/barbon/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Falling.wav
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/barbon/fall01.gif
+	
+anim fall9 #FINISH/THROW TYPE 2
+	landframe 1
+	loop	0
+	delay	999
+	offset	143 192
+	bbox 	133 133 35 56
+	hitfx	data/sounds/MediumKick.wav
+	attack 133 133 35 56 4 1 0 0 0 12
+	frame	data/chars/barbon/fall900.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Falling.wav
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/barbon/fall01.gif
+	
+anim rise
+	loop	0
+	delay	16
+	offset	143 192
+	frame	data/chars/barbon/rise00.gif
+	frame	data/chars/barbon/rise01.gif
+	frame	data/chars/barbon/rise00.gif
+	frame	data/chars/barbon/rise02.gif
+	
+anim attack1
+	range 20 60
+	rangea 0 0
+	fastattack 1
+	jugglecost 5
+	forcedirection -1
+	loop	0
+	delay	8
+	offset	143 192
+	bbox 	128 112 32 82
+	hitfx	data/sounds/StrongPunch.wav
+	sound	data/sounds/StrongAttack.wav
+	frame	data/chars/barbon/a100.gif
+	bbox 	132 112 32 82
+	frame	data/chars/barbon/a101.gif
+	attack 167 133 41 20 4 0 0 0 20 12
+	bbox 	143 120 32 74
+	frame	data/chars/barbon/a102.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	bbox 	132 112 32 82
+	frame	data/chars/barbon/a101.gif
+	
+anim attack2
+	range 20 60
+	rangea 0 400
+	fastattack 1
+	jugglecost 10
+	forcedirection -1
+	loop	0
+	delay	8
+	offset	143 192
+	hitfx	data/sounds/Blow.wav
+	sound	data/sounds/StrongAttack.wav
+	frame	data/chars/barbon/a200.gif
+	attack 165 129 39 38 12 1 0 0 20 12
+	dropv 3.7 0.7 0
+	frame	data/chars/barbon/a201.gif
+		delay	24
+	attack 164 82 29 70 12 1 0 0 20 12
+	dropv 3.7 0.7 0
+	bbox 	154 103 25 91
+	frame	data/chars/barbon/a202.gif
+		delay	8
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/barbon/a201.gif
+	
+anim grabattack #THROW
+	loop	0
+	delay	12
+	offset	143 192
+	@cmd grabStart
+	@cmd position 0 25 0 0 0
+	frame	data/chars/barbon/throw00.gif
+	@cmd position 5 15 10 0 0
+	frame	data/chars/barbon/throw01.gif
+	@cmd position 5 10 20 0 0
+	sound	data/voices/Barbon1.wav
+	frame	data/chars/barbon/throw02.gif
+	@cmd position 2 -15 35 0 0
+	frame	data/chars/barbon/throw03.gif
+		delay	24
+	@cmd depost
+	@cmd throw 12 2 2 3 0 0
+	frame	data/chars/barbon/throw03.gif
+		delay	4
+	@cmd flip
+	frame	data/chars/barbon/idle00.gif
+	@cmd clearL
+	frame	data/chars/barbon/idle00.gif
+	
+anim grabattack2 #THROW
+	loop	0
+	delay	12
+	offset	143 192
+	@cmd grabStart
+	@cmd position 0 25 0 0 0
+	frame	data/chars/barbon/throw00.gif
+	@cmd position 5 15 10 0 0
+	frame	data/chars/barbon/throw01.gif
+	@cmd position 5 10 20 0 0
+	sound	data/voices/Barbon1.wav
+	frame	data/chars/barbon/throw02.gif
+	@cmd position 2 -15 35 0 0
+	frame	data/chars/barbon/throw03.gif
+		delay	24
+	@cmd depost
+	@cmd throw 12 2 2 3 0 0
+	frame	data/chars/barbon/throw03.gif
+		delay	4
+	@cmd flip
+	frame	data/chars/barbon/idle00.gif
+	@cmd clearL
+	frame	data/chars/barbon/idle00.gif
+	
+anim freespecial #ROUND KICK
+	range 20 60
+	rangea 0 100
+	fastattack 1
+	jugglecost 5
+	forcedirection 0
+	loop	0
+	delay	8
+	offset	143 192
+	hitfx	data/sounds/SpecialAttack3.wav
+	sound	data/sounds/SpecialAttack.wav
+	@cmd cancelMp 0 60 0 0 120 "ANI_FREESPECIAL3"
+	frame	data/chars/barbon/special00.gif
+	attack 148 140 39 41 16 1 0 0 20 12
+	dropv 3 2 0
+	frame	data/chars/barbon/special01.gif
+	attack 154 121 67 27 16 1 0 0 20 12
+	dropv 3 2 0
+	frame	data/chars/barbon/special02.gif
+	attack 154 119 24 35 16 1 0 0 20 12
+	dropv 3 2 0
+	frame	data/chars/barbon/special03.gif
+	attack 124 124 27 34 16 1 0 0 20 12
+	dropv 3 2 0
+	frame	data/chars/barbon/special04.gif
+	attack 92 131 56 25 16 1 0 0 20 12
+	dropv 3 2 0
+	frame	data/chars/barbon/special05.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/barbon/special06.gif
+	
+anim freespecial2 #UPPER
+	range 20 120
+	rangea 20 500
+	rangez -24 24
+	fastattack 1
+	jugglecost 10
+	forcedirection -1
+	loop	0
+	delay	8
+	offset	143 192
+	hitfx	data/sounds/Blow.wav
+	sound	data/sounds/StrongAttack.wav
+	frame	data/chars/barbon/a200.gif
+	attack 165 129 39 38 12 1 0 0 20 12
+	dropv 3.7 0.7 0
+	frame	data/chars/barbon/a201.gif
+		delay	24
+	attack 164 82 29 70 12 1 0 0 20 12
+	dropv 3.7 0.7 0
+	bbox 	154 103 25 91
+	frame	data/chars/barbon/a202.gif
+		delay	8
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/barbon/a201.gif
+	
+anim freespecial3 #RAGE
+	range 0 80
+	rangea 0 0
+	fastattack 1
+	jugglecost 0
+	forcedirection 0
+	energycost 120 1 6
+	loop	0
+	delay	24
+	offset	143 192
+	hitfx	data/sounds/Blow.wav
+	sound	data/voices/Barbon2.wav
+	@cmd spawnBind "RageSpend" 0 0 -1
+	@cmd spawnBind "RageFull" 0 0 1
+	frame	data/chars/barbon/stripclothes04.gif
+		delay	2
+	sound	data/sounds/SpecialAttack4.wav
+	frame	data/chars/barbon/special00.gif
+	attack 148 140 39 41 4 0 0 0 10 12
+	seal 1 1
+	frame	data/chars/barbon/special01.gif
+	attack 154 121 67 27 4 0 0 0 10 12
+	seal 1 1
+	frame	data/chars/barbon/special02.gif
+	attack 154 119 24 35 4 0 0 0 10 12
+	seal 1 1
+	frame	data/chars/barbon/special03.gif
+	attack 124 124 27 34 4 0 0 0 10 12
+	seal 1 1
+	frame	data/chars/barbon/special04.gif
+	attack 92 131 56 25 4 0 0 0 10 12
+	seal 1 1
+	frame	data/chars/barbon/special05.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/barbon/special06.gif
+		delay	4
+	@cmd looper 1 7
+	hitfx	data/sounds/SpecialAttack3.wav
+	frame	data/chars/barbon/special00.gif
+	attack 148 140 39 41 24 1 0 0 10 12
+	seal 1 1
+	dropv 4 4 0
+	frame	data/chars/barbon/special01.gif
+	attack 154 121 67 27 24 1 0 0 10 12
+	seal 1 1
+	dropv 4 4 0
+	frame	data/chars/barbon/special02.gif
+	attack 154 119 24 35 24 1 0 0 10 12
+	seal 1 1
+	dropv 4 4 0
+	frame	data/chars/barbon/special03.gif
+	attack 124 124 27 34 24 1 0 0 10 12
+	seal 1 1
+	dropv 4 4 0
+	frame	data/chars/barbon/special04.gif
+	attack 92 131 56 25 24 1 0 0 10 12
+	seal 1 1
+	dropv 4 4 0
+	frame	data/chars/barbon/special05.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/barbon/special06.gif
+	frame	data/chars/barbon/idle00.gif
+	
+anim follow7 #COUNTER
+	fastattack 1
+	jugglecost 10
+	forcedirection -1
+	energycost 40 1 6
+	loop	0
+	delay	8
+	offset	143 192
+	hitfx	data/sounds/Blow.wav
+	sound	data/sounds/StrongAttack.wav
+	@cmd spawnBind "Counter" 0 0 1
+	frame	data/chars/barbon/a200.gif
+	@cmd block 0
+	attack 165 129 39 38 12 1 0 0 20 12
+	dropv 3.7 0.7 0
+	frame	data/chars/barbon/a201.gif
+		delay	24
+	attack 164 82 29 70 12 1 0 0 20 12
+	dropv 3.7 0.7 0
+	bbox 	154 103 25 91
+	frame	data/chars/barbon/a202.gif
+		delay	8
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/barbon/a201.gif
+	
+anim upper #UPPER
+	fastattack 1
+	jugglecost 10
+	forcedirection -1
+	loop	0
+	delay	8
+	offset	143 192
+	hitfx	data/sounds/Blow.wav
+	sound	data/sounds/StrongAttack.wav
+	frame	data/chars/barbon/a200.gif
+	attack 165 129 39 38 12 1 0 0 20 12
+	dropv 3.7 0.7 0
+	frame	data/chars/barbon/a201.gif
+		delay	24
+	attack 164 82 29 70 12 1 0 0 20 12
+	dropv 3.7 0.7 0
+	bbox 	154 103 25 91
+	frame	data/chars/barbon/a202.gif
+		delay	8
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/barbon/a201.gif
+	
+anim block
+	range 0 100
+	rangea 0 100
+	rangez -50 50
+	loop	0
+	delay	96
+	offset	143 192
+	bbox 	122 108 33 86
+	frame	data/chars/barbon/block00.gif

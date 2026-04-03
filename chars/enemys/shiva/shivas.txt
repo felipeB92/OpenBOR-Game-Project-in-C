@@ -1,0 +1,115 @@
+##MAIN
+name				ShivaS
+type				none
+
+##MISC
+antigravity			100
+
+##SCRIPTS
+ondrawscript		data/scripts/ondraw/channel.c
+
+##REMAPS
+remap				data/chars/shiva/idle00.gif data/chars/shiva/alter1.gif
+remap				data/chars/shiva/idle00.gif data/chars/shiva/alter2.gif
+remap				data/chars/shiva/idle00.gif data/chars/shiva/alter3.gif
+remap				data/chars/shiva/idle00.gif data/chars/shiva/alter4.gif
+
+##ANIMATIONS#############################################################################
+
+anim riseattack
+	loop	0
+	delay	1000
+	offset	138 192
+	frame	data/chars/shiva/rise00.gif
+	frame	data/chars/shiva/rise01.gif
+	frame	data/chars/shiva/rise02.gif
+	frame	data/chars/shiva/jump00.gif
+	frame	data/chars/shiva/jumpatk00.gif
+	frame	data/chars/shiva/jumpatk00.gif
+	frame	data/chars/shiva/jumpland00.gif
+
+anim freespecial3
+	loop	0
+	delay	1000
+	offset	138 192
+	frame	data/chars/shiva/a200.gif
+	frame	data/chars/shiva/a200.gif
+	frame	data/chars/shiva/a201.gif
+	frame	data/chars/shiva/a202.gif
+	frame	data/chars/shiva/a203.gif
+	
+anim freespecial4
+	loop	0
+	delay	1000
+	offset	138 192
+	frame	data/chars/shiva/a200.gif
+	frame	data/chars/shiva/run00.gif
+	frame	data/chars/shiva/run00.gif
+	frame	data/chars/shiva/run01.gif
+	frame	data/chars/shiva/finalcrash00.gif
+	frame	data/chars/shiva/finalcrash00.gif
+	frame	data/chars/shiva/finalcrash09.gif
+	frame	data/chars/shiva/finalcrash09.gif
+	
+anim follow4
+	loop	0
+	delay	1000
+	offset	138 192
+	frame	data/chars/shiva/a200.gif
+	frame	data/chars/shiva/a100.gif
+	frame	data/chars/shiva/a100.gif
+	frame	data/chars/shiva/a101.gif
+	frame	data/chars/shiva/a102.gif
+	frame	data/chars/shiva/a200.gif
+	frame	data/chars/shiva/a201.gif
+	frame	data/chars/shiva/a202.gif
+	frame	data/chars/shiva/a203.gif
+	frame	data/chars/shiva/a300.gif
+	frame	data/chars/shiva/a301.gif
+	frame	data/chars/shiva/a302.gif
+	frame	data/chars/shiva/a303.gif
+	frame	data/chars/shiva/a303.gif
+	frame	data/chars/shiva/a302.gif
+	frame	data/chars/shiva/a301.gif
+	frame	data/chars/shiva/a300.gif
+	frame	data/chars/shiva/wait00.gif
+	
+anim follow7 #COUNTER
+	loop	0
+	delay	1000
+	offset	138 192
+	frame	data/chars/shiva/special00.gif
+	frame	data/chars/shiva/special01.gif
+	frame	data/chars/shiva/special02.gif
+	frame	data/chars/shiva/special03.gif
+	frame	data/chars/shiva/special04.gif
+	frame	data/chars/shiva/special05.gif
+	frame	data/chars/shiva/special06.gif
+	frame	data/chars/shiva/special07.gif
+	
+anim follow10 #DODGE
+	loop	0
+	delay	1000
+	offset	138 192
+	frame	data/chars/shiva/jump00.gif
+	frame	data/chars/shiva/jump00.gif
+	frame	data/chars/shiva/jump00.gif
+	frame	data/chars/shiva/jump00.gif
+	frame	data/chars/shiva/jump00.gif
+	frame	data/chars/shiva/jump00.gif
+	frame	data/chars/shiva/jumpland00.gif
+	frame	data/chars/shiva/jumpland00.gif
+	
+anim dodge
+	loop	0
+	delay	1000
+	offset	138 192
+	frame	data/chars/shiva/jumpdelay00.gif
+	frame	data/chars/shiva/jump00.gif
+	frame	data/chars/shiva/jump00.gif
+	frame	data/chars/shiva/jump00.gif
+	frame	data/chars/shiva/jump00.gif
+	frame	data/chars/shiva/jump00.gif
+	frame	data/chars/shiva/jump00.gif
+	frame	data/chars/shiva/jumpland00.gif
+	frame	data/chars/shiva/jumpland00.gif

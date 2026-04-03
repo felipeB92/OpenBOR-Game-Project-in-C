@@ -1,0 +1,329 @@
+name	Tiger
+health	150
+speed	13
+falldie 1
+hostile				player npc
+candamage			player npc obstacle
+escapehits			2
+mp			        60
+mprate  			5
+type	Enemy
+gfxshadow	1
+JUMPHEIGHT 1 1
+Jumpheight 3
+atchain    1 2 3
+icon	data/chars/Enemys/Tiger/icon.gif 1
+diesound data/voices/bossdie1.wav
+running	20	3	3	1	1
+
+##LOADS
+
+
+remap data/chars/Enemys/Tiger/idle00.gif data/chars/Enemys/Tiger/alter1.gif
+remap data/chars/Enemys/Tiger/idle00.gif data/chars/Enemys/Tiger/alter2.gif
+remap data/chars/Enemys/Tiger/idle00.gif data/chars/Enemys/Tiger/alter3.gif
+remap data/chars/Enemys/Tiger/idle00.gif data/chars/Enemys/Tiger/alter4.gif
+
+anim	spawn
+	loop	0
+	delay	40
+	offset	144 177
+	frame   data/chars/Enemys/Tiger/jumpatk00.gif
+
+
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	144 177
+	bbox	129 101 37 72
+	frame   data/chars/Enemys/Tiger/Idle00.gif
+	frame   data/chars/Enemys/Tiger/Idle01.gif
+	frame   data/chars/Enemys/Tiger/Idle02.gif
+	frame   data/chars/Enemys/Tiger/Idle03.gif
+	frame   data/chars/Enemys/Tiger/Idle02.gif
+	frame   data/chars/Enemys/Tiger/Idle01.gif
+
+
+anim walk
+	loop	1
+	delay	14
+	offset	144 177
+	bbox	131 97 33 82
+	jumpframe  6  1  1  0
+	landframe  8
+	frame	data/chars/Enemys/Tiger/walk00.gif
+	frame	data/chars/Enemys/Tiger/walk01.gif
+	frame	data/chars/Enemys/Tiger/walk02.gif
+	frame	data/chars/Enemys/Tiger/walk03.gif
+	frame	data/chars/Enemys/Tiger/walk00.gif
+	frame	data/chars/Enemys/Tiger/walk01.gif
+	frame	data/chars/Enemys/Tiger/walk02.gif
+	frame	data/chars/Enemys/Tiger/walk03.gif
+	frame	data/chars/Enemys/Tiger/walk00.gif
+	frame	data/chars/Enemys/Tiger/walk01.gif
+	frame	data/chars/Enemys/Tiger/walk02.gif
+	frame	data/chars/Enemys/Tiger/walk03.gif
+	attack1  131  111  51  33  1  0  0  0  0  10
+	frame	data/chars/Enemys/Tiger/a101.gif
+		Attack1  0
+	frame	data/chars/Enemys/Tiger/walk00.gif
+	frame	data/chars/Enemys/Tiger/walk01.gif
+	frame	data/chars/Enemys/Tiger/walk02.gif
+	frame	data/chars/Enemys/Tiger/walk03.gif
+
+
+anim get
+	loop	0
+	delay	10
+	offset	144 177
+	frame	data/chars/Enemys/Tiger/get00.gif
+
+
+anim jump
+	loop	0
+	delay	30
+	offset	144 177
+	bbox	138 96 26 64
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Tiger/jump00.gif
+
+anim jumpattack
+	loop	0
+	delay	30
+        Range 110 160
+	offset	144 177
+	bbox	124 95 48 47
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  135  126  73  28  10  1  0  0  0  20
+	frame	data/chars/Enemys/Tiger/jumpatk00.gif
+
+
+
+anim Upper
+	loop	0
+	delay	8
+        Range 0 60
+	offset	144 177
+	bbox	132 98 31 75
+		Attack1  0
+        hitfx	data/sounds/golpes/Medio.wav
+	frame	data/chars/Enemys/Tiger/a200.gif
+	frame	data/chars/Enemys/Tiger/a201.gif
+		attack1  141  103  61  41  15  1  0  0  0  1
+	frame	data/chars/Enemys/Tiger/a202.gif
+		Attack1  0
+	frame  data/chars/Enemys/Tiger/a201.gif
+
+
+
+
+
+
+
+anim attack1
+	loop	0
+	delay	8
+        Range 0 60
+	offset	144 177
+	bbox	130 98 30 77
+		Attack1  0
+        hitfx	data/sounds/golpes/Medio.wav
+	frame	data/chars/Enemys/Tiger/a100.gif
+	frame	data/chars/Enemys/Tiger/a101.gif
+		attack1  139  111  52  37  10  0  0  0  0  20
+	frame	data/chars/Enemys/Tiger/a102.gif
+		Attack1  0
+	frame  data/chars/Enemys/Tiger/a101.gif
+
+anim attack2
+	loop	0
+	delay	6
+	offset	144 177
+	bbox	118 101 26 78
+		Attack1  0
+        hitfx	data/sounds/golpes/forte.wav
+	frame	data/chars/Enemys/Tiger/a200.gif
+		attack2  141  120  28  48  10  0  0  0  0  20
+	frame	data/chars/Enemys/Tiger/a201.gif
+		attack1  124  104  68  37  10  0  0  0  0  20
+	frame	data/chars/Enemys/Tiger/a202.gif
+		delay  15
+		Attack1  0
+	frame	data/chars/Enemys/Tiger/a201.gif
+
+anim attack3
+	loop	0
+	delay	8
+        Range 0 60
+	offset	144 177
+	bbox	131 116 38 56
+		Attack1  0
+        hitfx	data/sounds/golpes/Medio.wav
+		move  3
+	frame	data/chars/Enemys/Tiger/kick00.gif
+		attack1  145  150  56  29  10  1  0  0  0  10
+	frame	data/chars/Enemys/Tiger/kick01.gif
+	frame	data/chars/Enemys/Tiger/kick01.gif
+	frame	data/chars/Enemys/Tiger/kick01.gif
+
+
+
+
+anim grabbed
+	loop	0
+	delay	100
+	offset	144 177
+	bbox	129 104 35 65
+	frame	data/chars/Enemys/Tiger/grabbed00.gif
+
+
+
+anim pain
+	loop	0
+	offset	144 177
+	bbox	125 105 38 73
+	delay	15
+	frame	data/chars/Enemys/Tiger/pain00.gif
+	frame	data/chars/Enemys/Tiger/pain01.gif
+
+anim pain2
+	loop	0
+	offset	144 177
+	bbox	135 104 31 67
+	delay	15
+	frame	data/chars/Enemys/Tiger/pain200.gif
+	frame	data/chars/Enemys/Tiger/pain201.gif
+
+anim pain4
+	loop	0
+	offset	144 177
+	bbox	126 101 36 72
+	delay	250
+	frame	data/chars/Enemys/Tiger/pain00.gif
+
+anim pain5
+	loop	0
+	offset	144 177
+	delay	10
+	frame	data/chars/Enemys/Tiger/pain00.gif
+		move  10
+	frame	data/chars/Enemys/Tiger/fall705.gif
+		move  30
+		delay  10
+	frame	data/chars/Enemys/Tiger/fall603.gif
+        quakeframe 4 2 2
+        Sound	data/Sounds/Efeitos/Estrondo.wav
+		Attack1  0
+	frame	data/chars/Enemys/Tiger/fall900.gif
+		move  1
+		movea  5
+	frame  data/chars/Enemys/Tiger/fall900.gif
+		movea  -5
+	frame  data/chars/Enemys/Tiger/fall900.gif
+		delay  50
+		move  0
+		movea  0
+		Attack1  0
+	frame	data/chars/Enemys/Tiger/Fall01.gif
+		delay  10
+	frame	data/chars/Enemys/Tiger/Rise00.gif
+	frame	data/chars/Enemys/Tiger/Rise01.gif
+	frame  data/chars/Enemys/Tiger/Rise02.gif
+
+
+anim death
+	loop	0
+	offset	144 177
+	delay	20
+	jumpframe  0  1  -1  0
+	landframe  2
+	frame	data/chars/Enemys/Tiger/fall701.gif
+	frame  data/chars/Enemys/Tiger/fall00.gif
+	frame	data/chars/Enemys/Tiger/fall01.gif
+
+
+anim death5
+	loop	0
+	offset	144 177
+	delay	10
+	frame	data/chars/Enemys/Tiger/pain00.gif
+		move  10
+	frame	data/chars/Enemys/Tiger/fall705.gif
+		move  30
+		delay  10
+	frame	data/chars/Enemys/Tiger/fall603.gif
+		Attack1  0
+	frame	data/chars/Enemys/Tiger/fall900.gif
+		move  1
+		movea  5
+	frame  data/chars/Enemys/Tiger/fall900.gif
+		movea  -5
+	frame  data/chars/Enemys/Tiger/fall900.gif
+		delay  50
+		move  0
+		movea  0
+		Attack1  0
+	frame	data/chars/Enemys/Tiger/Fall01.gif
+
+
+anim fall
+	loop	0
+	offset	144 177
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Tiger/fall701.gif
+		attack  41
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Tiger/fall00.gif
+		Attack1  0
+	frame	data/chars/Enemys/Tiger/fall01.gif
+
+anim fall3
+	loop	0
+	offset	144 177
+	delay	5
+	jumpframe  0  3  -3  0
+	landframe  8
+		bbox  105  115  41  48
+		Attack1  0
+	frame	data/chars/Enemys/Tiger/fall705.gif
+	frame	data/chars/Enemys/Tiger/fall600.gif
+	frame	data/chars/Enemys/Tiger/fall601.gif
+	frame	data/chars/Enemys/Tiger/fall602.gif
+	frame	data/chars/Enemys/Tiger/fall705.gif
+	frame	data/chars/Enemys/Tiger/fall600.gif
+	frame	data/chars/Enemys/Tiger/fall601.gif
+	frame	data/chars/Enemys/Tiger/fall602.gif
+	frame	data/chars/Enemys/Tiger/fall705.gif
+	frame	data/chars/Enemys/Tiger/fall600.gif
+	frame	data/chars/Enemys/Tiger/fall601.gif
+	frame	data/chars/Enemys/Tiger/fall602.gif
+	frame  data/chars/Enemys/Tiger/fall705.gif
+	frame  data/chars/Enemys/Tiger/fall600.gif
+		Attack1  0
+		bbox  0
+		move  0
+	frame  data/chars/Enemys/Tiger/fall01.gif
+
+anim rise
+	loop	0
+	offset	144 177
+	delay	10
+	frame	data/chars/Enemys/Tiger/Rise00.gif
+	frame	data/chars/Enemys/Tiger/Rise01.gif
+	frame	data/chars/Enemys/Tiger/Rise02.gif
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	125 179
+	bbox	128 115 43 58
+	frame	data/chars/Enemys/Tiger/jumpland00.gif
+

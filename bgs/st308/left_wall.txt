@@ -1,0 +1,20 @@
+name			st8_left_wall #USE PLATFORM INSTEAD OF WALL TO AVOID JACK KNIVES HITTING INVISIBLE NORMAL WALLS
+type			none
+shadow			0
+animationscript	data/scripts/animation/default.c
+
+anim idle
+	loop	1
+	delay	48
+	offset	1 170
+	platform 60 276 -100 -100 75 0 75 10000
+	@cmd aniVar "ANI_FOLLOW1" "removeWall" 1
+	frame	data/bgs/sor3_st8/right_wall00.gif
+	
+anim follow1
+	loop	0
+	delay	4
+	offset	1 170
+	frame	data/bgs/sor3_st8/right_wall00.gif
+	@cmd suicide
+	frame	data/bgs/sor3_st8/right_wall00.gif

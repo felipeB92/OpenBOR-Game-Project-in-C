@@ -1,0 +1,38 @@
+name			PW01 #GROUND
+type			None
+candamage	        enemy npc obstacle
+nolife 1
+noname 1
+alpha  1
+
+
+anim idle
+	loop	1
+	delay	3
+	offset	74 106
+        quakeframe 0 2 2
+	Sound	data/chars/players/Terry/Pw01.wav
+		attack3  63  87  30  22  15  1  0  0  0  15
+	frame	data/chars/players/Terry/p200.gif
+		attack3  56  74  42  39  15  1  0  0  0  15
+	frame	data/chars/players/Terry/p201.gif
+		attack3  43  42  59  68  15  1  0  0  0  15
+	frame	data/chars/players/Terry/p202.gif
+	frame	data/chars/players/Terry/p203.gif
+	frame	data/chars/players/Terry/p204.gif
+	frame	data/chars/players/Terry/p205.gif
+	frame	data/chars/players/Terry/p206.gif
+	frame	data/chars/players/Terry/p207.gif
+	frame	data/chars/players/Terry/p208.gif
+	frame	data/chars/players/Terry/p209.gif
+	frame	data/chars/players/Terry/p210.gif
+	frame	data/chars/players/Terry/p211.gif
+	frame	data/chars/players/Terry/p212.gif
+		Attack1  0
+	frame	data/chars/players/Terry/p213.gif
+	frame	data/chars/players/Terry/p214.gif
+	frame	data/chars/players/Terry/p215.gif
+	frame	data/chars/players/Terry/empty.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/players/Terry/empty.gif
+

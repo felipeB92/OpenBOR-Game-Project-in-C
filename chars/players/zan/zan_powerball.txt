@@ -1,0 +1,317 @@
+name	Zan_Powerball
+health	100
+speed	12
+type	none
+antigrab 2
+gfxshadow	1
+candamage			enemy npc obstacle
+JUMPHEIGHT 1 1
+Jumpheight 3
+icon	data/chars/players/Zan/icon.gif
+diesound data/sounds/Zandie.wav
+running	20	3	3	1	1
+
+
+Com d d freespecial5
+Com u u freespecial6
+
+load Powerball
+
+
+
+remap data/chars/players/Zan/idle00.gif data/chars/players/Zan/alter1.gif
+remap data/chars/players/Zan/idle00.gif data/chars/players/Zan/alter2.gif
+remap data/chars/players/Zan/idle00.gif data/chars/players/Zan/alter3.gif
+
+
+anim idle
+	loop	1
+	delay	3
+	offset	136 172
+	bbox	121 92 34 80
+	frame   data/chars/players/Zan/Powerball/idle100.gif
+	frame   data/chars/players/Zan/Powerball/idle102.gif
+	frame   data/chars/players/Zan/Powerball/idle101.gif
+	frame   data/chars/players/Zan/Powerball/idle100.gif
+	frame   data/chars/players/Zan/Powerball/idle102.gif
+	frame   data/chars/players/Zan/Powerball/idle101.gif
+	frame   data/chars/players/Zan/Powerball/idle100.gif
+	frame   data/chars/players/Zan/Powerball/idle102.gif
+	frame   data/chars/players/Zan/Powerball/idle101.gif
+	frame   data/chars/players/Zan/Powerball/idle103.gif
+	frame   data/chars/players/Zan/Powerball/idle105.gif
+	frame   data/chars/players/Zan/Powerball/idle104.gif
+	frame   data/chars/players/Zan/Powerball/idle103.gif
+	frame   data/chars/players/Zan/Powerball/idle105.gif
+	frame   data/chars/players/Zan/Powerball/idle104.gif
+	frame   data/chars/players/Zan/Powerball/idle103.gif
+	frame   data/chars/players/Zan/Powerball/idle105.gif
+	frame   data/chars/players/Zan/Powerball/idle104.gif
+	frame   data/chars/players/Zan/Powerball/idle106.gif
+	frame   data/chars/players/Zan/Powerball/idle108.gif
+	frame   data/chars/players/Zan/Powerball/idle107.gif
+	frame   data/chars/players/Zan/Powerball/idle106.gif
+	frame   data/chars/players/Zan/Powerball/idle108.gif
+	frame   data/chars/players/Zan/Powerball/idle107.gif
+	frame   data/chars/players/Zan/Powerball/idle106.gif
+	frame   data/chars/players/Zan/Powerball/idle108.gif
+	frame   data/chars/players/Zan/Powerball/idle107.gif
+	frame   data/chars/players/Zan/Powerball/idle103.gif
+	frame   data/chars/players/Zan/Powerball/idle105.gif
+	frame   data/chars/players/Zan/Powerball/idle104.gif
+	frame   data/chars/players/Zan/Powerball/idle103.gif
+	frame   data/chars/players/Zan/Powerball/idle105.gif
+	frame   data/chars/players/Zan/Powerball/idle104.gif
+	frame   data/chars/players/Zan/Powerball/idle103.gif
+	frame   data/chars/players/Zan/Powerball/idle105.gif
+	frame   data/chars/players/Zan/Powerball/idle104.gif
+
+
+
+
+
+anim walk
+	loop	1
+	delay	1
+	offset	145 172
+	bbox	132 90 33 71
+	jumpframe  0  0.001  0.001  0
+	landframe  1
+	frame	data/chars/players/Zan/Powerball/walk00.gif
+	frame	data/chars/players/Zan/walk00.gif
+	delay	2
+	frame	data/chars/players/Zan/Powerball/walk00.gif
+	frame	data/chars/players/Zan/walk00.gif
+	frame	data/chars/players/Zan/Powerball/walk00.gif
+	frame	data/chars/players/Zan/walk00.gif
+	frame	data/chars/players/Zan/Powerball/walk00.gif
+	frame	data/chars/players/Zan/walk00.gif
+	frame	data/chars/players/Zan/Powerball/walk01.gif
+	frame	data/chars/players/Zan/walk01.gif
+	frame	data/chars/players/Zan/Powerball/walk01.gif
+	frame	data/chars/players/Zan/walk01.gif
+	frame	data/chars/players/Zan/Powerball/walk01.gif
+	frame	data/chars/players/Zan/walk01.gif
+	frame	data/chars/players/Zan/Powerball/walk02.gif
+	frame	data/chars/players/Zan/walk02.gif
+	frame	data/chars/players/Zan/Powerball/walk02.gif
+	frame	data/chars/players/Zan/walk02.gif
+	frame	data/chars/players/Zan/Powerball/walk02.gif
+	frame	data/chars/players/Zan/walk02.gif
+	frame	data/chars/players/Zan/Powerball/walk03.gif
+	frame	data/chars/players/Zan/walk03.gif
+	frame	data/chars/players/Zan/Powerball/walk03.gif
+	frame	data/chars/players/Zan/walk03.gif
+	frame	data/chars/players/Zan/Powerball/walk03.gif
+	frame	data/chars/players/Zan/walk03.gif
+	frame	data/chars/players/Zan/Powerball/walk04.gif
+	frame	data/chars/players/Zan/walk04.gif
+	frame	data/chars/players/Zan/Powerball/walk04.gif
+	frame	data/chars/players/Zan/walk04.gif
+	frame	data/chars/players/Zan/Powerball/walk04.gif
+	frame	data/chars/players/Zan/walk04.gif
+	frame	data/chars/players/Zan/Powerball/walk05.gif
+	frame	data/chars/players/Zan/walk05.gif
+	frame	data/chars/players/Zan/Powerball/walk05.gif
+	frame	data/chars/players/Zan/walk05.gif
+	frame	data/chars/players/Zan/Powerball/walk05.gif
+	frame	data/chars/players/Zan/walk05.gif
+
+
+anim get
+	loop	0
+	delay	5
+	offset	152 164
+	frame	data/chars/players/Zan/Powerball/get00.gif
+	frame  data/chars/players/Zan/get00.gif
+
+
+anim jump
+	loop	0
+	delay	2
+	offset	136 172
+	bbox	120 85 36 49
+	frame	data/chars/players/Zan/Powerball/jump00.gif
+	frame	data/chars/players/Zan/jump00.gif
+	frame	data/chars/players/Zan/Powerball/jump01.gif
+	frame	data/chars/players/Zan/jump01.gif
+	frame	data/chars/players/Zan/Powerball/jump01.gif
+	frame	data/chars/players/Zan/jump02.gif
+	frame	data/chars/players/Zan/Powerball/jump01.gif
+	frame	data/chars/players/Zan/jump01.gif
+	frame	data/chars/players/Zan/Powerball/jump01.gif
+	frame	data/chars/players/Zan/jump02.gif
+	frame	data/chars/players/Zan/Powerball/jump01.gif
+	frame	data/chars/players/Zan/jump01.gif
+	frame	data/chars/players/Zan/Powerball/jump01.gif
+	frame	data/chars/players/Zan/jump02.gif
+	frame	data/chars/players/Zan/Powerball/jump01.gif
+	frame	data/chars/players/Zan/jump01.gif
+
+
+
+
+
+anim jumpattack
+	loop	0
+	delay	7
+	offset	136 172
+	bbox	115 91 39 48
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Zan/Powerball/jumpatk00.gif
+		bbox  119  84  30  68
+		attack1  142  82  39  57  10  1  0  0  0  20
+	frame	data/chars/players/Zan/Powerball/jumpatk01.gif
+
+
+
+anim jumpattack2
+	loop	0
+	delay	7
+	offset	136 172
+	bbox	112 96 40 38
+	attack	105 127 58 27 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Zan/Powerball/jumpatk200.gif
+
+anim jumpforward
+	loop	0
+	delay	3
+	offset	136 172
+	bbox	119 89 30 44
+	attack	113 104 44 41 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/soco.wav
+	frame	data/chars/players/Zan/Powerball/fjumpatk00.gif
+	frame	data/chars/players/Zan/fjumpatk00.gif
+	frame  data/chars/players/Zan/Powerball/fjumpatk01.gif
+	frame	data/chars/players/Zan/fjumpatk01.gif
+	frame  data/chars/players/Zan/Powerball/fjumpatk02.gif
+	frame	data/chars/players/Zan/fjumpatk02.gif
+	frame  data/chars/players/Zan/Powerball/fjumpatk02.gif
+	frame	data/chars/players/Zan/fjumpatk02.gif
+	frame  data/chars/players/Zan/Powerball/fjumpatk02.gif
+	frame	data/chars/players/Zan/fjumpatk02.gif
+	frame  data/chars/players/Zan/Powerball/fjumpatk02.gif
+	frame	data/chars/players/Zan/fjumpatk02.gif
+
+
+anim runjumpattack
+	loop	0
+	delay	7
+	offset	136 172
+	bbox	117 93 37 43
+	attack	139 126 32 39 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Zan/Powerball/jumpatk301.gif
+
+
+anim runattack
+	loop	0
+	delay	8
+	offset	136 172
+	bbox	117 93 37 43
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+		Attack1  100  113  71  39  7  0  0  0  0  20
+		move  5
+	frame	data/chars/players/Zan/Powerball/a201.gif
+		Attack1  0
+		delay  4
+	frame	data/chars/players/Zan/Powerball/a202.gif
+		attack1  113  110  54  58  7  0  0  0  0  20
+	frame  data/chars/players/Zan/Powerball/a202.gif
+		Attack1  0
+	frame  data/chars/players/Zan/Powerball/a202.gif
+		attack1  111  90  72  81  15  1  0  0  0  20
+		delay  8
+	frame	data/chars/players/Zan/Powerball/ra100.gif
+		delay  5
+	frame	data/chars/players/Zan/Powerball/ra101.gif
+	frame  data/chars/players/Zan/Powerball/a203.gif
+	frame  data/chars/players/Zan/Powerball/ra101.gif
+
+anim attack1
+	loop	0
+	delay	3
+	offset	136 172
+	bbox	134 96 27 64
+		Attack1  0
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/players/Zan/Powerball/a100.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/players/Zan/a100.gif
+		attack1  148  102  66  21  20  1  0  0  0  20
+	frame	data/chars/players/Zan/Powerball/a101.gif
+	frame  data/chars/players/Zan/a201.gif
+		attack1  146  100  77  24  20  1  0  0  0  20
+	frame	data/chars/players/Zan/Powerball/a102.gif
+	frame  data/chars/players/Zan/a202.gif
+		Attack1  0
+	frame	data/chars/players/Zan/Powerball/a100.gif
+	frame  data/chars/players/Zan/a100.gif
+
+
+anim special2
+	loop	0
+	delay	6
+	offset	136 172
+        custKnife Powerball
+        throwframe 3 0
+	bbox	134 96 27 64
+		Attack1  0
+	sound	data/sounds/armas/Whoosh.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/players/Zan/Powerball/a200.gif
+	frame	data/chars/players/Zan/Powerball/a201.gif
+		Attack1  0
+	frame	data/chars/players/Zan/Powerball/a202.gif
+		delay  15
+	frame	data/chars/players/Zan/Powerball/a203.gif
+
+
+
+anim run
+        loop    1
+        delay  4
+	offset	142 172
+	bbox	122 98 30 60
+	jumpframe  0  0.001  0.001  0
+	landframe  1
+        frame	data/chars/players/Zan/Powerball/run00.gif
+        frame	data/chars/players/Zan/run00.gif
+        frame	data/chars/players/Zan/Powerball/run01.gif
+        frame	data/chars/players/Zan/run01.gif
+        frame	data/chars/players/Zan/Powerball/run00.gif
+        frame	data/chars/players/Zan/run00.gif
+        frame	data/chars/players/Zan/Powerball/run01.gif
+        frame	data/chars/players/Zan/run01.gif
+        frame	data/chars/players/Zan/Powerball/run00.gif
+        frame	data/chars/players/Zan/run00.gif
+        frame	data/chars/players/Zan/Powerball/run01.gif
+        frame	data/chars/players/Zan/run01.gif
+        frame	data/chars/players/Zan/Powerball/run00.gif
+        frame	data/chars/players/Zan/run00.gif
+        frame	data/chars/players/Zan/Powerball/run01.gif
+        frame	data/chars/players/Zan/run01.gif
+
+
+
+
+
+
+
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	141 172
+	bbox	128 111 36 51
+	frame	data/chars/players/Zan/Powerball/jumpland00.gif
+

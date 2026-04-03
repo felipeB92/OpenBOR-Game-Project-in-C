@@ -1,0 +1,17 @@
+# Hit flash
+
+speed	16
+name	LAser
+candamage  Player obstacle npc pshot
+type	pshot
+alpha 1
+
+
+anim idle
+	loop	1
+	delay	5
+        hitfx	data/sounds/StrongPunch.wav
+		attack1  19  25  12  10  20  1  0  0  0  10
+		offset  -33  90
+		bbox  19  25  12  10
+	frame	data/chars/Enemys/particle/P00.gif

@@ -1,0 +1,12 @@
+name			elevador201 #GROUND
+type			None
+setlayer -60
+#offscreenkill	1000
+noquake 	1 1
+
+anim idle
+	loop	1
+	delay	400
+	offset	0 0
+	frame	data/Bgs/St207/e00.gif
+

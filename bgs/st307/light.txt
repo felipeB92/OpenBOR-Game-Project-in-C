@@ -1,0 +1,14 @@
+name		st7_light
+type		panel
+speed		5
+scroll		-0.5
+shadow		0
+alpha		1
+
+anim idle
+	loop	1
+	delay	2
+	offset	150 283
+	frame	data/bgs/sor3_st7/light00.gif
+		delay	3
+	frame	data/bgs/sor3_st7/light01.gif

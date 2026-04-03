@@ -1,0 +1,68 @@
+name	  	 	st6_alarm #Entity to damage all characters in entire screen due to active toxic gas in ST6A
+type	  	 	none
+candamage 	 	player enemy npc
+health	  	 	1
+nolife	 	 	1
+shadow	  	 	0
+setlayer	 	1000
+stealth			2
+didhitscript 	data/scripts/didhit/alarm.c
+ondrawscript 	data/scripts/ondraw/alarm.c
+animationscript	data/scripts/animation/default.c
+
+load			st6_gas
+
+anim idle
+	loop	0
+	delay	16
+	offset	1 276
+	drawmethod alpha 1
+	frame	data/bgs/sor3_st6/alarm00.gif
+	
+anim follow1
+	fastattack 0
+	jugglecost 31
+	forcedirection 0
+	loop	1
+	delay	8
+	offset	1 276
+	sound	data/sounds/Alarm.wav
+	drawmethod alpha 6
+	drawmethod channel 0 0.4 0.8
+	attack 0 0 1380 276 0 0 1 1 0 1000
+	noreflect 1
+	dot 0 3000 1 40 200
+	frame	data/bgs/sor3_st6/alarm00.gif
+	drawmethod alpha 6
+	drawmethod channel 0 0.3 0.6
+	frame	data/bgs/sor3_st6/alarm00.gif
+	drawmethod alpha 6
+	drawmethod channel 0 0.2 0.4
+	frame	data/bgs/sor3_st6/alarm00.gif
+	drawmethod alpha 6
+	drawmethod channel 0 0.1 0.2
+	frame	data/bgs/sor3_st6/alarm00.gif
+	drawmethod alpha 6
+	drawmethod channel 0 0 0
+	frame	data/bgs/sor3_st6/alarm00.gif
+	drawmethod alpha 6
+	drawmethod channel 0 0.1 0.2
+	frame	data/bgs/sor3_st6/alarm00.gif
+	drawmethod alpha 6
+	drawmethod channel 0 0.2 0.4
+	frame	data/bgs/sor3_st6/alarm00.gif
+	drawmethod alpha 6
+	drawmethod channel 0 0.3 0.6
+	frame	data/bgs/sor3_st6/alarm00.gif
+	drawmethod alpha 6
+	drawmethod channel 0 0.4 0.8
+	frame	data/bgs/sor3_st6/alarm00.gif
+	drawmethod alpha 6
+	drawmethod channel 0 0.5 1
+	frame	data/bgs/sor3_st6/alarm00.gif
+	drawmethod alpha 6
+	drawmethod channel 0 0.5 1
+	frame	data/bgs/sor3_st6/alarm00.gif
+	drawmethod alpha 6
+	drawmethod channel 0 0.5 1
+	frame	data/bgs/sor3_st6/alarm00.gif

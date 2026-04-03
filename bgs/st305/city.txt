@@ -1,0 +1,23 @@
+name		st5_city
+type		panel
+shadow		0
+speed		5
+scroll		0.2
+setlayer	-1200
+noquake		1 1
+
+anim idle
+	loop	1
+	delay	240
+	offset	1 160
+	frame	data/bgs/sor3_st5/city00.gif
+		delay	8
+	frame	data/bgs/sor3_st5/city01.gif
+	frame	data/bgs/sor3_st5/city00.gif
+	frame	data/bgs/sor3_st5/city01.gif
+		delay	240
+	frame	data/bgs/sor3_st5/city00.gif
+		delay	8
+	frame	data/bgs/sor3_st5/city02.gif
+	frame	data/bgs/sor3_st5/city00.gif
+	frame	data/bgs/sor3_st5/city02.gif

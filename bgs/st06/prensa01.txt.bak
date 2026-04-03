@@ -1,0 +1,51 @@
+name			Prensa01 #GROUND
+type			None
+candamage		player enemy npc obstacle
+setlayer -4
+
+
+anim idle
+	loop	1
+	delay	500
+	offset	0 280
+        quakeframe 19 2 2
+	frame	data/Bgs/St06/P101.gif
+		delay  8
+	frame  data/Bgs/St06/P100.gif
+	frame	data/Bgs/St06/P101.gif
+	frame	data/Bgs/St06/P100.gif
+	frame	data/Bgs/St06/P101.gif
+	frame	data/Bgs/St06/P100.gif
+	frame	data/Bgs/St06/P101.gif
+	frame	data/Bgs/St06/P100.gif
+	frame	data/Bgs/St06/P101.gif
+	frame	data/Bgs/St06/P100.gif
+	frame	data/Bgs/St06/P101.gif
+	frame	data/Bgs/St06/P100.gif
+		delay  4
+	frame	data/Bgs/St06/P101.gif
+	frame	data/Bgs/St06/P102.gif
+	frame	data/Bgs/St06/P103.gif
+	frame	data/Bgs/St06/P104.gif
+	frame	data/Bgs/St06/P105.gif
+	frame	data/Bgs/St06/P106.gif
+        Sound   Data/sounds/efeitos/estrondo.wav
+	frame	data/Bgs/St06/P107.gif
+		attack1  102  189  63  38  25  1  0  0  0  50
+	frame	data/Bgs/St06/P108.gif
+		delay  8
+		attack1  96  199  69  41  25  1  0  0  0  50
+	frame	data/Bgs/St06/P109.gif
+		delay  300
+		Attack1  0
+	frame  data/Bgs/St06/P109.gif
+		delay  10
+	frame	data/Bgs/St06/P108.gif
+	frame	data/Bgs/St06/P107.gif
+	frame	data/Bgs/St06/P106.gif
+	frame	data/Bgs/St06/P105.gif
+	frame	data/Bgs/St06/P104.gif
+	frame	data/Bgs/St06/P103.gif
+	frame	data/Bgs/St06/P102.gif
+	frame	data/Bgs/St06/P101.gif
+

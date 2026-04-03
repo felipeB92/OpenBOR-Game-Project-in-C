@@ -1,0 +1,50 @@
+name			L203 #GROUND
+type			None
+setlayer 5
+
+anim idle
+	loop	1
+	delay	20
+	offset	0 0
+	frame	data/Bgs/St201/dunk_b00.gif
+	frame	data/Bgs/St201/dunk_b01.gif
+	frame	data/Bgs/St201/dunk_b02.gif
+	frame	data/Bgs/St201/dunk_b03.gif
+	frame	data/Bgs/St201/dunk_b04.gif
+	frame	data/Bgs/St201/dunk_b05.gif
+	frame	data/Bgs/St201/dunk_b06.gif
+	frame	data/Bgs/St201/dunk_b07.gif
+	frame	data/Bgs/St201/dunk_b08.gif
+	frame	data/Bgs/St201/dunk_b09.gif
+	frame	data/Bgs/St201/dunk_b10.gif
+	frame	data/Bgs/St201/dunk_b11.gif
+	frame	data/Bgs/St201/dunk_b12.gif
+	frame	data/Bgs/St201/dunk_b13.gif
+	frame	data/Bgs/St201/dunk_b14.gif
+	frame	data/Bgs/St201/dunk_b15.gif
+	frame	data/Bgs/St201/dunk_b16.gif
+	frame	data/Bgs/St201/dunk_b17.gif
+	frame	data/Bgs/St201/dunk_b18.gif
+	frame	data/Bgs/St201/dunk_b19.gif
+	frame	data/Bgs/St201/dunk_b20.gif
+	frame	data/Bgs/St201/dunk_b21.gif
+	frame	data/Bgs/St201/dunk_b22.gif
+	frame	data/Bgs/St201/dunk_b23.gif
+	frame	data/Bgs/St201/dunk_b24.gif
+	frame	data/Bgs/St201/dunk_b25.gif
+	frame	data/Bgs/St201/dunk_b26.gif
+	frame	data/Bgs/St201/dunk_b27.gif
+	frame	data/Bgs/St201/dunk_b28.gif
+	frame	data/Bgs/St201/dunk_b29.gif
+	frame	data/Bgs/St201/dunk_b30.gif
+	frame	data/Bgs/St201/dunk_b31.gif
+	frame	data/Bgs/St201/dunk_b32.gif
+	frame	data/Bgs/St201/dunk_b33.gif
+	frame	data/Bgs/St201/dunk_b34.gif
+	frame	data/Bgs/St201/dunk_b35.gif
+	frame	data/Bgs/St201/dunk_b36.gif
+	frame	data/Bgs/St201/dunk_b37.gif
+	frame	data/Bgs/St201/dunk_b38.gif
+	frame	data/Bgs/St201/dunk_b39.gif
+	frame	data/Bgs/St201/dunk_b40.gif
+

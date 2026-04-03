@@ -1,0 +1,13 @@
+name		LuzB05
+type		panel
+shadow		0
+speed		5
+scroll		-1.13
+setlayer	1010
+
+anim idle
+	loop	1
+	delay	4
+	offset	0 0
+	frame	data/bgs/st305/lamps00.gif
+	frame	data/bgs/st305/lamps01.gif

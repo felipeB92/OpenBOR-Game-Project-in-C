@@ -1,0 +1,25 @@
+name			st3_trash1
+type			obstacle
+gfxshadow		1 1
+stealth			2
+animationscript data/scripts/animation/default.c
+
+anim idle
+	loop	1 6 10
+	delay	10
+	offset	6 6
+	@cmd offScreenKill 100 1
+	@cmd dasher -1.4 0 0
+	frame	data/bgs/sor3_st3/trash100.gif
+	frame	data/bgs/sor3_st3/trash100.gif
+	frame	data/bgs/sor3_st3/trash101.gif
+	frame	data/bgs/sor3_st3/trash102.gif
+	frame	data/bgs/sor3_st3/trash103.gif
+		delay	6
+	@cmd looper 1 3
+	@cmd dasher 2 0 0
+	frame	data/bgs/sor3_st3/trash100.gif
+	frame	data/bgs/sor3_st3/trash100.gif
+	frame	data/bgs/sor3_st3/trash101.gif
+	frame	data/bgs/sor3_st3/trash102.gif
+	frame	data/bgs/sor3_st3/trash103.gif

@@ -1,0 +1,29 @@
+name			Monalisa_Wave
+type			none
+health			1
+nolife			1
+lifespan		2
+remove			0
+shadow			0
+antigravity		100
+didhitscript	data/scripts/didhit/default.c
+
+anim idle
+	fastattack 1
+	jugglecost 10
+	forcedirection -1
+	loop	1 3 5
+	delay	2
+	offset	144 196
+	hitfx	data/sounds/HighPunch.wav
+	sound	data/sounds/Wind3.wav
+	attack 147 194 7 6 20 1 0 0 10 12
+	frame	data/chars/monalisa/wave/wave00.gif
+	attack 147 190 13 10 20 1 0 0 10 12
+	frame	data/chars/monalisa/wave/wave01.gif
+	attack 147 187 26 13 20 1 0 0 10 12
+	frame	data/chars/monalisa/wave/wave02.gif
+	attack 147 179 38 21 20 1 0 0 10 12
+	frame	data/chars/monalisa/wave/wave03.gif
+		delay	3
+	frame	data/chars/monalisa/wave/empty.gif

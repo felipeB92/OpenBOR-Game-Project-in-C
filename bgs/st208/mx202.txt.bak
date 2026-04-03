@@ -1,0 +1,10 @@
+name			Mx202 #GROUND
+type			None
+setlayer 6
+
+anim idle
+	loop	0
+	delay	20
+	offset	0 0
+	frame	data/Bgs/St208/mx200.gif
+

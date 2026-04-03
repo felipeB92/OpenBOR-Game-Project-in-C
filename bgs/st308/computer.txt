@@ -1,0 +1,20 @@
+name		st8_computer
+type		panel
+shadow		0
+speed		5
+scroll		-0.5
+
+anim idle
+	loop	1
+	delay	8
+	offset	1 100
+	frame	data/bgs/sor3_st8/computer00.gif
+	frame	data/bgs/sor3_st8/computer01.gif
+	frame	data/bgs/sor3_st8/computer02.gif
+	frame	data/bgs/sor3_st8/computer03.gif
+	frame	data/bgs/sor3_st8/computer04.gif
+	frame	data/bgs/sor3_st8/computer05.gif
+	frame	data/bgs/sor3_st8/computer04.gif
+	frame	data/bgs/sor3_st8/computer03.gif
+	frame	data/bgs/sor3_st8/computer02.gif
+	frame	data/bgs/sor3_st8/computer01.gif

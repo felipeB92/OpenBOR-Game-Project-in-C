@@ -1,0 +1,483 @@
+name	NeoX
+health	900
+speed	22
+aimove				chase
+aggression 99
+riseinv				0.4 1
+falldie 1
+hostile				player npc
+candamage			player npc obstacle
+escapehits			2
+mp			        60
+mprate  			5
+type	Enemy
+gfxshadow	1
+JUMPHEIGHT 1 1
+Jumpheight 3
+atchain    1 2 3 4
+icon	data/chars/Enemys/NeoX/icon.gif 1
+diesound data/voices/bossdie1.wav
+running	20	3	3	1	1
+onblockwscript	data/scripts/bounceF.c
+animationscript 	data/scripts/ani0020.h
+ondrawscript 		data/scripts/player_ondrawscript.c
+
+##LOADS
+Load Trapos02
+Load Tiro01
+Load Missil
+Load Rfire
+Load Head
+Load Mx302
+Load Boom01
+
+remap data/chars/Enemys/NeoX/idle00.gif data/chars/Enemys/NeoX/alter1.gif
+remap data/chars/Enemys/NeoX/idle00.gif data/chars/Enemys/NeoX/alter2.gif
+remap data/chars/Enemys/NeoX/idle00.gif data/chars/Enemys/NeoX/alter3.gif
+
+anim	spawn
+	loop	0
+	delay	40
+	offset	125 192
+	frame   data/chars/Enemys/NeoX/jumpgrab06.gif
+
+
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	125 192
+	bbox	118 83 39 93
+	frame	data/chars/Enemys/NeoX/Idle00.gif
+	frame	data/chars/Enemys/NeoX/Idle01.gif
+	frame	data/chars/Enemys/NeoX/Idle00.gif
+	frame   data/chars/Enemys/NeoX/Idle01.gif
+
+
+
+anim walk
+	loop	1
+	delay	5
+	offset	125 192
+	bbox	129 110 46 68
+	jumpframe  6  1  1  0
+	landframe  8
+	frame	data/chars/Enemys/NeoX/Idle00.gif
+	frame	data/chars/Enemys/NeoX/Idle01.gif
+	frame	data/chars/Enemys/NeoX/Idle00.gif
+	frame   data/chars/Enemys/NeoX/Idle01.gif
+	frame	data/chars/Enemys/NeoX/Idle00.gif
+	frame	data/chars/Enemys/NeoX/Idle01.gif
+	frame	data/chars/Enemys/NeoX/Idle00.gif
+	frame   data/chars/Enemys/NeoX/Idle01.gif
+	frame	data/chars/Enemys/NeoX/Idle00.gif
+	frame	data/chars/Enemys/NeoX/Idle01.gif
+	frame	data/chars/Enemys/NeoX/Idle00.gif
+	frame   data/chars/Enemys/NeoX/Idle01.gif
+	frame	data/chars/Enemys/NeoX/Idle00.gif
+	frame	data/chars/Enemys/NeoX/Idle01.gif
+	frame	data/chars/Enemys/NeoX/Idle00.gif
+	frame   data/chars/Enemys/NeoX/Idle01.gif
+	frame	data/chars/Enemys/NeoX/Idle00.gif
+	frame	data/chars/Enemys/NeoX/Idle01.gif
+	frame	data/chars/Enemys/NeoX/Idle00.gif
+	frame   data/chars/Enemys/NeoX/Idle01.gif
+
+
+
+
+anim get
+	loop	0
+	delay	10
+	offset	125 192
+	frame	data/chars/Enemys/NeoX/get00.gif
+
+
+anim jump
+	loop	0
+	delay	30
+	offset	125 192
+	bbox	120 93 38 76
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/NeoX/jump00.gif
+
+
+
+
+
+
+anim freeSpecial
+	loop	0
+	delay	8
+        Range 150 200
+	offset	125 192
+		Attack1  0
+        hitfx	data/sounds/golpes/forte.wav
+        sound	data/voices/Attack7.wav
+	frame	data/chars/Enemys/NeoX/missile00.gif
+	frame	data/chars/Enemys/NeoX/missile01.gif
+	frame	data/chars/Enemys/NeoX/missile02.gif
+		@cmd  spawn01  "Missil"  0  0  0
+	frame	data/chars/Enemys/NeoX/missile02.gif
+		@cmd  spawn01  "Missil"  0  0  0
+	frame	data/chars/Enemys/NeoX/missile02.gif
+	frame	data/chars/Enemys/NeoX/missile01.gif
+	frame	data/chars/Enemys/NeoX/missile00.gif
+
+anim freeSpecial2
+	loop	0
+	delay	8
+        Range 200 250
+	offset	125 192
+		Attack1  0
+        hitfx	data/sounds/golpes/forte.wav
+	frame	data/chars/Enemys/NeoX/a100.gif
+	frame	data/chars/Enemys/NeoX/a101.gif
+	frame	data/chars/Enemys/NeoX/a102.gif
+	frame	data/chars/Enemys/NeoX/a103.gif
+	frame	data/chars/Enemys/NeoX/a104.gif
+
+
+anim Jumpattack
+	loop	0
+	delay	8
+        Range 100 150
+	offset	125 192
+		Attack1  0
+        hitfx	data/sounds/golpes/forte.wav
+	frame	data/chars/Enemys/NeoX/jumpgrab05.gif
+
+
+anim freeSpecial4
+	loop	0
+	delay	8
+        Range 250 300
+	offset	125 192
+		Attack1  0
+        hitfx	data/sounds/golpes/forte.wav
+	frame	data/chars/Enemys/NeoX/Idle00.gif
+	frame	data/chars/Enemys/NeoX/Idle01.gif
+	frame	data/chars/Enemys/NeoX/Idle02.gif
+	frame	data/chars/Enemys/NeoX/Idle03.gif
+	frame	data/chars/Enemys/NeoX/Idle04.gif
+	frame	data/chars/Enemys/NeoX/Idle05.gif
+	frame	data/chars/Enemys/NeoX/Idle06.gif
+	frame	data/chars/Enemys/NeoX/Idle07.gif
+	frame	data/chars/Enemys/NeoX/Idle08.gif
+	frame	data/chars/Enemys/NeoX/Idle09.gif
+	frame	data/chars/Enemys/NeoX/Idle10.gif
+	frame	data/chars/Enemys/NeoX/Idle11.gif
+	frame	data/chars/Enemys/NeoX/Idle12.gif
+	frame	data/chars/Enemys/NeoX/Idle13.gif
+
+
+
+anim Upper
+	loop	0
+	delay	8
+	offset	125 192
+		Attack1  0
+        hitfx	data/sounds/golpes/forte.wav
+	frame	data/chars/Enemys/NeoX/A500.gif
+	frame	data/chars/Enemys/NeoX/A501.gif
+	frame	data/chars/Enemys/NeoX/A502.gif
+	frame	data/chars/Enemys/NeoX/A503.gif
+	frame	data/chars/Enemys/NeoX/A504.gif
+	frame	data/chars/Enemys/NeoX/A505.gif
+	frame	data/chars/Enemys/NeoX/A506.gif
+
+
+
+
+
+anim Special
+	loop	0
+	delay	8
+        mponly 1
+	energycost 30 1
+	offset	125 192
+		Attack1  0
+        hitfx	data/sounds/golpes/forte.wav
+	frame	data/chars/Enemys/NeoX/Idle00.gif
+	frame	data/chars/Enemys/NeoX/Idle01.gif
+	frame	data/chars/Enemys/NeoX/Idle02.gif
+	frame	data/chars/Enemys/NeoX/Idle03.gif
+	frame	data/chars/Enemys/NeoX/Idle04.gif
+	frame	data/chars/Enemys/NeoX/Idle05.gif
+	frame	data/chars/Enemys/NeoX/Idle06.gif
+	frame	data/chars/Enemys/NeoX/Idle07.gif
+	frame	data/chars/Enemys/NeoX/Idle08.gif
+	frame	data/chars/Enemys/NeoX/Idle09.gif
+	frame	data/chars/Enemys/NeoX/Idle10.gif
+	frame	data/chars/Enemys/NeoX/Idle11.gif
+	frame	data/chars/Enemys/NeoX/Idle12.gif
+	frame	data/chars/Enemys/NeoX/Idle13.gif
+
+anim Special2
+	loop	0
+	delay	8
+        mponly 1
+	energycost 30 1
+	offset	125 192
+		Attack1  0
+        hitfx	data/sounds/golpes/Medio.wav
+        sound	data/sounds/Shock.wav
+	frame	data/chars/Enemys/NeoX/Idle00.gif
+	frame	data/chars/Enemys/NeoX/Idle01.gif
+	frame	data/chars/Enemys/NeoX/Idle02.gif
+	frame	data/chars/Enemys/NeoX/Idle03.gif
+	frame	data/chars/Enemys/NeoX/Idle04.gif
+	frame	data/chars/Enemys/NeoX/Idle05.gif
+	frame	data/chars/Enemys/NeoX/Idle06.gif
+	frame	data/chars/Enemys/NeoX/Idle07.gif
+	frame	data/chars/Enemys/NeoX/Idle08.gif
+	frame	data/chars/Enemys/NeoX/Idle09.gif
+	frame	data/chars/Enemys/NeoX/Idle10.gif
+	frame	data/chars/Enemys/NeoX/Idle11.gif
+	frame	data/chars/Enemys/NeoX/Idle12.gif
+	frame	data/chars/Enemys/NeoX/Idle13.gif
+
+
+
+
+anim attack1
+	loop	0
+	delay	8
+        Range 0 100
+	offset	125 192
+	bbox	122 88 32 93
+        hitfx	data/sounds/golpes/Medio.wav
+	frame	data/chars/Enemys/NeoX/a100.gif
+		attack1  152  111  48  17  10  0  0  0  0  20
+	frame	data/chars/Enemys/NeoX/a101.gif
+		Attack1  0
+	frame	data/chars/Enemys/NeoX/a102.gif
+	frame	data/chars/Enemys/NeoX/a103.gif
+	frame	data/chars/Enemys/NeoX/a104.gif
+
+
+anim attack2
+	loop	0
+	delay	6
+	offset	125 192
+	bbox	125 90 32 84
+		Attack1  0
+        hitfx	data/sounds/golpes/forte.wav
+	frame	data/chars/Enemys/NeoX/a200.gif
+		attack1  152  108  49  20  20  1  0  0  0  20
+	frame	data/chars/Enemys/NeoX/a201.gif
+		attack2  147  105  80  26  10  0  0  0  0  20
+	frame	data/chars/Enemys/NeoX/a202.gif
+		Attack1  0
+	frame	data/chars/Enemys/NeoX/a203.gif
+		attack1  156  109  67  22  10  1  0  0  0  10
+	frame  data/chars/Enemys/NeoX/a204.gif
+		delay  15
+		Attack1  0
+	frame	data/chars/Enemys/NeoX/a205.gif
+	frame	data/chars/Enemys/NeoX/a206.gif
+
+anim attack3
+	loop	0
+	delay	6
+	offset	125 192
+	bbox	125 90 32 84
+		Attack1  0
+        hitfx	data/sounds/golpes/forte.wav
+	frame	data/chars/Enemys/NeoX/A300.gif
+	frame	data/chars/Enemys/NeoX/A301.gif
+	frame	data/chars/Enemys/NeoX/A302.gif
+	frame	data/chars/Enemys/NeoX/A303.gif
+	frame	data/chars/Enemys/NeoX/A304.gif
+	frame	data/chars/Enemys/NeoX/A305.gif
+
+
+anim attack4
+	loop	0
+	delay	6
+	offset	125 192
+	bbox	125 90 32 84
+		Attack1  0
+        hitfx	data/sounds/golpes/forte.wav
+	frame	data/chars/Enemys/NeoX/A400.gif
+	frame	data/chars/Enemys/NeoX/A401.gif
+	frame	data/chars/Enemys/NeoX/A402.gif
+	frame	data/chars/Enemys/NeoX/A403.gif
+	frame	data/chars/Enemys/NeoX/A404.gif
+	frame	data/chars/Enemys/NeoX/A405.gif
+	frame	data/chars/Enemys/NeoX/A406.gif
+
+
+
+anim grabbed
+	loop	0
+	delay	100
+	offset	125 192
+	bbox	125 109 49 65
+	frame	data/chars/Enemys/NeoX/grabbed00.gif
+
+
+
+anim pain
+	loop	0
+	offset	125 192
+	bbox	115 101 36 74
+	delay	15
+	frame	data/chars/Enemys/NeoX/pain00.gif
+	frame	data/chars/Enemys/NeoX/pain01.gif
+
+anim pain2
+	loop	0
+	offset	125 192
+	bbox	130 110 42 68
+	delay	15
+	frame	data/chars/Enemys/NeoX/pain200.gif
+	frame	data/chars/Enemys/NeoX/pain201.gif
+
+anim pain4
+	loop	0
+	offset	125 192
+	bbox	118 86 41 91
+	delay	250
+	frame	data/chars/Enemys/NeoX/pain00.gif
+
+anim pain5
+	loop	0
+	offset	125 192
+	delay	10
+	frame	data/chars/Enemys/NeoX/pain00.gif
+		move  10
+	frame	data/chars/Enemys/NeoX/fall705.gif
+		move  30
+		delay  10
+	frame	data/chars/Enemys/NeoX/fall603.gif
+        quakeframe 4 2 2
+        Sound	data/Sounds/Efeitos/Estrondo.wav
+		Attack1  0
+	frame	data/chars/Enemys/NeoX/fall900.gif
+		move  1
+		movea  5
+	frame  data/chars/Enemys/NeoX/fall900.gif
+		movea  -5
+	frame  data/chars/Enemys/NeoX/fall900.gif
+		delay  50
+		move  0
+		movea  0
+		Attack1  0
+	frame	data/chars/Enemys/NeoX/Fall01.gif
+		delay  10
+	frame	data/chars/Enemys/NeoX/Rise00.gif
+	frame	data/chars/Enemys/NeoX/Rise01.gif
+	frame  data/chars/Enemys/NeoX/Rise02.gif
+
+
+anim death
+	loop	0
+	offset	125 192
+	delay	20
+	jumpframe  0  1  -1  0
+	landframe  2
+	frame	data/chars/Enemys/NeoX/fall701.gif
+	frame  data/chars/Enemys/NeoX/fall00.gif
+	frame	data/chars/Enemys/NeoX/fall01.gif
+		@cmd  spawn01  "Boom01"  0 0  0 
+	frame  data/chars/Enemys/NeoX/fall00.gif
+		@cmd  spawn01  "Boom01"  10 0  0 
+	frame	data/chars/Enemys/NeoX/fall01.gif
+		@cmd  spawn01  "Boom01"  -10 10  0 
+	frame	data/chars/Enemys/NeoX/fall01.gif
+		@cmd  spawn01  "Boom01"  10 -10  0 
+	frame	data/chars/Enemys/NeoX/fall01.gif
+
+
+anim death5
+	loop	0
+	offset	125 192
+	delay	10
+	frame	data/chars/Enemys/NeoX/pain00.gif
+		move  10
+	frame	data/chars/Enemys/NeoX/fall705.gif
+		move  30
+		delay  10
+	frame	data/chars/Enemys/NeoX/fall603.gif
+		Attack1  0
+	frame	data/chars/Enemys/NeoX/fall900.gif
+		move  1
+		movea  5
+	frame  data/chars/Enemys/NeoX/fall900.gif
+		movea  -5
+	frame  data/chars/Enemys/NeoX/fall900.gif
+		delay  50
+		move  0
+		movea  0
+		Attack1  0
+		@cmd  spawn01  "Boom01"  0 0  0 
+	frame  data/chars/Enemys/NeoX/fall00.gif
+		@cmd  spawn01  "Boom01"  10 0  0 
+	frame	data/chars/Enemys/NeoX/fall01.gif
+		@cmd  spawn01  "Boom01"  -10 10  0 
+	frame	data/chars/Enemys/NeoX/fall01.gif
+		@cmd  spawn01  "Boom01"  10 -10  0 
+	frame	data/chars/Enemys/NeoX/fall01.gif
+
+
+anim fall
+	loop	0
+	offset	125 192
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/NeoX/fall701.gif
+		attack  41
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/NeoX/fall00.gif
+		Attack1  0
+	frame	data/chars/Enemys/NeoX/fall01.gif
+
+anim fall3
+	loop	0
+	offset	125 192
+	delay	5
+	jumpframe  0  3  -3  0
+	landframe  8
+		bbox  130  111  45  77
+		Attack1  0
+	frame	data/chars/Enemys/NeoX/fall705.gif
+	frame	data/chars/Enemys/NeoX/fall600.gif
+	frame	data/chars/Enemys/NeoX/fall601.gif
+	frame	data/chars/Enemys/NeoX/fall602.gif
+	frame	data/chars/Enemys/NeoX/fall705.gif
+	frame	data/chars/Enemys/NeoX/fall600.gif
+	frame	data/chars/Enemys/NeoX/fall601.gif
+	frame	data/chars/Enemys/NeoX/fall602.gif
+	frame	data/chars/Enemys/NeoX/fall705.gif
+	frame	data/chars/Enemys/NeoX/fall600.gif
+	frame	data/chars/Enemys/NeoX/fall601.gif
+	frame	data/chars/Enemys/NeoX/fall602.gif
+	frame  data/chars/Enemys/NeoX/fall705.gif
+	frame  data/chars/Enemys/NeoX/fall600.gif
+		Attack1  0
+		bbox  0
+		move  0
+	frame  data/chars/Enemys/NeoX/fall01.gif
+
+anim rise
+	loop	0
+	offset	125 192
+	delay	10
+	frame	data/chars/Enemys/NeoX/Rise00.gif
+	frame	data/chars/Enemys/NeoX/Rise01.gif
+	frame	data/chars/Enemys/NeoX/Rise02.gif
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	125 192
+	bbox	121 109 37 56
+	frame	data/chars/Enemys/NeoX/jumpland00.gif
+

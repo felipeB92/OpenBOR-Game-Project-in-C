@@ -1,0 +1,397 @@
+##MAIN
+name				Hakuyo0_Wait
+type				enemy
+hostile				player npc
+candamage			player npc obstacle
+
+##LIFE
+health				1 #SCRIPT
+
+##POWER
+offense 			1 #SCRIPT
+
+##SPEED
+speed				1 #SCRIPT
+
+##JUMP
+jumpheight 			1 #SCRIPT
+
+##WEIGHT/HEIGHT
+antigravity			-6 #-3/-6/-9
+height				71
+
+##MISC
+jugglepoints		30
+risetime			170
+riseinv				0 1 #HEROES 0.4 - ENEMY 0 - BOSS 0.4
+makeinv				2 0
+atchain				1 1 2
+weapons				none none none none
+gfxshadow			1 1
+dust				dust
+
+##SCRIPTS
+onblockpscript		data/scripts/onblockp/default.c
+onspawnscript		data/scripts/onspawn/hakuyo.c
+animationscript	 	data/scripts/animation/default.c
+
+##ICONS
+icon				data/chars/hakuyo/icon.gif 1
+
+##DIESOUND
+diesound			data/voices/Die1.wav
+
+##REMAPS
+remap				data/chars/hakuyo/idle00.gif data/chars/hakuyo/alter1.gif
+remap				data/chars/hakuyo/idle00.gif data/chars/hakuyo/alter2.gif
+remap				data/chars/hakuyo/idle00.gif data/chars/hakuyo/alter3.gif
+remap				data/chars/hakuyo/idle00.gif data/chars/hakuyo/alter4.gif
+
+##ANIMATIONS#############################################################################
+
+anim spawn #WAIT SPAWN
+	loop	0
+	delay	16
+	offset	123 178
+	bbox 	105 106 32 74
+	@cmd aniChange 0 "ANI_FOLLOW1"
+	frame	data/chars/hakuyo/kick01.gif
+	
+anim follow1 #WAIT LOOP
+	loop	1
+	delay	16
+	offset	123 178
+	bbox 	105 106 32 74
+	@cmd cancel -999 100 -999 999 -999 999 "ANI_FOLLOW2"
+	frame	data/chars/hakuyo/kick01.gif
+	
+anim follow2 #LOOP STOP
+	loop	0
+	delay	16
+	offset	123 178
+	bbox 	105 106 32 74
+	frame	data/chars/hakuyo/kick01.gif
+
+anim idle
+	loop	1
+	delay	16
+	offset	123 178
+	bbox 	107 109 28 71
+	@cmd clearL
+	frame	data/chars/hakuyo/idle00.gif
+
+anim walk
+	loop	1
+	delay	16
+	offset	123 178
+	bbox 	107 109 28 71
+	frame	data/chars/hakuyo/walk00.gif
+	frame	data/chars/hakuyo/walk01.gif
+	frame	data/chars/hakuyo/walk02.gif
+	frame	data/chars/hakuyo/walk03.gif
+
+anim get
+	loop	0
+	delay	16
+	offset	123 178
+	frame	data/chars/hakuyo/get00.gif
+
+anim grabbed
+	loop	0
+	delay	8
+	offset	123 178
+	bbox 	106 111 33 69
+	frame	data/chars/hakuyo/grabbed00.gif
+	
+anim jumpdelay
+	loop	0
+	delay	12
+	offset	123 178
+	bbox 	110 125 33 54
+	frame	data/chars/hakuyo/jumpdelay00.gif
+	
+anim walkoff
+	fastattack 1
+	jugglecost 10
+	forcedirection -1
+	loop	0
+	delay	4
+	offset	123 178
+	bbox 	100 100 44 51
+	hitfx	data/sounds/HighKick.wav
+	sound	data/voices/Hakuyo1.wav
+	@cmd jump 1
+	attack 125 132 58 19 8 1 0 0 10 12
+	frame	data/chars/hakuyo/jumpatk00.gif
+
+anim jumpland
+	loop	0
+	delay	12
+	offset	123 178
+	bbox 	110 125 33 54
+	sound	data/sounds/Jumpland.wav
+	frame	data/chars/hakuyo/jumpland00.gif
+
+anim pain #UP
+	loop	0
+	delay	4
+	offset	123 178
+	bbox 	107 105 28 75
+	frame	data/chars/hakuyo/pain00.gif
+	frame	data/chars/hakuyo/pain01.gif
+	frame	data/chars/hakuyo/pain00.gif
+	frame	data/chars/hakuyo/pain01.gif
+	frame	data/chars/hakuyo/pain00.gif
+	frame	data/chars/hakuyo/pain01.gif
+	frame	data/chars/hakuyo/pain00.gif
+	frame	data/chars/hakuyo/pain01.gif
+	frame	data/chars/hakuyo/pain00.gif
+	frame	data/chars/hakuyo/pain01.gif
+	frame	data/chars/hakuyo/pain00.gif
+	frame	data/chars/hakuyo/pain01.gif
+
+anim pain2 #DOWN
+	loop	0
+	delay	4
+	offset	123 178
+	bbox 	104 116 34 65
+	frame	data/chars/hakuyo/pain200.gif
+	frame	data/chars/hakuyo/pain201.gif
+	frame	data/chars/hakuyo/pain200.gif
+	frame	data/chars/hakuyo/pain201.gif
+	frame	data/chars/hakuyo/pain200.gif
+	frame	data/chars/hakuyo/pain201.gif
+	frame	data/chars/hakuyo/pain200.gif
+	frame	data/chars/hakuyo/pain201.gif
+	frame	data/chars/hakuyo/pain200.gif
+	frame	data/chars/hakuyo/pain201.gif
+	frame	data/chars/hakuyo/pain200.gif
+	frame	data/chars/hakuyo/pain201.gif
+
+anim fall #NORMAL
+	landframe 1
+	loop	0
+	delay	999
+	offset	123 178
+	bbox 	100 110 39 54
+	frame	data/chars/hakuyo/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Falling.wav
+	frame	data/chars/hakuyo/fall01.gif
+
+anim burn #BURNED FALL
+	landframe 2
+	loop	1 0 2
+	delay	3
+	offset	123 178
+	bbox 	100 110 39 54
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	frame	data/chars/hakuyo/fall00.gif
+	@cmd spawn01 "smoke" 0 50 0
+	drawmethod tintmode 2
+	drawmethod tintcolor 255
+	frame	data/chars/hakuyo/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	nodrawmethod
+	sound	data/sounds/Falling.wav
+	frame	data/chars/hakuyo/fall01.gif
+
+anim shock #SHOCKED FALL
+	landframe 2
+	loop	1 0 2
+	delay	3
+	offset	123 178
+	bbox 	100 110 39 54
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame	data/chars/hakuyo/fall00.gif
+	drawmethod tintmode 2
+	drawmethod tintcolor -255
+	frame	data/chars/hakuyo/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	nodrawmethod
+	sound	data/sounds/Falling.wav
+	frame	data/chars/hakuyo/fall01.gif
+	
+anim fall6 #SPIN FALL
+	landframe 4
+	loop	1 0 4
+	delay	3
+	offset	123 178
+	frame	data/chars/hakuyo/fall600.gif
+	frame	data/chars/hakuyo/fall601.gif
+	frame	data/chars/hakuyo/fall602.gif
+	frame	data/chars/hakuyo/fall603.gif
+		delay	8
+	sound	data/sounds/Falling.wav
+	frame	data/chars/hakuyo/fall01.gif
+
+anim fall7 #GRABSTART POSITION
+	loop	0
+	delay	1000
+	offset	123 178
+	frame	data/chars/hakuyo/fall700.gif
+	frame	data/chars/hakuyo/fall701.gif
+	frame	data/chars/hakuyo/fall702.gif
+	frame	data/chars/hakuyo/fall703.gif
+	frame	data/chars/hakuyo/fall704.gif
+	frame	data/chars/hakuyo/fall705.gif
+
+anim fall8 #FINISH/THROW TYPE 3
+	landframe 1
+	loop	0
+	delay	999
+	offset	123 178
+	bbox 	100 110 39 54
+	hitfx	data/sounds/MediumKick.wav
+	attack 100 110 39 54 4 1 0 0 0 12
+	frame	data/chars/hakuyo/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Falling.wav
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/hakuyo/fall01.gif
+
+anim fall9 #FINISH/THROW TYPE 2
+	landframe 1
+	loop	0
+	delay	999
+	offset	123 178
+	bbox 	107 123 33 54
+	hitfx	data/sounds/MediumKick.wav
+	attack 107 123 33 54 4 1 0 0 0 12
+	frame	data/chars/hakuyo/fall900.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Falling.wav
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/hakuyo/fall01.gif
+
+anim rise
+	loop	0
+	delay	16
+	offset	123 178
+	frame	data/chars/hakuyo/rise00.gif
+	frame	data/chars/hakuyo/rise01.gif
+	frame	data/chars/hakuyo/rise00.gif
+	frame	data/chars/hakuyo/rise02.gif
+
+anim attack1
+	range 20 60
+	rangea 0 0
+	fastattack 1
+	jugglecost 10
+	forcedirection -1
+	loop	0
+	delay	6
+	offset	123 178
+	bbox 	115 106 32 74
+	hitfx	data/sounds/LowPunch.wav
+	sound	data/sounds/LowAttack.wav
+	frame	data/chars/hakuyo/a100.gif
+	attack 134 110 46 18 2 0 0 0 10 12
+	frame	data/chars/hakuyo/a101.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/hakuyo/a102.gif
+	bbox 	107 109 28 71
+	frame	data/chars/hakuyo/a103.gif
+	
+anim attack2
+	range 20 60
+	rangea 0 0
+	fastattack 1
+	jugglecost 20
+	forcedirection -1
+	loop	0
+	delay	12
+	offset	123 178
+	bbox 	115 106 32 74
+	hitfx	data/sounds/HighPunch.wav
+	sound	data/sounds/HighAttack.wav
+	frame	data/chars/hakuyo/a200.gif
+		delay	18
+	attack 143 113 46 18 8 1 0 0 20 12
+	frame	data/chars/hakuyo/a201.gif
+		delay	12
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/hakuyo/a202.gif
+	bbox 	107 109 28 71
+	frame	data/chars/hakuyo/a203.gif
+	
+anim jumpattack
+	range 40 120
+	rangea 0 100
+	fastattack 1
+	jugglecost 10
+	forcedirection -1
+	loop	0
+	delay	12
+	offset	123 178
+	bbox 	119 100 21 60
+	hitfx	data/sounds/HighKick.wav
+	sound	data/sounds/Jumping.wav
+	@cmd targetJump
+	@cmd leapJump
+	frame	data/chars/hakuyo/jump00.gif
+	attack 125 132 58 19 8 1 0 0 10 12
+	bbox 	100 100 44 51
+	sound	data/voices/Hakuyo1.wav
+	frame	data/chars/hakuyo/jumpatk00.gif
+	
+anim freespecial #FIRE
+	range 40 120
+	rangea 0 0
+	fastattack 1
+	jugglecost 20
+	forcedirection -1
+	loop	0
+	delay	8
+	offset	123 178
+	bbox 	112 106 32 74
+	hitfx	data/sounds/HighPunch.wav
+	sound	data/sounds/HighAttack.wav
+	frame	data/chars/hakuyo/fire00.gif
+	bbox 	112 103 26 77
+	frame	data/chars/hakuyo/fire01.gif
+	attack 159 124 48 16 8 0 0 0 10 12
+	bbox 	134 116 30 64
+	frame	data/chars/hakuyo/fire02.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	sound	data/sounds/Fireball.wav
+	frame	data/chars/hakuyo/fire02.gif
+		delay	2
+	attack 159 124 59 16 8 1 0 0 10 12
+	frame	data/chars/hakuyo/fire03.gif
+		delay	3
+	frame	data/chars/hakuyo/fire02.gif
+		delay	8
+	@cmd looper 4 12
+	attack 0 0 0 0 0 0 0 0 0 0
+	bbox 	120 103 26 77
+	frame	data/chars/hakuyo/fire04.gif
+	bbox 	107 109 28 71
+	frame	data/chars/hakuyo/fire05.gif
+	
+anim upper #KICK
+	fastattack 1
+	jugglecost 20
+	forcedirection -1
+	loop	0
+	delay	8
+	offset	123 178
+	bbox 	105 106 32 74
+	hitfx	data/sounds/HighKick.wav
+	sound	data/sounds/HighAttack.wav
+	frame	data/chars/hakuyo/kick00.gif
+	frame	data/chars/hakuyo/kick01.gif
+		delay	16
+	attack 118 100 48 38 8 1 0 0 20 12
+	frame	data/chars/hakuyo/kick02.gif
+		delay	8
+	attack 0 0 0 0 0 0 0 0 0 0
+	bbox 	105 106 32 74
+	frame	data/chars/hakuyo/kick03.gif

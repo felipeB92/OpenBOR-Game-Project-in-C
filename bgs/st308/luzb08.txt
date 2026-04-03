@@ -1,0 +1,13 @@
+name		Luzb08
+type		panel
+shadow		0
+speed		5
+scroll		-0.2
+noquake		1 1
+
+anim idle
+	loop	1
+	delay	16
+	offset	0 0
+	frame	data/bgs/st308/lights00.gif
+	frame	data/bgs/st308/lights01.gif

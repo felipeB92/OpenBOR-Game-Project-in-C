@@ -1,0 +1,242 @@
+music		data/Bgs/St407/lv407b.bor
+bossmusic	data/music/boss2.bor
+
+###BACKGROUND
+background			data/bgs/St407/Back01.gif
+
+###BGLAYER/PANEL
+panel			data/bgs/St407/pN02.gif	none	none
+
+###MISC
+Frontpanel			data/bgs/St407/Front02.gif
+#order			a
+settime			99
+scrollspeed 	0.5
+stagenumber 	7
+cameratype 1
+backgroundSpeed 1 40
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	30 30  150
+spawn2  	35 30 150
+spawn3  	40 30  150
+
+light		128 -128
+at			0
+
+
+
+
+spawn  Lata
+Item   Chicken
+	coords  350 250
+	at  0
+
+spawn  Lata
+2pItem   Chicken
+	coords  400 220
+	at  0
+
+
+
+
+spawn  AlienB
+Map    1
+health 150
+	coords  400 250 150
+	at  0
+
+
+spawn  AlienB
+Map    2
+health 150
+	coords  450 200 150
+	at  0
+
+
+
+wait 
+at 100
+
+Group 3 3
+at 100
+
+
+spawn  AlienB
+Flip   1
+Map    3
+health 150
+	coords  50 200 150
+	at  100
+
+
+spawn  AlienB
+Flip   1
+health 150
+	coords  100 260 150
+	at  100
+
+
+spawn  Alien_
+Map    1
+health 150
+	coords  600 200 150
+	at  100
+
+spawn  AlienC
+Map    1
+health 150
+	coords  600 200 150
+	at  100
+
+spawn  Lata
+Item   Pipe
+	coords  520 250
+	at  101
+
+spawn  Lata
+2pItem  Apple
+	coords  530 220
+	at  200
+
+spawn  Lata
+Item   Sword
+	coords  550 260
+	at  250
+
+spawn  Lata
+Item  Knife
+	coords  550 230
+	at  260
+
+
+wait 
+at 300
+
+Group 4 4
+at 300
+
+
+
+spawn  P1
+health 100
+	coords  700 260
+	at  300
+
+
+spawn  P1
+Map    1
+health 100
+	coords  600 210
+	at  300
+
+spawn  P1
+Map    1
+health 100
+	coords  500 250 150
+	at  300
+
+
+spawn  P1
+map    3
+health 100
+	coords  700 260
+	at  300
+
+
+spawn  Gorgoro
+Map    3
+health 150
+	coords  600 210
+	at  300
+
+
+
+spawn  Gorgoro
+map    4
+health 150
+	coords  700 260
+	at  300
+
+
+spawn  p1
+Map    3
+health 100
+	coords  600 210
+	at  300
+
+spawn  AlienC
+health 150
+	coords  650 200
+	at  300
+
+spawn  Alien_
+health 150
+	coords  650 220
+	at  300
+
+spawn  AlienB
+health 150
+	coords  650 260
+	at  300
+
+spawn  Lata
+Item   1up
+	coords  550 230
+	at  350
+
+spawn  Lata
+Item  Kunai
+	coords  550 220
+	at  400
+
+wait 
+at 700
+
+Group 2 2
+at 700
+
+spawn  RobotZ
+Map    1
+health 200
+	coords  400 240
+	at  700
+
+spawn  RobotZ
+MAp    2
+Flip   1
+health 200
+	coords  100 240
+	at  700
+
+Group 2 2
+at 701
+
+
+spawn  NeoX
+Map    1
+health 250
+	coords  600 210
+	at  701
+
+spawn  NeoX
+Map    2
+health 250
+	coords  -100 260 
+	at  701
+
+
+
+
+
+
+

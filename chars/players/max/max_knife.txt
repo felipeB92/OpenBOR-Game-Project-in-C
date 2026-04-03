@@ -1,0 +1,181 @@
+name	Max_Knife
+health	120
+speed	9
+type	none
+antigrab 2
+gfxshadow	1
+candamage			enemy npc obstacle
+JUMPHEIGHT 1 1
+Jumpheight 3
+icon	data/chars/players/Max/icon.gif
+diesound data/sounds/Maxdie.wav
+running	20	3	3	1	1
+
+Com d d freespecial5
+Com u u freespecial6
+
+
+Load KnifeT
+
+
+
+remap data/chars/players/Max/idle00.gif data/chars/players/Max/alter1.gif
+remap data/chars/players/Max/idle00.gif data/chars/players/Max/alter2.gif
+remap data/chars/players/Max/idle00.gif data/chars/players/Max/alter3.gif
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	150 190
+	bbox	128 104 48 78
+	frame   data/chars/players/Max/Knife/idle00.gif
+	frame   data/chars/players/Max/Knife/idle01.gif
+	frame   data/chars/players/Max/Knife/idle02.gif
+	frame   data/chars/players/Max/Knife/idle03.gif
+
+
+
+
+anim walk
+	loop	1
+	delay	1
+	offset	150 190
+	bbox	139 106 37 60
+	jumpframe  0  0.001  0.001  0
+	landframe  1
+	frame	data/chars/players/Max/Knife/walk00.gif
+	frame	data/chars/players/Max/Knife/walk00.gif
+	delay	14
+	frame	data/chars/players/Max/Knife/walk00.gif
+	frame	data/chars/players/Max/Knife/walk01.gif
+	frame	data/chars/players/Max/Knife/walk02.gif
+	frame	data/chars/players/Max/Knife/walk03.gif
+	frame	data/chars/players/Max/Knife/walk04.gif
+	frame	data/chars/players/Max/Knife/walk05.gif
+
+
+anim get
+	loop	0
+	delay	10
+	offset	150 190
+	frame	data/chars/players/Max/Knife/get00.gif
+
+
+anim jump
+	loop	0
+	delay	5
+	offset	150 190
+	bbox	130 93 43 57
+	frame	data/chars/players/Max/Knife/jump00.gif
+	frame	data/chars/players/Max/Knife/jump01.gif
+
+
+
+
+anim jumpattack
+	loop	0
+	delay	7
+	offset	150 190
+	bbox	136 100 38 39
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Max/Knife/jumpatk00.gif
+		bbox  124  115  46  48
+		attack1  160  123  55  35  10  1  0  0  0  20
+	frame	data/chars/players/Max/Knife/jumpatk01.gif
+
+
+
+anim jumpattack2
+	loop	0
+	delay	7
+	offset	150 190
+	bbox	136 110 39 37
+	attack	141 101 49 43 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Max/Knife/jumpatk200.gif
+
+anim jumpforward
+	loop	0
+	delay	7
+	offset	150 190
+	bbox	114 114 37 35
+	attack	103 126 112 34 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/soco.wav
+	frame	data/chars/players/Max/Knife/fjumpatk01.gif
+
+
+anim runjumpattack
+	loop	0
+	delay	7
+	offset	150 190
+	bbox	143 126 43 37
+	attack	139 126 47 56 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Max/Knife/jumpatk201.gif
+
+anim attack1
+	loop	0
+	delay	6
+	offset	150 190
+	bbox	134 114 43 76
+		Attack1  0
+	sound	data/sounds/armas/Whoosh.wav
+        hitfx	data/sounds/Armas/Corte.wav
+	frame	data/chars/players/Max/Knife/a100.gif
+		attack1  166  128  63  24  15  1  0  0  0  15
+	frame	data/chars/players/Max/Knife/a101.gif
+		Attack1  0
+	frame	data/chars/players/Max/Knife/a100.gif
+
+anim Special2
+	loop	0
+	delay	6
+	offset	150 190
+	bbox	139 110 40 63
+		Attack1  0
+        custknife Knifet
+        throwframe 2 45
+	sound	data/sounds/armas/Whoosh.wav
+        hitfx	data/sounds/Armas/Corte.wav
+	frame	data/chars/players/Max/Knife/a100.gif
+	frame	data/chars/players/Max/Knife/a101.gif
+		Attack1  0
+	frame	data/chars/players/Max/Knife/a102.gif
+	frame	data/chars/players/Max/Knife/a103.gif
+
+
+
+anim run
+        loop    1
+        delay  10
+	offset	150 190
+	bbox	149 106 49 53
+	jumpframe  0  0.001  0.001  0
+	landframe  1
+        frame	data/chars/players/Max/Knife/run00.gif
+        frame	data/chars/players/Max/Knife/run01.gif
+        frame	data/chars/players/Max/Knife/run02.gif
+        frame	data/chars/players/Max/Knife/run03.gif
+        frame	data/chars/players/Max/Knife/run04.gif
+        frame	data/chars/players/Max/Knife/run05.gif
+
+
+
+
+
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	150 190
+	bbox	136 123 41 48
+	frame	data/chars/players/Max/Knife/jumpland00.gif
+

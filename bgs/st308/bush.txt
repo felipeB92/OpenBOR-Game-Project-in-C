@@ -1,0 +1,41 @@
+name			st8_bush
+type			obstacle
+hostile			player npc
+health			1
+nomove			1 1
+shadow			0
+stealth			2
+animationscript	data/scripts/animation/default.c
+
+load			kusanagi5_bush
+
+anim idle
+	loop	1
+	delay	32
+	offset	32 40
+	@cmd cancel -120 120 -999 999 -999 999 "ANI_FOLLOW1"
+	frame	data/bgs/sor3_st8/bush00.gif
+	
+anim follow1
+	loop	0
+	delay	16
+	offset	32 40
+	frame	data/bgs/sor3_st8/bush00.gif
+	frame	data/bgs/sor3_st8/bush01.gif
+	frame	data/bgs/sor3_st8/bush02.gif
+	frame	data/bgs/sor3_st8/bush01.gif
+	frame	data/bgs/sor3_st8/bush00.gif
+	frame	data/bgs/sor3_st8/bush01.gif
+	frame	data/bgs/sor3_st8/bush02.gif
+	frame	data/bgs/sor3_st8/bush01.gif
+	frame	data/bgs/sor3_st8/bush00.gif
+	frame	data/bgs/sor3_st8/bush01.gif
+	frame	data/bgs/sor3_st8/bush02.gif
+	frame	data/bgs/sor3_st8/bush01.gif
+	frame	data/bgs/sor3_st8/bush00.gif
+	frame	data/bgs/sor3_st8/bush01.gif
+	frame	data/bgs/sor3_st8/bush02.gif
+	frame	data/bgs/sor3_st8/bush01.gif
+	@cmd spawnToss "kusanagi5_bush" 0 10 0 0 3.5 0.3
+	@cmd suicide
+	frame	data/bgs/sor3_st8/bush00.gif

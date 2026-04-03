@@ -1,0 +1,74 @@
+name			Trilho02 #GROUND
+type			None
+setlayer 5
+onblockwscript	data/scripts/bounceF.c
+animationscript 	data/scripts/ani0020.h
+ondrawscript 		data/scripts/player_ondrawscript.c
+
+Load Train01
+Load Train02
+
+anim idle
+	loop	1
+	delay	900
+	offset	0 0
+	frame	data/Bgs/St304/rails03.gif
+	delay	10
+	frame	data/Bgs/St304/rails03.gif
+	frame	data/Bgs/St304/rails04.gif
+	frame	data/Bgs/St304/rails03.gif
+	@cmd  spawn01  "Train01"  -400  260  260
+	frame	data/Bgs/St304/rails04.gif
+	sound	data/sounds/Wheel.wav
+	frame	data/Bgs/St304/rails03.gif
+	frame	data/Bgs/St304/rails04.gif
+	sound	data/sounds/Wheel.wav
+	frame	data/Bgs/St304/rails03.gif
+	frame	data/Bgs/St304/rails04.gif
+	sound	data/sounds/Wheel.wav
+	frame	data/Bgs/St304/rails03.gif
+	frame	data/Bgs/St304/rails04.gif
+	sound	data/sounds/Wheel.wav
+	frame	data/Bgs/St304/rails03.gif
+	frame	data/Bgs/St304/rails04.gif
+	sound	data/sounds/Wheel.wav
+	frame	data/Bgs/St304/rails03.gif
+	frame	data/Bgs/St304/rails04.gif
+	sound	data/sounds/Wheel.wav
+	frame	data/Bgs/St304/rails03.gif
+	frame	data/Bgs/St304/rails04.gif
+	frame	data/Bgs/St304/rails03.gif
+	frame	data/Bgs/St304/rails04.gif
+	frame	data/Bgs/St304/rails03.gif
+	frame	data/Bgs/St304/rails04.gif
+	frame	data/Bgs/St304/rails03.gif
+	frame	data/Bgs/St304/rails04.gif
+	frame	data/Bgs/St304/rails03.gif
+	frame	data/Bgs/St304/rails04.gif
+	frame	data/Bgs/St304/rails03.gif
+	frame	data/Bgs/St304/rails04.gif
+	frame	data/Bgs/St304/rails03.gif
+	frame	data/Bgs/St304/rails04.gif
+	frame	data/Bgs/St304/rails03.gif
+	frame	data/Bgs/St304/rails04.gif
+	frame	data/Bgs/St304/rails03.gif
+	frame	data/Bgs/St304/rails04.gif
+	frame	data/Bgs/St304/rails03.gif
+	frame	data/Bgs/St304/rails04.gif
+	frame	data/Bgs/St304/rails03.gif
+	frame	data/Bgs/St304/rails04.gif
+	frame	data/Bgs/St304/rails03.gif
+	frame	data/Bgs/St304/rails04.gif
+	frame	data/Bgs/St304/rails03.gif
+	frame	data/Bgs/St304/rails04.gif
+	frame	data/Bgs/St304/rails03.gif
+	frame	data/Bgs/St304/rails04.gif
+	frame	data/Bgs/St304/rails03.gif
+	frame	data/Bgs/St304/rails04.gif
+	frame	data/Bgs/St304/rails03.gif
+	frame	data/Bgs/St304/rails04.gif
+	frame	data/Bgs/St304/rails03.gif
+	frame	data/Bgs/St304/rails04.gif
+	frame	data/Bgs/St304/rails03.gif
+	frame	data/Bgs/St304/rails04.gif
+	

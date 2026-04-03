@@ -1,0 +1,364 @@
+music		data/bgs/St403/Lv403b.bor
+bossmusic	data/music/boss3.bor
+
+###BACKGROUND
+background		data/bgs/St403/back00.gif	
+
+###BGLAYER/PANEL
+panel			data/bgs/St403/pN01.gif	none	none
+
+###MISC
+Frontpanel			data/bgs/St403/Front01.gif
+#order			a
+settime			99
+scrollspeed 	0.5
+stagenumber 	3
+cameratype 1
+backgroundSpeed 1 40
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	30 30  150
+spawn2  	35 30 150
+spawn3  	40 30  150
+
+light		128 -128
+at			0
+
+
+spawn  Estatua02
+Item apple
+	coords  272 220
+	at  0
+
+spawn  Estatua02
+2pItem apple
+	coords  327 260
+	at  0
+
+
+spawn  _Galsia
+flip   1
+health 50
+	coords  272 190
+	at  100
+
+spawn  Jonny
+health 50
+	coords  580 230 150
+	at  100
+
+
+spawn  Donovan
+map    1
+health 70
+	coords  560 260 150
+	at  100
+
+
+wait 
+at  200
+
+Group 5 5
+at  200
+
+spawn  Fog
+map    1
+health 80
+	coords  -100 260 150
+	at  200
+
+
+spawn  _Slum
+flip   1
+map    1
+health 70
+	coords  173 190
+	at  200
+
+
+spawn  Haku_oH
+map    1
+health 80
+	coords  300 230 150
+	at  200
+
+spawn  _vice
+flip   1
+map    1
+health 70
+	coords  173 190
+	at  200
+
+spawn  Hakuyo
+map    1
+health 80
+	coords  300 230 150
+	at  200
+
+spawn  _Galsia
+flip   1
+map    2
+health 70
+	coords  173 190
+	at  200
+
+
+spawn  _Bigben
+flip   1
+map    2
+health 90
+	coords  173 190
+	at  200
+
+wait 
+at  400
+
+Group 4 4
+at  400
+
+
+
+spawn  Skeleton
+health 70
+	coords  -100 190
+	at  400
+
+spawn  Skeleton
+health 70
+	coords  600 190
+	at  400
+
+spawn  Skeleton
+health 70
+	coords  -100 240
+	at  400
+
+spawn  Skeleton
+health 70
+	coords  600 240
+	at  400
+
+
+spawn  Skeleton
+health 70
+	coords  -100 190
+	at  400
+
+spawn  Skeleton
+health 70
+	coords  600 190
+	at  400
+
+spawn  Skeleton
+health 70
+	coords  -100 240
+	at  400
+
+spawn  Skeleton
+health 70
+	coords  600 240
+	at  400
+
+wait 
+at  401
+
+spawn  Gorgoro
+map    1
+health 150
+	coords  400 230 150
+	at  401
+
+spawn  Gorgoro
+flip   1
+map    2
+health 150
+	coords  100 230 150
+	at  401
+
+
+spawn  Armadura
+health 200
+	coords  550 230
+	at  503
+
+spawn  Armadura
+flip 1
+health 200
+	coords  -100 250
+	at  503
+
+wait 
+at  620
+
+Group 2 2
+at  620
+
+
+spawn  Skeleton
+map    4
+health 90
+	coords  600 240
+	at  620
+
+
+spawn  Skeleton
+map    4
+health 90
+	coords -100 240
+	at  620
+
+Group 9 9
+at  621
+
+
+spawn  Estatua02
+Item Chicken
+	coords  572 220
+	at  627
+
+spawn  Estatua02
+2pItem apple
+	coords  527 260
+	at  621
+
+spawn  Skeleton
+map    4
+health 90
+	coords 600 240
+	at  700
+
+spawn  zombie
+map    4
+health 90
+	coords 600 220
+	at  800
+
+spawn  zombie
+map    4
+health 90
+	coords 650 240
+	at  800
+
+spawn  Gordoz
+map    4
+health 90
+	coords 600 240
+	at  900
+
+spawn  Gordoz
+map    4
+health 90
+	coords 600 220
+	at  1000
+
+spawn  Donovan
+map    4
+health 90
+	coords -100 220 50
+	at  1000
+
+spawn  Pipe
+	coords -100 220 40
+	at  1000
+
+
+spawn  Bigben
+map    4
+health 150
+	coords -100 220 150
+	at  1100
+
+
+
+
+
+wait 
+at  1540
+
+Group 5 5
+at  1540
+
+
+spawn  Skeleton
+flip   1
+health 70
+	coords  129 190
+	at  1540
+
+
+spawn  Skeleton
+flip   1
+health 70
+	coords  191 190
+	at  1540
+
+
+spawn  Skeleton
+flip   1
+health 70
+	coords  129 190
+	at  1540
+
+
+spawn  Skeleton
+flip   1
+health 70
+	coords  191 190
+	at  1540
+
+
+spawn  Skeleton
+flip   1
+health 70
+	coords  129 190
+	at  1540
+
+
+spawn  Skeleton
+flip   1
+health 70
+	coords  191 190
+	at  1540
+
+spawn  Haku_oH
+flip   1
+map    2
+health 90
+	coords  200 230 150
+	at  1540
+
+
+spawn  Hakuyo
+map    2
+health 90
+	coords  400 230 150
+	at  1540
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

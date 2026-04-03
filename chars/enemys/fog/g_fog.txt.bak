@@ -1,0 +1,61 @@
+name			G_Fog #GROUND
+type			None
+candamage		player enemy npc obstacle
+setlayer -5
+nolife 1
+noname 1
+onblockwscript	data/scripts/bounceF.c
+animationscript 	data/scripts/ani0020.h
+ondrawscript 		data/scripts/player_ondrawscript.c
+
+Load Granada
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	144 150
+	frame	data/chars/Enemys/Fog/walk00.gif
+		offset  144  160
+	frame  data/chars/Enemys/Fog/walk01.gif
+		offset  144  170
+	frame  data/chars/Enemys/Fog/walk02.gif
+		offset  144  180
+	frame  data/chars/Enemys/Fog/walk03.gif
+	frame	data/chars/Enemys/Fog/grenade03.gif
+        @cmd	shooter2 "Granada"  15        50       0     0        3         0.5
+		delay  300
+	frame	data/chars/Enemys/Fog/grenade04.gif
+		delay  10
+	frame	data/chars/Enemys/Fog/grenade03.gif
+        @cmd	shooter2 "Granada"  15        50       0     1        3         0.2
+		delay  300
+	frame	data/chars/Enemys/Fog/grenade04.gif
+		delay  10
+	frame	data/chars/Enemys/Fog/grenade03.gif
+        @cmd	shooter2 "Granada"  15        50       0     0        3         1
+		delay  300
+	frame	data/chars/Enemys/Fog/grenade04.gif
+		delay  10
+	frame	data/chars/Enemys/Fog/grenade03.gif
+        @cmd	shooter2 "Granada"  15        50       0     0        3         0.2
+		delay  300
+	frame	data/chars/Enemys/Fog/grenade04.gif
+		delay  10
+	frame	data/chars/Enemys/Fog/grenade03.gif
+        @cmd	shooter2 "Granada"  15        50       0     -1        3         0.5
+		delay  300
+	frame	data/chars/Enemys/Fog/grenade04.gif
+	frame	data/chars/Enemys/Fog/walk00.gif
+		offset  144  180
+	frame  data/chars/Enemys/Fog/walk01.gif
+		offset  144  170
+	frame  data/chars/Enemys/Fog/walk02.gif
+		offset  144  160
+	frame  data/chars/Enemys/Fog/walk03.gif
+		delay  10
+		offset  144  150
+	frame  data/chars/Enemys/Fog/walk00.gif
+	@cmd killentity getlocalvar("self")
+	frame  data/chars/Enemys/Fog/walk01.gif
+

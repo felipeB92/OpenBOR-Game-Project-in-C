@@ -1,0 +1,299 @@
+name	_Electra
+health	100
+speed	10
+falldie 1
+type	Enemy
+gfxshadow	1
+JUMPHEIGHT 1 1
+Jumpheight 3
+atchain    1 2 3
+icon	data/chars/Enemys/Electra/icon.gif
+diesound data/sounds/axeldie.wav
+running	20	3	3	1	1
+
+##LOADS
+
+
+remap data/chars/Enemys/Electra/idle00.gif data/chars/Enemys/Electra/alter1.gif
+remap data/chars/Enemys/Electra/idle00.gif data/chars/Enemys/Electra/alter2.gif
+remap data/chars/Enemys/Electra/idle00.gif data/chars/Enemys/Electra/alter3.gif
+remap data/chars/Enemys/Electra/idle00.gif data/chars/Enemys/Electra/alter4.gif
+
+anim	spawn
+	loop	0
+	delay	200
+	offset	130 192
+	frame   data/chars/Enemys/Electra/hide00.gif
+	delay	14
+	bbox	111 113 37 79
+		movea  0
+		movez  5
+	frame	data/chars/Enemys/Electra/walk00.gif
+	frame	data/chars/Enemys/Electra/walk01.gif
+	frame	data/chars/Enemys/Electra/walk02.gif
+	frame	data/chars/Enemys/Electra/walk00.gif
+	frame	data/chars/Enemys/Electra/walk01.gif
+	frame	data/chars/Enemys/Electra/walk02.gif
+	frame	data/chars/Enemys/Electra/walk00.gif
+	frame	data/chars/Enemys/Electra/walk01.gif
+	frame	data/chars/Enemys/Electra/walk02.gif
+
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	130 192
+	bbox	111 109 41 83
+	frame   data/chars/Enemys/Electra/idle00.gif
+
+
+
+anim walk
+	loop	1
+	delay	14
+	offset	130 192
+	bbox	116 113 28 81
+	frame	data/chars/Enemys/Electra/walk00.gif
+	frame	data/chars/Enemys/Electra/walk01.gif
+	frame	data/chars/Enemys/Electra/walk02.gif
+
+
+anim get
+	loop	0
+	delay	10
+	offset	130 192
+	frame	data/chars/Enemys/Electra/get00.gif
+
+
+anim jump
+	loop	0
+	delay	30
+	offset	130 192
+	bbox	115 108 29 84
+	frame	data/chars/Enemys/Electra/jump00.gif
+
+
+
+
+anim attack1
+	loop	0
+	delay	6
+        Range 0 100
+	offset	130 192
+	bbox	108 112 39 79
+		Attack1  0
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/Enemys/Electra/a100.gif
+	frame	data/chars/Enemys/Electra/a101.gif
+	frame	data/chars/Enemys/Electra/a103.gif
+		attack1  144  119  75  52  5  0  0  0  0  20
+	frame	data/chars/Enemys/Electra/a105.gif
+		attack1  114  151  44  37  5  0  0  0  0  20
+	frame	data/chars/Enemys/Electra/a106.gif
+		Attack1  0
+	frame	data/chars/Enemys/Electra/a107.gif
+	frame	data/chars/Enemys/Electra/a108.gif
+	frame	data/chars/Enemys/Electra/a109.gif
+
+anim attack2
+	loop	0
+	delay	6
+        Range 0 60
+	offset	130 192
+	bbox	118 126 34 66
+		Attack1  0
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/Enemys/Electra/a200.gif
+		attack2  154  138  68  51  5  0  0  0  0  20
+	frame	data/chars/Enemys/Electra/a201.gif
+	frame	data/chars/Enemys/Electra/a203.gif
+		Attack1  0
+	frame	data/chars/Enemys/Electra/a204.gif
+	frame	data/chars/Enemys/Electra/a205.gif
+	frame	data/chars/Enemys/Electra/a206.gif
+
+anim attack3
+	loop	0
+	delay	6
+        Range 0 60
+	offset	130 192
+	bbox	112 109 33 83
+		Attack1  0
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/Enemys/Electra/a100.gif
+	frame	data/chars/Enemys/Electra/a101.gif
+	frame	data/chars/Enemys/Electra/a103.gif
+		attack1  150  112  67  72  7  1  0  0  0  20
+	frame	data/chars/Enemys/Electra/a105.gif
+	frame	data/chars/Enemys/Electra/a106.gif
+		Attack1  0
+		delay  12
+	frame	data/chars/Enemys/Electra/a107.gif
+	frame	data/chars/Enemys/Electra/a108.gif
+	frame	data/chars/Enemys/Electra/a109.gif
+
+
+
+
+
+
+
+anim grabbed
+	loop	0
+	delay	100
+	offset	130 192
+	bbox	117 123 31 70
+	frame	data/chars/Enemys/Electra/grabbed00.gif
+
+
+
+anim pain
+	loop	0
+	offset	130 192
+	bbox	113 119 28 77
+	delay	15
+	frame	data/chars/Enemys/Electra/pain00.gif
+	frame	data/chars/Enemys/Electra/pain01.gif
+
+anim pain2
+	loop	0
+	offset	130 192
+	bbox	117 119 29 68
+	delay	15
+	frame	data/chars/Enemys/Electra/pain200.gif
+	frame	data/chars/Enemys/Electra/pain201.gif
+
+anim pain4
+	loop	0
+	offset	76 118
+	bbox	64 47 27 71
+	delay	250
+	frame	data/chars/Enemys/Electra/pain00.gif
+
+anim pain5
+	loop	0
+	offset	76 118
+	delay	10
+	frame	data/chars/Enemys/Electra/pain00.gif
+		move  10
+	frame	data/chars/Enemys/Electra/fall705.gif
+		offset  65  118
+		move  30
+		delay  10
+	frame	data/chars/Enemys/Electra/fall603.gif
+		offset  75  121
+        quakeframe 4 2 2
+        Sound	data/Sounds/Efeitos/Estrondo.wav
+	frame	data/chars/Enemys/Electra/fall900.gif
+		move  1
+		movea  5
+	frame  data/chars/Enemys/Electra/fall900.gif
+		movea  -5
+	frame  data/chars/Enemys/Electra/fall900.gif
+		offset  76  118
+		delay  50
+		move  0
+		movea  0
+	frame	data/chars/Enemys/Electra/Fall01.gif
+		delay  10
+	frame	data/chars/Enemys/Electra/Rise00.gif
+	frame	data/chars/Enemys/Electra/Rise01.gif
+	frame  data/chars/Enemys/Electra/Rise02.gif
+
+
+anim death
+	loop	0
+	offset	76 118
+	delay	20
+	jumpframe  0  1  -1  0
+	landframe  2
+	frame	data/chars/Enemys/Electra/fall701.gif
+	frame  data/chars/Enemys/Electra/fall00.gif
+	frame	data/chars/Enemys/Electra/fall01.gif
+
+
+anim death5
+	loop	0
+	offset	76 118
+	delay	10
+	frame	data/chars/Enemys/Electra/pain00.gif
+		move  10
+	frame	data/chars/Enemys/Electra/fall705.gif
+		offset  65  118
+		move  30
+		delay  10
+	frame	data/chars/Enemys/Electra/fall603.gif
+		offset  75  121
+	frame	data/chars/Enemys/Electra/fall900.gif
+		move  1
+		movea  5
+	frame  data/chars/Enemys/Electra/fall900.gif
+		movea  -5
+	frame  data/chars/Enemys/Electra/fall900.gif
+		offset  76  118
+		delay  50
+		move  0
+		movea  0
+	frame	data/chars/Enemys/Electra/Fall01.gif
+
+
+anim fall
+	loop	0
+	offset	130 192
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Electra/fall701.gif
+		attack  96
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Electra/fall00.gif
+		Attack1  0
+	frame	data/chars/Enemys/Electra/fall01.gif
+
+anim fall3
+	loop	0
+	offset	130 192
+	delay	5
+	jumpframe  0  3  -3  0
+	landframe  8
+		bbox  109  112  48  67
+		Attack1  0
+	frame	data/chars/Enemys/Electra/fall705.gif
+	frame	data/chars/Enemys/Electra/fall600.gif
+	frame	data/chars/Enemys/Electra/fall601.gif
+	frame	data/chars/Enemys/Electra/fall602.gif
+	frame	data/chars/Enemys/Electra/fall705.gif
+	frame	data/chars/Enemys/Electra/fall600.gif
+	frame	data/chars/Enemys/Electra/fall601.gif
+	frame	data/chars/Enemys/Electra/fall602.gif
+	frame	data/chars/Enemys/Electra/fall705.gif
+	frame	data/chars/Enemys/Electra/fall600.gif
+	frame	data/chars/Enemys/Electra/fall601.gif
+	frame	data/chars/Enemys/Electra/fall602.gif
+	frame  data/chars/Enemys/Electra/fall705.gif
+	frame  data/chars/Enemys/Electra/fall600.gif
+		Attack1  0
+		bbox  0
+		move  0
+	frame  data/chars/Enemys/Electra/fall01.gif
+
+anim rise
+	loop	0
+	offset	130 192
+	delay	10
+	frame	data/chars/Enemys/Electra/Rise00.gif
+	frame	data/chars/Enemys/Electra/Rise01.gif
+	frame	data/chars/Enemys/Electra/Rise02.gif
+	frame	data/chars/Enemys/Electra/Rise03.gif
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	130 192
+	bbox	119 126 34 66
+	frame	data/chars/Enemys/Electra/jumpland00.gif
+

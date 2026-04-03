@@ -1,0 +1,42 @@
+name			Gota #GROUND
+type			None
+setlayer 5
+offscreenkill	1000
+
+anim idle
+	loop	1
+	delay	50
+	offset	4 0
+	frame	data/Bgs/St02/Gota01.gif
+		delay  5
+	frame	data/Bgs/St02/Gota02.gif
+		offset  4  -5
+	frame	data/Bgs/St02/Gota03.gif
+		offset  4  -10
+	frame	data/Bgs/St02/Gota03.gif
+		offset  4  -15
+	frame	data/Bgs/St02/Gota03.gif
+		offset  4  -20
+	frame	data/Bgs/St02/Gota03.gif
+		offset  4  -25
+	frame	data/Bgs/St02/Gota03.gif
+		offset  4  -30
+	frame	data/Bgs/St02/Gota03.gif
+		offset  4  -35
+	frame  data/Bgs/St02/Gota03.gif
+		offset  4  -40
+	frame  data/Bgs/St02/Gota03.gif
+		offset  4  -45
+	frame  data/Bgs/St02/Gota03.gif
+		offset  4  -50
+	frame  data/Bgs/St02/Gota03.gif
+		offset  4  -55
+	frame  data/Bgs/St02/Gota03.gif
+		offset  4  -60
+	frame  data/Bgs/St02/Gota03.gif
+		offset  4  -65
+	frame  data/Bgs/St02/Gota03.gif
+		offset  4  -70
+	frame  data/Bgs/St02/Gota03.gif
+	frame	data/Bgs/St02/Gota04.gif
+

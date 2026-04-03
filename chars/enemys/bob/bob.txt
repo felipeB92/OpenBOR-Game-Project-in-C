@@ -1,0 +1,610 @@
+name	Bob
+health	400
+speed	5
+riseinv				0.4 1
+hostile				player npc
+candamage			player npc obstacle
+Noblink 0
+falldie
+type	Enemy
+gfxshadow	1
+JUMPHEIGHT 1 1
+Jumpheight 3
+mp			        60
+mprate  			5
+icon	data/chars/Enemys/Bob/icon.gif 1
+diesound data/voices/bossdie1.wav
+running	20	3	3	1	1
+onblockwscript	data/scripts/bounceF.c
+animationscript 	data/scripts/ani0020.h
+ondrawscript 		data/scripts/player_ondrawscript.c
+
+##LOADS
+
+Load Fireball
+Load bobf00
+Load bobf01
+Load bobf02
+Load bobf03
+Load bobf04
+
+
+remap data/chars/Enemys/Bob/idle00.gif data/chars/Enemys/Bob/alter1.gif
+remap data/chars/Enemys/Bob/idle00.gif data/chars/Enemys/Bob/alter2.gif
+remap data/chars/Enemys/Bob/idle00.gif data/chars/Enemys/Bob/alter3.gif
+remap data/chars/Enemys/Bob/idle00.gif data/chars/Enemys/Bob/alter4.gif
+
+anim	spawn
+	loop	0
+	delay	5
+	offset	152 201
+	bbox	134 128 39 74
+	frame   data/chars/Enemys/Bob/fs202.gif
+	frame   data/chars/Enemys/Bob/fs203.gif
+	frame   data/chars/Enemys/Bob/fs204.gif
+	frame   data/chars/Enemys/Bob/fs201.gif
+	frame   data/chars/Enemys/Bob/fs202.gif
+	frame   data/chars/Enemys/Bob/fs203.gif
+	frame   data/chars/Enemys/Bob/fs204.gif
+	frame   data/chars/Enemys/Bob/fs201.gif
+
+
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	152 201
+	bbox	132 131 40 71
+		#drawmethod  350  350  0  0  0  -1  -1
+	frame   data/chars/Enemys/Bob/idle00.gif
+
+
+anim walk
+	loop	1
+	delay	14
+	offset	152 201
+	bbox	131 131 40 70
+		#drawmethod  350  350  0  0  0  -1  -1
+	jumpframe  6  1  1  0
+	landframe  8
+	frame	data/chars/Enemys/Bob/walk00.gif
+	frame	data/chars/Enemys/Bob/walk01.gif
+	frame	data/chars/Enemys/Bob/walk02.gif
+	frame	data/chars/Enemys/Bob/walk00.gif
+	frame	data/chars/Enemys/Bob/walk01.gif
+	frame	data/chars/Enemys/Bob/walk02.gif
+	frame	data/chars/Enemys/Bob/walk00.gif
+	frame	data/chars/Enemys/Bob/walk01.gif
+	frame	data/chars/Enemys/Bob/walk02.gif
+	frame	data/chars/Enemys/Bob/walk00.gif
+	frame	data/chars/Enemys/Bob/walk01.gif
+	frame	data/chars/Enemys/Bob/walk02.gif
+	frame	data/chars/Enemys/Bob/walk00.gif
+	frame	data/chars/Enemys/Bob/walk01.gif
+	frame	data/chars/Enemys/Bob/walk02.gif
+	frame	data/chars/Enemys/Bob/walk00.gif
+	frame	data/chars/Enemys/Bob/walk01.gif
+	frame	data/chars/Enemys/Bob/walk02.gif
+	frame	data/chars/Enemys/Bob/walk00.gif
+	frame	data/chars/Enemys/Bob/walk01.gif
+	frame	data/chars/Enemys/Bob/walk02.gif
+	frame	data/chars/Enemys/Bob/walk00.gif
+	frame	data/chars/Enemys/Bob/walk01.gif
+	frame	data/chars/Enemys/Bob/walk02.gif
+	frame	data/chars/Enemys/Bob/walk00.gif
+	frame	data/chars/Enemys/Bob/walk01.gif
+	frame	data/chars/Enemys/Bob/walk02.gif
+		attack1  153  135  43  23  1  0  0  0  0  10
+	frame	data/chars/Enemys/Bob/a101.gif
+		Attack1  0
+	frame	data/chars/Enemys/Bob/walk01.gif
+	frame	data/chars/Enemys/Bob/walk02.gif
+
+anim get
+	loop	0
+	delay	10
+	offset	152 201
+		#drawmethod  350  350  0  0  0  -1  -1
+	frame	data/chars/Enemys/Bob/get00.gif
+
+
+anim jump
+	loop	0
+	delay	30
+	offset	148 200
+	bbox	123 119 48 80
+        hitfx	data/sounds/golpes/Forte.wav
+		#drawmethod  350  350  0  0  0  -1  -1
+	frame	data/chars/Enemys/Bob/get00.gif
+
+
+
+
+
+
+anim attack1
+	loop	0
+	delay	8
+        Range 0 40
+	offset	152 201
+	bbox	121 128 56 73
+		Attack1  0
+        hitfx	data/sounds/golpes/Medio.wav
+		#drawmethod  350  350  0  0  0  -1  -1
+	frame	data/chars/Enemys/Bob/a100.gif
+		attack1  157  136  40  24  10  1  0  0  0  20
+	frame	data/chars/Enemys/Bob/a101.gif
+	frame	data/chars/Enemys/Bob/a101.gif
+		Attack1  0
+	frame	data/chars/Enemys/Bob/a100.gif
+
+
+anim	Freespecial #firerun down 
+	loop	0
+	delay	10
+	offset	152 201
+        range   150 250
+        rangez  0 550
+	bbox	134 129 39 69
+		#drawmethod  350  350  0  0  0  -1  -1
+	frame   data/chars/Enemys/Bob/fs100.gif
+	frame   data/chars/Enemys/Bob/fs101.gif
+		delay  25
+	frame   data/chars/Enemys/Bob/fs102.gif
+		delay  10
+	frame   data/chars/Enemys/Bob/fs103.gif
+		move  10
+	sound	data/sounds/Fire2.wav
+		movez  2
+		delay  5
+	frame   data/chars/Enemys/Bob/run01.gif
+		@cmd  spawn01  "bobf00"  0  1  0
+	frame   data/chars/Enemys/Bob/run02.gif
+		@cmd  spawn01  "bobf02"  0  0  0
+	frame   data/chars/Enemys/Bob/run03.gif
+		@cmd  spawn01  "bobf03"  0  0  0
+	frame   data/chars/Enemys/Bob/run01.gif
+		@cmd  spawn01  "bobf01"  0  0  0
+	frame   data/chars/Enemys/Bob/run02.gif
+		@cmd  spawn01  "bobf02"  0  0  0
+	frame   data/chars/Enemys/Bob/run03.gif
+		@cmd  spawn01  "bobf03"  0  0  0
+	frame   data/chars/Enemys/Bob/run01.gif
+		@cmd  spawn01  "bobf01"  0  0  0
+	frame   data/chars/Enemys/Bob/run02.gif
+		@cmd  spawn01  "bobf01"  0  0  0
+	frame   data/chars/Enemys/Bob/run03.gif
+		@cmd  spawn01  "bobf02"  0  0  0
+	frame   data/chars/Enemys/Bob/run01.gif
+		@cmd  spawn01  "bobf03"  0  0  0
+	frame   data/chars/Enemys/Bob/run02.gif
+		@cmd  spawn01  "bobf01"  0  0  0
+	frame   data/chars/Enemys/Bob/run03.gif
+		@cmd  spawn01  "bobf02"  0  0  0
+	frame   data/chars/Enemys/Bob/run01.gif
+		@cmd  spawn01  "bobf03"  0  0  0
+	frame   data/chars/Enemys/Bob/run02.gif
+		@cmd  spawn01  "bobf01"  0  0  0
+	frame   data/chars/Enemys/Bob/run03.gif
+		@cmd  spawn01  "bobf01"  0  0  0
+	frame   data/chars/Enemys/Bob/run01.gif
+		@cmd  spawn01  "bobf02"  0  0  0
+	frame   data/chars/Enemys/Bob/run02.gif
+		@cmd  spawn01  "bobf03"  0  0  0
+	frame   data/chars/Enemys/Bob/run03.gif
+		@cmd  spawn01  "bobf01"  0  0  0
+	frame   data/chars/Enemys/Bob/run01.gif
+		@cmd  spawn01  "bobf02"  0  0  0
+	frame   data/chars/Enemys/Bob/run02.gif
+		@cmd  spawn01  "bobf03"  0  0  0
+	frame   data/chars/Enemys/Bob/run03.gif
+		@cmd  spawn01  "bobf01"  0  0  0
+	frame   data/chars/Enemys/Bob/run01.gif
+		@cmd  spawn01  "bobf01"  0  0  0
+	frame   data/chars/Enemys/Bob/run02.gif
+		@cmd  spawn01  "bobf02"  0  0  0
+	frame   data/chars/Enemys/Bob/run03.gif
+		@cmd  spawn01  "bobf03"  0  0  0
+	frame   data/chars/Enemys/Bob/run01.gif
+		@cmd  spawn01  "bobf01"  0  0  0
+	frame   data/chars/Enemys/Bob/run02.gif
+		@cmd  spawn01  "bobf02"  0  0  0
+	frame   data/chars/Enemys/Bob/run03.gif
+		@cmd  spawn01  "bobf03"  0  0  0
+	frame   data/chars/Enemys/Bob/run01.gif
+		@cmd  spawn01  "bobf01"  0  0  0
+	frame   data/chars/Enemys/Bob/run02.gif
+		@cmd  spawn01  "bobf01"  0  0  0
+	frame   data/chars/Enemys/Bob/run03.gif
+		@cmd  spawn01  "bobf02"  0  0  0
+	frame   data/chars/Enemys/Bob/run01.gif
+		@cmd  spawn01  "bobf03"  0  0  0
+	frame   data/chars/Enemys/Bob/run02.gif
+		@cmd  spawn01  "bobf01"  0  0  0
+	frame   data/chars/Enemys/Bob/run03.gif
+		@cmd  spawn01  "bobf02"  0  0  0
+	frame   data/chars/Enemys/Bob/run01.gif
+		@cmd  spawn01  "bobf04"  0  0  0
+	frame   data/chars/Enemys/Bob/run02.gif
+
+anim	Freespecial2 #firerun up 
+	loop	0
+	delay	10
+	offset	152 201
+        range   150 250
+        rangez  -550 -1
+	bbox	134 129 39 69
+	#drawmethod  350  350  0  0  0  -1  -1
+	frame   data/chars/Enemys/Bob/fs100.gif
+	frame   data/chars/Enemys/Bob/fs101.gif
+		delay  25
+	frame   data/chars/Enemys/Bob/fs102.gif
+		delay  10
+	frame   data/chars/Enemys/Bob/fs103.gif
+		move  10
+	sound	data/sounds/Fire2.wav
+		movez  -2
+		delay  5
+	frame   data/chars/Enemys/Bob/run01.gif
+		@cmd  spawn01  "bobf00"  0  1  0
+	frame   data/chars/Enemys/Bob/run02.gif
+		@cmd  spawn01  "bobf02"  0  0  0
+	frame   data/chars/Enemys/Bob/run03.gif
+		@cmd  spawn01  "bobf03"  0  0  0
+	frame   data/chars/Enemys/Bob/run01.gif
+		@cmd  spawn01  "bobf01"  0  0  0
+	frame   data/chars/Enemys/Bob/run02.gif
+		@cmd  spawn01  "bobf02"  0  0  0
+	frame   data/chars/Enemys/Bob/run03.gif
+		@cmd  spawn01  "bobf03"  0  0  0
+	frame   data/chars/Enemys/Bob/run01.gif
+		@cmd  spawn01  "bobf01"  0  0  0
+	frame   data/chars/Enemys/Bob/run02.gif
+		@cmd  spawn01  "bobf01"  0  0  0
+	frame   data/chars/Enemys/Bob/run03.gif
+		@cmd  spawn01  "bobf02"  0  0  0
+	frame   data/chars/Enemys/Bob/run01.gif
+		@cmd  spawn01  "bobf03"  0  0  0
+	frame   data/chars/Enemys/Bob/run02.gif
+		@cmd  spawn01  "bobf01"  0  0  0
+	frame   data/chars/Enemys/Bob/run03.gif
+		@cmd  spawn01  "bobf02"  0  0  0
+	frame   data/chars/Enemys/Bob/run01.gif
+		@cmd  spawn01  "bobf03"  0  0  0
+	frame   data/chars/Enemys/Bob/run02.gif
+		@cmd  spawn01  "bobf01"  0  0  0
+	frame   data/chars/Enemys/Bob/run03.gif
+		@cmd  spawn01  "bobf01"  0  0  0
+	frame   data/chars/Enemys/Bob/run01.gif
+		@cmd  spawn01  "bobf02"  0  0  0
+	frame   data/chars/Enemys/Bob/run02.gif
+		@cmd  spawn01  "bobf03"  0  0  0
+	frame   data/chars/Enemys/Bob/run03.gif
+		@cmd  spawn01  "bobf01"  0  0  0
+	frame   data/chars/Enemys/Bob/run01.gif
+		@cmd  spawn01  "bobf02"  0  0  0
+	frame   data/chars/Enemys/Bob/run02.gif
+		@cmd  spawn01  "bobf03"  0  0  0
+	frame   data/chars/Enemys/Bob/run03.gif
+		@cmd  spawn01  "bobf01"  0  0  0
+	frame   data/chars/Enemys/Bob/run01.gif
+		@cmd  spawn01  "bobf01"  0  0  0
+	frame   data/chars/Enemys/Bob/run02.gif
+		@cmd  spawn01  "bobf02"  0  0  0
+	frame   data/chars/Enemys/Bob/run03.gif
+		@cmd  spawn01  "bobf03"  0  0  0
+	frame   data/chars/Enemys/Bob/run01.gif
+		@cmd  spawn01  "bobf01"  0  0  0
+	frame   data/chars/Enemys/Bob/run02.gif
+		@cmd  spawn01  "bobf02"  0  0  0
+	frame   data/chars/Enemys/Bob/run03.gif
+		@cmd  spawn01  "bobf03"  0  0  0
+	frame   data/chars/Enemys/Bob/run01.gif
+		@cmd  spawn01  "bobf01"  0  0  0
+	frame   data/chars/Enemys/Bob/run02.gif
+		@cmd  spawn01  "bobf01"  0  0  0
+	frame   data/chars/Enemys/Bob/run03.gif
+		@cmd  spawn01  "bobf02"  0  0  0
+	frame   data/chars/Enemys/Bob/run01.gif
+		@cmd  spawn01  "bobf03"  0  0  0
+	frame   data/chars/Enemys/Bob/run02.gif
+		@cmd  spawn01  "bobf01"  0  0  0
+	frame   data/chars/Enemys/Bob/run03.gif
+		@cmd  spawn01  "bobf02"  0  0  0
+	frame   data/chars/Enemys/Bob/run01.gif
+		@cmd  spawn01  "bobf04"  0  0  0
+	frame   data/chars/Enemys/Bob/run02.gif
+
+
+anim	Freespecial3 #roll
+	loop	0
+	delay	15
+        range   40 100
+	offset	152 201
+		Attack1  0
+		#drawmethod  350  350  0  0  0  -1  -1
+	frame   data/chars/Enemys/Bob/Rise02.gif
+		delay  3
+		attack1  127  134  54  54  15  1  0  0  0  15
+		move  10
+	sound	data/sounds/roll.wav
+	frame   data/chars/Enemys/Bob/fs201.gif
+	frame   data/chars/Enemys/Bob/fs202.gif
+	frame   data/chars/Enemys/Bob/fs203.gif
+	frame   data/chars/Enemys/Bob/fs204.gif
+	frame   data/chars/Enemys/Bob/fs201.gif
+	frame   data/chars/Enemys/Bob/fs202.gif
+	frame   data/chars/Enemys/Bob/fs203.gif
+	frame   data/chars/Enemys/Bob/fs204.gif
+	frame   data/chars/Enemys/Bob/fs201.gif
+	frame   data/chars/Enemys/Bob/fs202.gif
+	frame   data/chars/Enemys/Bob/fs203.gif
+	frame   data/chars/Enemys/Bob/fs204.gif
+	frame   data/chars/Enemys/Bob/fs201.gif
+	frame   data/chars/Enemys/Bob/fs202.gif
+	frame   data/chars/Enemys/Bob/fs203.gif
+	frame   data/chars/Enemys/Bob/fs204.gif
+	frame   data/chars/Enemys/Bob/fs201.gif
+	frame   data/chars/Enemys/Bob/fs202.gif
+	frame   data/chars/Enemys/Bob/fs203.gif
+	frame   data/chars/Enemys/Bob/fs204.gif
+	frame   data/chars/Enemys/Bob/fs201.gif
+	frame   data/chars/Enemys/Bob/fs202.gif
+	frame   data/chars/Enemys/Bob/fs203.gif
+	frame   data/chars/Enemys/Bob/fs204.gif
+	frame   data/chars/Enemys/Bob/fs201.gif
+	frame   data/chars/Enemys/Bob/fs202.gif
+	frame   data/chars/Enemys/Bob/fs203.gif
+	frame   data/chars/Enemys/Bob/fs204.gif
+		offset  152  199
+		delay  15
+		move  0
+		Attack1  0
+	frame   data/chars/Enemys/Bob/Rise02.gif
+
+anim	Freespecial4 #Fireball
+	loop	0
+	delay	5
+        range   250 300
+	offset	152 201
+	bbox	124 115 50 87
+		move  0
+	sound	data/sounds/Fire.wav
+		#drawmethod  350  350  0  0  0  -1  -1
+	frame   data/chars/Enemys/Bob/fs101.gif
+	frame   data/chars/Enemys/Bob/fs102.gif
+	frame   data/chars/Enemys/Bob/fs103.gif
+		@cmd  spawn01  "Fireball"  0  0  0
+	delay	15
+	frame   data/chars/Enemys/Bob/fs103.gif
+
+
+anim	special
+	loop	0
+	delay	15
+        range   40 100
+	offset	152 201
+		Attack1  0
+        energycost 0 1
+		#drawmethod  350  350  0  0  0  -1  -1
+	frame   data/chars/Enemys/Bob/Rise02.gif
+		delay  3
+		move  10
+	sound	data/sounds/roll.wav
+	frame   data/chars/Enemys/Bob/fs201.gif
+	frame   data/chars/Enemys/Bob/fs202.gif
+	frame   data/chars/Enemys/Bob/fs203.gif
+	frame   data/chars/Enemys/Bob/fs204.gif
+	frame   data/chars/Enemys/Bob/fs201.gif
+	frame   data/chars/Enemys/Bob/fs202.gif
+	frame   data/chars/Enemys/Bob/fs203.gif
+	frame   data/chars/Enemys/Bob/fs204.gif
+	frame   data/chars/Enemys/Bob/fs201.gif
+	frame   data/chars/Enemys/Bob/fs202.gif
+	frame   data/chars/Enemys/Bob/fs203.gif
+	frame   data/chars/Enemys/Bob/fs204.gif
+		move  0
+	frame   data/chars/Enemys/Bob/Rise02.gif
+
+anim	special2
+	loop	0
+	delay	15
+        range   40 100
+	offset	152 201
+		Attack1  0
+        energycost 0 1
+		#drawmethod  350  350  0  0  0  -1  -1
+	frame   data/chars/Enemys/Bob/Rise02.gif
+		delay  3
+		move  10
+	sound	data/sounds/roll.wav
+	frame   data/chars/Enemys/Bob/fs201.gif
+	frame   data/chars/Enemys/Bob/fs202.gif
+	frame   data/chars/Enemys/Bob/fs203.gif
+	frame   data/chars/Enemys/Bob/fs204.gif
+	frame   data/chars/Enemys/Bob/fs201.gif
+	frame   data/chars/Enemys/Bob/fs202.gif
+	frame   data/chars/Enemys/Bob/fs203.gif
+	frame   data/chars/Enemys/Bob/fs204.gif
+	frame   data/chars/Enemys/Bob/fs201.gif
+	frame   data/chars/Enemys/Bob/fs202.gif
+	frame   data/chars/Enemys/Bob/fs203.gif
+	frame   data/chars/Enemys/Bob/fs204.gif
+		move  0
+		offset  150  201
+	frame   data/chars/Enemys/Bob/Rise02.gif
+
+
+
+
+
+
+
+
+
+
+anim grabbed
+	loop	0
+	delay	100
+	offset	87 121
+	bbox	64 39 52 79
+		#drawmethod  350  350  0  0  0  -1  -1
+	frame	data/chars/Enemys/Bob/Pain200.gif
+
+
+
+anim pain
+	loop	0
+	offset	87 122
+	bbox	62 53 39 69
+	delay	15
+		#drawmethod  350  350  0  0  0  -1  -1
+	frame	data/chars/Enemys/Bob/pain00.gif
+	frame	data/chars/Enemys/Bob/pain01.gif
+
+anim pain2
+	loop	0
+	offset	86 120
+	bbox	66 40 41 79
+	delay	15
+		#drawmethod  350  350  0  0  0  -1  -1
+	frame	data/chars/Enemys/Bob/pain200.gif
+	frame	data/chars/Enemys/Bob/pain201.gif
+
+anim pain4
+	loop	0
+	offset	86 120
+	bbox	63 52 34 70
+	delay	250
+		#drawmethod  350  350  0  0  0  -1  -1
+	frame	data/chars/Enemys/Bob/pain00.gif
+
+anim pain5
+	loop	0
+	offset	86 120
+	delay	10
+		#drawmethod  350  350  0  0  0  -1  -1
+	frame	data/chars/Enemys/Bob/pain00.gif
+		move  10
+	frame	data/chars/Enemys/Bob/fall705.gif
+		move  30
+		delay  10
+	frame	data/chars/Enemys/Bob/fall603.gif
+        quakeframe 4 2 2
+        Sound	data/Sounds/Efeitos/Estrondo.wav
+	frame	data/chars/Enemys/Bob/fall900.gif
+		move  1
+		movea  5
+	frame  data/chars/Enemys/Bob/fall900.gif
+		movea  -5
+	frame  data/chars/Enemys/Bob/fall900.gif
+		delay  50
+		move  0
+		movea  0
+		Attack1  0
+		offset  139  176
+	frame	data/chars/Enemys/Bob/Fall01.gif
+		delay  10
+		offset  139  201
+	frame	data/chars/Enemys/Bob/Rise00.gif
+	frame	data/chars/Enemys/Bob/Rise01.gif
+	frame  data/chars/Enemys/Bob/Rise02.gif
+
+
+anim death
+	loop	0
+	offset	81 122
+	delay	20
+	jumpframe  0  1  -1  0
+	landframe  2
+		#drawmethod  350  350  0  0  0  -1  -1
+	frame	data/chars/Enemys/Bob/fall701.gif
+	frame  data/chars/Enemys/Bob/fall00.gif
+		offset  139  170
+	frame	data/chars/Enemys/Bob/fall01.gif
+
+
+anim death5
+	loop	0
+	offset	83 120
+	delay	10
+		#drawmethod  350  350  0  0  0  -1  -1
+	frame	data/chars/Enemys/Bob/pain00.gif
+		move  10
+		offset  83  125
+	frame	data/chars/Enemys/Bob/fall705.gif
+		move  30
+		delay  10
+	frame	data/chars/Enemys/Bob/fall603.gif
+		Attack1  0
+	frame	data/chars/Enemys/Bob/fall900.gif
+		move  1
+		movea  5
+	frame  data/chars/Enemys/Bob/fall900.gif
+		movea  -5
+	frame  data/chars/Enemys/Bob/fall900.gif
+		delay  50
+		move  0
+		movea  0
+		Attack1  0
+		offset  135  173
+	frame	data/chars/Enemys/Bob/Fall01.gif
+
+
+anim fall
+	loop	0
+	offset	83 122
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+		#drawmethod  350  350  0  0  0  -1  -1
+	frame	data/chars/Enemys/Bob/fall701.gif
+		attack  41
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Bob/fall00.gif
+		Attack1  0
+		offset  138  175
+	frame	data/chars/Enemys/Bob/fall01.gif
+
+anim fall3
+	loop	0
+	offset	99 127
+	delay	5
+	jumpframe  0  2  -2  0
+	landframe  5
+		bbox  59  46  51  76
+		Attack1  0
+		#drawmethod  350  350  0  0  0  -1  -1
+	frame	data/chars/Enemys/Bob/fall705.gif
+	frame	data/chars/Enemys/Bob/fall600.gif
+	frame	data/chars/Enemys/Bob/fall601.gif
+	frame	data/chars/Enemys/Bob/fall602.gif
+	frame	data/chars/Enemys/Bob/fall705.gif
+	frame	data/chars/Enemys/Bob/fall600.gif
+		Attack1  0
+		bbox  0
+		move  0
+		offset  145  175
+	frame  data/chars/Enemys/Bob/fall01.gif
+
+anim rise
+	loop	0
+	offset	152 201
+	delay	10
+		#drawmethod  350  350  0  0  0  -1  -1
+	frame	data/chars/Enemys/Bob/Rise00.gif
+	frame	data/chars/Enemys/Bob/Rise01.gif
+	frame	data/chars/Enemys/Bob/Rise02.gif
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	152 201
+	bbox	127 125 43 71
+		#drawmethod  350  350  0  0  0  -1  -1
+	frame	data/chars/Enemys/Bob/Get00.gif
+

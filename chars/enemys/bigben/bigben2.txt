@@ -1,0 +1,449 @@
+##MAIN
+name				BigBen2
+type				enemy
+hostile				player npc
+candamage			player npc obstacle
+
+##LIFE
+health				1 #SCRIPT
+
+##POWER
+offense 			1 #SCRIPT
+
+##SPEED
+speed				1 #SCRIPT
+
+##JUMP
+jumpheight 			1 #SCRIPT
+
+##WEIGHT/HEIGHT
+antigravity			-9 #-3/-6/-9
+height				77
+
+##MISC
+jugglepoints		30
+risetime			170
+riseinv				0 1 #HEROES 0.4 - ENEMY 0 - BOSS 0.4
+makeinv				2 0
+atchain				1
+weapons				none none none none
+gfxshadow			1 1
+dust				dust
+aimove				chase #ENEMY ONLY
+
+##SCRIPTS
+onblockpscript		data/scripts/onblockp/default.c
+onspawnscript		data/scripts/onspawn/bigben.c
+animationscript	 	data/scripts/animation/default.c
+
+##ICONS
+icon				data/chars/bigben/icon.gif 1
+
+##DIESOUND
+diesound			data/voices/BossDie1.wav
+
+##REMAPS
+remap				data/chars/bigben/idle00.gif data/chars/bigben/alter1.gif
+remap				data/chars/bigben/idle00.gif data/chars/bigben/alter2.gif
+remap				data/chars/bigben/idle00.gif data/chars/bigben/alter3.gif
+remap				data/chars/bigben/idle00.gif data/chars/bigben/alter4.gif
+
+##ANIMATIONS#############################################################################
+
+anim spawn
+	loop	0
+	delay	1
+	offset	144 175
+	frame	data/chars/bigben/idle00.gif
+
+anim idle
+	loop	1
+	delay	16
+	offset	144 175
+	bbox 	126 102 36 75
+	@cmd clearL
+	frame	data/chars/bigben/idle00.gif
+	frame	data/chars/bigben/idle01.gif
+
+anim walk
+	loop	1
+	delay	18
+	offset	144 175
+	bbox 	126 102 36 75
+	frame	data/chars/bigben/walk00.gif
+	frame	data/chars/bigben/walk01.gif
+	frame	data/chars/bigben/walk02.gif
+	frame	data/chars/bigben/walk03.gif
+
+anim get
+	loop	0
+	delay	16
+	offset	144 175
+	frame	data/chars/bigben/get00.gif
+
+anim grabbed
+	loop	0
+	delay	8
+	offset	144 175
+	bbox 	126 109 36 68
+	frame	data/chars/bigben/grabbed00.gif
+	
+anim jumpdelay
+	loop	0
+	delay	12
+	offset	144 175
+	bbox 	126 118 36 59
+	frame	data/chars/bigben/jumpdelay00.gif
+
+anim walkoff
+	fastattack 1
+	jugglecost 10
+	forcedirection -1
+	loop	0
+	delay	4
+	offset	144 175
+	bbox 	131 126 48 34
+	hitfx	data/sounds/HighPunch.wav
+	sound	data/sounds/Grenade.wav
+	@cmd jump 1
+	attack 131 126 48 34 16 1 0 0 10 12
+	frame	data/chars/bigben/jumpatk200.gif
+	
+anim jumpland
+	loop	0
+	delay	12
+	offset	144 175
+	bbox 	126 118 36 59
+	sound	data/sounds/Jumpland2.wav
+	@cmd spawn01 "quakelow" 0 0 0
+	frame	data/chars/bigben/jumpland00.gif
+
+anim pain #UP
+	loop	0
+	delay	4
+	offset	144 175
+	bbox 	126 116 36 61
+	frame	data/chars/bigben/pain00.gif
+	frame	data/chars/bigben/pain01.gif
+	frame	data/chars/bigben/pain00.gif
+	frame	data/chars/bigben/pain01.gif
+	frame	data/chars/bigben/pain00.gif
+	frame	data/chars/bigben/pain01.gif
+	frame	data/chars/bigben/pain00.gif
+	frame	data/chars/bigben/pain01.gif
+	frame	data/chars/bigben/pain00.gif
+	frame	data/chars/bigben/pain01.gif
+	frame	data/chars/bigben/pain00.gif
+	frame	data/chars/bigben/pain01.gif
+
+anim pain2 #DOWN
+	loop	0
+	delay	4
+	offset	144 175
+	bbox 	126 111 36 65
+	frame	data/chars/bigben/pain200.gif
+	frame	data/chars/bigben/pain201.gif
+	frame	data/chars/bigben/pain200.gif
+	frame	data/chars/bigben/pain201.gif
+	frame	data/chars/bigben/pain200.gif
+	frame	data/chars/bigben/pain201.gif
+	frame	data/chars/bigben/pain200.gif
+	frame	data/chars/bigben/pain201.gif
+	frame	data/chars/bigben/pain200.gif
+	frame	data/chars/bigben/pain201.gif
+	frame	data/chars/bigben/pain200.gif
+	frame	data/chars/bigben/pain201.gif
+
+anim fall #NORMAL
+	landframe 1
+	loop	0
+	delay	999
+	offset	144 175
+	bbox 	119 117 44 42
+	frame	data/chars/bigben/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Falling.wav
+	frame	data/chars/bigben/fall01.gif
+
+anim burn #BURNED FALL
+	landframe 2
+	loop	1 0 2
+	delay	3
+	offset	144 175
+	bbox 	119 117 44 42
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	frame	data/chars/bigben/fall00.gif
+	@cmd spawn01 "smoke" 0 50 0
+	drawmethod tintmode 2
+	drawmethod tintcolor 255
+	frame	data/chars/bigben/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	nodrawmethod
+	sound	data/sounds/Falling.wav
+	frame	data/chars/bigben/fall01.gif
+
+anim shock #SHOCKED FALL
+	landframe 2
+	loop	1 0 2
+	delay	3
+	offset	144 175
+	bbox 	119 117 44 42
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame	data/chars/bigben/fall00.gif
+	drawmethod tintmode 2
+	drawmethod tintcolor -255
+	frame	data/chars/bigben/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	nodrawmethod
+	sound	data/sounds/Falling.wav
+	frame	data/chars/bigben/fall01.gif
+	
+anim fall6 #SPIN FALL
+	landframe 4
+	loop	1 0 4
+	delay	3
+	offset	144 175
+	frame	data/chars/bigben/fall600.gif
+	frame	data/chars/bigben/fall601.gif
+	frame	data/chars/bigben/fall602.gif
+	frame	data/chars/bigben/fall603.gif
+		delay	8
+	sound	data/sounds/Falling.wav
+	frame	data/chars/bigben/fall01.gif
+
+anim fall7 #GRABSTART POSITION
+	loop	0
+	delay	1000
+	offset	144 175
+	frame	data/chars/bigben/fall700.gif
+	frame	data/chars/bigben/fall701.gif
+	frame	data/chars/bigben/fall702.gif
+	frame	data/chars/bigben/fall703.gif
+	frame	data/chars/bigben/fall704.gif
+	frame	data/chars/bigben/fall705.gif
+
+anim fall8 #FINISH/THROW TYPE 3
+	landframe 1
+	loop	0
+	delay	999
+	offset	144 175
+	bbox 	119 117 44 42
+	hitfx	data/sounds/MediumKick.wav
+	attack 119 117 44 42 4 1 0 0 0 12
+	frame	data/chars/bigben/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Falling.wav
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/bigben/fall01.gif
+
+anim fall9 #FINISH/THROW TYPE 2
+	landframe 1
+	loop	0
+	delay	999
+	offset	144 175
+	bbox 	122 112 38 64
+	hitfx	data/sounds/MediumKick.wav
+	attack 122 112 38 64 4 1 0 0 0 12
+	frame	data/chars/bigben/fall900.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Falling.wav
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/bigben/fall01.gif
+
+anim rise
+	loop	0
+	delay	24
+	offset	144 175
+	frame	data/chars/bigben/rise00.gif
+	frame	data/chars/bigben/rise01.gif
+	frame	data/chars/bigben/rise00.gif
+	frame	data/chars/bigben/rise02.gif
+
+anim attack1
+	range 20 60
+	rangea 0 0
+	fastattack 1
+	jugglecost 10
+	forcedirection -1
+	loop	0
+	delay	12
+	offset	144 175
+	bbox 	126 102 36 75
+	hitfx	data/sounds/HighPunch.wav
+	sound	data/sounds/HighAttack.wav
+	frame	data/chars/bigben/a100.gif
+	attack 152 109 46 18 8 1 0 0 30 12
+	frame	data/chars/bigben/a101.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/bigben/a102.gif
+	frame	data/chars/bigben/a103.gif
+	
+anim attack2 #TRIPLE SLAP
+	range 20 60
+	rangea 0 0
+	fastattack 1
+	jugglecost 10
+	forcedirection -1
+	loop	0
+	delay	12
+	offset	144 175
+	bbox 	126 102 36 75
+	hitfx	data/sounds/MediumPunch.wav
+	sound	data/sounds/MediumAttack.wav
+	frame	data/chars/bigben/a100.gif
+	attack 152 109 46 18 8 0 0 0 10 12
+	frame	data/chars/bigben/a101.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	hitfx	data/sounds/MediumPunch.wav
+	sound	data/sounds/MediumAttack.wav
+	frame	data/chars/bigben/a102.gif
+	attack 152 109 46 18 8 0 0 0 10 12
+	frame	data/chars/bigben/a101.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	hitfx	data/sounds/HighPunch.wav
+	sound	data/sounds/HighAttack.wav
+	frame	data/chars/bigben/a100.gif
+	attack 152 109 46 18 8 1 0 0 30 12
+	frame	data/chars/bigben/a101.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/bigben/a102.gif
+	frame	data/chars/bigben/a103.gif
+	
+anim jumpattack #KICK
+	range 40 120
+	rangea 0 0
+	fastattack 1
+	jugglecost 10
+	forcedirection -1
+	loop	0
+	delay	12
+	offset	144 175
+	bbox 	126 105 40 69
+	hitfx	data/sounds/HighKick.wav
+	sound	data/sounds/Jumping2.wav
+	@cmd targetJump
+	@cmd leapJump
+	attack 126 137 59 37 8 1 0 0 10 12
+	frame	data/chars/bigben/jumpatk00.gif
+	
+anim jumpattack2 #JUMP DOWN
+	range 40 120
+	rangea 0 100
+	fastattack 1
+	jugglecost 10
+	forcedirection -1
+	loop	0
+	delay	12
+	offset	144 175
+	bbox 	131 126 48 34
+	hitfx	data/sounds/HighPunch.wav
+	sound	data/sounds/Jumping2.wav
+	@cmd targetJump
+	@cmd leapJump
+	attack 131 126 48 34 8 0 0 0 10 12
+	frame	data/chars/bigben/jumpatk200.gif
+	
+anim freespecial #FIRE
+	range 120 400
+	rangea 0 100
+	rangez -999 999
+	loop	0
+	delay	16
+	offset	144 175
+	bbox 	126 102 36 75
+	frame	data/chars/bigben/fire00.gif
+	frame	data/chars/bigben/fire01.gif
+		delay	12
+	@cmd target 2 2
+	@cmd dashTarget
+	frame	data/chars/bigben/fire02.gif
+	@cmd shootB "bigben_fire" 20 60 1
+	@cmd dashTarget
+	frame	data/chars/bigben/fire02.gif
+	@cmd dashTarget
+	frame	data/chars/bigben/fire03.gif
+	@cmd dashTarget
+	frame	data/chars/bigben/fire04.gif
+	@cmd dashTarget
+	frame	data/chars/bigben/fire05.gif
+	@cmd dashTarget
+	frame	data/chars/bigben/fire02.gif
+	@cmd dashTarget
+	frame	data/chars/bigben/fire03.gif
+	@cmd dashTarget
+	frame	data/chars/bigben/fire04.gif
+	@cmd dashTarget
+	frame	data/chars/bigben/fire05.gif
+	@cmd pasteMove
+	frame	data/chars/bigben/fire02.gif
+	@cmd dasher 0.8 0 0
+	frame	data/chars/bigben/fire03.gif
+	@cmd dasher 0.4 0 0
+	frame	data/chars/bigben/fire04.gif
+	@cmd dasher 0 0 0
+	frame	data/chars/bigben/fire05.gif
+	
+anim freespecial2 #ROLL
+	range 120 400
+	rangea 0 0
+	fastattack 1
+	jugglecost 20
+	forcedirection -1
+	loop	0
+	delay	32
+	offset	144 175
+	bbox 	126 118 36 59
+	hitfx	data/sounds/HighKick.wav
+	frame	data/chars/bigben/roll00.gif
+		delay	8
+	@cmd dasher 0.5 0 0
+	attack 128 135 33 37 8 1 1 0 10 12
+	bbox 	0 0 0 0
+	frame	data/chars/bigben/roll01.gif
+	@cmd dasher 2 0 0
+	@cmd spawn01 "quakelow" 0 0 0
+	sound	data/sounds/Roll.wav
+	frame	data/chars/bigben/roll01.gif
+	@cmd dasher 2 0 0
+	frame	data/chars/bigben/roll02.gif
+	@cmd dasher 2 0 0
+	frame	data/chars/bigben/roll03.gif
+	@cmd dasher 2 0 0
+	frame	data/chars/bigben/roll04.gif
+	@cmd looper 2 3
+	@cmd dasher 0 0 0
+	attack 0 0 0 0 0 0 0 0 0 0
+	bbox 	126 118 36 59
+	sound	data/sounds/Dizzy.wav
+	frame	data/chars/bigben/roll00.gif
+	frame	data/chars/bigben/roll05.gif
+	frame	data/chars/bigben/roll06.gif
+	frame	data/chars/bigben/roll07.gif
+	@cmd looper 7 7
+	frame	data/chars/bigben/roll00.gif
+	
+anim freespecial3 #LAUGH
+	range 120 400
+	rangea 0 100
+	rangez -999 999
+	loop	0
+	delay	12
+	offset	144 175
+	bbox 	126 102 36 75
+	sound	data/voices/Bigben1.wav
+	frame	data/chars/bigben/laugh00.gif
+	frame	data/chars/bigben/laugh01.gif
+	frame	data/chars/bigben/laugh00.gif
+	frame	data/chars/bigben/laugh01.gif
+	frame	data/chars/bigben/laugh00.gif
+	frame	data/chars/bigben/laugh01.gif
+	frame	data/chars/bigben/laugh00.gif
+	frame	data/chars/bigben/laugh01.gif
+	frame	data/chars/bigben/laugh00.gif

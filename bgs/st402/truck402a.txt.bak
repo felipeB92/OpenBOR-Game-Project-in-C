@@ -1,0 +1,117 @@
+name    	Truck402a
+health	 	10
+type    	Enemy
+nomove  	1 1
+noflip 1
+falldie    1
+Notgrab 1
+hostile player
+candamage player
+subject_to_platform 0
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_hole 0
+subject_to_screen 0
+subject_to_gravity 0
+antigravity		100
+setlayer -80
+offscreenkill	1500
+nolife 1
+onblockwscript	data/scripts/bounceF.c
+animationscript 	data/scripts/ani0020.h
+ondrawscript 		data/scripts/player_ondrawscript.c
+
+Load Donovan
+Load Galsia
+
+
+anim idle
+	loop	0
+		offset  344  263
+		delay  4
+		move  10
+        sound  data/sounds/Bike.wav
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+		move  0
+	frame	data/BGS/st402/Truck100.gif
+	frame	data/BGS/st402/Truck100.gif
+        @cmd	shooter2 "Donovan" 0        20       20     2        3         0.5
+	frame	data/BGS/st402/Truck101.gif
+	frame	data/BGS/st402/Truck101.gif
+        @cmd	shooter2 "Donovan" 0        20       20     2        3         0.5
+	frame	data/BGS/st402/Truck102.gif
+	frame	data/BGS/st402/Truck102.gif
+        @cmd	shooter2 "Galsia" 0        20       20     2        3         0.5
+	frame	data/BGS/st402/Truck103.gif
+	frame	data/BGS/st402/Truck103.gif
+        @cmd	shooter2 "Galsia" 0        20       20     2        3         0.5
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+		move  10
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+	frame	data/BGS/st402/Truck00.gif
+      @cmd killentity getlocalvar("self")
+	frame	data/BGS/st402/Truck00.gif
+

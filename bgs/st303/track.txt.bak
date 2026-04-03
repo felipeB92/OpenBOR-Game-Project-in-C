@@ -1,0 +1,137 @@
+name    	Track
+health	1
+type	obstacle
+candamage		player enemy npc obstacle
+nomove  	1 1
+noflip 1
+falldie    1
+Notgrab 1
+nolife 1
+falldie 1
+onblockwscript	        data/scripts/bounceF.c
+animationscript 	data/scripts/ani0020.h
+ondrawscript 		data/scripts/player_ondrawscript.c
+
+Load Donovan
+
+
+
+
+anim Spawn
+	loop	0
+	offset	150 242
+		delay  8
+        platform 50 50 270 270 80 1000
+	frame	data/BGS/st303/bulldozer02.gif
+
+
+anim idle
+	loop	0
+	offset	150 242
+		delay  8
+		move  5
+        platform 50 50 270 270 80 1000
+		attack3  167  135  78  84  25  1  0  0  0  25
+	frame	data/BGS/st303/bulldozer02.gif
+	frame	data/BGS/st303/bulldozer03.gif
+	frame	data/BGS/st303/bulldozer02.gif
+	frame	data/BGS/st303/bulldozer03.gif
+	frame	data/BGS/st303/bulldozer02.gif
+	frame	data/BGS/st303/bulldozer03.gif
+	frame	data/BGS/st303/bulldozer02.gif
+	frame	data/BGS/st303/bulldozer03.gif
+	frame	data/BGS/st303/bulldozer02.gif
+	frame	data/BGS/st303/bulldozer03.gif
+	frame	data/BGS/st303/bulldozer02.gif
+	frame	data/BGS/st303/bulldozer03.gif
+	frame	data/BGS/st303/bulldozer02.gif
+	frame	data/BGS/st303/bulldozer03.gif
+	frame	data/BGS/st303/bulldozer02.gif
+	frame	data/BGS/st303/bulldozer03.gif
+	frame	data/BGS/st303/bulldozer02.gif
+	frame	data/BGS/st303/bulldozer03.gif
+	frame	data/BGS/st303/bulldozer02.gif
+	frame	data/BGS/st303/bulldozer03.gif
+	frame	data/BGS/st303/bulldozer02.gif
+	frame	data/BGS/st303/bulldozer03.gif
+	frame	data/BGS/st303/bulldozer02.gif
+	frame	data/BGS/st303/bulldozer03.gif
+	frame	data/BGS/st303/bulldozer02.gif
+	frame	data/BGS/st303/bulldozer03.gif
+	frame	data/BGS/st303/bulldozer02.gif
+	frame	data/BGS/st303/bulldozer03.gif
+	frame	data/BGS/st303/bulldozer02.gif
+	frame	data/BGS/st303/bulldozer03.gif
+	frame	data/BGS/st303/bulldozer02.gif
+	frame	data/BGS/st303/bulldozer03.gif
+	frame	data/BGS/st303/bulldozer02.gif
+	frame	data/BGS/st303/bulldozer03.gif
+	frame	data/BGS/st303/bulldozer02.gif
+	frame	data/BGS/st303/bulldozer03.gif
+	frame	data/BGS/st303/bulldozer02.gif
+	frame	data/BGS/st303/bulldozer03.gif
+	frame	data/BGS/st303/bulldozer02.gif
+		move  0
+		delay  15
+	frame	data/BGS/st303/bulldozer04.gif
+	frame	data/BGS/st303/bulldozer05.gif
+		Attack1  0
+	frame	data/BGS/st303/bulldozer04.gif
+	frame	data/BGS/st303/bulldozer05.gif
+	frame	data/BGS/st303/bulldozer04.gif
+	frame	data/BGS/st303/bulldozer05.gif
+	frame	data/BGS/st303/bulldozer04.gif
+	frame	data/BGS/st303/bulldozer05.gif
+	frame	data/BGS/st303/bulldozer04.gif
+	frame	data/BGS/st303/bulldozer05.gif
+	frame	data/BGS/st303/bulldozer04.gif
+	frame	data/BGS/st303/bulldozer05.gif
+	frame	data/BGS/st303/bulldozer04.gif
+	frame	data/BGS/st303/bulldozer05.gif
+	frame	data/BGS/st303/bulldozer04.gif
+	frame	data/BGS/st303/bulldozer05.gif
+	frame	data/BGS/st303/bulldozer04.gif
+	frame	data/BGS/st303/bulldozer05.gif
+	frame	data/BGS/st303/bulldozer04.gif
+	frame	data/BGS/st303/bulldozer05.gif
+	frame	data/BGS/st303/bulldozer04.gif
+	frame	data/BGS/st303/bulldozer05.gif
+	frame	data/BGS/st303/bulldozer04.gif
+	frame	data/BGS/st303/bulldozer05.gif
+	frame	data/BGS/st303/bulldozer04.gif
+	frame	data/BGS/st303/bulldozer05.gif
+	frame	data/BGS/st303/bulldozer04.gif
+	frame	data/BGS/st303/bulldozer05.gif
+	frame	data/BGS/st303/bulldozer04.gif
+	frame	data/BGS/st303/bulldozer05.gif
+	frame	data/BGS/st303/bulldozer04.gif
+	frame	data/BGS/st303/bulldozer05.gif
+	frame	data/BGS/st303/bulldozer04.gif
+	frame	data/BGS/st303/bulldozer05.gif
+	frame	data/BGS/st303/bulldozer04.gif
+	frame	data/BGS/st303/bulldozer05.gif
+        @cmd	shooter2 "Donovan" 0        0       20     0        3         0.5
+		bbox  52  156  175  86
+	frame	data/BGS/st303/bulldozer01.gif
+
+
+anim death
+	loop	0
+	offset	150 242
+		delay  8
+        platform 50 50 270 270 80 1000
+	frame	data/BGS/st303/bulldozer02.gif
+        @cmd  spawn01  "Boom01"  0  0  0
+	frame	data/BGS/st303/bulldozer01.gif
+        @cmd  spawn01  "Boom01"  0  5  0
+	frame	data/BGS/st303/bulldozer01.gif
+        @cmd  spawn01  "Boom01"  0  10  0
+	frame	data/BGS/st303/bulldozer01.gif
+        @cmd  spawn01  "Boom01"  0  0  0
+	frame	data/BGS/st303/bulldozer01.gif
+        @cmd  spawn01  "Boom01"  0  5  0
+	frame	data/BGS/st303/bulldozer01.gif
+        @cmd  spawn01  "Boom01"  0  10  0
+	frame	data/BGS/st303/bulldozer01.gif
+
+

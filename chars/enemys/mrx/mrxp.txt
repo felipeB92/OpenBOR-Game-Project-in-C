@@ -1,0 +1,502 @@
+##MAIN
+name				Mr._X
+type				player
+hostile				enemy obstacle
+candamage			player enemy npc obstacle
+secret				0 1
+
+##LIFE
+health				400
+
+##POWER
+offense 			1 #SCRIPT
+
+##SPEED
+speed				1 #SCRIPT
+
+##JUMP
+jumpheight 			1 #SCRIPT
+
+##ENERGY
+mp					120
+mprate  			1 #SCRIPT
+
+##GRAB
+grabdistance 		33 #36/33/30
+grabfinish 			0 #PLAYER=0/ENEMY=1
+
+##WEIGHT/HEIGHT
+antigravity			-6 #-3/-6/-9
+height				90
+
+##MISC
+jugglepoints		30
+guardpoints			20
+guardrate			4
+risetime			170
+riseinv				0.4 1 #HEROES 0.4 - ENEMY 0 - BOSS 0.4
+makeinv				2 0
+atchain				1
+weapons				none none none none
+gfxshadow			1 1
+dust				dust
+
+##SCRIPTS
+didhitscript		data/scripts/didhit/default.c
+onblockpscript		data/scripts/onblockp/default.c
+ondrawscript		data/scripts/ondraw/mrx.c
+animationscript	 	data/scripts/animation/default.c
+keyscript			data/scripts/key/default.c
+takedamagescript	data/scripts/takedamage/default.c
+
+##ICONS
+icon				data/chars/mrx/icon.gif 1
+
+##PARROWS
+parrow				data/sprites/parrow.gif 	-15 -140
+parrow2				data/sprites/parrow2.gif 	-15 -140
+parrow3				data/sprites/parrow3.gif 	-15 -140
+parrow4				data/sprites/parrow4.gif 	-15 -140
+
+##DIESOUND
+diesound			data/voices/BossDie1.wav
+
+##REMAPS
+remap				data/chars/mrx/laugh00.gif data/chars/mrx/alter1.gif
+remap				data/chars/mrx/laugh00.gif data/chars/mrx/alter2.gif
+remap				data/chars/mrx/laugh00.gif data/chars/mrx/alter3.gif
+
+##COMMANDS
+com 				j	freespecial  #FRONT SHOOT
+com 				a3	freespecial2 #LAUGH
+
+##ANIMATIONS#############################################################################
+
+anim waiting
+	fshadow 0
+	loop	1
+	delay	16
+	offset	140 200
+	frame	data/chars/mrx/laugh00.gif
+	frame	data/chars/mrx/laugh00.gif
+	
+anim select
+	fshadow 0
+	loop	0
+	delay	2
+	offset	140 200
+	drawmethod tintmode 1
+	drawmethod tintcolor 255_255_255
+	frame	data/chars/mrx/laugh00.gif
+		delay	3
+	nodrawmethod
+	frame	data/chars/mrx/laugh00.gif
+		delay	2
+	drawmethod tintmode 1
+	drawmethod tintcolor 255_255_255
+	frame	data/chars/mrx/laugh00.gif
+		delay	3
+	nodrawmethod
+	frame	data/chars/mrx/laugh00.gif
+		delay	2
+	drawmethod tintmode 1
+	drawmethod tintcolor 255_255_255
+	frame	data/chars/mrx/laugh00.gif
+		delay	3
+	nodrawmethod
+	frame	data/chars/mrx/laugh00.gif
+		delay	2
+	drawmethod tintmode 1
+	drawmethod tintcolor 255_255_255
+	frame	data/chars/mrx/laugh00.gif
+		delay	3
+	nodrawmethod
+	frame	data/chars/mrx/laugh00.gif
+
+anim idle
+	loop	1
+	delay	16
+	offset	140 200
+	bbox 	127 113 24 89
+	@cmd clearL
+	frame	data/chars/mrx/idle00.gif
+	frame	data/chars/mrx/idle00.gif
+	
+anim walk
+	loop	1
+	delay	8
+	offset	140 200
+	bbox 	127 113 24 89
+	frame	data/chars/mrx/walk00.gif
+	frame	data/chars/mrx/walk01.gif
+	frame	data/chars/mrx/walk02.gif
+	frame	data/chars/mrx/walk03.gif
+	frame	data/chars/mrx/walk04.gif
+	frame	data/chars/mrx/walk05.gif
+	frame	data/chars/mrx/walk04.gif
+	frame	data/chars/mrx/walk03.gif
+	frame	data/chars/mrx/walk02.gif
+	frame	data/chars/mrx/walk01.gif
+	
+anim get
+	loop	0
+	delay	16
+	offset	140 200
+	frame	data/chars/mrx/get00.gif
+
+anim grabbed
+	loop	0
+	delay	8
+	offset	140 200
+	bbox 	127 134 32 68
+	frame	data/chars/mrx/grabbed00.gif
+	
+anim jumpdelay
+	loop	0
+	delay	12
+	offset	140 200
+	bbox 	127 138 30 64
+	frame	data/chars/mrx/jumpdelay00.gif
+
+anim walkoff
+	loop	0
+	delay	12
+	offset	140 200
+	bbox 	134 119 29 85
+	@cmd jump 1
+	frame	data/chars/mrx/jump00.gif
+	
+anim jumpland
+	loop	0
+	delay	12
+	offset	140 200
+	bbox 	127 138 30 64
+	sound	data/sounds/Jumpland.wav
+	frame	data/chars/mrx/jumpland00.gif
+
+anim pain #UP
+	loop	0
+	delay	4
+	offset	140 200
+	bbox 	133 115 28 86
+	frame	data/chars/mrx/pain00.gif
+	frame	data/chars/mrx/pain01.gif
+	frame	data/chars/mrx/pain00.gif
+	frame	data/chars/mrx/pain01.gif
+	frame	data/chars/mrx/pain00.gif
+	frame	data/chars/mrx/pain01.gif
+	frame	data/chars/mrx/pain00.gif
+	frame	data/chars/mrx/pain01.gif
+
+anim pain2 #DOWN
+	loop	0
+	delay	4
+	offset	140 200
+	bbox 	134 119 29 85
+	frame	data/chars/mrx/pain200.gif
+	frame	data/chars/mrx/pain201.gif
+	frame	data/chars/mrx/pain200.gif
+	frame	data/chars/mrx/pain201.gif
+	frame	data/chars/mrx/pain200.gif
+	frame	data/chars/mrx/pain201.gif
+	frame	data/chars/mrx/pain200.gif
+	frame	data/chars/mrx/pain201.gif
+	
+anim fall #NORMAL
+	landframe 1
+	loop	0
+	delay	999
+	offset	140 200
+	bbox 	121 133 48 42
+	frame	data/chars/mrx/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Falling.wav
+	frame	data/chars/mrx/fall01.gif
+	
+anim burn #BURNED FALL
+	landframe 2
+	loop	1 0 2
+	delay	3
+	offset	140 200
+	bbox 	121 133 48 42
+	drawmethod tintmode 6	
+	drawmethod tintcolor 255
+	frame	data/chars/mrx/fall00.gif
+	@cmd spawn01 "smoke" 0 50 0
+	drawmethod tintmode 2	
+	drawmethod tintcolor 255
+	frame	data/chars/mrx/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	nodrawmethod
+	sound	data/sounds/Falling.wav
+	frame	data/chars/mrx/fall01.gif
+	
+anim shock #SHOCKED FALL
+	landframe 2
+	loop	1 0 2
+	delay	3
+	offset	140 200
+	bbox 	121 133 48 42
+	drawmethod tintmode 6	
+	drawmethod tintcolor -255
+	frame	data/chars/mrx/fall00.gif
+	drawmethod tintmode 2	
+	drawmethod tintcolor -255
+	frame	data/chars/mrx/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	nodrawmethod
+	sound	data/sounds/Falling.wav
+	frame	data/chars/mrx/fall01.gif
+	
+anim fall6 #SPIN FALL
+	landframe 4
+	loop	1 0 4
+	delay	3
+	offset	140 200
+	frame	data/chars/mrx/fall600.gif
+	frame	data/chars/mrx/fall601.gif
+	frame	data/chars/mrx/fall602.gif
+	frame	data/chars/mrx/fall603.gif
+		delay	8
+	sound	data/sounds/Falling.wav
+	frame	data/chars/mrx/fall01.gif
+
+anim fall7 #GRABSTART POSITION
+	loop	0
+	delay	1000
+	offset	140 200
+	frame	data/chars/mrx/fall700.gif
+	frame	data/chars/mrx/fall701.gif
+	frame	data/chars/mrx/fall702.gif
+	frame	data/chars/mrx/fall703.gif
+	frame	data/chars/mrx/fall704.gif
+	frame	data/chars/mrx/fall705.gif
+	
+anim fall8 #FINISH/THROW TYPE 3
+	landframe 1
+	loop	0
+	delay	999
+	offset	140 200
+	bbox 	121 133 48 42
+	hitfx	data/sounds/MediumKick.wav
+	attack 121 133 48 42 4 1 0 0 0 12
+	frame	data/chars/mrx/fall00.gif
+		delay	8
+	bbox 	0 0 0 0
+	sound	data/sounds/Falling.wav
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/mrx/fall01.gif
+	
+anim fall9 #FINISH/THROW TYPE 2
+	landframe 1
+	loop	0
+	delay	999
+	offset	140 200
+	bbox 	120 128 29 74
+	hitfx	data/sounds/MediumKick.wav
+	attack 120 128 29 74 4 1 0 0 0 12
+	frame	data/chars/mrx/fall900.gif
+		delay	8
+	attack 0 0 0 0 0 0 0 0 0 0
+	bbox 	0 0 0 0
+	sound	data/sounds/Falling.wav
+	frame	data/chars/mrx/fall01.gif
+	
+anim rise
+	loop	0
+	delay	16
+	offset	140 200
+	frame	data/chars/mrx/rise00.gif
+	frame	data/chars/mrx/rise01.gif
+	frame	data/chars/mrx/rise00.gif
+	frame	data/chars/mrx/rise02.gif
+	
+anim attack1 #GUN SPANK
+	fastattack 1
+	jugglecost 10
+	forcedirection -1
+	loop	0
+	delay	6
+	offset	140 200
+	hitfx	data/sounds/LowPunch.wav
+	sound	data/sounds/HighAttack.wav
+	frame	data/chars/mrx/a100.gif
+	attack 152 115 31 39 2 0 0 0 10 12
+	sound	data/voices/Mrx2.wav
+	frame	data/chars/mrx/a101.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/mrx/a101.gif
+	hitfx	data/sounds/HighPunch.wav
+	attack 153 115 42 39 8 1 0 0 20 12
+	frame	data/chars/mrx/a102.gif
+	attack 153 99 40 39 8 1 0 0 20 12
+	frame	data/chars/mrx/a103.gif
+	attack 153 99 33 23 8 1 0 0 20 12
+	frame	data/chars/mrx/a104.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/mrx/a100.gif
+	
+anim special #GUN SPANK
+	fastattack 1
+	jugglecost 10
+	forcedirection -1
+	energycost 40 2 5 
+	@cmd healStart
+	loop	0
+	delay	6
+	offset	140 200
+	hitfx	data/sounds/LowPunch.wav
+	sound	data/sounds/HighAttack.wav
+	frame	data/chars/mrx/a100.gif
+	attack 152 115 31 39 2 0 0 0 10 12
+	sound	data/voices/Mrx2.wav
+	frame	data/chars/mrx/a101.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/mrx/a101.gif
+	hitfx	data/sounds/HighPunch.wav
+	attack 153 115 42 39 8 1 0 0 20 12
+	frame	data/chars/mrx/a102.gif
+	attack 153 99 40 39 8 1 0 0 20 12
+	frame	data/chars/mrx/a103.gif
+	attack 153 99 33 23 8 1 0 0 20 12
+	frame	data/chars/mrx/a104.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/mrx/a100.gif
+	
+anim special2 #ALL DIRECTIONS SHOOT
+	energycost 40 2 5 
+	@cmd healStart
+	loop	0
+	delay	5
+	offset	140 200
+	bbox 	135 113 22 89
+	frame	data/chars/mrx/shot00.gif
+	@cmd shoot "mrx_shot1" 51 62 0 10 0 0
+	@cmd spawnToss "cartridge" 20 60 1 0.2 1 0
+	frame	data/chars/mrx/shot00.gif
+	frame	data/chars/mrx/shot01.gif
+	@cmd shoot "mrx_shot1" 51 62 0 10 0 0
+	@cmd spawnToss "cartridge" 20 60 1 0.4 1.2 0
+	frame	data/chars/mrx/shot00.gif
+	frame	data/chars/mrx/shot01.gif
+	@cmd shoot "mrx_shot1" 51 62 0 10 0 0
+	@cmd spawnToss "cartridge" 20 60 1 0.6 0.8 0
+	frame	data/chars/mrx/shot00.gif
+	frame	data/chars/mrx/shot01.gif
+	@cmd shoot "mrx_shot1" 51 62 0 10 0 0
+	@cmd spawnToss "cartridge" 20 60 1 0.2 1.4 0
+	frame	data/chars/mrx/shot00.gif
+	frame	data/chars/mrx/shot01.gif
+	bbox 	130 114 26 88
+	@cmd shoot "mrx_shot2" 37 45 0 10 0 3
+	@cmd spawnToss "cartridge" 20 60 1 0.2 1 0
+	frame	data/chars/mrx/shot02.gif
+	frame	data/chars/mrx/shot03.gif
+	@cmd shoot "mrx_shot2" 37 45 0 10 0 6
+	@cmd spawnToss "cartridge" 20 60 1 0.4 1.2 0
+	frame	data/chars/mrx/shot02.gif
+	frame	data/chars/mrx/shot03.gif
+	@cmd shoot "mrx_shot2" 37 45 0 10 0 10
+	@cmd spawnToss "cartridge" 20 60 1 0.6 0.8 0
+	frame	data/chars/mrx/shot02.gif
+	frame	data/chars/mrx/shot03.gif
+	@cmd shoot "mrx_shot2" 37 45 0 10 0 10
+	@cmd spawnToss "cartridge" 20 60 1 0.2 1.4 0
+	frame	data/chars/mrx/shot02.gif
+	frame	data/chars/mrx/shot03.gif
+	bbox 	131 114 30 88
+	@cmd shoot "mrx_shot3" 12 47 0 6 0 10
+	@cmd spawnToss "cartridge" 16 60 1 0.2 1 0
+	frame	data/chars/mrx/shot04.gif
+	frame	data/chars/mrx/shot05.gif
+	@cmd shoot "mrx_shot3" 12 47 0 3 0 10
+	@cmd spawnToss "cartridge" 16 60 1 0.4 1.2 0
+	frame	data/chars/mrx/shot04.gif
+	frame	data/chars/mrx/shot05.gif
+	@cmd shoot "mrx_shot3" 12 47 0 0 0 10
+	@cmd spawnToss "cartridge" 16 60 1 0.6 0.8 0
+	frame	data/chars/mrx/shot04.gif
+	frame	data/chars/mrx/shot05.gif
+	@cmd shoot "mrx_shot3" 12 47 0 0 0 10
+	@cmd spawnToss "cartridge" 16 60 1 0.2 1.4 0
+	frame	data/chars/mrx/shot04.gif
+	frame	data/chars/mrx/shot05.gif
+	bbox 	130 114 26 88
+	@cmd shoot "mrx_shot2" 37 45 0 3 0 10
+	@cmd spawnToss "cartridge" 20 60 1 0.2 1 0
+	frame	data/chars/mrx/shot02.gif
+	frame	data/chars/mrx/shot03.gif
+	@cmd shoot "mrx_shot2" 37 45 0 6 0 10
+	@cmd spawnToss "cartridge" 20 60 1 0.4 1.2 0
+	frame	data/chars/mrx/shot02.gif
+	frame	data/chars/mrx/shot03.gif
+	@cmd shoot "mrx_shot2" 37 45 0 10 0 10
+	@cmd spawnToss "cartridge" 20 60 1 0.6 0.8 0
+	frame	data/chars/mrx/shot02.gif
+	frame	data/chars/mrx/shot03.gif
+	@cmd shoot "mrx_shot2" 37 45 0 10 0 10
+	@cmd spawnToss "cartridge" 20 60 1 0.2 1.4 0
+	frame	data/chars/mrx/shot02.gif
+	frame	data/chars/mrx/shot03.gif
+	bbox 	135 113 22 89
+	@cmd shoot "mrx_shot1" 51 62 0 10 0 6
+	@cmd spawnToss "cartridge" 20 60 1 0.2 1 0
+	frame	data/chars/mrx/shot00.gif
+	frame	data/chars/mrx/shot01.gif
+	@cmd shoot "mrx_shot1" 51 62 0 10 0 3
+	@cmd spawnToss "cartridge" 20 60 1 0.4 1.2 0
+	frame	data/chars/mrx/shot00.gif
+	frame	data/chars/mrx/shot01.gif
+	@cmd shoot "mrx_shot1" 51 62 0 10 0 0
+	@cmd spawnToss "cartridge" 20 60 1 0.6 0.8 0
+	frame	data/chars/mrx/shot00.gif
+	frame	data/chars/mrx/shot01.gif
+	@cmd shoot "mrx_shot1" 51 62 0 10 0 0
+	@cmd spawnToss "cartridge" 20 60 1 0.2 1.4 0
+	frame	data/chars/mrx/shot00.gif
+	frame	data/chars/mrx/shot01.gif
+		delay	32
+	frame	data/chars/mrx/shot01.gif
+	
+anim freespecial #FRONT SHOOT
+	loop	0
+	delay	5
+	offset	140 200
+	bbox 	135 113 22 89
+	frame	data/chars/mrx/shot00.gif
+	@cmd shoot "mrx_shot1" 51 62 0 10 0 0
+	@cmd spawnToss "cartridge" 20 60 1 -0.2 1 0
+	frame	data/chars/mrx/shot00.gif
+	frame	data/chars/mrx/shot01.gif
+	@cmd shoot "mrx_shot1" 51 62 0 10 0 0
+	@cmd spawnToss "cartridge" 20 60 1 -0.4 1.2 0
+	frame	data/chars/mrx/shot00.gif
+	frame	data/chars/mrx/shot01.gif
+	@cmd shoot "mrx_shot1" 51 62 0 10 0 0
+	@cmd spawnToss "cartridge" 20 60 1 -0.6 0.8 0
+	frame	data/chars/mrx/shot00.gif
+	frame	data/chars/mrx/shot01.gif
+	@cmd shoot "mrx_shot1" 51 62 0 10 0 0
+	@cmd spawnToss "cartridge" 20 60 1 -0.2 1.4 0
+	frame	data/chars/mrx/shot00.gif
+	frame	data/chars/mrx/shot01.gif
+		delay	32
+	frame	data/chars/mrx/shot01.gif
+	
+anim freespecial2 #LAUGH
+	loop	0
+	delay	4
+	offset	140 200
+	bbox 	128 107 24 95
+	sound	data/voices/Mrx1.wav
+	frame	data/chars/mrx/laugh00.gif
+	frame	data/chars/mrx/laugh01.gif
+	frame	data/chars/mrx/laugh02.gif
+	frame	data/chars/mrx/laugh03.gif
+	frame	data/chars/mrx/laugh02.gif
+	frame	data/chars/mrx/laugh01.gif
+	@cmd looper 1 8
+	frame	data/chars/mrx/laugh00.gif

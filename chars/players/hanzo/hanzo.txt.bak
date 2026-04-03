@@ -1,0 +1,557 @@
+name	Hanzo
+health	100
+mp 20
+#mprate 1
+speed	12
+type	player
+secret				0 1
+riseinv				0.4 1
+gfxshadow	1
+candamage			enemy npc obstacle
+antigrab 2
+JUMPHEIGHT 1 1
+Jumpheight 3
+atchain    1 1 2 3
+weapons				HAnzo_Shock HAnzo_Shock HAnzo_Shock HAnzo_Shock
+icon	data/chars/players/Hanzo/icon.gif
+diesound data/sounds/Hanzodie.wav
+running	25	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+animationscript 	data/scripts/ani0020.h
+#ondrawscript 		data/scripts/player_ondrawscript.c
+
+Com d d freespecial5
+Com u u freespecial6
+
+Load T00
+Load HAnzo_Shock
+
+
+
+remap data/chars/players/Hanzo/idle00.gif data/chars/players/Hanzo/alter1.gif
+remap data/chars/players/Hanzo/idle00.gif data/chars/players/Hanzo/alter2.gif
+remap data/chars/players/Hanzo/idle00.gif data/chars/players/Hanzo/alter3.gif
+
+
+
+anim idle
+	loop	1
+	delay	250
+	offset	84 121
+	bbox	73 47 25 75
+	frame   data/chars/players/Hanzo/idle00.gif
+	delay	16
+	frame   data/chars/players/Hanzo/idle01.gif
+	frame   data/chars/players/Hanzo/idle02.gif
+	frame   data/chars/players/Hanzo/idle01.gif
+
+
+
+anim walk
+	loop	1
+	delay	1
+	offset	83 122
+	bbox	68 49 29 73
+	jumpframe  0  0.001  0.001  0
+	landframe  1
+	frame	data/chars/players/Hanzo/walk00.gif
+	frame	data/chars/players/Hanzo/walk00.gif
+	delay	14
+	frame	data/chars/players/Hanzo/walk00.gif
+	frame	data/chars/players/Hanzo/walk01.gif
+	frame	data/chars/players/Hanzo/walk02.gif
+	frame	data/chars/players/Hanzo/walk03.gif
+	frame	data/chars/players/Hanzo/walk04.gif
+	frame	data/chars/players/Hanzo/walk05.gif
+
+
+anim get
+	loop	0
+	delay	10
+	offset	88 126
+	frame	data/chars/players/Hanzo/get00.gif
+
+
+anim jump
+	loop	0
+	delay	3
+	offset	93 124
+	bbox	79 50 31 65
+	frame	data/chars/players/Hanzo/jump00.gif
+	frame	data/chars/players/Hanzo/jump01.gif
+	frame	data/chars/players/Hanzo/jump02.gif
+	frame	data/chars/players/Hanzo/jump03.gif
+	frame	data/chars/players/Hanzo/jump04.gif
+	frame	data/chars/players/Hanzo/jump05.gif
+	frame	data/chars/players/Hanzo/jump06.gif
+	frame	data/chars/players/Hanzo/jump07.gif
+	frame	data/chars/players/Hanzo/jump08.gif
+	frame	data/chars/players/Hanzo/jump09.gif
+
+
+
+
+anim jumpattack
+	loop	0
+	delay	7
+	offset	79 117
+	bbox	65 52 31 49
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Hanzo/ja100.gif
+		attack1  80  79  36  45  15  1  0  0  0  15
+	frame	data/chars/players/Hanzo/ja101.gif
+
+
+
+anim jumpattack2
+	loop	0
+	delay	7
+	offset	92 113
+	bbox	73 49 33 49
+	attack	95 86 31 25 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Hanzo/ja200.gif
+
+anim jumpforward
+	loop	0
+	delay	7
+	offset	84 118
+	bbox	69 49 28 53
+	attack	70 73 44 49 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/soco.wav
+	frame	data/chars/players/Hanzo/ja101.gif
+
+
+anim runjumpattack
+	loop	0
+	delay	7
+	offset	79 113
+	bbox	66 56 29 49
+	attack	62 64 42 38 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Hanzo/ja100.gif
+
+anim attack1
+	loop	0
+	delay	6
+	offset	75 120
+	bbox	60 49 28 71
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/fraco.wav
+	frame	data/chars/players/Hanzo/a200.gif
+		attack1  -5  -7  177  180  999  0  0  0  0  999
+	frame	data/chars/players/Hanzo/a202.gif
+
+
+anim attack2
+	loop	0
+	delay	6
+	offset	73 120
+	bbox	64 47 22 70
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Medio.wav
+	frame	data/chars/players/Hanzo/a200.gif
+	frame	data/chars/players/Hanzo/a201.gif
+		attack2  82  56  37  18  10  0  0  0  0  5
+	frame	data/chars/players/Hanzo/a202.gif
+		attack2  74  57  29  24  10  0  0  0  0  5
+	frame	data/chars/players/Hanzo/a203.gif
+		Attack1  0
+	frame	data/chars/players/Hanzo/a204.gif
+
+anim attack3
+	loop	0
+	delay	8
+	offset	74 121
+	bbox	55 46 19 82
+        Sound	data/sounds/golpes/Chut.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/players/Hanzo/a300.gif
+		bbox  66  49  26  55
+		attack1  72  53  48  42  15  1  0  0  0  0
+		delay  20
+	frame	data/chars/players/Hanzo/a301.gif
+		delay  8
+		Attack1  0
+	frame	data/chars/players/Hanzo/a302.gif
+	frame	data/chars/players/Hanzo/a303.gif
+
+
+anim run
+        loop    1
+        delay  4
+	offset	86 111
+	bbox	76 61 37 52
+	jumpframe  0  0.001  0.001  0
+	landframe  1
+        frame	data/chars/players/Hanzo/run00.gif
+        frame	data/chars/players/Hanzo/run01.gif
+        frame	data/chars/players/Hanzo/run02.gif
+        frame	data/chars/players/Hanzo/run03.gif
+
+
+anim grab
+	loop	0
+	delay	100
+	offset	81 141
+	bbox	70 66 22 63
+        cancel	0 9 0 j freespecial
+	frame	data/chars/players/Hanzo/special207.gif
+
+anim throw
+	loop	0
+	delay	10
+	offset	82 122
+	Sound	data/chars/players/Hanzo/special02.wav
+	frame	data/chars/players/Hanzo/throw03.gif
+	@cmd  spawn01  "T00"  0  0  0
+	frame	data/chars/players/Hanzo/throw04.gif
+	frame	data/chars/players/Hanzo/throw05.gif
+		Attack1  0
+	frame	data/chars/players/Hanzo/throw06.gif
+	frame	data/chars/players/Hanzo/throw07.gif
+
+anim Freespecial
+	loop	0
+		delay  10
+		offset  87  181
+		cancel  6  9  0  a  freespecial2
+		hitfx  data/sounds/efeitos/silencio.wav
+		move  11
+		attack4  89  107  37  74  0  0  0  0  0  10
+	frame  data/chars/players/Hanzo/vault00.gif
+		attack4  69  106  37  76  0  0  0  0  0  1
+	frame	data/chars/players/Hanzo/vault01.gif
+		Attack1  0
+		offset  87  141
+	frame	data/chars/players/Hanzo/vault02.gif
+		offset  67  139
+	frame	data/chars/players/Hanzo/vault03.gif
+		delay  1
+		move  0
+		offset  52  141
+	frame	data/chars/players/Hanzo/special207.gif
+	frame	data/chars/players/Hanzo/special207.gif
+		delay  50
+	frame	data/chars/players/Hanzo/special207.gif
+		delay  10
+	Sound	data/chars/players/Hanzo/Hanzo2.wav
+	frame	data/chars/players/Hanzo/special213.gif
+		attack1  35  55  48  44  15  1  0  0  0  20
+	frame	data/chars/players/Hanzo/special212.gif
+	frame	data/chars/players/Hanzo/special211.gif
+	frame	data/chars/players/Hanzo/special210.gif
+	frame	data/chars/players/Hanzo/special209.gif
+	frame  data/chars/players/Hanzo/special208.gif
+
+
+anim Freespecial2
+	loop	0
+	delay	10
+	offset	90 128
+        hitfx	data/sounds/efeitos/silencio.wav
+	Sound	data/chars/players/Hanzo/Hanzo2.wav
+		attack5  44  57  41  70  25  0  0  0  0  1
+	frame	data/chars/players/Hanzo/slam01.gif
+		Attack1  0
+	frame	data/chars/players/Hanzo/slam02.gif
+		delay  6
+	frame	data/chars/players/Hanzo/slam03.gif
+		offset  67  128
+	frame	data/chars/players/Hanzo/slam04.gif
+		attack1  91  97  70  33  10  1  0  0  0  20
+		delay  6
+	frame	data/chars/players/Hanzo/slam05.gif
+		delay  15
+	frame  data/chars/players/Hanzo/slam05.gif
+		Attack1  0
+		delay  6
+		offset  73  128
+	frame  data/chars/players/Hanzo/slam06.gif
+		offset  83  128
+	frame  data/chars/players/Hanzo/slam08.gif
+
+
+anim Freespecial5
+	loop	0
+	delay	10
+       offset	94 125
+	frame	data/chars/players/Hanzo/get00.gif
+        Movez 7
+        Move 2
+	delay	5
+		offset  85  119
+	frame	data/chars/players/Hanzo/Special06.gif
+	frame	data/chars/players/Hanzo/Special06.gif
+	frame	data/chars/players/Hanzo/Special06.gif
+	frame	data/chars/players/Hanzo/Special06.gif
+        Movez 0
+        Move 0
+	delay	10
+		offset  85  124
+	frame	data/chars/players/Hanzo/get00.gif
+
+anim Freespecial6
+	loop	0
+	delay	10
+       offset	87 125
+	frame	data/chars/players/Hanzo/get00.gif
+        Movez -7
+        Move 2
+	delay	5
+		offset  87  118
+	frame	data/chars/players/Hanzo/Special04.gif
+	frame	data/chars/players/Hanzo/Special04.gif
+	frame	data/chars/players/Hanzo/Special04.gif
+	frame	data/chars/players/Hanzo/Special04.gif
+        Movez 0
+        Move 0
+	delay	10
+		offset  87  126
+	frame	data/chars/players/Hanzo/get00.gif
+
+
+anim pain
+	loop	0
+	offset	86 120
+	bbox	72 47 25 75
+	delay	15
+	frame	data/chars/players/Hanzo/pain00.gif
+	frame	data/chars/players/Hanzo/pain01.gif
+
+anim pain2
+	loop	0
+	offset	81 113
+	bbox	69 55 27 59
+	delay	15
+	frame	data/chars/players/Hanzo/pain200.gif
+	frame	data/chars/players/Hanzo/pain201.gif
+
+
+anim fall
+	loop	0
+	offset	134 167
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/players/Hanzo/fall00.gif
+		attack  30
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/players/Hanzo/fall00.gif
+		Attack1  0
+		offset  133  170
+	frame	data/chars/players/Hanzo/fall01.gif
+
+anim fall3
+	loop	0
+	offset	142 167
+	delay	10
+	attack	133 106 33 46 12 1
+		bbox  132  108  33  42
+	frame	data/chars/players/Hanzo/fall705.gif
+	frame	data/chars/players/Hanzo/fall600.gif
+	frame	data/chars/players/Hanzo/fall601.gif
+	frame	data/chars/players/Hanzo/fall602.gif
+		Attack1  0
+		bbox  0
+	frame  data/chars/players/Hanzo/fall01.gif
+
+anim rise
+	loop	0
+	offset	136 173
+	delay	10
+	frame	data/chars/players/Hanzo/Rise00.gif
+		offset  78  111
+	frame	data/chars/players/Hanzo/Rise01.gif
+	frame	data/chars/players/Hanzo/Rise02.gif
+
+
+anim special2
+        energycost 20 1
+        MpOnly 1
+	loop	0
+	delay	8
+	offset	87 116
+        hitfx	data/sounds/golpes/forte.wav
+		attack1  0  0  0  0  25  0
+	Sound	data/chars/players/Hanzo/Hanzo2.wav
+		move  10
+	frame	data/chars/players/Hanzo/special00.gif
+		attack3  76  54  35  49  25  1  0  0  0  20
+	frame	data/chars/players/Hanzo/special01.gif
+		attack3  76  56  56  42  25  1  0  0  0  20
+	frame	data/chars/players/Hanzo/special02.gif
+		attack3  66  54  44  42  25  1  0  0  0  20
+	frame	data/chars/players/Hanzo/special03.gif
+		attack3  62  53  36  41  25  1  0  0  0  20
+	frame	data/chars/players/Hanzo/special04.gif
+		attack3  47  53  51  43  25  1  0  0  0  20
+	frame	data/chars/players/Hanzo/special05.gif
+		attack3  71  48  29  52  25  1  0  0  0  20
+	frame	data/chars/players/Hanzo/special06.gif
+		Attack1  0
+	frame	data/chars/players/Hanzo/special07.gif
+
+anim special
+        energycost 20 1
+        MpOnly 1
+	loop	0
+	delay	6
+	offset	82 141
+        hitfx	data/sounds/golpes/forte.wav
+	Sound	data/chars/players/Hanzo/special01.wav
+		attack3  62  69  45  18  25  1  0  0  0  20
+	frame	data/chars/players/Hanzo/special200.gif
+		attack3  87  71  68  41  25  1  0  0  0  20
+		move  0
+	frame	data/chars/players/Hanzo/special201.gif
+		attack3  69  61  43  28  25  1  0  0  0  20
+	frame	data/chars/players/Hanzo/special202.gif
+	Sound	data/chars/players/Hanzo/special01.wav
+	frame	data/chars/players/Hanzo/special203.gif
+		attack3  92  72  58  27  25  1  0  0  0  20
+	frame	data/chars/players/Hanzo/special204.gif
+		attack3  18  55  58  43  25  1  0  0  0  20
+	frame	data/chars/players/Hanzo/special206.gif
+		attack3  35  65  46  47  25  1  0  0  0  10
+	frame	data/chars/players/Hanzo/special207.gif
+		Attack1  0
+	frame	data/chars/players/Hanzo/special208.gif
+		Attack1  83  75  73  31  25  1  0  0  0  15
+	frame	data/chars/players/Hanzo/special209.gif
+		move  0
+		attack3  71  32  76  76  25  1  0  0  0  15
+	frame	data/chars/players/Hanzo/special210.gif
+	Sound	data/chars/players/Hanzo/special01.wav
+	frame	data/chars/players/Hanzo/special211.gif
+		attack3  39  61  57  36  25  1  0  0  0  15
+	frame	data/chars/players/Hanzo/special212.gif
+	frame	data/chars/players/Hanzo/special213.gif
+		attack3  74  66  66  71  25  1  0  0  0  15
+	frame	data/chars/players/Hanzo/special214.gif
+	Sound	data/chars/players/Hanzo/special01.wav
+		attack3  44  30  72  72  25  1  0  0  0  15
+	frame	data/chars/players/Hanzo/special215.gif
+		attack3  25  53  44  48  25  1  0  0  0  15
+	frame	data/chars/players/Hanzo/special216.gif
+	frame	data/chars/players/Hanzo/special217.gif
+		attack3  41  44  35  54  25  1  0  0  0  20
+	frame	data/chars/players/Hanzo/special205.gif
+		attack1  57  66  31  46  25  1  0  0  0  15
+		move  0
+	Sound	data/chars/players/Hanzo/special01.wav
+	frame	data/chars/players/Hanzo/special218.gif
+		Attack1  0
+	frame	data/chars/players/Hanzo/special219.gif
+
+
+
+
+anim runattack
+ 	loop	0
+ 	delay	3
+ 	offset	85 110
+ 	bbox	74 59 35 52
+		move  5
+        hitfx	data/sounds/golpes/forte.wav
+	Sound	data/chars/players/Hanzo/special02.wav
+		attack3  63  72  53  24  15  1  0  0  0  15
+ 	frame	data/chars/players/Hanzo/special300.gif
+ 	frame	data/chars/players/Hanzo/special301.gif
+ 	frame	data/chars/players/Hanzo/special302.gif
+ 	frame	data/chars/players/Hanzo/special303.gif
+ 	frame	data/chars/players/Hanzo/special304.gif
+ 	frame	data/chars/players/Hanzo/special305.gif
+ 	frame	data/chars/players/Hanzo/special306.gif
+	frame  data/chars/players/Hanzo/special300.gif
+ 	frame	data/chars/players/Hanzo/special300.gif
+ 	frame	data/chars/players/Hanzo/special301.gif
+ 	frame	data/chars/players/Hanzo/special302.gif
+ 	frame	data/chars/players/Hanzo/special303.gif
+ 	frame	data/chars/players/Hanzo/special304.gif
+ 	frame	data/chars/players/Hanzo/special305.gif
+ 	frame	data/chars/players/Hanzo/special306.gif
+		delay  7
+	frame  data/chars/players/Hanzo/special300.gif
+		offset  74  119
+		bbox  59  52  34  63
+		attack3  60  54  60  24  7  0  0  0  0  15
+ 	frame	data/chars/players/Hanzo/a202.gif
+	frame  data/chars/players/Hanzo/a202.gif
+		attack3  60  46  38  68  20  1  0  0  0  15
+		move  0
+ 	frame	data/chars/players/Hanzo/a201.gif
+
+
+
+
+anim grabattack
+	loop	0
+	offset	84 140
+	bbox	71 68 24 73
+	delay	4
+        hitfx	data/sounds/golpes/medio.wav
+		Attack1  0
+	frame	data/chars/players/Hanzo/special208.gif
+	Sound	data/chars/players/Hanzo/special01.wav
+		attack1  92  71  60  32  7  0  0  0  0  10
+	frame	data/chars/players/Hanzo/special209.gif
+		attack1  88  36  57  72  7  0  0  0  0  10
+	frame	data/chars/players/Hanzo/special210.gif
+		Attack1  0
+	frame	data/chars/players/Hanzo/special211.gif
+	frame	data/chars/players/Hanzo/special212.gif
+
+
+anim grabattack2
+                loop	0
+	offset	84 140
+	bbox	71 66 22 75
+	delay	4
+		Attack1  0
+        hitfx	data/sounds/golpes/Forte.wav
+	Sound	data/chars/players/Hanzo/Hanzo1.wav
+	frame	data/chars/players/Hanzo/special213.gif
+	Sound	data/chars/players/Hanzo/special01.wav
+		attack2  97  75  39  58  15  1  0  0  0  20
+	frame	data/chars/players/Hanzo/special214.gif
+		attack2  65  40  51  53  15  1  0  0  0  20
+	frame	data/chars/players/Hanzo/special215.gif
+	frame	data/chars/players/Hanzo/special216.gif
+		Attack1  0
+	frame	data/chars/players/Hanzo/special217.gif
+	frame	data/chars/players/Hanzo/special218.gif
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	86 114
+	bbox	74 67 27 49
+	frame	data/chars/players/Hanzo/jumpland00.gif
+
+
+anim attackbackward
+ 	loop	0
+ 	delay	10
+ 	offset	87 106
+ 	bbox	72 52 29 53
+        hitfx	data/sounds/golpes/Medio.wav
+        Sound	data/sounds/golpes/soco.wav
+	Sound	data/chars/players/Hanzo/BAck.wav
+ 	frame	data/chars/players/Hanzo/special00.gif
+		attack1  43  55  39  44  10  1  0  0  0  20
+		offset  87  118
+		bbox  75  54  28  47
+ 	frame	data/chars/players/Hanzo/special05.gif
+		Attack1  0
+		bbox  68  52  36  54
+ 	frame	data/chars/players/Hanzo/special00.gif
+

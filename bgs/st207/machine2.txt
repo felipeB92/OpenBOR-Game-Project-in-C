@@ -1,0 +1,16 @@
+name			st7_machine2
+type			none
+shadow			0
+setlayer		-10
+animationscript	data/scripts/animation/default.c
+
+load			st7_machine2S
+
+anim idle
+	loop	1
+	delay	14
+	offset	1 64
+	@cmd spawn01 "st7_machine2S" 0 0 0
+	frame	data/bgs/sor2_st7/machine03.gif
+	frame	data/bgs/sor2_st7/machine04.gif
+	frame	data/bgs/sor2_st7/machine05.gif

@@ -1,0 +1,604 @@
+name	Jessy
+health	100
+secret				0 1
+mp 20
+#mprate 1
+riseinv				0.4 1
+speed	12
+type	player
+gfxshadow	1
+candamage			enemy npc obstacle
+JUMPHEIGHT 1 1
+Jumpheight 3
+antigrab 2
+atchain    1 1 2 3
+weapons				Jessy_Knife Jessy_Sword Jessy_pipe Jessy_Kunai
+icon	data/chars/players/Jessy/icon.gif 1
+diesound data/sounds/Jessydie.wav
+running	20	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+animationscript 	data/scripts/ani0020.h
+#ondrawscript 		data/scripts/player_ondrawscript.c
+
+Com d d freespecial5
+Com u u freespecial6
+
+Load T00
+
+
+Load JessyP
+Load Jessy_Knife
+Load Jessy_Pipe
+Load Jessy_Kunai
+Load Jessy_Sword
+
+remap data/chars/players/Jessy/alter0.gif data/chars/players/Jessy/alter1.gif
+remap data/chars/players/Jessy/alter0.gif data/chars/players/Jessy/alter2.gif
+remap data/chars/players/Jessy/alter0.gif data/chars/players/Jessy/alter3.gif
+
+
+
+
+
+
+
+
+anim idle
+	loop	1
+	delay	12
+	offset	153 188
+	bbox	138 114 32 74
+	frame   data/chars/players/Jessy/idle00.gif
+	frame   data/chars/players/Jessy/idle01.gif
+	frame   data/chars/players/Jessy/idle02.gif
+	frame   data/chars/players/Jessy/idle03.gif
+	frame   data/chars/players/Jessy/idle04.gif
+	frame   data/chars/players/Jessy/idle05.gif
+	frame   data/chars/players/Jessy/idle06.gif
+
+
+
+
+anim walk
+	loop	1
+	delay	14
+	offset	146 189
+	bbox	140 114 25 79
+	jumpframe  0  0.001  0.001  0
+	landframe  1
+	frame	data/chars/players/Jessy/walk00.gif
+	frame	data/chars/players/Jessy/walk00.gif
+	delay	14
+	frame	data/chars/players/Jessy/walk00.gif
+	frame	data/chars/players/Jessy/walk01.gif
+	frame	data/chars/players/Jessy/walk02.gif
+	frame	data/chars/players/Jessy/walk03.gif
+	frame	data/chars/players/Jessy/walk04.gif
+	frame	data/chars/players/Jessy/walk05.gif
+	frame	data/chars/players/Jessy/walk06.gif
+	frame	data/chars/players/Jessy/walk07.gif
+
+
+anim get
+	loop	0
+	delay	10
+	offset	136 174
+	frame	data/chars/players/Jessy/get00.gif
+
+
+anim jump
+	loop	0
+	delay	5
+	offset	152 184
+	bbox	141 118 25 47
+	frame	data/chars/players/Jessy/jump00.gif
+	frame	data/chars/players/Jessy/jump00.gif
+
+
+
+
+anim jumpattack
+	loop	0
+	delay	7
+	offset	139 183
+	bbox	123 123 29 44
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/chars/players/Jessy/a1.wav
+		attack1  131  144  57  39  10  1  0  0  0  10
+	frame	data/chars/players/Jessy/Jumpattack00.gif
+
+
+
+
+anim jumpattack2
+	loop	0
+	delay	7
+	offset	127 181
+	bbox	122 123 47 42
+	attack	129 143 62 32 7 1  0  0  0  10
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/chars/players/Jessy/a2.wav
+	frame	data/chars/players/Jessy/Jumpattack200.gif
+
+anim jumpforward
+	loop	0
+	delay	7
+	offset	127 181
+	bbox	118 120 33 42
+	attack	137 148 49 32 7 1  0  0  0  10
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+        Sound	data/chars/players/Jessy/a3.wav
+	frame	data/chars/players/Jessy/Jumpattack00.gif
+
+
+anim runjumpattack
+	loop	0
+	delay	7
+	offset	127 181
+	bbox	117 116 40 44
+	attack	120 137 40 40 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+        Sound	data/chars/players/Jessy/a4.wav
+	frame	data/chars/players/Jessy/Jumpattack300.gif
+
+anim attack1
+	loop	0
+	delay	5
+	offset	139 184
+	bbox	132 116 16 68
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/fraco.wav
+	frame	data/chars/players/Jessy/a100.gif
+		attack1  132  125  52  15  10  0  0  0  0  5
+	frame	data/chars/players/Jessy/a101.gif
+		Attack1  0
+	frame	data/chars/players/Jessy/a102.gif
+
+
+anim attack2
+	loop	0
+	delay	4
+	offset	133 186
+	bbox	125 114 20 74
+		Attack1  0
+        hitfx	data/sounds/golpes/Medio.wav
+	frame	data/chars/players/Jessy/a200.gif
+		attack2  127  125  23  21  7  0  0  0  0  5
+	frame	data/chars/players/Jessy/a201.gif
+		attack2  146  130  44  12  7  0  0  0  0  5
+	frame	data/chars/players/Jessy/a202.gif
+		Attack1  0
+	frame	data/chars/players/Jessy/a203.gif
+
+anim attack3
+	loop	0
+	delay	4
+	offset	128 190
+	bbox	120 114 15 74
+        Sound	data/sounds/golpes/Chut.wav
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/chars/players/Jessy/a4.wav
+	frame	data/chars/players/Jessy/a300.gif
+	frame	data/chars/players/Jessy/a301.gif
+		attack1  144  148  26  29  5  1  0  0  0  5
+		delay  4
+	frame	data/chars/players/Jessy/a302.gif
+		attack1  157  128  52  27  5  1  0  0  0  5
+	frame	data/chars/players/Jessy/a303.gif
+		attack1  151  115  50  32  5  1  0  0  0  5
+	frame	data/chars/players/Jessy/a304.gif
+		attack1  132  113  22  57  5  1  0  0  0  5
+	frame	data/chars/players/Jessy/a305.gif
+		Attack1  0
+	frame	data/chars/players/Jessy/a306.gif
+	frame	data/chars/players/Jessy/a307.gif
+
+
+anim run
+        loop    1
+        delay  10
+	offset	148 181
+	bbox	140 124 35 35
+	jumpframe  0  0.001  0.001  0
+	landframe  1
+        frame	data/chars/players/Jessy/run00.gif
+        frame	data/chars/players/Jessy/run01.gif
+        frame	data/chars/players/Jessy/run02.gif
+        frame	data/chars/players/Jessy/run03.gif
+        frame	data/chars/players/Jessy/run04.gif
+        frame	data/chars/players/Jessy/run05.gif
+
+
+
+anim grab
+	loop	0
+	delay	100
+	offset	139 181
+	bbox	127 115 31 68
+        cancel	0 9 0 j freespecial
+	frame	data/chars/players/Jessy/grab00.gif
+
+anim throw
+	loop	0
+	delay	5
+	offset	146 197
+        Sound	data/chars/players/Jessy/a1.wav
+	frame	data/chars/players/Jessy/Special101.gif
+	@cmd  spawn01  "T00"  0  0  0
+	frame	data/chars/players/Jessy/Special102.gif
+	frame	data/chars/players/Jessy/Special103.gif
+	frame	data/chars/players/Jessy/Special106.gif
+	frame	data/chars/players/Jessy/Special107.gif
+		offset  146  197
+	frame	data/chars/players/Jessy/Special108.gif
+
+
+
+anim Freespecial
+	loop	0
+	delay	10
+	offset	110 221
+        cancel	6 9 0 a freespecial2
+        hitfx	data/sounds/efeitos/silencio.wav
+		move  11
+		attack4  95  153  33  75  0  0  0  0  0  20
+	frame	data/chars/players/Jessy/vault00.gif
+		attack4  104  163  35  64  0  0  0  0  0  20
+	frame	data/chars/players/Jessy/vault01.gif
+		Attack1  0
+	frame	data/chars/players/Jessy/vault02.gif
+	frame	data/chars/players/Jessy/vault03.gif
+		offset  129  225
+	frame	data/chars/players/Jessy/vault04.gif
+		delay  1
+		move  0
+		offset  163  183
+	frame	data/chars/players/Jessy/grab01.gif
+	frame	data/chars/players/Jessy/grab01.gif
+		delay  50
+	frame	data/chars/players/Jessy/grab01.gif
+		delay  10
+	        Sound	data/chars/players/Jessy/a3.wav
+		offset  138  183
+	frame	data/chars/players/Jessy/a401.gif
+		attack1  104  117  44  57  15  1  0  0  0  20
+	frame	data/chars/players/Jessy/a402.gif
+		attack1  104  120  36  29  15  1  0  0  0  20
+	frame	data/chars/players/Jessy/a403.gif
+		attack1  116
+	frame  data/chars/players/Jessy/a404.gif
+		Attack1  0
+	frame  data/chars/players/Jessy/a400.gif
+
+
+anim Freespecial2
+	loop	0
+	delay	10
+	offset	147 187
+        hitfx	data/sounds/efeitos/silencio.wav
+        Sound	data/chars/players/Jessy/a4.wav
+		attack5  116  123  35  64  25  0  0  0  0  1
+		move  0
+	frame	data/chars/players/Jessy/walk01.gif
+		Attack1  0
+	frame	data/chars/players/Jessy/slam01.gif
+		move  0
+		delay  5
+	frame	data/chars/players/Jessy/slam02.gif
+		delay  10
+		attack1  203  157  37  26  10  1  0  0  0  20
+	frame	data/chars/players/Jessy/slam03.gif
+		delay  5
+		Attack1  0
+	frame	data/chars/players/Jessy/slam04.gif
+	frame	data/chars/players/Jessy/slam05.gif
+	frame	data/chars/players/Jessy/slam06.gif
+	frame	data/chars/players/Jessy/slam07.gif
+	frame	data/chars/players/Jessy/slam08.gif
+	frame	data/chars/players/Jessy/slam09.gif
+
+anim Freespecial5
+	loop	0
+	delay	10
+        offset	132 174
+	frame	data/chars/players/Jessy/get00.gif
+        Movez 7
+        Move 2
+	delay	5
+		offset  149  171
+	frame	data/chars/players/Jessy/dodge01.gif
+	frame	data/chars/players/Jessy/dodge02.gif
+		offset  149  175
+	frame	data/chars/players/Jessy/dodge03.gif
+		offset  137  164
+	frame	data/chars/players/Jessy/dodge04.gif
+        Movez 0
+        Move 0
+	delay	10
+		offset  128  169
+	frame	data/chars/players/Jessy/get00.gif
+
+anim Freespecial6
+	loop	0
+	delay	10
+        offset	132 174
+	frame	data/chars/players/Jessy/get00.gif
+        Movez -7
+        Move 2
+	delay	5
+		offset  149  171
+	frame	data/chars/players/Jessy/dodge01.gif
+	frame	data/chars/players/Jessy/dodge02.gif
+		offset  149  175
+	frame	data/chars/players/Jessy/dodge03.gif
+		offset  137  164
+	frame	data/chars/players/Jessy/dodge04.gif
+        Movez 0
+        Move 0
+	delay	10
+		offset  128  169
+	frame	data/chars/players/Jessy/get00.gif
+
+anim pain
+	loop	0
+	offset	127 181
+	bbox	107 113 38 44
+	delay	15
+	frame	data/chars/players/Jessy/pain00.gif
+	frame	data/chars/players/Jessy/pain01.gif
+
+anim pain2
+	loop	0
+	offset	127 181
+	bbox	101 113 39 47
+	delay	15
+	frame	data/chars/players/Jessy/pain200.gif
+	frame	data/chars/players/Jessy/pain201.gif
+
+
+anim fall
+	loop	0
+	offset	128 181
+	delay	40
+	attack	97 108 46 56 12 1
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/players/Jessy/fall00.gif
+		Attack1  0
+		offset  151  156
+	frame	data/chars/players/Jessy/fall01.gif
+
+anim fall3
+	loop	0
+	offset	128 181
+	delay	10
+	attack	101 111 47 69 12 1
+		bbox  104  111  41  68
+	frame	data/chars/players/Jessy/fall705.gif
+	frame	data/chars/players/Jessy/fall600.gif
+	frame	data/chars/players/Jessy/fall601.gif
+	frame	data/chars/players/Jessy/fall602.gif
+		Attack1  0
+		bbox  0
+		offset  147  157
+	frame  data/chars/players/Jessy/fall01.gif
+
+anim rise
+	loop	0
+	offset	148 181
+	delay	10
+	frame	data/chars/players/Jessy/Rise00.gif
+	frame	data/chars/players/Jessy/Rise01.gif
+		offset  148  181
+	frame	data/chars/players/Jessy/Rise02.gif
+
+
+anim special
+        energycost 20 1
+        MpOnly 1
+	loop	0
+	delay	5
+	offset	153 196
+        hitfx	data/sounds/golpes/forte.wav
+        Sound	data/chars/players/Jessy/Sp.wav
+		Attack1  0
+	frame	data/chars/players/Jessy/special100.gif
+	frame	data/chars/players/Jessy/special101.gif
+		attack3  158  154  36  40  25  1  0  0  0  20
+	frame	data/chars/players/Jessy/special102.gif
+		attack3  149  125  56  63  25  1  0  0  0  20
+	@cmd  spawn01  "JessyP"  0  0  0
+	frame	data/chars/players/Jessy/special103.gif
+		attack3  115  92  77  86  25  1  0  0  0  20
+	frame	data/chars/players/Jessy/special104.gif
+		attack3  109  101  83  59  25  1  0  0  0  20
+	frame	data/chars/players/Jessy/special105.gif
+		attack3  99  113  51  57  25  1  0  0  0  20
+	frame	data/chars/players/Jessy/special106.gif
+		Attack1  0
+	frame	data/chars/players/Jessy/special107.gif
+	frame	data/chars/players/Jessy/special108.gif
+	frame	data/chars/players/Jessy/special109.gif
+
+anim special2
+        energycost 20 1
+        MpOnly 1
+	loop	0
+	delay	6
+	offset	146 189
+        hitfx	data/sounds/golpes/forte.wav
+        Sound	data/chars/players/Jessy/a3.wav
+		Attack1  0
+	frame	data/chars/players/Jessy/special200.gif
+	frame	data/chars/players/Jessy/special201.gif
+        Sound	data/sounds/golpes/Soco.wav
+		attack1  124  124  60  31  5  0  0  0  10  10
+	frame	data/chars/players/Jessy/special202.gif
+		Attack1  0
+	frame	data/chars/players/Jessy/special203.gif
+		attack2  124  126  68  34  5  0  0  0  0  10
+	frame	data/chars/players/Jessy/special204.gif
+		Attack1  0
+	frame	data/chars/players/Jessy/special201.gif
+        Sound	data/sounds/golpes/Soco.wav
+		attack1  124  124  60  31  5  0  0  0  10  10
+	frame	data/chars/players/Jessy/special202.gif
+		Attack1  0
+	frame	data/chars/players/Jessy/special203.gif
+        Sound	data/sounds/golpes/Soco.wav
+		attack2  124  126  68  34  5  0  0  0  0  10
+	frame	data/chars/players/Jessy/special204.gif
+		Attack1  0
+	frame	data/chars/players/Jessy/special201.gif
+        Sound	data/sounds/golpes/Soco.wav
+		attack1  124  124  60  31  5  0  0  0  10  10
+	frame	data/chars/players/Jessy/special202.gif
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+	frame	data/chars/players/Jessy/special203.gif
+		attack2  124  126  68  34  5  0  0  0  0  10
+	frame	data/chars/players/Jessy/special204.gif
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+	frame	data/chars/players/Jessy/special201.gif
+		attack1  124  124  60  31  5  0  0  0  10  10
+	frame	data/chars/players/Jessy/special202.gif
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+	frame	data/chars/players/Jessy/special203.gif
+		attack2  124  126  68  34  5  0  0  0  0  10
+	frame	data/chars/players/Jessy/special204.gif
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+	frame	data/chars/players/Jessy/special201.gif
+		attack1  124  124  60  31  5  0  0  0  10  10
+	frame	data/chars/players/Jessy/special202.gif
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+	frame	data/chars/players/Jessy/special203.gif
+		attack2  124  126  68  34  5  0  0  0  0  10
+	frame	data/chars/players/Jessy/special204.gif
+		Attack1  0
+        Sound	data/chars/players/Jessy/a2.wav
+	frame	data/chars/players/Jessy/special205.gif
+		offset  132  189
+	frame	data/chars/players/Jessy/special206.gif
+		offset  134  185
+	frame	data/chars/players/Jessy/special207.gif
+	frame	data/chars/players/Jessy/special208.gif
+		attack3  152  118  44  34  20  1  0  0  0  20
+	frame	data/chars/players/Jessy/special209.gif
+		attack3  147  110  34  35  20  1  0  0  0  20
+	frame	data/chars/players/Jessy/special210.gif
+	frame	data/chars/players/Jessy/special211.gif
+		Attack1  0
+	frame	data/chars/players/Jessy/special212.gif
+		offset  143  187
+	frame	data/chars/players/Jessy/special213.gif
+
+
+
+
+anim runattack
+ 	loop	0
+ 	delay	3
+ 	offset	146 196
+ 	bbox	136 135 26 45
+		move  3
+	jumpframe  6  2  1  0
+	landframe  11
+        hitfx	data/sounds/golpes/forte.wav
+        Sound	data/chars/players/Jessy/a3.wav
+		attack1  133  144  30  31  10  0  0  0  0  20
+ 	frame	data/chars/players/Jessy/Runattack01.gif
+		Attack1  0
+ 	frame	data/chars/players/Jessy/Runattack02.gif
+		attack2  145  136  40  26  10  0  0  0  0  20
+ 	frame	data/chars/players/Jessy/Runattack03.gif
+		Attack1  0
+	frame  data/chars/players/Jessy/Runattack03.gif
+		attack1  151  134  36  28  5  0  0  0  0  10
+	frame  data/chars/players/Jessy/Runattack03.gif
+		attack2  145
+	frame  data/chars/players/Jessy/Runattack03.gif
+		attack2  145  96  32  91  5  0  0  0  0  20
+		movea  0
+ 	frame	data/chars/players/Jessy/Runattack04.gif
+		delay  5
+		move  2
+		Attack1  0
+ 	frame	data/chars/players/Jessy/Runattack05.gif
+		attack3  130  95  40  109  10  1  0  0  0  20
+ 	frame	data/chars/players/Jessy/Runattack06.gif
+		movea  0
+ 	frame	data/chars/players/Jessy/Runattack07.gif
+		Attack1  0
+ 	frame	data/chars/players/Jessy/Runattack08.gif
+ 	frame	data/chars/players/Jessy/Runattack09.gif
+		offset  151  189
+		movea  0
+		bbox  136  123  27  54
+	frame  data/chars/players/Jessy/land00.gif
+
+
+
+
+
+anim grabattack
+	loop	0
+	offset	146 181
+	bbox	134 107 32 73
+	delay	7
+        hitfx	data/sounds/golpes/fraco.wav
+        Sound	data/sounds/golpes/Chut.wav
+		Attack1  0
+	frame	data/chars/players/Jessy/ga100.gif
+		attack2  149  134  25  32  5  0  0  0  0  10
+	frame  data/chars/players/Jessy/ga101.gif
+		Attack1  0
+	frame  data/chars/players/Jessy/ga100.gif
+
+
+anim grabattack2
+                loop	0
+	offset	128 189
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/chars/players/Jessy/a1.wav
+		delay  6
+		Attack1  0
+	frame	data/chars/players/Jessy/a300.gif
+	frame	data/chars/players/Jessy/a301.gif
+	frame	data/chars/players/Jessy/a302.gif
+		attack1  153  125  56  33  12  1  0  0  0  10
+	frame	data/chars/players/Jessy/a303.gif
+		Attack1  0
+	frame	data/chars/players/Jessy/a302.gif
+	frame	data/chars/players/Jessy/a301.gif
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	152 189
+	bbox	139 123 26 70
+	frame	data/chars/players/Jessy/jumpland00.gif
+
+anim attackbackward
+ 	loop	0
+ 	delay	6
+ 	offset	165 175
+ 	bbox	150 122 27 53
+        hitfx	data/sounds/golpes/Medio.wav
+        Sound	data/sounds/golpes/soco.wav
+ 	frame	data/chars/players/Jessy/aboth01.gif
+		attack1  120  153  31  25  10  1  0  0  0  20
+ 	frame	data/chars/players/Jessy/aboth02.gif
+		attack1  99  154  52  21  10  1  0  0  0  20
+ 	frame	data/chars/players/Jessy/aboth03.gif
+		Attack1  0
+ 	frame	data/chars/players/Jessy/aboth04.gif
+ 	frame	data/chars/players/Jessy/aboth05.gif
+

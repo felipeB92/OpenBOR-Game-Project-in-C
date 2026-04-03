@@ -1,0 +1,12 @@
+name		st2_smiley
+type		none
+shadow		0
+antigravity	100
+setlayer	-1
+
+anim idle
+	loop	1
+	delay	12
+	offset	1 1
+	frame	data/bgs/sor3_st2/smiley00.gif
+	frame	data/bgs/sor3_st2/smiley01.gif

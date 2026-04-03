@@ -1,0 +1,20 @@
+name			st2_fish2
+type			none
+shadow			0
+antigravity		100
+setlayer		-20
+animationscript data/scripts/animation/default.c
+
+anim idle
+	loop	1
+	delay	32
+	offset	40 15
+	@cmd dasher 0.1 0 0
+	frame	data/bgs/sor3_st2/fish200.gif
+	frame	data/bgs/sor3_st2/fish201.gif
+	frame	data/bgs/sor3_st2/fish202.gif
+	frame	data/bgs/sor3_st2/fish201.gif
+		delay	1
+	@cmd looper 0 18
+	@cmd flip
+	frame	data/bgs/sor3_st2/fish200.gif

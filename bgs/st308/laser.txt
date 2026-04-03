@@ -1,0 +1,22 @@
+name			st8_laser
+type			none
+health			1
+nolife			1
+lifespan		3
+remove			1
+shadow			0
+antigravity		100
+animationscript	data/scripts/animation/default.c
+
+anim idle
+	attackone 1
+	fastattack 1
+	jugglecost 31
+	forcedirection 0
+	hitflash shock
+	loop	0
+	delay	8
+	offset	32 44
+	hitfx	data/sounds/StrongPunch.wav
+	shock 29 10 7 32 40 3 0 0 0 12
+	frame	data/bgs/sor3_st8/laser00.gif

@@ -1,0 +1,14 @@
+# Hit flash
+
+name	machado
+candamage  Player obstacle npc pshot
+type	pshot
+anim idle
+	loop	1
+	delay	2
+	offset	11 69
+        hitfx	data/sounds/armas/corte.wav
+	frame	data/chars/Enemys/Clown/p201.gif
+	frame	data/chars/Enemys/Clown/p202.gif
+	frame	data/chars/Enemys/Clown/p203.gif
+	frame	data/chars/Enemys/Clown/p204.gif

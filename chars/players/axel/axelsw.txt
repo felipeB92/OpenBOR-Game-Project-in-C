@@ -1,0 +1,36 @@
+##MAIN
+name				AxelSW
+type				none
+
+##MISC
+antigravity			100
+
+##SCRIPTS
+ondrawscript		data/scripts/ondraw/channel.c
+
+##REMAPS
+remap				data/chars/axel/idle00.gif data/chars/axel/alter1.gif
+remap				data/chars/axel/idle00.gif data/chars/axel/alter2.gif
+remap				data/chars/axel/idle00.gif data/chars/axel/alter3.gif
+
+##ANIMATIONS#############################################################################
+
+anim freespecial
+	loop	0
+	delay	1000
+	offset	62 126
+	frame	data/chars/axel/sword/special200.gif
+	frame	data/chars/axel/sword/a100.gif
+	frame	data/chars/axel/sword/special200.gif
+	frame	data/chars/axel/sword/a100.gif
+	frame	data/chars/axel/sword/special200.gif
+	frame	data/chars/axel/sword/a100.gif
+	frame	data/chars/axel/sword/special200.gif
+	frame	data/chars/axel/sword/a100.gif
+	frame	data/chars/axel/sword/special200.gif
+	frame	data/chars/axel/sword/a100.gif
+	frame	data/chars/axel/sword/special200.gif
+	frame	data/chars/axel/sword/a100.gif
+	frame	data/chars/axel/sword/special201.gif
+	frame	data/chars/axel/sword/special204.gif
+	frame	data/chars/axel/sword/special205.gif

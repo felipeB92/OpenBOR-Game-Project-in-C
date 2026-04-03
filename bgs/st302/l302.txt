@@ -1,0 +1,13 @@
+name			L302 #GROUND
+type			None
+setlayer 5
+antigravity	100
+
+anim idle
+	loop	1
+	delay	12
+	offset	0 0
+	frame	data/Bgs/St302/smiley00.gif
+	frame	data/Bgs/St302/smiley01.gif
+
+

@@ -1,0 +1,449 @@
+name	Zamza
+health	500
+speed	16
+riseinv				0.4 1
+hostile				player npc
+candamage			player npc obstacle
+Noblink 0
+falldie 1
+escapehits			2
+mp			        60
+mprate  			5
+type	Enemy
+gfxshadow	1
+JUMPHEIGHT 1 1
+Jumpheight 3
+risetime  5
+atchain    1 2
+icon	data/chars/Enemys/Zamza/icon.gif 1
+diesound data/voices/bossdie1.wav
+running	20	3	3	1	1
+#onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+#ondrawscript 		data/scripts/player_ondrawscript.c
+
+##LOADS
+
+
+
+remap data/chars/Enemys/Zamza/idle00.gif data/chars/Enemys/Zamza/alter1.gif
+remap data/chars/Enemys/Zamza/idle00.gif data/chars/Enemys/Zamza/alter2.gif
+remap data/chars/Enemys/Zamza/idle00.gif data/chars/Enemys/Zamza/alter3.gif
+
+anim spawn
+	loop	0
+	delay	16
+	offset	150 200
+	bbox	127 130 52 69
+	frame   data/chars/Enemys/Zamza/idle00.gif
+
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	150 200
+	bbox	123 127 47 67
+	frame   data/chars/Enemys/Zamza/idle00.gif
+	frame   data/chars/Enemys/Zamza/idle01.gif
+	frame   data/chars/Enemys/Zamza/idle02.gif
+	frame   data/chars/Enemys/Zamza/idle03.gif
+
+
+anim walk
+	loop	1
+	offset	150 200
+	bbox	131 110 28 72
+		delay  9
+	frame	data/chars/Enemys/Zamza/walk00.gif
+	frame	data/chars/Enemys/Zamza/walk01.gif
+	frame	data/chars/Enemys/Zamza/walk02.gif
+	frame	data/chars/Enemys/Zamza/walk03.gif
+	frame	data/chars/Enemys/Zamza/walk04.gif
+	frame	data/chars/Enemys/Zamza/walk05.gif
+
+anim	Backwalk
+	loop	1
+	offset	150 200
+	bbox	126 135 49 44
+		delay  9
+	frame	data/chars/Enemys/Zamza/walk05.gif
+	frame	data/chars/Enemys/Zamza/walk04.gif
+	frame	data/chars/Enemys/Zamza/walk03.gif
+	frame	data/chars/Enemys/Zamza/walk02.gif
+	frame	data/chars/Enemys/Zamza/walk01.gif
+	frame	data/chars/Enemys/Zamza/walk00.gif
+
+
+
+anim get
+	loop	0
+	delay	10
+	offset	150 200
+	frame	data/chars/Enemys/Zamza/get00.gif
+
+
+
+
+anim attack1
+	loop	0
+	delay	6
+        Range 0 60
+	offset	150 200
+	bbox	135 137 31 63
+		Attack1  0
+	sound	data/sounds/armas/Whoosh.wav
+        hitfx	data/sounds/Armas/Corte.wav
+	frame	data/chars/Enemys/Zamza/a100.gif
+		attack1  148  144  84  47  15  0  0  0  0  20
+	frame	data/chars/Enemys/Zamza/a101.gif
+	frame	data/chars/Enemys/Zamza/a102.gif
+		Attack1  0
+	frame	data/chars/Enemys/Zamza/a102b.gif
+
+anim attack2
+	loop	0
+	delay	6
+	offset	150 200
+	bbox	131 135 43 65
+		Attack1  0
+	sound	data/sounds/armas/Whoosh2.wav
+        hitfx	data/sounds/Armas/Corte2.wav
+	frame	data/chars/Enemys/Zamza/a103.gif
+		attack1  175  135  69  49  15  1  0  0  0  20
+	frame	data/chars/Enemys/Zamza/a104.gif
+	frame	data/chars/Enemys/Zamza/a105.gif
+		Attack1  0
+	frame	data/chars/Enemys/Zamza/a105b.gif
+
+
+
+
+
+anim Upper
+	loop	0
+	delay	7
+	offset	150 200
+	jumpframe  1  3  0  0
+	landframe  8
+        hitfx	data/sounds/Armas/Corte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Zamza/Upper00.gif
+		attack3  143  122  42  64  20  1  0  0  0  20
+	frame	data/chars/Enemys/Zamza/Upper01.gif
+		attack3  128  104  67  58  20  1  0  0  0  20
+	frame	data/chars/Enemys/Zamza/Upper02.gif
+		attack3  89  102  100  46  20  1  0  0  0  20
+	frame	data/chars/Enemys/Zamza/Upper03.gif
+		attack3  120  76  66  75  20  1  0  0  0  20
+	frame	data/chars/Enemys/Zamza/Upper04.gif
+	frame	data/chars/Enemys/Zamza/Upper05.gif
+		Attack1  0
+	frame	data/chars/Enemys/Zamza/Upper06.gif
+	frame	data/chars/Enemys/Zamza/Upper07.gif
+	frame	data/chars/Enemys/Zamza/Upper08.gif
+	frame	data/chars/Enemys/Zamza/Upper09.gif
+
+
+
+anim Freespecial
+	loop	0
+	delay	5
+        Range 150 200
+	offset	150 200
+	jumpframe  1  3  3  0
+	landframe  17
+        hitfx	data/sounds/Armas/Corte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Zamza/roll01.gif
+		attack1  116  120  82  80  20  1  0  0  0  20
+		delay  3
+	frame	data/chars/Enemys/Zamza/roll02.gif
+	frame	data/chars/Enemys/Zamza/roll03.gif
+	frame	data/chars/Enemys/Zamza/roll04.gif
+	frame	data/chars/Enemys/Zamza/roll05.gif
+	frame	data/chars/Enemys/Zamza/roll06.gif
+	frame	data/chars/Enemys/Zamza/roll07.gif
+	frame	data/chars/Enemys/Zamza/roll08.gif
+	frame	data/chars/Enemys/Zamza/roll09.gif
+	frame	data/chars/Enemys/Zamza/roll02.gif
+	frame	data/chars/Enemys/Zamza/roll03.gif
+	frame	data/chars/Enemys/Zamza/roll04.gif
+	frame	data/chars/Enemys/Zamza/roll05.gif
+	frame	data/chars/Enemys/Zamza/roll06.gif
+	frame	data/chars/Enemys/Zamza/roll07.gif
+	frame	data/chars/Enemys/Zamza/roll08.gif
+	frame	data/chars/Enemys/Zamza/roll09.gif
+		Attack1  0
+	frame	data/chars/Enemys/Zamza/roll10.gif
+
+
+anim Freespecial2
+	loop	0
+	delay	5
+        Range   150 200
+	offset	150 200
+        Range 100 150
+		Attack1  0
+        hitfx	data/sounds/Armas/Corte2.wav
+		move  5
+	frame	data/chars/Enemys/Zamza/slide00.gif
+		attack1  125  167  60  37  15  1  0  0  0  20
+		move  10
+		delay  3
+	frame	data/chars/Enemys/Zamza/slide01.gif
+	frame	data/chars/Enemys/Zamza/slide01.gif
+	frame	data/chars/Enemys/Zamza/slide01.gif
+	frame	data/chars/Enemys/Zamza/slide01.gif
+	frame	data/chars/Enemys/Zamza/slide01.gif
+	frame	data/chars/Enemys/Zamza/slide01.gif
+	frame	data/chars/Enemys/Zamza/slide01.gif
+	frame	data/chars/Enemys/Zamza/slide01.gif
+	frame	data/chars/Enemys/Zamza/slide01.gif
+	frame	data/chars/Enemys/Zamza/slide01.gif
+		delay  5
+	frame	data/chars/Enemys/Zamza/slide02.gif
+
+anim Special
+	loop	0
+	delay	5
+	offset	150 200
+	jumpframe  1  3  -2  0
+	landframe  8
+		Attack1  0
+        hitfx	data/sounds/Armas/Corte2.wav
+		move  0
+	frame	data/chars/Enemys/Zamza/jump00.gif
+	frame	data/chars/Enemys/Zamza/jump08.gif
+	frame	data/chars/Enemys/Zamza/jump07.gif
+	frame	data/chars/Enemys/Zamza/jump06.gif
+	frame	data/chars/Enemys/Zamza/jump05.gif
+	frame	data/chars/Enemys/Zamza/jump04.gif
+	frame	data/chars/Enemys/Zamza/jump03.gif
+	frame	data/chars/Enemys/Zamza/jump02.gif
+	frame	data/chars/Enemys/Zamza/jump01.gif
+	frame	data/chars/Enemys/Zamza/jump09.gif
+
+anim Special2
+	loop	0
+	delay	5
+	offset	150 200
+	jumpframe  1  3  -2  0
+	landframe  8
+		Attack1  0
+        hitfx	data/sounds/Armas/Corte2.wav
+		move  0
+	frame	data/chars/Enemys/Zamza/jump00.gif
+	frame	data/chars/Enemys/Zamza/jump08.gif
+	frame	data/chars/Enemys/Zamza/jump07.gif
+	frame	data/chars/Enemys/Zamza/jump06.gif
+	frame	data/chars/Enemys/Zamza/jump05.gif
+	frame	data/chars/Enemys/Zamza/jump04.gif
+	frame	data/chars/Enemys/Zamza/jump03.gif
+	frame	data/chars/Enemys/Zamza/jump02.gif
+	frame	data/chars/Enemys/Zamza/jump01.gif
+	frame	data/chars/Enemys/Zamza/jump09.gif
+
+
+
+
+anim Freespecial3
+	loop	0
+	delay	5
+        Range 80 100
+	offset	150 200
+	jumpframe  1  3  -2  0
+	landframe  8
+		Attack1  0
+        hitfx	data/sounds/Armas/Corte2.wav
+		move  0
+	frame	data/chars/Enemys/Zamza/jump00.gif
+		delay  3
+	frame	data/chars/Enemys/Zamza/jump08.gif
+	frame	data/chars/Enemys/Zamza/jump07.gif
+	frame	data/chars/Enemys/Zamza/jump06.gif
+	frame	data/chars/Enemys/Zamza/jump05.gif
+	frame	data/chars/Enemys/Zamza/jump04.gif
+	frame	data/chars/Enemys/Zamza/jump03.gif
+	frame	data/chars/Enemys/Zamza/jump02.gif
+	frame	data/chars/Enemys/Zamza/jump01.gif
+	frame	data/chars/Enemys/Zamza/jump09.gif
+
+anim Jump
+	loop	0
+	delay	100
+	offset	150 200
+	bbox	125 97 45 75
+	frame	data/chars/Enemys/Zamza/jump00.gif
+
+anim Jumpattack
+	loop	0
+        Range 60 80
+	bbox	140 113 33 61
+		attack1  133  146  51  57  15  1  0  0  0  20
+		delay  40
+		offset  150  200
+	frame	data/chars/Enemys/Zamza/jumpatk01.gif
+
+
+
+
+
+
+anim grabbed
+	loop	0
+	delay	100
+	offset	150 200
+	bbox	130 134 49 60
+	frame	data/chars/Enemys/Zamza/grabbed00.gif
+
+
+
+anim pain
+	loop	0
+	offset	150 200
+	bbox	129 111 45 74
+	delay	15
+	frame	data/chars/Enemys/Zamza/pain00.gif
+	frame	data/chars/Enemys/Zamza/pain01.gif
+
+anim pain2
+	loop	0
+	offset	150 200
+	bbox	125 129 54 63
+	delay	15
+	frame	data/chars/Enemys/Zamza/pain200.gif
+	frame	data/chars/Enemys/Zamza/pain201.gif
+
+anim pain4
+	loop	0
+	offset	150 200
+	bbox	130 111 36 75
+	delay	250
+	frame	data/chars/Enemys/Zamza/pain00.gif
+
+anim pain5
+	loop	0
+	offset	150 200
+	delay	10
+	frame	data/chars/Enemys/Zamza/pain00.gif
+		move  10
+	frame	data/chars/Enemys/Zamza/fall705.gif
+		move  30
+		delay  10
+	frame	data/chars/Enemys/Zamza/fall603.gif
+        quakeframe 4 2 2
+        Sound	data/Sounds/Efeitos/Estrondo.wav
+	frame	data/chars/Enemys/Zamza/fall900.gif
+		move  1
+		movea  5
+	frame  data/chars/Enemys/Zamza/fall900.gif
+		movea  -5
+	frame  data/chars/Enemys/Zamza/fall900.gif
+		delay  50
+		move  0
+		movea  0
+		Attack1  0
+	frame	data/chars/Enemys/Zamza/Fall01.gif
+		delay  10
+	frame	data/chars/Enemys/Zamza/Rise00.gif
+	frame	data/chars/Enemys/Zamza/Rise01.gif
+	frame  data/chars/Enemys/Zamza/Rise04.gif
+
+
+anim death
+	loop	0
+	offset	150 200
+	delay	20
+	jumpframe  0  1  -1  0
+	landframe  2
+	frame	data/chars/Enemys/Zamza/fall701.gif
+	frame  data/chars/Enemys/Zamza/fall00.gif
+	frame	data/chars/Enemys/Zamza/fall01.gif
+
+
+anim death5
+	loop	0
+	offset	150 200
+	delay	10
+	frame	data/chars/Enemys/Zamza/pain00.gif
+		move  10
+	frame	data/chars/Enemys/Zamza/fall705.gif
+		move  30
+		delay  10
+	frame	data/chars/Enemys/Zamza/fall603.gif
+	frame	data/chars/Enemys/Zamza/fall900.gif
+		move  1
+		movea  5
+	frame  data/chars/Enemys/Zamza/fall900.gif
+		movea  -5
+	frame  data/chars/Enemys/Zamza/fall900.gif
+		delay  50
+		move  0
+		movea  0
+	frame	data/chars/Enemys/Zamza/Fall01.gif
+
+
+anim fall
+	loop	0
+	offset	150 200
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Zamza/fall701.gif
+		attack  109
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Zamza/fall00.gif
+		Attack1  0
+		delay  10
+	frame	data/chars/Enemys/Zamza/fall01.gif
+
+anim fall3
+	loop	0
+	offset	150 200
+	delay	5
+	jumpframe  0  3  -3  0
+	landframe  8
+		bbox  132  116  43  62
+		Attack1  0
+	frame	data/chars/Enemys/Zamza/fall705.gif
+	frame	data/chars/Enemys/Zamza/fall600.gif
+	frame	data/chars/Enemys/Zamza/fall601.gif
+	frame	data/chars/Enemys/Zamza/fall602.gif
+	frame	data/chars/Enemys/Zamza/fall705.gif
+	frame	data/chars/Enemys/Zamza/fall600.gif
+	frame	data/chars/Enemys/Zamza/fall601.gif
+	frame	data/chars/Enemys/Zamza/fall602.gif
+	frame	data/chars/Enemys/Zamza/fall705.gif
+	frame	data/chars/Enemys/Zamza/fall600.gif
+	frame	data/chars/Enemys/Zamza/fall601.gif
+	frame	data/chars/Enemys/Zamza/fall602.gif
+	frame  data/chars/Enemys/Zamza/fall705.gif
+	frame  data/chars/Enemys/Zamza/fall600.gif
+		Attack1  0
+		bbox  0
+		move  0
+	frame  data/chars/Enemys/Zamza/fall01.gif
+
+anim rise
+	loop	0
+	offset	150 200
+	delay	10
+	jumpframe  2  3  -2  0
+	landframe  4
+	frame	data/chars/Enemys/Zamza/Rise00.gif
+	frame	data/chars/Enemys/Zamza/Rise01.gif
+	frame	data/chars/Enemys/Zamza/Rise02.gif
+	frame	data/chars/Enemys/Zamza/Rise03.gif
+	frame	data/chars/Enemys/Zamza/Rise04.gif
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	150 200
+	bbox	127 137 31 41
+	frame	data/chars/Enemys/Zamza/jumpland00.gif
+

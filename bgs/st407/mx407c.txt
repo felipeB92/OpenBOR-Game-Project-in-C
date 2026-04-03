@@ -1,0 +1,12 @@
+name			Mx407c #GROUND
+type			None
+setlayer 99
+offscreenkill	1000
+
+
+anim idle
+	loop	1
+	delay	5
+		offset  171  301
+	frame   data/Bgs/st407/X00.gif
+

@@ -1,0 +1,24 @@
+name			Mx300 #GROUND
+type			None
+setlayer 4
+offscreenkill	5000
+onblockwscript	data/scripts/bounceF.c
+animationscript 	data/scripts/ani0020.h
+ondrawscript 		data/scripts/player_ondrawscript.c
+
+Load Elevador02
+
+anim idle
+	loop	0
+	offset	0 0
+		delay  15
+	frame	data/Bgs/St305/mx00.gif
+	frame	data/Bgs/St305/mx01.gif
+	frame	data/Bgs/St305/mx02.gif
+	frame	data/Bgs/St305/mx03.gif
+	frame	data/Bgs/St305/mx04.gif
+	frame	data/Bgs/St305/mx05.gif
+	frame	data/Bgs/St305/mx06.gif
+	@cmd  spawn01  "Elevador02"  0  0  0
+	frame	data/Bgs/St305/mx06.gif
+

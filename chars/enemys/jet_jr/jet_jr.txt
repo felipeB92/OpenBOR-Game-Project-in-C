@@ -1,0 +1,431 @@
+name	Jet_Jr
+health	300
+CANTGRAB 1
+speed	14
+riseinv				0.4 1
+hostile				player npc
+candamage			player npc obstacle
+Noblink 0
+type	Enemy
+falldie 1
+gfxshadow	1
+JUMPHEIGHT 1 1
+Jumpheight 3
+atchain    1 1 2
+icon	data/chars/Enemys/Jet_Jr/icon.gif 1
+diesound data/voices/bossdie2.wav
+running	20	3	3	1	1
+
+
+
+anim	spawn
+	loop	0
+	delay	5
+	offset	159 180
+	frame   data/chars/Enemys/Jet_Jr/idle00.gif
+	frame   data/chars/Enemys/Jet_Jr/idle01.gif
+	frame   data/chars/Enemys/Jet_Jr/idle00.gif
+	frame   data/chars/Enemys/Jet_Jr/idle01.gif
+	frame   data/chars/Enemys/Jet_Jr/idle00.gif
+	frame   data/chars/Enemys/Jet_Jr/idle01.gif
+	frame   data/chars/Enemys/Jet_Jr/idle00.gif
+	frame   data/chars/Enemys/Jet_Jr/idle01.gif
+
+
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	155 220
+	bbox	138 102 38 80
+	frame   data/chars/Enemys/Jet_Jr/idle00.gif
+	frame   data/chars/Enemys/Jet_Jr/idle01.gif
+
+anim	Backwalk
+	loop	1
+        delay	4
+		offset  155  220
+		bbox  142  97  31  56
+	frame	data/chars/Enemys/Jet_Jr/backwalk00.gif
+	frame	data/chars/Enemys/Jet_Jr/backwalk01.gif
+	frame	data/chars/Enemys/Jet_Jr/backwalk00.gif
+	frame	data/chars/Enemys/Jet_Jr/backwalk01.gif
+
+
+anim walk
+	loop	1
+	delay	3
+	offset	155 220
+	bbox	143 96 38 83
+	jumpframe  6  1  1  0
+	landframe  8
+	frame	data/chars/Enemys/Jet_Jr/walk00.gif
+	frame	data/chars/Enemys/Jet_Jr/walk01.gif
+	frame	data/chars/Enemys/Jet_Jr/walk00.gif
+	frame	data/chars/Enemys/Jet_Jr/walk01.gif
+	frame	data/chars/Enemys/Jet_Jr/walk00.gif
+	frame	data/chars/Enemys/Jet_Jr/walk01.gif
+		delay  3
+	frame	data/chars/Enemys/Jet_Jr/walk00.gif
+	frame	data/chars/Enemys/Jet_Jr/walk01.gif
+	frame	data/chars/Enemys/Jet_Jr/walk00.gif
+	frame	data/chars/Enemys/Jet_Jr/walk01.gif
+	frame	data/chars/Enemys/Jet_Jr/walk00.gif
+	frame	data/chars/Enemys/Jet_Jr/walk01.gif
+	frame	data/chars/Enemys/Jet_Jr/walk00.gif
+	frame	data/chars/Enemys/Jet_Jr/walk01.gif
+	frame	data/chars/Enemys/Jet_Jr/walk00.gif
+	frame	data/chars/Enemys/Jet_Jr/walk01.gif
+	frame	data/chars/Enemys/Jet_Jr/walk00.gif
+	frame	data/chars/Enemys/Jet_Jr/walk01.gif
+	frame	data/chars/Enemys/Jet_Jr/walk01.gif
+	frame	data/chars/Enemys/Jet_Jr/walk00.gif
+	frame	data/chars/Enemys/Jet_Jr/walk01.gif
+	frame	data/chars/Enemys/Jet_Jr/walk00.gif
+	frame	data/chars/Enemys/Jet_Jr/walk01.gif
+	frame	data/chars/Enemys/Jet_Jr/walk00.gif
+	frame	data/chars/Enemys/Jet_Jr/walk01.gif
+		attack1  148  131  65  23  1  0  0  0  0  10
+	frame	data/chars/Enemys/Jet_Jr/a104.gif
+		Attack1  0
+	frame	data/chars/Enemys/Jet_Jr/walk01.gif
+
+
+
+
+
+anim freespecial
+	loop	0
+	delay	6
+        Range 100 150
+	offset	155 220
+	bbox	141 109 31 63
+		Attack1  0
+        hitfx	data/sounds/golpes/medio.wav
+		move  0
+	frame	data/chars/Enemys/Jet_Jr/a100.gif
+		delay  15
+	frame	data/chars/Enemys/Jet_Jr/a101.gif
+		Attack1  150  137  39  41  15  1  0  0  0  20
+		move  5
+		movez  0
+		delay  4
+		movea  0
+		offset  155  215
+	frame	data/chars/Enemys/Jet_Jr/a102.gif
+	frame	data/chars/Enemys/Jet_Jr/a103.gif
+		offset  155  210
+	frame	data/chars/Enemys/Jet_Jr/a104.gif
+		offset  155  205
+		attack1  136  135  68  26  15  1  0  0  0  20
+	frame  data/chars/Enemys/Jet_Jr/a105.gif
+		offset  155  200
+	frame  data/chars/Enemys/Jet_Jr/a104.gif
+		offset  155  190
+	frame  data/chars/Enemys/Jet_Jr/a105.gif
+		movea  0
+	frame  data/chars/Enemys/Jet_Jr/a104.gif
+		move  10
+		movez  0
+	frame	data/chars/Enemys/Jet_Jr/a105.gif
+	frame	data/chars/Enemys/Jet_Jr/a105.gif
+	frame	data/chars/Enemys/Jet_Jr/a105.gif
+	frame	data/chars/Enemys/Jet_Jr/a104.gif
+		offset  155  200
+	frame	data/chars/Enemys/Jet_Jr/a105.gif
+		offset  155  210
+	frame	data/chars/Enemys/Jet_Jr/a105.gif
+		offset  155  220
+	frame	data/chars/Enemys/Jet_Jr/a105.gif
+	frame	data/chars/Enemys/Jet_Jr/a105.gif
+		movez  0
+		movea  0
+	frame	data/chars/Enemys/Jet_Jr/a105.gif
+	frame	data/chars/Enemys/Jet_Jr/a105.gif
+	frame	data/chars/Enemys/Jet_Jr/a105.gif
+	frame	data/chars/Enemys/Jet_Jr/a104.gif
+		Attack1  0
+		movez  -10
+	frame	data/chars/Enemys/Jet_Jr/a103.gif
+	frame  data/chars/Enemys/Jet_Jr/a101.gif
+
+
+
+
+
+anim Freespecial2
+
+	loop	0
+		Range  60  100
+	delay	5
+        Range 60 100
+	offset	155 250
+	bbox	136 104 24 80
+        hitfx	data/sounds/golpes/Forte.wav
+		move  0
+		movez  0
+		Attack1  0
+	frame	data/chars/Enemys/Jet_Jr/IDle00.gif
+		delay  3
+		Range  60  100
+		offset  155  240
+		Attack1  147
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Jet_Jr/IDle01.gif
+		offset  155  230
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Jet_Jr/IDle00.gif
+		offset  155  220
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Jet_Jr/IDle00.gif
+		offset  155  210
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Jet_Jr/IDle00.gif
+		offset  155  200
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Jet_Jr/IDle01.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Jet_Jr/IDle00.gif
+		hitfx  data/sounds/golpes/Forte.wav
+		move  5
+		movez  5
+		attack1  140  140  42  47  15  1  0  0  0  20
+	frame  data/chars/Enemys/Jet_Jr/a200.gif
+	frame	data/chars/Enemys/Jet_Jr/a201.gif
+	frame	data/chars/Enemys/Jet_Jr/a200.gif
+	frame	data/chars/Enemys/Jet_Jr/a201.gif
+	frame	data/chars/Enemys/Jet_Jr/a200.gif
+	frame	data/chars/Enemys/Jet_Jr/a201.gif
+	frame  data/chars/Enemys/Jet_Jr/a201.gif
+	frame  data/chars/Enemys/Jet_Jr/a201.gif
+	frame  data/chars/Enemys/Jet_Jr/a201.gif
+	frame  data/chars/Enemys/Jet_Jr/a201.gif
+	frame  data/chars/Enemys/Jet_Jr/a201.gif
+		Attack1  0
+	frame  data/chars/Enemys/Jet_Jr/a201.gif
+		movez  0
+		move  0
+	frame  data/chars/Enemys/Jet_Jr/a201.gif
+		offset  155  210
+	frame	data/chars/Enemys/Jet_Jr/a201.gif
+		offset  155  215
+	frame  data/chars/Enemys/Jet_Jr/idle00.gif
+		offset  155  220
+	frame	data/chars/Enemys/Jet_Jr/idle00.gif
+
+anim attack1
+	loop	0
+	delay	3
+        Range 0 60
+	offset	155 220
+	bbox	136 104 24 80
+		Attack1  147  151  32  34  15  1  0  0  0  20
+        hitfx	data/sounds/golpes/Forte.wav
+		movez  0
+		movea  0
+		move  1
+	frame	data/chars/Enemys/Jet_Jr/a200.gif
+		offset  155  215
+	frame	data/chars/Enemys/Jet_Jr/a201.gif
+		offset  155  210
+	frame	data/chars/Enemys/Jet_Jr/a200.gif
+		offset  155  205
+	frame	data/chars/Enemys/Jet_Jr/a201.gif
+		offset  155  200
+	frame  data/chars/Enemys/Jet_Jr/a201.gif
+		offset  155  190
+	frame  data/chars/Enemys/Jet_Jr/a201.gif
+		movea  0
+		Attack1  0
+		offset  155  200
+		movez  -10
+	frame  data/chars/Enemys/Jet_Jr/Rise01.gif
+		offset  155  210
+	frame  data/chars/Enemys/Jet_Jr/Rise02.gif
+		offset  155  220
+	frame  data/chars/Enemys/Jet_Jr/Rise02.gif
+		movea  0
+		bbox  136  100  38  56
+	frame  data/chars/Enemys/Jet_Jr/Idle00.gif
+
+
+
+
+
+
+
+
+anim grabbed
+	loop	0
+	delay	100
+	offset	162 220
+	bbox	148 111 34 66
+	frame	data/chars/Enemys/Jet_Jr/grabbed00.gif
+
+
+
+anim pain
+	loop	0
+	offset	155 220
+	bbox	142 113 29 71
+	delay	15
+	frame	data/chars/Enemys/Jet_Jr/pain00.gif
+	frame	data/chars/Enemys/Jet_Jr/pain01.gif
+
+anim pain2
+	loop	0
+	offset	155 220
+	bbox	137 109 41 74
+	delay	15
+	frame	data/chars/Enemys/Jet_Jr/pain200.gif
+	frame	data/chars/Enemys/Jet_Jr/pain201.gif
+
+anim pain4
+	loop	0
+	offset	161 220
+	bbox	135 111 43 73
+	delay	250
+	frame	data/chars/Enemys/Jet_Jr/pain00.gif
+
+anim pain5
+	loop	0
+	offset	161 181
+	delay	10
+	frame	data/chars/Enemys/Jet_Jr/pain00.gif
+		move  10
+	frame	data/chars/Enemys/Jet_Jr/fall705.gif
+		move  30
+		delay  10
+		offset  141  208
+	frame	data/chars/Enemys/Jet_Jr/fall603.gif
+        quakeframe 4 2 2
+        Sound	data/Sounds/Efeitos/Estrondo.wav
+		offset  141  181
+	frame	data/chars/Enemys/Jet_Jr/fall900.gif
+		move  1
+		movea  5
+	frame  data/chars/Enemys/Jet_Jr/fall900.gif
+		movea  -5
+		Attack1  0
+	frame  data/chars/Enemys/Jet_Jr/fall900.gif
+		delay  50
+		move  0
+		movea  0
+	frame	data/chars/Enemys/Jet_Jr/Fall01.gif
+		delay  10
+		offset  155  184
+	frame	data/chars/Enemys/Jet_Jr/Rise02.gif
+		offset  156  190
+	frame	data/chars/Enemys/Jet_Jr/Rise01.gif
+		offset  156  200
+	frame  data/chars/Enemys/Jet_Jr/Rise02.gif
+
+
+anim death
+	loop	0
+	offset	155 183
+	delay	20
+	jumpframe  0  1  -1  0
+	landframe  2
+	frame	data/chars/Enemys/Jet_Jr/fall701.gif
+	frame  data/chars/Enemys/Jet_Jr/fall00.gif
+	frame	data/chars/Enemys/Jet_Jr/fall01.gif
+
+
+anim death5
+	loop	0
+	offset	155 184
+	delay	10
+	frame	data/chars/Enemys/Jet_Jr/pain00.gif
+		move  10
+	frame	data/chars/Enemys/Jet_Jr/fall705.gif
+		move  30
+		delay  10
+	frame	data/chars/Enemys/Jet_Jr/fall603.gif
+	frame	data/chars/Enemys/Jet_Jr/fall900.gif
+		move  1
+		movea  5
+	frame  data/chars/Enemys/Jet_Jr/fall900.gif
+		movea  -5
+	frame  data/chars/Enemys/Jet_Jr/fall900.gif
+		delay  50
+		move  0
+		movea  0
+		offset  155  183
+	frame	data/chars/Enemys/Jet_Jr/Fall01.gif
+
+
+anim fall
+	loop	0
+	offset	153 220
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+		bbox  129  110  41  42
+	frame	data/chars/Enemys/Jet_Jr/fall00.gif
+		attack  94
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  153  200
+	frame  data/chars/Enemys/Jet_Jr/fall00.gif
+		delay  40
+		offset  153  180
+		Attack1  0
+		bbox  0
+	frame	data/chars/Enemys/Jet_Jr/fall01.gif
+
+anim fall3
+	loop	0
+	offset	153 220
+	delay	5
+	jumpframe  0  3  -3  0
+	landframe  8
+		bbox  146  109  40  52
+		Attack1  0
+	frame	data/chars/Enemys/Jet_Jr/fall705.gif
+	frame	data/chars/Enemys/Jet_Jr/fall600.gif
+	frame	data/chars/Enemys/Jet_Jr/fall601.gif
+	frame	data/chars/Enemys/Jet_Jr/fall602.gif
+	frame	data/chars/Enemys/Jet_Jr/fall705.gif
+	frame	data/chars/Enemys/Jet_Jr/fall600.gif
+	frame	data/chars/Enemys/Jet_Jr/fall601.gif
+	frame	data/chars/Enemys/Jet_Jr/fall602.gif
+	frame	data/chars/Enemys/Jet_Jr/fall705.gif
+	frame	data/chars/Enemys/Jet_Jr/fall600.gif
+	frame	data/chars/Enemys/Jet_Jr/fall601.gif
+		offset  153  210
+	frame	data/chars/Enemys/Jet_Jr/fall602.gif
+		offset  153  200
+	frame  data/chars/Enemys/Jet_Jr/fall705.gif
+		offset  153  180
+	frame  data/chars/Enemys/Jet_Jr/fall600.gif
+		Attack1  0
+		bbox  0
+		move  0
+	frame  data/chars/Enemys/Jet_Jr/fall01.gif
+
+anim rise
+	loop	0
+	offset	148 180
+	delay	10
+	frame	data/chars/Enemys/Jet_Jr/Rise00.gif
+		offset  159  190
+		delay  7
+	frame	data/chars/Enemys/Jet_Jr/Rise01.gif
+		offset  159  200
+	frame  data/chars/Enemys/Jet_Jr/Rise01.gif
+		offset  159  210
+	frame  data/chars/Enemys/Jet_Jr/Rise02.gif
+		offset  159  220
+	frame  data/chars/Enemys/Jet_Jr/Idle00.gif
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	159 220
+	bbox	146 109 37 41
+	frame	data/chars/Enemys/Jet_Jr/land00.gif
+

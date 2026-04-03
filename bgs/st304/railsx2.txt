@@ -1,0 +1,50 @@
+name			st4_railsX2
+type			panel
+shadow			0
+speed			5
+scroll			-0.5
+setlayer		-10
+ondrawscript	data/scripts/ondraw/rails.c
+animationscript data/scripts/animation/default.c
+
+load			train
+
+anim idle #DEFINE ZPOS AND WARNING ANIMATION
+	loop	0
+	delay	480
+	offset	1 170
+	frame	data/bgs/sor3_st4/rails00.gif
+	frame	data/bgs/sor3_st4/rails00.gif
+	frame	data/bgs/sor3_st4/rails00.gif
+	frame	data/bgs/sor3_st4/rails00.gif
+	
+anim follow1 #UPPER RAIL WARNING
+	loop	0
+	delay	6
+	offset	1 170
+	frame	data/bgs/sor3_st4/rails00.gif
+	frame	data/bgs/sor3_st4/rails01.gif
+	frame	data/bgs/sor3_st4/rails00.gif
+	frame	data/bgs/sor3_st4/rails01.gif
+	frame	data/bgs/sor3_st4/rails00.gif
+	frame	data/bgs/sor3_st4/rails02.gif
+	
+anim follow2 #LOWER RAIL WARNING
+	loop	0
+	delay	6
+	offset	1 170
+	frame	data/bgs/sor3_st4/rails00.gif
+	frame	data/bgs/sor3_st4/rails02.gif
+	frame	data/bgs/sor3_st4/rails00.gif
+	frame	data/bgs/sor3_st4/rails02.gif
+	frame	data/bgs/sor3_st4/rails00.gif
+	frame	data/bgs/sor3_st4/rails02.gif
+	
+anim follow3 #DEFINE XPOS AND SPAWN TRAIN
+	loop	0
+	delay	120
+	offset	1 170
+	frame	data/bgs/sor3_st4/rails00.gif
+	frame	data/bgs/sor3_st4/rails00.gif
+	frame	data/bgs/sor3_st4/rails00.gif
+	frame	data/bgs/sor3_st4/rails00.gif

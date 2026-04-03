@@ -1,0 +1,18 @@
+# Hit flash
+
+speed	16
+name	sTAR
+candamage  Player obstacle npc pshot
+type	pshot
+alpha 1
+
+
+anim idle
+	loop	1
+	delay	5
+        hitfx	data/sounds/Cutter.wav
+		attack1  19  25  12  10  20  1  0  0  0  10
+		offset  -33  90
+	frame	data/chars/Enemys/kUSANAGI/P01.gif
+	frame	data/chars/Enemys/kUSANAGI/P02.gif
+

@@ -1,0 +1,67 @@
+##MAIN
+name				AxelS
+type				none
+
+##MISC
+antigravity			100
+
+##SCRIPTS
+ondrawscript		data/scripts/ondraw/channel.c
+
+##REMAPS
+remap				data/chars/axel/idle00.gif data/chars/axel/alter1.gif
+remap				data/chars/axel/idle00.gif data/chars/axel/alter2.gif
+remap				data/chars/axel/idle00.gif data/chars/axel/alter3.gif
+
+##ANIMATIONS#############################################################################
+
+anim freespecial #RAGE
+	loop	0
+	delay	1000
+	offset	62 126
+	frame	data/chars/axel/rage00.gif
+	frame	data/chars/axel/rage00.gif
+	frame	data/chars/axel/rage01.gif
+	frame	data/chars/axel/rage02.gif
+	frame	data/chars/axel/rage03.gif
+	frame	data/chars/axel/rage04.gif
+	frame	data/chars/axel/rage04.gif
+	frame	data/chars/axel/rage05.gif
+	frame	data/chars/axel/rage06.gif
+	frame	data/chars/axel/special211.gif
+	frame	data/chars/axel/special212.gif
+	frame	data/chars/axel/special213.gif
+	
+anim freespecial4 #SUPER
+	loop	0
+	delay	1000
+	offset	62 126
+	frame	data/chars/axel/runatk00.gif
+	frame	data/chars/axel/runatk01.gif
+	frame	data/chars/axel/runatk02.gif
+	frame	data/chars/axel/runatk01.gif
+	frame	data/chars/axel/runatk02.gif
+	frame	data/chars/axel/rage00.gif
+	frame	data/chars/axel/rage01.gif
+	frame	data/chars/axel/rage02.gif
+	frame	data/chars/axel/rage03.gif
+	frame	data/chars/axel/rage00.gif
+	frame	data/chars/axel/rage04.gif
+	frame	data/chars/axel/rage05.gif
+	frame	data/chars/axel/rage06.gif
+	frame	data/chars/axel/special211.gif
+	frame	data/chars/axel/special212.gif
+	frame	data/chars/axel/special213.gif
+	
+anim follow7 #COUNTER
+	loop	0
+	delay	1000
+	offset	62 126
+	frame	data/chars/axel/rage03.gif
+	frame	data/chars/axel/rage00.gif
+	frame	data/chars/axel/rage04.gif
+	frame	data/chars/axel/rage05.gif
+	frame	data/chars/axel/rage06.gif
+	frame	data/chars/axel/special211.gif
+	frame	data/chars/axel/special212.gif
+	frame	data/chars/axel/special213.gif

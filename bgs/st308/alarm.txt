@@ -1,0 +1,55 @@
+name	  	 	st8_alarm #Entity to start red alert after beating NeoX in ST8E
+type	  	 	none
+shadow	  	 	0
+setlayer	 	1000
+animationscript	data/scripts/animation/default.c
+
+anim idle
+	loop	1
+	delay	64
+	offset	1 276
+	drawmethod alpha 1
+	@cmd aniVar "ANI_FOLLOW1" "alarm" 1
+	frame	data/bgs/sor3_st8/alarm00.gif
+	
+anim follow1
+	loop	1
+	delay	8
+	offset	1 276
+	sound	data/sounds/Alarm.wav
+	drawmethod alpha 6
+	drawmethod channel 0 0.4 0.8
+	frame	data/bgs/sor3_st8/alarm00.gif
+	drawmethod alpha 6
+	drawmethod channel 0 0.3 0.6
+	frame	data/bgs/sor3_st8/alarm00.gif
+	drawmethod alpha 6
+	drawmethod channel 0 0.2 0.4
+	frame	data/bgs/sor3_st8/alarm00.gif
+	drawmethod alpha 6
+	drawmethod channel 0 0.1 0.2
+	frame	data/bgs/sor3_st8/alarm00.gif
+	drawmethod alpha 6
+	drawmethod channel 0 0 0
+	frame	data/bgs/sor3_st8/alarm00.gif
+	drawmethod alpha 6
+	drawmethod channel 0 0.1 0.2
+	frame	data/bgs/sor3_st8/alarm00.gif
+	drawmethod alpha 6
+	drawmethod channel 0 0.2 0.4
+	frame	data/bgs/sor3_st8/alarm00.gif
+	drawmethod alpha 6
+	drawmethod channel 0 0.3 0.6
+	frame	data/bgs/sor3_st8/alarm00.gif
+	drawmethod alpha 6
+	drawmethod channel 0 0.4 0.8
+	frame	data/bgs/sor3_st8/alarm00.gif
+	drawmethod alpha 6
+	drawmethod channel 0 0.5 1
+	frame	data/bgs/sor3_st8/alarm00.gif
+	drawmethod alpha 6
+	drawmethod channel 0 0.5 1
+	frame	data/bgs/sor3_st8/alarm00.gif
+	drawmethod alpha 6
+	drawmethod channel 0 0.5 1
+	frame	data/bgs/sor3_st8/alarm00.gif

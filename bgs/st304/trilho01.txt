@@ -1,0 +1,124 @@
+name			Trilho01 #GROUND
+type			None
+setlayer 5
+onblockwscript	data/scripts/bounceF.c
+animationscript 	data/scripts/ani0020.h
+ondrawscript 		data/scripts/player_ondrawscript.c
+
+Load Train01
+Load Train02
+
+anim idle
+	loop	1
+	delay	900
+	offset	0 0
+	frame	data/Bgs/St304/rails00.gif
+	delay	10
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/rails01.gif
+	frame	data/Bgs/St304/rails00.gif
+	@cmd  spawn01  "Train01"  -400  240  240
+	frame	data/Bgs/St304/rails01.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/rails01.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/rails01.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/rails01.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/rails01.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/rails01.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/rails01.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/rails01.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/rails01.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/rails01.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/rails01.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/rails01.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/rails01.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/rails01.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/rails01.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/rails01.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/rails01.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/rails01.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/rails01.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/rails01.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/rails01.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/rails01.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/rails01.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/rails01.gif
+	delay	900
+	frame	data/Bgs/St304/rails00.gif
+	delay	10
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/Rails02.gif
+	@cmd  spawn01  "Train02"  1600  260  260
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/Rails02.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/Rails02.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/Rails02.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/Rails02.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/Rails02.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/Rails02.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/Rails02.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/Rails02.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/Rails02.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/Rails02.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/Rails02.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/Rails02.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/Rails02.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/Rails02.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/Rails02.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/Rails02.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/Rails02.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/Rails02.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/Rails02.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/Rails02.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/Rails02.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/Rails02.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/Rails02.gif
+	frame	data/Bgs/St304/rails00.gif
+	frame	data/Bgs/St304/Rails02.gif
+
+
+

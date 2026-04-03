@@ -1,0 +1,191 @@
+##MAIN
+name				Axel_Bike_
+type				npc
+hostile				enemy obstacle
+candamage			player enemy npc obstacle
+
+##LIFE
+health				0
+
+##POWER
+offense 			1 #SCRIPT
+
+##SPEED
+speed				1 #SCRIPT
+
+##JUMP
+jumpheight 			1 #SCRIPT
+
+##ENERGY
+mp					0
+mprate  			1 #SCRIPT
+
+##GRAB
+grabdistance 		33 #36/33/30
+grabfinish 			1 #PLAYER=0/ENEMY=1
+
+##WEIGHT/HEIGHT
+antigravity			-6 #-3/-6/-9
+height				78
+
+##MISC
+jugglepoints		30
+guardpoints			20
+guardrate			4
+risetime			170
+riseinv				0.4 1 #HEROES 0.4 - ENEMY 0 - BOSS 0.4
+makeinv				2 0
+atchain				1
+weapons				none none none none
+gfxshadow			1 1
+dust				dust
+aimove				wander #NPC ONLY
+facing				1
+nodrop				2
+cantgrab			1
+modelflag			3
+
+##SCRIPTS
+didhitscript		data/scripts/didhit/moto.c
+ondrawscript		data/scripts/ondraw/moto.c
+animationscript	 	data/scripts/animation/default.c
+
+##ICONS
+icon				data/chars/axel/icon.gif 1
+
+##DIESOUND
+diesound			data/voices/Axel1.wav
+
+##REMAPS
+remap				data/chars/axel/idle00.gif data/chars/axel/alter1.gif
+remap				data/chars/axel/idle00.gif data/chars/axel/alter2.gif
+remap				data/chars/axel/idle00.gif data/chars/axel/alter3.gif
+
+##ANIMATIONS#############################################################################
+
+anim spawn
+	loop	0
+	delay	1
+	offset	62 126
+	frame	data/chars/axel/bike/idle00.gif
+
+anim idle
+	loop	1
+	delay	2
+	offset	62 126
+	bbox 	12 50 46 78
+	frame	data/chars/axel/bike/idle00.gif
+	frame	data/chars/axel/bike/idle01.gif
+	
+anim walk
+	fastattack 0
+	jugglecost 31
+	forcedirection 2
+	loop	1
+	delay	2
+	offset	62 126
+	bbox 	12 52 57 76
+	hitfx	data/sounds/HighPunch.wav
+	attack 62 85 54 43 24 0 0 0 10 12
+	frame	data/chars/axel/bike/walkright00.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/axel/bike/walkright01.gif
+	
+anim up
+	fastattack 0
+	jugglecost 31
+	forcedirection 2
+	loop	1
+	delay	2
+	offset	62 126
+	bbox 	12 53 52 75
+	hitfx	data/sounds/HighPunch.wav
+	attack 62 85 54 43 24 0 0 0 10 12
+	frame	data/chars/axel/bike/walkup00.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/axel/bike/walkup01.gif
+	
+anim down
+	fastattack 0
+	jugglecost 31
+	forcedirection 2
+	loop	1
+	delay	2
+	offset	62 126
+	bbox 	12 54 52 74
+	hitfx	data/sounds/HighPunch.wav
+	attack 62 85 54 43 24 0 0 0 10 12
+	frame	data/chars/axel/bike/walkdown00.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/axel/bike/walkdown01.gif
+	
+anim backwalk
+	fastattack 0
+	jugglecost 31
+	forcedirection 2
+	loop	1
+	delay	2
+	offset	62 126
+	bbox 	12 50 46 78
+	hitfx	data/sounds/HighPunch.wav
+	attack 62 85 54 43 24 0 0 0 10 12
+	frame	data/chars/axel/bike/idle00.gif
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/axel/bike/idle01.gif
+	
+anim jumpdelay
+	loop	0
+	delay	2
+	offset	62 126
+	frame	data/chars/axel/bike/jumpdelay00.gif
+	frame	data/chars/axel/bike/jumpland00.gif
+	
+anim jump
+	fastattack 0
+	jugglecost 31
+	forcedirection 2
+	loop	1
+	delay	2
+	offset	62 126
+	hitfx	data/sounds/HighPunch.wav
+	attack 62 82 54 43 24 0 0 0 10 12
+	frame	data/chars/axel/bike/jump00.gif
+	frame	data/chars/axel/bike/jump01.gif
+	
+anim walkoff
+	fastattack 0
+	jugglecost 31
+	forcedirection 2
+	loop	1
+	delay	2
+	offset	62 126
+	hitfx	data/sounds/HighPunch.wav
+	sound	data/sounds/Run3.wav
+	@cmd jump 1
+	attack 62 82 54 43 24 0 0 0 10 12
+	frame	data/chars/axel/bike/jump00.gif
+	frame	data/chars/axel/bike/jump01.gif
+	
+anim jumpland
+	loop	0
+	delay	2
+	offset	62 126
+	frame	data/chars/axel/bike/jumpdelay00.gif
+	frame	data/chars/axel/bike/jumpland00.gif
+	
+anim pain
+	loop	0
+	delay	2
+	offset	62 126
+	frame	data/chars/axel/bike/pain00.gif
+	frame	data/chars/axel/bike/pain01.gif
+	frame	data/chars/axel/bike/pain00.gif
+	frame	data/chars/axel/bike/pain01.gif
+	
+anim fall
+	loop	0
+	delay	2
+	offset	62 126
+	frame	data/chars/axel/bike/pain00.gif
+	@cmd spawnBind "destruction" 0 40 1
+	frame	data/chars/axel/bike/pain01.gif

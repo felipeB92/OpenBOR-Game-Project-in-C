@@ -1,0 +1,96 @@
+##MAIN
+name				Fog_Grenadier
+type				enemy
+hostile				player npc
+candamage			player enemy npc obstacle
+subject_to_platform 0
+subject_to_wall		0
+subject_to_minz		0
+subject_to_maxz		0
+
+##LIFE
+health				1 #SCRIPT
+
+##SPEED
+nomove				1 0
+
+##GRAB
+cantgrab			1
+
+##WEIGHT/HEIGHT
+antigravity			100
+
+##MISC
+shadow				0
+setlayer			-55
+no_adjust_base		1
+stealth				2
+
+##SCRIPTS
+onspawnscript		data/scripts/onspawn/fog.c
+animationscript	 	data/scripts/animation/default.c
+
+##ICONS
+icon			data/chars/fog/icon.gif 1
+
+##REMAPS
+remap				data/chars/fog/idle00.gif data/chars/fog/alter1.gif
+remap				data/chars/fog/idle00.gif data/chars/fog/alter2.gif
+remap				data/chars/fog/idle00.gif data/chars/fog/alter3.gif
+remap				data/chars/fog/idle00.gif data/chars/fog/alter4.gif
+
+##ANIMATIONS#############################################################################
+
+anim spawn #WAIT SPAWN
+	loop	0
+	delay	16
+	offset	145 146
+	@cmd aniChange 0 "ANI_FOLLOW1"
+	frame	data/chars/fog/grenade02.gif
+	
+anim follow1 #WAIT LOOP
+	loop	1
+	delay	64
+	offset	145 146
+	@cmd cancel -100 100 -999 999 -999 999 "ANI_FOLLOW2"
+	frame	data/chars/fog/grenade02.gif
+	
+anim follow2 #LOOP STOP
+	loop	0
+	delay	32
+	offset	145 146
+	@cmd leaper 0 0 -1
+	frame	data/chars/fog/grenade02.gif
+
+anim idle
+	loop	0
+	delay	8
+	offset	145 146
+	frame	data/chars/fog/grenade02.gif
+	
+anim freespecial
+	range	-999 999
+	rangez	-999 999
+	energycost 20 2
+	loop	0
+	delay	24
+	offset	145 146
+	@cmd aniHp "ANI_FAINT" 20
+	frame	data/chars/fog/grenade02.gif
+	frame	data/chars/fog/grenade03.gif
+	@cmd tossXZ "fog_grenade" "ANI_FOLLOW1" 16 64 32 3.7 500
+	sound	data/voices/Fog1.wav
+	frame	data/chars/fog/grenade04.gif
+	frame	data/chars/fog/grenade03.gif
+		delay	64
+	frame	data/chars/fog/grenade02.gif
+	frame	data/chars/fog/grenade02.gif
+	
+anim faint
+	loop	0
+	delay	256
+	offset	145 146
+	@cmd leaper 0 0 1
+	frame	data/chars/fog/grenade02.gif
+	@cmd suicide
+	frame	data/chars/fog/grenade02.gif

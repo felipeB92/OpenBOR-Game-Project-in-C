@@ -1,0 +1,189 @@
+name	Blaze_sword
+health	100
+speed	12
+type	none
+antigrab 2
+gfxshadow	1
+candamage			enemy npc obstacle
+JUMPHEIGHT 1 1
+Jumpheight 3
+icon	data/chars/players/Blaze/icon.gif
+diesound data/sounds/Blazedie.wav
+running	20	3	3	1	1
+
+Com d d freespecial5
+Com u u freespecial6
+
+Load SwordT
+
+
+
+remap data/chars/players/Blaze/idle00.gif data/chars/players/Blaze/alter1.gif
+remap data/chars/players/Blaze/idle00.gif data/chars/players/Blaze/alter2.gif
+remap data/chars/players/Blaze/idle00.gif data/chars/players/Blaze/alter3.gif
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	128 181
+	bbox	115 106 25 61
+	frame   data/chars/players/Blaze/sword/idle00.gif
+	frame   data/chars/players/Blaze/sword/idle01.gif
+	frame   data/chars/players/Blaze/sword/idle02.gif
+	frame   data/chars/players/Blaze/sword/idle03.gif
+
+
+
+
+anim walk
+	loop	1
+	delay	1
+	offset	128 181
+	bbox	122 104 21 69
+	jumpframe  0  0.001  0.001  0
+	landframe  1
+	frame	data/chars/players/Blaze/sword/walk00.gif
+	frame	data/chars/players/Blaze/sword/walk00.gif
+	delay	14
+	frame	data/chars/players/Blaze/sword/walk00.gif
+	frame	data/chars/players/Blaze/sword/walk01.gif
+	frame	data/chars/players/Blaze/sword/walk02.gif
+	frame	data/chars/players/Blaze/sword/walk03.gif
+	frame	data/chars/players/Blaze/sword/walk04.gif
+	frame	data/chars/players/Blaze/sword/walk05.gif
+
+
+anim get
+	loop	0
+	delay	10
+	offset	128 181
+	frame	data/chars/players/Blaze/sword/get00.gif
+
+
+anim jump
+	loop	0
+	delay	5
+	offset	128 181
+	bbox	110 102 35 54
+	frame	data/chars/players/Blaze/sword/jump00.gif
+	frame	data/chars/players/Blaze/sword/jump01.gif
+
+
+
+
+anim jumpattack
+	loop	0
+	delay	7
+	offset	128 181
+	bbox	109 107 32 54
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Blaze/sword/jumpatk00.gif
+	frame	data/chars/players/Blaze/sword/jumpatk01.gif
+		attack1  134  136  56  30  10  1  0  0  0  10
+		delay  20
+	frame	data/chars/players/Blaze/sword/jumpatk02.gif
+		Attack1  0
+		delay  10
+	frame	data/chars/players/Blaze/sword/jumpatk03.gif
+	frame	data/chars/players/Blaze/sword/jumpatk04.gif
+
+
+
+anim jumpattack2
+	loop	0
+	delay	7
+	offset	128 181
+	bbox	110 110 37 31
+	attack	105 138 57 29 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Blaze/sword/jumpatk200.gif
+
+anim jumpforward
+	loop	0
+	delay	7
+	offset	128 181
+	bbox	93 111 46 29
+	attack	116 128 76 33 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/soco.wav
+	frame	data/chars/players/Blaze/sword/fjumpatk01.gif
+
+
+anim runjumpattack
+	loop	0
+	delay	7
+	offset	128 181
+	bbox	89 104 42 43
+	attack	115 129 39 46 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Blaze/sword/jumpatk300.gif
+
+anim attack1
+	loop	0
+	delay	9
+	offset	128 181
+	bbox	100 110 32 59
+		Attack1  0
+	sound	data/sounds/armas/Whoosh2.wav
+        hitfx	data/sounds/Armas/Corte2.wav
+	frame	data/chars/players/Blaze/sword/a100.gif
+		attack1  152  128  58  23  25  1  0  0  0  15
+		bbox  126  112  31  58
+	frame	data/chars/players/Blaze/sword/a101.gif
+		attack1  151  130  70  17  25  1  0  0  0  15
+	frame	data/chars/players/Blaze/sword/a102.gif
+		delay  15
+		attack1  138  131  70  21  25  1  0  0  0  15
+	frame	data/chars/players/Blaze/sword/a103.gif
+
+anim Special2
+	loop	0
+	delay	9
+	offset	128 181
+	bbox	100 110 32 59
+		Attack1  0
+        custknife SwordT
+        throwframe 2 40
+	sound	data/sounds/armas/Whoosh2.wav
+        hitfx	data/sounds/Armas/Corte2.wav
+	frame	data/chars/players/Blaze/sword/a104.gif
+	frame	data/chars/players/Blaze/sword/a105.gif
+	frame	data/chars/players/Blaze/sword/a106.gif
+	frame	data/chars/players/Blaze/sword/a107.gif
+
+
+
+
+anim run
+        loop    1
+        delay  10
+	offset	128 181
+	bbox	116 111 31 56
+	jumpframe  0  0.001  0.001  0
+	landframe  1
+        frame	data/chars/players/Blaze/sword/run00.gif
+        frame	data/chars/players/Blaze/sword/run01.gif
+        frame	data/chars/players/Blaze/sword/run02.gif
+        frame	data/chars/players/Blaze/sword/run03.gif
+        frame	data/chars/players/Blaze/sword/run04.gif
+        frame	data/chars/players/Blaze/sword/run05.gif
+
+
+
+
+
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	128 181
+	bbox	111 116 32 44
+	frame	data/chars/players/Blaze/sword/jumpland00.gif
+

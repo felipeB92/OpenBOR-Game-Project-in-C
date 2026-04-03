@@ -1,0 +1,14 @@
+name		st7_elevatorS #ENEMY ELEVATOR SHADOW UNTIL TOP FLOOR
+type		enemy
+subtype		notgrab
+health		1
+shadow		0
+nomove		1 1
+stealth		2
+script		data/scripts/updateentity/st7_elevatorS.c
+
+anim idle
+	loop	0
+	delay	1
+	offset	1 276
+	frame	data/bgs/sor2_st7/empty.gif

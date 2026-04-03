@@ -1,0 +1,58 @@
+##MAIN
+name				Donovan_Bulldozer
+type				npc
+subtype				notgrab
+subject_to_platform 0
+
+##LIFE
+health				1
+
+##MISC
+nolife				1
+nomove				1 1
+shadow				0
+dust				dust
+antigravity			100
+stealth				2
+
+##SCRIPTS
+animationscript		data/scripts/animation/default.c
+
+##DIESOUND
+diesound			data/voices/Die1.wav
+
+##ANIMATIONS#############################################################################
+
+anim idle
+	loop	1
+	delay	12
+	offset	140 182
+	frame	data/chars/donovan/bulldozer00.gif
+	frame	data/chars/donovan/bulldozer01.gif
+	
+anim follow1
+	loop	0
+	delay	4
+	offset	140 182
+	bbox 	129 109 26 61
+	frame	data/chars/donovan/bulldozer00.gif
+	frame	data/chars/donovan/bulldozer02.gif
+	frame	data/chars/donovan/bulldozer00.gif
+	frame	data/chars/donovan/bulldozer02.gif
+	frame	data/chars/donovan/bulldozer00.gif
+	frame	data/chars/donovan/bulldozer02.gif
+	frame	data/chars/donovan/bulldozer00.gif
+	frame	data/chars/donovan/bulldozer02.gif
+		delay	1000
+	frame	data/chars/donovan/bulldozer02.gif
+	
+anim fall #NORMAL
+	landframe 1
+	loop	0
+	delay	999
+	offset	140 182
+	@cmd deGravity 0
+	frame	data/chars/donovan/fall00.gif
+		delay	8
+	sound	data/sounds/Falling.wav
+	frame	data/chars/donovan/fall01.gif

@@ -1,0 +1,514 @@
+name	Robotz
+health	700
+speed	16
+aimove				chase
+aggression 99
+riseinv				0.4 1
+falldie 1
+hostile				player npc
+candamage			player npc obstacle
+escapehits			2
+mp			        60
+mprate  			5
+type	Enemy
+gfxshadow	1
+JUMPHEIGHT 1 1
+Jumpheight 3
+atchain    1 1 2
+icon	data/chars/Enemys/RobotX/icon.gif 1
+diesound data/voices/bossdie1.wav
+running	20	3	3	1	1
+onblockwscript	data/scripts/bounceF.c
+animationscript 	data/scripts/ani0020.h
+ondrawscript 		data/scripts/player_ondrawscript.c
+
+##LOADS
+Load Trapos02
+Load Tiro01
+Load Missil
+Load Rfire
+Load Head
+Load Mx302
+Load Boom01
+
+remap data/chars/Enemys/RobotX/idle00.gif data/chars/Enemys/RobotX/alter1.gif
+remap data/chars/Enemys/RobotX/idle00.gif data/chars/Enemys/RobotX/alter2.gif
+remap data/chars/Enemys/RobotX/idle00.gif data/chars/Enemys/RobotX/alter3.gif
+
+anim	spawn
+	loop	0
+	delay	10
+	offset	126 298
+	frame   data/chars/Enemys/RobotX/SPW300.gif
+	frame   data/chars/Enemys/RobotX/SPW301.gif
+	frame   data/chars/Enemys/RobotX/SPW302.gif
+	frame   data/chars/Enemys/RobotX/SPW303.gif
+	frame   data/chars/Enemys/RobotX/SPW304.gif
+	frame   data/chars/Enemys/RobotX/SPW305.gif
+	frame   data/chars/Enemys/RobotX/SPW306.gif
+	frame   data/chars/Enemys/RobotX/SPW307.gif
+	frame   data/chars/Enemys/RobotX/SPW308.gif
+	frame   data/chars/Enemys/RobotX/SPW309.gif
+	frame   data/chars/Enemys/RobotX/SPW310.gif
+	frame   data/chars/Enemys/RobotX/SPW311.gif
+	frame   data/chars/Enemys/RobotX/SPW312.gif
+	frame   data/chars/Enemys/RobotX/SPW313.gif
+	frame   data/chars/Enemys/RobotX/SPW314.gif
+	offset	136 176
+	frame   data/chars/Enemys/RobotX/laugh00.gif
+        sound	data/voices/Robotx1.wav
+	frame   data/chars/Enemys/RobotX/laugh01.gif
+	frame   data/chars/Enemys/RobotX/laugh00.gif
+	frame   data/chars/Enemys/RobotX/laugh01.gif
+
+
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	136 176
+	bbox	118 83 39 93
+	frame	data/chars/Enemys/RobotX/Idle00.gif
+	frame	data/chars/Enemys/RobotX/Idle01.gif
+	frame	data/chars/Enemys/RobotX/Idle02.gif
+	frame  data/chars/Enemys/RobotX/Idle01.gif
+
+
+
+anim walk
+	loop	1
+	delay	5
+	offset	136 176
+	bbox	129 110 46 68
+	jumpframe  6  1  1  0
+	landframe  8
+	frame	data/chars/Enemys/RobotX/walk00.gif
+		bbox  106  87  51  91
+	frame	data/chars/Enemys/RobotX/walk01.gif
+	frame	data/chars/Enemys/RobotX/walk00.gif
+	frame	data/chars/Enemys/RobotX/walk01.gif
+	frame	data/chars/Enemys/RobotX/walk00.gif
+	frame	data/chars/Enemys/RobotX/walk01.gif
+	frame	data/chars/Enemys/RobotX/walk00.gif
+	frame	data/chars/Enemys/RobotX/walk01.gif
+	frame	data/chars/Enemys/RobotX/walk00.gif
+	frame	data/chars/Enemys/RobotX/walk01.gif
+	frame	data/chars/Enemys/RobotX/walk00.gif
+	frame	data/chars/Enemys/RobotX/walk01.gif
+	frame	data/chars/Enemys/RobotX/walk00.gif
+	frame	data/chars/Enemys/RobotX/walk01.gif
+	frame	data/chars/Enemys/RobotX/walk00.gif
+	frame	data/chars/Enemys/RobotX/walk01.gif
+	frame	data/chars/Enemys/RobotX/walk00.gif
+	frame	data/chars/Enemys/RobotX/walk01.gif
+
+anim backwalk
+	loop	1
+	delay	5
+	offset	136 176
+	bbox	118 86 43 88
+	jumpframe  6  1  1  0
+	landframe  8
+	frame	data/chars/Enemys/RobotX/backwalk00.gif
+	frame	data/chars/Enemys/RobotX/backwalk01.gif
+	frame	data/chars/Enemys/RobotX/backwalk00.gif
+	frame	data/chars/Enemys/RobotX/backwalk01.gif
+	frame	data/chars/Enemys/RobotX/backwalk00.gif
+	frame	data/chars/Enemys/RobotX/backwalk01.gif
+	frame	data/chars/Enemys/RobotX/backwalk00.gif
+	frame	data/chars/Enemys/RobotX/backwalk01.gif
+	frame	data/chars/Enemys/RobotX/backwalk00.gif
+	frame	data/chars/Enemys/RobotX/backwalk01.gif
+	frame	data/chars/Enemys/RobotX/backwalk00.gif
+	frame	data/chars/Enemys/RobotX/backwalk01.gif
+	frame	data/chars/Enemys/RobotX/backwalk00.gif
+	frame	data/chars/Enemys/RobotX/backwalk01.gif
+	frame	data/chars/Enemys/RobotX/backwalk00.gif
+	frame	data/chars/Enemys/RobotX/backwalk01.gif
+
+
+
+anim get
+	loop	0
+	delay	10
+	offset	136 176
+	frame	data/chars/Enemys/RobotX/get00.gif
+
+
+anim jump
+	loop	0
+	delay	30
+	offset	136 176
+	bbox	120 93 38 76
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/RobotX/jump00.gif
+
+
+
+
+
+
+anim freeSpecial
+	loop	0
+	delay	8
+        Range 150 200
+	offset	136 176
+		Attack1  0
+        hitfx	data/sounds/golpes/forte.wav
+        sound	data/voices/Attack7.wav
+	frame	data/chars/Enemys/RobotX/missile00.gif
+	frame	data/chars/Enemys/RobotX/missile01.gif
+	frame	data/chars/Enemys/RobotX/missile02.gif
+	frame	data/chars/Enemys/RobotX/missile03.gif
+	frame	data/chars/Enemys/RobotX/missile04.gif
+	frame	data/chars/Enemys/RobotX/missile05.gif
+	frame	data/chars/Enemys/RobotX/missile06.gif
+		@cmd  spawn01  "Missil"  0  0  0
+	frame	data/chars/Enemys/RobotX/missile07.gif
+	frame	data/chars/Enemys/RobotX/missile08.gif
+	frame	data/chars/Enemys/RobotX/missile09.gif
+	frame	data/chars/Enemys/RobotX/missile10.gif
+
+anim freeSpecial2
+	loop	0
+	delay	8
+        Range 200 250
+	offset	136 176
+		Attack1  0
+        hitfx	data/sounds/golpes/forte.wav
+	frame	data/chars/Enemys/RobotX/shot00.gif
+	frame	data/chars/Enemys/RobotX/shot01.gif
+        sound	data/sounds/Shot.wav
+	frame	data/chars/Enemys/RobotX/shot02.gif
+		@cmd  spawn01  "Tiro01"  30 0   5
+	frame	data/chars/Enemys/RobotX/shot03.gif
+        sound	data/sounds/Shot.wav
+	frame	data/chars/Enemys/RobotX/shot04.gif
+		@cmd  spawn01  "Tiro01"  30  0  6
+	frame	data/chars/Enemys/RobotX/shot03.gif
+        sound	data/sounds/Shot.wav
+	frame	data/chars/Enemys/RobotX/shot04.gif
+		@cmd  spawn01  "Tiro01"  30  0  5
+	frame	data/chars/Enemys/RobotX/shot03.gif
+	frame	data/chars/Enemys/RobotX/shot04.gif
+	frame	data/chars/Enemys/RobotX/shot03.gif
+	frame	data/chars/Enemys/RobotX/shot02.gif
+	frame	data/chars/Enemys/RobotX/shot01.gif
+
+anim freeSpecial3
+	loop	0
+	delay	8
+        Range 100 150
+	offset	136 176
+		Attack1  0
+        hitfx	data/sounds/golpes/forte.wav
+	frame	data/chars/Enemys/RobotX/missile00.gif
+	frame	data/chars/Enemys/RobotX/missile01.gif
+	sound	data/sounds/Fire2.wav
+	frame	data/chars/Enemys/RobotX/missile02.gif
+		@cmd  spawn01  "Rfire"  25  0  0
+	delay	55
+	frame	data/chars/Enemys/RobotX/missile03.gif
+	delay	8
+	frame	data/chars/Enemys/RobotX/missile09.gif
+	frame	data/chars/Enemys/RobotX/missile10.gif
+
+
+anim freeSpecial4
+	loop	0
+	delay	8
+        Range 250 300
+	offset	136 176
+		Attack1  0
+        hitfx	data/sounds/golpes/forte.wav
+	frame	data/chars/Enemys/RobotX/Bomb00.gif
+	frame	data/chars/Enemys/RobotX/Bomb01.gif
+	frame	data/chars/Enemys/RobotX/Bomb02.gif
+        @cmd	shooter2 "Head"  15        50       3     3        3         0
+	frame	data/chars/Enemys/RobotX/Bomb03.gif
+	frame	data/chars/Enemys/RobotX/Bomb04.gif
+	frame	data/chars/Enemys/RobotX/Bomb05.gif
+	frame	data/chars/Enemys/RobotX/Bomb06.gif
+	frame	data/chars/Enemys/RobotX/Bomb07.gif
+	frame	data/chars/Enemys/RobotX/Bomb08.gif
+	frame	data/chars/Enemys/RobotX/Bomb09.gif
+	frame	data/chars/Enemys/RobotX/Bomb10.gif
+	frame	data/chars/Enemys/RobotX/Bomb11.gif
+	frame	data/chars/Enemys/RobotX/Bomb12.gif
+	frame	data/chars/Enemys/RobotX/Bomb13.gif
+
+
+
+
+anim Special
+	loop	0
+	delay	8
+        mponly 1
+	energycost 30 1
+	offset	136 176
+		Attack1  0
+        hitfx	data/sounds/golpes/forte.wav
+        sound	data/sounds/Shock.wav
+	frame	data/chars/Enemys/RobotX/special00.gif
+	frame	data/chars/Enemys/RobotX/special01.gif
+		attack3  100  76  70  89  25  1  0  0  0  10
+	frame	data/chars/Enemys/RobotX/special01.gif
+		attack3  156  123  71  28  25  1  0  0  0  10
+	frame	data/chars/Enemys/RobotX/special01.gif
+	frame	data/chars/Enemys/RobotX/special02.gif
+	frame	data/chars/Enemys/RobotX/rage02.gif
+	frame	data/chars/Enemys/RobotX/rage01.gif
+	frame	data/chars/Enemys/RobotX/special01.gif
+	frame	data/chars/Enemys/RobotX/special02.gif
+	frame	data/chars/Enemys/RobotX/rage02.gif
+	frame	data/chars/Enemys/RobotX/rage01.gif
+	frame	data/chars/Enemys/RobotX/special01.gif
+	frame	data/chars/Enemys/RobotX/special02.gif
+	frame	data/chars/Enemys/RobotX/rage02.gif
+	frame	data/chars/Enemys/RobotX/rage01.gif
+	frame	data/chars/Enemys/RobotX/special01.gif
+	frame	data/chars/Enemys/RobotX/rage02.gif
+	frame	data/chars/Enemys/RobotX/rage01.gif
+	frame	data/chars/Enemys/RobotX/special00.gif
+
+anim Special2
+	loop	0
+	delay	8
+        mponly 1
+	energycost 30 1
+	offset	136 176
+		Attack1  0
+        hitfx	data/sounds/golpes/Medio.wav
+        sound	data/sounds/Shock.wav
+	frame	data/chars/Enemys/RobotX/special00.gif
+		attack1  116  80  43  68
+	frame	data/chars/Enemys/RobotX/special01.gif
+		attack3  156  123  71  28  25  1  0  0  0  10
+	frame	data/chars/Enemys/RobotX/special01.gif
+	frame	data/chars/Enemys/RobotX/special02.gif
+	frame	data/chars/Enemys/RobotX/rage02.gif
+	frame	data/chars/Enemys/RobotX/rage01.gif
+	frame	data/chars/Enemys/RobotX/special01.gif
+	frame	data/chars/Enemys/RobotX/special02.gif
+	frame	data/chars/Enemys/RobotX/rage02.gif
+	frame	data/chars/Enemys/RobotX/rage01.gif
+	frame	data/chars/Enemys/RobotX/special01.gif
+	frame	data/chars/Enemys/RobotX/special02.gif
+	frame	data/chars/Enemys/RobotX/rage02.gif
+	frame	data/chars/Enemys/RobotX/rage01.gif
+	frame	data/chars/Enemys/RobotX/special01.gif
+	frame	data/chars/Enemys/RobotX/rage02.gif
+	frame	data/chars/Enemys/RobotX/rage01.gif
+	frame	data/chars/Enemys/RobotX/special00.gif
+
+
+
+
+anim attack1
+	loop	0
+	delay	8
+        Range 0 100
+	offset	136 176
+	bbox	122 88 32 93
+        hitfx	data/sounds/golpes/Medio.wav
+	frame	data/chars/Enemys/RobotX/a100.gif
+		attack1  152  111  48  17  10  0  0  0  0  20
+	frame	data/chars/Enemys/RobotX/a101.gif
+		Attack1  0
+	frame	data/chars/Enemys/RobotX/a100.gif
+
+anim attack2
+	loop	0
+	delay	6
+	offset	136 176
+	bbox	125 90 32 84
+		Attack1  0
+        hitfx	data/sounds/golpes/forte.wav
+	frame	data/chars/Enemys/RobotX/a200.gif
+		attack1  152  108  49  20  20  1  0  0  0  20
+	frame	data/chars/Enemys/RobotX/a201.gif
+		attack2  147  105  80  26  10  0  0  0  0  20
+	frame	data/chars/Enemys/RobotX/a202.gif
+		Attack1  0
+	frame	data/chars/Enemys/RobotX/a202.gif
+		attack1  156  109  67  22  10  1  0  0  0  10
+	frame  data/chars/Enemys/RobotX/a202.gif
+		delay  15
+		Attack1  0
+	frame	data/chars/Enemys/RobotX/a203.gif
+
+
+
+
+anim grabbed
+	loop	0
+	delay	100
+	offset	136 176
+	bbox	125 109 49 65
+	frame	data/chars/Enemys/RobotX/grabbed00.gif
+
+
+
+anim pain
+	loop	0
+	offset	136 176
+	bbox	115 101 36 74
+	delay	15
+	frame	data/chars/Enemys/RobotX/pain00.gif
+	frame	data/chars/Enemys/RobotX/pain01.gif
+
+anim pain2
+	loop	0
+	offset	136 176
+	bbox	130 110 42 68
+	delay	15
+	frame	data/chars/Enemys/RobotX/pain200.gif
+	frame	data/chars/Enemys/RobotX/pain201.gif
+
+anim pain4
+	loop	0
+	offset	136 176
+	bbox	118 86 41 91
+	delay	250
+	frame	data/chars/Enemys/RobotX/pain00.gif
+
+anim pain5
+	loop	0
+	offset	136 176
+	delay	10
+	frame	data/chars/Enemys/RobotX/pain00.gif
+		move  10
+	frame	data/chars/Enemys/RobotX/fall705.gif
+		move  30
+		delay  10
+	frame	data/chars/Enemys/RobotX/fall603.gif
+        quakeframe 4 2 2
+        Sound	data/Sounds/Efeitos/Estrondo.wav
+		Attack1  0
+	frame	data/chars/Enemys/RobotX/fall900.gif
+		move  1
+		movea  5
+	frame  data/chars/Enemys/RobotX/fall900.gif
+		movea  -5
+	frame  data/chars/Enemys/RobotX/fall900.gif
+		delay  50
+		move  0
+		movea  0
+		Attack1  0
+	frame	data/chars/Enemys/RobotX/Fall01.gif
+		delay  10
+	frame	data/chars/Enemys/RobotX/Rise00.gif
+	frame	data/chars/Enemys/RobotX/Rise01.gif
+	frame  data/chars/Enemys/RobotX/Rise02.gif
+
+
+anim death
+	loop	0
+	offset	136 176
+	delay	20
+	jumpframe  0  1  -1  0
+	landframe  2
+	frame	data/chars/Enemys/RobotX/fall701.gif
+	frame  data/chars/Enemys/RobotX/fall00.gif
+	frame	data/chars/Enemys/RobotX/fall01.gif
+		@cmd  spawn01  "Boom01"  0 0  0
+	frame  data/chars/Enemys/RobotX/fall00.gif
+		@cmd  spawn01  "Boom01"  10 0  0
+	frame	data/chars/Enemys/RobotX/fall01.gif
+		@cmd  spawn01  "Boom01"  -10 10  0
+	frame	data/chars/Enemys/RobotX/fall01.gif
+		@cmd  spawn01  "Boom01"  10 -10  0
+	frame	data/chars/Enemys/RobotX/fall01.gif
+
+
+anim death5
+	loop	0
+	offset	136 176
+	delay	10
+	frame	data/chars/Enemys/RobotX/pain00.gif
+		move  10
+	frame	data/chars/Enemys/RobotX/fall705.gif
+		move  30
+		delay  10
+	frame	data/chars/Enemys/RobotX/fall603.gif
+		Attack1  0
+	frame	data/chars/Enemys/RobotX/fall900.gif
+		move  1
+		movea  5
+	frame  data/chars/Enemys/RobotX/fall900.gif
+		movea  -5
+	frame  data/chars/Enemys/RobotX/fall900.gif
+		delay  50
+		move  0
+		movea  0
+		Attack1  0
+		@cmd  spawn01  "Boom01"  0 0  0
+	frame  data/chars/Enemys/RobotX/fall00.gif
+		@cmd  spawn01  "Boom01"  10 0  0
+	frame	data/chars/Enemys/RobotX/fall01.gif
+		@cmd  spawn01  "Boom01"  -10 10  0
+	frame	data/chars/Enemys/RobotX/fall01.gif
+		@cmd  spawn01  "Boom01"  10 -10  0
+	frame	data/chars/Enemys/RobotX/fall01.gif
+
+
+anim fall
+	loop	0
+	offset	136 176
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/RobotX/fall701.gif
+		attack  41
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/RobotX/fall00.gif
+		Attack1  0
+	frame	data/chars/Enemys/RobotX/fall01.gif
+
+anim fall3
+	loop	0
+	offset	136 176
+	delay	5
+	jumpframe  0  3  -3  0
+	landframe  8
+		bbox  130  111  45  77
+		Attack1  0
+	frame	data/chars/Enemys/RobotX/fall705.gif
+	frame	data/chars/Enemys/RobotX/fall600.gif
+	frame	data/chars/Enemys/RobotX/fall601.gif
+	frame	data/chars/Enemys/RobotX/fall602.gif
+	frame	data/chars/Enemys/RobotX/fall705.gif
+	frame	data/chars/Enemys/RobotX/fall600.gif
+	frame	data/chars/Enemys/RobotX/fall601.gif
+	frame	data/chars/Enemys/RobotX/fall602.gif
+	frame	data/chars/Enemys/RobotX/fall705.gif
+	frame	data/chars/Enemys/RobotX/fall600.gif
+	frame	data/chars/Enemys/RobotX/fall601.gif
+	frame	data/chars/Enemys/RobotX/fall602.gif
+	frame  data/chars/Enemys/RobotX/fall705.gif
+	frame  data/chars/Enemys/RobotX/fall600.gif
+		Attack1  0
+		bbox  0
+		move  0
+	frame  data/chars/Enemys/RobotX/fall01.gif
+
+anim rise
+	loop	0
+	offset	136 176
+	delay	10
+	frame	data/chars/Enemys/RobotX/Rise00.gif
+	frame	data/chars/Enemys/RobotX/Rise01.gif
+	frame	data/chars/Enemys/RobotX/Rise02.gif
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	136 176
+	bbox	121 109 37 56
+	frame	data/chars/Enemys/RobotX/jumpland00.gif
+

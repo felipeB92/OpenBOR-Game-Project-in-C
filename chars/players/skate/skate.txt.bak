@@ -1,0 +1,558 @@
+name	Skate
+health	100
+mp 20
+#mprate 1
+speed	18
+type	player
+gfxshadow	1
+candamage			enemy npc obstacle
+riseinv				0.4 1
+JUMPHEIGHT 1 1
+Jumpheight 3
+antigrab 2
+atchain    1 1 2 3
+weapons				Skate_Knife Skate_Sword Skate_pipe Skate_Kunai
+icon	data/chars/players/Skate/icon.gif 1
+diesound data/sounds/Skatedie.wav
+running	28	3	2	1	1
+#onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+#ondrawscript 		data/scripts/player_ondrawscript.c
+
+Com d d freespecial5
+Com u u freespecial6
+
+
+#Load T00
+
+
+Load Skate_Knife
+Load Skate_Pipe
+Load Skate_Kunai
+Load Skate_Sword
+
+remap data/chars/players/Skate/idle00.gif data/chars/players/Skate/alter1.gif
+remap data/chars/players/Skate/idle00.gif data/chars/players/Skate/alter2.gif
+remap data/chars/players/Skate/idle00.gif data/chars/players/Skate/alter3.gif
+
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	150 175
+	bbox	144 115 20 60
+	frame   data/chars/players/Skate/idle00.gif
+	frame   data/chars/players/Skate/idle01.gif
+	frame   data/chars/players/Skate/idle02.gif
+	frame   data/chars/players/Skate/idle03.gif
+	frame   data/chars/players/Skate/idle00.gif
+	frame   data/chars/players/Skate/idle01.gif
+	frame   data/chars/players/Skate/idle02.gif
+	frame   data/chars/players/Skate/idle03.gif
+	frame   data/chars/players/Skate/idle00.gif
+	frame   data/chars/players/Skate/idle01.gif
+	frame   data/chars/players/Skate/idle02.gif
+	frame   data/chars/players/Skate/idle03.gif
+	frame   data/chars/players/Skate/idle00.gif
+	frame   data/chars/players/Skate/idle01.gif
+	frame   data/chars/players/Skate/idle02.gif
+	frame   data/chars/players/Skate/idle03.gif
+	frame   data/chars/players/Skate/idle00.gif
+	frame   data/chars/players/Skate/idle01.gif
+	frame   data/chars/players/Skate/idle02.gif
+	frame   data/chars/players/Skate/idle03.gif
+	frame	data/chars/players/Skate/idle04.gif
+	frame	data/chars/players/Skate/idle05.gif
+	frame	data/chars/players/Skate/idle06.gif
+
+
+
+anim walk
+	loop	1
+	delay	1
+	offset	155 175
+	bbox	139 108 28 68
+	jumpframe  0  0.001  0.001  0
+	landframe  1
+	frame	data/chars/players/Skate/walk00.gif
+	frame	data/chars/players/Skate/walk00.gif
+	delay	14
+	frame	data/chars/players/Skate/walk00.gif
+	frame	data/chars/players/Skate/walk01.gif
+	frame	data/chars/players/Skate/walk02.gif
+	frame	data/chars/players/Skate/walk03.gif
+	frame	data/chars/players/Skate/walk04.gif
+	frame	data/chars/players/Skate/walk05.gif
+
+
+anim get
+	loop	0
+	delay	10
+	offset	155 175
+	frame	data/chars/players/Skate/get00.gif
+
+
+anim jump
+	loop	0
+	delay	5
+	offset	155 175
+	bbox	129 108 45 52
+	frame	data/chars/players/Skate/jump00.gif
+	frame	data/chars/players/Skate/jump01.gif
+
+
+
+
+anim jumpattack
+	loop	0
+	delay	7
+	offset	155 175
+	bbox	129 110 31 42
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Skate/jumpatk00.gif
+		attack1  147  136  47  31  10  1  0  0  0  10
+	frame	data/chars/players/Skate/jumpatk01.gif
+		attack1  134  133  52  38  10  1  0  0  0  10
+	frame	data/chars/players/Skate/jumpatk02.gif
+		Attack1  0
+		delay  8
+	frame	data/chars/players/Skate/jumpatk03.gif
+	frame	data/chars/players/Skate/jumpatk04.gif
+
+
+
+anim jumpattack2
+	loop	0
+	delay	7
+	offset	155 175
+	bbox	124 127 46 30
+	attack	132 141 35 43 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Skate/jumpatk200.gif
+
+anim jumpforward
+	loop	0
+	delay	7
+	offset	155 175
+	bbox	128 113 42 37
+	attack	126 128 68 30 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/soco.wav
+	frame	data/chars/players/Skate/fjumpatk01.gif
+
+
+anim runjumpattack
+	loop	0
+	delay	7
+	offset	155 175
+	bbox	123 134 35 33
+	attack	144 127 42 38 7 0
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Skate/jumpatk300.gif
+
+anim attack1
+	loop	0
+	delay	6
+	offset	150 175
+	bbox	141 111 23 66
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/fraco.wav
+	frame	data/chars/players/Skate/a100.gif
+		attack1  149  126  45  12  7  0  0  0  0  5
+	frame	data/chars/players/Skate/a101.gif
+
+
+anim attack2
+	loop	0
+	delay	6
+	offset	150 175
+	bbox	135 124 22 51
+		Attack1  0
+        hitfx	data/sounds/golpes/Medio.wav
+	frame	data/chars/players/Skate/a200.gif
+		attack2  151  135  41  26  7  0  0  0  0  5
+	frame	data/chars/players/Skate/a201.gif
+		Attack1  0
+	frame	data/chars/players/Skate/a202.gif
+	frame	data/chars/players/Skate/a203.gif
+
+anim attack3
+	loop	0
+	delay	8
+	offset	150 175
+	bbox	147 123 28 41
+        Sound	data/sounds/golpes/Chut.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	Sound	data/chars/players/Skate/Skate5.wav
+	frame	data/chars/players/Skate/a300.gif
+	frame	data/chars/players/Skate/a301.gif
+		attack1  152  105  49  59  5  1  0  0  0  5
+		delay  12
+	frame	data/chars/players/Skate/a302.gif
+	frame	data/chars/players/Skate/a303.gif
+	frame	data/chars/players/Skate/a304.gif
+		Attack1  0
+	frame	data/chars/players/Skate/a305.gif
+	frame	data/chars/players/Skate/a306.gif
+
+anim run
+        loop    1
+        delay  10
+	offset	155 175
+	bbox	137 118 41 48
+	jumpframe  0  0.001  0.001  0
+	landframe  1
+        frame	data/chars/players/Skate/run00.gif
+        frame	data/chars/players/Skate/run01.gif
+        frame	data/chars/players/Skate/run02.gif
+        frame	data/chars/players/Skate/run03.gif
+        frame	data/chars/players/Skate/run04.gif
+        frame	data/chars/players/Skate/run05.gif
+
+
+
+anim grab
+	loop	0
+	delay	100
+	offset	150 175
+	bbox	138 106 27 73
+        cancel	0 9 0 j freespecial
+	frame	data/chars/players/Skate/grab00.gif
+
+
+
+anim Freespecial
+	loop	0
+	delay	10
+	offset	125 218
+        cancel	6 9 0 a freespecial2
+        hitfx	data/sounds/efeitos/silencio.wav
+		move  8
+		attack4  110  153  32  68  0  0  0  0  0  20
+	frame	data/chars/players/Skate/vault00.gif
+		attack4  104  163  35  64  0  0  0  0  0  20
+	frame	data/chars/players/Skate/vault01.gif
+		Attack1  0
+	frame	data/chars/players/Skate/vault02.gif
+	frame	data/chars/players/Skate/vault03.gif
+		offset  155  210
+		move  0
+		attack4  123  153  55  59  0  0  0  0  0  20
+	frame	data/chars/players/Skate/headpunch03.gif
+		delay  1
+	frame	data/chars/players/Skate/headpunch03.gif
+	frame	data/chars/players/Skate/headpunch03.gif
+		delay  50
+	frame	data/chars/players/Skate/headpunch03.gif
+		delay  10
+	Sound	data/chars/players/Skate/Skate2.wav
+		attack1  122  135  64  35  15  1  0  0  0  20
+		offset  155  200
+	frame	data/chars/players/Skate/jumpatk300.gif
+		Attack1  0
+	frame	data/chars/players/Skate/Jump00.gif
+		offset  155  185
+	frame	data/chars/players/Skate/jump01.gif
+		attack1  116
+		offset  155  175
+	frame  data/chars/players/Skate/jumpLand00.gif
+
+
+anim Freespecial2
+	loop	0
+        fastattack 1
+	delay	6
+	offset	155 210
+        hitfx	data/sounds/golpes/Forte.wav
+	Sound	data/chars/players/Skate/Skate2.wav
+		attack4  127  136  50  79  5  0  0  0  0  1
+	frame	data/chars/players/Skate/headpunch00.gif
+	frame	data/chars/players/Skate/headpunch01.gif
+		attack4  133  140  42  70  10  0  0  0  0  1
+	frame	data/chars/players/Skate/headpunch02.gif
+		Attack1  0
+	frame	data/chars/players/Skate/headpunch03.gif
+	frame	data/chars/players/Skate/headpunch04.gif
+		attack1  134  136  47  77  5  0  0  0  0  1
+	frame	data/chars/players/Skate/headpunch05.gif
+		Attack1  0
+	frame	data/chars/players/Skate/headpunch00.gif
+		attack2  129  135  43  76  5  0  0  0  0  1
+	frame	data/chars/players/Skate/headpunch01.gif
+	frame	data/chars/players/Skate/headpunch02.gif
+		Attack1  0
+	frame	data/chars/players/Skate/headpunch03.gif
+	frame	data/chars/players/Skate/headpunch04.gif
+		attack2  126  129  55  84  15  1  0  0  0  1
+		delay  8
+	frame	data/chars/players/Skate/jumpatk300.gif
+		offset  155  189
+		Attack1  0
+	frame  data/chars/players/Skate/Jump00.gif
+		offset  155  175
+	frame  data/chars/players/Skate/Jumpland00.gif
+
+anim Freespecial5
+	loop	0
+	delay	10
+        offset	150 175
+	frame	data/chars/players/Skate/get00.gif
+        Movez 7
+        Move 2
+	delay	5
+	frame	data/chars/players/Skate/dodge01.gif
+	frame	data/chars/players/Skate/dodge02.gif
+	frame	data/chars/players/Skate/dodge03.gif
+	frame	data/chars/players/Skate/dodge04.gif
+        Movez 0
+        Move 0
+	delay	10
+	frame	data/chars/players/Skate/get00.gif
+
+anim Freespecial6
+	loop	0
+	delay	10
+        offset	150 175
+	frame	data/chars/players/Skate/dodge00.gif
+        Movez -7
+        Move 2
+	delay	5
+	frame	data/chars/players/Skate/dodge01.gif
+	frame	data/chars/players/Skate/dodge02.gif
+	frame	data/chars/players/Skate/dodge03.gif
+	frame	data/chars/players/Skate/dodge04.gif
+        Moveza 0
+        Movea 0
+	delay	10
+	frame	data/chars/players/Skate/dodge05.gif
+
+
+
+
+
+
+anim pain
+	loop	0
+	offset	155 175
+	bbox	134 102 31 79
+	delay	15
+	frame	data/chars/players/Skate/pain00.gif
+	frame	data/chars/players/Skate/pain01.gif
+
+anim pain2
+	loop	0
+	offset	155 175
+	bbox	141 119 26 45
+	delay	15
+	frame	data/chars/players/Skate/pain200.gif
+	frame	data/chars/players/Skate/pain201.gif
+
+
+anim fall
+	loop	0
+	offset	155 175
+	delay	40
+	attack	97 108 46 56 12 1
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/players/Skate/fall00.gif
+		Attack1  0
+	frame	data/chars/players/Skate/fall01.gif
+
+anim fall3
+	loop	0
+	offset	155 175
+	delay	10
+	attack	128 115 44 61 12 1
+		bbox  127  119  43  53
+	frame	data/chars/players/Skate/fall705.gif
+	frame	data/chars/players/Skate/fall600.gif
+	frame	data/chars/players/Skate/fall601.gif
+	frame	data/chars/players/Skate/fall602.gif
+		Attack1  0
+		bbox  0
+	frame  data/chars/players/Skate/fall01.gif
+
+anim rise
+	loop	0
+	offset	155 175
+	delay	10
+	frame	data/chars/players/Skate/Rise00.gif
+	frame	data/chars/players/Skate/Rise01.gif
+	frame	data/chars/players/Skate/Rise02.gif
+
+
+anim special
+        energycost 20 1
+        MpOnly 1
+	loop	0
+	delay	8
+	offset	155 175
+        hitfx	data/sounds/golpes/forte.wav
+	Sound	data/chars/players/Skate/Skate2.wav
+		Attack1  0
+	frame	data/chars/players/Skate/special00.gif
+	frame	data/chars/players/Skate/special01.gif
+		attack3  105  142  94  28  25  1  0  0  0  20
+	frame	data/chars/players/Skate/special02.gif
+		attack3  122  133  68  38  25  1  0  0  0  20
+	frame	data/chars/players/Skate/special03.gif
+		attack3  100  125  98  41  25  1  0  0  0  20
+	frame	data/chars/players/Skate/special04.gif
+		Attack1  0
+	frame	data/chars/players/Skate/special05.gif
+
+anim special2
+        energycost 20 1
+        MpOnly 1
+	loop	0
+	delay	3
+	offset	155 175
+        hitfx	data/sounds/golpes/forte.wav
+		move  0
+		movea  10
+		Attack1  0
+	frame	data/chars/players/Skate/rage01.gif
+	frame	data/chars/players/Skate/rage02.gif
+	frame  data/chars/players/Skate/rage02.gif
+	frame  data/chars/players/Skate/rage02.gif
+	frame  data/chars/players/Skate/rage02.gif
+	frame  data/chars/players/Skate/rage02.gif
+		move  10
+		attack1  143  134  50  50  15  0  0  0  0  20
+		sound  data/chars/players/Skate/Skate4.wav
+		delay  7
+		movea  -10
+	frame	data/chars/players/Skate/rage03.gif
+		Attack1  0
+	frame	data/chars/players/Skate/rage04.gif
+		attack1  143  134  50  50  15  0  0  0  0  20
+	frame	data/chars/players/Skate/rage05.gif
+		Attack1  0
+	frame	data/chars/players/Skate/rage06.gif
+		move  5
+		movea  -10
+		attack1  143  134  50  50  15  0  0  0  0  20
+	frame  data/chars/players/Skate/rage03.gif
+		movea  0
+		move  0
+		Attack1  0
+		delay  1
+	frame	data/chars/players/Skate/Rise00.gif
+		attack3  114  148  72  31  20  1  0  0  0  20
+		delay  8
+	frame  data/chars/players/Skate/Rise00.gif
+	frame	data/chars/players/Skate/Rise02.gif
+
+
+
+
+
+
+
+anim runattack
+ 	loop	0
+ 	delay	7
+	jumpframe  2  2  3  0
+	landframe  7
+ 	offset	155 175
+ 	bbox	138 133 38 37
+		move  5
+        hitfx	data/sounds/golpes/forte.wav
+	Sound	data/chars/players/Skate/Skate3.wav
+		attack1  122  119  30  26  5  0  0  0  0  20
+ 	frame	data/chars/players/Skate/runatk00.gif
+		Attack1  127  124  57  36  20  1  0  0  0  20
+ 	frame	data/chars/players/Skate/runatk01.gif
+	frame  data/chars/players/Skate/runatk01.gif
+	frame  data/chars/players/Skate/runatk01.gif
+ 	frame	data/chars/players/Skate/dodge01.gif
+ 	frame	data/chars/players/Skate/dodge02.gif
+ 	frame	data/chars/players/Skate/dodge03.gif
+ 	frame	data/chars/players/Skate/dodge04.gif
+		Attack1  0
+ 	frame	data/chars/players/Skate/dodge05.gif
+
+anim grabattack
+	loop	0
+	offset	150 175
+	bbox	134 107 32 73
+	delay	10
+        hitfx	data/sounds/golpes/fraco.wav
+        Sound	data/sounds/golpes/Chut.wav
+		Attack1  0
+	frame	data/chars/players/Skate/fgrabatk00.gif
+		attack1  141  118  40  34  10  0  0  0  0  10
+	frame	data/chars/players/Skate/fgrabatk01.gif
+		Attack1  0
+	frame	data/chars/players/Skate/fgrabatk00.gif
+
+
+
+
+anim grabattack2
+                loop	0
+	offset	150 175
+        hitfx	data/sounds/golpes/Forte.wav
+	Sound	data/chars/players/Skate/Skate5.wav
+		delay  8
+		Attack1  0
+	frame	data/chars/players/Skate/fgrabatk200.gif
+		attack1  144  110  31  29  15  1  0  0  0  0
+		delay  18
+	frame	data/chars/players/Skate/fgrabatk201.gif
+		Attack1  0
+		delay  8
+	frame	data/chars/players/Skate/fgrabatk200.gif
+
+anim grabbackward
+                loop	0
+	offset	155 175
+        hitfx	data/sounds/golpes/Forte.wav
+	Sound	data/chars/players/Skate/Skate5.wav
+		delay  8
+		Attack1  0
+	frame	data/chars/players/Skate/grabatk00.gif
+	frame	data/chars/players/Skate/grabatk01.gif
+		attack3  129  132  56  26  20  1  0  0  0  20
+	frame	data/chars/players/Skate/grabatk02.gif
+		attack1  141  106  58  40  25  0  0  0  0  20
+	frame	data/chars/players/Skate/grabatk03.gif
+	frame	data/chars/players/Skate/grabatk04.gif
+		Attack1  0
+	frame	data/chars/players/Skate/grabatk05.gif
+	frame  data/chars/players/Skate/Jumpland00.gif
+
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	155 175
+	bbox	134 128 35 41
+	frame	data/chars/players/Skate/jumpland00.gif
+
+
+anim attackbackward
+ 	loop	0
+ 	delay	8
+ 	offset	155 175
+ 	bbox	139 119 27 31
+        hitfx	data/sounds/golpes/Medio.wav
+        Sound	data/sounds/golpes/soco.wav
+ 	frame	data/chars/players/Skate/aboth00.gif
+ 	frame	data/chars/players/Skate/aboth01.gif
+		attack1  121  108  35  44  10  1  0  0  0  20
+ 	frame	data/chars/players/Skate/aboth02.gif
+		attack1  106  129  46  29  10  1  0  0  0  20
+ 	frame	data/chars/players/Skate/aboth03.gif
+ 	frame	data/chars/players/Skate/aboth04.gif
+		Attack1  0
+ 	frame	data/chars/players/Skate/aboth05.gif
+

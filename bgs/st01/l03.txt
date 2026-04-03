@@ -1,0 +1,11 @@
+name			L03 #GROUND
+type			None
+setlayer 5
+
+anim idle
+	loop	1
+	delay	16
+	offset	0 0
+	frame	data/Bgs/St01/L301.gif
+	frame	data/Bgs/St01/L302.gif
+

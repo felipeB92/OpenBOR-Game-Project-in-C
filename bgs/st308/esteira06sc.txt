@@ -1,0 +1,16 @@
+name			esteira06Sc
+type			none
+shadow			0
+onblockwscript	data/scripts/bounceF.c
+animationscript 	data/scripts/ani0020.h
+ondrawscript 		data/scripts/player_ondrawscript.c
+
+anim idle
+	loop	0
+	delay	160
+	offset	1 72
+	@cmd dasher 0 0 -0.16
+	platform 160 160 320 320 276 0.001
+	frame	data/bgs/st308/empty.gif
+	@cmd suicide
+	frame	data/bgs/st308/empty.gif

@@ -1,0 +1,23 @@
+name			Esteira06
+type			none
+shadow			0
+setlayer		-10
+onblockwscript	data/scripts/bounceF.c
+animationscript 	data/scripts/ani0020.h
+ondrawscript 		data/scripts/player_ondrawscript.c
+
+load			Esteira06Sa
+load			Esteira06Sb
+load			Esteira06Sc
+
+anim idle
+	loop	1
+	delay	10
+	offset	1 72
+	@cmd spawn01 "Esteira06Sa" 0 0 20
+	@cmd spawn01 "Esteira06Sb" 0 0 20
+	@cmd spawn01 "Esteira06Sc" 0 0 20
+	frame	data/bgs/st308/machine02.gif
+	frame	data/bgs/st308/machine03.gif
+	frame	data/bgs/st308/machine04.gif
+	frame	data/bgs/st308/machine05.gif

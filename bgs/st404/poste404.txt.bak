@@ -1,0 +1,10 @@
+name			Poste404 #GROUND
+type			None
+setlayer 999
+
+anim idle
+	loop	1
+	delay	2
+	offset	151 0
+	frame	data/Bgs/St404/Poste404.gif
+

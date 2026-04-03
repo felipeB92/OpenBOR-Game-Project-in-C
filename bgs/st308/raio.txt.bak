@@ -1,0 +1,13 @@
+name	  	 	Raio
+type	  	 	none
+candamage 	 	player npc
+nolife	 	 	1
+shadow	  	 	0
+setlayer	13
+
+anim idle
+	loop	1
+	delay	3
+	offset	0 0
+	frame	data/bgs/st308/ray00.gif
+	frame	data/bgs/st308/ray01.gif

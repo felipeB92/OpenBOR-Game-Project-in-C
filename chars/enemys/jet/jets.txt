@@ -1,0 +1,74 @@
+##MAIN
+name				JetS
+type				none
+
+##MISC
+antigravity			100
+
+##SCRIPTS
+ondrawscript		data/scripts/ondraw/channel.c
+
+##REMAPS
+remap				data/chars/jet/idle00.gif data/chars/jet/alter1.gif
+remap				data/chars/jet/idle00.gif data/chars/jet/alter2.gif
+remap				data/chars/jet/idle00.gif data/chars/jet/alter3.gif
+remap				data/chars/jet/idle00.gif data/chars/jet/alter4.gif
+remap				data/chars/jet/idle00.gif data/chars/jet/alter5.gif
+
+##ANIMATIONS#############################################################################
+
+anim follow3
+	loop	0
+	delay	1000
+	offset	158 181
+	frame	data/chars/jet/a102.gif
+	frame	data/chars/jet/a103.gif
+	frame	data/chars/jet/a102.gif
+	frame	data/chars/jet/a103.gif	
+	frame	data/chars/jet/a102.gif
+	frame	data/chars/jet/a103.gif	
+	frame	data/chars/jet/rage00.gif
+	frame	data/chars/jet/rage01.gif
+	frame	data/chars/jet/rage00.gif
+	frame	data/chars/jet/rage01.gif
+	frame	data/chars/jet/a102.gif
+	frame	data/chars/jet/a103.gif
+	frame	data/chars/jet/a102.gif
+	frame	data/chars/jet/a103.gif	
+	frame	data/chars/jet/rise01.gif
+	frame	data/chars/jet/rise02.gif
+	frame	data/chars/jet/rise01.gif
+	frame	data/chars/jet/rise02.gif
+	frame	data/chars/jet/rise01.gif
+	frame	data/chars/jet/rise02.gif
+	frame	data/chars/jet/rise01.gif
+	frame	data/chars/jet/rise02.gif
+	frame	data/chars/jet/backwalk00.gif
+	frame	data/chars/jet/backwalk01.gif
+	frame	data/chars/jet/backwalk02.gif
+	frame	data/chars/jet/backwalk03.gif
+	
+anim follow4
+	loop	0
+	delay	1000
+	offset	158 181
+	frame	data/chars/jet/grab00.gif
+	frame	data/chars/jet/grab01.gif
+	frame	data/chars/jet/grab01.gif
+	frame	data/chars/jet/grab01.gif
+	frame	data/chars/jet/throw00.gif
+	frame	data/chars/jet/throw00.gif
+	frame	data/chars/jet/throw00.gif
+	frame	data/chars/jet/throw00.gif
+	frame	data/chars/jet/a102.gif
+	frame	data/chars/jet/a103.gif
+	frame	data/chars/jet/a104.gif
+	frame	data/chars/jet/a105.gif
+	frame	data/chars/jet/backwalk00.gif
+	frame	data/chars/jet/backwalk01.gif
+	frame	data/chars/jet/backwalk02.gif
+	frame	data/chars/jet/backwalk03.gif
+	frame	data/chars/jet/backwalk00.gif
+	frame	data/chars/jet/backwalk01.gif
+	frame	data/chars/jet/backwalk02.gif
+	frame	data/chars/jet/backwalk03.gif

@@ -1,0 +1,184 @@
+name	Axel_pipe
+health	100
+speed	12
+type	none
+gfxshadow	1
+candamage			enemy npc obstacle
+antigrab 2
+JUMPHEIGHT 1 1
+Jumpheight 3
+icon	data/chars/players/axel/icon.gif
+diesound data/sounds/axeldie.wav
+running	20	3	3	1	1
+
+Load PipeT
+
+Com d d freespecial5
+Com u u freespecial6
+
+
+
+remap data/chars/players/axel/idle00.gif data/chars/players/axel/alter1.gif
+remap data/chars/players/axel/idle00.gif data/chars/players/axel/alter2.gif
+remap data/chars/players/axel/idle00.gif data/chars/players/axel/alter3.gif
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	60 125
+	bbox	48 52 26 74
+	frame   data/chars/players/axel/pipe/idle00.gif
+	frame   data/chars/players/axel/pipe/idle01.gif
+	frame   data/chars/players/axel/pipe/idle02.gif
+	frame   data/chars/players/axel/pipe/idle03.gif
+
+
+
+
+anim walk
+	loop	1
+	delay	1
+	offset	60 125
+	bbox	54 51 27 79
+	jumpframe  0  0.002  0.002  0
+	landframe  1
+	frame	data/chars/players/axel/pipe/walk00.gif
+	frame	data/chars/players/axel/pipe/walk00.gif
+	delay	14
+	frame	data/chars/players/axel/pipe/walk00.gif
+	frame	data/chars/players/axel/pipe/walk01.gif
+	frame	data/chars/players/axel/pipe/walk02.gif
+	frame	data/chars/players/axel/pipe/walk03.gif
+	frame	data/chars/players/axel/pipe/walk04.gif
+	frame	data/chars/players/axel/pipe/walk05.gif
+
+
+anim get
+	loop	0
+	delay	10
+	offset	60 125
+	frame	data/chars/players/axel/pipe/get00.gif
+
+
+anim jump
+	loop	0
+	delay	5
+	offset	60 125
+	bbox	47 45 36 74
+	frame	data/chars/players/axel/pipe/jump00.gif
+	frame	data/chars/players/axel/pipe/jump01.gif
+
+
+
+
+anim jumpattack
+	loop	0
+	delay	7
+	offset	60 125
+	bbox	49 43 30 71
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/axel/pipe/jumpatk00.gif
+	frame	data/chars/players/axel/pipe/jumpatk01.gif
+		attack1  73  42  37  58  10  1  0  0  0  10
+	frame	data/chars/players/axel/pipe/jumpatk02.gif
+		Attack1  0
+	frame	data/chars/players/axel/pipe/jumpatk03.gif
+	frame	data/chars/players/axel/pipe/jumpatk04.gif
+
+
+
+anim jumpattack2
+	loop	0
+	delay	7
+	offset	71 113
+	bbox	48 47 36 48
+	attack	46 83 42 32 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/axel/pipe/jumpatk200.gif
+
+anim jumpforward
+	loop	0
+	delay	7
+	offset	71 113
+	bbox	48 47 36 48
+	attack	35 74 84 31 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/soco.wav
+	frame	data/chars/players/axel/pipe/fjumpatk01.gif
+
+
+anim runjumpattack
+	loop	0
+	delay	7
+	offset	71 113
+	bbox	48 47 36 48
+	attack	62 64 42 38 7 0
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/axel/pipe/jumpatk300.gif
+
+anim attack1
+	loop	0
+	delay	6
+	offset	60 125
+	bbox	46 55 31 70
+		Attack1  0
+	sound	data/sounds/armas/Whoosh3.wav
+        hitfx	data/sounds/Armas/Pipe.wav
+	frame	data/chars/players/axel/pipe/a100.gif
+		attack1  79  39  42  43  20  1  0  0  0  15
+	frame	data/chars/players/axel/pipe/a101.gif
+		attack1  87  87  62  17  20  1  0  0  0  15
+	frame	data/chars/players/axel/pipe/a102.gif
+		attack1  58  91  44  43  20  1  0  0  0  15
+		delay  10
+	frame	data/chars/players/axel/pipe/a103.gif
+
+anim Special2
+	loop	0
+	delay	6
+	offset	60 125
+	bbox	46 55 31 70
+		Attack1  0
+        custknife Pipet
+        throwframe 2 55
+	sound	data/sounds/armas/Whoosh3.wav
+	frame	data/chars/players/axel/pipe/a100.gif
+	frame	data/chars/players/axel/pipe/a101.gif
+	frame	data/chars/players/axel/pipe/a104.gif
+	frame	data/chars/players/axel/pipe/a105.gif
+
+
+
+anim run
+        loop    1
+        delay  10
+	offset	60 125
+	bbox	56 56 39 70
+	jumpframe  0  0.002  0.002  0
+	landframe  1
+        frame	data/chars/players/axel/pipe/run00.gif
+        frame	data/chars/players/axel/pipe/run01.gif
+        frame	data/chars/players/axel/pipe/run02.gif
+        frame	data/chars/players/axel/pipe/run03.gif
+        frame	data/chars/players/axel/pipe/run04.gif
+        frame	data/chars/players/axel/pipe/run05.gif
+
+
+
+
+
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	60 125
+	bbox	50 69 34 57
+	frame	data/chars/players/axel/pipe/jumpland00.gif
+
