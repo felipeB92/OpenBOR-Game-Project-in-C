@@ -266,16 +266,18 @@ frame	data/chars/players/Adam_/t00.gif
 frame	data/chars/players/Adam_/t01.gif
 @cmd	position 3 -10 20 0 -1
 frame	data/chars/players/Adam_/t02.gif
-@cmd	position 4 -50 35 0 -1
+	delay	9
+@cmd	position 4 -40 35 0 -1
 frame	data/chars/players/Adam_/t03.gif
-@cmd	position 4 -70 36 0 -1
+@cmd	position 4 -60 36 0 -1
 frame	data/chars/players/Adam_/t03.gif
-@cmd	position 5 -90 38 0 -1
+@cmd	position 5 -80 38 0 -1
 frame	data/chars/players/Adam_/t03.gif
 @cmd	position 8 -100 40 0 -1
 @cmd  depost  0
 @cmd  throw  20  -5  2  1  0  -1
 @cmd  clearL
+	delay	12
 	frame	data/chars/players/Adam_/t03.gif
 
 
@@ -353,16 +355,33 @@ anim runattack
 	Sound	data/chars/players/Adam_/Adam2.wav
 		Attack1  0
  	frame	data/chars/players/Adam_/ra100.gif
+		attack1  27  48  34  46  3  0  0  0  0  15
+		delay  4
  	frame	data/chars/players/Adam_/ra101.gif
-       @cmd dasher 1 0 0
- 	frame	data/chars/players/Adam_/ra102.gif
- 	frame	data/chars/players/Adam_/ra103.gif
-		attack1  27  8  30  90  10  1  0  0  0  15
- 	frame	data/chars/players/Adam_/ra104.gif
-       @cmd dasher 0 0 0
- 	frame	data/chars/players/Adam_/ra105.gif
 		Attack1  0
+	frame  data/chars/players/Adam_/ra101.gif
+       @cmd dasher 1 0 0
+		attack1  30  28  49  67  3  0  0  0  0  15
+ 	frame	data/chars/players/Adam_/ra102.gif
+		Attack1  0
+	frame  data/chars/players/Adam_/ra102.gif
+		attack1  32  19  38  80  3  0  0  0  0  15
+ 	frame	data/chars/players/Adam_/ra103.gif
+		Attack1  0
+	frame  data/chars/players/Adam_/ra103.gif
+		attack1  27  8  30  90  3  1  0  0  0  15
+ 	frame	data/chars/players/Adam_/ra104.gif
+		Attack1  0
+	frame  data/chars/players/Adam_/ra104.gif
+       @cmd dasher 0 0 0
+		attack2  27  8  30  90  5  1  0  0  0  15
+ 	frame	data/chars/players/Adam_/ra105.gif
+		@cmd  dasher  0  0  0
+		Attack1  0
+	frame  data/chars/players/Adam_/ra105.gif
  	frame	data/chars/players/Adam_/ra106.gif
+		offset  35  95
+	frame  data/chars/players/Adam_/ra106.gif
 
 
 

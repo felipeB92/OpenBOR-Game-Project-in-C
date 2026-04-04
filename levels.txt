@@ -105,9 +105,9 @@ custfade 100
 
 
 
-z 160 260
+#z 160 260
 
-file	data/levels/T.txt
+#file	data/levels/T.txt
 
 z 160 260
 

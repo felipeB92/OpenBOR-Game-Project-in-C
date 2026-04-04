@@ -434,7 +434,9 @@ anim fall2
 		offset  47  55
 	frame	data/chars/players/Adam_/fall102.gif
 
-anim fall3
+
+#Shock
+anim fall4
 	loop	0
 	offset	50 77
 	delay	10
@@ -446,6 +448,24 @@ anim fall3
 	frame	data/chars/players/Adam_/fall200.gif
 	frame	data/chars/players/Adam_/fall201.gif
 	frame	data/chars/players/Adam_/fall200.gif
+		offset  47  54
+	frame	data/chars/players/Adam_/fall102.gif
+
+#Burn
+anim fall5
+	loop	0
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/players/Adam_/fall300.gif
+	frame	data/chars/players/Adam_/fall301.gif
+	frame	data/chars/players/Adam_/fall302.gif
+	frame	data/chars/players/Adam_/fall300.gif
+	frame	data/chars/players/Adam_/fall301.gif
+	frame	data/chars/players/Adam_/fall302.gif
+	frame	data/chars/players/Adam_/fall300.gif
+	frame	data/chars/players/Adam_/fall301.gif
+	frame	data/chars/players/Adam_/fall302.gif
 		offset  47  54
 	frame	data/chars/players/Adam_/fall102.gif
 

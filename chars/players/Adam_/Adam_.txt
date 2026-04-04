@@ -32,9 +32,11 @@ Load Adam_Sword
 Com d d freespecial5
 Com u u freespecial6
 
-remap data/chars/players/Adam_/idle00.gif data/chars/players/Adam_/alter1.gif
-remap data/chars/players/Adam_/idle00.gif data/chars/players/Adam_/alter2.gif
-remap data/chars/players/Adam_/idle00.gif data/chars/players/Adam_/alter3.gif
+remap data/chars/players/Adam_/idle00.gif data/chars/players/Adam_/map01.gif
+remap data/chars/players/Adam_/idle00.gif data/chars/players/Adam_/map02.gif
+remap data/chars/players/Adam_/idle00.gif data/chars/players/Adam_/map03.gif
+remap data/chars/players/Adam_/idle00.gif data/chars/players/Adam_/map04.gif
+
 
 
 
@@ -216,13 +218,18 @@ anim Freespecial
 	frame	data/chars/players/Adam_/valt04.gif
 		move  0
 	frame	data/chars/players/Adam_/valt05.gif
+	delay	5
+@cmd	position 0 -30 0 0 -1
+	frame	data/chars/players/Adam_/valt05.gif
 	delay	40
 	frame	data/chars/players/Adam_/valt05.gif
+@cmd	position 8 -30 15 0 -1
 @cmd  depost  0
-@cmd  throw  20  -5  2  1  0  -1
+@cmd  throw  8  -5  2  1  0  -1
 @cmd  clearL
 		move  0
 		offset  126  144
+        Sound	data/sounds/golpes/medio.wav
 	frame	data/chars/players/Adam_/valt06.gif
 	frame	data/chars/players/Adam_/valt05.gif
 
@@ -242,6 +249,7 @@ anim Freespecial2
 	frame	data/chars/players/Adam_/slam02.gif
 		delay  25
 @cmd	position 4 35 1 0 -1
+		attack1  51  56  49  29  7  1  0  0  0  15
 	frame	data/chars/players/Adam_/slam03.gif
 @cmd	position 7 45 1 0 -1
 @cmd  depost  0
@@ -249,6 +257,7 @@ anim Freespecial2
 @cmd  clearL
 		offset  56  70
 		delay  10
+		Attack1  0
 	frame  data/chars/players/Adam_/rise00.gif
 		offset  50  69
 	frame  data/chars/players/Adam_/rise01.gif
@@ -266,16 +275,22 @@ frame	data/chars/players/Adam_/t00.gif
 frame	data/chars/players/Adam_/t01.gif
 @cmd	position 3 -10 20 0 -1
 frame	data/chars/players/Adam_/t02.gif
-@cmd	position 4 -50 35 0 -1
+	delay	9
+@cmd	position 4 -40 35 0 -1
+		attack1  -14  18  39  35  7  1  0  0  0  15
 frame	data/chars/players/Adam_/t03.gif
-@cmd	position 4 -70 36 0 -1
+@cmd	position 4 -60 36 0 -1
+		attack1  -53  18  36  37  7  1  0  0  0  15
 frame	data/chars/players/Adam_/t03.gif
-@cmd	position 5 -90 38 0 -1
+@cmd	position 5 -80 38 0 -1
+		attack1  -81  21  49  28  7  1  0  0  0  15
 frame	data/chars/players/Adam_/t03.gif
 @cmd	position 8 -100 40 0 -1
 @cmd  depost  0
 @cmd  throw  20  -5  2  1  0  -1
 @cmd  clearL
+	delay	12
+		attack1  -113  36  35  27  7  1  0  0  0  15
 	frame	data/chars/players/Adam_/t03.gif
 
 
@@ -361,7 +376,6 @@ anim runattack
        @cmd dasher 1 0 0
 		attack1  30  28  49  67  3  0  0  0  0  15
  	frame	data/chars/players/Adam_/ra102.gif
-		@cmd  dasher  1  0  0
 		Attack1  0
 	frame  data/chars/players/Adam_/ra102.gif
 		attack1  32  19  38  80  3  0  0  0  0  15

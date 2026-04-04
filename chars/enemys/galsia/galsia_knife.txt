@@ -10,6 +10,7 @@ Jumpheight 3
 icon	data/chars/Enemys/galsia/icon.gif
 diesound data/sounds/axeldie.wav
 running	20	3	3	1	1
+animationscript		data/scripts/drago.c
 
 remap data/chars/Enemys/galsia/idle00.gif data/chars/Enemys/galsia/alter1.gif
 remap data/chars/Enemys/galsia/idle00.gif data/chars/Enemys/galsia/alter2.gif
@@ -34,16 +35,8 @@ anim walk
 	delay	14
 	offset	76 118
 	bbox	68 47 33 69
-	jumpframe  7  1  0.002  0
-	landframe  8
         hitfx	data/sounds/Armas/Corte.wav
 		attack1  82  70  39  14  10  1  0  0  0  10
-	frame	data/chars/Enemys/galsia/Knife/walk00.gif
-	frame	data/chars/Enemys/galsia/Knife/walk01.gif
-	frame	data/chars/Enemys/galsia/Knife/walk02.gif
-	frame	data/chars/Enemys/galsia/Knife/walk00.gif
-	frame	data/chars/Enemys/galsia/Knife/walk01.gif
-	frame	data/chars/Enemys/galsia/Knife/walk02.gif
 	frame	data/chars/Enemys/galsia/Knife/walk00.gif
 	frame	data/chars/Enemys/galsia/Knife/walk01.gif
 	frame	data/chars/Enemys/galsia/Knife/walk02.gif
@@ -73,12 +66,13 @@ anim attack1
 	bbox	72 47 25 72
 		Attack1  85  74  34  11  10  1  0  0  10  10
         hitfx	data/sounds/Armas/Corte.wav
-		move  10
+		@cmd dasher 1 0 0
 	frame	data/chars/Enemys/galsia/Knife/walk00.gif
 	frame	data/chars/Enemys/galsia/Knife/walk01.gif
 	frame	data/chars/Enemys/galsia/Knife/walk02.gif
 	frame	data/chars/Enemys/galsia/Knife/walk00.gif
 	frame	data/chars/Enemys/galsia/Knife/walk01.gif
+		@cmd dasher 0 0 0
 	frame	data/chars/Enemys/galsia/Knife/walk02.gif
 
 
@@ -93,13 +87,6 @@ anim jumpattack
 	delay	30
 		attack1  73  52  41  44  10  1  0  0  0  20
 	frame	data/chars/Enemys/galsia/Knife/jumpatk01.gif
-
-
-
-
-
-
-
 
 
 anim land
