@@ -45,10 +45,17 @@ spawn  L07
 	at  0
 
 
-
+spawn  HAku_oh
+health 300
+	coords  300  191
+	at  0
 
 spawn  Galsia_
 health 30
+	coords  300  191
+	at  0
+
+spawn  Sword
 	coords  300  191
 	at  0
 

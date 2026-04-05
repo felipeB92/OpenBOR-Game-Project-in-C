@@ -11,6 +11,7 @@ Jumpheight 3
 atchain    1 1 2
 #weapons				none none Signal_pipe none
 icon	data/chars/Enemys/Signal/icon.gif 1
+animationscript		data/scripts/drago.c
 diesound data/voices/die2.wav
 running	20	3	3	1	1
 
@@ -60,6 +61,8 @@ anim idle
 	offset	152 184
 	bbox	140 104 30 80
 	frame   data/chars/Enemys/Signal/idle00.gif
+@cmd  depost  0
+@cmd  clearL
 	frame   data/chars/Enemys/Signal/idle01.gif
 	frame   data/chars/Enemys/Signal/idle02.gif
 
@@ -67,50 +70,13 @@ anim idle
 anim walk
 	loop	1
 	offset	152 184
-	bbox	144 110 29 71
+	bbox	145 104 26 77
 		delay  12
-	jumpframe  6  1  1  0
-	landframe  8
 	frame	data/chars/Enemys/Signal/walk01.gif
+@cmd  depost  0
+@cmd  clearL
 	frame	data/chars/Enemys/Signal/walk02.gif
 	frame	data/chars/Enemys/Signal/walk03.gif
-	frame	data/chars/Enemys/Signal/walk01.gif
-	frame	data/chars/Enemys/Signal/walk02.gif
-	frame	data/chars/Enemys/Signal/walk03.gif
-	frame	data/chars/Enemys/Signal/walk01.gif
-	frame	data/chars/Enemys/Signal/walk02.gif
-	frame	data/chars/Enemys/Signal/walk03.gif
-	frame	data/chars/Enemys/Signal/walk01.gif
-	frame	data/chars/Enemys/Signal/walk02.gif
-	frame	data/chars/Enemys/Signal/walk03.gif
-	frame	data/chars/Enemys/Signal/walk01.gif
-	frame	data/chars/Enemys/Signal/walk02.gif
-	frame	data/chars/Enemys/Signal/walk03.gif
-	frame	data/chars/Enemys/Signal/walk01.gif
-	frame	data/chars/Enemys/Signal/walk02.gif
-	frame	data/chars/Enemys/Signal/walk03.gif
-	frame	data/chars/Enemys/Signal/walk01.gif
-	frame	data/chars/Enemys/Signal/walk02.gif
-	frame	data/chars/Enemys/Signal/walk03.gif
-	frame	data/chars/Enemys/Signal/walk01.gif
-	frame	data/chars/Enemys/Signal/walk02.gif
-	frame	data/chars/Enemys/Signal/walk03.gif
-	frame	data/chars/Enemys/Signal/walk01.gif
-	frame	data/chars/Enemys/Signal/walk02.gif
-	frame	data/chars/Enemys/Signal/walk03.gif
-	frame	data/chars/Enemys/Signal/walk01.gif
-	frame	data/chars/Enemys/Signal/walk02.gif
-	frame	data/chars/Enemys/Signal/walk03.gif
-	frame	data/chars/Enemys/Signal/walk01.gif
-	frame	data/chars/Enemys/Signal/walk02.gif
-	frame	data/chars/Enemys/Signal/walk03.gif
-	frame	data/chars/Enemys/Signal/walk01.gif
-	frame	data/chars/Enemys/Signal/walk02.gif
-	frame	data/chars/Enemys/Signal/walk03.gif
-		attack1  144  120  36  56  1  0  0  0  0  10
-	frame	data/chars/Enemys/Signal/a200.gif
-		Attack1  0
-	frame	data/chars/Enemys/Signal/walk02.gif
 
 
 anim get
@@ -132,7 +98,7 @@ anim jump
 anim attack1
 	loop	0
 	delay	6
-        Range 0 60
+        Range 30 60
 	offset	152 184
 	bbox	127 111 27 71
 		Attack1  0
@@ -147,21 +113,25 @@ anim attack1
 anim Freespecial
 	loop	0
 	delay	5
-        Range   100 120
+        Range   80 100
 	offset	152 184
 	bbox	136 104 24 80
 		Attack1  0
         hitfx	data/sounds/golpes/medio.wav
 	frame	data/chars/Enemys/Signal/a200.gif
-		attack2  145  155  53  37  7  1  0  0  7  20
-		move  10
+		attack1  145  155  53  37  7  1  0  0  7  20
+       	delay	5
+	@cmd dasher 2 0 0
 		bbox  108  151  51  37
 	frame	data/chars/Enemys/Signal/a201.gif
-	frame  data/chars/Enemys/Signal/a201.gif
-	frame  data/chars/Enemys/Signal/a201.gif
-	frame  data/chars/Enemys/Signal/a201.gif
-	frame  data/chars/Enemys/Signal/a201.gif
-	frame  data/chars/Enemys/Signal/a201.gif
+	frame	data/chars/Enemys/Signal/a201.gif
+	frame	data/chars/Enemys/Signal/a201.gif
+	frame	data/chars/Enemys/Signal/a201.gif
+	frame	data/chars/Enemys/Signal/a201.gif
+	frame	data/chars/Enemys/Signal/a201.gif
+	frame	data/chars/Enemys/Signal/a201.gif
+       @cmd dasher 0 0 0
+	delay	5
 	frame  data/chars/Enemys/Signal/a201.gif
 		Attack1  0
 		move  0
@@ -173,170 +143,41 @@ anim Freespecial
 
 
 
-anim throw
+anim freespecial2
 	loop	0
 	delay	10
+	range 0 30
 	offset	152 184
-	bbox	127 115 26 64
+@cmd	slamstart
+@cmd	position 0 10 0 0 -1
+	frame	data/chars/Enemys/Signal/Grab00.gif
+@cmd	position 2 5 5 0 -1
 	frame	data/chars/Enemys/Signal/throw00.gif
+@cmd	position 3 0 20 0 -1
 		delay  20
 	frame	data/chars/Enemys/Signal/throw01.gif
-
-anim grab
-	loop	0
-	delay	100
-	offset	152 184
-	bbox	141 107 28 75
-	frame	data/chars/Enemys/Signal/grab00.gif
-
-
+@cmd	position 4 -30 25 0 -1
+	frame	data/chars/Enemys/Signal/throw01.gif
+@cmd	position 8 -50 35 0 -1
+@cmd  depost  0
+@cmd  throw  25  5  2  2  0  -1
+@cmd  clearL
+	frame	data/chars/Enemys/Signal/throw01.gif
 
 
 
 
-anim grabbed
-	loop	0
-	delay	100
-	offset	152 184
-	bbox	140 113 33 61
-	frame	data/chars/Enemys/Signal/grabbed00.gif
 
 
-
-anim pain
-	loop	0
-	offset	152 184
-	bbox	129 111 45 74
-	delay	15
-	frame	data/chars/Enemys/Signal/pain00.gif
-	frame	data/chars/Enemys/Signal/pain01.gif
-
-anim pain2
-	loop	0
-	offset	152 184
-	bbox	126 115 31 65
-	delay	15
-	frame	data/chars/Enemys/Signal/pain200.gif
-	frame	data/chars/Enemys/Signal/pain201.gif
-
-anim pain4
-	loop	0
-	offset	152 184
-	bbox	134 111 40 71
-	delay	250
-	frame	data/chars/Enemys/Signal/pain00.gif
-
-anim pain5
-	loop	0
-	delay	10
-		offset  152  184
-	frame	data/chars/Enemys/Signal/pain00.gif
-		move  10
-	frame	data/chars/Enemys/Signal/fall705.gif
-		move  30
-		delay  10
-		offset  152  201
-	frame	data/chars/Enemys/Signal/fall603.gif
-        quakeframe 4 2 2
-        Sound	data/Sounds/Efeitos/Estrondo.wav
-		offset  152  184
-	frame	data/chars/Enemys/Signal/fall900.gif
-		move  1
-		movea  5
-	frame  data/chars/Enemys/Signal/fall900.gif
-		movea  -5
-	frame  data/chars/Enemys/Signal/fall900.gif
-		delay  50
-		move  0
-		movea  0
-		Attack1  0
-	frame	data/chars/Enemys/Signal/Fall01.gif
-		delay  10
-	frame	data/chars/Enemys/Signal/Rise00.gif
-	frame	data/chars/Enemys/Signal/Rise01.gif
-	frame  data/chars/Enemys/Signal/Rise02.gif
-
-
-anim death
-	loop	0
-	offset	152 184
-	delay	20
-	jumpframe  0  1  -1  0
-	landframe  2
-	frame	data/chars/Enemys/Signal/fall701.gif
-	frame  data/chars/Enemys/Signal/fall00.gif
-	frame	data/chars/Enemys/Signal/fall01.gif
-
-
-anim death5
-	loop	0
-	offset	152 184
-	delay	10
-	frame	data/chars/Enemys/Signal/pain00.gif
-		move  10
-	frame	data/chars/Enemys/Signal/fall705.gif
-		move  30
-		delay  10
-		offset  152  204
-	frame	data/chars/Enemys/Signal/fall603.gif
-		offset  152  184
-	frame	data/chars/Enemys/Signal/fall900.gif
-		move  1
-		movea  5
-	frame  data/chars/Enemys/Signal/fall900.gif
-		movea  -5
-	frame  data/chars/Enemys/Signal/fall900.gif
-		delay  50
-		move  0
-		movea  0
-	frame	data/chars/Enemys/Signal/Fall01.gif
-
-
-anim fall
-	loop	0
-	offset	152 184
-	delay	20
-        hitfx	data/sounds/golpes/Forte.wav
-		Attack1  0
-	frame	data/chars/Enemys/Signal/fall701.gif
-		attack  109
-		hitfx  data/sounds/golpes/Forte.wav
-	frame  data/chars/Enemys/Signal/fall00.gif
-		Attack1  0
-	frame	data/chars/Enemys/Signal/fall01.gif
-
-anim fall3
-	loop	0
-	offset	152 184
-	delay	5
-	jumpframe  0  3  -3  0
-	landframe  8
-		bbox  132  116  43  62
-		Attack1  0
-	frame	data/chars/Enemys/Signal/fall705.gif
-	frame	data/chars/Enemys/Signal/fall600.gif
-	frame	data/chars/Enemys/Signal/fall601.gif
-	frame	data/chars/Enemys/Signal/fall602.gif
-	frame	data/chars/Enemys/Signal/fall705.gif
-	frame	data/chars/Enemys/Signal/fall600.gif
-	frame	data/chars/Enemys/Signal/fall601.gif
-	frame	data/chars/Enemys/Signal/fall602.gif
-	frame	data/chars/Enemys/Signal/fall705.gif
-	frame	data/chars/Enemys/Signal/fall600.gif
-	frame	data/chars/Enemys/Signal/fall601.gif
-	frame	data/chars/Enemys/Signal/fall602.gif
-	frame  data/chars/Enemys/Signal/fall705.gif
-	frame  data/chars/Enemys/Signal/fall600.gif
-		Attack1  0
-		bbox  0
-		move  0
-	frame  data/chars/Enemys/Signal/fall01.gif
 
 anim rise
 	loop	0
 	offset	152 184
 	delay	10
 	frame	data/chars/Enemys/Signal/Rise00.gif
+@cmd  depost  0
+@cmd  throw  25  5  2  2  0  -1
+@cmd  clearL
 	frame	data/chars/Enemys/Signal/Rise01.gif
 	frame	data/chars/Enemys/Signal/Rise02.gif
 
@@ -350,3 +191,147 @@ anim land
 	bbox	127 137 31 41
 	frame	data/chars/Enemys/Signal/jumpland00.gif
 
+anim grabbed
+	loop	0
+	offset	151 183
+	bbox	139 115 32 68
+	delay	30
+	frame	data/chars/Enemys/Signal/grabbed00.gif
+
+anim pain
+	loop	0
+	offset	158 182
+	bbox	127 115 56 68
+		delay  30
+	frame	data/chars/Enemys/Signal/pain01.gif
+
+
+anim pain2
+	loop	0
+	offset	154 184
+	bbox	131 116 46 70
+	delay	30
+	frame	data/chars/Enemys/Signal/pain02.gif
+
+anim pain3
+	loop	0
+	offset	154 186
+	bbox	127 113 48 79
+	jumpframe  0  2  0  0
+	delay	10
+	frame	data/chars/Enemys/Signal/Pain02.gif
+		offset  154  182
+	frame	data/chars/Enemys/Signal/fall100.gif
+	frame	data/chars/Enemys/Signal/Pain01.gif
+
+
+anim fall
+	loop	0
+	offset	160 183
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Signal/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  147  171
+	frame  data/chars/Enemys/Signal/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Signal/fall403.gif
+		Attack1  0
+		offset  146  183
+	frame	data/chars/Enemys/Signal/fall102.gif
+
+anim fall2
+	loop	0
+	offset	147 182
+	delay	20
+	jumpframe  0  2  -3.5  0
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Signal/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  148  170
+	frame  data/chars/Enemys/Signal/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Signal/fall403.gif
+		Attack1  0
+		offset  148  184
+	frame	data/chars/Enemys/Signal/fall102.gif
+#Shock
+
+
+anim fall4
+	loop	0
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Signal/fall200.gif
+	frame	data/chars/Enemys/Signal/fall201.gif
+	frame	data/chars/Enemys/Signal/fall200.gif
+	frame	data/chars/Enemys/Signal/fall201.gif
+	frame	data/chars/Enemys/Signal/fall200.gif
+	frame	data/chars/Enemys/Signal/fall201.gif
+	frame	data/chars/Enemys/Signal/fall200.gif
+		offset  141  184
+	frame	data/chars/Enemys/Signal/fall102.gif
+#Burn
+
+anim fall5
+	loop	0
+	offset	41 67
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Signal/fall300.gif
+	frame	data/chars/Enemys/Signal/fall301.gif
+	frame	data/chars/Enemys/Signal/fall302.gif
+	frame	data/chars/Enemys/Signal/fall300.gif
+	frame	data/chars/Enemys/Signal/fall301.gif
+	frame	data/chars/Enemys/Signal/fall302.gif
+	frame	data/chars/Enemys/Signal/fall300.gif
+	frame	data/chars/Enemys/Signal/fall301.gif
+	frame	data/chars/Enemys/Signal/fall302.gif
+		offset  141  185
+	frame	data/chars/Enemys/Signal/fall102.gif
+
+anim fall8
+	loop	0
+	offset	151 183
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Signal/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  142  170
+	frame  data/chars/Enemys/Signal/fall101.gif
+		Attack1  0
+		offset  142  184
+	frame	data/chars/Enemys/Signal/fall102.gif
+
+anim fall9
+	loop	0
+	offset	155 180
+	delay	999
+		Attack1  0
+	frame	data/chars/Enemys/Signal/pain01.gif
+	frame	data/chars/Enemys/Signal/pain02.gif
+		offset  161  182
+	frame	data/chars/Enemys/Signal/fall400.gif
+		offset  152  171
+	frame	data/chars/Enemys/Signal/fall401.gif
+		offset  152  177
+	frame	data/chars/Enemys/Signal/fall402.gif
+		offset  146  169
+	frame	data/chars/Enemys/Signal/fall403.gif
+		offset  158  181
+	frame	data/chars/Enemys/Signal/fall404.gif
+		offset  144  181
+	frame	data/chars/Enemys/Signal/fall405.gif
+	delay	50
+		offset  150  166
+	frame	data/chars/Enemys/Signal/fall403.gif
+	delay	999
+		offset  142  181
+	frame	data/chars/Enemys/Signal/fall405.gif

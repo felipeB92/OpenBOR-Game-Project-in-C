@@ -53,6 +53,12 @@ map 1
 	coords  300  191
 	at  0
 
+spawn  Signal
+health 600
+map 1
+	coords  300  191
+	at  0
+
 
 
 

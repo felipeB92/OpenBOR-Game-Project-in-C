@@ -1,0 +1,58 @@
+name	AdamSP1
+health	100
+mp 20
+#mprate 1
+Alpha 1
+riseinv				0.4 1
+speed	12
+type	None
+gfxshadow	1
+candamage			enemy npc obstacle
+antigrab 2
+JUMPHEIGHT 1 1
+Jumpheight 3
+atchain    1 1 2 3
+weapons				Adam_Knife Adam_Sword Adam_pipe Adam_Kunai
+icon	data/chars/players/Adam_/icon.gif 1
+diesound data/sounds/Adamdie.wav
+running	20	3	2	1	1
+#onblockwscript	data/scripts/bounceF.c
+animationscript		data/scripts/drago.c
+#ondrawscript 		data/scripts/player_ondrawscript.c
+
+Load T00
+
+#@cmd  spawn01  "T00"  0  0  0
+
+
+Load Adam_Knife
+Load Adam_Pipe
+Load Adam_Kunai
+Load Adam_Sword
+
+Com d d freespecial5
+Com u u freespecial6
+
+remap data/chars/players/Adam_/idle00.gif data/chars/players/Adam_/map01.gif
+remap data/chars/players/Adam_/idle00.gif data/chars/players/Adam_/map02.gif
+remap data/chars/players/Adam_/idle00.gif data/chars/players/Adam_/map03.gif
+remap data/chars/players/Adam_/idle00.gif data/chars/players/Adam_/map04.gif
+
+
+
+anim Idle
+	loop	0
+	delay	8
+	offset	55 83
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame	data/chars/players/Adam_/sp100.gif
+	frame	data/chars/players/Adam_/sp101.gif
+	frame	data/chars/players/Adam_/sp102.gif
+	frame	data/chars/players/Adam_/sp103.gif
+	frame	data/chars/players/Adam_/sp104.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/players/Adam_/sp104.gif
+
+
+

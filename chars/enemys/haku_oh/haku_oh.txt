@@ -51,49 +51,9 @@ anim walk
 	delay	10
 	offset	76 120
 	bbox	70 47 34 74
-	jumpframe  6  1  1  0
-	landframe  8
 	frame	data/chars/Enemys/Haku_oh/walk00.gif
 	frame	data/chars/Enemys/Haku_oh/walk01.gif
 	frame	data/chars/Enemys/Haku_oh/walk02.gif
-	frame	data/chars/Enemys/Haku_oh/walk00.gif
-	frame	data/chars/Enemys/Haku_oh/walk01.gif
-	frame	data/chars/Enemys/Haku_oh/walk02.gif
-	frame	data/chars/Enemys/Haku_oh/walk00.gif
-	frame	data/chars/Enemys/Haku_oh/walk01.gif
-	frame	data/chars/Enemys/Haku_oh/walk02.gif
-	frame	data/chars/Enemys/Haku_oh/walk00.gif
-	frame	data/chars/Enemys/Haku_oh/walk00.gif
-	frame	data/chars/Enemys/Haku_oh/walk01.gif
-	frame	data/chars/Enemys/Haku_oh/walk02.gif
-	frame	data/chars/Enemys/Haku_oh/walk00.gif
-	frame	data/chars/Enemys/Haku_oh/walk01.gif
-	frame	data/chars/Enemys/Haku_oh/walk02.gif
-	frame	data/chars/Enemys/Haku_oh/walk00.gif
-	frame	data/chars/Enemys/Haku_oh/walk01.gif
-	frame	data/chars/Enemys/Haku_oh/walk02.gif
-	frame	data/chars/Enemys/Haku_oh/walk00.gif
-	frame	data/chars/Enemys/Haku_oh/walk00.gif
-	frame	data/chars/Enemys/Haku_oh/walk01.gif
-	frame	data/chars/Enemys/Haku_oh/walk02.gif
-	frame	data/chars/Enemys/Haku_oh/walk00.gif
-	frame	data/chars/Enemys/Haku_oh/walk01.gif
-	frame	data/chars/Enemys/Haku_oh/walk02.gif
-	frame	data/chars/Enemys/Haku_oh/walk00.gif
-	frame	data/chars/Enemys/Haku_oh/walk01.gif
-	frame	data/chars/Enemys/Haku_oh/walk02.gif
-	frame	data/chars/Enemys/Haku_oh/walk00.gif
-		attack1  74  56  51  24  1  0  0  0  0  10
-	frame	data/chars/Enemys/Haku_oh/a101.gif
-		Attack1  0
-	frame	data/chars/Enemys/Haku_oh/walk02.gif
-
-
-anim get
-	loop	0
-	delay	10
-	offset	76 91
-	frame	data/chars/Enemys/haku_oh/get00.gif
 
 
 anim jump
@@ -114,7 +74,6 @@ anim jumpattack
 	delay	30
 		attack1  73  52  41  44  10  1  0  0  0  20
 	frame	data/chars/Enemys/haku_oh/jumpatk01.gif
-
 
 
 anim attack1
@@ -144,7 +103,7 @@ anim freespecial
 		Attack1  0
         hitfx	data/sounds/golpes/Fraco.wav
 	frame	data/chars/Enemys/haku_oh/a100.gif
-		attack3  69  52  57  26  10  1
+		attack2  62  54  65  23  10  1
 		offset  84  120
 		move  10
 		delay  3
@@ -215,151 +174,6 @@ anim freespecial3
 
 
 
-
-
-
-
-
-anim grabbed
-	loop	0
-	delay	100
-	offset	61 118
-	bbox	50 53 39 67
-	frame	data/chars/Enemys/haku_oh/grabbed00.gif
-
-
-
-anim pain
-	loop	0
-	offset	76 118
-	bbox	64 47 27 71
-	delay	15
-	frame	data/chars/Enemys/haku_oh/pain00.gif
-	frame	data/chars/Enemys/haku_oh/pain01.gif
-
-anim pain2
-	loop	0
-	offset	76 118
-	bbox	63 53 32 63
-	delay	15
-	frame	data/chars/Enemys/haku_oh/pain200.gif
-	frame	data/chars/Enemys/haku_oh/pain201.gif
-
-anim pain4
-	loop	0
-	offset	76 118
-	bbox	64 47 27 71
-	delay	250
-	frame	data/chars/Enemys/Haku_Oh/pain00.gif
-
-anim pain5
-	loop	0
-	offset	76 118
-	delay	10
-	frame	data/chars/Enemys/Haku_Oh/pain00.gif
-		move  10
-	frame	data/chars/Enemys/Haku_Oh/fall705.gif
-		offset  65  121
-		move  30
-		delay  10
-	frame	data/chars/Enemys/Haku_Oh/fall603.gif
-		offset  75  121
-        quakeframe 4 2 2
-        Sound	data/Sounds/Efeitos/Estrondo.wav
-	frame	data/chars/Enemys/Haku_Oh/fall900.gif
-		move  1
-		movea  5
-	frame  data/chars/Enemys/Haku_Oh/fall900.gif
-		movea  -5
-	frame  data/chars/Enemys/Haku_Oh/fall900.gif
-		offset  76  118
-		delay  50
-		move  0
-		movea  0
-		Attack1  0
-	frame	data/chars/Enemys/Haku_Oh/Fall01.gif
-		delay  10
-	frame	data/chars/Enemys/Haku_Oh/Rise02.gif
-	frame	data/chars/Enemys/Haku_Oh/Rise01.gif
-	frame  data/chars/Enemys/Haku_Oh/Rise02.gif
-
-
-anim death
-	loop	0
-	offset	76 118
-	delay	20
-	jumpframe  0  1  -1  0
-	landframe  2
-	frame	data/chars/Enemys/Haku_Oh/fall701.gif
-	frame  data/chars/Enemys/Haku_Oh/fall00.gif
-	frame	data/chars/Enemys/Haku_Oh/fall01.gif
-
-
-anim death5
-	loop	0
-	offset	76 118
-	delay	10
-	frame	data/chars/Enemys/Haku_Oh/pain00.gif
-		move  10
-	frame	data/chars/Enemys/Haku_Oh/fall705.gif
-		offset  65  119
-		move  30
-		delay  10
-	frame	data/chars/Enemys/Haku_Oh/fall603.gif
-		offset  75  121
-	frame	data/chars/Enemys/Haku_Oh/fall900.gif
-		move  1
-		movea  5
-	frame  data/chars/Enemys/Haku_Oh/fall900.gif
-		movea  -5
-	frame  data/chars/Enemys/Haku_Oh/fall900.gif
-		offset  76  118
-		delay  50
-		move  0
-		movea  0
-	frame	data/chars/Enemys/Haku_Oh/Fall01.gif
-
-
-anim fall
-	loop	0
-	offset	76 118
-        hitfx	data/sounds/golpes/Forte.wav
-		delay  20
-		Attack1  0
-	frame	data/chars/Enemys/haku_oh/pain00.gif
-		attack  41
-		hitfx  data/sounds/golpes/Forte.wav
-	frame  data/chars/Enemys/haku_oh/fall00.gif
-		Attack1  0
-	frame	data/chars/Enemys/haku_oh/fall01.gif
-
-anim fall3
-	loop	0
-	offset	76 118
-	delay	5
-	jumpframe  0  3  -3  0
-	landframe  8
-		bbox  60  56  30  41
-		Attack1  0
-	frame	data/chars/Enemys/haku_oh/fall705.gif
-	frame	data/chars/Enemys/haku_oh/fall600.gif
-	frame	data/chars/Enemys/haku_oh/fall601.gif
-	frame	data/chars/Enemys/haku_oh/fall602.gif
-	frame	data/chars/Enemys/haku_oh/fall705.gif
-	frame	data/chars/Enemys/haku_oh/fall600.gif
-	frame	data/chars/Enemys/haku_oh/fall601.gif
-	frame	data/chars/Enemys/haku_oh/fall602.gif
-	frame	data/chars/Enemys/haku_oh/fall705.gif
-	frame	data/chars/Enemys/haku_oh/fall600.gif
-	frame	data/chars/Enemys/haku_oh/fall601.gif
-	frame	data/chars/Enemys/haku_oh/fall602.gif
-	frame  data/chars/Enemys/haku_oh/fall705.gif
-	frame  data/chars/Enemys/haku_oh/fall600.gif
-		Attack1  0
-		bbox  0
-		move  0
-	frame  data/chars/Enemys/haku_oh/fall01.gif
-
 anim rise
 	loop	0
 	offset	76 118
@@ -376,4 +190,160 @@ anim land
 	offset	76 118
 	bbox	69 78 34 44
 	frame	data/chars/Enemys/haku_oh/jumpland00.gif
+
+anim grabbed
+	loop	0
+	offset	69 119
+	bbox	59 54 23 66
+	delay	30
+	frame	data/chars/Enemys/haku_oh/grabbed00.gif
+
+anim pain
+	loop	0
+	offset	75 120
+	bbox	62 58 42 61
+		delay  30
+	frame	data/chars/Enemys/haku_oh/pain01.gif
+
+
+anim pain2
+	loop	0
+	offset	75 119
+	bbox	60 54 29 64
+	delay	30
+	frame	data/chars/Enemys/haku_oh/pain02.gif
+
+anim pain3
+	loop	0
+	offset	79 119
+	bbox	63 52 26 67
+	jumpframe  0  2  0  0
+	delay	10
+	frame	data/chars/Enemys/haku_oh/Pain02.gif
+	frame	data/chars/Enemys/haku_oh/fall100.gif
+	frame	data/chars/Enemys/haku_oh/Pain01.gif
+
+
+anim fall
+	loop	0
+	offset	78 120
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/haku_oh/fall101.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/haku_oh/fall100.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/haku_oh/fall403.gif
+		Attack1  0
+	frame	data/chars/Enemys/haku_oh/fall102.gif
+
+anim fall2
+	loop	0
+	offset	78 118
+	delay	20
+	jumpframe  0  2  -3.5  0
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/haku_oh/fall101.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/haku_oh/fall100.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/haku_oh/fall403.gif
+		Attack1  0
+		offset  78  118
+	frame	data/chars/Enemys/haku_oh/fall102.gif
+#Shock
+
+
+anim fall4
+	loop	0
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/haku_oh/fall200.gif
+	frame	data/chars/Enemys/haku_oh/fall201.gif
+	frame	data/chars/Enemys/haku_oh/fall200.gif
+	frame	data/chars/Enemys/haku_oh/fall201.gif
+	frame	data/chars/Enemys/haku_oh/fall200.gif
+	frame	data/chars/Enemys/haku_oh/fall201.gif
+	frame	data/chars/Enemys/haku_oh/fall200.gif
+		offset  75  119
+	frame	data/chars/Enemys/haku_oh/fall102.gif
+#Burn
+
+anim fall5
+	loop	0
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/haku_oh/fall300.gif
+	frame	data/chars/Enemys/haku_oh/fall301.gif
+	frame	data/chars/Enemys/haku_oh/fall302.gif
+	frame	data/chars/Enemys/haku_oh/fall300.gif
+	frame	data/chars/Enemys/haku_oh/fall301.gif
+	frame	data/chars/Enemys/haku_oh/fall302.gif
+	frame	data/chars/Enemys/haku_oh/fall300.gif
+	frame	data/chars/Enemys/haku_oh/fall301.gif
+	frame	data/chars/Enemys/haku_oh/fall302.gif
+		offset  76  120
+	frame	data/chars/Enemys/haku_oh/fall102.gif
+
+anim fall8
+	loop	0
+	offset	76 119
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/haku_oh/fall101.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/haku_oh/fall100.gif
+		Attack1  0
+		offset  76  121
+	frame	data/chars/Enemys/haku_oh/fall102.gif
+
+anim fall9
+	loop	0
+	offset	81 119
+	delay	999
+		Attack1  0
+	frame	data/chars/Enemys/haku_oh/pain01.gif
+	frame	data/chars/Enemys/haku_oh/pain02.gif
+		offset  77  119
+	frame	data/chars/Enemys/haku_oh/fall400.gif
+		offset  112  90
+	frame	data/chars/Enemys/haku_oh/fall401.gif
+		offset  110  135
+	frame	data/chars/Enemys/haku_oh/fall402.gif
+		offset  83  123
+	frame	data/chars/Enemys/haku_oh/fall403.gif
+		offset  65  111
+	frame	data/chars/Enemys/haku_oh/fall404.gif
+		offset  72  119
+	frame	data/chars/Enemys/haku_oh/fall405.gif
+	delay	50
+		offset  83  121
+	frame	data/chars/Enemys/haku_oh/fall403.gif
+	delay	999
+		offset  74  118
+	frame	data/chars/Enemys/haku_oh/fall405.gif
+
+anim Death
+	loop	0
+	offset	78 120
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/haku_oh/fall101.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  65  107
+	frame  data/chars/Enemys/haku_oh/fall100.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/haku_oh/fall403.gif
+		Attack1  0
+	frame	data/chars/Enemys/haku_oh/fall102.gif
 

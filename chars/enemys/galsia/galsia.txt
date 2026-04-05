@@ -203,9 +203,8 @@ anim fall2
 		Attack1  0
 		offset  78  118
 	frame	data/chars/Enemys/galsia/fall102.gif
+
 #Shock
-
-
 anim fall4
 	loop	0
 	offset	50 77

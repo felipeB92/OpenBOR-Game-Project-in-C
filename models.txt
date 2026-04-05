@@ -24,6 +24,12 @@ noaircancel 2
 # Players
 
 load	Adam_		data/chars/Players/Adam_/Adam_.txt
+know	Adam_Knife	data/chars/Players/Adam_/Adam_Knife.txt
+know	Adam_Kunai	data/chars/Players/Adam_/Adam_Kunai.txt
+know	Adam_pipe	data/chars/Players/Adam_/Adam_pipe.txt
+know	Adam_Sword	data/chars/Players/Adam_/Adam_Sword.txt
+know	AdamSP1		data/chars/Players/Adam_/AdamSP1.txt
+know	AdamSP2		data/chars/Players/Adam_/AdamSP2.txt
 load	_Adam		data/chars/Players/Adam_/_Adam.txt
 
 know	T00	data/chars/Players/T00.txt
@@ -42,11 +48,6 @@ know	Blaze_Kunai	data/chars/Players/Blaze/Blaze_Kunai.txt
 know	Blaze_Sword	data/chars/Players/Blaze/Blaze_Sword.txt
 
 load	Adam		data/chars/Players/Adam/Adam.txt
-know	Adam_pipe	data/chars/Players/Adam/Adam_pipe.txt
-know	Adam_Knife	data/chars/Players/Adam/Adam_Knife.txt
-know	Adam_Kunai	data/chars/Players/Adam/Adam_Kunai.txt
-know	Adam_Sword	data/chars/Players/Adam/Adam_Sword.txt
-
 
 
 load	MAx		data/chars/Players/Max/Max.txt
