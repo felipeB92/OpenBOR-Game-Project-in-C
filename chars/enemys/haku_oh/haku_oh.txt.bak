@@ -193,8 +193,8 @@ anim land
 
 anim grabbed
 	loop	0
-	offset	82 119
-	bbox	72 53 30 68
+	offset	69 119
+	bbox	59 54 23 66
 	delay	30
 	frame	data/chars/Enemys/haku_oh/grabbed00.gif
 
@@ -334,15 +334,10 @@ anim fall9
 anim Death
 	loop	0
 	offset	78 120
-	delay	20
-        hitfx	data/sounds/golpes/Forte.wav
-		Attack1  0
+	delay	5
 	frame	data/chars/Enemys/haku_oh/fall101.gif
-		attack  101
-		hitfx  data/sounds/golpes/Forte.wav
 		offset  65  107
 	frame  data/chars/Enemys/haku_oh/fall100.gif
-		hitfx  data/sounds/golpes/Forte.wav
 	frame  data/chars/Enemys/haku_oh/fall403.gif
 		Attack1  0
 	frame	data/chars/Enemys/haku_oh/fall102.gif

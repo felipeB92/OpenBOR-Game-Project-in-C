@@ -60,17 +60,12 @@ anim walk
 anim Death
 	loop	0
 	offset	160 183
-	delay	20
+	delay	5
         hitfx	data/sounds/golpes/Forte.wav
-		Attack1  0
 	frame	data/chars/Enemys/Signal/fall100.gif
-		attack  101
-		hitfx  data/sounds/golpes/Forte.wav
 		offset  147  171
 	frame  data/chars/Enemys/Signal/fall101.gif
-		hitfx  data/sounds/golpes/Forte.wav
 	frame  data/chars/Enemys/Signal/fall403.gif
-		Attack1  0
 		offset  146  183
 	frame	data/chars/Enemys/Signal/fall102.gif
 

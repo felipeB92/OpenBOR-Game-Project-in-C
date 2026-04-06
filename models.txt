@@ -22,6 +22,7 @@ noaircancel 2
 
 
 # Players
+load	axel_		data/chars/Players/axel_/axel_.txt
 
 load	Adam_		data/chars/Players/Adam_/Adam_.txt
 know	Adam_Knife	data/chars/Players/Adam_/Adam_Knife.txt
@@ -35,7 +36,7 @@ load	_Adam		data/chars/Players/Adam_/_Adam.txt
 know	T00	data/chars/Players/T00.txt
 
 
-load	axel		data/chars/Players/axel/axel.txt
+#load	axel		data/chars/Players/axel/axel.txt
 know	axel_pipe	data/chars/Players/axel/axel_Pipe.txt
 know	axel_Knife	data/chars/Players/axel/axel_Knife.txt
 know	axel_Kunai	data/chars/Players/axel/axel_Kunai.txt

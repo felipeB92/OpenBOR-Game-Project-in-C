@@ -335,3 +335,15 @@ anim fall9
 	delay	999
 		offset  142  181
 	frame	data/chars/Enemys/Signal/fall405.gif
+
+anim Death
+	loop	0
+	offset	160 183
+	delay	5
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/Enemys/Signal/fall100.gif
+		offset  147  171
+	frame  data/chars/Enemys/Signal/fall101.gif
+	frame  data/chars/Enemys/Signal/fall403.gif
+		offset  146  183
+	frame	data/chars/Enemys/Signal/fall102.gif

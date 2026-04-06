@@ -1,5 +1,5 @@
 name	Antonio
-health	300
+health	150
 speed	8
 riseinv				0.4 1
 hostile				player npc
@@ -45,61 +45,9 @@ anim walk
 	delay	14
 	offset	121 194
 	bbox	113 102 37 65
-	jumpframe  6  1  1  0
-	landframe  8
 	frame	data/chars/Enemys/Antonio/walk00.gif
 	frame	data/chars/Enemys/Antonio/walk01.gif
 	frame	data/chars/Enemys/Antonio/walk02.gif
-	frame	data/chars/Enemys/Antonio/walk00.gif
-	frame	data/chars/Enemys/Antonio/walk01.gif
-	frame	data/chars/Enemys/Antonio/walk02.gif
-	frame	data/chars/Enemys/Antonio/walk00.gif
-	frame	data/chars/Enemys/Antonio/walk01.gif
-	frame	data/chars/Enemys/Antonio/walk02.gif
-	frame	data/chars/Enemys/Antonio/walk00.gif
-	frame	data/chars/Enemys/Antonio/walk01.gif
-	frame	data/chars/Enemys/Antonio/walk02.gif
-	frame	data/chars/Enemys/Antonio/walk00.gif
-	frame	data/chars/Enemys/Antonio/walk01.gif
-	frame	data/chars/Enemys/Antonio/walk02.gif
-	frame	data/chars/Enemys/Antonio/walk00.gif
-	frame	data/chars/Enemys/Antonio/walk01.gif
-	frame	data/chars/Enemys/Antonio/walk02.gif
-	frame	data/chars/Enemys/Antonio/walk00.gif
-	frame	data/chars/Enemys/Antonio/walk01.gif
-	frame	data/chars/Enemys/Antonio/walk02.gif
-	frame	data/chars/Enemys/Antonio/walk00.gif
-	frame	data/chars/Enemys/Antonio/walk01.gif
-	frame	data/chars/Enemys/Antonio/walk02.gif
-	frame	data/chars/Enemys/Antonio/walk00.gif
-	frame	data/chars/Enemys/Antonio/walk01.gif
-	frame	data/chars/Enemys/Antonio/walk02.gif
-	frame	data/chars/Enemys/Antonio/walk01.gif
-	frame	data/chars/Enemys/Antonio/walk02.gif
-	frame	data/chars/Enemys/Antonio/walk00.gif
-	frame	data/chars/Enemys/Antonio/walk01.gif
-	frame	data/chars/Enemys/Antonio/walk02.gif
-	frame	data/chars/Enemys/Antonio/walk00.gif
-	frame	data/chars/Enemys/Antonio/walk01.gif
-	frame	data/chars/Enemys/Antonio/walk02.gif
-	frame	data/chars/Enemys/Antonio/walk00.gif
-	frame	data/chars/Enemys/Antonio/walk01.gif
-	frame	data/chars/Enemys/Antonio/walk02.gif
-		attack1  148  131  65  23  1  0  0  0  0  10
-	frame	data/chars/Enemys/Antonio/a101.gif
-		Attack1  0
-	frame	data/chars/Enemys/Antonio/walk01.gif
-	frame	data/chars/Enemys/Antonio/walk02.gif
-
-
-anim get
-	loop	0
-	delay	10
-	offset	160 186
-	frame	data/chars/Enemys/Antonio/get00.gif
-
-
-
 
 
 anim attack1
@@ -180,149 +128,17 @@ anim freespecial2
 
 
 
-
-
-
-anim grabbed
-	loop	0
-	delay	100
-	offset	149 185
-	bbox	129 112 37 73
-	frame	data/chars/Enemys/Antonio/grabbed00.gif
-
-
-
-anim pain
-	loop	0
-	offset	153 183
-	bbox	142 113 29 71
-	delay	15
-	frame	data/chars/Enemys/Antonio/pain00.gif
-	frame	data/chars/Enemys/Antonio/pain01.gif
-
-anim pain2
-	loop	0
-	offset	152 183
-	bbox	137 109 41 74
-	delay	15
-	frame	data/chars/Enemys/Antonio/pain200.gif
-	frame	data/chars/Enemys/Antonio/pain201.gif
-
-anim pain4
-	loop	0
-	offset	153 183
-	bbox	135 111 43 73
-	delay	250
-	frame	data/chars/Enemys/Antonio/pain00.gif
-
-anim pain5
-	loop	0
-	offset	141 181
-	delay	10
-	frame	data/chars/Enemys/Antonio/pain00.gif
-		move  10
-	frame	data/chars/Enemys/Antonio/fall705.gif
-		move  30
-		delay  10
-		offset  141  208
-	frame	data/chars/Enemys/Antonio/fall603.gif
-        quakeframe 4 2 2
-        Sound	data/Sounds/Efeitos/Estrondo.wav
-		offset  141  181
-	frame	data/chars/Enemys/Antonio/fall900.gif
-		move  1
-		movea  5
-	frame  data/chars/Enemys/Antonio/fall900.gif
-		movea  -5
-		Attack1  0
-	frame  data/chars/Enemys/Antonio/fall900.gif
-		delay  50
-		move  0
-		movea  0
-	frame	data/chars/Enemys/Antonio/Fall01.gif
-		delay  10
-		offset  156  184
-	frame	data/chars/Enemys/Antonio/Rise02.gif
-	frame	data/chars/Enemys/Antonio/Rise01.gif
-	frame  data/chars/Enemys/Antonio/Rise02.gif
-
-
 anim death
 	loop	0
 	offset	141 181
 	delay	20
 	jumpframe  0  1  -1  0
 	landframe  2
-	frame	data/chars/Enemys/Antonio/fall701.gif
-	frame  data/chars/Enemys/Antonio/fall00.gif
-	frame	data/chars/Enemys/Antonio/fall01.gif
+	frame	data/chars/Enemys/Antonio/fall100.gif
+	frame  data/chars/Enemys/Antonio/fall101.gif
+		offset  141  183
+	frame	data/chars/Enemys/Antonio/fall102.gif
 
-
-anim death5
-	loop	0
-	offset	141 181
-	delay	10
-	frame	data/chars/Enemys/Antonio/pain00.gif
-		move  10
-	frame	data/chars/Enemys/Antonio/fall705.gif
-		move  30
-		delay  10
-		offset  141  208
-	frame	data/chars/Enemys/Antonio/fall603.gif
-		offset  155  189
-	frame	data/chars/Enemys/Antonio/fall900.gif
-		move  1
-		movea  5
-	frame  data/chars/Enemys/Antonio/fall900.gif
-		movea  -5
-	frame  data/chars/Enemys/Antonio/fall900.gif
-		offset  141  181
-		delay  50
-		move  0
-		movea  0
-	frame	data/chars/Enemys/Antonio/Fall01.gif
-
-
-anim fall
-	loop	0
-	offset	141 181
-	delay	20
-        hitfx	data/sounds/golpes/Forte.wav
-		Attack1  0
-	frame	data/chars/Enemys/Antonio/fall00.gif
-		attack  94
-		hitfx  data/sounds/golpes/Forte.wav
-	frame  data/chars/Enemys/Antonio/fall00.gif
-		Attack1  0
-		delay  40
-	frame	data/chars/Enemys/Antonio/fall01.gif
-
-anim fall3
-	loop	0
-	offset	141 181
-	delay	5
-	jumpframe  0  3  -3  0
-	landframe  8
-		bbox  120  115  36  69
-		Attack1  0
-	frame	data/chars/Enemys/Antonio/fall705.gif
-	frame	data/chars/Enemys/Antonio/fall600.gif
-	frame	data/chars/Enemys/Antonio/fall601.gif
-	frame	data/chars/Enemys/Antonio/fall602.gif
-	frame	data/chars/Enemys/Antonio/fall705.gif
-	frame	data/chars/Enemys/Antonio/fall600.gif
-	frame	data/chars/Enemys/Antonio/fall601.gif
-	frame	data/chars/Enemys/Antonio/fall602.gif
-	frame	data/chars/Enemys/Antonio/fall705.gif
-	frame	data/chars/Enemys/Antonio/fall600.gif
-	frame	data/chars/Enemys/Antonio/fall601.gif
-	frame	data/chars/Enemys/Antonio/fall602.gif
-	frame  data/chars/Enemys/Antonio/fall705.gif
-	frame  data/chars/Enemys/Antonio/fall600.gif
-		Attack1  0
-		bbox  0
-		move  0
-	frame  data/chars/Enemys/Antonio/fall01.gif
 
 anim rise
 	loop	0
@@ -341,4 +157,144 @@ anim land
 	offset	159 185
 	bbox	133 122 47 64
 	frame	data/chars/Enemys/Antonio/get00.gif
+
+anim grabbed
+	loop	0
+	offset	151 185
+	bbox	129 107 37 76
+	delay	30
+	frame	data/chars/Enemys/Antonio/grabbed00.gif
+
+anim pain
+	loop	0
+	offset	157 183
+	bbox	136 115 37 67
+		delay  30
+	frame	data/chars/Enemys/Antonio/pain01.gif
+
+
+anim pain2
+	loop	0
+	offset	160 185
+	bbox	140 108 42 79
+	delay	30
+	frame	data/chars/Enemys/Antonio/pain02.gif
+
+anim pain3
+	loop	0
+	offset	157 184
+	bbox	143 106 37 79
+	jumpframe  0  2  0  0
+	delay	10
+	frame	data/chars/Enemys/Antonio/Pain02.gif
+	frame	data/chars/Enemys/Antonio/fall100.gif
+	frame	data/chars/Enemys/Antonio/Pain01.gif
+
+
+anim fall
+	loop	0
+	offset	123 180
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Antonio/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  146  180
+	frame  data/chars/Enemys/Antonio/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Antonio/fall403.gif
+		Attack1  0
+		offset  132  186
+	frame	data/chars/Enemys/Antonio/fall102.gif
+
+anim fall2
+	loop	0
+	offset	127 181
+	delay	20
+	jumpframe  0  2  -3.5  0
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Antonio/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  145  179
+	frame  data/chars/Enemys/Antonio/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Antonio/fall403.gif
+		Attack1  0
+		offset  141  186
+	frame	data/chars/Enemys/Antonio/fall102.gif
+#Shock
+
+anim fall4
+	loop	0
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Antonio/fall200.gif
+	frame	data/chars/Enemys/Antonio/fall201.gif
+	frame	data/chars/Enemys/Antonio/fall200.gif
+	frame	data/chars/Enemys/Antonio/fall201.gif
+	frame	data/chars/Enemys/Antonio/fall200.gif
+	frame	data/chars/Enemys/Antonio/fall201.gif
+	frame	data/chars/Enemys/Antonio/fall200.gif
+		offset  140  187
+	frame	data/chars/Enemys/Antonio/fall102.gif
+#Burn
+
+anim fall5
+	loop	0
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Antonio/fall300.gif
+	frame	data/chars/Enemys/Antonio/fall301.gif
+	frame	data/chars/Enemys/Antonio/fall302.gif
+	frame	data/chars/Enemys/Antonio/fall300.gif
+	frame	data/chars/Enemys/Antonio/fall301.gif
+	frame	data/chars/Enemys/Antonio/fall302.gif
+	frame	data/chars/Enemys/Antonio/fall300.gif
+	frame	data/chars/Enemys/Antonio/fall301.gif
+	frame	data/chars/Enemys/Antonio/fall302.gif
+		offset  137  185
+	frame	data/chars/Enemys/Antonio/fall102.gif
+
+anim fall8
+	loop	0
+	offset	125 181
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Antonio/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  148  181
+	frame  data/chars/Enemys/Antonio/fall101.gif
+		Attack1  0
+	frame	data/chars/Enemys/Antonio/fall102.gif
+
+anim fall9
+	loop	0
+	offset	158 182
+	delay	999
+		Attack1  0
+	frame	data/chars/Enemys/Antonio/pain01.gif
+	frame	data/chars/Enemys/Antonio/pain02.gif
+	frame	data/chars/Enemys/Antonio/fall400.gif
+		offset  147  166
+	frame	data/chars/Enemys/Antonio/fall401.gif
+		offset  164  184
+	frame	data/chars/Enemys/Antonio/fall402.gif
+		offset  140  177
+	frame	data/chars/Enemys/Antonio/fall403.gif
+	frame	data/chars/Enemys/Antonio/fall404.gif
+		offset  140  187
+	frame	data/chars/Enemys/Antonio/fall405.gif
+	delay	50
+		offset  150  181
+	frame	data/chars/Enemys/Antonio/fall403.gif
+	delay	999
+		offset  140  188
+	frame	data/chars/Enemys/Antonio/fall405.gif
 
