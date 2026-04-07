@@ -23,6 +23,8 @@ noaircancel 2
 
 # Players
 load	axel_		data/chars/Players/axel_/axel_.txt
+know	axelSP1		data/chars/Players/axel_/axelSP1.txt
+know	axelSP2		data/chars/Players/axel_/axelSP2.txt
 
 load	Adam_		data/chars/Players/Adam_/Adam_.txt
 know	Adam_Knife	data/chars/Players/Adam_/Adam_Knife.txt

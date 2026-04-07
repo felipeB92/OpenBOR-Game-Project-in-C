@@ -32,6 +32,7 @@ Load Adam_Sword
 
 Com d d freespecial5
 Com u u freespecial6
+com b A freespecial3
 
 remap data/chars/players/Adam_/idle00.gif data/chars/players/Adam_/map01.gif
 remap data/chars/players/Adam_/idle00.gif data/chars/players/Adam_/map02.gif
@@ -141,6 +142,7 @@ anim attack1
 	offset	20 84
 	bbox	8 8 26 76
 		Attack1  0
+        cancel	0 9 0 b A freespecial7
         Sound	data/sounds/golpes/Soco.wav
         hitfx	data/sounds/golpes/fraco.wav
 	frame	data/chars/players/Adam_/idle00.gif
@@ -156,9 +158,10 @@ anim attack2
 		Attack1  0
         Sound	data/sounds/golpes/Soco.wav
         hitfx	data/sounds/golpes/Medio.wav
+        cancel	0 9 0 b A freespecial7
 	frame	data/chars/players/Adam_/a200.gif
 		attack3  48  17  29  82  7  0  0  0  0  15
-		delay  10
+		delay  15
 	frame	data/chars/players/Adam_/a201.gif
 		delay  6
 		Attack1  0
@@ -171,11 +174,12 @@ anim attack3
 	bbox	37 28 37 62
         Sound	data/sounds/golpes/Chut.wav
         hitfx	data/sounds/golpes/Forte.wav
+        cancel	0 9 0 b A freespecial7
 	frame	data/chars/players/Adam_/a300.gif
 	Sound	data/chars/players/Adam_/a2.wav
 	frame	data/chars/players/Adam_/a301.gif
 		attack2  48  36  61  17  10  1  0  0  0  15
-		delay  15
+		delay  25
 	frame	data/chars/players/Adam_/a302.gif
 
 
@@ -499,17 +503,29 @@ anim land
 	offset	23 84
 	frame	data/chars/players/Adam_/land.gif
 
-anim attackbackward
+anim Freespecial3
  	loop	0
  	delay	10
- 	offset	59 87
- 	bbox	45 2 26 86
+ 	offset	43 87
+ 	bbox	35 3 19 85
         hitfx	data/sounds/golpes/Medio.wav
         Sound	data/sounds/golpes/soco.wav
  	frame	data/chars/players/Adam_/ba100.gif
  	frame	data/chars/players/Adam_/ba101.gif
-		attack1  6  24  54  43  7  1  0  0  0  15
+		attack1  39  19  57  30  7  1  0  0  0  15
  	frame	data/chars/players/Adam_/ba102.gif
+
+anim Freespecial7
+ 	loop	0
+ 	delay	10
+ 	offset	57 88
+ 	bbox	48 2 21 87
+        hitfx	data/sounds/golpes/Medio.wav
+        Sound	data/sounds/golpes/soco.wav
+ 	frame	data/chars/players/Adam_/ba200.gif
+ 	frame	data/chars/players/Adam_/ba201.gif
+		attack1  2  22  61  33  7  1  0  0  0  15
+ 	frame	data/chars/players/Adam_/ba202.gif
 
 anim pain
 	loop	0
