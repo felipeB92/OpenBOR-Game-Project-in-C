@@ -23,6 +23,10 @@ noaircancel 2
 
 # Players
 load	axel_		data/chars/Players/axel_/axel_.txt
+know	axel_Knife	data/chars/Players/axel_/axel_Knife.txt
+know	axel_Kunai	data/chars/Players/axel_/axel_Kunai.txt
+know	axel_pipe	data/chars/Players/axel_/axel_Pipe.txt
+know	axel_sword	data/chars/Players/axel_/axel_sword.txt
 know	axelSP1		data/chars/Players/axel_/axelSP1.txt
 know	axelSP2		data/chars/Players/axel_/axelSP2.txt
 
@@ -39,10 +43,7 @@ know	T00	data/chars/Players/T00.txt
 
 
 #load	axel		data/chars/Players/axel/axel.txt
-know	axel_pipe	data/chars/Players/axel/axel_Pipe.txt
-know	axel_Knife	data/chars/Players/axel/axel_Knife.txt
-know	axel_Kunai	data/chars/Players/axel/axel_Kunai.txt
-know	axel_sword	data/chars/Players/axel/axel_sword.txt
+
 
 load	Blaze		data/chars/Players/Blaze/Blaze.txt
 know	Blaze_pipe	data/chars/Players/Blaze/Blaze_pipe.txt

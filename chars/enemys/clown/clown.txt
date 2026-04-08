@@ -54,47 +54,10 @@ anim walk
 	offset	152 192
 	bbox	138 122 34 64
 		delay  12
-	jumpframe  6  1  1  0
-	landframe  8
 	frame	data/chars/Enemys/Clown/walk100.gif
-	frame	data/chars/Enemys/Clown/walk101.gif
-	frame	data/chars/Enemys/Clown/walk102.gif
-	frame	data/chars/Enemys/Clown/walk100.gif
-	frame	data/chars/Enemys/Clown/walk101.gif
-	frame	data/chars/Enemys/Clown/walk102.gif
-	frame	data/chars/Enemys/Clown/walk100.gif
-	frame	data/chars/Enemys/Clown/walk101.gif
-	frame	data/chars/Enemys/Clown/walk102.gif
-	frame	data/chars/Enemys/Clown/walk100.gif
-	frame	data/chars/Enemys/Clown/walk101.gif
-	frame	data/chars/Enemys/Clown/walk102.gif
-	frame	data/chars/Enemys/Clown/walk100.gif
-	frame	data/chars/Enemys/Clown/walk101.gif
-	frame	data/chars/Enemys/Clown/walk102.gif
-	frame	data/chars/Enemys/Clown/walk100.gif
-	frame	data/chars/Enemys/Clown/walk101.gif
-	frame	data/chars/Enemys/Clown/walk102.gif
-	frame	data/chars/Enemys/Clown/walk100.gif
-	frame	data/chars/Enemys/Clown/walk101.gif
-	frame	data/chars/Enemys/Clown/walk102.gif
-	frame	data/chars/Enemys/Clown/walk100.gif
-	frame	data/chars/Enemys/Clown/walk101.gif
-	frame	data/chars/Enemys/Clown/walk102.gif
-	frame	data/chars/Enemys/Clown/walk100.gif
-	frame	data/chars/Enemys/Clown/walk101.gif
-	frame	data/chars/Enemys/Clown/walk102.gif
-		attack1  155  129  51  22  1  0  0  0  0  10
-	frame	data/chars/Enemys/Clown/a301.gif
-		Attack1  0
 	frame	data/chars/Enemys/Clown/walk101.gif
 	frame	data/chars/Enemys/Clown/walk102.gif
 
-
-anim get
-	loop	0
-	delay	10
-	offset	152 184
-	frame	data/chars/Enemys/Clown/get00.gif
 
 
 anim jump
@@ -142,7 +105,10 @@ anim Freespecial
 	frame	data/chars/Enemys/Clown/a110.gif
 		@cmd  spawn01  "Tocha"  0  0  0
 	frame	data/chars/Enemys/Clown/a111.gif
+	delay	20
 	frame	data/chars/Enemys/Clown/a112.gif
+	delay	45
+	frame	data/chars/Enemys/Clown/a113.gif
 		@cmd  spawn01  "Tocha"  0  0  0
 	frame	data/chars/Enemys/Clown/a112.gif
 
@@ -154,6 +120,22 @@ anim Freespecial
 
 
 
+anim rise
+	loop	0
+	offset	152 184
+	delay	10
+	frame	data/chars/Enemys/Clown/Rise00.gif
+	frame	data/chars/Enemys/Clown/Rise01.gif
+	frame	data/chars/Enemys/Clown/Rise02.gif
+
+
+anim land
+	loop	0
+	delay	25
+	offset	152 184
+	bbox	127 137 31 41
+	frame	data/chars/Enemys/Clown/jumpland00.gif
+
 
 anim grabbed
 	loop	0
@@ -164,59 +146,6 @@ anim grabbed
 
 
 
-anim pain
-	loop	0
-	offset	152 184
-	bbox	129 111 45 74
-	delay	15
-	frame	data/chars/Enemys/Clown/pain00.gif
-	frame	data/chars/Enemys/Clown/pain01.gif
-
-anim pain2
-	loop	0
-	offset	152 184
-	bbox	143 114 31 69
-	delay	15
-	frame	data/chars/Enemys/Clown/pain200.gif
-	frame	data/chars/Enemys/Clown/pain201.gif
-
-anim pain4
-	loop	0
-	offset	152 184
-	bbox	136 122 38 62
-	delay	250
-	frame	data/chars/Enemys/Clown/pain00.gif
-
-anim pain5
-	loop	0
-	offset	152 184
-	delay	10
-	frame	data/chars/Enemys/Clown/pain00.gif
-		move  10
-	frame	data/chars/Enemys/Clown/fall705.gif
-		move  30
-		delay  10
-		offset  152  205
-	frame	data/chars/Enemys/Clown/fall603.gif
-        quakeframe 4 2 2
-        Sound	data/Sounds/Efeitos/Estrondo.wav
-		offset  152  189
-	frame	data/chars/Enemys/Clown/fall900.gif
-		move  1
-		movea  5
-	frame  data/chars/Enemys/Clown/fall900.gif
-		movea  -5
-	frame  data/chars/Enemys/Clown/fall900.gif
-		offset  152  184
-		delay  50
-		move  0
-		movea  0
-		Attack1  0
-	frame	data/chars/Enemys/Clown/Fall01.gif
-		delay  10
-	frame	data/chars/Enemys/Clown/Rise00.gif
-	frame	data/chars/Enemys/Clown/Rise01.gif
-	frame  data/chars/Enemys/Clown/Rise02.gif
 
 
 anim death
@@ -225,91 +154,141 @@ anim death
 	delay	20
 	jumpframe  0  1  -1  0
 	landframe  2
-	frame	data/chars/Enemys/Clown/fall701.gif
-	frame  data/chars/Enemys/Clown/fall00.gif
-	frame	data/chars/Enemys/Clown/fall01.gif
+	frame	data/chars/Enemys/Clown/fall100.gif
+	frame	data/chars/Enemys/Clown/fall101.gif
+	frame	data/chars/Enemys/Clown/fall102.gif
 
-
-anim death5
+anim pain
 	loop	0
-	offset	152 184
+	offset	160 183
+	bbox	148 112 32 71
+		delay  30
+	frame	data/chars/Enemys/Clown/pain01.gif
+
+
+anim pain2
+	loop	0
+	offset	162 184
+	bbox	145 119 34 64
+	delay	30
+	frame	data/chars/Enemys/Clown/pain02.gif
+
+anim pain3
+	loop	0
+	offset	162 183
+	bbox	146 120 29 64
+	jumpframe  0  2  0  0
 	delay	10
-	frame	data/chars/Enemys/Clown/pain00.gif
-		move  10
-	frame	data/chars/Enemys/Clown/fall705.gif
-		move  30
-		delay  10
-		offset  152  207
-	frame	data/chars/Enemys/Clown/fall603.gif
-		offset  152  188
-	frame	data/chars/Enemys/Clown/fall900.gif
-		move  1
-		movea  5
-	frame  data/chars/Enemys/Clown/fall900.gif
-		movea  -5
-	frame  data/chars/Enemys/Clown/fall900.gif
-		delay  50
-		move  0
-		movea  0
-		offset  152  183
-	frame	data/chars/Enemys/Clown/Fall01.gif
+	frame	data/chars/Enemys/Clown/Pain02.gif
+	frame	data/chars/Enemys/Clown/fall100.gif
+	frame	data/chars/Enemys/Clown/Pain01.gif
 
 
 anim fall
 	loop	0
-	offset	152 184
+	offset	146 184
 	delay	20
         hitfx	data/sounds/golpes/Forte.wav
 		Attack1  0
-	frame	data/chars/Enemys/Clown/fall701.gif
-		attack  109
+	frame	data/chars/Enemys/Clown/fall100.gif
+		attack  101
 		hitfx  data/sounds/golpes/Forte.wav
-	frame  data/chars/Enemys/Clown/fall00.gif
+	frame  data/chars/Enemys/Clown/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  149  158
+	frame  data/chars/Enemys/Clown/fall403.gif
 		Attack1  0
-	frame	data/chars/Enemys/Clown/fall01.gif
+		offset  154  182
+	frame	data/chars/Enemys/Clown/fall102.gif
 
-anim fall3
+anim fall2
 	loop	0
-	offset	152 184
-	delay	5
-	jumpframe  0  3  -3  0
-	landframe  8
-		bbox  132  116  43  62
+	offset	136 183
+	delay	20
+	jumpframe  0  2  -3.5  0
+        hitfx	data/sounds/golpes/Forte.wav
 		Attack1  0
-	frame	data/chars/Enemys/Clown/fall705.gif
-	frame	data/chars/Enemys/Clown/fall600.gif
-	frame	data/chars/Enemys/Clown/fall601.gif
-	frame	data/chars/Enemys/Clown/fall602.gif
-	frame	data/chars/Enemys/Clown/fall705.gif
-	frame	data/chars/Enemys/Clown/fall600.gif
-	frame	data/chars/Enemys/Clown/fall601.gif
-	frame	data/chars/Enemys/Clown/fall602.gif
-	frame	data/chars/Enemys/Clown/fall705.gif
-	frame	data/chars/Enemys/Clown/fall600.gif
-	frame	data/chars/Enemys/Clown/fall601.gif
-	frame	data/chars/Enemys/Clown/fall602.gif
-	frame  data/chars/Enemys/Clown/fall705.gif
-	frame  data/chars/Enemys/Clown/fall600.gif
+	frame	data/chars/Enemys/Clown/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Clown/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Clown/fall403.gif
 		Attack1  0
-		bbox  0
-		move  0
-	frame  data/chars/Enemys/Clown/fall01.gif
+		offset  154  184
+	frame	data/chars/Enemys/Clown/fall102.gif
+#Shock
 
-anim rise
+anim fall4
 	loop	0
-	offset	152 184
+	offset	50 77
 	delay	10
-	frame	data/chars/Enemys/Clown/Rise00.gif
-	frame	data/chars/Enemys/Clown/Rise01.gif
-	frame	data/chars/Enemys/Clown/Rise02.gif
+		Attack1  0
+	frame	data/chars/Enemys/Clown/fall200.gif
+	frame	data/chars/Enemys/Clown/fall201.gif
+	frame	data/chars/Enemys/Clown/fall200.gif
+	frame	data/chars/Enemys/Clown/fall201.gif
+	frame	data/chars/Enemys/Clown/fall200.gif
+	frame	data/chars/Enemys/Clown/fall201.gif
+	frame	data/chars/Enemys/Clown/fall200.gif
+		offset  155  185
+	frame	data/chars/Enemys/Clown/fall102.gif
+#Burn
 
-
-
-
-anim land
+anim fall5
 	loop	0
-	delay	25
-	offset	152 184
-	bbox	127 137 31 41
-	frame	data/chars/Enemys/Clown/jumpland00.gif
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Clown/fall300.gif
+	frame	data/chars/Enemys/Clown/fall301.gif
+	frame	data/chars/Enemys/Clown/fall302.gif
+	frame	data/chars/Enemys/Clown/fall300.gif
+	frame	data/chars/Enemys/Clown/fall301.gif
+	frame	data/chars/Enemys/Clown/fall302.gif
+	frame	data/chars/Enemys/Clown/fall300.gif
+	frame	data/chars/Enemys/Clown/fall301.gif
+	frame	data/chars/Enemys/Clown/fall302.gif
+		offset  150  183
+	frame	data/chars/Enemys/Clown/fall102.gif
+
+anim fall8
+	loop	0
+	offset	146 184
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Clown/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Clown/fall101.gif
+		Attack1  0
+		offset  154  184
+	frame	data/chars/Enemys/Clown/fall102.gif
+
+anim fall9
+	loop	0
+	offset	160 182
+	delay	999
+		Attack1  0
+	frame	data/chars/Enemys/Clown/pain01.gif
+	frame	data/chars/Enemys/Clown/pain02.gif
+		offset  157  186
+	frame	data/chars/Enemys/Clown/fall400.gif
+		offset  155  170
+	frame	data/chars/Enemys/Clown/fall401.gif
+		offset  139  181
+	frame	data/chars/Enemys/Clown/fall402.gif
+		offset  150  155
+	frame	data/chars/Enemys/Clown/fall403.gif
+		offset  144  184
+	frame	data/chars/Enemys/Clown/fall404.gif
+		offset  150  181
+	frame	data/chars/Enemys/Clown/fall405.gif
+	delay	50
+		offset  149  158
+	frame	data/chars/Enemys/Clown/fall403.gif
+	delay	999
+		offset  152  182
+	frame	data/chars/Enemys/Clown/fall405.gif
 

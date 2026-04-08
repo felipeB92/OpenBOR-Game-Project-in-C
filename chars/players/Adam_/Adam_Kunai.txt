@@ -146,7 +146,7 @@ anim attack1
         hitfx	data/sounds/Armas/corte.wav
 	frame	data/chars/players/Adam_/Kunai/idle00.gif
 	delay	20
-		attack1  6  22  70  8  12  1  0  0  0  15
+		attack1  7  22  67  9  15  1  0  0  0  15
 	frame	data/chars/players/Adam_/Kunai/a100.gif
 
 
@@ -542,8 +542,8 @@ anim fall2
 		Attack1  0
 		offset  47  55
 	frame	data/chars/players/Adam_/fall102.gif
-
 #Shock
+
 anim fall4
 	loop	0
 	offset	50 77

@@ -47,12 +47,12 @@ anim idle
 	delay	16
 	offset	20 84
 	bbox	10 10 23 75
-	frame   data/chars/players/Adam_/idle00.gif
+	frame   data/chars/players/Adam_/knife/idle00.gif
 @cmd  depost  0
 @cmd  throw  25  5  2  2  0  -1
 @cmd  clearL
-	frame   data/chars/players/Adam_/idle01.gif
-	frame   data/chars/players/Adam_/idle02.gif
+	frame   data/chars/players/Adam_/knife/idle01.gif
+	frame   data/chars/players/Adam_/knife/idle02.gif
 
 
 anim walk
@@ -60,7 +60,7 @@ anim walk
 	delay	12
 	offset	23 84
 	bbox	8 8 28 56
-	frame	data/chars/players/Adam_/walk00.gif
+	frame	data/chars/players/Adam_/knife/walk00.gif
 @cmd  depost  0
 @cmd  throw  25  5  2  2  0  -1
 @cmd  clearL
@@ -143,9 +143,10 @@ anim attack1
 	bbox	8 8 26 76
 		Attack1  0
         Sound	data/sounds/golpes/Soco.wav
-        hitfx	data/sounds/golpes/corte.wav
+        hitfx	data/sounds/Armas/corte.wav
 	frame	data/chars/players/Adam_/knife/idle00.gif
-		attack1  7  21  71  12  12  1  0  0  0  15
+	delay	20
+		attack1  6  22  70  8  12  1  0  0  0  15
 	frame	data/chars/players/Adam_/knife/a100.gif
 
 
@@ -309,11 +310,14 @@ anim Freespecial5
 	frame	data/chars/players/Adam_/ra100.gif
 	frame	data/chars/players/Adam_/ra101.gif
 		offset  50  65
+       @cmd dasher 0.3 0 2
+	delay	5
 	frame	data/chars/players/Adam_/Roll103.gif
 	frame	data/chars/players/Adam_/Roll102.gif
 	frame	data/chars/players/Adam_/Roll101.gif
 	frame	data/chars/players/Adam_/Roll100.gif
 		offset  34  99
+       @cmd dasher 0 0 0
 	frame	data/chars/players/Adam_/ra101.gif
 	frame	data/chars/players/Adam_/ra100.gif
 
@@ -321,15 +325,18 @@ anim Freespecial5
 anim Freespecial6
 	loop	0
 	delay	10
-        offset	36 99
+        offset	38 99
 	frame	data/chars/players/Adam_/ra100.gif
 	frame	data/chars/players/Adam_/ra101.gif
-		offset  51  66
-	frame	data/chars/players/Adam_/Roll100.gif
-	frame	data/chars/players/Adam_/Roll101.gif
-	frame	data/chars/players/Adam_/Roll102.gif
+		offset  50  65
+       @cmd dasher 0.3 0 -2
+	delay	5
 	frame	data/chars/players/Adam_/Roll103.gif
-		offset  36  99
+	frame	data/chars/players/Adam_/Roll102.gif
+	frame	data/chars/players/Adam_/Roll101.gif
+	frame	data/chars/players/Adam_/Roll100.gif
+		offset  34  99
+       @cmd dasher 0 0 0
 	frame	data/chars/players/Adam_/ra101.gif
 	frame	data/chars/players/Adam_/ra100.gif
 
@@ -373,14 +380,16 @@ anim special2
         MpOnly 1
 	loop	0
         custknife Knifet
-        throwframe 2 45
-	delay	5
-	offset	55 90
+        throwframe 2 40
+	delay	8
+	offset	44 99
         hitfx	data/sounds/golpes/forte.wav
 	Sound	data/chars/players/Adam_/Adam2.wav
 	frame	data/chars/players/Adam_/knife/a200.gif
 	frame	data/chars/players/Adam_/knife/a201.gif
 	frame	data/chars/players/Adam_/knife/a202.gif
+		delay  25
+	frame  data/chars/players/Adam_/knife/a202.gif
 
 
 
@@ -535,8 +544,9 @@ anim fall2
 		Attack1  0
 		offset  47  55
 	frame	data/chars/players/Adam_/fall102.gif
+#Shock
 
-anim fall3
+anim fall4
 	loop	0
 	offset	50 77
 	delay	10
@@ -548,8 +558,27 @@ anim fall3
 	frame	data/chars/players/Adam_/fall200.gif
 	frame	data/chars/players/Adam_/fall201.gif
 	frame	data/chars/players/Adam_/fall200.gif
-		offset  47  54
+		offset  50  55
 	frame	data/chars/players/Adam_/fall102.gif
+#Burn
+
+anim fall5
+	loop	0
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/players/Adam_/fall300.gif
+	frame	data/chars/players/Adam_/fall301.gif
+	frame	data/chars/players/Adam_/fall302.gif
+	frame	data/chars/players/Adam_/fall300.gif
+	frame	data/chars/players/Adam_/fall301.gif
+	frame	data/chars/players/Adam_/fall302.gif
+	frame	data/chars/players/Adam_/fall300.gif
+	frame	data/chars/players/Adam_/fall301.gif
+	frame	data/chars/players/Adam_/fall302.gif
+		offset  43  55
+	frame	data/chars/players/Adam_/fall102.gif
+
 
 anim fall9
 	loop	0

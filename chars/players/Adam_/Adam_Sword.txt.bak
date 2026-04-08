@@ -45,8 +45,8 @@ remap data/chars/players/Adam_/idle00.gif data/chars/players/Adam_/map04.gif
 anim idle
 	loop	1
 	delay	16
-	offset	20 84
-	bbox	10 10 23 75
+	offset	74 120
+	bbox	58 46 34 76
 	frame   data/chars/players/Adam_/Sword/a100.gif
 @cmd  depost  0
 @cmd  throw  25  5  2  2  0  -1
@@ -80,8 +80,8 @@ anim get
 anim jump
 	loop	0
 	delay	20
-	offset	26 90
-	bbox	11 5 32 84
+	offset	70 147
+	bbox	60 66 26 81
 	frame	data/chars/players/Adam_/Sword/jump00.gif
 	frame	data/chars/players/Adam_/Sword/jump01.gif
 	frame	data/chars/players/Adam_/Sword/jump00.gif
@@ -137,17 +137,18 @@ anim runjumpattack
 
 anim attack1
 	loop	0
-	delay	6
-	offset	20 84
-	bbox	8 8 26 76
+	delay	5
+	offset	74 120
+	bbox	61 47 26 71
 		Attack1  0
         Sound	data/sounds/golpes/Chut.wav
-        Sound	data/sounds/Armas/Corte.wav
+        hitfx	data/sounds/Armas/Corte.wav
 	frame	data/chars/players/Adam_/Sword/a100.gif
-	delay	20
-		attack1  6  22  70  8  12  1  0  0  0  15
 	frame	data/chars/players/Adam_/Sword/a101.gif
+		attack1  41  21  123  60  12  1  0  0  0  15
 	frame	data/chars/players/Adam_/Sword/a102.gif
+		attack1  78  63  94  19  12  1  0  0  0  15
+		delay  30
 	frame	data/chars/players/Adam_/Sword/a103.gif
 
 
@@ -184,13 +185,12 @@ anim attack3
 anim run
         loop    1
         delay  9
-	offset	50 82
-	bbox	38 19 40 36
+	offset	47 98
+	bbox	39 38 33 59
 	jumpframe  0  0.001  0.001  0
 	landframe  1
         frame	data/chars/players/Adam_/Sword/run00.gif
         frame	data/chars/players/Adam_/Sword/run01.gif
-		bbox  114  95  42  66
         frame	data/chars/players/Adam_/Sword/run02.gif
         frame	data/chars/players/Adam_/Sword/run03.gif
         frame	data/chars/players/Adam_/Sword/run04.gif
@@ -311,11 +311,14 @@ anim Freespecial5
 	frame	data/chars/players/Adam_/ra100.gif
 	frame	data/chars/players/Adam_/ra101.gif
 		offset  50  65
+       @cmd dasher 0.3 0 2
+	delay	5
 	frame	data/chars/players/Adam_/Roll103.gif
 	frame	data/chars/players/Adam_/Roll102.gif
 	frame	data/chars/players/Adam_/Roll101.gif
 	frame	data/chars/players/Adam_/Roll100.gif
 		offset  34  99
+       @cmd dasher 0 0 0
 	frame	data/chars/players/Adam_/ra101.gif
 	frame	data/chars/players/Adam_/ra100.gif
 
@@ -323,18 +326,20 @@ anim Freespecial5
 anim Freespecial6
 	loop	0
 	delay	10
-        offset	36 99
+        offset	38 99
 	frame	data/chars/players/Adam_/ra100.gif
 	frame	data/chars/players/Adam_/ra101.gif
-		offset  51  66
-	frame	data/chars/players/Adam_/Roll100.gif
-	frame	data/chars/players/Adam_/Roll101.gif
-	frame	data/chars/players/Adam_/Roll102.gif
+		offset  50  65
+       @cmd dasher 0.3 0 -2
+	delay	5
 	frame	data/chars/players/Adam_/Roll103.gif
-		offset  36  99
+	frame	data/chars/players/Adam_/Roll102.gif
+	frame	data/chars/players/Adam_/Roll101.gif
+	frame	data/chars/players/Adam_/Roll100.gif
+		offset  34  99
+       @cmd dasher 0 0 0
 	frame	data/chars/players/Adam_/ra101.gif
 	frame	data/chars/players/Adam_/ra100.gif
-
 
 
 
@@ -377,7 +382,7 @@ anim special2
         custknife SwordT
         throwframe 2 40
 	delay	8
-	offset	44 99
+	offset	74 119
         hitfx	data/sounds/golpes/forte.wav
 	Sound	data/chars/players/Adam_/Adam2.wav
 	frame	data/chars/players/Adam_/Sword/a100.gif
@@ -540,7 +545,8 @@ anim fall2
 		offset  47  55
 	frame	data/chars/players/Adam_/fall102.gif
 
-anim fall3
+#Shock
+anim fall4
 	loop	0
 	offset	50 77
 	delay	10
@@ -552,8 +558,27 @@ anim fall3
 	frame	data/chars/players/Adam_/fall200.gif
 	frame	data/chars/players/Adam_/fall201.gif
 	frame	data/chars/players/Adam_/fall200.gif
-		offset  47  54
+		offset  50  55
 	frame	data/chars/players/Adam_/fall102.gif
+#Burn
+
+anim fall5
+	loop	0
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/players/Adam_/fall300.gif
+	frame	data/chars/players/Adam_/fall301.gif
+	frame	data/chars/players/Adam_/fall302.gif
+	frame	data/chars/players/Adam_/fall300.gif
+	frame	data/chars/players/Adam_/fall301.gif
+	frame	data/chars/players/Adam_/fall302.gif
+	frame	data/chars/players/Adam_/fall300.gif
+	frame	data/chars/players/Adam_/fall301.gif
+	frame	data/chars/players/Adam_/fall302.gif
+		offset  43  55
+	frame	data/chars/players/Adam_/fall102.gif
+
 
 anim fall9
 	loop	0

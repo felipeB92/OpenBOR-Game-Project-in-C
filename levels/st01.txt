@@ -1,5 +1,5 @@
 music		data/bgs/St01/03-Fighting-in-the-Street.ogg
-bossmusic	data/music/boss1.bor
+bossmusic	data/music/boss1.ogg
 scrollspeed 0.5#1
 stagenumber 1
 background	data/bgs/st01/Back01.gif

@@ -1,5 +1,5 @@
-music		data/bgs/St02/Lv02.bor
-bossmusic	data/music/boss1.bor
+music		data/bgs/St02/DilapidatedTown.ogg
+bossmusic	data/music/boss1.ogg
 scrollspeed 0.5#1
 stagenumber 2
 background	data/bgs/st02/Back01.gif
@@ -41,6 +41,7 @@ item   cash
 spawn  Lata
 	coords 360  190
 	at  0
+
 
 spawn  Gota
        flip 1
@@ -411,7 +412,7 @@ spawn  fred
 
 spawn  fred
 alias  bounge
-       map 1
+       map 3
        boss 1
 	coords  -100  220
 	at  3361

@@ -1,5 +1,5 @@
-music		data/bgs/St03/Lv03.bor
-bossmusic	data/music/boss1.bor
+music		data/bgs/St03/Moon-Beach.ogg
+bossmusic	data/music/boss1.ogg
 scrollspeed 0.5#1
 stagenumber 3
 background	data/bgs/st03/Back01.gif

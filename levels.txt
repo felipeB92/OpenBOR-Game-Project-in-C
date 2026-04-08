@@ -105,21 +105,18 @@ custfade 100
 
 
 
+
 #z 160 260
 
-#file	data/levels/T.txt
+#file	data/levels/St01.txt
 
-z 160 260
+#next
 
-file	data/levels/St01.txt
+#z 150 260
 
-next
+#file	data/levels/St02.txt
 
-z 150 260
-
-file	data/levels/St02.txt
-
-next
+#next
 
 
 z 185 268

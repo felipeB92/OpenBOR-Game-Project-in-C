@@ -20,8 +20,8 @@ animationscript		data/scripts/drago.c
 #ondrawscript 		data/scripts/player_ondrawscript.c
 
 Load T00
-Load AdamSp1
-Load AdamSp2
+Load AxelSp1
+Load AxelSp2
 
 
 
@@ -385,13 +385,13 @@ anim special
 	Sound	data/chars/players/Axel_/Adam2.wav
 	frame	data/chars/players/Axel_/sp100.gif
 	Sound	data/chars/players/Axel_/a3.wav
-	@cmd  spawn01  "AdamSP1"  0  0  -1
+	@cmd  spawn01  "AxelSP1"  0  0  -1
 		attack2  103  47  62  69  25  1  0  0  0  15
 	frame	data/chars/players/Axel_/sp101.gif
-	@cmd  spawn01  "AdamSP1"  0  0  -1
+	@cmd  spawn01  "AxelSP1"  0  0  -1
 		attack2  51  26  84  67  25  1  0  0  0  15
 	frame	data/chars/players/Axel_/sp102.gif
-	@cmd  spawn01  "AdamSP1"  0  0  -1
+	@cmd  spawn01  "AxelSP1"  0  0  -1
 		attack2  40  28  63  54  25  1  0  0  0  15
 	frame	data/chars/players/Axel_/sp103.gif
 		attack2  23  58  84  52  25  1  0  0  0  15
@@ -408,37 +408,43 @@ anim special2
 	offset	75 125
 	fastattack 1
         hitfx	data/sounds/golpes/forte.wav
-	Sound	data/chars/players/Axel_/Adam2.wav
 	frame	data/chars/players/Axel_/sp200.gif
-		attack1  79  56  41  35  5  0  0  0  0  15
+	@cmd  spawn01  "AxelSP2"  0  0  -1
+		attack1  79  56  41  35  3  0  0  0  0  15
 	frame	data/chars/players/Axel_/sp201.gif
+	Sound	data/chars/players/Axel_/a1.wav
+	@cmd  spawn01  "AxelSP2"  0  0  -1
 		Attack1  0
 	frame	data/chars/players/Axel_/sp202.gif
-		attack1  72  52  46  40  5  0  0  0  0  15
+	@cmd  spawn01  "AxelSP2"  0  0  -1
+		attack1  72  52  46  40  3  0  0  0  0  15
 	frame	data/chars/players/Axel_/sp203.gif
 	frame	data/chars/players/Axel_/sp204.gif
+		Attack1  0
 	frame	data/chars/players/Axel_/sp200.gif
-		attack1  79  56  41  35  5  0  0  0  0  15
+		attack1  79  56  41  35  3  0  0  0  0  15
 	frame	data/chars/players/Axel_/sp201.gif
 		Attack1  0
 	frame	data/chars/players/Axel_/sp202.gif
-		attack1  72  52  46  40  5  0  0  0  0  15
+		attack1  72  52  46  40  3  0  0  0  0  15
 	frame	data/chars/players/Axel_/sp203.gif
 	frame	data/chars/players/Axel_/sp204.gif
+		Attack1  0
 	frame	data/chars/players/Axel_/sp200.gif
-		attack1  79  56  41  35  5  0  0  0  0  15
+		attack1  79  56  41  35  3  0  0  0  0  15
 	frame	data/chars/players/Axel_/sp201.gif
 		Attack1  0
 	frame	data/chars/players/Axel_/sp202.gif
-		attack1  72  52  46  40  5  0  0  0  0  15
+		attack1  72  52  46  40  3  0  0  0  0  15
 	frame	data/chars/players/Axel_/sp203.gif
 	frame	data/chars/players/Axel_/sp204.gif
 		Attack1  0
 	frame	data/chars/players/Axel_/sp205.gif
+	Sound	data/chars/players/Axel_/a3.wav
 	frame	data/chars/players/Axel_/sp206.gif
        @cmd dasher 1 0 0
 	frame	data/chars/players/Axel_/sp207.gif
-		attack2  64  34  29  91  18  1  0  0  0  15
+		attack2  64  34  29  91  10  1  0  0  0  15
 		delay  25
 	frame	data/chars/players/Axel_/sp208.gif
 		delay  10

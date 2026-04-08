@@ -45,8 +45,8 @@ remap data/chars/players/Adam_/idle00.gif data/chars/players/Adam_/map04.gif
 anim idle
 	loop	1
 	delay	16
-	offset	20 84
-	bbox	10 10 23 75
+	offset	76 122
+	bbox	53 47 42 76
 	frame   data/chars/players/Adam_/pipe/a100.gif
 @cmd  depost  0
 @cmd  throw  25  5  2  2  0  -1
@@ -80,10 +80,13 @@ anim get
 anim jump
 	loop	0
 	delay	20
-	offset	26 90
-	bbox	11 5 32 84
+	offset	77 146
+	bbox	66 69 31 72
 	frame	data/chars/players/Adam_/pipe/jump00.gif
+		offset  35  148
+		bbox  17  69  39  83
 	frame	data/chars/players/Adam_/pipe/jump01.gif
+		offset  77  146
 	frame	data/chars/players/Adam_/pipe/jump00.gif
 
 
@@ -138,15 +141,17 @@ anim runjumpattack
 anim attack1
 	loop	0
 	delay	6
-	offset	20 84
-	bbox	8 8 26 76
+	offset	74 119
+	bbox	60 47 30 72
 		Attack1  0
         Sound	data/sounds/golpes/Chut.wav
-        Sound	data/sounds/golpes/Forte.wav
+        hitfx	data/sounds/golpes/Forte.wav
 	frame	data/chars/players/Adam_/pipe/a100.gif
-	delay	20
+	delay	8
 		attack1  6  22  70  8  12  1  0  0  0  15
 	frame	data/chars/players/Adam_/pipe/a101.gif
+		attack2  86  67  90  14  10  1  0  0  0  15
+		delay  25
 	frame	data/chars/players/Adam_/pipe/a102.gif
 
 
@@ -183,13 +188,12 @@ anim attack3
 anim run
         loop    1
         delay  9
-	offset	50 82
-	bbox	38 19 40 36
+	offset	43 108
+	bbox	39 49 32 59
 	jumpframe  0  0.001  0.001  0
 	landframe  1
         frame	data/chars/players/Adam_/pipe/run00.gif
         frame	data/chars/players/Adam_/pipe/run01.gif
-		bbox  114  95  42  66
         frame	data/chars/players/Adam_/pipe/run02.gif
         frame	data/chars/players/Adam_/pipe/run03.gif
         frame	data/chars/players/Adam_/pipe/run04.gif
@@ -310,11 +314,14 @@ anim Freespecial5
 	frame	data/chars/players/Adam_/ra100.gif
 	frame	data/chars/players/Adam_/ra101.gif
 		offset  50  65
+       @cmd dasher 0.3 0 2
+	delay	5
 	frame	data/chars/players/Adam_/Roll103.gif
 	frame	data/chars/players/Adam_/Roll102.gif
 	frame	data/chars/players/Adam_/Roll101.gif
 	frame	data/chars/players/Adam_/Roll100.gif
 		offset  34  99
+       @cmd dasher 0 0 0
 	frame	data/chars/players/Adam_/ra101.gif
 	frame	data/chars/players/Adam_/ra100.gif
 
@@ -322,15 +329,18 @@ anim Freespecial5
 anim Freespecial6
 	loop	0
 	delay	10
-        offset	36 99
+        offset	38 99
 	frame	data/chars/players/Adam_/ra100.gif
 	frame	data/chars/players/Adam_/ra101.gif
-		offset  51  66
-	frame	data/chars/players/Adam_/Roll100.gif
-	frame	data/chars/players/Adam_/Roll101.gif
-	frame	data/chars/players/Adam_/Roll102.gif
+		offset  50  65
+       @cmd dasher 0.3 0 -2
+	delay	5
 	frame	data/chars/players/Adam_/Roll103.gif
-		offset  36  99
+	frame	data/chars/players/Adam_/Roll102.gif
+	frame	data/chars/players/Adam_/Roll101.gif
+	frame	data/chars/players/Adam_/Roll100.gif
+		offset  34  99
+       @cmd dasher 0 0 0
 	frame	data/chars/players/Adam_/ra101.gif
 	frame	data/chars/players/Adam_/ra100.gif
 
@@ -376,7 +386,7 @@ anim special2
         custknife PipeT
         throwframe 3 40
 	delay	8
-	offset	44 99
+	offset	74 119
         hitfx	data/sounds/golpes/forte.wav
 	Sound	data/chars/players/Adam_/Adam2.wav
 	frame	data/chars/players/Adam_/pipe/a100.gif
@@ -540,7 +550,8 @@ anim fall2
 		offset  47  55
 	frame	data/chars/players/Adam_/fall102.gif
 
-anim fall3
+#Shock
+anim fall4
 	loop	0
 	offset	50 77
 	delay	10
@@ -552,8 +563,27 @@ anim fall3
 	frame	data/chars/players/Adam_/fall200.gif
 	frame	data/chars/players/Adam_/fall201.gif
 	frame	data/chars/players/Adam_/fall200.gif
-		offset  47  54
+		offset  50  55
 	frame	data/chars/players/Adam_/fall102.gif
+#Burn
+
+anim fall5
+	loop	0
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/players/Adam_/fall300.gif
+	frame	data/chars/players/Adam_/fall301.gif
+	frame	data/chars/players/Adam_/fall302.gif
+	frame	data/chars/players/Adam_/fall300.gif
+	frame	data/chars/players/Adam_/fall301.gif
+	frame	data/chars/players/Adam_/fall302.gif
+	frame	data/chars/players/Adam_/fall300.gif
+	frame	data/chars/players/Adam_/fall301.gif
+	frame	data/chars/players/Adam_/fall302.gif
+		offset  43  55
+	frame	data/chars/players/Adam_/fall102.gif
+
 
 anim fall9
 	loop	0
