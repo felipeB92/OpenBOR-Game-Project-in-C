@@ -279,6 +279,7 @@ anim Freespecial2
 		delay  25
 @cmd	position 4 35 1 0 -1
 		attack1  90  99  45  31  7  1  0  0  0  15
+		sound  data/sounds/efeitos/solo.wav
 	frame	data/chars/players/Axel_/slam03.gif
 @cmd	position 7 45 1 0 -1
 @cmd  depost  0
@@ -305,6 +306,7 @@ frame	data/chars/players/Axel_/t00.gif
 @cmd	position 4 -40 40 0 -1
 frame	data/chars/players/Axel_/t01.gif
 @cmd	position 4 -40 5 0 -1
+		sound  data/sounds/efeitos/solo.wav
 frame	data/chars/players/Axel_/t02.gif
 	delay	9
 @cmd	position 4 -40 0 0 -1

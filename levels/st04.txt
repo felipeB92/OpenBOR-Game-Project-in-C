@@ -1,5 +1,5 @@
-music		data/bgs/St04/Lv04.bor
-bossmusic	data/music/boss1.bor
+music		data/bgs/St04/Keep-the-Groovin.ogg
+bossmusic	data/music/boss1.ogg
 scrollspeed 0.5#1
 stagenumber 4
 background	data/bgs/st04/Back01.gif

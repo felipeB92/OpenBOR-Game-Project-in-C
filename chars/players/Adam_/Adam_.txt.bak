@@ -518,13 +518,13 @@ anim Freespecial3
 anim Freespecial7
  	loop	0
  	delay	10
- 	offset	43 87
- 	bbox	35 3 19 85
+ 	offset	57 88
+ 	bbox	48 2 21 87
         hitfx	data/sounds/golpes/Medio.wav
         Sound	data/sounds/golpes/soco.wav
  	frame	data/chars/players/Adam_/ba200.gif
  	frame	data/chars/players/Adam_/ba201.gif
-		attack1  39  19  57  30  7  1  0  0  0  15
+		attack1  2  22  61  33  7  1  0  0  0  15
  	frame	data/chars/players/Adam_/ba202.gif
 
 anim pain

@@ -108,15 +108,6 @@ anim attack2
 	frame	data/chars/Enemys/galsia/a102.gif
 
 
-anim death
-	loop	0
-	offset	76 118
-	delay	20
-	jumpframe  0  1  -1  0
-	landframe  2
-	frame	data/chars/Enemys/galsia/fall100.gif
-	frame  data/chars/Enemys/galsia/fall101.gif
-	frame	data/chars/Enemys/galsia/fall102.gif
 
 
 
@@ -277,4 +268,15 @@ anim fall9
 	delay	999
 		offset  74  120
 	frame	data/chars/Enemys/galsia/fall405.gif
+
+anim death
+	loop	0
+	offset	76 118
+	delay	20
+	jumpframe  0  1  -1  0
+	landframe  2
+	frame	data/chars/Enemys/galsia/fall100.gif
+	frame  data/chars/Enemys/galsia/fall101.gif
+	frame	data/chars/Enemys/galsia/fall102.gif
+
 

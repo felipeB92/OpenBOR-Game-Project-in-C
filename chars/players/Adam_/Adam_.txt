@@ -262,6 +262,7 @@ anim Freespecial2
 		delay  25
 @cmd	position 4 35 1 0 -1
 		attack1  51  56  49  29  7  1  0  0  0  15
+		sound  data/sounds/efeitos/solo.wav
 	frame	data/chars/players/Adam_/slam03.gif
 @cmd	position 7 45 1 0 -1
 @cmd  depost  0

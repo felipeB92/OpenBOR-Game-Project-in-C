@@ -1,3 +1,6 @@
+continue 10
+gameovertime 500
+
 colourselect 1
 #nodropen 
 nolost 1 
@@ -30,6 +33,15 @@ know	axel_sword	data/chars/Players/axel_/axel_sword.txt
 know	axelSP1		data/chars/Players/axel_/axelSP1.txt
 know	axelSP2		data/chars/Players/axel_/axelSP2.txt
 
+
+load	Blaze_		data/chars/Players/Blaze_/Blaze_.txt
+know	Blaze_Knife	data/chars/Players/Blaze_/Blaze_Knife.txt
+know	Blaze_Kunai	data/chars/Players/Blaze_/Blaze_Kunai.txt
+know	Blaze_pipe	data/chars/Players/Blaze_/Blaze_pipe.txt
+know	Blaze_Sword	data/chars/Players/Blaze_/Blaze_Sword.txt
+know	BlazeSP1	data/chars/Players/Blaze_/BlazeSp1.txt
+know	BlazeSP2	data/chars/Players/Blaze_/BlazeSp2.txt
+
 load	Adam_		data/chars/Players/Adam_/Adam_.txt
 know	Adam_Knife	data/chars/Players/Adam_/Adam_Knife.txt
 know	Adam_Kunai	data/chars/Players/Adam_/Adam_Kunai.txt
@@ -45,16 +57,13 @@ know	T00	data/chars/Players/T00.txt
 #load	axel		data/chars/Players/axel/axel.txt
 
 
-load	Blaze		data/chars/Players/Blaze/Blaze.txt
-know	Blaze_pipe	data/chars/Players/Blaze/Blaze_pipe.txt
-know	Blaze_Knife	data/chars/Players/Blaze/Blaze_Knife.txt
-know	Blaze_Kunai	data/chars/Players/Blaze/Blaze_Kunai.txt
-know	Blaze_Sword	data/chars/Players/Blaze/Blaze_Sword.txt
-
-load	Adam		data/chars/Players/Adam/Adam.txt
+#load	Blaze		data/chars/Players/Blaze/Blaze.txt
 
 
-load	MAx		data/chars/Players/Max/Max.txt
+#load	Adam		data/chars/Players/Adam/Adam.txt
+
+
+#load	MAx		data/chars/Players/Max/Max.txt
 know	MAx_kunai	data/chars/Players/Max/Max_kunai.txt
 know	MAx_Knife	data/chars/Players/Max/Max_Knife.txt
 know	MAx_Pipe	data/chars/Players/Max/Max_Pipe.txt
@@ -62,41 +71,41 @@ know	MAx_Sword	data/chars/Players/Max/Max_Sword.txt
 
 
 
-load	Skate		data/chars/Players/Skate/Skate.txt
+#load	Skate		data/chars/Players/Skate/Skate.txt
 know	Skate_Kunai	data/chars/Players/Skate/Skate_Kunai.txt
 know	Skate_Knife	data/chars/Players/Skate/Skate_KNife.txt
 know	Skate_Sword	data/chars/Players/Skate/Skate_Sword.txt
 know	Skate_pipe	data/chars/Players/Skate/Skate_pipe.txt
 
-load	Zan		data/chars/Players/Zan/Zan.txt
+#load	Zan		data/chars/Players/Zan/Zan.txt
 know	Zan_powerball	data/chars/Players/Zan/Zan_Powerball.txt
 know	powerball	data/chars/Players/Zan/Powerball.txt
 
-load	_shiva_		data/chars/Players/Shiva/_Shiva_.txt
+#load	_shiva_		data/chars/Players/Shiva/_Shiva_.txt
 
-load	_Roo_		data/chars/Players/Roo/_Roo_.txt
+#load	_Roo_		data/chars/Players/Roo/_Roo_.txt
 
-load	_Rick_		data/chars/Players/Rick/_Rick_.txt
+#load	_Rick_		data/chars/Players/Rick/_Rick_.txt
 know	_RickM_		data/chars/Players/Rick/_RickM_.txt
 
 
-load	Hayate		data/chars/Players/Hayate/Hayate.txt
+#load	Hayate		data/chars/Players/Hayate/Hayate.txt
 know	HayateP01	data/chars/Players/Hayate/HayateP01.txt
 know	HayateP02	data/chars/Players/Hayate/HayateP02.txt
 
 
-load	jessy		data/chars/Players/jessy/jessy.txt
+#load	jessy		data/chars/Players/jessy/jessy.txt
 know	jessy_Pipe	data/chars/Players/jessy/jessy_Pipe.txt
 know	jessy_Knife	data/chars/Players/jessy/jessy_Knife.txt
 know	jessy_Kunai	data/chars/Players/jessy/jessy_Kunai.txt
 know	jessy_Sword	data/chars/Players/jessy/jessy_Sword.txt
 load	jessyP		data/chars/Players/jessy/jessyP.txt
 
-load	Hanzo		data/chars/Players/HAnzo/Hanzo.txt
+#load	Hanzo		data/chars/Players/HAnzo/Hanzo.txt
 know	Hanzo_Shock	data/chars/Players/HAnzo/Hanzo_Shock.txt
 know	ShockT  	data/chars/Players/HAnzo/Shockt.txt
 
-load	Terry		data/chars/Players/Terry/Terry.txt
+#load	Terry		data/chars/Players/Terry/Terry.txt
 know	TerryP		data/chars/Players/Terry/TerryP.txt
 know	PW01		data/chars/Players/Terry/PW01.txt
 know	PW02		data/chars/Players/Terry/PW02.txt

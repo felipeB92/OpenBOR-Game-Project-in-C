@@ -11,7 +11,7 @@ antigrab 2
 JUMPHEIGHT 1 1
 Jumpheight 3
 atchain    1 1 2 3
-weapons				Adam_Knife Adam_Sword Adam_pipe Adam_Kunai
+weapons				Axel_Knife Axel_Sword Axel_pipe Axel_Kunai
 icon	data/chars/players/Axel_/icon.gif 1
 diesound data/sounds/Adamdie.wav
 running	20	3	2	1	1
@@ -25,10 +25,10 @@ Load AxelSp2
 
 
 
-Load Adam_Knife
-Load Adam_Pipe
-Load Adam_Kunai
-Load Adam_Sword
+Load Axel_Knife
+Load Axel_Pipe
+Load Axel_Kunai
+Load Axel_Sword
 
 Com d d freespecial5
 Com u u freespecial6
@@ -209,7 +209,6 @@ anim run
 	landframe  1
         frame	data/chars/players/Axel_/run00.gif
         frame	data/chars/players/Axel_/run01.gif
-		bbox  114  95  42  66
         frame	data/chars/players/Axel_/run02.gif
         frame	data/chars/players/Axel_/run03.gif
         frame	data/chars/players/Axel_/run04.gif

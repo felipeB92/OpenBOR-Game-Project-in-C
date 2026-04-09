@@ -60,6 +60,8 @@ anim walk
 anim Death
 	loop	0
 	offset	160 183
+	jumpframe  0  1  -1  0
+	landframe  2
 	delay	5
         hitfx	data/sounds/golpes/Forte.wav
 	frame	data/chars/Enemys/Signal/fall100.gif

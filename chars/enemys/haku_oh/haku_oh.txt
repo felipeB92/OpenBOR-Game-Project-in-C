@@ -335,6 +335,8 @@ anim Death
 	loop	0
 	offset	78 120
 	delay	5
+	jumpframe  0  1  -1  0
+	landframe  2
 	frame	data/chars/Enemys/haku_oh/fall101.gif
 		offset  65  107
 	frame  data/chars/Enemys/haku_oh/fall100.gif

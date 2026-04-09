@@ -33,10 +33,6 @@ Load Adam_Sword
 Com d d freespecial5
 Com u u freespecial6
 
-remap data/chars/players/Adam_/idle00.gif data/chars/players/Adam_/map01.gif
-remap data/chars/players/Adam_/idle00.gif data/chars/players/Adam_/map02.gif
-remap data/chars/players/Adam_/idle00.gif data/chars/players/Adam_/map03.gif
-remap data/chars/players/Adam_/idle00.gif data/chars/players/Adam_/map04.gif
 
 
 

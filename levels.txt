@@ -91,12 +91,13 @@ e4life			361 51
 
 
 set	    Streets_of_rage
-lives         5
+lives         1
 credits       99
 nosame	      1 1
 continuescore 2
 canSave       2
 custfade 100
+script continue data/scripts/continue.c
 
 
 
@@ -119,11 +120,11 @@ custfade 100
 #next
 
 
-z 185 268
+#z 185 268
 
-file	data/levels/St03.txt
+#file	data/levels/St03.txt
 
-next
+#next
 
 
 z 185 268

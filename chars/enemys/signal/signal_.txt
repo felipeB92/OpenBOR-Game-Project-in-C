@@ -340,6 +340,8 @@ anim Death
 	loop	0
 	offset	160 183
 	delay	5
+	jumpframe  0  1  -1  0
+	landframe  2
         hitfx	data/sounds/golpes/Forte.wav
 	frame	data/chars/Enemys/Signal/fall100.gif
 		offset  147  171

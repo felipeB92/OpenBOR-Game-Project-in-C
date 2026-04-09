@@ -1,0 +1,651 @@
+name	Blaze_Kunai
+health	100
+mp 20
+#mprate 1
+riseinv				0.4 1
+speed	12
+type	None
+gfxshadow	1
+candamage			enemy npc obstacle
+antigrab 2
+JUMPHEIGHT 1 1
+Jumpheight 3
+atchain    1 1 2 3
+weapons				Blaze_Knife Axel_Sword Axel_pipe Axel_Kunai
+icon	data/chars/players/Blaze_/icon.gif 1
+diesound data/sounds/Adamdie.wav
+running	20	3	2	1	1
+#onblockwscript	data/scripts/bounceF.c
+animationscript		data/scripts/drago.c
+#ondrawscript 		data/scripts/player_ondrawscript.c
+
+Load T00
+Load BlazeSP1
+Load BlazeSP2
+load KunaiT
+
+
+
+Load Blaze_Knife
+Load Axel_Pipe
+Load Axel_Kunai
+Load Axel_Sword
+
+Com d d freespecial5
+Com u u freespecial6
+com b A freespecial3
+
+remap data/chars/players/Blaze_/idle00.gif data/chars/players/Blaze_/map01.gif
+remap data/chars/players/Blaze_/idle00.gif data/chars/players/Blaze_/map02.gif
+remap data/chars/players/Blaze_/idle00.gif data/chars/players/Blaze_/map03.gif
+remap data/chars/players/Blaze_/idle00.gif data/chars/players/Blaze_/map04.gif
+
+
+
+
+anim idle
+	loop	1
+	delay	18
+	offset	126 180
+	bbox	113 104 28 77
+	frame   data/chars/players/Blaze_/Kunai/idle00.gif
+@cmd  depost  0
+@cmd  throw  2  5  2  2  0  -1
+@cmd  clearL
+	frame   data/chars/players/Blaze_/Kunai/idle01.gif
+	frame   data/chars/players/Blaze_/Kunai/idle02.gif
+	frame   data/chars/players/Blaze_/Kunai/idle03.gif
+
+
+anim walk
+	loop	1
+	delay	12
+	offset	128 181
+	bbox	119 104 24 78
+	frame	data/chars/players/Blaze_/Kunai/walk00.gif
+@cmd  depost  0
+@cmd  throw  2  5  2  2  0  -1
+@cmd  clearL
+	frame	data/chars/players/Blaze_/Kunai/walk01.gif
+	frame	data/chars/players/Blaze_/Kunai/walk02.gif
+	frame	data/chars/players/Blaze_/Kunai/walk03.gif
+	frame	data/chars/players/Blaze_/Kunai/walk04.gif
+	frame	data/chars/players/Blaze_/Kunai/walk05.gif
+
+
+anim get
+	loop	0
+	delay	12
+	offset	128 180
+	frame	data/chars/players/Blaze_/get00.gif
+
+
+anim jump
+	loop	0
+	delay	20
+	offset	129 182
+	bbox	111 103 33 79
+	frame	data/chars/players/Blaze_/Kunai/jump00.gif
+	frame	data/chars/players/Blaze_/Kunai/jump01.gif
+	frame	data/chars/players/Blaze_/Kunai/jump00.gif
+
+
+anim jumpattack
+	loop	0
+	delay	7
+	offset	131 175
+	bbox	115 105 29 73
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Blaze_/ja100.gif
+		attack1  118  126  39  53  7  1  0  0  0  15
+	frame	data/chars/players/Blaze_/ja101.gif
+		delay  20
+	frame	data/chars/players/Blaze_/ja101.gif
+
+
+
+anim jumpattack2
+	loop	0
+	delay	7
+	offset	128 176
+	bbox	104 113 44 52
+	attack1	122 115 35 49 7 0  0  0  0  15
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Blaze_/ja200.gif
+
+anim jumpforward
+	loop	0
+	delay	7
+	offset	128 191
+	bbox	109 103 33 62
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/soco.wav
+		Attack1  0
+	frame	data/chars/players/Blaze_/ja300.gif
+	frame	data/chars/players/Blaze_/ja301.gif
+		delay  25
+		attack1  124  128  63  39  7  1  0  0  0  15
+	frame	data/chars/players/Blaze_/ja302.gif
+
+
+anim runjumpattack
+	loop	0
+	delay	8
+	offset	122 186
+	bbox	101 105 45 49
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+		Attack1  0
+	frame	data/chars/players/Blaze_/ja301.gif
+		delay  25
+		offset  83  203
+		bbox  66  141  44  37
+		attack1  61  145  95  46  7  1  0  0  0  15
+	frame	data/chars/players/Blaze_/Rja101.gif
+
+
+anim attack1
+	loop	0
+	delay	6
+	offset	128 180
+	bbox	117 108 27 74
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/armas/corte.wav
+	cancel	0 9 0 b A freespecial7
+	frame	data/chars/players/Blaze_/Kunai/a100.gif
+		attack1  128  130  67  17  15  1  0  0  0  15
+	frame	data/chars/players/Blaze_/Kunai/a101.gif
+
+
+anim attack2
+	loop	0
+	delay	4
+	offset	138 181
+	bbox	123 110 29 69
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Medio.wav
+	cancel	0 9 0 b A freespecial7
+	frame	data/chars/players/Blaze_/a200.gif
+		delay  10
+	frame	data/chars/players/Blaze_/a201.gif
+		attack2  146  124  39  15  5  0  0  0  0  15
+	frame	data/chars/players/Blaze_/a202.gif
+		Attack1  0
+		delay  7
+	frame	data/chars/players/Blaze_/a203.gif
+
+anim attack3
+	loop	0
+	delay	5
+	offset	131 179
+	bbox	128 107 22 72
+        Sound	data/sounds/golpes/Chut.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	cancel	0 9 0 b A freespecial7
+	frame	data/chars/players/Blaze_/a300.gif
+	Sound	data/chars/players/Blaze_/a2.wav
+		Attack1  0
+	frame	data/chars/players/Blaze_/a301.gif
+	frame	data/chars/players/Blaze_/a302.gif
+		attack2  139  100  43  81  10  1  0  0  0  15
+		delay  20
+	frame	data/chars/players/Blaze_/a303.gif
+		delay  8
+		Attack1  0
+	frame	data/chars/players/Blaze_/a301.gif
+
+
+anim run
+        loop    1
+        delay  9
+	offset	130 182
+	bbox	122 108 32 58
+	jumpframe  0  0.001  0.001  0
+	landframe  1
+        frame	data/chars/players/Blaze_/Kunai/run00.gif
+        frame	data/chars/players/Blaze_/Kunai/run01.gif
+        frame	data/chars/players/Blaze_/Kunai/run02.gif
+        frame	data/chars/players/Blaze_/Kunai/run03.gif
+        frame	data/chars/players/Blaze_/Kunai/run04.gif
+        frame	data/chars/players/Blaze_/Kunai/run05.gif
+
+
+
+anim grab
+	loop	0
+	delay	100
+	offset	119 182
+	bbox	115 104 22 78
+        cancel	0 9 0 j freespecial
+       	cancel	0 9 0 b A freespecial4
+	frame	data/chars/players/Blaze_/grab00.gif
+
+
+
+
+anim Freespecial
+	loop	0
+	delay	10
+	offset	117 183
+        cancel	6 9 0 a freespecial2
+	cancel  6  9  0  a  freespecial2
+	cancel  6  9  0  a  freespecial2
+        hitfx	data/sounds/golpes/medio.wav
+		@cmd	slamstart
+		@cmd	position 1 30 0 0 -1
+	frame	data/chars/players/Blaze_/grab00.gif
+		@cmd  position  1  30  0  0  -1
+	offset  93  233
+	frame  data/chars/players/Blaze_/vault00.gif
+		@cmd  position  1  30  0  0  -1
+	frame  data/chars/players/Blaze_/vault01.gif
+	frame	data/chars/players/Blaze_/vault02.gif
+	frame	data/chars/players/Blaze_/vault03.gif
+	frame	data/chars/players/Blaze_/vault04.gif
+		offset  184  181
+		delay  40
+		move  60
+		@cmd	position 1 -30 0 0 -1
+	frame  data/chars/players/Blaze_/grab01.gif
+	offset  147  181
+		move  0
+		@cmd	position 1 -30 0 0 -1
+	delay  8
+	frame	data/chars/players/Blaze_/vault05.gif
+	frame	data/chars/players/Blaze_/vault06.gif
+		@cmd	position 8 -30 15 0 -1
+		@cmd  depost  0
+		@cmd  throw  8  -5  2  1  0  -1
+		@cmd  clearL
+        Sound	data/sounds/golpes/medio.wav
+		delay  40
+	frame	data/chars/players/Blaze_/vault07.gif
+		delay  10
+	frame	data/chars/players/Blaze_/vault06.gif
+
+
+anim Freespecial2
+	loop	0
+	delay	10
+	offset	187 180
+        hitfx	data/sounds/efeitos/silencio.wav
+	Sound	data/chars/players/Blaze_/a3.wav
+		Attack1  0
+@cmd	slamstart
+@cmd	position 0 -30 1 0 -1
+	frame	data/chars/players/Blaze_/slam100.gif
+@cmd	position 6 0 20 0 -1
+	frame	data/chars/players/Blaze_/slam101.gif
+@cmd	position 4 30 10 0 -1
+	frame	data/chars/players/Blaze_/slam102.gif
+		delay  25
+@cmd	position 4 35 1 0 -1
+		attack1  200  159  45  25  7  1  0  0  0  15
+		sound  data/sounds/efeitos/solo.wav
+	frame	data/chars/players/Blaze_/slam103.gif
+@cmd	position 7 45 1 0 -1
+@cmd  depost  0
+@cmd  throw  25  5  -1  1  0  -1
+@cmd  clearL
+		delay  10
+		Attack1  0
+		offset  119  180
+	frame  data/chars/players/Blaze_/rise00.gif
+	frame  data/chars/players/Blaze_/rise01.gif
+
+
+
+anim freespecial4
+	loop	0
+	delay	12
+	offset	118 181
+	Sound	data/chars/players/Blaze_/a1.wav
+@cmd	slamstart
+@cmd	position 0 30 1 0 -1
+frame	data/chars/players/Blaze_/Grab00.gif
+@cmd	position 1 30 1 0 -1
+frame	data/chars/players/Blaze_/t00.gif
+@cmd	position 2 25 10 0 -1
+frame	data/chars/players/Blaze_/t01.gif
+@cmd	position 3 -10 30 0 -1
+		attack1  84  124  46  28  12  1  0  0  0  15
+frame	data/chars/players/Blaze_/t02.gif
+@cmd	position 4 -40 25 0 -1
+		attack1  48  118  27  50  12  1  0  0  0  15
+frame	data/chars/players/Blaze_/t03.gif
+@cmd	position 8 -70 25 0 -1
+@cmd  depost  0
+@cmd  throw  20  -2  2  1  0  -1
+@cmd  clearL
+		attack1  -2  121  49  36  12  1  0  0  0  15
+frame	data/chars/players/Blaze_/t03.gif
+	delay	12
+		attack1  -31  121  49  36  12  1  0  0  0  15
+frame	data/chars/players/Blaze_/t05.gif
+
+
+anim Freespecial5
+	loop	0
+	delay	10
+        offset	126 180
+	frame	data/chars/players/Blaze_/roll100.gif
+       @cmd dasher 0.3 0 2
+	delay	5
+	frame	data/chars/players/Blaze_/Roll101.gif
+	frame	data/chars/players/Blaze_/Roll102.gif
+	frame	data/chars/players/Blaze_/Roll103.gif
+	frame	data/chars/players/Blaze_/Roll104.gif
+       @cmd dasher 0 0 0
+	frame	data/chars/players/Blaze_/Roll105.gif
+
+
+anim Freespecial6
+	loop	0
+	delay	10
+        offset	125 180
+	frame	data/chars/players/Blaze_/roll100.gif
+       @cmd dasher 0.3 0 -2
+	delay	5
+	frame	data/chars/players/Blaze_/Roll101.gif
+	frame	data/chars/players/Blaze_/Roll102.gif
+	frame	data/chars/players/Blaze_/Roll103.gif
+	frame	data/chars/players/Blaze_/Roll104.gif
+       @cmd dasher 0 0 0
+	frame	data/chars/players/Blaze_/Roll105.gif
+
+
+
+
+anim rise
+	loop	0
+	offset	126 179
+	delay	10
+	frame	data/chars/players/Blaze_/Rise00.gif
+@cmd  depost  0
+@cmd  throw  25  5  2  2  0  -1
+@cmd  clearL
+	frame	data/chars/players/Blaze_/Rise01.gif
+	frame	data/chars/players/Blaze_/Rise02.gif
+
+anim special
+        energycost 20 1
+        MpOnly 1
+	loop	0
+	delay	8
+	offset	123 180
+        hitfx	data/sounds/golpes/forte.wav
+	frame	data/chars/players/Blaze_/sp100.gif
+	Sound	data/chars/players/Blaze_/a2.wav
+	@cmd  spawn01  "BlazeSP1"  0  0  -1
+		Attack1  0
+	frame	data/chars/players/Blaze_/sp101.gif
+	@cmd  spawn01  "BlazeSP1"  0  0  -1
+	frame	data/chars/players/Blaze_/sp102.gif
+	@cmd  spawn01  "BlazeSP1"  0  0  -1
+		attack2  101  86  74  96  20  1  0  0  0  15
+	frame	data/chars/players/Blaze_/sp103.gif
+		attack2  93  87  60  95  25  1  0  0  0  15
+	frame	data/chars/players/Blaze_/sp104.gif
+		attack2  88  95  59  70  25  1  0  0  0  15
+	frame	data/chars/players/Blaze_/sp105.gif
+		attack2  76  119  85  60  25  1  0  0  0  15
+	frame	data/chars/players/Blaze_/sp106.gif
+	frame	data/chars/players/Blaze_/sp107.gif
+		Attack1  0
+	frame	data/chars/players/Blaze_/sp108.gif
+
+anim special2
+        energycost 0 1
+        MpOnly 1
+	loop	0
+	delay	5
+        custknife Kunait
+        throwframe 1 40
+	offset	126 181
+	fastattack 1
+        hitfx	data/sounds/golpes/forte.wav
+	frame	data/chars/players/Blaze_/Kunai/a102.gif
+	frame	data/chars/players/Blaze_/Kunai/a103.gif
+		delay  25
+	frame	data/chars/players/Blaze_/Kunai/a103.gif
+
+
+
+
+anim runattack
+ 	loop	0
+ 	delay	8
+	fastattack 1
+ 	offset	123 180
+ 	bbox	95 119 53 66
+		move  0
+        hitfx	data/sounds/golpes/forte.wav
+		Attack1  0
+       @cmd dasher 1 0 0
+ 	frame	data/chars/players/Blaze_/ra100.gif
+ 	frame	data/chars/players/Blaze_/ra101.gif
+		attack3  84  113  84  54  5  0  0  0  0  15
+		bbox  0
+ 	frame	data/chars/players/Blaze_/ra102.gif
+	Sound	data/chars/players/Blaze_/Ra.wav
+		Attack1  0
+ 	frame	data/chars/players/Blaze_/ra103.gif
+       @cmd dasher 0 0 0
+ 	frame	data/chars/players/Blaze_/ra104.gif
+ 	frame	data/chars/players/Blaze_/ra105.gif
+		attack2  98  98  66  86  10  1  0  0  0  15
+ 	frame	data/chars/players/Blaze_/ra106.gif
+		delay  8
+	frame  data/chars/players/Blaze_/ra107.gif
+		delay  16
+		Attack1  0
+	frame  data/chars/players/Blaze_/land.gif
+
+
+
+anim grabattack
+	loop	0
+	offset	112 182
+	bbox	109 104 30 79
+	delay	10
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+		Attack1  0
+	frame	data/chars/players/Blaze_/Grab00.gif
+		attack1  122  109  31  73  5  0  0  0  0  15
+	frame	data/chars/players/Blaze_/ga100.gif
+
+anim grabattack2
+	loop	0
+	offset	118 180
+	delay	10
+	quakeframe 3 2 2
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+		Attack1  0
+		@cmd	slamstart
+		@cmd	position 0 30 1 0 -1
+	frame	data/chars/players/Blaze_/ga200.gif
+		@cmd	position 5 30 40 0 -1
+	frame	data/chars/players/Blaze_/ga201.gif
+		@cmd	position 5 30 20 0 -1
+	frame	data/chars/players/Blaze_/ga202.gif
+@cmd	position 7 40 1 0 -1
+@cmd  depost  0
+@cmd  throw  12  -2  -2  1  0  -1
+@cmd  clearL
+	sound  data/sounds/efeitos/solo.wav
+	frame	data/chars/players/Blaze_/ga203.gif
+	frame	data/chars/players/Blaze_/ga204.gif
+	frame	data/chars/players/Blaze_/ga205.gif
+
+
+anim land
+	loop	0
+	delay	25
+	offset	122 182
+		bbox  115  117  27  67
+	frame	data/chars/players/Blaze_/land.gif
+
+anim freespecial7
+ 	loop	0
+ 	delay	10
+ 	offset	122 180
+ 	bbox	118 119 28 54
+        hitfx	data/sounds/golpes/Medio.wav
+        Sound	data/sounds/golpes/soco.wav
+ 	frame	data/chars/players/Blaze_/ba100.gif
+		attack1  111  151  43  33  5  1  0  0  0  15
+ 	frame	data/chars/players/Blaze_/ba101.gif
+		attack1  74  160  68  23  5  1  0  0  0  15
+ 	frame	data/chars/players/Blaze_/ba102.gif
+		attack1  91  157  55  25  5  1  0  0  0  15
+ 	frame	data/chars/players/Blaze_/ba103.gif
+		attack1  122  161  38  22  5  1  0  0  0  15
+ 	frame	data/chars/players/Blaze_/ba104.gif
+		Attack1  0
+ 	frame	data/chars/players/Blaze_/ba105.gif
+
+anim freespecial3
+ 	loop	0
+ 	delay	10
+ 	offset	179 180
+ 	bbox	165 123 27 56
+        hitfx	data/sounds/golpes/Medio.wav
+        Sound	data/sounds/golpes/soco.wav
+ 	frame	data/chars/players/Blaze_/ba200.gif
+		attack1  152  152  42  32  5  1  0  0  0  15
+ 	frame	data/chars/players/Blaze_/ba201.gif
+		attack1  166  157  64  26  5  1  0  0  0  15
+ 	frame	data/chars/players/Blaze_/ba202.gif
+		attack1  159  158  50  23  5  1  0  0  0  15
+ 	frame	data/chars/players/Blaze_/ba203.gif
+		Attack1  0
+ 	frame	data/chars/players/Blaze_/ba204.gif
+ 	frame	data/chars/players/Blaze_/ba205.gif
+
+anim pain
+	loop	0
+	offset	124 180
+	bbox	113 113 30 69
+	delay	15
+	frame	data/chars/players/Blaze_/pain1.gif
+	frame	data/chars/players/Blaze_/pain2.gif
+
+
+anim pain2
+	loop	0
+	offset	132 180
+	bbox	109 116 36 67
+	delay	15
+	frame	data/chars/players/Blaze_/pain2.gif
+	frame	data/chars/players/Blaze_/pain1.gif
+
+anim pain3
+	loop	0
+	offset	131 182
+	bbox	107 116 43 64
+	jumpframe  0  2  0  0
+	delay	10
+	frame	data/chars/players/Blaze_/Pain2.gif
+		bbox  104  118  63  50
+	frame	data/chars/players/Blaze_/fall100.gif
+	frame	data/chars/players/Blaze_/Pain1.gif
+
+
+anim fall
+	loop	0
+	offset	121 175
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/players/Blaze_/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  139  185
+	frame  data/chars/players/Blaze_/fall101.gif
+		Attack1  0
+		offset  117  179
+	frame	data/chars/players/Blaze_/fall102.gif
+
+anim fall2
+	loop	0
+	offset	120 174
+	delay	20
+	jumpframe  0  2  -3.5  0
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/players/Blaze_/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  140  187
+	frame  data/chars/players/Blaze_/fall101.gif
+		Attack1  0
+		offset  118  179
+	frame	data/chars/players/Blaze_/fall102.gif
+#Shock
+
+anim fall4
+	loop	0
+	offset	129 175
+	delay	10
+		Attack1  0
+	frame	data/chars/players/Blaze_/fall200.gif
+	frame	data/chars/players/Blaze_/fall201.gif
+	frame	data/chars/players/Blaze_/fall200.gif
+	frame	data/chars/players/Blaze_/fall201.gif
+	frame	data/chars/players/Blaze_/fall200.gif
+	frame	data/chars/players/Blaze_/fall201.gif
+	frame	data/chars/players/Blaze_/fall200.gif
+		offset  121  179
+	frame	data/chars/players/Blaze_/fall102.gif
+#Burn
+
+anim fall5
+	loop	0
+	offset	133 182
+	delay	10
+		Attack1  0
+	frame	data/chars/players/Blaze_/fall300.gif
+	frame	data/chars/players/Blaze_/fall301.gif
+	frame	data/chars/players/Blaze_/fall302.gif
+	frame	data/chars/players/Blaze_/fall300.gif
+	frame	data/chars/players/Blaze_/fall301.gif
+	frame	data/chars/players/Blaze_/fall302.gif
+	frame	data/chars/players/Blaze_/fall300.gif
+	frame	data/chars/players/Blaze_/fall301.gif
+	frame	data/chars/players/Blaze_/fall302.gif
+		offset  118  179
+	frame	data/chars/players/Blaze_/fall102.gif
+
+anim fall9
+	loop	0
+	offset	122 179
+	delay	999
+		Attack1  0
+	frame	data/chars/players/Blaze_/pain1.gif
+		offset  127  179
+	frame	data/chars/players/Blaze_/pain2.gif
+		offset  118  179
+	frame	data/chars/players/Blaze_/fall400.gif
+		offset  160  135
+	frame	data/chars/players/Blaze_/fall401.gif
+		offset  178  181
+	frame	data/chars/players/Blaze_/fall402.gif
+		offset  143  196
+	frame	data/chars/players/Blaze_/fall403.gif
+		offset  122  174
+	frame	data/chars/players/Blaze_/fall404.gif
+		offset  122  180
+	frame	data/chars/players/Blaze_/fall405.gif
+	delay	50
+		offset  143  198
+	frame	data/chars/players/Blaze_/fall403.gif
+	delay	999
+		offset  118  179
+	frame	data/chars/players/Blaze_/fall405.gif
+

@@ -41,8 +41,6 @@ spawn  chuva
 	at  0
 
 
-
-
 spawn  Galsia
 health 50
 	coords  560  191
