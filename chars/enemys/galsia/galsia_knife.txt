@@ -96,3 +96,11 @@ anim land
 	bbox	61 74 44 45
 	frame	data/chars/Enemys/galsia/Knife/jumpland00.gif
 
+anim Pain8
+	loop	0
+	delay	15
+	offset	76 118
+	jumpframe  0  2  1  0
+	frame	data/chars/Enemys/galsia/jump00.gif
+	frame	data/chars/Enemys/galsia/jump00.gif
+

@@ -3,7 +3,7 @@ bossmusic	data/music/boss1.bor
 scrollspeed 1#1
 #bgspeed 30 
 stagenumber 7
-direction Up
+direction Down
 background	data/bgs/st07/Back01.gif
 panel		data/bgs/St07/pn01.gif
 frontpanel      data/bgs/St07/Front01.gif

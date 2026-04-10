@@ -1,0 +1,291 @@
+name	galsia_
+health	100
+speed	8
+type	Enemy
+falldie 1
+gfxshadow	1
+JUMPHEIGHT 1 1
+hostile				player npc
+candamage			player npc obstacle
+Jumpheight 3
+atchain    1 1 2
+weapons				galsia_knife none None none
+icon	data/chars/Enemys/galsia/icon.gif 1
+diesound data/voices/die1.wav
+running	20	3	3	1	1
+
+##LOADS
+load				galsia_knife
+
+
+remap data/chars/Enemys/galsia/idle00.gif data/chars/Enemys/galsia/alter1.gif
+remap data/chars/Enemys/galsia/idle00.gif data/chars/Enemys/galsia/alter2.gif
+remap data/chars/Enemys/galsia/idle00.gif data/chars/Enemys/galsia/alter3.gif
+remap data/chars/Enemys/galsia/idle00.gif data/chars/Enemys/galsia/alter4.gif
+remap data/chars/Enemys/galsia/idle00.gif data/chars/Enemys/galsia/alter5.gif
+
+anim	spawn
+	loop	0
+	delay	300
+	offset	76 118
+	bbox	65 43 38 75
+	frame	data/chars/Enemys/galsia/rise02.gif
+	frame	data/chars/Enemys/galsia/rise02.gif
+	frame	data/chars/Enemys/galsia/rise02.gif
+
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	76 118
+	bbox	65 43 38 75
+	frame   data/chars/Enemys/galsia/idle00.gif
+	frame   data/chars/Enemys/galsia/idle01.gif
+	frame   data/chars/Enemys/galsia/idle02.gif
+
+
+anim walk
+	loop	1
+	delay	14
+	offset	76 118
+	bbox	70 47 34 74
+	frame	data/chars/Enemys/Galsia/walk00.gif
+	frame	data/chars/Enemys/Galsia/walk01.gif
+	frame	data/chars/Enemys/Galsia/walk02.gif
+
+anim get
+	loop	0
+	delay	10
+	offset	76 118
+	frame	data/chars/Enemys/galsia/get00.gif
+
+
+anim jump
+	loop	0
+	delay	30
+	offset	76 118
+	bbox	62 48 44 68
+	frame	data/chars/Enemys/galsia/jump00.gif
+
+anim jumpattack
+	loop	0
+	delay	6
+        range   60 100
+	offset	76 118
+	bbox	62 48 44 68
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/Enemys/galsia/jumpatk00.gif
+	delay	30
+		attack1  73  52  41  44  10  1  0  0  0  20
+	frame	data/chars/Enemys/galsia/jumpatk01.gif
+
+
+
+anim attack1
+	loop	0
+	delay	6
+        Range 0 60
+	offset	76 118
+	bbox	66 47 27 72
+		Attack1  0
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/Enemys/galsia/a100.gif
+		attack1  87  54  48  22  7
+		offset  84  120
+	frame	data/chars/Enemys/galsia/a101.gif
+	frame	data/chars/Enemys/galsia/a102.gif
+
+anim attack2
+	loop	0
+	delay	6
+        Range 0 60
+	offset	76 118
+	bbox	65 47 28 71
+		Attack1  0
+        hitfx	data/sounds/golpes/MEdio.wav
+	frame	data/chars/Enemys/galsia/a100.gif
+		attack1  89  57  44  17  7  1  0  0  0  20
+	frame	data/chars/Enemys/galsia/a101.gif
+	frame	data/chars/Enemys/galsia/a102.gif
+
+
+anim death
+	loop	0
+	offset	76 118
+	delay	20
+	jumpframe  0  1  -1  0
+	landframe  2
+	frame	data/chars/Enemys/galsia/fall100.gif
+	frame  data/chars/Enemys/galsia/fall101.gif
+	frame	data/chars/Enemys/galsia/fall102.gif
+
+
+
+anim rise
+	loop	0
+	offset	76 118
+	delay	10
+	frame	data/chars/Enemys/galsia/Rise00.gif
+	frame	data/chars/Enemys/galsia/Rise01.gif
+	frame	data/chars/Enemys/galsia/Rise02.gif
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	76 118
+	bbox	69 78 34 44
+	frame	data/chars/Enemys/galsia/jumpland00.gif
+
+
+anim grabbed
+	loop	0
+	offset	82 119
+	bbox	72 53 30 68
+	delay	30
+	frame	data/chars/Enemys/galsia/grabbed00.gif
+
+anim pain
+	loop	0
+	offset	82 120
+	bbox	62 58 42 61
+		delay  30
+	frame	data/chars/Enemys/galsia/pain01.gif
+
+
+anim pain2
+	loop	0
+	offset	75 119
+	bbox	60 54 29 64
+	delay	30
+	frame	data/chars/Enemys/galsia/pain02.gif
+
+anim pain3
+	loop	0
+	offset	79 119
+	bbox	63 52 26 67
+	jumpframe  0  2  0  0
+	delay	10
+	frame	data/chars/Enemys/galsia/Pain02.gif
+	frame	data/chars/Enemys/galsia/fall100.gif
+	frame	data/chars/Enemys/galsia/Pain01.gif
+
+
+anim fall
+	loop	0
+	offset	78 120
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/galsia/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/galsia/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/galsia/fall403.gif
+		Attack1  0
+	frame	data/chars/Enemys/galsia/fall102.gif
+
+anim fall2
+	loop	0
+	offset	78 118
+	delay	20
+	jumpframe  0  2  -3.5  0
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/galsia/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/galsia/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/galsia/fall403.gif
+		Attack1  0
+		offset  78  118
+	frame	data/chars/Enemys/galsia/fall102.gif
+#Shock
+
+
+anim fall4
+	loop	0
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/galsia/fall200.gif
+	frame	data/chars/Enemys/galsia/fall201.gif
+	frame	data/chars/Enemys/galsia/fall200.gif
+	frame	data/chars/Enemys/galsia/fall201.gif
+	frame	data/chars/Enemys/galsia/fall200.gif
+	frame	data/chars/Enemys/galsia/fall201.gif
+	frame	data/chars/Enemys/galsia/fall200.gif
+		offset  75  119
+	frame	data/chars/Enemys/galsia/fall102.gif
+#Burn
+
+anim fall5
+	loop	0
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/galsia/fall300.gif
+	frame	data/chars/Enemys/galsia/fall301.gif
+	frame	data/chars/Enemys/galsia/fall302.gif
+	frame	data/chars/Enemys/galsia/fall300.gif
+	frame	data/chars/Enemys/galsia/fall301.gif
+	frame	data/chars/Enemys/galsia/fall302.gif
+	frame	data/chars/Enemys/galsia/fall300.gif
+	frame	data/chars/Enemys/galsia/fall301.gif
+	frame	data/chars/Enemys/galsia/fall302.gif
+		offset  76  120
+	frame	data/chars/Enemys/galsia/fall102.gif
+
+anim fall8
+	loop	0
+	offset	76 119
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/galsia/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/galsia/fall101.gif
+		Attack1  0
+		offset  76  121
+	frame	data/chars/Enemys/galsia/fall102.gif
+
+anim fall9
+	loop	0
+	offset	81 119
+	delay	999
+		Attack1  0
+	frame	data/chars/Enemys/galsia/pain01.gif
+	frame	data/chars/Enemys/galsia/pain02.gif
+		offset  77  119
+	frame	data/chars/Enemys/galsia/fall400.gif
+		offset  113  105
+	frame	data/chars/Enemys/galsia/fall401.gif
+		offset  89  135
+	frame	data/chars/Enemys/galsia/fall402.gif
+		offset  80  113
+	frame	data/chars/Enemys/galsia/fall403.gif
+		offset  103  110
+	frame	data/chars/Enemys/galsia/fall404.gif
+		offset  72  119
+	frame	data/chars/Enemys/galsia/fall405.gif
+	delay	50
+		offset  76  115
+	frame	data/chars/Enemys/galsia/fall403.gif
+	delay	999
+		offset  74  120
+	frame	data/chars/Enemys/galsia/fall405.gif
+
+anim Pain8
+	loop	0
+	delay	30
+	offset	76 118
+	jumpframe  0  2  1  0
+	frame	data/chars/Enemys/galsia/jump00.gif
+	frame	data/chars/Enemys/galsia/jump00.gif
+

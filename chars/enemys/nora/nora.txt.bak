@@ -168,34 +168,35 @@ anim land
 
 anim grabbed
 	loop	0
-	offset	82 119
-	bbox	72 53 30 68
+	offset	131 191
+	bbox	121 123 31 70
 	delay	30
 	frame	data/chars/Enemys/Nora/grabbed00.gif
 
 anim pain
 	loop	0
-	offset	82 120
-	bbox	62 58 42 61
+	offset	138 190
+	bbox	121 122 35 70
 		delay  30
 	frame	data/chars/Enemys/Nora/pain01.gif
 
 
 anim pain2
 	loop	0
-	offset	75 119
-	bbox	60 54 29 64
+	offset	131 192
+	bbox	112 126 35 66
 	delay	30
 	frame	data/chars/Enemys/Nora/pain02.gif
 
 anim pain3
 	loop	0
-	offset	79 119
-	bbox	63 52 26 67
+	offset	131 190
+	bbox	109 120 35 71
 	jumpframe  0  2  0  0
 	delay	10
 	frame	data/chars/Enemys/Nora/Pain02.gif
 	frame	data/chars/Enemys/Nora/fall100.gif
+		bbox  126  120  26  73
 	frame	data/chars/Enemys/Nora/Pain01.gif
 
 
@@ -217,7 +218,7 @@ anim fall
 
 anim fall2
 	loop	0
-	offset	78 118
+	offset	115 188
 	delay	20
 	jumpframe  0  2  -3.5  0
         hitfx	data/sounds/golpes/Forte.wav
@@ -225,11 +226,12 @@ anim fall2
 	frame	data/chars/Enemys/Nora/fall100.gif
 		attack  101
 		hitfx  data/sounds/golpes/Forte.wav
+		offset  151  178
 	frame  data/chars/Enemys/Nora/fall101.gif
 		hitfx  data/sounds/golpes/Forte.wav
 	frame  data/chars/Enemys/Nora/fall403.gif
 		Attack1  0
-		offset  78  118
+		offset  130  189
 	frame	data/chars/Enemys/Nora/fall102.gif
 #Shock
 
@@ -263,46 +265,65 @@ anim fall5
 	frame	data/chars/Enemys/Nora/fall300.gif
 	frame	data/chars/Enemys/Nora/fall301.gif
 	frame	data/chars/Enemys/Nora/fall302.gif
-		offset  76  120
+		offset  125  189
 	frame	data/chars/Enemys/Nora/fall102.gif
 
 anim fall8
 	loop	0
-	offset	76 119
+	offset	116 189
 	delay	20
         hitfx	data/sounds/golpes/Forte.wav
 		Attack1  0
 	frame	data/chars/Enemys/Nora/fall100.gif
 		attack  101
 		hitfx  data/sounds/golpes/Forte.wav
+		offset  152  178
 	frame  data/chars/Enemys/Nora/fall101.gif
 		Attack1  0
-		offset  76  121
+		offset  125  189
 	frame	data/chars/Enemys/Nora/fall102.gif
 
 anim fall9
 	loop	0
-	offset	81 119
+	offset	136 192
 	delay	999
 		Attack1  0
 	frame	data/chars/Enemys/Nora/pain01.gif
+		offset  129  192
 	frame	data/chars/Enemys/Nora/pain02.gif
-		offset  77  119
+		offset  137  192
 	frame	data/chars/Enemys/Nora/fall400.gif
-		offset  113  105
+		offset  151  152
 	frame	data/chars/Enemys/Nora/fall401.gif
-		offset  89  135
+		offset  167  177
 	frame	data/chars/Enemys/Nora/fall402.gif
-		offset  80  113
+		offset  145  177
 	frame	data/chars/Enemys/Nora/fall403.gif
-		offset  103  110
+		offset  115  189
 	frame	data/chars/Enemys/Nora/fall404.gif
-		offset  72  119
+		offset  129  189
 	frame	data/chars/Enemys/Nora/fall405.gif
 	delay	50
-		offset  76  115
+		offset  156  178
 	frame	data/chars/Enemys/Nora/fall403.gif
 	delay	999
-		offset  74  120
+		offset  123  189
 	frame	data/chars/Enemys/Nora/fall405.gif
+
+anim Death
+	loop	0
+	offset	151 192
+	delay	7
+	frame	data/chars/Enemys/Nora/Rise03.gif
+	frame	data/chars/Enemys/Nora/Rise02.gif
+	frame  data/chars/Enemys/Nora/Rise01.gif
+
+
+anim Pain8
+	loop	0
+	delay	30
+	offset	137 185
+	jumpframe  0  2  1  0
+	frame	data/chars/Enemys/nora/jump00.gif
+	frame	data/chars/Enemys/nora/jump00.gif
 

@@ -37,29 +37,27 @@ at			0
 
 
 
-
-
 spawn  Galsia
 map    2
-health 70
+health 50
 	coords  -100  191
 	at  300
 
 spawn  Signal
 map    2
-health 70
+health 50
 	coords  500 230
 	at  300
 
 spawn  galsia
 map    2
-health 70
+health 50
 	coords  500 245
 	at  450
 
 spawn  galsia
 map    2
-health 70
+health 50
 	coords  -200 245
 	at  450
 
@@ -80,7 +78,7 @@ at		600
 
 spawn  Galsia
 map    2
-health 70
+health 50
 	coords  500  191
 	at  600
 
@@ -121,7 +119,7 @@ spawn  Knife
 
 spawn  Galsia
 map    2
-health 70
+health 50
 	coords  600  191
 	at  800
 
@@ -133,19 +131,19 @@ item   Cash
 
 spawn  Galsia
 map    2
-health 70
+health 50
 	coords  600  200
 	at  1050
 
 spawn  Galsia
 map    2
-health 70
+health 50
 	coords  -50  191
 	at  1265
 
 spawn  Galsia
 map    2
-health 70
+health 50
 	coords  600  190
 	at  1265
 
@@ -157,7 +155,7 @@ item   apple
 
 spawn  Galsia
 map    2
-health 70
+health 50
 	coords  -100  190
 	at  1265
 
@@ -173,7 +171,7 @@ at		1350
 
 spawn  Galsia
 map    2
-health 70
+health 50
 	coords  -100  190
 	at  1350
 
@@ -183,7 +181,7 @@ spawn  Knife
 
 spawn  Galsia
 map    2
-health 70
+health 50
 	coords  600  190
 	at  1350
 
@@ -274,7 +272,7 @@ group		4 4
 at		2700
 
 spawn  signal
-health 70
+health 50
 	coords  500 190
 	at  2700
 
@@ -300,7 +298,7 @@ spawn  Knife
 
 spawn  Galsia
 map    2
-health 70
+health 50
 	coords  -50  195
 	at  2900
 
@@ -315,13 +313,13 @@ map    2
 
 spawn  Galsia
 map    2
-health 70
+health 50
 	coords  550  195
 	at  2950
 
 spawn  Galsia
 map    2
-health 70
+health 50
 	coords  550  200
 	at  2950
 
@@ -332,7 +330,7 @@ spawn  Knife
 
 spawn  Galsia
 map    2
-health 70
+health 50
 	coords  550  250
 	at  3300
 
@@ -344,7 +342,7 @@ at		3400
 
 spawn  Galsia
 map    2
-health 70
+health 50
 	coords  550  250
 	at  3400
 
@@ -355,7 +353,7 @@ spawn  Knife
 
 spawn  Galsia
 map    2
-health 70
+health 50
 	coords  550  190
 	at  3400
 
@@ -400,26 +398,26 @@ boss   1
 
 spawn  Galsia
 map    2
-health 70
+health 50
 	coords  550  190
 	at  3550
 
 spawn  Galsia
 map    2
-health 70
+health 50
 	coords -100  250
 	at  3550
 
 
 spawn  Galsia
 map    2
-health 70
+health 50
 	coords  550  190
 	at  3550
 
 spawn  Galsia
 map    2
-health 70
+health 50
 	coords  -100  250
 	at  3550
 

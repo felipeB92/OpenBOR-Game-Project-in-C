@@ -2,9 +2,7 @@ name			Esteira01s
 type			none
 shadow			0
 antigravity 	100
-onblockwscript	data/scripts/bounceF.c
-animationscript 	data/scripts/ani0020.h
-ondrawscript 		data/scripts/player_ondrawscript.c
+animationscript		data/scripts/drago.c
 
 anim idle
 	loop	0
@@ -13,5 +11,5 @@ anim idle
 	@cmd dasher 0.2 0 0
 	platform 52 -10 288 226 32 0.001
 	frame	data/bgs/st207/empty.gif
-	@cmd suicide
+	@cmd killentity getlocalvar("self")
 	frame	data/bgs/st207/empty.gif

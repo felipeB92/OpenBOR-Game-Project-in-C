@@ -106,7 +106,6 @@ anim Freespecial
         hitfx	data/sounds/golpes/medio.wav
 	frame	data/chars/Enemys/Signal/a200.gif
 		attack1  145  155  53  37  7  1  0  0  7  20
-       	delay	5
 	@cmd dasher 2 0 0
 		bbox  108  151  51  37
 	frame	data/chars/Enemys/Signal/a201.gif
@@ -321,4 +320,12 @@ anim fall9
 	delay	999
 		offset  142  181
 	frame	data/chars/Enemys/Signal/fall405.gif
+
+anim Pain8
+	loop	0
+	delay	15
+	offset	158 174
+	jumpframe  0  2  1  0
+	frame	data/chars/Enemys/Signal/jump00.gif
+	frame	data/chars/Enemys/Signal/jump00.gif
 

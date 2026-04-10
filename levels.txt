@@ -91,7 +91,7 @@ e4life			361 51
 
 
 set	    Streets_of_rage
-lives         1
+lives         5
 credits       99
 nosame	      1 1
 continuescore 2
@@ -103,7 +103,6 @@ script continue data/scripts/continue.c
 
 
 #------------------
-
 
 
 
@@ -127,25 +126,25 @@ script continue data/scripts/continue.c
 #next
 
 
-z 185 268
+#z 185 268
 
-file	data/levels/St04.txt
+#file	data/levels/St04.txt
 
-next
-
-
-z 185 268
-
-file	data/levels/St05.txt
-
-next
+#next
 
 
-z 185 268
+#z 185 268
 
-file	data/levels/St06.txt
+#file	data/levels/St05.txt
 
-next
+#next
+
+
+#z 185 268
+
+#file	data/levels/St06.txt
+
+#next
 
 
 z 185 268

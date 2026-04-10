@@ -281,3 +281,11 @@ anim fall9
 		offset  74  120
 	frame	data/chars/Enemys/galsia/fall405.gif
 
+anim Pain8
+	loop	0
+	delay	15
+	offset	76 118
+	jumpframe  0  2  1  0
+	frame	data/chars/Enemys/galsia/jump00.gif
+	frame	data/chars/Enemys/galsia/jump00.gif
+

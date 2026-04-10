@@ -1,5 +1,5 @@
 name	Fred
-health	150
+health	200
 speed	14
 riseinv				0.4 1
 hostile				player npc
@@ -18,9 +18,7 @@ atchain    1 2
 icon	data/chars/Enemys/Fred/icon.gif 1
 diesound data/voices/bossdie1.wav
 running	20	3	3	1	1
-onblockwscript	data/scripts/bounceF.c
-animationscript 	data/scripts/ani0020.h
-ondrawscript 		data/scripts/player_ondrawscript.c
+animationscript		data/scripts/drago.c
 
 ##LOADS
 
@@ -353,28 +351,28 @@ anim death
 	delay	20
 	jumpframe  0  1  -1  0
 	landframe  2
-	frame	data/chars/Enemys/Fred/fall100.gif
 	frame	data/chars/Enemys/Fred/fall101.gif
+	frame	data/chars/Enemys/Fred/fall100.gif
 	frame	data/chars/Enemys/Fred/fall102.gif
 
 anim pain
 	loop	0
-	offset	160 183
-	bbox	148 112 32 71
+	offset	146 183
+	bbox	123 112 39 72
 		delay  30
 	frame	data/chars/Enemys/Fred/pain01.gif
 
 
 anim pain2
 	loop	0
-	offset	162 184
-	bbox	145 119 34 64
+	offset	149 184
+	bbox	137 112 32 70
 	delay	30
 	frame	data/chars/Enemys/Fred/pain02.gif
 
 anim pain3
 	loop	0
-	offset	162 183
+	offset	150 183
 	bbox	146 120 29 64
 	jumpframe  0  2  0  0
 	delay	10
@@ -385,19 +383,19 @@ anim pain3
 
 anim fall
 	loop	0
-	offset	146 184
+	offset	151 181
 	delay	20
         hitfx	data/sounds/golpes/Forte.wav
 		Attack1  0
-	frame	data/chars/Enemys/Fred/fall100.gif
+	frame	data/chars/Enemys/Fred/fall101.gif
 		attack  101
 		hitfx  data/sounds/golpes/Forte.wav
-	frame  data/chars/Enemys/Fred/fall101.gif
+	frame  data/chars/Enemys/Fred/fall100.gif
 		hitfx  data/sounds/golpes/Forte.wav
-		offset  149  158
+		offset  140  172
 	frame  data/chars/Enemys/Fred/fall403.gif
 		Attack1  0
-		offset  154  182
+		offset  137  184
 	frame	data/chars/Enemys/Fred/fall102.gif
 
 anim fall2
@@ -407,14 +405,15 @@ anim fall2
 	jumpframe  0  2  -3.5  0
         hitfx	data/sounds/golpes/Forte.wav
 		Attack1  0
-	frame	data/chars/Enemys/Fred/fall100.gif
+	frame	data/chars/Enemys/Fred/fall101.gif
 		attack  101
 		hitfx  data/sounds/golpes/Forte.wav
-	frame  data/chars/Enemys/Fred/fall101.gif
+	frame  data/chars/Enemys/Fred/fall100.gif
 		hitfx  data/sounds/golpes/Forte.wav
+		offset  142  174
 	frame  data/chars/Enemys/Fred/fall403.gif
 		Attack1  0
-		offset  154  184
+		offset  138  184
 	frame	data/chars/Enemys/Fred/fall102.gif
 #Shock
 
@@ -430,7 +429,7 @@ anim fall4
 	frame	data/chars/Enemys/Fred/fall200.gif
 	frame	data/chars/Enemys/Fred/fall201.gif
 	frame	data/chars/Enemys/Fred/fall200.gif
-		offset  155  185
+		offset  137  185
 	frame	data/chars/Enemys/Fred/fall102.gif
 #Burn
 
@@ -448,7 +447,7 @@ anim fall5
 	frame	data/chars/Enemys/Fred/fall300.gif
 	frame	data/chars/Enemys/Fred/fall301.gif
 	frame	data/chars/Enemys/Fred/fall302.gif
-		offset  150  183
+		offset  137  184
 	frame	data/chars/Enemys/Fred/fall102.gif
 
 anim fall8
@@ -457,37 +456,45 @@ anim fall8
 	delay	20
         hitfx	data/sounds/golpes/Forte.wav
 		Attack1  0
-	frame	data/chars/Enemys/Fred/fall100.gif
+	frame	data/chars/Enemys/Fred/fall101.gif
 		attack  101
 		hitfx  data/sounds/golpes/Forte.wav
-	frame  data/chars/Enemys/Fred/fall101.gif
+	frame  data/chars/Enemys/Fred/fall100.gif
 		Attack1  0
-		offset  154  184
+		offset  138  185
 	frame	data/chars/Enemys/Fred/fall102.gif
 
 anim fall9
 	loop	0
-	offset	160 182
+	offset	144 182
 	delay	999
 		Attack1  0
 	frame	data/chars/Enemys/Fred/pain01.gif
 	frame	data/chars/Enemys/Fred/pain02.gif
-		offset  157  186
 	frame	data/chars/Enemys/Fred/fall400.gif
-		offset  155  170
+		offset  155  162
 	frame	data/chars/Enemys/Fred/fall401.gif
-		offset  139  181
+		offset  159  183
 	frame	data/chars/Enemys/Fred/fall402.gif
-		offset  150  155
+		offset  136  168
 	frame	data/chars/Enemys/Fred/fall403.gif
 		offset  144  184
 	frame	data/chars/Enemys/Fred/fall404.gif
-		offset  150  181
+		offset  137  183
 	frame	data/chars/Enemys/Fred/fall405.gif
 	delay	50
-		offset  149  158
+		offset  145  161
 	frame	data/chars/Enemys/Fred/fall403.gif
 	delay	999
-		offset  152  182
+		offset  133  182
 	frame	data/chars/Enemys/Fred/fall405.gif
+
+
+anim Pain8
+	loop	0
+	delay	30
+	offset	157 190
+	jumpframe  0  2  1  0
+	frame	data/chars/Enemys/fred/jump00.gif
+	frame	data/chars/Enemys/fred/jump00.gif
 

@@ -1,19 +1,23 @@
-name			KunaiT #THROWNED
-type			none
-subtype			weapon
+name			KunaiT
+type			projectile
 nolife			1
-lifespan		4
+health          1
+speed           10
+velocity        10 0 0
+antigravity     100
+gravity         0
+friction        0
+lifespan		60
 remove			1
-gfxshadow		1 1
 noatflash 		1
-flash			noflash
+subject_to_gravity 0
 
 anim idle
 	loop	1
 	delay	1
-	offset	-25 27
+	offset	25 27
+	move    3
 	bbox 	16 25 19 3
 	hitfx	data/sounds/Cutter.wav
-	attack 16 25 19 3 25 1 0 0 0 12
+	attack  16 25 19 3 25 1 0 0 0 12
 	frame	data/chars/armas/Kunai07.gif
-

@@ -5,6 +5,7 @@ nolife			1
 typeshot 		0
 weapnum			4
 shootnum 		1
+speed 50
 counter			4
 gfxshadow		1 1
 offscreenkill	1000

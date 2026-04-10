@@ -1,5 +1,5 @@
 name	Bob
-health	400
+health	200
 speed	5
 riseinv				0.4 1
 hostile				player npc
@@ -15,9 +15,8 @@ mprate  			5
 icon	data/chars/Enemys/Bob/icon.gif 1
 diesound data/voices/bossdie1.wav
 running	20	3	3	1	1
-onblockwscript	data/scripts/bounceF.c
-animationscript 	data/scripts/ani0020.h
-ondrawscript 		data/scripts/player_ondrawscript.c
+
+animationscript		data/scripts/drago.c
 
 ##LOADS
 
@@ -39,7 +38,6 @@ anim	spawn
 	delay	5
 	offset	152 201
 	bbox	134 128 39 74
-	frame   data/chars/Enemys/Bob/fs201.gif
 	frame   data/chars/Enemys/Bob/fs202.gif
 	frame   data/chars/Enemys/Bob/fs203.gif
 	frame   data/chars/Enemys/Bob/fs204.gif
@@ -47,6 +45,7 @@ anim	spawn
 	frame   data/chars/Enemys/Bob/fs202.gif
 	frame   data/chars/Enemys/Bob/fs203.gif
 	frame   data/chars/Enemys/Bob/fs204.gif
+	frame   data/chars/Enemys/Bob/fs201.gif
 
 
 
@@ -56,7 +55,6 @@ anim idle
 	delay	16
 	offset	152 201
 	bbox	132 131 40 71
-		#drawmethod  350  350  0  0  0  -1  -1
 	frame   data/chars/Enemys/Bob/idle00.gif
 
 
@@ -65,48 +63,12 @@ anim walk
 	delay	14
 	offset	152 201
 	bbox	131 131 40 70
-		#drawmethod  350  350  0  0  0  -1  -1
-	jumpframe  6  1  1  0
-	landframe  8
 	frame	data/chars/Enemys/Bob/walk00.gif
 	frame	data/chars/Enemys/Bob/walk01.gif
 	frame	data/chars/Enemys/Bob/walk02.gif
 	frame	data/chars/Enemys/Bob/walk00.gif
-	frame	data/chars/Enemys/Bob/walk01.gif
-	frame	data/chars/Enemys/Bob/walk02.gif
-	frame	data/chars/Enemys/Bob/walk00.gif
-	frame	data/chars/Enemys/Bob/walk01.gif
-	frame	data/chars/Enemys/Bob/walk02.gif
-	frame	data/chars/Enemys/Bob/walk00.gif
-	frame	data/chars/Enemys/Bob/walk01.gif
-	frame	data/chars/Enemys/Bob/walk02.gif
-	frame	data/chars/Enemys/Bob/walk00.gif
-	frame	data/chars/Enemys/Bob/walk01.gif
-	frame	data/chars/Enemys/Bob/walk02.gif
-	frame	data/chars/Enemys/Bob/walk00.gif
-	frame	data/chars/Enemys/Bob/walk01.gif
-	frame	data/chars/Enemys/Bob/walk02.gif
-	frame	data/chars/Enemys/Bob/walk00.gif
-	frame	data/chars/Enemys/Bob/walk01.gif
-	frame	data/chars/Enemys/Bob/walk02.gif
-	frame	data/chars/Enemys/Bob/walk00.gif
-	frame	data/chars/Enemys/Bob/walk01.gif
-	frame	data/chars/Enemys/Bob/walk02.gif
-	frame	data/chars/Enemys/Bob/walk00.gif
-	frame	data/chars/Enemys/Bob/walk01.gif
-	frame	data/chars/Enemys/Bob/walk02.gif
-		attack1  153  135  43  23  1  0  0  0  0  10
-	frame	data/chars/Enemys/Bob/a101.gif
-		Attack1  0
-	frame	data/chars/Enemys/Bob/walk01.gif
-	frame	data/chars/Enemys/Bob/walk02.gif
 
-anim get
-	loop	0
-	delay	10
-	offset	152 201
-		#drawmethod  350  350  0  0  0  -1  -1
-	frame	data/chars/Enemys/Bob/get00.gif
+
 
 
 anim jump
@@ -438,156 +400,6 @@ anim	special2
 
 
 
-
-
-
-
-
-
-anim grabbed
-	loop	0
-	delay	100
-	offset	87 121
-	bbox	64 39 52 79
-		#drawmethod  350  350  0  0  0  -1  -1
-	frame	data/chars/Enemys/Bob/Pain200.gif
-
-
-
-anim pain
-	loop	0
-	offset	87 122
-	bbox	62 53 39 69
-	delay	15
-		#drawmethod  350  350  0  0  0  -1  -1
-	frame	data/chars/Enemys/Bob/pain00.gif
-	frame	data/chars/Enemys/Bob/pain01.gif
-
-anim pain2
-	loop	0
-	offset	86 120
-	bbox	66 40 41 79
-	delay	15
-		#drawmethod  350  350  0  0  0  -1  -1
-	frame	data/chars/Enemys/Bob/pain200.gif
-	frame	data/chars/Enemys/Bob/pain201.gif
-
-anim pain4
-	loop	0
-	offset	86 120
-	bbox	63 52 34 70
-	delay	250
-		#drawmethod  350  350  0  0  0  -1  -1
-	frame	data/chars/Enemys/Bob/pain00.gif
-
-anim pain5
-	loop	0
-	offset	86 120
-	delay	10
-		#drawmethod  350  350  0  0  0  -1  -1
-	frame	data/chars/Enemys/Bob/pain00.gif
-		move  10
-	frame	data/chars/Enemys/Bob/fall705.gif
-		move  30
-		delay  10
-	frame	data/chars/Enemys/Bob/fall603.gif
-        quakeframe 4 2 2
-        Sound	data/Sounds/Efeitos/Estrondo.wav
-	frame	data/chars/Enemys/Bob/fall900.gif
-		move  1
-		movea  5
-	frame  data/chars/Enemys/Bob/fall900.gif
-		movea  -5
-	frame  data/chars/Enemys/Bob/fall900.gif
-		delay  50
-		move  0
-		movea  0
-		Attack1  0
-		offset  139  176
-	frame	data/chars/Enemys/Bob/Fall01.gif
-		delay  10
-		offset  139  201
-	frame	data/chars/Enemys/Bob/Rise00.gif
-	frame	data/chars/Enemys/Bob/Rise01.gif
-	frame  data/chars/Enemys/Bob/Rise02.gif
-
-
-anim death
-	loop	0
-	offset	81 122
-	delay	20
-	jumpframe  0  1  -1  0
-	landframe  2
-		#drawmethod  350  350  0  0  0  -1  -1
-	frame	data/chars/Enemys/Bob/fall701.gif
-	frame  data/chars/Enemys/Bob/fall00.gif
-		offset  139  170
-	frame	data/chars/Enemys/Bob/fall01.gif
-
-
-anim death5
-	loop	0
-	offset	83 120
-	delay	10
-		#drawmethod  350  350  0  0  0  -1  -1
-	frame	data/chars/Enemys/Bob/pain00.gif
-		move  10
-		offset  83  125
-	frame	data/chars/Enemys/Bob/fall705.gif
-		move  30
-		delay  10
-	frame	data/chars/Enemys/Bob/fall603.gif
-		Attack1  0
-	frame	data/chars/Enemys/Bob/fall900.gif
-		move  1
-		movea  5
-	frame  data/chars/Enemys/Bob/fall900.gif
-		movea  -5
-	frame  data/chars/Enemys/Bob/fall900.gif
-		delay  50
-		move  0
-		movea  0
-		Attack1  0
-		offset  135  173
-	frame	data/chars/Enemys/Bob/Fall01.gif
-
-
-anim fall
-	loop	0
-	offset	83 122
-	delay	20
-        hitfx	data/sounds/golpes/Forte.wav
-		Attack1  0
-		#drawmethod  350  350  0  0  0  -1  -1
-	frame	data/chars/Enemys/Bob/fall701.gif
-		attack  41
-		hitfx  data/sounds/golpes/Forte.wav
-	frame  data/chars/Enemys/Bob/fall00.gif
-		Attack1  0
-		offset  138  175
-	frame	data/chars/Enemys/Bob/fall01.gif
-
-anim fall3
-	loop	0
-	offset	99 127
-	delay	5
-	jumpframe  0  2  -2  0
-	landframe  5
-		bbox  59  46  51  76
-		Attack1  0
-		#drawmethod  350  350  0  0  0  -1  -1
-	frame	data/chars/Enemys/Bob/fall705.gif
-	frame	data/chars/Enemys/Bob/fall600.gif
-	frame	data/chars/Enemys/Bob/fall601.gif
-	frame	data/chars/Enemys/Bob/fall602.gif
-	frame	data/chars/Enemys/Bob/fall705.gif
-	frame	data/chars/Enemys/Bob/fall600.gif
-		Attack1  0
-		bbox  0
-		move  0
-		offset  145  175
-	frame  data/chars/Enemys/Bob/fall01.gif
-
 anim rise
 	loop	0
 	offset	152 201
@@ -607,4 +419,169 @@ anim land
 	bbox	127 125 43 71
 		#drawmethod  350  350  0  0  0  -1  -1
 	frame	data/chars/Enemys/Bob/Get00.gif
+
+anim grabbed
+	loop	0
+	offset	82 119
+	bbox	72 53 30 68
+	delay	30
+	frame	data/chars/Enemys/Bob/grabbed00.gif
+
+anim pain
+	loop	0
+	offset	82 120
+	bbox	62 58 42 61
+		delay  30
+	frame	data/chars/Enemys/Bob/pain01.gif
+
+
+anim pain2
+	loop	0
+	offset	75 119
+	bbox	60 54 29 64
+	delay	30
+	frame	data/chars/Enemys/Bob/pain02.gif
+
+anim pain3
+	loop	0
+	offset	79 119
+	bbox	63 52 26 67
+	jumpframe  0  2  0  0
+	delay	10
+	frame	data/chars/Enemys/Bob/Pain02.gif
+	frame	data/chars/Enemys/Bob/fall100.gif
+	frame	data/chars/Enemys/Bob/Pain01.gif
+
+
+anim fall
+	loop	0
+	offset	51 120
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Bob/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  98  105
+	frame  data/chars/Enemys/Bob/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  83  121
+	frame  data/chars/Enemys/Bob/fall403.gif
+		Attack1  0
+		offset  140  175
+	frame	data/chars/Enemys/Bob/fall102.gif
+
+anim fall2
+	loop	0
+	offset	49 118
+	delay	20
+	jumpframe  0  2  -3.5  0
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Bob/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  96  105
+	frame  data/chars/Enemys/Bob/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  82  122
+	frame  data/chars/Enemys/Bob/fall403.gif
+		Attack1  0
+		offset  141  176
+	frame	data/chars/Enemys/Bob/fall102.gif
+#Shock
+
+anim fall4
+	loop	0
+	offset	64 124
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Bob/fall200.gif
+	frame	data/chars/Enemys/Bob/fall201.gif
+	frame	data/chars/Enemys/Bob/fall200.gif
+	frame	data/chars/Enemys/Bob/fall201.gif
+	frame	data/chars/Enemys/Bob/fall200.gif
+	frame	data/chars/Enemys/Bob/fall201.gif
+	frame	data/chars/Enemys/Bob/fall200.gif
+		offset  137  174
+	frame	data/chars/Enemys/Bob/fall102.gif
+#Burn
+
+anim fall5
+	loop	0
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Bob/fall300.gif
+	frame	data/chars/Enemys/Bob/fall301.gif
+	frame	data/chars/Enemys/Bob/fall302.gif
+	frame	data/chars/Enemys/Bob/fall300.gif
+	frame	data/chars/Enemys/Bob/fall301.gif
+	frame	data/chars/Enemys/Bob/fall302.gif
+	frame	data/chars/Enemys/Bob/fall300.gif
+	frame	data/chars/Enemys/Bob/fall301.gif
+	frame	data/chars/Enemys/Bob/fall302.gif
+		offset  139  174
+	frame	data/chars/Enemys/Bob/fall102.gif
+
+anim fall8
+	loop	0
+	offset	48 119
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Bob/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  99  104
+	frame  data/chars/Enemys/Bob/fall101.gif
+		Attack1  0
+		offset  135  177
+	frame	data/chars/Enemys/Bob/fall102.gif
+
+anim fall9
+	loop	0
+	offset	81 119
+	delay	999
+		Attack1  0
+	frame	data/chars/Enemys/Bob/pain01.gif
+	frame	data/chars/Enemys/Bob/pain02.gif
+		offset  77  127
+	frame	data/chars/Enemys/Bob/fall400.gif
+		offset  103  105
+	frame	data/chars/Enemys/Bob/fall401.gif
+		offset  97  136
+	frame	data/chars/Enemys/Bob/fall402.gif
+		offset  83  120
+	frame	data/chars/Enemys/Bob/fall403.gif
+		offset  39  113
+	frame	data/chars/Enemys/Bob/fall404.gif
+		offset  129  173
+	frame	data/chars/Enemys/Bob/fall405.gif
+	delay	50
+		offset  86  121
+	frame	data/chars/Enemys/Bob/fall403.gif
+	delay	999
+		offset  146  172
+	frame	data/chars/Enemys/Bob/fall405.gif
+
+anim death
+	loop	0
+	offset	76 118
+	delay	20
+	jumpframe  0  1  -1  0
+	landframe  2
+	frame	data/chars/Enemys/Bob/fall100.gif
+		offset  99  109
+	frame  data/chars/Enemys/Bob/fall101.gif
+		offset  142  173
+	frame	data/chars/Enemys/Bob/fall102.gif
+
+anim Pain8
+	loop	0
+	delay	30
+	offset	155 199
+	jumpframe  0  2  1  0
+	frame	data/chars/Enemys/Bob/run01.gif
+	frame	data/chars/Enemys/Bob/run01.gif
 

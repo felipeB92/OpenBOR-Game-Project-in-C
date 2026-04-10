@@ -18,9 +18,7 @@ atchain    1 2
 icon	data/chars/Enemys/Fred/icon.gif 1
 diesound data/voices/bossdie1.wav
 running	20	3	3	1	1
-onblockwscript	data/scripts/bounceF.c
-animationscript 	data/scripts/ani0020.h
-ondrawscript 		data/scripts/player_ondrawscript.c
+animationscript		data/scripts/drago.c
 
 ##LOADS
 
@@ -490,4 +488,13 @@ anim fall9
 	delay	999
 		offset  133  182
 	frame	data/chars/Enemys/Fred/fall405.gif
+
+
+anim Pain8
+	loop	0
+	delay	15
+	offset	157 190
+	jumpframe  0  2  1  0
+	frame	data/chars/Enemys/fred/jump00.gif
+	frame	data/chars/Enemys/fred/jump00.gif
 

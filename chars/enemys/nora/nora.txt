@@ -318,3 +318,12 @@ anim Death
 	frame	data/chars/Enemys/Nora/Rise02.gif
 	frame  data/chars/Enemys/Nora/Rise01.gif
 
+
+anim Pain8
+	loop	0
+	delay	15
+	offset	137 185
+	jumpframe  0  2  1  0
+	frame	data/chars/Enemys/nora/jump00.gif
+	frame	data/chars/Enemys/nora/jump00.gif
+

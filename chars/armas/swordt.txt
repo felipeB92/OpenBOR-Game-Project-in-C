@@ -1,12 +1,16 @@
 name			SwordT #THROWNED
-type			none
-subtype			weapon
+type			projectile
 nolife			1
-lifespan		4
-#remove			1
-gfxshadow		1 1
+health          1
+speed           10
+velocity        10 0 0
+antigravity     100
+gravity         0
+friction        0
+lifespan		60
+remove			1
 noatflash 		1
-flash			noflash
+subject_to_gravity 0
 
 anim idle
 	loop	1
@@ -14,6 +18,7 @@ anim idle
 	offset	50 52
 	bbox 	26 45 48 14
 	hitfx	data/sounds/Cutter.wav
+	Move 6
 	attack 26 46 48 13 40 1 0 0 0 12
 	frame	data/chars/armas/Sword00.gif
 	frame	data/chars/armas/Sword01.gif

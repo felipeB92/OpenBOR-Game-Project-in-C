@@ -5,7 +5,6 @@ type	Enemy
 gfxshadow	1
 hostile				player npc
 candamage			player npc obstacle
-JUMPHEIGHT 1 1
 Jumpheight 3
 falldie 1
 atchain    1 1 2
@@ -163,6 +162,7 @@ anim pain3
 	frame	data/chars/Enemys/galsia/Pain01.gif
 
 
+
 anim fall
 	loop	0
 	offset	78 120
@@ -194,8 +194,8 @@ anim fall2
 		Attack1  0
 		offset  78  118
 	frame	data/chars/Enemys/galsia/fall102.gif
-
 #Shock
+
 anim fall4
 	loop	0
 	offset	50 77
@@ -279,4 +279,11 @@ anim death
 	frame  data/chars/Enemys/galsia/fall101.gif
 	frame	data/chars/Enemys/galsia/fall102.gif
 
+anim Pain8
+	loop	0
+	delay	15
+	offset	76 118
+	jumpframe  0  2  1  0
+	frame	data/chars/Enemys/galsia/jump00.gif
+	frame	data/chars/Enemys/galsia/jump00.gif
 

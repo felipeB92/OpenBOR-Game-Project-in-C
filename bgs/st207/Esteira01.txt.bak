@@ -1,0 +1,78 @@
+name			Esteira01
+type			none
+shadow			0
+setlayer		-10
+candamage		Enemy
+animationscript		data/scripts/drago.c
+
+load			Esteira01s
+
+anim idle
+	loop	1
+	delay	14
+	offset	1 32
+	fastattack 1
+        hitfx	data/sounds/efeitos/silencio.wav
+	@cmd  spawn01  "Esteira01s"  0  0  0
+		forcedirection 1
+		attack8  -2  18  38  15  0  0  1  0  0  15
+	frame	data/bgs/St207/machine00.gif
+		Attack8  0
+	frame	data/bgs/St207/machine01.gif
+	frame	data/bgs/St207/machine02.gif
+	@cmd  spawn01  "Esteira01s"  0  0  0
+	frame	data/bgs/St207/machine00.gif
+	frame	data/bgs/St207/machine01.gif
+	frame	data/bgs/St207/machine02.gif
+	@cmd  spawn01  "Esteira01s"  0  0  0
+	frame	data/bgs/St207/machine00.gif
+		forcedirection -1
+		attack8  215  -2  55  17  0  0  1  0  0  60
+	frame	data/bgs/St207/machine01.gif
+		Attack8  0
+	frame	data/bgs/St207/machine02.gif
+	@cmd  spawn01  "Esteira01s"  0  0  0
+	frame	data/bgs/St207/machine00.gif
+	frame	data/bgs/St207/machine01.gif
+	frame	data/bgs/St207/machine02.gif
+	@cmd  spawn01  "Esteira01s"  0  0  0
+	frame	data/bgs/St207/machine00.gif
+	frame	data/bgs/St207/machine01.gif
+	frame	data/bgs/St207/machine02.gif
+	@cmd  spawn01  "Esteira01s"  0  0  0
+	frame	data/bgs/St207/machine00.gif
+		forcedirection 1
+		attack8  34  -1  37  15  0  0  0  0  0  15
+	frame	data/bgs/St207/machine01.gif
+		Attack8  0
+	frame	data/bgs/St207/machine02.gif
+	@cmd  spawn01  "Esteira01s"  0  0  0
+	frame	data/bgs/St207/machine00.gif
+	frame	data/bgs/St207/machine01.gif
+	frame	data/bgs/St207/machine02.gif
+	@cmd  spawn01  "Esteira01s"  0  0  0
+	frame	data/bgs/St207/machine00.gif
+	frame	data/bgs/St207/machine01.gif
+	frame	data/bgs/St207/machine02.gif
+	@cmd  spawn01  "Esteira01s"  0  0  0
+	frame	data/bgs/St207/machine00.gif
+		forcedirection -1
+		attack8  183  21  41  13  0  0  0  0  0  15
+	frame	data/bgs/St207/machine01.gif
+		Attack8  0
+	frame	data/bgs/St207/machine02.gif
+	@cmd  spawn01  "Esteira01s"  0  0  0
+	frame	data/bgs/St207/machine00.gif
+	frame	data/bgs/St207/machine01.gif
+	frame	data/bgs/St207/machine02.gif
+	@cmd  spawn01  "Esteira01s"  0  0  0
+	frame	data/bgs/St207/machine00.gif
+		Attack1  0
+	frame	data/bgs/St207/machine01.gif
+	frame	data/bgs/St207/machine02.gif
+	@cmd  spawn01  "Esteira01s"  0  0  0
+	frame	data/bgs/St207/machine00.gif
+	frame	data/bgs/St207/machine01.gif
+		Attack1  0
+	frame	data/bgs/St207/machine02.gif
+

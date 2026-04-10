@@ -403,7 +403,7 @@ anim special
 anim special2
         energycost 0 1
         custknife Kunait
-        throwframe 1 55
+	throwframe 1 55 10 0 0
         MpOnly 1
 	loop	0
 	delay	5

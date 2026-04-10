@@ -47,15 +47,11 @@ spawn  L07
 
 
 
-spawn  galsia
-health 600
-map 1
+spawn  Pipe
 	coords  300  191
 	at  0
 
-spawn  Signal
-health 600
-map 1
+spawn  Sword
 	coords  300  191
 	at  0
 

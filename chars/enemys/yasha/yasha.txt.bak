@@ -1,8 +1,11 @@
 name	Yasha
-health	400
+health	200
 falldie 1
 speed	12
+riseinv				0.4 1
 escapehits			2
+hostile				player npc
+candamage			player npc obstacle
 type	Enemy
 gfxshadow	1
 JUMPHEIGHT 1 1
@@ -139,138 +142,6 @@ anim grabbed
 
 
 
-anim pain
-	loop	0
-	offset	130 193
-	bbox	113 119 28 77
-	delay	15
-	frame	data/chars/Enemys/Yasha/pain00.gif
-	frame	data/chars/Enemys/Yasha/pain01.gif
-
-anim pain2
-	loop	0
-	offset	137 190
-	bbox	121 124 32 65
-	delay	15
-	frame	data/chars/Enemys/Yasha/pain200.gif
-	frame	data/chars/Enemys/Yasha/pain201.gif
-
-anim pain4
-	loop	0
-	offset	131 191
-	bbox	104 121 42 70
-	delay	250
-	frame	data/chars/Enemys/Yasha/pain00.gif
-
-anim pain5
-	loop	0
-	offset	130 192
-	delay	10
-	frame	data/chars/Enemys/Yasha/pain00.gif
-		move  10
-	frame	data/chars/Enemys/Yasha/fall705.gif
-		move  30
-		delay  10
-	frame	data/chars/Enemys/Yasha/fall603.gif
-        quakeframe 4 2 2
-        Sound	data/Sounds/Efeitos/Estrondo.wav
-		attack1  90  162  58  32  10  1  0  0  0  20
-	frame	data/chars/Enemys/Yasha/fall900.gif
-		move  1
-		movea  5
-	frame  data/chars/Enemys/Yasha/fall900.gif
-		movea  -5
-	frame  data/chars/Enemys/Yasha/fall900.gif
-		delay  50
-		move  0
-		movea  0
-		Attack1  0
-		offset  130  190
-	frame	data/chars/Enemys/Yasha/Fall01.gif
-		delay  10
-	frame	data/chars/Enemys/Yasha/Rise00.gif
-	frame	data/chars/Enemys/Yasha/Rise01.gif
-		offset  136  189
-	frame  data/chars/Enemys/Yasha/Rise02.gif
-
-
-anim death
-	loop	0
-	offset	130 192
-	delay	20
-	jumpframe  0  1  -1  0
-	landframe  2
-	frame	data/chars/Enemys/Yasha/fall701.gif
-	frame  data/chars/Enemys/Yasha/fall00.gif
-	frame	data/chars/Enemys/Yasha/fall01.gif
-
-
-anim death5
-	loop	0
-	offset	130 192
-	delay	10
-	frame	data/chars/Enemys/Yasha/pain00.gif
-		move  10
-	frame	data/chars/Enemys/Yasha/fall705.gif
-		move  30
-		delay  10
-	frame	data/chars/Enemys/Yasha/fall603.gif
-	frame	data/chars/Enemys/Yasha/fall900.gif
-		move  1
-		movea  5
-	frame  data/chars/Enemys/Yasha/fall900.gif
-		movea  -5
-	frame  data/chars/Enemys/Yasha/fall900.gif
-		delay  50
-		move  0
-		movea  0
-		offset  130  191
-	frame	data/chars/Enemys/Yasha/Fall01.gif
-
-
-anim fall
-	loop	0
-	offset	130 192
-	delay	20
-        hitfx	data/sounds/golpes/Forte.wav
-		bbox  0
-		Attack1  0
-	frame	data/chars/Enemys/Yasha/fall701.gif
-		attack  96
-		hitfx  data/sounds/golpes/Forte.wav
-	frame  data/chars/Enemys/Yasha/fall00.gif
-		Attack1  0
-		offset  130  191
-	frame	data/chars/Enemys/Yasha/fall01.gif
-
-anim fall3
-	loop	0
-	offset	130 192
-	delay	5
-	jumpframe  0  3  -3  0
-	landframe  8
-		bbox  109  112  48  67
-		Attack1  0
-	frame	data/chars/Enemys/Yasha/fall705.gif
-	frame	data/chars/Enemys/Yasha/fall600.gif
-	frame	data/chars/Enemys/Yasha/fall601.gif
-	frame	data/chars/Enemys/Yasha/fall602.gif
-	frame	data/chars/Enemys/Yasha/fall705.gif
-	frame	data/chars/Enemys/Yasha/fall600.gif
-	frame	data/chars/Enemys/Yasha/fall601.gif
-	frame	data/chars/Enemys/Yasha/fall602.gif
-	frame	data/chars/Enemys/Yasha/fall705.gif
-	frame	data/chars/Enemys/Yasha/fall600.gif
-	frame	data/chars/Enemys/Yasha/fall601.gif
-	frame	data/chars/Enemys/Yasha/fall602.gif
-	frame  data/chars/Enemys/Yasha/fall705.gif
-	frame  data/chars/Enemys/Yasha/fall600.gif
-		Attack1  0
-		bbox  0
-		move  0
-		offset  130  190
-	frame  data/chars/Enemys/Yasha/fall01.gif
-
 anim freeSpecial
 	loop	0
 	offset	134 188
@@ -393,4 +264,149 @@ anim land
 	offset	136 188
 	bbox	121 126 36 61
 	frame	data/chars/Enemys/Yasha/jumpland00.gif
+
+anim pain
+	loop	0
+	offset	82 120
+	bbox	62 58 42 61
+		delay  30
+	frame	data/chars/Enemys/Yasha/pain01.gif
+
+
+anim pain2
+	loop	0
+	offset	75 119
+	bbox	60 54 29 64
+	delay	30
+	frame	data/chars/Enemys/Yasha/pain02.gif
+
+anim pain3
+	loop	0
+	offset	79 119
+	bbox	63 52 26 67
+	jumpframe  0  2  0  0
+	delay	10
+	frame	data/chars/Enemys/Yasha/Pain02.gif
+	frame	data/chars/Enemys/Yasha/fall100.gif
+	frame	data/chars/Enemys/Yasha/Pain01.gif
+
+
+anim fall
+	loop	0
+	offset	78 120
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Yasha/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Yasha/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Yasha/fall403.gif
+		Attack1  0
+	frame	data/chars/Enemys/Yasha/fall102.gif
+
+anim fall2
+	loop	0
+	offset	78 118
+	delay	20
+	jumpframe  0  2  -3.5  0
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Yasha/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Yasha/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Yasha/fall403.gif
+		Attack1  0
+		offset  78  118
+	frame	data/chars/Enemys/Yasha/fall102.gif
+
+#Shock
+anim fall4
+	loop	0
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Yasha/fall200.gif
+	frame	data/chars/Enemys/Yasha/fall201.gif
+	frame	data/chars/Enemys/Yasha/fall200.gif
+	frame	data/chars/Enemys/Yasha/fall201.gif
+	frame	data/chars/Enemys/Yasha/fall200.gif
+	frame	data/chars/Enemys/Yasha/fall201.gif
+	frame	data/chars/Enemys/Yasha/fall200.gif
+		offset  75  119
+	frame	data/chars/Enemys/Yasha/fall102.gif
+#Burn
+
+anim fall5
+	loop	0
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Yasha/fall300.gif
+	frame	data/chars/Enemys/Yasha/fall301.gif
+	frame	data/chars/Enemys/Yasha/fall302.gif
+	frame	data/chars/Enemys/Yasha/fall300.gif
+	frame	data/chars/Enemys/Yasha/fall301.gif
+	frame	data/chars/Enemys/Yasha/fall302.gif
+	frame	data/chars/Enemys/Yasha/fall300.gif
+	frame	data/chars/Enemys/Yasha/fall301.gif
+	frame	data/chars/Enemys/Yasha/fall302.gif
+		offset  76  120
+	frame	data/chars/Enemys/Yasha/fall102.gif
+
+anim fall8
+	loop	0
+	offset	76 119
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Yasha/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Yasha/fall101.gif
+		Attack1  0
+		offset  76  121
+	frame	data/chars/Enemys/Yasha/fall102.gif
+
+anim fall9
+	loop	0
+	offset	81 119
+	delay	999
+		Attack1  0
+	frame	data/chars/Enemys/Yasha/pain01.gif
+	frame	data/chars/Enemys/Yasha/pain02.gif
+		offset  77  119
+	frame	data/chars/Enemys/Yasha/fall400.gif
+		offset  113  105
+	frame	data/chars/Enemys/Yasha/fall401.gif
+		offset  89  135
+	frame	data/chars/Enemys/Yasha/fall402.gif
+		offset  80  113
+	frame	data/chars/Enemys/Yasha/fall403.gif
+		offset  103  110
+	frame	data/chars/Enemys/Yasha/fall404.gif
+		offset  72  119
+	frame	data/chars/Enemys/Yasha/fall405.gif
+	delay	50
+		offset  76  115
+	frame	data/chars/Enemys/Yasha/fall403.gif
+	delay	999
+		offset  74  120
+	frame	data/chars/Enemys/Yasha/fall405.gif
+
+anim death
+	loop	0
+	offset	76 118
+	delay	20
+	jumpframe  0  1  -1  0
+	landframe  2
+	frame	data/chars/Enemys/Yasha/fall100.gif
+	frame  data/chars/Enemys/Yasha/fall101.gif
+	frame	data/chars/Enemys/Yasha/fall102.gif
+
+
+
 

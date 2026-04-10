@@ -66,7 +66,7 @@ health 50
 
 spawn  Galsia
 map    2
-health 70
+health 50
 	coords  560  230
 	at  100
 
@@ -96,7 +96,7 @@ spawn  haku_oh
 
 spawn  Galsia
 map    2
-health 70
+health 50
 	coords  480  230
 	at  980
 
@@ -113,7 +113,7 @@ spawn  haku_oh
 
 spawn  Galsia
 map    2
-health 70
+health 50
 	coords  660  230
 	at  1200
 
@@ -139,7 +139,7 @@ spawn  Nora
 
 spawn  Galsia
 map    2
-health 70
+health 50
 	coords  480  190
 	at  1250
 
@@ -161,7 +161,7 @@ Item   cash
 
 spawn  Galsia
 map    2
-health 70
+health 50
 	coords  -100  190
 	at  1970
 
@@ -174,19 +174,19 @@ Wait
 
 spawn  Galsia
 map    2
-health 70
+health 50
 	coords  500  190
 	at  1979
 
 spawn  Galsia
 map    2
-health 70
+health 50
 	coords  -100  230
 	at  1979
 
 spawn  Galsia
 map    2
-health 70
+health 50
 	coords  -200  190
 	at  1979
 
@@ -200,7 +200,7 @@ spawn  Nora
 	at  1980
 
 spawn  signal
-health 70
+health 50
 	coords  550  230
 	at  2000
 
@@ -245,7 +245,7 @@ spawn  chuva
 	at  2750
 
 spawn  signal
-health 70
+health 50
 	coords  550  230
 	at  2750
 
@@ -266,13 +266,13 @@ spawn  Knife
 
 spawn  Galsia
 map    2
-health 70
+health 50
 	coords  500  190
 	at  3300
 
 spawn  Galsia
 map    2
-health 70
+health 50
 	coords  -100  230
 	at  3300
 
@@ -287,7 +287,7 @@ spawn  Nora
 	at  3600
 
 spawn  signal
-health 70
+health 50
 	coords  550  230
 	at  3600
 

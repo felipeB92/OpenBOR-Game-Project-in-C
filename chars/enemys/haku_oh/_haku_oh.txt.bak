@@ -347,9 +347,22 @@ anim Death
 	loop	0
 	offset	78 120
 	delay	5
+	jumpframe  0  1  -1  0
+	landframe  2
 	frame	data/chars/Enemys/haku_oh/fall101.gif
 		offset  65  107
 	frame  data/chars/Enemys/haku_oh/fall100.gif
+		offset  83  121
 	frame  data/chars/Enemys/haku_oh/fall403.gif
+		offset  83  119
 	frame	data/chars/Enemys/haku_oh/fall102.gif
+
+
+anim Pain8
+	loop	0
+	delay	30
+	offset	76 118
+	jumpframe  0  2  1  0
+	frame	data/chars/Enemys/galsia/jump00.gif
+	frame	data/chars/Enemys/galsia/jump00.gif
 

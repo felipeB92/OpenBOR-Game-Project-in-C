@@ -1,18 +1,23 @@
 name			pipeT #THROWNED
-type			none
-subtype			weapon
+type			projectile
 nolife			1
-lifespan		4
-#remove			1
-gfxshadow		1 1
+health          1
+speed           10
+velocity        10 0 0
+antigravity     100
+gravity         0
+friction        0
+lifespan		60
+remove			1
 noatflash 		1
-flash			noflash
+subject_to_gravity 0
 
 anim idle
 	loop	1
 	delay	5
 	offset	50 52
 	bbox 	25 39 53 20
+	Move 8
         hitfx	data/sounds/Armas/Pipe.wav
 	attack 26 41 51 17 35 1 0 0 0 12
 	frame	data/chars/armas/pipe00.gif

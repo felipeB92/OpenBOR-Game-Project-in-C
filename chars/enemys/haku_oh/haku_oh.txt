@@ -345,3 +345,12 @@ anim Death
 		Attack1  0
 	frame	data/chars/Enemys/haku_oh/fall102.gif
 
+
+anim Pain8
+	loop	0
+	delay	15
+	offset	76 118
+	jumpframe  0  2  1  0
+	frame	data/chars/Enemys/haku_oh/jump00.gif
+	frame	data/chars/Enemys/haku_oh/jump00.gif
+

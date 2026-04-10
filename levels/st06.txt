@@ -1,5 +1,5 @@
-music		data/bgs/St06/Lv06.bor
-bossmusic	data/music/boss1.bor
+music		data/bgs/St06/Stealthy-Steps.ogg
+bossmusic	data/music/boss1.ogg
 scrollspeed 0.5#1
 stagenumber 6
 background	data/bgs/st06/Back01.gif
@@ -57,19 +57,19 @@ Item   Gold
 	at  0
 
 spawn  Galsia
-health 90
+health 60
 map    4
 	coords  540  191
 	at  100
 
 spawn  Galsia
-health 90
+health 60
 map    4
 	coords  -50  230 2
 	at  100
 
 spawn  Galsia
-health 90
+health 60
 map    4
 	coords  540  191
 	at  150
@@ -84,7 +84,7 @@ at 200
 
 
 spawn  Galsia
-health 90
+health 60
 map    4
 	coords  -100  230 2
 	at  200
@@ -104,7 +104,7 @@ spawn  Knife
 	at  200
 
 spawn  Galsia
-health 90
+health 60
 map    4
 	coords  600  230
 	at  200
@@ -132,13 +132,13 @@ spawn  Knife
 	at  400
 
 spawn  Galsia
-health 90
+health 60
 map    4
 	coords  600  230
 	at  400
 
 spawn  Galsia
-health 90
+health 60
 map    4
 	coords  -50  230
 	at  500
@@ -156,7 +156,7 @@ map    2
 	at  800
 
 spawn  Galsia
-health 90
+health 60
 map    4
 	coords  500  230
 	at  900
@@ -184,7 +184,7 @@ Group 4 4
 at 1100
 
 spawn  Galsia
-health 90
+health 60
 map    4
 	coords  500  230
 	at  1100
@@ -228,7 +228,7 @@ Flip  1
 
 
 spawn  Galsia
-health 90
+health 60
 map    4
 	coords  -50  230
 	at  1300
@@ -238,19 +238,19 @@ spawn  Knife
 	at  1700
 
 spawn  Galsia
-health 90
+health 60
 map    4
 	coords  600  230
 	at  1700
 
 spawn  Galsia
-health 90
+health 60
 map    4
 	coords  600  220
 	at  1750
 
 spawn  Galsia
-health 90
+health 60
 map    4
 	coords  -50  230
 	at  1750
@@ -324,13 +324,13 @@ map    4
 	at  2800
 
 spawn  Galsia
-health 90
+health 60
 map    4
 	coords  650  230
 	at  2800
 
 spawn  Galsia
-health 90
+health 60
 map    4
 	coords  600  250
 	at  2800
@@ -408,7 +408,7 @@ spawn  Knife
 
 
 spawn  Galsia
-health 90
+health 60
 map    4
 	coords  -150  250 5
 	at  3200
@@ -471,7 +471,7 @@ Group 4 4
 at 4300
 
 spawn  Galsia
-health 90
+health 60
 map    4
 	coords  -150  250
 	at  4300
