@@ -1,0 +1,24 @@
+name			e05 #GROUND
+type			Panel
+setlayer -6
+antigravity 100
+animationscript		data/scripts/drago.c
+
+anim idle
+	loop	1
+	delay	80
+	offset	0 273
+	frame	data/Bgs/St07/e05.gif
+	@cmd dasher 0 -1 0
+	frame	data/Bgs/St07/e05.gif
+	frame	data/Bgs/St07/e05.gif
+	frame	data/Bgs/St07/e05.gif
+	frame	data/Bgs/St07/e05.gif
+	frame	data/Bgs/St07/e05.gif
+	frame	data/Bgs/St07/e05.gif
+	frame	data/Bgs/St07/e05.gif
+	frame	data/Bgs/St07/e05.gif
+	frame	data/Bgs/St07/e05.gif
+	frame	data/Bgs/St07/e05.gif
+
+

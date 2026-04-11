@@ -56,7 +56,7 @@ at   1100
 
 spawn  Galsia
 map    2
-health 1
+health 70
 	coords  -50  240
 	at  1100
 
@@ -65,160 +65,78 @@ spawn  Elevador02
 	at  1100
 
 
-spawn  Elevador01
-	coords  150  191
-	at  1101
-
-spawn  e01
-	Flip 1
-	coords  0  250 1095
-	at  1101
-
-
-wait
-at   2255
-
-group 4 4
-at   2255
-
-spawn  Elevador02
-	coords  150  191
-	at  2255
-
-spawn  Galsia
-map    2
-health 1
-	coords  -50  250
-	at  2255
-
-
-spawn  Elevador01
-	coords  150  191
-	at  2256
-
-spawn  e02
-	Flip 1
-	coords  0  250 1096
-	at  2256
-
-
-wait
-at   3411
-
-group 4 4
-at   3411
-
-spawn  Elevador02
-	coords  150  191
-	at  3411
 
 spawn  Galsia
 map    2
 health 70
-	coords  -50  250
-	at  3411
-
-
-spawn  Elevador01
-	coords  150  191
-	at  3412
-
-spawn  e03
-	Flip 1
-	coords  0  250 1096
-	at  3412
-
-wait
-at   4403
-
-group 4 4
-at   4403
-
-spawn  Elevador02
-	coords  150  191
-	at  4403
+	coords  -50  240
+	at  1100
 
 spawn  Galsia
 map    2
 health 70
-	coords  -50  250
-	at  4403
+	coords  -70  250
+	at  1100
 
-
-spawn  Elevador01
-	coords  150  191
-	at  4404
-
-spawn  e04
-	Flip 1
-	coords  0  250 1000
-	at  4404
-
-wait
-at   5504
-
-group 4 4
-at   5504
-
-spawn  Elevador02
-	coords  150  191
-	at  5504
 
 spawn  Galsia
 map    2
 health 70
-	coords  -50  250
-	at  5504
+	coords  -50  240
+	at  1100
 
-
-spawn  Elevador01
-	coords  150  191
-	at  5505
-
-spawn  e05
-	Flip 1
-	coords  0  250 1000
-	at  5505
-
-wait
-at   6605
-
-group 4 4
-at   6605
-
-spawn  Elevador02
-	coords  150  191
-	at  6605
-
-spawn  Galsia
-map    2
-health 70
-	coords  -50  250
-	at  6605
-
-
-spawn  Elevador01
-	coords  150  191
-	at  6606
-
-spawn  e06
-	Flip 1
-	coords  0  250 1000
-	at  6606
-
-wait
-at   7706
-
-group 4 4
-at   7706
-
-spawn  Elevador02
-	coords  150  191
-	at  7706
 
 spawn  Haku_oh
 	coords  150  200 200
-	at  7706
+	at  1100
+
+
+spawn  Knife
+	coords  -50  245
+	at  1100
+
+
+spawn  Galsia
+health 50
+	coords  -100  245
+	at  1100
+
+
+spawn  Signal
+	coords  -100  240
+	at  1100
+
+
+spawn  Signal
+map    2
+	coords  -100  240
+	at  1100
+
+
+spawn  Elevador01
+	coords  150  191
+	at  1101
+
+
+wait
+at   4200
+
+group 4 4
+at   4200
+
+spawn  Elevador02
+	coords  150  191
+	at  4200
+
+spawn  Galsia
+map    2
+health 70
+	coords  -50  250
+	at  4200
+
+spawn  Haku_oh
+	coords  150  200 200
+	at  4200
 
 
 spawn  Galsia

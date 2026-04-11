@@ -312,6 +312,13 @@ know	Prensa02	data/Bgs/St06/Prensa02.txt
 
 know	elevador01	data/Bgs/St07/elevador01.txt
 know	elevador02	data/Bgs/St07/elevador02.txt
+know	E00		data/Bgs/St07/e00.txt
+know	E01		data/Bgs/St07/e01.txt
+know	E02		data/Bgs/St07/e02.txt
+know	E03		data/Bgs/St07/e03.txt
+know	E04		data/Bgs/St07/e04.txt
+know	E05		data/Bgs/St07/e05.txt
+know	E06		data/Bgs/St07/e06.txt
 
 know	Mx01		data/Bgs/St08/Mx01.txt
 know	Mx02		data/Bgs/St08/Mx02.txt
