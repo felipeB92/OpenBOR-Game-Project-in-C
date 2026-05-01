@@ -1,0 +1,295 @@
+music		data/bgs/St405/Lv405a.bor
+bossmusic	data/music/boss3.bor
+
+###BACKGROUND
+bglayer			data/bgs/St405/back00.gif
+
+###BGLAYER/PANEL
+panel			data/bgs/St405/pN00.gif	none	none
+
+###MISC
+Frontpanel			data/bgs/St05/Front02.gif
+#order			a
+settime			99
+scrollspeed 	0.5
+stagenumber 	5
+cameratype 1
+backgroundSpeed 1 40
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	30 30  150
+spawn2  	35 30 150
+spawn3  	40 30  150
+
+light		128 -128
+at			0
+
+
+spawn  Lixo01
+Item   Kunai
+	coords  186 240
+	at  0
+
+spawn  Lixo01
+Item   Cash
+	coords  240 240
+	at  0
+
+spawn  signal_
+health 50
+	coords  362 230
+	at  0
+
+spawn  signal_
+health 50
+	coords  370 260
+	at  0
+
+spawn  signal_
+map    4
+health 90
+	coords  350 249
+	at  0
+
+
+spawn  Donovan
+map    4
+health 90
+	coords  -100 249
+	at  100
+
+
+wait
+at   200
+
+
+Group 4  4
+at   200
+
+
+
+spawn  Raven
+health 70
+	coords  -100 249
+	at  200
+
+spawn  Raven
+health 70
+	coords  -100 220
+	at  200
+
+spawn  Raven
+health 70
+	coords  500 249
+	at  200
+
+spawn  Raven
+health 70
+	coords  500 220
+	at  200
+
+spawn  Lixo01
+Item   Apple
+	coords  500 240
+	at  210
+
+spawn  Lixo01
+Item   1up
+	coords  570 240
+	at  210
+
+wait
+at   400
+
+Group 4  4
+at   400
+
+
+
+
+
+spawn  Signal
+health 50
+	coords  -100 249
+	at  400
+
+
+spawn  G_Fog
+	coords  130 250
+	at  400
+
+
+spawn  G_Fog
+	coords  300 240
+	at  400
+
+spawn  Donovan
+health 70
+	coords  -100 220
+	at  400
+
+spawn  Galsia
+health 70
+	coords  500 249
+	at  400
+
+spawn  Vice
+health 70
+	coords  500 220
+	at  400
+
+
+spawn  GArnet
+health 50
+	coords  -100 249
+	at  400
+
+
+
+spawn  Slum
+health 70
+	coords  -100 220
+	at  400
+
+
+spawn  G_Fog
+	coords  250 245
+	at  400
+
+spawn  Jonny
+health 70
+	coords  500 249
+	at  400
+
+spawn  Signal
+health 50
+	coords  -100 249
+	at  400
+
+
+spawn  G_Fog
+	coords  130 240
+	at  400
+
+spawn  Donovan
+health 70
+	coords  -100 220
+	at  400
+
+spawn  G_Fog
+	coords  300 250
+	at  400
+
+spawn  Galsia
+health 70
+	coords  500 249
+	at  400
+
+
+Group 9  9
+at   401
+
+
+spawn  Lixo01
+Item   Pipe
+	coords  600 220
+	at  410
+
+spawn  Lixo01
+Item   Apple
+	coords  610 260
+	at  410
+
+spawn  Clown
+map    1
+health 70
+	coords  500 240
+	at  500
+
+spawn  Clown_
+health 80
+	coords  -100 260
+	at  500
+
+
+spawn  Clown
+map    2
+health 70
+	coords  -100 220
+	at  600
+
+spawn  Clown_
+health 80
+	coords  500 260
+	at  650
+
+
+
+
+
+spawn  Bruce
+MAp    3
+health 400
+	coords  550 240
+	at  800
+
+
+Group 4  4
+at   800
+
+
+
+spawn  Clown
+health 70
+	coords  500 220
+	at  800
+
+spawn  Clown_
+health 80
+	coords  -100 260
+	at  800
+
+
+spawn  Clown
+health 70
+	coords  -100 220
+	at  800
+
+spawn  Clown_
+health 80
+	coords  500 260
+	at  800
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

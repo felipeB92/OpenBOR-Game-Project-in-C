@@ -1,0 +1,106 @@
+name			Esteira05
+type			none
+shadow			0
+candamage		Enemy
+animationscript		data/scripts/drago.c
+
+load			Esteira05s
+
+anim idle
+	loop	1
+	delay	40
+	offset	1 116
+	fastattack 1
+        hitfx	data/sounds/efeitos/silencio.wav
+	@cmd spawn01 "esteira05s" 0 0 0
+	forcedirection 1
+		attack8  1  -1  30  20  0  0  0  0  0  100
+	frame  data/bgs/st308/empty.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+	forcedirection 1
+		attack8  23  9  33  23  0  0  0  0  0  100
+	frame  data/bgs/st308/empty.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+	forcedirection 1
+		attack8  70  31  26  26  0  0  0  0  0  100
+	frame  data/bgs/st308/empty.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+	forcedirection 1
+		attack8  92  42  29  26  0  0  0  0  0  100
+	frame  data/bgs/st308/empty.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+	forcedirection 1
+		attack8  110  47  28  28  0  0  0  0  0  100
+	frame  data/bgs/st308/empty.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+	forcedirection 1
+		attack8  131  57  30  30  0  0  0  0  0  100
+	frame  data/bgs/st308/empty.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+	forcedirection 1
+		attack8  153  74  42  27  0  0  0  0  0  100
+	frame  data/bgs/st308/empty.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+	forcedirection 1
+		attack8  188  88  30  25  0  0  0  0  0  100
+	frame  data/bgs/st308/empty.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+	forcedirection 1
+		attack8  210  100  28  24  0  0  0  0  0  100
+	frame  data/bgs/st308/empty.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+		Attack1  0
+	frame  data/bgs/st308/empty.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+		offset  1  116
+	forcedirection -1
+		attack8  564  95  38  24  0  0  0  0  0  100
+	frame  data/bgs/st308/empty.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+	forcedirection -1
+		attack8  542  85  36  22  0  0  0  0  0  100
+	frame  data/bgs/st308/empty.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+	forcedirection -1
+		attack8  511  65  26  20  0  0  0  0  0  100
+	frame  data/bgs/st308/empty.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+	forcedirection -1
+		attack8  488  53  31  23  0  0  0  0  0  100
+	frame  data/bgs/st308/empty.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+	forcedirection -1
+		attack8  476  46  22  22  0  0  0  0  0  100
+	frame  data/bgs/st308/empty.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+	forcedirection -1
+		attack8  458  39  25  22  0  0  0  0  0  100
+	frame  data/bgs/st308/empty.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+	forcedirection -1
+		attack8  440  26  26  26  0  0  0  0  0  100
+	frame  data/bgs/st308/empty.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+	forcedirection -1
+		attack8  424  19  22  20  0  0  0  0  0  100
+	frame  data/bgs/st308/empty.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+	forcedirection -1
+		attack8  404  12  25  22  0  0  0  0  0  100
+	frame  data/bgs/st308/empty.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+	forcedirection -1
+		attack8  391  4  25  23  0  0  0  0  0  100
+	frame  data/bgs/st308/empty.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+	forcedirection -1
+		attack8  373  1  25  20  0  0  0  0  0  100
+	frame  data/bgs/st308/empty.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+	forcedirection -1
+		attack8  357  -4  30  16  0  0  0  0  0  100
+	frame  data/bgs/st308/empty.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+		Attack1  0
+	frame  data/bgs/st308/empty.gif
+

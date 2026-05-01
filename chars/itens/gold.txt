@@ -1,0 +1,25 @@
+name	Gold
+type	none
+shadow	0
+nolife 1
+
+animationscript	data/scripts/itens.c
+
+anim spawn
+	loop	0
+	flipframe  0
+	delay	5
+	offset	50 63
+	bbox	44 47 15 16
+	jumpframe  0  2  0  0
+	frame	data/chars/Itens/Gold00.gif
+
+
+anim idle
+	loop	1
+	delay	2
+	offset	53 63
+	bbox	41 47 20 17
+	@cmd    detector_gold 5000
+	frame	data/chars/Itens/Gold00.gif
+

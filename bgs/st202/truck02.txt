@@ -1,0 +1,11 @@
+name			Truck02 #GROUND
+type			None
+setlayer 5
+
+anim idle
+	loop	1
+	delay	30
+	offset	0 0
+	frame	data/Bgs/St202/truck00.gif
+	frame	data/Bgs/St202/truck01.gif
+

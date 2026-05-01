@@ -1,0 +1,32 @@
+name			pipeT #THROWNED
+type			projectile
+nolife			1
+health          1
+speed           10
+velocity        10 0 0
+antigravity     100
+gravity         0
+friction        0
+lifespan		60
+remove			1
+noatflash 		1
+subject_to_gravity 0
+
+anim idle
+	loop	1
+	delay	5
+	offset	0 52
+	bbox 	25 39 53 20
+	Move 8
+        hitfx	data/sounds/Armas/Pipe.wav
+	attack 26 41 51 17 35 1 0 0 0 12
+	frame	data/chars/armas/pipe00.gif
+	frame	data/chars/armas/pipe01.gif
+	frame	data/chars/armas/pipe02.gif
+	frame	data/chars/armas/pipe03.gif
+	frame	data/chars/armas/pipe04.gif
+	frame	data/chars/armas/pipe05.gif
+	frame	data/chars/armas/pipe06.gif
+	frame	data/chars/armas/pipe07.gif
+	frame	data/chars/armas/pipe08.gif
+

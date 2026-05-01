@@ -1,0 +1,32 @@
+name			SwordT #THROWNED
+type			projectile
+nolife			1
+health          1
+speed           10
+velocity        10 0 0
+antigravity     100
+gravity         0
+friction        0
+lifespan		60
+remove			1
+noatflash 		1
+subject_to_gravity 0
+
+anim idle
+	loop	1
+	delay	5
+	offset	0 52
+	bbox 	26 45 48 14
+	hitfx	data/sounds/Cutter.wav
+	Move 6
+	attack 26 46 48 13 40 1 0 0 0 12
+	frame	data/chars/armas/Sword00.gif
+	frame	data/chars/armas/Sword01.gif
+	frame	data/chars/armas/Sword02.gif
+	frame	data/chars/armas/Sword03.gif
+	frame	data/chars/armas/Sword04.gif
+	frame	data/chars/armas/Sword05.gif
+	frame	data/chars/armas/Sword06.gif
+	frame	data/chars/armas/Sword07.gif
+	frame	data/chars/armas/Sword08.gif
+

@@ -1,0 +1,49 @@
+name			elevador202 #GROUND
+type			None
+setlayer -59
+#offscreenkill	1000
+
+anim idle
+	loop	1
+	delay	400
+	offset	0 1229
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+	frame	data/Bgs/St207/bg03.gif
+

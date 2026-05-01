@@ -1,0 +1,20 @@
+# Hit flash
+
+speed	8
+name	T00
+candamage  enemy obstacle npc pshot
+type	None
+Alpha   1
+
+
+anim idle
+	loop	0
+	delay	40
+	offset	25 27
+	frame	data/chars/Players/T01.gif
+	frame	data/chars/Players/T01.gif
+	frame	data/chars/Players/T01.gif
+	frame	data/chars/Players/T01.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/Players/T01.gif
+

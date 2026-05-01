@@ -1,0 +1,26 @@
+name			Praia #GROUND
+type			None
+setlayer 5
+
+anim idle
+	loop	1
+	delay	20
+	offset	0 0
+	frame	data/Bgs/St206/beach00.gif
+	frame	data/Bgs/St206/beach01.gif
+	frame	data/Bgs/St206/beach02.gif
+	frame	data/Bgs/St206/beach03.gif
+	frame	data/Bgs/St206/beach04.gif
+	frame	data/Bgs/St206/beach05.gif
+	frame	data/Bgs/St206/beach06.gif
+	frame	data/Bgs/St206/beach07.gif
+	frame	data/Bgs/St206/beach08.gif
+	frame	data/Bgs/St206/beach09.gif
+	frame	data/Bgs/St206/beach10.gif
+	frame	data/Bgs/St206/beach11.gif
+	frame	data/Bgs/St206/beach12.gif
+	frame	data/Bgs/St206/beach13.gif
+	frame	data/Bgs/St206/beach14.gif
+	frame	data/Bgs/St206/beach15.gif
+
+

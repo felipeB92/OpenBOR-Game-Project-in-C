@@ -1,0 +1,590 @@
+name	Rocket
+health	300
+MP 50
+CANTGRAB 1
+speed	14
+riseinv				0.4 1
+hostile				player npc
+candamage			player npc obstacle
+Noblink 0
+type	Enemy
+falldie 2
+gfxshadow	1
+Jumpheight 3
+Risetime 170
+atchain    1 1 2
+icon	data/chars/Enemys/Rocket/icon.gif 1
+diesound data/voices/bossdie2.wav
+running	20	3	3	1	1
+animationscript		data/scripts/drago.c
+
+##LOADS
+
+Load Fireball
+Load Rocket_Bomb
+
+remap data/chars/Enemys/Rocket/idle00.gif data/chars/Enemys/Rocket/alter1.gif
+remap data/chars/Enemys/Rocket/idle00.gif data/chars/Enemys/Rocket/alter2.gif
+remap data/chars/Enemys/Rocket/idle00.gif data/chars/Enemys/Rocket/alter3.gif
+remap data/chars/Enemys/Rocket/idle00.gif data/chars/Enemys/Rocket/alter4.gif
+
+
+anim	spawn
+	loop	0
+	delay	3
+	offset	159 180
+		attack3  109  120  116  36  5  1  0  0  0  20
+	frame   data/chars/Enemys/Rocket/a101.gif
+	@cmd dasher 3 0 0
+	frame   data/chars/Enemys/Rocket/a102.gif
+	frame   data/chars/Enemys/Rocket/a103.gif
+	frame   data/chars/Enemys/Rocket/a104.gif
+	frame   data/chars/Enemys/Rocket/a101.gif
+	frame   data/chars/Enemys/Rocket/a102.gif
+	frame   data/chars/Enemys/Rocket/a103.gif
+	frame   data/chars/Enemys/Rocket/a104.gif
+	frame   data/chars/Enemys/Rocket/a101.gif
+	frame   data/chars/Enemys/Rocket/a102.gif
+	frame   data/chars/Enemys/Rocket/a103.gif
+	frame   data/chars/Enemys/Rocket/a104.gif
+	frame   data/chars/Enemys/Rocket/a101.gif
+	frame   data/chars/Enemys/Rocket/a102.gif
+	frame   data/chars/Enemys/Rocket/a103.gif
+	frame   data/chars/Enemys/Rocket/a104.gif
+	frame   data/chars/Enemys/Rocket/a101.gif
+	frame   data/chars/Enemys/Rocket/a102.gif
+	frame   data/chars/Enemys/Rocket/a103.gif
+	frame   data/chars/Enemys/Rocket/a104.gif
+	frame   data/chars/Enemys/Rocket/a101.gif
+	frame   data/chars/Enemys/Rocket/a102.gif
+	frame   data/chars/Enemys/Rocket/a103.gif
+	frame   data/chars/Enemys/Rocket/a104.gif
+	frame   data/chars/Enemys/Rocket/a101.gif
+	frame   data/chars/Enemys/Rocket/a102.gif
+	frame   data/chars/Enemys/Rocket/a103.gif
+	frame   data/chars/Enemys/Rocket/a104.gif
+	@cmd dasher 0 0 0
+		Attack1  0
+	frame   data/chars/Enemys/Rocket/a201.gif
+		offset  159  190
+	frame  data/chars/Enemys/Rocket/Idle00.gif
+		offset  159  200
+	frame  data/chars/Enemys/Rocket/Idle01.gif
+		offset  159  210
+	frame  data/chars/Enemys/Rocket/Idle00.gif
+		offset  159  220
+	frame  data/chars/Enemys/Rocket/Idle01.gif
+
+
+
+anim idle
+	loop	1
+	delay	4
+	offset	155 220
+	bbox	138 102 38 80
+	frame   data/chars/Enemys/Rocket/idle00.gif
+	frame   data/chars/Enemys/Rocket/idle01.gif
+
+anim	Backwalk
+	loop	1
+        delay	4
+		offset  155  220
+		bbox  142  97  31  56
+	frame	data/chars/Enemys/Rocket/backwalk00.gif
+	frame	data/chars/Enemys/Rocket/backwalk01.gif
+
+
+anim walk
+	loop	1
+	delay	3
+	offset	155 220
+	bbox	143 96 38 83
+	frame	data/chars/Enemys/Rocket/walk00.gif
+	frame	data/chars/Enemys/Rocket/walk01.gif
+
+
+anim freespecial
+	loop	0
+	delay	8
+        Range 100 200
+	offset	155 220
+	bbox	141 109 31 63
+		Attack1  0
+        hitfx	data/sounds/golpes/medio.wav
+		move  0
+	frame	data/chars/Enemys/Rocket/Idle00.gif
+		delay  6
+		Range  100  150
+		offset  155  210
+		hitfx  data/sounds/golpes/medio.wav
+	frame  data/chars/Enemys/Rocket/idle01.gif
+		offset  155  200
+		hitfx  data/sounds/golpes/medio.wav
+	frame  data/chars/Enemys/Rocket/Idle00.gif
+		offset  155  190
+		hitfx  data/sounds/golpes/medio.wav
+	frame  data/chars/Enemys/Rocket/idle01.gif
+		delay  20
+		hitfx  data/sounds/golpes/medio.wav
+	frame  data/chars/Enemys/Rocket/a100.gif
+		delay  7
+	frame	data/chars/Enemys/Rocket/a101.gif
+		Attack1  152  123  60  31  15  1  0  0  0  20
+		bbox  127  124  59  33
+	@cmd dasher 3 0 0
+	frame	data/chars/Enemys/Rocket/a102.gif
+	frame	data/chars/Enemys/Rocket/a103.gif
+	frame	data/chars/Enemys/Rocket/a104.gif
+	frame  data/chars/Enemys/Rocket/a103.gif
+	frame  data/chars/Enemys/Rocket/a104.gif
+	frame  data/chars/Enemys/Rocket/a103.gif
+	frame  data/chars/Enemys/Rocket/a104.gif
+	frame	data/chars/Enemys/Rocket/a103.gif
+	frame	data/chars/Enemys/Rocket/a102.gif
+	frame	data/chars/Enemys/Rocket/a103.gif
+	frame	data/chars/Enemys/Rocket/a104.gif
+	frame	data/chars/Enemys/Rocket/a103.gif
+	frame	data/chars/Enemys/Rocket/a102.gif
+	frame	data/chars/Enemys/Rocket/a103.gif
+	frame	data/chars/Enemys/Rocket/a104.gif
+	frame	data/chars/Enemys/Rocket/a103.gif
+	frame	data/chars/Enemys/Rocket/a102.gif
+	@cmd dasher 1 0 0
+	frame	data/chars/Enemys/Rocket/a103.gif
+	frame	data/chars/Enemys/Rocket/a104.gif
+		Attack1  0
+		offset  155  190
+	@cmd dasher 0 0 0
+	frame	data/chars/Enemys/Rocket/land00.gif
+	frame	data/chars/Enemys/Rocket/land01.gif
+	frame  data/chars/Enemys/Rocket/Idle01.gif
+		offset  155  200
+	frame  data/chars/Enemys/Rocket/Idle00.gif
+		offset  155  210
+	frame  data/chars/Enemys/Rocket/Idle01.gif
+		offset  155  220
+	frame  data/chars/Enemys/Rocket/Idle00.gif
+
+
+anim freespecial2
+	loop	0
+	delay	8
+        Range 70 100
+        energycost 20 1
+        MpOnly 1
+	offset	155 220
+		Attack1  0
+        hitfx	data/sounds/golpes/medio.wav
+		move  0
+	frame	data/chars/Enemys/Rocket/Idle00.gif
+		delay  6
+		Range  100  150
+		hitfx  data/sounds/golpes/medio.wav
+	frame  data/chars/Enemys/Rocket/idle01.gif
+		hitfx  data/sounds/golpes/medio.wav
+		offset  155  230
+	frame  data/chars/Enemys/Rocket/Idle00.gif
+		hitfx  data/sounds/golpes/medio.wav
+	frame  data/chars/Enemys/Rocket/idle01.gif
+		delay  20
+		Range  100  150
+		hitfx  data/sounds/golpes/medio.wav
+		offset  155  240
+	frame  data/chars/Enemys/Rocket/a100.gif
+		delay  7
+	frame	data/chars/Enemys/Rocket/a101.gif
+	@cmd dasher 3 0 0
+		Attack1  0
+	frame	data/chars/Enemys/Rocket/a102.gif
+        @cmd	shooter2 "Rocket_Bomb"  15        70       0     0        0         0
+	frame	data/chars/Enemys/Rocket/a103.gif
+	frame	data/chars/Enemys/Rocket/a104.gif
+	frame  data/chars/Enemys/Rocket/a103.gif
+	frame  data/chars/Enemys/Rocket/a104.gif
+     @cmd	shooter2 "Rocket_Bomb"  15        80       0     0        0         0
+	frame  data/chars/Enemys/Rocket/a103.gif
+	frame  data/chars/Enemys/Rocket/a104.gif
+	frame	data/chars/Enemys/Rocket/a103.gif
+	frame	data/chars/Enemys/Rocket/a102.gif
+     @cmd	shooter2 "Rocket_Bomb"  15        70       0     0        0         0
+	frame	data/chars/Enemys/Rocket/a103.gif
+	frame	data/chars/Enemys/Rocket/a104.gif
+	frame	data/chars/Enemys/Rocket/a103.gif
+	frame	data/chars/Enemys/Rocket/a102.gif
+     @cmd	shooter2 "Rocket_Bomb"  15        80       0     0        0         0
+	frame	data/chars/Enemys/Rocket/a103.gif
+	frame	data/chars/Enemys/Rocket/a104.gif
+	frame	data/chars/Enemys/Rocket/a103.gif
+	frame	data/chars/Enemys/Rocket/a102.gif
+	@cmd dasher 1 0 0
+	frame	data/chars/Enemys/Rocket/a103.gif
+	frame	data/chars/Enemys/Rocket/a104.gif
+		Attack1  0
+	@cmd dasher 0 0 0
+	frame	data/chars/Enemys/Rocket/land00.gif
+	frame	data/chars/Enemys/Rocket/land01.gif
+		offset  155  230
+	frame  data/chars/Enemys/Rocket/Idle01.gif
+	frame  data/chars/Enemys/Rocket/Idle00.gif
+		offset  155  220
+	frame  data/chars/Enemys/Rocket/Idle01.gif
+	frame  data/chars/Enemys/Rocket/Idle00.gif
+
+
+
+
+
+
+
+
+
+anim Freespecial3
+
+	loop	0
+	Range  60  70
+	delay	5
+	offset	155 250
+	bbox	136 104 24 80
+        hitfx	data/sounds/golpes/Forte.wav
+		move  0
+		movez  0
+		Attack1  0
+	frame	data/chars/Enemys/Rocket/a201.gif
+		delay  3
+		Range  60  100
+		offset  155  240
+		Attack1  147
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Rocket/a200.gif
+		offset  155  230
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Rocket/a201.gif
+		offset  155  220
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Rocket/a200.gif
+		offset  155  210
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Rocket/IDle00.gif
+		offset  155  200
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Rocket/IDle01.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Rocket/IDle01.gif
+		hitfx  data/sounds/golpes/Forte.wav
+		move  5
+		movez  5
+		attack1  140  140  42  47  15  1  0  0  0  20
+	frame  data/chars/Enemys/Rocket/a200.gif
+	frame	data/chars/Enemys/Rocket/a201.gif
+	frame	data/chars/Enemys/Rocket/a200.gif
+	frame	data/chars/Enemys/Rocket/a201.gif
+	frame	data/chars/Enemys/Rocket/a200.gif
+	frame	data/chars/Enemys/Rocket/a201.gif
+	frame  data/chars/Enemys/Rocket/a201.gif
+	frame  data/chars/Enemys/Rocket/a201.gif
+	frame  data/chars/Enemys/Rocket/a201.gif
+	frame  data/chars/Enemys/Rocket/a201.gif
+	frame  data/chars/Enemys/Rocket/a201.gif
+		Attack1  0
+	frame  data/chars/Enemys/Rocket/a201.gif
+		movez  0
+		move  0
+	frame  data/chars/Enemys/Rocket/a201.gif
+		offset  155  210
+	frame	data/chars/Enemys/Rocket/Rise01.gif
+		offset  155  215
+	frame  data/chars/Enemys/Rocket/Idle00.gif
+		offset  155  220
+	frame	data/chars/Enemys/Rocket/Idle01.gif
+
+anim Freespecial4
+
+	loop	0
+	Range  200  250
+	offset	155 220
+	bbox	136 104 24 80
+        hitfx	data/sounds/golpes/Forte.wav
+		delay  4
+	frame	data/chars/Enemys/Rocket/Idle00.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Rocket/Idle01.gif
+		delay  4
+		offset  155  210
+		bbox  136  104  24  80
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Rocket/Idle00.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Rocket/Idle01.gif
+		delay  4
+		offset  155  200
+		bbox  136  104  24  80
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Rocket/Idle00.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Rocket/Idle01.gif
+		delay  4
+		offset  155  190
+		bbox  136  104  24  80
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Rocket/Idle00.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Rocket/Idle01.gif
+		offset  155  190
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Rocket/Idle00.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Rocket/Idle01.gif
+		@cmd  spawn01  "Fireball"  0  0  0
+		delay  40
+	frame	data/chars/Enemys/Rocket/Grab00.gif
+		delay  10
+	frame	data/chars/Enemys/Rocket/Idle01.gif
+		delay  5
+	frame	data/chars/Enemys/Rocket/Idle00.gif
+	frame	data/chars/Enemys/Rocket/Idle01.gif
+	frame	data/chars/Enemys/Rocket/Idle00.gif
+		offset  155  200
+	frame	data/chars/Enemys/Rocket/Idle01.gif
+		offset  155  210
+	frame	data/chars/Enemys/Rocket/Idle00.gif
+		offset  155  220
+	frame	data/chars/Enemys/Rocket/Idle01.gif
+	frame	data/chars/Enemys/Rocket/Idle00.gif
+
+anim attack1
+	loop	0
+	delay	3
+        Range 0 60
+	offset	155 220
+	bbox	136 104 24 80
+		Attack1  147  151  32  34  15  1  0  0  0  20
+        hitfx	data/sounds/golpes/Forte.wav
+		movez  0
+		movea  0
+		move  1
+	frame	data/chars/Enemys/Rocket/a200.gif
+		offset  155  215
+	frame	data/chars/Enemys/Rocket/a201.gif
+		offset  155  210
+	frame	data/chars/Enemys/Rocket/a200.gif
+		offset  155  205
+	frame	data/chars/Enemys/Rocket/a201.gif
+		offset  155  200
+	frame  data/chars/Enemys/Rocket/a201.gif
+		offset  155  190
+	frame  data/chars/Enemys/Rocket/a201.gif
+		movea  0
+		Attack1  0
+		offset  155  200
+		movez  -10
+	frame  data/chars/Enemys/Rocket/Idle00.gif
+		offset  155  210
+	frame  data/chars/Enemys/Rocket/Idle01.gif
+		offset  155  220
+	frame  data/chars/Enemys/Rocket/Idle00.gif
+		movea  0
+		bbox  136  100  38  56
+	frame  data/chars/Enemys/Rocket/Idle01.gif
+
+
+
+
+
+
+
+
+anim grabbed
+	loop	0
+	delay	100
+	offset	162 220
+	bbox	148 111 34 66
+	frame	data/chars/Enemys/Rocket/grabbed00.gif
+
+
+
+
+
+anim rise
+	loop	0
+	offset	148 180
+	delay	10
+	frame	data/chars/Enemys/Rocket/Rise00.gif
+		offset  159  190
+		delay  7
+	frame	data/chars/Enemys/Rocket/Rise01.gif
+		offset  159  200
+	frame  data/chars/Enemys/Rocket/Rise02.gif
+		offset  159  210
+	frame  data/chars/Enemys/Rocket/Idle00.gif
+		offset  159  220
+	frame  data/chars/Enemys/Rocket/Idle01.gif
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	159 220
+	bbox	146 109 37 41
+	frame	data/chars/Enemys/Rocket/land00.gif
+
+anim pain
+	loop	0
+	offset	155 220
+	bbox	141 109 30 80
+		delay  30
+	frame	data/chars/Enemys/Rocket/pain01.gif
+
+
+anim pain2
+	loop	0
+	offset	155 220
+	bbox	130 111 44 77
+	delay	30
+	frame	data/chars/Enemys/Rocket/pain02.gif
+
+anim pain3
+	loop	0
+	offset	155 220
+	bbox	134 110 37 82
+	jumpframe  0  2  0  0
+	delay	10
+	frame	data/chars/Enemys/Rocket/Pain02.gif
+	frame	data/chars/Enemys/Rocket/fall400.gif
+	frame	data/chars/Enemys/Rocket/Pain01.gif
+
+
+
+anim fall
+	loop	0
+	offset	177 220
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Rocket/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  134  193
+	frame  data/chars/Enemys/Rocket/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Rocket/fall403.gif
+		Attack1  0
+		offset  148  183
+	frame	data/chars/Enemys/Rocket/fall102.gif
+
+anim fall2
+	loop	0
+	offset	172 234
+	delay	20
+	jumpframe  0  2  -3.5  0
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Rocket/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  149  188
+	frame  data/chars/Enemys/Rocket/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Rocket/fall403.gif
+		Attack1  0
+		offset  146  182
+	frame	data/chars/Enemys/Rocket/fall102.gif
+#Shock
+
+anim fall4
+	loop	0
+	offset	50 160
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Rocket/fall200.gif
+		offset  50  140
+	frame	data/chars/Enemys/Rocket/fall201.gif
+		offset  50  130
+	frame	data/chars/Enemys/Rocket/fall200.gif
+	frame	data/chars/Enemys/Rocket/fall201.gif
+		offset  50  110
+	frame	data/chars/Enemys/Rocket/fall200.gif
+		offset  50  100
+	frame	data/chars/Enemys/Rocket/fall201.gif
+		offset  50  90
+	frame	data/chars/Enemys/Rocket/fall200.gif
+		offset  141  191
+	frame	data/chars/Enemys/Rocket/fall102.gif
+#Burn
+
+anim fall5
+	loop	0
+	offset	50 140
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Rocket/fall300.gif
+	frame	data/chars/Enemys/Rocket/fall301.gif
+	frame	data/chars/Enemys/Rocket/fall302.gif
+		offset  50  140
+	frame	data/chars/Enemys/Rocket/fall300.gif
+		offset  50  130
+	frame	data/chars/Enemys/Rocket/fall301.gif
+		offset  50  120
+	frame	data/chars/Enemys/Rocket/fall302.gif
+		offset  50  100
+	frame	data/chars/Enemys/Rocket/fall300.gif
+		offset  50  90
+	frame	data/chars/Enemys/Rocket/fall301.gif
+		offset  50  80
+	frame	data/chars/Enemys/Rocket/fall302.gif
+		offset  148  184
+	frame	data/chars/Enemys/Rocket/fall102.gif
+
+anim fall8
+	loop	0
+	offset	168 234
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Rocket/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  143  183
+	frame  data/chars/Enemys/Rocket/fall101.gif
+		Attack1  0
+	frame	data/chars/Enemys/Rocket/fall102.gif
+
+anim fall9
+	loop	0
+	offset	160 180
+	delay	999
+		Attack1  0
+	frame	data/chars/Enemys/Rocket/pain01.gif
+	frame	data/chars/Enemys/Rocket/pain02.gif
+	frame	data/chars/Enemys/Rocket/fall400.gif
+	frame	data/chars/Enemys/Rocket/fall401.gif
+		offset  126  187
+	frame	data/chars/Enemys/Rocket/fall402.gif
+		offset  135  153
+	frame	data/chars/Enemys/Rocket/fall403.gif
+		offset  148  185
+	frame	data/chars/Enemys/Rocket/fall404.gif
+		offset  141  179
+	frame	data/chars/Enemys/Rocket/fall405.gif
+	delay	50
+		offset  145  155
+	frame	data/chars/Enemys/Rocket/fall403.gif
+	delay	999
+		offset  147  181
+	frame	data/chars/Enemys/Rocket/fall405.gif
+
+anim death
+	loop	0
+	offset	137 189
+	delay	20
+	frame	data/chars/Enemys/Rocket/fall102.gif
+
+anim Pain8
+	loop	0
+	delay	15
+	offset	155 220
+	jumpframe  0  2  1  0
+	frame	data/chars/Enemys/Rocket/rise02.gif
+	frame	data/chars/Enemys/Rocket/rise01.gif
+

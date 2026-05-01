@@ -1,0 +1,680 @@
+name	Roo_Kunai
+health	100
+mp 20
+#mprate 1
+riseinv				0.4 1
+speed	13
+type	None
+gfxshadow	1
+candamage			enemy npc obstacle
+antigrab 2
+JUMPHEIGHT 1 1
+Jumpheight 3
+atchain    1 1 2 3
+weapons				Shiva_Knife Shiva_Sword Shiva_pipe Shiva_Kunai
+icon	data/chars/Enemys/Roo/iconP.gif 1
+diesound data/chars/Enemys/Roo/death.wav
+running	24	3	2	1	1
+
+animationscript		data/scripts/drago.c
+
+
+Load KunaiT
+
+
+Com d d freespecial5
+Com u u freespecial6
+com b A freespecial3
+
+remap data/chars/Enemys/Roo/idle00.gif data/chars/Enemys/Roo/alter1.gif
+remap data/chars/Enemys/Roo/idle00.gif data/chars/Enemys/Roo/alter2.gif
+remap data/chars/Enemys/Roo/idle00.gif data/chars/Enemys/Roo/alter3.gif
+remap data/chars/Enemys/Roo/idle00.gif data/chars/Enemys/Roo/alter4.gif
+
+
+
+
+anim idle
+	loop	1
+	delay	18
+	offset	152 182
+	bbox	144 112 36 71
+	frame   data/chars/Enemys/Roo/idle00.gif
+@cmd  depost  0
+@cmd  throw  25  5  2  2  0  -1
+@cmd  clearL
+	frame   data/chars/Enemys/Roo/idle01.gif
+	frame   data/chars/Enemys/Roo/idle02.gif
+	frame   data/chars/Enemys/Roo/idle03.gif
+
+
+anim walk
+	loop	1
+	delay	12
+	offset	152 182
+	bbox	142 131 41 48
+	frame	data/chars/Enemys/Roo/walk00.gif
+@cmd  depost  0
+@cmd  throw  25  5  2  2  0  -1
+@cmd  clearL
+	frame	data/chars/Enemys/Roo/walk01.gif
+	frame	data/chars/Enemys/Roo/walk02.gif
+	frame	data/chars/Enemys/Roo/walk03.gif
+	frame	data/chars/Enemys/Roo/walk04.gif
+	frame	data/chars/Enemys/Roo/walk05.gif
+
+
+anim get
+	loop	0
+	delay	12
+	offset	161 181
+        custknife Kunait
+        throwframe 2 55
+	frame	data/chars/Enemys/Roo/Kunai/a100.gif
+	frame	data/chars/Enemys/Roo/Kunai/a101.gif
+	frame	data/chars/Enemys/Roo/Kunai/a102.gif
+	delay	20
+	frame	data/chars/Enemys/Roo/Kunai/a103.gif
+
+anim follow10
+	loop	0
+	delay	6
+	offset	164 179
+        hitfx	data/sounds/efeitos/silencio.wav
+		attack8  142  133  44  49  0  0  0  0  0  15
+	frame	data/chars/Enemys/Roo/get00.gif
+	sound data/sounds/Item.wav
+	@cmd	position 8 30 0 0 -1
+	@cmd  depost  0
+	@cmd  throw  5	5  2  2  0  -1
+	@cmd  clearL
+	frame	data/chars/Enemys/Roo/get00.gif
+
+anim follow11
+	loop	0
+	delay	6
+	offset	164 179
+        hitfx	data/sounds/efeitos/silencio.wav
+		attack8  140  134  45  47  0  0  0  0  0  15
+	frame	data/chars/Enemys/Roo/get00.gif
+	sound data/sounds/Coin.wav
+	@cmd	position 8 30 0 0 -1
+	@cmd  depost  0
+	@cmd  throw  5	5  2  2  0  -1
+	@cmd  clearL
+	frame	data/chars/Enemys/Roo/get00.gif
+
+
+anim jump
+	loop	0
+	delay	20
+	offset	163 187
+	bbox	143 123 61 47
+	frame	data/chars/Enemys/Roo/jump00.gif
+	frame	data/chars/Enemys/Roo/jump01.gif
+	frame	data/chars/Enemys/Roo/jump00.gif
+
+
+anim jumpattack
+	loop	0
+	delay	7
+	offset	163 187
+	bbox	149 118 31 44
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/Enemys/Roo/Jump00.gif
+		attack1  132  130  53  42  7  1  0  0  0  15
+	frame	data/chars/Enemys/Roo/jumpatk00.gif
+		attack1  123  115  99  43  7  1  0  0  0  15
+	frame	data/chars/Enemys/Roo/jumpatk01.gif
+
+anim jumpattack2
+	loop	0
+	delay	7
+	offset	152 194
+	bbox	127 125 56 48
+	attack1	148 139 48 34 7 0  0  0  0  15
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/Enemys/Roo/jumpatk200.gif
+
+anim jumpforward
+	loop	0
+	delay	7
+	offset	159 192
+	bbox	156 128 28 34
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/soco.wav
+		Attack1  0
+	frame	data/chars/Enemys/Roo/Jump00.gif
+		attack1  135  131  53  43  9  1  0  0  0  15
+	frame	data/chars/Enemys/Roo/jumpatk00.gif
+		attack1  126  121  95  38  9  1  0  0  0  15
+	frame	data/chars/Enemys/Roo/jumpatk01.gif
+		attack1  135  111  50  42  9  1  0  0  0  15
+	frame	data/chars/Enemys/Roo/jumpatk02.gif
+	frame	data/chars/Enemys/Roo/jumpatk03.gif
+
+
+anim runjumpattack
+	loop	0
+	delay	8
+	offset	155 185
+	bbox	133 129 47 46
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+		Attack1  0
+	frame	data/chars/Enemys/Roo/jumpatk00.gif
+		attack1  147  128  71  36  7  1  0  0  0  15
+	frame	data/chars/Enemys/Roo/jumpatk01.gif
+		attack1  138  109  43  39  7  1  0  0  0  15
+	frame	data/chars/Enemys/Roo/jumpatk02.gif
+		attack1  135  122  45  43  7  1  0  0  0  15
+	frame	data/chars/Enemys/Roo/jumpatk03.gif
+
+
+anim attack1
+	loop	0
+	delay	4
+	offset	152 182
+	bbox	149 115 27 68
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/fraco.wav
+	cancel	0 9 0 b A freespecial7
+		Attack1  0
+	frame	data/chars/Enemys/Roo/a100.gif
+		attack1  152  126  43  18  5  0  0  0  0  15
+	frame	data/chars/Enemys/Roo/a101.gif
+		Attack1  148  130  46  19
+	frame	data/chars/Enemys/Roo/a102.gif
+		Attack1  0
+	frame	data/chars/Enemys/Roo/a103.gif
+
+
+anim attack2
+	loop	0
+	delay	4
+	offset	144 182
+	bbox	134 113 29 69
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Medio.wav
+	cancel	0 9 0 b A freespecial7
+	frame	data/chars/Enemys/Roo/a200.gif
+		delay  10
+	frame	data/chars/Enemys/Roo/a201.gif
+		attack2  156  117  48  37  7  0  0  0  0  15
+	frame	data/chars/Enemys/Roo/a202.gif
+		Attack1  0
+	frame	data/chars/Enemys/Roo/a203.gif
+
+
+anim attack3
+	loop	0
+	delay	5
+	offset	149 180
+	bbox	128 107 22 72
+        Sound	data/sounds/golpes/Chut.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	cancel	0 9 0 b A freespecial7
+	frame	data/chars/Enemys/Roo/a300.gif
+	Sound	data/chars/Enemys/Roo/a2.wav
+		Attack1  0
+	frame	data/chars/Enemys/Roo/a301.gif
+		attack1  141  98  86  54  12  1  0  0  0  15
+	frame	data/chars/Enemys/Roo/a302.gif
+		delay  8
+	frame	data/chars/Enemys/Roo/a303.gif
+		Attack1  0
+	frame	data/chars/Enemys/Roo/a304.gif
+	frame	data/chars/Enemys/Roo/a305.gif
+
+
+anim run
+        loop    1
+        delay  5
+	offset	156 182
+	bbox	144 126 45 38
+        frame	data/chars/Enemys/Roo/run00.gif
+        frame	data/chars/Enemys/Roo/run01.gif
+        frame	data/chars/Enemys/Roo/run02.gif
+        frame	data/chars/Enemys/Roo/run03.gif
+
+
+
+
+anim grab
+	loop	0
+	delay	100
+	offset	157 183
+	bbox	142 104 34 79
+        cancel	0 9 0 j freespecial
+       	cancel	0 9 0 b A freespecial4
+	frame	data/chars/Enemys/Roo/grab00.gif
+
+
+
+
+anim Freespecial
+	loop	0
+	delay	10
+	offset	152 179
+        hitfx	data/sounds/golpes/Forte.wav
+		@cmd	slamstart
+		@cmd	position 1 30 0 0 -1
+	frame	data/chars/Enemys/Roo/grab00.gif
+		@cmd  position  1  30  0  0  -1
+	offset  93  233
+	frame  data/chars/Enemys/Roo/vault00.gif
+		@cmd  position  1  30  0  0  -1
+	frame  data/chars/Enemys/Roo/vault01.gif
+	frame	data/chars/Enemys/Roo/vault02.gif
+	frame	data/chars/Enemys/Roo/vault03.gif
+	frame	data/chars/Enemys/Roo/vault04.gif
+		offset  157  210
+		delay  10
+		move  60
+		@cmd	position 1 -30 0 0 -1
+	frame  data/chars/Enemys/Roo/fs100.gif
+		move  0
+		@cmd	position 1 -30 0 0 -1
+	delay  8
+	frame	data/chars/Enemys/Roo/fs101.gif
+		@cmd	position 8 -30 15 0 -1
+		@cmd  depost  0
+		@cmd  throw  20  -5  2  1  0  -1
+		@cmd  clearL
+        Sound	data/sounds/golpes/medio.wav
+		delay  12
+       @cmd dasher 1 0 0
+	frame	data/chars/Enemys/Roo/fs102.gif
+	frame	data/chars/Enemys/Roo/fs103.gif
+		move  5
+		offset  143  181
+	frame	data/chars/Enemys/Roo/fs104.gif
+		move  0
+		offset  166  181
+	frame  data/chars/Enemys/Roo/get00.gif
+
+
+anim freespecial4
+	loop	0
+	delay	12
+	offset	151 182
+@cmd	slamstart
+@cmd	position 0 30 1 0 -1
+frame	data/chars/Enemys/Roo/Grab00.gif
+@cmd	position 1 30 1 0 -1
+	frame	data/chars/Enemys/Roo/a300.gif
+@cmd	position 2 25 10 0 -1
+	frame	data/chars/Enemys/Roo/a301.gif
+@cmd	position 3 -10 30 0 -1
+		attack1  84  124  46  28  12  1  0  0  0  15
+	frame	data/chars/Enemys/Roo/a302.gif
+@cmd	position 4 -40 25 0 -1
+		attack1  48  118  27  50  12  1  0  0  0  15
+	frame	data/chars/Enemys/Roo/a303.gif
+@cmd	position 8 -70 25 0 -1
+@cmd  depost  0
+@cmd  throw  20  -2  2  1  0  -1
+@cmd  clearL
+		attack1  -2  121  49  36  12  1  0  0  0  15
+	frame	data/chars/Enemys/Roo/a304.gif
+	delay	12
+		attack1  -31  121  49  36  12  1  0  0  0  15
+	frame	data/chars/Enemys/Roo/a305.gif
+
+
+
+anim Freespecial5
+	loop	0
+	delay	10
+        offset	159 180
+	frame	data/chars/Enemys/Roo/dodge00.gif
+       @cmd dasher 0.5 0 2
+	delay	5
+	frame	data/chars/Enemys/Roo/dodge01.gif
+	frame	data/chars/Enemys/Roo/dodge02.gif
+	frame	data/chars/Enemys/Roo/dodge03.gif
+	frame	data/chars/Enemys/Roo/dodge04.gif
+       @cmd dasher 0 0 0
+		offset  163  178
+		delay  10
+	frame	data/chars/Enemys/Roo/dodge05.gif
+
+
+anim Freespecial6
+	loop	0
+	delay	10
+        offset	163 180
+	frame	data/chars/Enemys/Roo/dodge00.gif
+       @cmd dasher 0.5 0 -2
+	delay	5
+	frame	data/chars/Enemys/Roo/dodge01.gif
+	frame	data/chars/Enemys/Roo/dodge02.gif
+	frame	data/chars/Enemys/Roo/dodge03.gif
+	frame	data/chars/Enemys/Roo/dodge04.gif
+       @cmd dasher 0 0 0
+		offset  159  179
+		delay  10
+	frame	data/chars/Enemys/Roo/dodge05.gif
+
+
+
+
+
+anim rise
+	loop	0
+	offset	153 183
+	delay	5
+	frame	data/chars/Enemys/Roo/Rise00.gif
+@cmd  depost  0
+@cmd  throw  25  5  2  2  0  -1
+@cmd  clearL
+	frame	data/chars/Enemys/Roo/Rise01.gif
+	frame	data/chars/Enemys/Roo/Rise02.gif
+	frame	data/chars/Enemys/Roo/Rise03.gif
+
+
+
+
+anim special
+        energycost 20 1
+        MpOnly 1
+	loop	0
+	delay	7
+	offset	151 182
+        hitfx	data/sounds/golpes/forte.wav
+	@cmd  spawn01  "RooSP1"  0  0  -1
+	frame	data/chars/Enemys/Roo/special200.gif
+	Sound	data/sounds/golpes/Chut.wav
+	@cmd  spawn01  "RooSP1"  0  0  -1
+		attack2  137  113  69  45  27  1  0  0  0  15
+       @cmd dasher 1 0 0
+	frame	data/chars/Enemys/Roo/special201.gif
+		attack2  139  110  40  43  27  1  0  0  0  15
+	frame	data/chars/Enemys/Roo/special202.gif
+		attack2  113  117  63  45  25  1  0  0  0  15
+		sound  data/sounds/golpes/Chut.wav
+	frame	data/chars/Enemys/Roo/special203.gif
+		attack2  137  101  47  68  25  1  0  0  0  15
+	frame	data/chars/Enemys/Roo/special204.gif
+		attack2  135  139  43  48  25  1  0  0  0  15
+	frame	data/chars/Enemys/Roo/special205.gif
+
+anim special2
+        energycost 20 1
+        MpOnly 1
+	loop	0
+	delay	8
+	offset	156 183
+	jumpframe  2  3  2  0
+	Fastattack 1
+        hitfx	data/sounds/golpes/MEdio.wav
+	@cmd  spawn01  "RooSP2"  0  0  -1
+	frame	data/chars/Enemys/Roo/special00.gif
+		move  0
+	frame	data/chars/Enemys/Roo/special01.gif
+		attack2  126  118  60  55  27  1  0  0  0  15
+	frame	data/chars/Enemys/Roo/special02.gif
+	delay	3
+		sound  data/sounds/golpes/Chut.wav
+	frame	data/chars/Enemys/Roo/special03.gif
+	frame	data/chars/Enemys/Roo/special04.gif
+		sound  data/sounds/golpes/Chut.wav
+	frame	data/chars/Enemys/Roo/special05.gif
+	frame	data/chars/Enemys/Roo/special06.gif
+		sound  data/sounds/golpes/Chut.wav
+	frame	data/chars/Enemys/Roo/special03.gif
+	frame	data/chars/Enemys/Roo/special04.gif
+		sound  data/sounds/golpes/Chut.wav
+	frame	data/chars/Enemys/Roo/special05.gif
+	frame	data/chars/Enemys/Roo/special06.gif
+		sound  data/sounds/golpes/Chut.wav
+	frame	data/chars/Enemys/Roo/special03.gif
+	frame	data/chars/Enemys/Roo/special04.gif
+		sound  data/sounds/golpes/Chut.wav
+	frame	data/chars/Enemys/Roo/special05.gif
+	frame	data/chars/Enemys/Roo/special06.gif
+		Attack1  0
+	delay	8
+	frame	data/chars/Enemys/Roo/special07.gif
+
+
+
+anim Runattack
+ 	loop	0
+ 	delay	8
+	fastattack 1
+ 	offset	152 182
+       @cmd dasher 1 0 0
+	frame	data/chars/Enemys/Roo/runatk00.gif
+	frame	data/chars/Enemys/Roo/runatk01.gif
+	frame	data/chars/Enemys/Roo/runatk02.gif
+		attack1  158  122  35  64  12  1  0  0  0  15
+      @cmd dasher 2 0 0
+		sound  data/sounds/slide.wav
+	frame	data/chars/Enemys/Roo/runatk03.gif
+	frame	data/chars/Enemys/Roo/runatk04.gif
+	frame  data/chars/Enemys/Roo/runatk03.gif
+	frame  data/chars/Enemys/Roo/runatk04.gif
+       @cmd dasher 1 0 0
+	frame	data/chars/Enemys/Roo/runatk05.gif
+	frame	data/chars/Enemys/Roo/runatk06.gif
+	frame	data/chars/Enemys/Roo/runatk07.gif
+	frame	data/chars/Enemys/Roo/runatk08.gif
+
+
+
+
+
+anim grabattack
+	loop	0
+	offset	157 183
+	bbox	142 104 29 79
+	delay	4
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+		Attack1  0
+	frame	data/chars/Enemys/Roo/grabatk00.gif
+		attack1  144  116  52  39  5  0  0  0  0  15
+	frame	data/chars/Enemys/Roo/grabatk01.gif
+		delay  10
+	frame	data/chars/Enemys/Roo/grabatk02.gif
+	frame	data/chars/Enemys/Roo/grabatk03.gif
+		Attack1  0
+	frame	data/chars/Enemys/Roo/grabatk04.gif
+
+anim grabattack2
+	loop	0
+	offset	157 183
+	bbox	148 100 23 82
+	delay	4
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+		Attack1  0
+	frame	data/chars/Enemys/Roo/grabatk200.gif
+		attack1  135  118  64  34  12  1  0  0  0  15
+	frame	data/chars/Enemys/Roo/grabatk201.gif
+		delay  20
+		attack1  127  118  83  29  12  1  0  0  0  15
+	frame	data/chars/Enemys/Roo/grabatk202.gif
+		Attack1  0
+		delay  5
+	frame	data/chars/Enemys/Roo/grabatk203.gif
+	frame	data/chars/Enemys/Roo/grabatk204.gif
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	163 180
+		bbox  142  134  43  45
+	frame	data/chars/Enemys/Roo/get00.gif
+
+anim freespecial7
+ 	loop	0
+ 	delay	8
+ 	offset	157 182
+ 	bbox	141 132 36 51
+        hitfx	data/sounds/golpes/Medio.wav
+        Sound	data/sounds/golpes/soco.wav
+ 	frame	data/chars/Enemys/Roo/aboth00.gif
+ 	frame	data/chars/Enemys/Roo/aboth01.gif
+		attack1  108  137  66  27  7  1  0  0  0  15
+ 	frame	data/chars/Enemys/Roo/aboth02.gif
+ 	frame	data/chars/Enemys/Roo/aboth03.gif
+
+
+
+anim freespecial3
+ 	loop	0
+ 	delay	8
+ 	offset	143 183
+ 	bbox	136 127 29 56
+        hitfx	data/sounds/golpes/Medio.wav
+        Sound	data/sounds/golpes/soco.wav
+ 	frame	data/chars/Enemys/Roo/aboth200.gif
+ 	frame	data/chars/Enemys/Roo/aboth201.gif
+		attack1  126  132  68  27  7  1  0  0  0  15
+ 	frame	data/chars/Enemys/Roo/aboth202.gif
+		Attack1  0
+ 	frame	data/chars/Enemys/Roo/aboth203.gif
+
+anim pain
+	loop	0
+	offset	161 182
+	bbox	146 107 28 79
+	delay	15
+	frame	data/chars/Enemys/Roo/pain01.gif
+	frame	data/chars/Enemys/Roo/pain02.gif
+
+
+anim pain2
+	loop	0
+	offset	160 183
+	bbox	144 112 30 71
+	delay	15
+	frame	data/chars/Enemys/Roo/pain02.gif
+	frame	data/chars/Enemys/Roo/pain01.gif
+
+anim pain3
+	loop	0
+	offset	157 182
+	bbox	141 114 34 72
+	jumpframe  0  2  0  0
+	delay	10
+	frame	data/chars/Enemys/Roo/Pain02.gif
+	frame	data/chars/Enemys/Roo/fall400.gif
+	frame	data/chars/Enemys/Roo/Pain01.gif
+
+
+anim fall
+	loop	0
+	offset	147 174
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Roo/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  130  164
+	frame  data/chars/Enemys/Roo/fall101.gif
+		Attack1  0
+		offset  142  179
+	frame	data/chars/Enemys/Roo/fall102.gif
+
+anim fall2
+	loop	0
+	offset	140 177
+	delay	20
+	jumpframe  0  2  -3.5  0
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Roo/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  137  165
+	frame  data/chars/Enemys/Roo/fall101.gif
+		Attack1  0
+		offset  146  180
+	frame	data/chars/Enemys/Roo/fall102.gif
+#Shock
+
+anim fall4
+	loop	0
+	offset	152 178
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Roo/fall200.gif
+	frame	data/chars/Enemys/Roo/fall201.gif
+	frame	data/chars/Enemys/Roo/fall200.gif
+	frame	data/chars/Enemys/Roo/fall201.gif
+	frame	data/chars/Enemys/Roo/fall200.gif
+	frame	data/chars/Enemys/Roo/fall201.gif
+	frame	data/chars/Enemys/Roo/fall200.gif
+		offset  142  182
+	frame	data/chars/Enemys/Roo/fall102.gif
+#Burn
+
+anim fall5
+	loop	0
+	offset	135 164
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Roo/fall300.gif
+	frame	data/chars/Enemys/Roo/fall301.gif
+	frame	data/chars/Enemys/Roo/fall302.gif
+	frame	data/chars/Enemys/Roo/fall300.gif
+	frame	data/chars/Enemys/Roo/fall301.gif
+	frame	data/chars/Enemys/Roo/fall302.gif
+	frame	data/chars/Enemys/Roo/fall300.gif
+	frame	data/chars/Enemys/Roo/fall301.gif
+	frame	data/chars/Enemys/Roo/fall302.gif
+		offset  142  182
+	frame	data/chars/Enemys/Roo/fall102.gif
+
+anim fall9
+	loop	0
+	offset	158 179
+	delay	999
+		Attack1  0
+	frame	data/chars/Enemys/Roo/pain01.gif
+	frame	data/chars/Enemys/Roo/pain02.gif
+		offset  153  167
+	frame	data/chars/Enemys/Roo/fall400.gif
+		offset  156  178
+	frame	data/chars/Enemys/Roo/fall401.gif
+		offset  140  190
+	frame	data/chars/Enemys/Roo/fall402.gif
+		offset  129  161
+	frame	data/chars/Enemys/Roo/fall403.gif
+		offset  146  179
+	frame	data/chars/Enemys/Roo/fall404.gif
+		offset  147  181
+	frame	data/chars/Enemys/Roo/fall405.gif
+	delay	50
+		offset  132  164
+	frame	data/chars/Enemys/Roo/fall403.gif
+	delay	999
+		offset  147  181
+	frame	data/chars/Enemys/Roo/fall405.gif
+
+anim Death
+	loop	0
+	offset	149 177
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Roo/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  135  182
+	frame  data/chars/Enemys/Roo/fall101.gif
+		Attack1  0
+		offset  143  180
+	delay	500
+	frame	data/chars/Enemys/Roo/fall102.gif
+

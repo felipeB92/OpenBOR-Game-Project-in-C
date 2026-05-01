@@ -1,0 +1,83 @@
+music	data/music/boss2.bor
+bossmusic	data/music/boss2.bor
+
+###BACKGROUND
+background		data/bgs/St403/back00.gif	
+
+###BGLAYER/PANEL
+panel			data/bgs/St403/pN02.gif	none	none
+
+###MISC
+Frontpanel			data/bgs/St403/Front01.gif
+#order			a
+settime			99
+scrollspeed 	0.5
+stagenumber 	3
+cameratype 1
+backgroundSpeed 1 40
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+
+spawn1  	30 30  150
+spawn2  	35 30  150
+spawn3  	40 30  150
+
+light		128 -128
+at			0
+
+
+
+
+light		128 -128
+at			0
+
+spawn  Bau
+Item   Chicken
+coords  160 200
+at  0
+
+spawn  Bau
+2pItem   Chicken
+coords  327 200
+at  0
+
+Group 1 1
+at  0
+
+
+
+spawn  _Rick
+health 300
+	coords  246 182
+	at  0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

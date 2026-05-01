@@ -1,0 +1,11 @@
+name		Stage
+type		none
+shadow		0
+antigravity	100
+setlayer	7
+
+anim idle
+	loop	0
+	delay	4
+	offset	0 0
+	frame	data/bgs/st307/stage00.gif

@@ -1,0 +1,76 @@
+name			elevador204 #GROUND
+type			None
+setlayer -56
+#offscreenkill	1000
+onblockwscript	data/scripts/bounceF.c
+animationscript 	data/scripts/ani0020.h
+ondrawscript 		data/scripts/player_ondrawscript.c
+
+Load Elevador01
+Load Elevador02
+
+anim idle
+	loop	0
+	offset	0 812
+		delay  10
+	@cmd  spawn01  "Elevador01"  0  0  0
+		movea  -5
+	frame	data/Bgs/St207/e200.gif
+		move  0
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+	frame	data/Bgs/St207/e200.gif
+		movea  0
+	frame	data/Bgs/St207/e200.gif
+	@cmd  spawn01  "Elevador02"  0  0  0
+	frame	data/Bgs/St207/e200.gif
+

@@ -1,0 +1,26 @@
+name		Porta302
+type		none
+shadow		0
+#setlayer	0
+antigravity	100
+
+anim idle
+	loop	0
+	delay	9
+	offset	24 97
+	frame	data/bgs/St306/PORTA03/P00.gif
+	frame	data/bgs/St306/PORTA03/P01.gif
+	frame	data/bgs/St306/PORTA03/P02.gif
+		sound  data/Sounds/gate.wav
+	frame	data/bgs/St306/PORTA03/P03.gif
+	frame	data/bgs/St306/PORTA03/P04.gif
+	frame	data/bgs/St306/PORTA03/P05.gif
+	frame	data/bgs/St306/PORTA03/P06.gif
+	frame	data/bgs/St306/PORTA03/P07.gif
+	frame	data/bgs/St306/PORTA03/P08.gif
+	frame	data/bgs/St306/PORTA03/P09.gif
+	frame	data/bgs/St306/PORTA03/P10.gif
+	frame	data/bgs/St306/PORTA03/P11.gif
+	frame	data/bgs/St306/PORTA03/P12.gif
+	frame	data/bgs/St306/PORTA03/P13.gif
+

@@ -1,0 +1,130 @@
+music		data/Bgs/St407/lv407b.bor
+bossmusic	data/music/boss3.bor
+
+###BACKGROUND
+background			data/bgs/St407/Back03.gif
+
+###BGLAYER/PANEL
+panel			data/bgs/St407/pN03.gif	none	none
+
+###MISC
+Frontpanel			data/bgs/St05/Front02.gif
+#order			a
+settime			99
+scrollspeed 	0.5
+stagenumber 	7
+cameratype 1
+backgroundSpeed 1 40
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	30 30  150
+spawn2  	35 30 150
+spawn3  	40 30  150
+
+light		128 -128
+at			0
+
+spawn  PC407
+flip   1
+	coords  0 0
+	at  0
+
+spawn  PC407b
+flip   1
+	coords  0 0
+	at  0
+
+spawn  Zero300
+flip   1
+	coords  477 84
+	at  0
+
+
+
+spawn  Mx407c
+flip   1
+	coords  730 260
+	at  0
+
+spawn  Lata03
+Item   Chicken
+	coords  150 250
+	at  0
+
+spawn  Lata03
+2pIten   Chicken
+	coords  200 220
+	at  0
+
+spawn  Lata03
+3pIten   Chicken
+	coords  250 200
+	at  0
+
+
+
+
+wait 
+at  300
+
+
+Group 2  2
+at  300
+
+spawn  RobotZ
+MAP    1
+health 250
+	coords  445 245
+	at  300
+
+spawn  RobotZ
+MAP    1
+health 250
+flip   1
+	coords  45 245
+	at  300
+
+wait 
+at  301
+
+
+Group 2  2
+at  301
+
+
+spawn  NeoX
+MAP    1
+health 250
+	coords  500 245
+	at  301
+
+spawn  NEoX
+health 250
+flip   1
+	coords  -100 245
+	at  301
+
+
+
+spawn  Zwar
+Boss   1
+Map    1
+health 700
+	coords  370 235 
+	at  302
+
+
+
+
+
+
+

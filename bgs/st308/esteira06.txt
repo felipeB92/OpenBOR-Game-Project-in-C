@@ -1,0 +1,79 @@
+name			Esteira06
+type			none
+candamage		Enemy
+shadow			0
+setlayer		-10
+animationscript		data/scripts/drago.c
+
+load			Esteira06Sa
+load			Esteira06Sb
+load			Esteira06Sc
+
+anim idle
+	loop	1
+	delay	10
+	offset	1 72
+	fastattack 1
+        hitfx	data/sounds/efeitos/silencio.wav
+	@cmd spawn01 "Esteira06Sa" 0 0 20
+	@cmd spawn01 "Esteira06Sb" 0 0 20
+	@cmd spawn01 "Esteira06Sc" 0 0 20
+	forcedirection 1
+		attack8  28  50  40  23  0  0  0  0  0  100
+	frame	data/bgs/st308/machine02.gif
+	forcedirection 1
+		attack8  45  34  33  22  0  0  0  0  0  100
+	frame	data/bgs/st308/machine03.gif
+	forcedirection 1
+		attack8  67  17  24  22  0  0  0  0  0  100
+	frame	data/bgs/st308/machine04.gif
+	forcedirection 1
+		attack8  81  5  25  18  0  0  0  0  0  100
+	frame	data/bgs/st308/machine05.gif
+	@cmd spawn01 "Esteira06Sa" 0 0 20
+	@cmd spawn01 "Esteira06Sb" 0 0 20
+	@cmd spawn01 "Esteira06Sc" 0 0 20
+	forcedirection 1
+		attack8  95  -1  21  14  0  0  0  0  0  100
+	frame	data/bgs/st308/machine02.gif
+		Attack1  0
+	frame	data/bgs/st308/machine03.gif
+	frame	data/bgs/st308/machine04.gif
+		Attack1  0
+	frame	data/bgs/st308/machine05.gif
+	@cmd spawn01 "Esteira06Sa" 0 0 20
+	@cmd spawn01 "Esteira06Sb" 0 0 20
+	@cmd spawn01 "Esteira06Sc" 0 0 20
+	forcedirection -1
+		attack8  367  -2  26  13  0  0  0  0  0  100
+	frame	data/bgs/st308/machine02.gif
+	forcedirection -1
+		attack8  376  6  20  19  0  0  0  0  0  100
+	frame	data/bgs/st308/machine03.gif
+	forcedirection -1
+		attack8  386  17  20  18  0  0  0  0  0  100
+	frame	data/bgs/st308/machine04.gif
+	forcedirection -1
+		attack8  400  26  19  19  0  0  0  0  0  100
+	frame	data/bgs/st308/machine05.gif
+	@cmd spawn01 "Esteira06Sa" 0 0 20
+	@cmd spawn01 "Esteira06Sb" 0 0 20
+	@cmd spawn01 "Esteira06Sc" 0 0 20
+	forcedirection -1
+		attack8  410  39  20  17  0  0  0  0  0  100
+	frame	data/bgs/st308/machine02.gif
+	forcedirection -1
+		attack8  422  48  24  26  0  0  0  0  0  100
+	frame	data/bgs/st308/machine03.gif
+		Attack1  0
+	frame	data/bgs/st308/machine04.gif
+	frame	data/bgs/st308/machine05.gif
+	@cmd spawn01 "Esteira06Sa" 0 0 20
+	@cmd spawn01 "Esteira06Sb" 0 0 20
+	@cmd spawn01 "Esteira06Sc" 0 0 20
+	frame	data/bgs/st308/machine02.gif
+	frame	data/bgs/st308/machine03.gif
+	frame	data/bgs/st308/machine04.gif
+	frame	data/bgs/st308/machine05.gif
+	
+

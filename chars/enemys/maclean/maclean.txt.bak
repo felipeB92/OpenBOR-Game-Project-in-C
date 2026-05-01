@@ -1,0 +1,305 @@
+name	Maclean
+health	100
+speed	12
+falldie 2
+type	Enemy
+gfxshadow	1
+hostile				player npc
+candamage			player npc obstacle
+JUMPHEIGHT 1 1
+Jumpheight 3
+atchain    1 1 2
+icon	data/chars/Enemys/Maclean/icon.gif 1
+diesound data/voices/die2.wav
+running	20	3	3	1	1
+animationscript		data/scripts/drago.c
+
+
+
+##LOADS
+
+LOAD Tiro06
+
+
+
+remap data/chars/Enemys/Maclean/idle00.gif data/chars/Enemys/Maclean/alter1.gif
+remap data/chars/Enemys/Maclean/idle00.gif data/chars/Enemys/Maclean/alter2.gif
+remap data/chars/Enemys/Maclean/idle00.gif data/chars/Enemys/Maclean/alter3.gif
+
+anim	spawn
+	loop	0
+	delay	8
+	bbox	129 111 37 70
+		offset  145 181
+	frame   data/chars/Enemys/Maclean/idle00.gif
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	145 181
+	bbox	130 113 32 69
+	frame   data/chars/Enemys/Maclean/idle00.gif
+
+
+
+anim walk
+	loop	1
+	delay	10
+	offset	145 181
+	bbox	129 108 35 76
+	frame	data/chars/Enemys/Maclean/walk00.gif
+	frame	data/chars/Enemys/Maclean/walk01.gif
+	frame	data/chars/Enemys/Maclean/walk02.gif
+	frame	data/chars/Enemys/Maclean/walk03.gif
+
+
+
+anim get
+	loop	0
+	delay	10
+	offset	145 181
+	frame	data/chars/Enemys/Maclean/get00.gif
+
+
+anim jump
+	loop	0
+	delay	30
+	offset	145 181
+	bbox	123 128 48 44
+	frame	data/chars/Enemys/Maclean/jump00.gif
+
+
+
+
+anim attack1
+	loop	0
+	delay	4
+        Range 0 60
+	offset	145 181
+	bbox	135 111 25 72
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/Enemys/Maclean/a100.gif
+	frame	data/chars/Enemys/Maclean/a101.gif
+		attack1  158  120  51  19  7  0  0  0  0  10
+	frame	data/chars/Enemys/Maclean/a102.gif
+	frame	data/chars/Enemys/Maclean/a103.gif
+	frame	data/chars/Enemys/Maclean/a104.gif
+		Attack1  0
+	frame	data/chars/Enemys/Maclean/a105.gif
+	frame	data/chars/Enemys/Maclean/a106.gif
+
+anim attack2
+	loop	0
+	delay	4
+	offset	145 181
+	bbox	136 106 24 77
+		Attack1  0  0  0  0
+        hitfx	data/sounds/golpes/medio.wav
+	frame	data/chars/Enemys/Maclean/a200.gif
+		attack1  144  133  54  23  10  1  0  0  0  20
+	frame	data/chars/Enemys/Maclean/a201.gif
+	frame	data/chars/Enemys/Maclean/a202.gif
+	frame	data/chars/Enemys/Maclean/a203.gif
+		Attack1  0
+	frame	data/chars/Enemys/Maclean/a204.gif
+
+
+anim freespecial
+	loop	0
+	delay	6
+        Range 100 250
+	offset	145 181
+	bbox	138 108 26 76
+		Attack1  0
+        hitfx	data/sounds/golpes/medio.wav
+		move  0
+        sound	data/sounds/Shot.wav
+	frame	data/chars/Enemys/Maclean/shot00.gif
+        @cmd  spawn01  "Tiro06"  0  0  0
+	frame	data/chars/Enemys/Maclean/shot01.gif
+	frame	data/chars/Enemys/Maclean/shot00.gif
+        delay	25
+	frame	data/chars/Enemys/Maclean/reload00.gif
+
+
+
+
+
+
+
+anim grabbed
+	loop	0
+	delay	100
+	offset	145 181
+	bbox	130 113 32 72
+	frame	data/chars/Enemys/Maclean/grabbed00.gif
+
+
+
+
+anim rise
+	loop	0
+	offset	145 181
+	delay	10
+	frame	data/chars/Enemys/Maclean/Rise00.gif
+	frame	data/chars/Enemys/Maclean/Rise01.gif
+	frame	data/chars/Enemys/Maclean/Rise02.gif
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	145 181
+	bbox	128 133 46 41
+	frame	data/chars/Enemys/Maclean/jumpland00.gif
+
+anim pain
+	loop	0
+	offset	82 120
+	bbox	62 58 42 61
+		delay  30
+	frame	data/chars/Enemys/Maclean/pain01.gif
+
+
+anim pain2
+	loop	0
+	offset	75 119
+	bbox	60 54 29 64
+	delay	30
+	frame	data/chars/Enemys/Maclean/pain02.gif
+
+anim pain3
+	loop	0
+	offset	79 119
+	bbox	63 52 26 67
+	jumpframe  0  2  0  0
+	delay	10
+	frame	data/chars/Enemys/Maclean/Pain02.gif
+	frame	data/chars/Enemys/Maclean/fall100.gif
+	frame	data/chars/Enemys/Maclean/Pain01.gif
+
+
+
+anim fall
+	loop	0
+	offset	78 120
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Maclean/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Maclean/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Maclean/fall403.gif
+		Attack1  0
+	frame	data/chars/Enemys/Maclean/fall102.gif
+
+anim fall2
+	loop	0
+	offset	78 118
+	delay	20
+	jumpframe  0  2  -3.5  0
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Maclean/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Maclean/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Maclean/fall403.gif
+		Attack1  0
+		offset  78  118
+	frame	data/chars/Enemys/Maclean/fall102.gif
+#Shock
+
+anim fall4
+	loop	0
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Maclean/fall200.gif
+	frame	data/chars/Enemys/Maclean/fall201.gif
+	frame	data/chars/Enemys/Maclean/fall200.gif
+	frame	data/chars/Enemys/Maclean/fall201.gif
+	frame	data/chars/Enemys/Maclean/fall200.gif
+	frame	data/chars/Enemys/Maclean/fall201.gif
+	frame	data/chars/Enemys/Maclean/fall200.gif
+		offset  75  119
+	frame	data/chars/Enemys/Maclean/fall102.gif
+#Burn
+
+anim fall5
+	loop	0
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Maclean/fall300.gif
+	frame	data/chars/Enemys/Maclean/fall301.gif
+	frame	data/chars/Enemys/Maclean/fall302.gif
+	frame	data/chars/Enemys/Maclean/fall300.gif
+	frame	data/chars/Enemys/Maclean/fall301.gif
+	frame	data/chars/Enemys/Maclean/fall302.gif
+	frame	data/chars/Enemys/Maclean/fall300.gif
+	frame	data/chars/Enemys/Maclean/fall301.gif
+	frame	data/chars/Enemys/Maclean/fall302.gif
+		offset  76  120
+	frame	data/chars/Enemys/Maclean/fall102.gif
+
+anim fall8
+	loop	0
+	offset	76 119
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Maclean/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Maclean/fall101.gif
+		Attack1  0
+		offset  76  121
+	frame	data/chars/Enemys/Maclean/fall102.gif
+
+anim fall9
+	loop	0
+	offset	81 119
+	delay	999
+		Attack1  0
+	frame	data/chars/Enemys/Maclean/pain01.gif
+	frame	data/chars/Enemys/Maclean/pain02.gif
+		offset  77  119
+	frame	data/chars/Enemys/Maclean/fall400.gif
+		offset  113  105
+	frame	data/chars/Enemys/Maclean/fall401.gif
+		offset  89  135
+	frame	data/chars/Enemys/Maclean/fall402.gif
+		offset  80  113
+	frame	data/chars/Enemys/Maclean/fall403.gif
+		offset  103  110
+	frame	data/chars/Enemys/Maclean/fall404.gif
+		offset  72  119
+	frame	data/chars/Enemys/Maclean/fall405.gif
+	delay	50
+		offset  76  115
+	frame	data/chars/Enemys/Maclean/fall403.gif
+	delay	999
+		offset  74  120
+	frame	data/chars/Enemys/Maclean/fall405.gif
+
+anim death
+	loop	0
+	offset	76 118
+	delay	20
+	frame	data/chars/Enemys/Maclean/fall102.gif
+
+anim Pain8
+	loop	0
+	delay	15
+	offset	76 118
+	jumpframe  0  2  1  0
+	frame	data/chars/Enemys/Maclean/jump00.gif
+	frame	data/chars/Enemys/Maclean/jump00.gif
+

@@ -1,0 +1,39 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	DeathE
+health	1
+nolife 1
+noname 1
+type	None
+gfxshadow	1
+#icon	data/chars/misc/charicon.gif
+noatflash	1
+animationscript		data/scripts/drago.c
+
+Load Boom01
+
+anim idle
+	loop	1
+	delay	20
+	offset	59 126
+		Attack1  0
+	frame	data/chars/Objetos/deathE.gif
+
+
+
+anim spawn
+	loop	0
+	delay	2
+	offset	59 126
+	@cmd  spawn01  "Boom01"  5  0  2
+	frame	data/chars/Objetos/deathE.gif
+	@cmd  spawn01  "Boom01"  0  0  2
+	frame	data/chars/Objetos/deathE.gif
+	@cmd  spawn01  "Boom01"  -5  5  2
+	frame	data/chars/Objetos/deathE.gif
+	@cmd  spawn01  "Boom01"  2  7  2
+	frame	data/chars/Objetos/deathE.gif
+	@cmd  spawn01  "Boom01"  -7  3  2
+	frame	data/chars/Objetos/deathE.gif
+

@@ -1,0 +1,22 @@
+name			ShockT #THROWNED
+type			none
+subtype			weapon
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		1 1
+noatflash 		1
+flash			noflash
+alpha                   1
+
+anim idle
+	loop	1
+	delay	4
+	offset	92 74
+	hitfx	data/sounds/Shock.wav
+	attack3 62 84 57 16 30 1 0 0 0 12
+	frame   data/chars/players/Hanzo/HAnzo_Shock/p00.gif
+	frame   data/chars/players/Hanzo/HAnzo_Shock/p01.gif
+	frame   data/chars/players/Hanzo/HAnzo_Shock/p02.gif
+	frame   data/chars/players/Hanzo/HAnzo_Shock/p03.gif
+

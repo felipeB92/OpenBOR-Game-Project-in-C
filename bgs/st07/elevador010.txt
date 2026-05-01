@@ -1,0 +1,222 @@
+name			Elevador01 #GROUND
+type			None
+setlayer -30
+offscreenkill	9000
+
+anim idle
+	loop	0
+	delay	300
+	offset	00 1000
+        quakeframe 2 2 2
+        sound   Data/sounds/elevator_start.wav
+	frame	data/Bgs/St07/E00.gif
+		offset  0  990
+		delay  7
+	frame	data/Bgs/St07/E00.gif
+		offset  0  980
+	frame	data/Bgs/St07/E00.gif
+		offset  0  970
+	frame	data/Bgs/St07/E00.gif
+		offset  0  960
+	frame	data/Bgs/St07/E00.gif
+		offset  0  950
+	frame	data/Bgs/St07/E00.gif
+		offset  0  940
+	frame	data/Bgs/St07/E00.gif
+		offset  0  930
+	frame	data/Bgs/St07/E00.gif
+		offset  0  920
+	frame	data/Bgs/St07/E00.gif
+		offset  0  910
+	frame	data/Bgs/St07/E00.gif
+		offset  0  900
+	frame	data/Bgs/St07/E00.gif
+		offset  0  890
+	frame	data/Bgs/St07/E00.gif
+		offset  0  880
+	frame	data/Bgs/St07/E00.gif
+		offset  0  870
+	frame	data/Bgs/St07/E00.gif
+		offset  0  860
+	frame	data/Bgs/St07/E00.gif
+		offset  0  850
+	frame	data/Bgs/St07/E00.gif
+		offset  0  840
+	frame	data/Bgs/St07/E00.gif
+		offset  0  830
+	frame	data/Bgs/St07/E00.gif
+		offset  0  820
+	frame	data/Bgs/St07/E00.gif
+		offset  0  810
+	frame	data/Bgs/St07/E00.gif
+		offset  0  800
+	frame	data/Bgs/St07/E00.gif
+		offset  0  790
+	frame	data/Bgs/St07/E00.gif
+		offset  0  780
+	frame	data/Bgs/St07/E00.gif
+		offset  0  770
+	frame	data/Bgs/St07/E00.gif
+		offset  0  760
+	frame	data/Bgs/St07/E00.gif
+		offset  0  750
+	frame	data/Bgs/St07/E00.gif
+		offset  0  740
+	frame	data/Bgs/St07/E00.gif
+		offset  0  730
+	frame	data/Bgs/St07/E00.gif
+		offset  0  720
+	frame	data/Bgs/St07/E00.gif
+		offset  0  710
+	frame	data/Bgs/St07/E00.gif
+		offset  0  700
+	frame	data/Bgs/St07/E00.gif
+		offset  0  690
+	frame	data/Bgs/St07/E00.gif
+		offset  0  680
+	frame	data/Bgs/St07/E00.gif
+		offset  0  670
+	frame	data/Bgs/St07/E00.gif
+		offset  0  660
+	frame	data/Bgs/St07/E00.gif
+		offset  0  650
+	frame	data/Bgs/St07/E00.gif
+		offset  0  640
+	frame	data/Bgs/St07/E00.gif
+		offset  0  630
+	frame	data/Bgs/St07/E00.gif
+		offset  0  620
+	frame	data/Bgs/St07/E00.gif
+		offset  0  610
+	frame	data/Bgs/St07/E00.gif
+		offset  0  600
+	frame	data/Bgs/St07/E00.gif
+		offset  0  590
+	frame	data/Bgs/St07/E00.gif
+		offset  0  580
+	frame	data/Bgs/St07/E00.gif
+		offset  0  570
+	frame	data/Bgs/St07/E00.gif
+		offset  0  560
+	frame	data/Bgs/St07/E00.gif
+		offset  0  550
+	frame	data/Bgs/St07/E00.gif
+		offset  0  540
+	frame	data/Bgs/St07/E00.gif
+		offset  0  530
+	frame	data/Bgs/St07/E00.gif
+		offset  0  520
+	frame	data/Bgs/St07/E00.gif
+		offset  0  510
+	frame	data/Bgs/St07/E00.gif
+		offset  0  500
+	frame	data/Bgs/St07/E00.gif
+		offset  0  490
+	frame	data/Bgs/St07/E00.gif
+		offset  0  480
+	frame	data/Bgs/St07/E00.gif
+		offset  0  470
+	frame	data/Bgs/St07/E00.gif
+		offset  0  460
+	frame	data/Bgs/St07/E00.gif
+		offset  0  450
+	frame	data/Bgs/St07/E00.gif
+		offset  0  440
+	frame	data/Bgs/St07/E00.gif
+		offset  0  430
+	frame	data/Bgs/St07/E00.gif
+		offset  0  420
+	frame	data/Bgs/St07/E00.gif
+		offset  0  410
+	frame	data/Bgs/St07/E00.gif
+		offset  0  400
+	frame	data/Bgs/St07/E00.gif
+		offset  0  390
+	frame	data/Bgs/St07/E00.gif
+		offset  0  380
+	frame	data/Bgs/St07/E00.gif
+		offset  0  370
+	frame	data/Bgs/St07/E00.gif
+		offset  0  360
+	frame	data/Bgs/St07/E00.gif
+		offset  0  350
+	frame	data/Bgs/St07/E00.gif
+		offset  0  340
+	frame	data/Bgs/St07/E00.gif
+		offset  0  330
+	frame	data/Bgs/St07/E00.gif
+		offset  0  320
+	frame	data/Bgs/St07/E00.gif
+		offset  0  310
+	frame	data/Bgs/St07/E00.gif
+		offset  0  300
+		offset  0  290
+	frame	data/Bgs/St07/E00.gif
+		offset  0  290
+		offset  0  290
+	frame  data/Bgs/St07/E00.gif
+		offset  0  280
+	frame	data/Bgs/St07/E00.gif
+		offset  0  270
+	frame	data/Bgs/St07/E00.gif
+		offset  0  260
+	frame	data/Bgs/St07/E00.gif
+		offset  0  250
+	frame	data/Bgs/St07/E00.gif
+		offset  0  240
+	frame	data/Bgs/St07/E00.gif
+		offset  0  230
+	frame	data/Bgs/St07/E00.gif
+		offset  0  220
+	frame	data/Bgs/St07/E00.gif
+		offset  0  210
+	frame	data/Bgs/St07/E00.gif
+		offset  0  200
+		offset  0  190
+	frame	data/Bgs/St07/E00.gif
+		offset  0  190
+		offset  0  190
+	frame  data/Bgs/St07/E00.gif
+		offset  0  180
+	frame	data/Bgs/St07/E00.gif
+		offset  0  170
+	frame	data/Bgs/St07/E00.gif
+		offset  0  160
+	frame	data/Bgs/St07/E00.gif
+		offset  0  150
+	frame	data/Bgs/St07/E00.gif
+		offset  0  140
+	frame	data/Bgs/St07/E00.gif
+		offset  0  130
+	frame	data/Bgs/St07/E00.gif
+		offset  0  120
+	frame	data/Bgs/St07/E00.gif
+		offset  0  110
+	frame	data/Bgs/St07/E00.gif
+		offset  0  100
+		offset  0  90
+	frame	data/Bgs/St07/E00.gif
+		offset  0  90
+		offset  0  90
+	frame  data/Bgs/St07/E00.gif
+		offset  0  80
+	frame	data/Bgs/St07/E00.gif
+		offset  0  70
+	frame	data/Bgs/St07/E00.gif
+		offset  0  60
+	frame	data/Bgs/St07/E00.gif
+		offset  0  50
+	frame	data/Bgs/St07/E00.gif
+		offset  0  40
+	frame	data/Bgs/St07/E00.gif
+		offset  0  30
+	frame	data/Bgs/St07/E00.gif
+		offset  0  20
+	frame	data/Bgs/St07/E00.gif
+		offset  0  10
+	frame	data/Bgs/St07/E00.gif
+		offset  0  0
+	frame	data/Bgs/St07/E00.gif
+		offset  0  -10
+	frame  data/Bgs/St07/E00.gif
+

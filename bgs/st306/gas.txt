@@ -1,0 +1,18 @@
+name			st6_gas
+type			none
+shadow			0
+ondrawscript 	data/scripts/ondraw/gas.c
+animationscript	data/scripts/animation/default.c
+
+anim idle #TOXIC GAS DISABLED
+	loop	0
+	delay	48
+	offset	25 25
+	frame	data/bgs/sor3_st6/gas00.gif
+	
+anim follow1 #TOXIC GAS ENABLED
+	loop	1
+	delay	48
+	offset	25 25
+	@cmd shoot "gas" 0 10 1 0 1 0
+	frame	data/bgs/sor3_st6/gas00.gif

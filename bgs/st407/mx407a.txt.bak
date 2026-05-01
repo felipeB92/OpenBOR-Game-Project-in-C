@@ -1,0 +1,87 @@
+name			Mx407a #GROUND
+type			None
+setlayer 5
+offscreenkill	1000
+
+anim idle
+	loop	0
+	delay	7
+	offset	154 293
+	frame   data/Bgs/st407/a01.gif
+	frame   data/Bgs/st407/a02.gif
+	frame   data/Bgs/st407/a03.gif
+	frame   data/Bgs/st407/a04.gif
+	frame   data/Bgs/st407/a05.gif
+	frame   data/Bgs/st407/a06.gif
+	frame   data/Bgs/st407/a07.gif
+	frame   data/Bgs/st407/a08.gif
+		offset  154  314
+	frame   data/Bgs/st407/a09.gif
+	frame   data/Bgs/st407/a10.gif
+		offset  154  328
+	frame   data/Bgs/st407/a11.gif
+	frame   data/Bgs/st407/a08.gif
+		offset  154  333
+	frame   data/Bgs/st407/a09.gif
+	frame   data/Bgs/st407/a10.gif
+	frame   data/Bgs/st407/a11.gif
+	frame   data/Bgs/st407/a08.gif
+		delay  5
+		move  10
+	frame   data/Bgs/st407/a09.gif
+	frame   data/Bgs/st407/a10.gif
+	frame   data/Bgs/st407/a11.gif
+	frame   data/Bgs/st407/a08.gif
+	frame   data/Bgs/st407/a09.gif
+	frame   data/Bgs/st407/a10.gif
+	frame   data/Bgs/st407/a11.gif
+	frame   data/Bgs/st407/a08.gif
+	frame   data/Bgs/st407/a09.gif
+	frame   data/Bgs/st407/a10.gif
+	frame   data/Bgs/st407/a11.gif
+	frame   data/Bgs/st407/a08.gif
+	frame   data/Bgs/st407/a09.gif
+	frame   data/Bgs/st407/a10.gif
+	frame   data/Bgs/st407/a11.gif
+	frame   data/Bgs/st407/a08.gif
+	frame   data/Bgs/st407/a09.gif
+	frame   data/Bgs/st407/a10.gif
+	frame   data/Bgs/st407/a11.gif
+	frame   data/Bgs/st407/a08.gif
+	frame   data/Bgs/st407/a09.gif
+	frame   data/Bgs/st407/a10.gif
+	frame   data/Bgs/st407/a11.gif
+	frame   data/Bgs/st407/a08.gif
+	frame   data/Bgs/st407/a09.gif
+	frame   data/Bgs/st407/a10.gif
+	frame   data/Bgs/st407/a11.gif
+	frame   data/Bgs/st407/a08.gif
+	frame   data/Bgs/st407/a09.gif
+	frame   data/Bgs/st407/a10.gif
+	frame   data/Bgs/st407/a11.gif
+	frame   data/Bgs/st407/a08.gif
+	frame   data/Bgs/st407/a09.gif
+	frame   data/Bgs/st407/a10.gif
+	frame   data/Bgs/st407/a11.gif
+	frame   data/Bgs/st407/a08.gif
+	frame   data/Bgs/st407/a09.gif
+	frame   data/Bgs/st407/a10.gif
+	frame   data/Bgs/st407/a11.gif
+	frame   data/Bgs/st407/a08.gif
+	frame   data/Bgs/st407/a09.gif
+	frame   data/Bgs/st407/a10.gif
+	frame   data/Bgs/st407/a11.gif
+	frame   data/Bgs/st407/a08.gif
+	frame   data/Bgs/st407/a09.gif
+	frame   data/Bgs/st407/a10.gif
+	frame   data/Bgs/st407/a11.gif
+	frame   data/Bgs/st407/a08.gif
+	frame   data/Bgs/st407/a09.gif
+	frame   data/Bgs/st407/a10.gif
+	frame   data/Bgs/st407/a11.gif
+	frame   data/Bgs/st407/a08.gif
+	frame   data/Bgs/st407/a09.gif
+	frame   data/Bgs/st407/a10.gif
+	@cmd killentity getlocalvar("self")
+	frame   data/Bgs/st407/a11.gif
+

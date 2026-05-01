@@ -1,0 +1,22 @@
+name			elevador301 #GROUND
+type			None
+setlayer -59
+noquake 	1 1
+antigravity 100
+#offscreenkill	1000
+animationscript		data/scripts/drago.c
+
+Load Elevador01
+Load Elevador02
+
+anim idle
+	loop	0
+	offset	0 276
+		delay  300
+	@cmd dasher 0 -1 0
+	@cmd  spawn01  "Elevador01"  0  0  0
+	frame	data/Bgs/St306/e300.gif
+	@cmd dasher 0 0 0
+	@cmd  spawn01  "Elevador02"  0  0  0
+	frame	data/Bgs/St306/e300.gif
+

@@ -1,0 +1,20 @@
+name			L202 #GROUND
+type			None
+setlayer 5
+
+anim idle
+	loop	1
+	delay	15
+	offset	0 0
+	frame	data/Bgs/St201/Rim00.gif
+	frame	data/Bgs/St201/Rim01.gif
+	frame	data/Bgs/St201/Rim02.gif
+	frame	data/Bgs/St201/Rim03.gif
+	frame	data/Bgs/St201/Rim04.gif
+	frame	data/Bgs/St201/Rim05.gif
+	frame	data/Bgs/St201/Rim06.gif
+	frame	data/Bgs/St201/Rim07.gif
+	frame	data/Bgs/St201/Rim08.gif
+	frame	data/Bgs/St201/Rim09.gif
+
+

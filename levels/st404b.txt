@@ -1,0 +1,289 @@
+music		data/bgs/St404/Lv404a.bor
+bossmusic	data/music/boss3.bor
+
+###BACKGROUND
+background		data/bgs/St301/back00.gif
+
+###BGLAYER/PANEL
+panel			data/bgs/St404/pN01.gif	none	none
+
+###MISC
+Frontpanel			data/bgs/St05/Front02.gif
+#order			a
+settime			99
+scrollspeed 	0.5
+stagenumber 	4
+cameratype 1
+backgroundSpeed 1 40
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	50 80  150
+spawn2  	55 80  150
+spawn3  	60 80  150
+
+light		128 -128
+at			0
+
+
+Wall  -47  226  -5  0  864  807  68  400
+Wall  1128  280  -42  0  74  83  54  500
+
+spawn  Truck01
+	coords  775  0
+	flip  1
+	at  0
+
+spawn  Lixo02
+Item   Apple
+	coords  582 231
+	at  0
+
+spawn  _Galsia
+MAp    3
+health 70
+	coords  185 226
+	at  0
+
+
+spawn  Box03
+Item   Knife
+	coords  240 230
+	at  0
+
+spawn  Box03
+2pItem   Knife
+	coords  300 230
+	at  0
+
+spawn  Signal_
+MAp    3
+health 70
+	coords  350 245
+	at  0
+
+
+spawn  Donovan_
+MAp    3
+health 70
+	coords  280 260
+	at  0
+
+spawn  Signal
+health 60
+	coords  500 245
+	at  100
+
+spawn  Signal
+health 60
+	coords  500 250
+	at  100
+
+wait
+at 280
+
+Group 4  4
+at 280
+
+spawn  Jonny
+health 60
+	coords  -100 230
+	at  280
+
+spawn  Jonny
+map    1
+health 60
+	coords  -100 250
+	at  280
+
+
+spawn  _bigben
+health 80
+	coords  416 230
+	at  280
+
+
+spawn  _bigben
+health 80
+	coords  355 230
+	at  280
+
+
+
+spawn  Signal
+health 60
+	coords  500 230
+	at  280
+
+spawn  Donovan
+health 60
+	coords  500 250
+	at  280
+
+spawn  Galsia
+map    1
+health 60
+	coords  -100 230
+	at  280
+
+spawn  Galsia
+map    1
+health 60
+	coords  500 230
+	at  280
+
+spawn  bigben
+health 80
+	coords  355 240 150
+	at  280
+
+spawn  Galsia
+map    1
+health 60
+	coords  500 230
+	at  280
+
+Group 9  9
+at 281
+
+spawn  Bloqueio
+Flip   1
+2pitem Apple
+	coords  519 243
+	at  281
+
+
+spawn  Bloqueio
+Flip   1
+item   Cash
+	coords  531 262
+	at  281
+
+spawn  Lata
+Flip   1
+item   cash
+	coords  557 184
+	at  281
+
+spawn  Lata
+Flip   1
+item   Apple
+	coords  547 205
+	at  281
+
+spawn  Lata
+item   Gold
+	coords  770 180
+	at  281
+
+
+spawn  Lata
+item   Chicken
+	coords  679 180
+	at  281
+
+
+
+spawn  Donovan_
+health 60
+	coords  500 250
+	at  380
+
+spawn  Pipe
+	coords  500 250
+	at  380
+
+spawn  Donovan_
+health 60
+	coords  512 194
+	at  380
+
+spawn  Knife
+	coords  512 194
+	at  500
+
+spawn  Galsia_
+health 60
+	coords  512 194
+	at  500
+
+Group 4  4
+at 675
+
+spawn  _Donovan
+health 60
+	coords  386 217
+	at  675
+
+
+spawn  Bigben
+health 90
+	coords  500 217
+	at  675
+
+
+spawn  Bigben
+health 90
+	coords  500 230
+	at  675
+
+spawn  Donovan
+health 50
+	coords  -100 250
+	at  675
+
+
+spawn  Jonny
+map    3
+health 70
+	coords  -100 250
+	at  675
+
+
+spawn  Galsia
+map    3
+health 70
+	coords  -100 250
+	at  675
+
+spawn  _Donovan
+health 60
+	coords  386 217
+	at  675
+
+spawn  Signal
+map    3
+health 70
+	coords  500 200
+	at  675
+
+spawn  _Donovan
+health 60
+	coords  386 217
+	at  675
+
+
+spawn  Fog
+map    3
+health 90
+	coords  -100 250
+	at  675
+
+spawn  Bigben
+map    2
+health 90
+	coords  350 217 150
+	at  675
+
+
+
+
+

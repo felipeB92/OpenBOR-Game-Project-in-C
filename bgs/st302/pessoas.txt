@@ -1,0 +1,31 @@
+name			Pessoas #GROUND
+type			None
+setlayer 5
+antigravity	100
+
+anim idle
+	loop	1
+	delay	6
+	offset	0 0
+	frame	data/Bgs/St302/people00.gif
+	frame	data/Bgs/St302/people01.gif
+	frame	data/Bgs/St302/people02.gif
+	frame	data/Bgs/St302/people03.gif
+	frame	data/Bgs/St302/people04.gif
+	frame	data/Bgs/St302/people05.gif
+	frame	data/Bgs/St302/people06.gif
+	frame	data/Bgs/St302/people07.gif
+	frame	data/Bgs/St302/people08.gif
+	frame	data/Bgs/St302/people09.gif
+	frame	data/Bgs/St302/people10.gif
+	frame	data/Bgs/St302/people11.gif
+	frame	data/Bgs/St302/people12.gif
+	frame	data/Bgs/St302/people13.gif
+	frame	data/Bgs/St302/people14.gif
+	frame	data/Bgs/St302/people15.gif
+	frame	data/Bgs/St302/people16.gif
+	frame	data/Bgs/St302/people17.gif
+	frame	data/Bgs/St302/people18.gif
+	frame	data/Bgs/St302/people19.gif
+
+

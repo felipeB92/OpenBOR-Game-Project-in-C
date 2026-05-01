@@ -1,0 +1,54 @@
+name		 	st8_liquid
+type		 	obstacle
+subtype			notgrab
+health			1
+nolife			1
+shadow		 	0
+death			1
+nodieblink		3
+noatflash		1
+flash			flash
+stealth			2
+ondrawscript 	data/scripts/ondraw/liquid.c
+animationscript	data/scripts/animation/default.c
+
+load		 	st8_bubble
+
+anim idle
+	loop	0
+	delay	8
+	offset	244 130
+	platform -999 999 1 1 1 1 1 1
+	drawmethod alpha 6
+	drawmethod channel 0.8
+	frame	data/bgs/sor3_st8/liquid00.gif
+	
+anim follow1
+	loop	1
+	delay	360
+	offset	244 130
+	bbox 228 10042 32 57 60
+	platform -999 999 1 1 1 1 1 1
+	drawmethod alpha 6
+	drawmethod channel 0.8
+	frame	data/bgs/sor3_st8/liquid00.gif
+	
+anim death
+	loop	1 8 9
+	delay	8
+	offset	244 130
+	sound	data/sounds/Glass.wav
+	drawmethod alpha 6
+	drawmethod channel 0.8
+	frame	data/bgs/sor3_st8/liquid01.gif
+	frame	data/bgs/sor3_st8/liquid02.gif
+	frame	data/bgs/sor3_st8/liquid03.gif
+	frame	data/bgs/sor3_st8/liquid04.gif
+	frame	data/bgs/sor3_st8/liquid05.gif
+	frame	data/bgs/sor3_st8/liquid06.gif
+		delay	128
+	frame	data/bgs/sor3_st8/liquid07.gif
+		delay	360
+	@cmd setVar "alarm" 1
+	frame	data/bgs/sor3_st8/liquid07.gif
+	frame	data/bgs/sor3_st8/liquid07.gif

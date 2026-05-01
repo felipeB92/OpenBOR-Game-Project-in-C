@@ -1,0 +1,22 @@
+# Hit flash
+
+speed	8
+name	Tiro03
+antigravity 100
+candamage  Player obstacle npc pshot
+noname 1
+type	None
+offscreenkill	1000
+animationscript		data/scripts/drago.c
+
+
+anim idle
+	loop	1
+	delay	4
+	offset	25 23
+        hitfx	data/sounds/golpes/forte.wav
+		attack1  17  16  21  22  15  1  0  0  0  25
+	frame	data/chars/Enemys/Mrx/p03.gif
+	@cmd dasher 0 0 1
+	frame  data/chars/Enemys/Mrx/p03.gif
+

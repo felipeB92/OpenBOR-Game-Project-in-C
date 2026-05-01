@@ -1,0 +1,346 @@
+name	Hakuyo_
+health	100
+speed	8
+falldie 2
+hostile				player npc
+candamage			player npc obstacle
+escapehits			2
+mp			        60
+mprate  			5
+type	Enemy
+gfxshadow	1
+JUMPHEIGHT 1 1
+Jumpheight 3
+atchain    1 2 3
+icon	data/chars/Enemys/Hakuyo/icon.gif 1
+diesound data/voices/bossdie1.wav
+running	20	3	3	1	1
+
+##LOADS
+
+
+remap data/chars/Enemys/Hakuyo/idle00.gif data/chars/Enemys/Hakuyo/alter1.gif
+remap data/chars/Enemys/Hakuyo/idle00.gif data/chars/Enemys/Hakuyo/alter2.gif
+remap data/chars/Enemys/Hakuyo/idle00.gif data/chars/Enemys/Hakuyo/alter3.gif
+remap data/chars/Enemys/Hakuyo/idle00.gif data/chars/Enemys/Hakuyo/alter4.gif
+
+anim	spawn
+	loop	0
+	delay	300
+	offset	125 180
+	frame   data/chars/Enemys/Hakuyo/kick01.gif
+
+
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	125 180
+	bbox	110 106 32 73
+	frame	data/chars/Enemys/Hakuyo/Idle00.gif
+
+
+anim walk
+	loop	1
+	delay	14
+	offset	125 180
+	bbox	107 108 32 69
+	frame	data/chars/Enemys/Hakuyo/walk00.gif
+	frame	data/chars/Enemys/Hakuyo/walk01.gif
+	frame	data/chars/Enemys/Hakuyo/walk02.gif
+	frame	data/chars/Enemys/Hakuyo/walk03.gif
+
+
+
+
+
+anim jump
+	loop	0
+	delay	30
+	offset	125 180
+	bbox	113 100 35 81
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Hakuyo/jump00.gif
+
+anim jumpattack
+	loop	0
+	delay	30
+        Range 110 160
+	offset	125 180
+	bbox	100 100 49 51
+	sound	data/voices/Hakuyo1.wav
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  126  124  60  33  10  1  0  0  0  20
+	frame	data/chars/Enemys/Hakuyo/jumpatk00.gif
+
+
+
+anim Upper
+	loop	0
+	delay	8
+        Range 0 60
+	offset	125 180
+	bbox	109 103 30 76
+		Attack1  0
+        hitfx	data/sounds/golpes/Medio.wav
+	frame	data/chars/Enemys/Hakuyo/kick00.gif
+	frame	data/chars/Enemys/Hakuyo/kick01.gif
+		attack1  118  107  55  48  15  1  0  0  0  20
+	frame	data/chars/Enemys/Hakuyo/kick02.gif
+		Attack1  0
+	frame	data/chars/Enemys/Hakuyo/kick03.gif
+
+
+
+
+anim freeSpecial
+	loop	0
+	delay	8
+        Range 80 110
+	offset	125 180
+		Attack1  0
+        hitfx	data/sounds/golpes/forte.wav
+	frame	data/chars/Enemys/Hakuyo/fire00.gif
+	frame	data/chars/Enemys/Hakuyo/fire01.gif
+		delay  3
+	frame	data/chars/Enemys/Hakuyo/fire02.gif
+		attack3  128  118  91  30  20  1  0  0  0  20
+	frame	data/chars/Enemys/Hakuyo/fire03.gif
+	frame	data/chars/Enemys/Hakuyo/fire02.gif
+	frame	data/chars/Enemys/Hakuyo/fire03.gif
+	frame	data/chars/Enemys/Hakuyo/fire02.gif
+	frame	data/chars/Enemys/Hakuyo/fire03.gif
+		Attack1  0
+		delay  8
+	frame	data/chars/Enemys/Hakuyo/fire04.gif
+	frame	data/chars/Enemys/Hakuyo/fire05.gif
+
+
+
+
+
+
+
+anim attack1
+	loop	0
+	delay	8
+        Range 0 80
+	offset	125 180
+	bbox	118 105 30 74
+		Attack1  0
+        hitfx	data/sounds/golpes/Medio.wav
+	frame	data/chars/Enemys/Hakuyo/a100.gif
+		attack1  139  109  47  22  10  0  0  0  0  20
+	frame	data/chars/Enemys/Hakuyo/a101.gif
+		Attack1  0
+	frame	data/chars/Enemys/Hakuyo/a102.gif
+	frame  data/chars/Enemys/Hakuyo/a103.gif
+
+anim attack2
+	loop	0
+	delay	6
+	offset	125 180
+	bbox	118 101 26 78
+		Attack1  0
+        hitfx	data/sounds/golpes/forte.wav
+	frame	data/chars/Enemys/Hakuyo/a200.gif
+		attack2  145  114  46  23  10  0  0  0  0  20
+	frame	data/chars/Enemys/Hakuyo/a201.gif
+		Attack1  0
+	frame	data/chars/Enemys/Hakuyo/a202.gif
+		delay  15
+	frame	data/chars/Enemys/Hakuyo/a203.gif
+
+anim attack3
+	loop	0
+	delay	8
+        Range 0 60
+	offset	125 180
+	bbox	111 107 28 75
+		Attack1  0
+        hitfx	data/sounds/golpes/Medio.wav
+	frame	data/chars/Enemys/Hakuyo/kick00.gif
+		move  3
+	frame	data/chars/Enemys/Hakuyo/kick01.gif
+		attack1  118  98  51  57  15  1  0  0  0  20
+	frame	data/chars/Enemys/Hakuyo/kick02.gif
+	frame	data/chars/Enemys/Hakuyo/kick03.gif
+
+
+
+
+anim grabbed
+	loop	0
+	delay	100
+	offset	125 180
+	bbox	109 106 30 72
+	frame	data/chars/Enemys/Hakuyo/grabbed00.gif
+
+
+anim rise
+	loop	0
+	offset	125 180
+	delay	10
+	frame	data/chars/Enemys/Hakuyo/Rise00.gif
+	frame	data/chars/Enemys/Hakuyo/Rise01.gif
+	frame	data/chars/Enemys/Hakuyo/Rise02.gif
+		offset  125  179
+	frame	data/chars/Enemys/Hakuyo/Rise03.gif
+
+
+anim land
+	loop	0
+	delay	25
+	offset	125 179
+	bbox	101 123 44 56
+	frame	data/chars/Enemys/Hakuyo/jumpland00.gif
+
+anim pain
+	loop	0
+	offset	123 179
+	bbox	110 107 31 72
+		delay  30
+	frame	data/chars/Enemys/Hakuyo/pain01.gif
+
+
+anim pain2
+	loop	0
+	offset	123 179
+	bbox	107 103 32 75
+	delay	30
+	frame	data/chars/Enemys/Hakuyo/pain02.gif
+
+anim pain3
+	loop	0
+	offset	123 179
+	bbox	105 104 34 74
+	jumpframe  0  2  0  0
+	delay	10
+	frame	data/chars/Enemys/Hakuyo/Pain02.gif
+	frame	data/chars/Enemys/Hakuyo/fall100.gif
+	frame	data/chars/Enemys/Hakuyo/Pain01.gif
+
+
+
+anim fall
+	loop	0
+	offset	119 181
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Hakuyo/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Hakuyo/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Hakuyo/fall403.gif
+		Attack1  0
+	frame	data/chars/Enemys/Hakuyo/fall102.gif
+
+anim fall2
+	loop	0
+	offset	123 181
+	delay	20
+	jumpframe  0  2  -3.5  0
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Hakuyo/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Hakuyo/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Hakuyo/fall403.gif
+		Attack1  0
+		offset  78  118
+	frame	data/chars/Enemys/Hakuyo/fall102.gif
+#Shock
+
+anim fall4
+	loop	0
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Hakuyo/fall200.gif
+	frame	data/chars/Enemys/Hakuyo/fall201.gif
+	frame	data/chars/Enemys/Hakuyo/fall200.gif
+	frame	data/chars/Enemys/Hakuyo/fall201.gif
+	frame	data/chars/Enemys/Hakuyo/fall200.gif
+	frame	data/chars/Enemys/Hakuyo/fall201.gif
+	frame	data/chars/Enemys/Hakuyo/fall200.gif
+		offset  119  180
+	frame	data/chars/Enemys/Hakuyo/fall102.gif
+#Burn
+
+anim fall5
+	loop	0
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Hakuyo/fall300.gif
+	frame	data/chars/Enemys/Hakuyo/fall301.gif
+	frame	data/chars/Enemys/Hakuyo/fall302.gif
+	frame	data/chars/Enemys/Hakuyo/fall300.gif
+	frame	data/chars/Enemys/Hakuyo/fall301.gif
+	frame	data/chars/Enemys/Hakuyo/fall302.gif
+	frame	data/chars/Enemys/Hakuyo/fall300.gif
+	frame	data/chars/Enemys/Hakuyo/fall301.gif
+	frame	data/chars/Enemys/Hakuyo/fall302.gif
+		offset  125  178
+	frame	data/chars/Enemys/Hakuyo/fall102.gif
+
+anim fall8
+	loop	0
+	offset	108 181
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Hakuyo/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  141  195
+	frame  data/chars/Enemys/Hakuyo/fall101.gif
+		Attack1  0
+		offset  118  178
+	frame	data/chars/Enemys/Hakuyo/fall102.gif
+
+anim fall9
+	loop	0
+	offset	122 180
+	delay	999
+		Attack1  0
+	frame	data/chars/Enemys/Hakuyo/pain01.gif
+	frame	data/chars/Enemys/Hakuyo/pain02.gif
+	frame	data/chars/Enemys/Hakuyo/fall400.gif
+		offset  161  147
+	frame	data/chars/Enemys/Hakuyo/fall401.gif
+		offset  181  187
+	frame	data/chars/Enemys/Hakuyo/fall402.gif
+		offset  139  194
+	frame	data/chars/Enemys/Hakuyo/fall403.gif
+		offset  106  182
+	frame	data/chars/Enemys/Hakuyo/fall404.gif
+		offset  124  177
+	frame	data/chars/Enemys/Hakuyo/fall405.gif
+	delay	50
+		offset  132  191
+	frame	data/chars/Enemys/Hakuyo/fall403.gif
+	delay	999
+		offset  122  178
+	frame	data/chars/Enemys/Hakuyo/fall405.gif
+
+anim death
+	loop	0
+	offset	123 179
+	delay	20
+	frame	data/chars/Enemys/Hakuyo/fall102.gif
+
+anim Pain8
+	loop	0
+	delay	15
+	offset	130 180
+	jumpframe  0  2  1  0
+	frame	data/chars/Enemys/Hakuyo/jump00.gif
+	frame	data/chars/Enemys/Hakuyo/jump00.gif
+

@@ -1,0 +1,64 @@
+##MAIN
+name				HarakiriS
+type				none
+
+##MISC
+antigravity			100
+
+##SCRIPTS
+ondrawscript		data/scripts/ondraw/channel.c
+
+##REMAPS
+remap				data/chars/harakiri/idle00.gif data/chars/harakiri/alter1.gif
+remap				data/chars/harakiri/idle00.gif data/chars/harakiri/alter2.gif
+remap				data/chars/harakiri/idle00.gif data/chars/harakiri/alter3.gif
+
+##ANIMATIONS#############################################################################
+
+anim runattack #PLAYER BLITZ SLASH
+	loop	0
+	delay	1000
+	offset	161 203
+	frame	data/chars/harakiri/a100.gif
+	frame	data/chars/harakiri/a100.gif
+	frame	data/chars/harakiri/a100.gif
+	frame	data/chars/harakiri/a100.gif
+	frame	data/chars/harakiri/a100.gif
+	frame	data/chars/harakiri/a100.gif
+	frame	data/chars/harakiri/a100.gif
+	frame	data/chars/harakiri/a100.gif
+	frame	data/chars/harakiri/a101.gif
+	frame	data/chars/harakiri/a102.gif
+	frame	data/chars/harakiri/a102.gif
+	
+anim freespecial #ENEMY BLITZ SLASH
+	loop	0
+	delay	1000
+	offset	161 203
+	frame	data/chars/harakiri/a100.gif
+	frame	data/chars/harakiri/a100.gif
+	frame	data/chars/harakiri/a100.gif
+	frame	data/chars/harakiri/a100.gif
+	frame	data/chars/harakiri/a100.gif
+	frame	data/chars/harakiri/a100.gif
+	frame	data/chars/harakiri/a100.gif
+	frame	data/chars/harakiri/a100.gif
+	frame	data/chars/harakiri/a101.gif
+	frame	data/chars/harakiri/a102.gif
+	frame	data/chars/harakiri/a102.gif
+	
+anim freespecial3 #RAGE
+	loop	0
+	delay	1000
+	offset	161 203
+	frame	data/chars/harakiri/a200.gif
+	frame	data/chars/harakiri/a201.gif
+	frame	data/chars/harakiri/a202.gif
+	
+anim follow7 #COUNTER
+	loop	0
+	delay	1000
+	offset	161 203
+	frame	data/chars/harakiri/star01.gif
+	frame	data/chars/harakiri/star01.gif
+	frame	data/chars/harakiri/star02.gif

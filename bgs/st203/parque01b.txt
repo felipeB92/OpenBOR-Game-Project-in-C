@@ -1,0 +1,20 @@
+name			parque01b #GROUND
+type			None
+setlayer 80
+
+anim idle
+	loop	1
+	delay	30
+	offset	0 0
+	frame	data/Bgs/St203/Pn00b.gif
+	frame	data/Bgs/St203/Pn01b.gif
+	frame	data/Bgs/St203/Pn02b.gif
+	frame	data/Bgs/St203/Pn03b.gif
+	frame	data/Bgs/St203/Pn04b.gif
+	frame	data/Bgs/St203/Pn05b.gif
+	frame	data/Bgs/St203/Pn06b.gif
+	frame	data/Bgs/St203/Pn07b.gif
+	frame	data/Bgs/St203/Pn08b.gif
+	frame	data/Bgs/St203/Pn09b.gif
+	frame	data/Bgs/St203/Pn10b.gif
+

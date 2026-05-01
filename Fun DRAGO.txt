@@ -1,0 +1,86 @@
+1. Sistema de Pontuação e Bifurcação (Branches)
+Essas funções são ideais para criar "estágios secretos" ou finais diferentes baseados na performance dos jogadores.
+
+changeBranchByTotalScore(score, extraScorePerPlayer, goNow, branchHigh, branchLow)
+
+O que faz: Soma a pontuação de todos os jogadores ativos e decide para qual fase (branch) o jogo deve ir.
+
+Como usar: Se o total for maior que o score definido, vai para branchHigh. Se for menor, vai para branchLow. O extraScorePerPlayer serve para aumentar a dificuldade da meta caso haja mais jogadores.
+
+changeBranchByHighestScore(score, goNow, branchHigh, branchLow)
+
+O que faz: Semelhante à anterior, mas olha apenas para o jogador com a maior pontuação individual.
+
+2. Controle de Atributos (MP e Hits)
+addhits(hits)
+
+O que faz: Adiciona números ao contador de "Combo" (Rush) sem precisar acertar um golpe físico. Útil para finalizações ou agarrões de múltiplos acertos.
+
+setMp(mp)
+
+O que faz: Define instantaneamente a quantidade de MP da entidade.
+
+3. Movimentação e Física Avançada
+guidedJump(reachAt, adjustX, adjustY, adjustZ, whiffX, whiffY, whiffZ, flipMe)
+
+O que faz: Um pulo teleguiado! O personagem calcula a trajetória para cair exatamente sobre o oponente em um tempo determinado (reachAt). Se não houver oponente, ele usa os valores de "whiff" (pulo no vácuo).
+
+airstop()
+
+O que faz: Faz o personagem "congelar" no ar, parando toda a velocidade e gravidade.
+
+airfollow()
+
+O que faz: Faz o personagem voltar a cair levemente (reativa 10% da gravidade).
+
+turn()
+
+O que faz: Inverte instantaneamente a direção para a qual o personagem está olhando.
+
+autoTurn()
+
+O que faz: Faz o personagem virar automaticamente para o oponente mais próximo.
+
+4. Comandos Estilo MUGEN (Velocidade)
+Essas funções facilitam muito a programação de golpes especiais que exigem deslocamento preciso.
+
+velSet(x, y, z, dirFree)
+
+O que faz: Define uma velocidade fixa. Se x for 5, o personagem se move para frente.
+
+velAdd(x, y, z, dirFree)
+
+O que faz: Adiciona velocidade à que o personagem já tem (aceleração).
+
+velMul(x, y, z)
+
+O que faz: Multiplica a velocidade atual. Útil para criar efeitos de frenagem ou impulsos.
+
+limitXvel(min, max)
+
+O que faz: Garante que a velocidade horizontal não ultrapasse um limite, mesmo que sofra impulsos.
+
+5. Leitura de Teclas e Animação
+readKey(key)
+
+O que faz: Verifica se o jogador está pressionando uma tecla específica (ex: "attack", "jump", "forward"). Retorna 1 se sim, 0 se não.
+
+changeState(anim)
+
+O que faz: Muda a animação atual do personagem. Em vez de usar códigos complexos, você escreve apenas o nome (ex: changeState("FREESPECIAL2")).
+
+6. Agarrões e Dano Proporcional
+calcRelativeDamage(percent)
+
+O que faz: Calcula o dano baseado na vida máxima do inimigo. Ideal para chefes: se colocar 10, o golpe sempre tirará 10% da vida total do alvo.
+
+adjustGrabDistance(dx)
+
+O que faz: Ajusta a distância em que o inimigo fica "preso" durante o agarrão.
+
+7. Detecção de Colisão com Bordas (ScreenBound)
+Essas funções verificam se o personagem bateu em uma parede, buraco ou no limite da tela.
+
+isBlockedFront(edge) / isBlockedBack(edge): Verifica se há obstáculos à frente ou atrás.
+
+screenBound(front, back, up, down, divisor): É a função completa. Ela impede que o personagem saia dos limites da tela ou entre em paredes, aplicando uma correção de posição instantânea.

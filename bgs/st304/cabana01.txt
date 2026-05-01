@@ -1,0 +1,24 @@
+name			Cabana01 #GROUND
+type			None
+setlayer 4
+
+
+anim idle
+	loop	0
+	delay	100
+	offset	300 0
+	frame	data/Bgs/St304/y13.gif
+		delay  10
+	frame  data/Bgs/St304/y00.gif
+	frame	data/Bgs/St304/y01.gif
+	frame	data/Bgs/St304/y02.gif
+		delay  30
+	frame	data/Bgs/St304/y03.gif
+		delay  10
+	frame	data/Bgs/St304/y04.gif
+	frame	data/Bgs/St304/y05.gif
+	frame	data/Bgs/St304/y06.gif
+	frame	data/Bgs/St304/y07.gif
+	frame	data/Bgs/St304/y08.gif
+	frame	data/Bgs/St304/y09.gif
+

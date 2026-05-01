@@ -1,0 +1,13 @@
+name		st3_siren
+type		none
+shadow		0
+antigravity	100
+
+anim idle
+	loop	1
+	delay	8
+	offset	1 1
+	frame	data/bgs/sor3_st3/siren00.gif
+	frame	data/bgs/sor3_st3/siren01.gif
+	frame	data/bgs/sor3_st3/siren02.gif
+	frame	data/bgs/sor3_st3/siren03.gif

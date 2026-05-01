@@ -1,0 +1,317 @@
+name	AlienB
+health	150
+CANTGRAB 1
+speed	14
+riseinv				0.4 1
+hostile				player npc
+candamage			player npc obstacle
+Noblink 0
+type	Enemy
+falldie 1
+gfxshadow	1
+JUMPHEIGHT 1 1
+Jumpheight 3
+atchain    1 1 2
+icon	data/chars/Enemys/AlienB/icon.gif 1
+diesound data/voices/Diea2.wav
+running	20	3	3	1	1
+
+##LOADS
+
+
+remap data/chars/Enemys/AlienB/idle00.gif data/chars/Enemys/AlienB/alter1.gif
+remap data/chars/Enemys/AlienB/idle00.gif data/chars/Enemys/AlienB/alter2.gif
+remap data/chars/Enemys/AlienB/idle00.gif data/chars/Enemys/AlienB/alter3.gif
+remap data/chars/Enemys/AlienB/idle00.gif data/chars/Enemys/AlienB/alter4.gif
+
+
+anim	spawn
+	loop	0
+	delay	10
+	offset	152 220
+	frame   data/chars/Enemys/AlienB/IDle00.gif
+	frame   data/chars/Enemys/AlienB/IDle01.gif
+	frame   data/chars/Enemys/AlienB/IDle02.gif
+	frame   data/chars/Enemys/AlienB/IDle03.gif
+
+
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	155 220
+	bbox	129 120 59 64
+	frame   data/chars/Enemys/AlienB/idle00.gif
+	frame   data/chars/Enemys/AlienB/idle01.gif
+	frame   data/chars/Enemys/AlienB/idle02.gif
+	frame   data/chars/Enemys/AlienB/idle03.gif
+	frame   data/chars/Enemys/AlienB/IDle00.gif
+	frame   data/chars/Enemys/AlienB/IDle01.gif
+	frame   data/chars/Enemys/AlienB/IDle02.gif
+	frame   data/chars/Enemys/AlienB/IDle03.gif
+
+
+
+anim walk
+	loop	1
+	delay	10
+	offset	155 220
+	bbox	143 96 38 83
+	frame   data/chars/Enemys/AlienB/IDle00.gif
+	frame   data/chars/Enemys/AlienB/IDle01.gif
+	frame   data/chars/Enemys/AlienB/IDle02.gif
+	frame   data/chars/Enemys/AlienB/IDle03.gif
+
+
+
+
+
+
+
+
+
+
+anim attack1
+	loop	0
+	delay	7
+        Range 0 60
+	offset	155 220
+	bbox	136 104 24 80
+	hitfx	data/sounds/Cutter.wav
+	sound	data/sounds/Whoosh.wav
+	frame	data/chars/Enemys/AlienB/a100.gif
+		Attack1  0
+	frame	data/chars/Enemys/AlienB/a101.gif
+		attack1  129  135  118  69  10  1  0  0  0  20
+		delay  12
+	frame	data/chars/Enemys/AlienB/a102.gif
+		Attack1  0
+		delay  10
+	frame	data/chars/Enemys/AlienB/a103.gif
+
+anim Freespecial
+	loop	0
+	delay	7
+        Range 100 150
+	offset	155 220
+	bbox	136 104 24 80
+	hitfx	data/sounds/Cutter.wav
+	frame   data/chars/Enemys/AlienB/idle00.gif
+		offset  155  230
+	frame   data/chars/Enemys/AlienB/idle01.gif
+	frame   data/chars/Enemys/AlienB/idle02.gif
+	frame   data/chars/Enemys/AlienB/idle03.gif
+	frame   data/chars/Enemys/AlienB/IDle00.gif
+		offset  155  240
+	frame   data/chars/Enemys/AlienB/IDle01.gif
+	frame   data/chars/Enemys/AlienB/IDle02.gif
+	frame   data/chars/Enemys/AlienB/IDle03.gif
+	frame   data/chars/Enemys/AlienB/idle00.gif
+		offset  155  250
+	frame   data/chars/Enemys/AlienB/idle01.gif
+	frame   data/chars/Enemys/AlienB/idle02.gif
+	frame   data/chars/Enemys/AlienB/idle03.gif
+	frame   data/chars/Enemys/AlienB/IDle00.gif
+		offset  155  260
+	frame   data/chars/Enemys/AlienB/IDle01.gif
+	frame   data/chars/Enemys/AlienB/IDle02.gif
+	frame   data/chars/Enemys/AlienB/IDle03.gif
+	frame	data/chars/Enemys/AlienB/a200.gif
+		move  10
+	sound	data/sounds/Whoosh2.wav
+		attack1  146  156  69  78  10  1  0  0  0  10
+	frame	data/chars/Enemys/AlienB/a201.gif
+		offset  155  250
+	frame	data/chars/Enemys/AlienB/a201.gif
+		offset  155  240
+	frame	data/chars/Enemys/AlienB/a201.gif
+		offset  155  220
+	frame	data/chars/Enemys/AlienB/a201.gif
+		offset  155  210
+	frame	data/chars/Enemys/AlienB/a201.gif
+	frame	data/chars/Enemys/AlienB/a201.gif
+	frame   data/chars/Enemys/AlienB/a201.gif
+		offset  155  220
+	frame   data/chars/Enemys/AlienB/a201.gif
+	frame   data/chars/Enemys/AlienB/a201.gif
+		Attack1  0
+	frame   data/chars/Enemys/AlienB/idle03.gif
+	frame   data/chars/Enemys/AlienB/IDle00.gif
+	frame   data/chars/Enemys/AlienB/IDle01.gif
+	frame   data/chars/Enemys/AlienB/IDle02.gif
+	frame   data/chars/Enemys/AlienB/IDle03.gif
+
+
+
+
+
+
+
+
+
+anim pain
+	loop	0
+	offset	75 139
+	bbox	54 24 62 82
+	delay	15
+	frame	data/chars/Enemys/AlienB/pain00.gif
+	frame	data/chars/Enemys/AlienB/pain01.gif
+
+anim pain2
+	loop	0
+	offset	75 149
+	bbox	60 26 50 91
+	delay	15
+	frame	data/chars/Enemys/AlienB/pain200.gif
+	frame	data/chars/Enemys/AlienB/pain201.gif
+
+anim pain4
+	loop	0
+	offset	75 149
+	bbox	53 36 65 69
+	delay	250
+	frame	data/chars/Enemys/AlienB/pain00.gif
+
+anim pain5
+	loop	0
+	offset	75 149
+	delay	10
+	frame	data/chars/Enemys/AlienB/pain00.gif
+		move  10
+	frame	data/chars/Enemys/AlienB/fall705.gif
+		move  30
+		delay  10
+	frame	data/chars/Enemys/AlienB/fall603.gif
+        quakeframe 4 2 2
+        Sound	data/Sounds/Efeitos/Estrondo.wav
+		offset  75  121
+	frame	data/chars/Enemys/AlienB/fall900.gif
+		move  1
+		movea  5
+	frame  data/chars/Enemys/AlienB/fall900.gif
+		movea  -5
+		Attack1  0
+	frame  data/chars/Enemys/AlienB/fall900.gif
+		delay  50
+		move  0
+		movea  0
+	frame	data/chars/Enemys/AlienB/Fall01.gif
+		delay  10
+		offset  152  199
+	frame	data/chars/Enemys/AlienB/IDle00.gif
+		offset  156  218
+	frame	data/chars/Enemys/AlienB/Idle01.gif
+		offset  156  230
+	frame  data/chars/Enemys/AlienB/IDle02.gif
+
+
+anim death
+	loop	0
+	offset	90 139
+	delay	20
+	jumpframe  0  1  -1  0
+	landframe  2
+	frame	data/chars/Enemys/AlienB/fall701.gif
+	frame  data/chars/Enemys/AlienB/fall00.gif
+		offset  91  122
+	frame	data/chars/Enemys/AlienB/fall01.gif
+
+
+anim death5
+	loop	0
+	offset	90 140
+	delay	10
+	frame	data/chars/Enemys/AlienB/pain00.gif
+		move  10
+	frame	data/chars/Enemys/AlienB/fall705.gif
+		move  30
+		delay  10
+	frame	data/chars/Enemys/AlienB/fall603.gif
+	frame	data/chars/Enemys/AlienB/fall900.gif
+		move  1
+		movea  5
+	frame  data/chars/Enemys/AlienB/fall900.gif
+		movea  -5
+		offset  90  125
+	frame  data/chars/Enemys/AlienB/fall900.gif
+		delay  50
+		move  0
+		movea  0
+		offset  91  122
+	frame	data/chars/Enemys/AlienB/Fall01.gif
+
+
+anim fall
+	loop	0
+	offset	96 139
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+		bbox  48  41  58  67
+	frame	data/chars/Enemys/AlienB/fall00.gif
+		attack  94
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/AlienB/fall00.gif
+		delay  40
+		offset  81  124
+		Attack1  0
+		bbox  0
+	frame	data/chars/Enemys/AlienB/fall01.gif
+
+anim fall3
+	loop	0
+	offset	77 145
+	delay	5
+	jumpframe  0  3  -3  0
+	landframe  8
+		bbox  43  33  70  74
+		Attack1  0
+	frame	data/chars/Enemys/AlienB/fall705.gif
+	frame	data/chars/Enemys/AlienB/fall600.gif
+	frame	data/chars/Enemys/AlienB/fall601.gif
+	frame	data/chars/Enemys/AlienB/fall602.gif
+	frame	data/chars/Enemys/AlienB/fall705.gif
+	frame	data/chars/Enemys/AlienB/fall600.gif
+	frame	data/chars/Enemys/AlienB/fall601.gif
+	frame	data/chars/Enemys/AlienB/fall602.gif
+	frame	data/chars/Enemys/AlienB/fall705.gif
+		offset  77  130
+	frame	data/chars/Enemys/AlienB/fall600.gif
+		offset  77  120
+	frame	data/chars/Enemys/AlienB/fall601.gif
+		offset  77  110
+	frame	data/chars/Enemys/AlienB/fall602.gif
+	frame  data/chars/Enemys/AlienB/fall705.gif
+	frame  data/chars/Enemys/AlienB/fall600.gif
+		Attack1  0
+		bbox  0
+		move  0
+		offset  77  121
+	frame  data/chars/Enemys/AlienB/fall01.gif
+
+anim rise
+	loop	0
+	offset	148 189
+	delay	10
+	frame   data/chars/Enemys/AlienB/IDle00.gif
+		offset  148  200
+	frame   data/chars/Enemys/AlienB/IDle01.gif
+		offset  148  210
+	frame   data/chars/Enemys/AlienB/IDle02.gif
+		offset  148  220
+	frame   data/chars/Enemys/AlienB/IDle03.gif
+	frame   data/chars/Enemys/AlienB/IDle00.gif
+	frame   data/chars/Enemys/AlienB/IDle01.gif
+	frame   data/chars/Enemys/AlienB/IDle02.gif
+	frame   data/chars/Enemys/AlienB/IDle03.gif
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	122 218
+	bbox	108 120 65 53
+	frame	data/chars/Enemys/AlienB/A101.gif
+

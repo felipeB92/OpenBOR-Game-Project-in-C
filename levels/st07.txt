@@ -1,0 +1,388 @@
+music		data/bgs/St07/Violent-Breathing.ogg
+bossmusic	data/music/boss1.ogg
+scrollspeed 1 -1
+fscroll 0 1.5
+bgspeed 0 2
+stagenumber 7
+direction Down
+background	data/bgs/st07/Back01.gif
+panel		data/bgs/St07/pn01.gif
+frontpanel      data/bgs/St07/Front01.gif
+#bglayer           data/bgs/11lvl/liberty_statue.gif 0.3 0.1   60    -40 180 1 1 1 1  0
+#bglayer           data/bgs/11lvl/0x.gif 0.5 0.1   60    -40 180 1 1 1 1  0
+#fglayer         data/bgs/11lvl/fondo3.gif 1500 -0.1 0 0 0 0 0 1 1 1
+#fglayer         data/bgs/11lvl/sun.gif 500 0 0 0 -5 1 1 1 1 1 1
+#fglayer         data/bgs/11lvl/light2.gif 2500 0 0 0 -5 1 1 1 1 1 1
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	190 20 50
+spawn2  	210 35 50
+spawn3  	220 50 50
+
+
+
+Hole  432  271  0  0  591  620  87
+Wall  -139  230  -29  0  239  130  70  303
+
+
+spawn  e00
+	Flip 1
+	coords  0  250 1000
+	at  0
+
+light		128 -128
+at			0
+
+spawn  Elevador01
+flip   1
+	coords  0  0 0
+	at  0
+
+wait
+at   1100
+
+group 4 4
+at   1100
+
+
+spawn  Elevador02
+	coords  150  191
+	at  1100
+
+spawn  Galsia
+map    2
+health 70
+	coords  -50  240
+	at  1100
+
+spawn  Galsia
+map    2
+health 70
+	coords  -50  240
+	at  1100
+
+spawn  Galsia
+map    2
+health 70
+	coords  -70  250
+	at  1100
+
+
+spawn  Galsia
+map    2
+health 70
+	coords  -50  240
+	at  1100
+
+
+spawn  Haku_oh
+	coords  150  200 200
+	at  1100
+
+
+spawn  Knife
+	coords  -50  245
+	at  1100
+
+
+spawn  Galsia
+health 50
+	coords  -100  245
+	at  1100
+
+
+spawn  Signal
+	coords  -100  240
+	at  1100
+
+
+spawn  Signal
+map    2
+	coords  -100  240
+	at  1100
+
+
+spawn  Elevador01
+	coords  150  191
+	at  1101
+
+spawn  e01
+	Flip 1
+	coords  0  250 1095
+	at  1101
+
+
+wait
+at   2255
+
+group 4 4
+at   2255
+
+spawn  Elevador02
+	coords  150  191
+	at  2255
+
+spawn  Galsia
+map    2
+health 70
+	coords  -50  250
+	at  2255
+
+spawn  Haku_oh
+	coords  150  200 200
+	at  2255
+
+
+spawn  Galsia
+map    2
+health 70
+	coords  -150  250
+	at  2255
+
+spawn  Haku_oh
+	coords  250  200 200
+	at  2255
+
+spawn  Haku_oh
+	coords  150  200 200
+	at  2255
+
+spawn  Galsia
+map    2
+health 70
+	coords  -50  250
+	at  2255
+
+spawn  Haku_oh
+	coords  150  200 200
+	at  2255
+
+spawn  Galsia
+health 50
+	coords  -50  250
+	at  2255
+
+spawn  knife
+	coords  -100  250
+	at  2255
+
+spawn  Galsia
+health 50
+	coords  -150  245
+	at  2255
+
+spawn  Signal
+	coords  -50  245
+	at  2255
+
+
+spawn  Elevador01
+	coords  150  191
+	at  2256
+
+spawn  e02
+	Flip 1
+	coords  0  250 1096
+	at  2256
+
+
+wait
+at   3411
+
+group 4 4
+at   3411
+
+spawn  Elevador02
+	coords  150  191
+	at  3411
+
+spawn  Haku_oh
+map    2
+	coords  250  200 250
+	at  3411
+
+spawn  Haku_oh
+map    2
+	coords  150  200 200
+	at 3411
+
+spawn  Signal
+	coords  -50  240
+	at  3411
+
+spawn  Signal
+	coords  -150  250
+	at  3411
+
+spawn  Signal
+	coords  -50  240
+	at  3411
+
+spawn  Haku_oh
+	coords  150  200 200
+	at 3411
+
+
+spawn  Galsia
+map    2
+health 70
+	coords  -100  250
+	at  3411
+
+spawn  Galsia
+map    2
+health 70
+	coords  -150  250
+	at  3411
+
+spawn  Galsia
+map    2
+health 70
+	coords  -130  240
+	at  3411
+
+
+spawn  Elevador01
+	coords  150  191
+	at  3412
+
+spawn  e03
+	Flip 1
+	coords  0  250 1096
+	at  3412
+
+wait
+at   4567
+
+group 4 4
+at   4567
+
+spawn  Elevador02
+	coords  150  191
+	at  4567
+
+spawn  Signal
+map    2
+	coords  -50  245
+	at  4567
+
+
+spawn  Nora
+map    4
+	coords  -100  250
+	at  4567
+
+spawn  Haku_oh
+map    2
+	coords  150  200 200
+	at 4567
+
+spawn  Galsia
+health 50
+	coords  -130  241
+	at  4567
+
+spawn  Signal
+	coords  -50  240
+	at  4567
+
+spawn  Signal
+map    2
+	coords  -50  250
+	at  4567
+
+spawn  Nora
+map    4
+	coords  -100  250
+	at  4567
+
+spawn  Nora
+map    4
+	coords  -100  250
+	at  4567
+
+spawn  Haku_oh
+	coords  150  200 200
+	at 4567
+
+
+spawn  Elevador01
+	coords  150  191
+	at  4568
+
+spawn  e04
+	Flip 1
+	coords  0  250 1096
+	at  4568
+
+wait
+at   5723
+
+group 4 4
+at   5723
+
+spawn  Elevador02
+	coords  150  191
+	at  5723
+
+spawn  Haku_oh
+map    2
+	coords  150  200 200
+	at 5723
+
+spawn  Haku_oh
+map    2
+	coords  200  230 230
+	at 5723
+
+spawn  Signal
+	coords  -150  230
+	at  5723
+
+spawn  Signal
+	coords  -50  240
+	at  5723
+
+spawn  Nora
+	coords  -100  250
+	at  5723
+
+spawn  Galsia
+health 50
+	coords  -130  240
+	at  5723
+
+spawn  Nora
+map    4
+	coords  -100  250
+	at  5723
+
+spawn  Galsia
+map    2
+health 70
+	coords  -150  250
+	at  5723
+
+spawn  Galsia
+map    2
+health 70
+	coords  -150  250
+	at  5723
+
+
+spawn  Signal
+map    2
+	coords  -50  240
+	at  5723
+
+

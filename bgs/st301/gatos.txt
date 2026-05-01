@@ -1,0 +1,41 @@
+name		 	Gatos
+type			panel
+shadow			0
+speed			5
+scroll			-0.5
+
+anim idle
+	loop	1
+	delay	600
+	offset	0 0
+	frame	data/bgs/st301/cat00.gif
+        delay	8
+	frame	data/bgs/st301/cat01.gif
+	frame	data/bgs/st301/cat02.gif
+	frame	data/bgs/st301/cat01.gif
+	frame	data/bgs/st301/cat02.gif
+	frame	data/bgs/st301/cat01.gif
+	frame	data/bgs/st301/cat02.gif
+	frame	data/bgs/st301/cat01.gif
+	frame	data/bgs/st301/cat02.gif
+	frame	data/bgs/st301/cat01.gif
+	frame	data/bgs/st301/cat02.gif
+	frame	data/bgs/st301/cat01.gif
+	frame	data/bgs/st301/cat02.gif
+	frame	data/bgs/st301/cat01.gif
+	frame	data/bgs/st301/cat02.gif
+	frame	data/bgs/st301/cat01.gif
+	frame	data/bgs/st301/cat02.gif
+	frame	data/bgs/st301/cat01.gif
+	frame	data/bgs/st301/cat02.gif
+	frame	data/bgs/st301/cat01.gif
+	frame	data/bgs/st301/cat02.gif
+	frame	data/bgs/st301/cat01.gif
+	frame	data/bgs/st301/cat02.gif
+        delay	60
+	frame	data/bgs/st301/cat03.gif
+        delay	200
+	frame	data/bgs/st301/cat04.gif
+        delay	60
+	frame	data/bgs/st301/cat03.gif
+	

@@ -1,0 +1,170 @@
+music		data/bgs/St01/Fighting-In-The-Street.ogg
+bossmusic	data/music/boss1.bor
+scrollspeed 0.5#1
+stagenumber 1
+background	data/bgs/st01/Back01.gif
+panel		data/bgs/St01/Pn01.gif
+frontpanel      data/bgs/St01/Front01.gif
+#bglayer           data/bgs/11lvl/liberty_statue.gif 0.3 0.1   60    -40 180 1 1 1 1  0
+#bglayer           data/bgs/11lvl/0x.gif 0.5 0.1   60    -40 180 1 1 1 1  0
+#fglayer         data/bgs/11lvl/fondo3.gif 1500 -0.1 0 0 0 0 0 1 1 1
+#fglayer         data/bgs/11lvl/sun.gif 500 0 0 0 -5 1 1 1 1 1 1
+#fglayer         data/bgs/11lvl/light2.gif 2500 0 0 0 -5 1 1 1 1 1 1
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	125 20
+spawn2  	130 35
+spawn3  	135  50
+
+light		128 -128
+at			0
+
+spawn  L01
+	coords  0  28
+        Flip 1
+	at  0
+
+spawn  L02
+	coords  497  28
+        Flip 1
+	at  0
+
+spawn  L07
+	coords  497  28
+        Flip 1
+	at  0
+
+
+spawn  chicken
+	coords  150  220
+	at  0
+
+spawn  Gold
+	coords  300  220
+	at  0
+
+spawn  Cash
+	coords  200  150
+	at  0
+
+spawn  Apple
+	coords  400  220
+	at  0
+
+spawn  Pipe
+	coords  350  191
+	at  0
+
+spawn  Sword
+	coords  300  191
+	at  0
+
+spawn  Knife
+	coords  200  191
+	at  0
+
+spawn  Kunai
+	coords  500  191
+	at  0
+
+spawn  Shiva
+map 1
+health 50
+	coords  250 230
+	at  0
+
+
+
+
+
+spawn  L03
+	coords  413  28
+        Flip 1
+	at  600
+
+spawn  BArL
+	coords  728  28
+        Flip 1
+	at  600
+
+spawn  cafe
+	coords  864  30
+        Flip 1
+	at  600
+
+
+
+spawn  Galsia
+health 30
+	coords  560  191
+	at  745
+
+spawn  Galsia
+health 60
+	coords  -400  191
+	at  1070
+
+spawn  L04
+	coords  503  28
+        Flip 1
+	at  1100
+
+
+
+
+
+wait
+	at  1170
+
+
+spawn  L05
+	coords  826  28
+        Flip 1
+	at  1226
+
+spawn  L06
+	coords  1093  28
+        Flip 1
+	at  1226
+
+spawn  cabine
+	coords  805 158
+        Item Apple
+        Flip 1
+	at  1226
+
+spawn  cabine
+	coords  972  158
+        Item knife
+        Flip 1
+	at  1226
+
+spawn  BArL
+	coords  608  28
+        Flip 1
+	at  1226
+
+spawn  cafe
+	coords  636  94
+        Flip 1
+	at  1226
+
+
+spawn  Porta
+	coords  224  28
+        Flip 1
+	at  1399
+
+
+
+

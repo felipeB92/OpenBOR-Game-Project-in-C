@@ -1,0 +1,444 @@
+name	hayate
+health	100
+mp 20
+#mprate 1
+speed	12
+type	player
+riseinv				0.4 1
+gfxshadow	1
+candamage			enemy npc obstacle
+secret				0 1
+antigrab 2
+JUMPHEIGHT 1 1
+Jumpheight 3
+atchain    1 1 2 3
+#weapons				hayate_Knife hayate_Sword hayate_pipe hayate_Kunai
+icon	data/chars/players/hayate/icon.gif
+diesound data/chars/players/hayate/Death.wav
+running	25	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+animationscript 	data/scripts/ani0020.h
+#ondrawscript 		data/scripts/player_ondrawscript.c
+
+Load T00
+Load HayateP01
+Load HayateP02
+
+
+#Com f f a freespecial2
+#Com f f freespecial
+Com d d freespecial5
+Com u u freespecial6
+
+remap data/chars/players/hayate/idle00.gif data/chars/players/hayate/alter1.gif
+remap data/chars/players/hayate/idle00.gif data/chars/players/hayate/alter2.gif
+remap data/chars/players/hayate/idle00.gif data/chars/players/hayate/alter3.gif
+
+
+
+
+
+anim idle
+	loop	1
+	delay	60
+	offset	60 128
+	bbox	48 52 26 74
+	frame   data/chars/players/hayate/idle00.gif
+		delay  25
+	frame   data/chars/players/hayate/idle01.gif
+	frame   data/chars/players/hayate/idle02.gif
+	frame   data/chars/players/hayate/idle01.gif
+	frame   data/chars/players/hayate/idle00.gif
+
+
+
+
+anim walk
+	loop	1
+	delay	1
+	offset	60 125
+	bbox	52 52 31 68
+	jumpframe  0  0.001  0.001  0
+	landframe  1
+	frame	data/chars/players/hayate/walk00.gif
+	frame	data/chars/players/hayate/walk00.gif
+	delay	14
+	frame	data/chars/players/hayate/walk00.gif
+	frame	data/chars/players/hayate/walk01.gif
+	frame	data/chars/players/hayate/walk02.gif
+	frame	data/chars/players/hayate/walk03.gif
+	frame	data/chars/players/hayate/walk04.gif
+
+
+anim get
+	loop	0
+	delay	10
+	offset	60 125
+	frame	data/chars/players/hayate/get00.gif
+
+
+anim jump
+	loop	0
+	delay	5
+	offset	60 125
+	bbox	47 45 36 74
+	frame	data/chars/players/hayate/jump00.gif
+	frame	data/chars/players/hayate/jump01.gif
+
+
+
+
+anim jumpattack
+	loop	0
+	delay	7
+	offset	60 125
+	bbox	49 43 30 71
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/hayate/jumpatk01.gif
+		attack1  63  48  49  62  10  1  0  0  0  15
+	frame	data/chars/players/hayate/jumpatk02.gif
+
+
+anim Runjumpattack
+	loop	0
+	delay	7
+	offset	60 125
+	bbox	49 43 30 71
+	sound	data/sounds/armas/Whoosh2.wav
+        hitfx	data/sounds/Armas/Corte.wav
+	frame	data/chars/players/hayate/ra00.gif
+		attack1  63  48  49  62  10  1  0  0  0  15
+	frame	data/chars/players/hayate/ra01.gif
+		attack1  70
+	frame  data/chars/players/hayate/ra03.gif
+
+
+
+
+anim jumpattack2
+	loop	0
+	delay	7
+	offset	62 121
+	bbox	48 47 36 48
+	attack	40 75 73 26 10 1  0  0  10  15
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+        Sound	data/chars/players/hayate/a2.wav
+	frame	data/chars/players/hayate/jumpatk300.gif
+
+anim jumpforward
+	loop	0
+	delay	7
+	offset	71 113
+	bbox	58 52 35 34
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/soco.wav
+		Attack1  0
+	sound	data/sounds/armas/Whoosh.wav
+        hitfx	data/sounds/Armas/Corte.wav
+        Sound	data/chars/players/hayate/a1.wav
+	frame	data/chars/players/hayate/jumpatk200.gif
+		attack1  44  43  64  34  10  1  0  0  0  15
+	frame	data/chars/players/hayate/jumpatk201.gif
+		attack1  44  45  95  27  10  1  0  0  0  15
+	frame	data/chars/players/hayate/jumpatk202.gif
+	frame	data/chars/players/hayate/jumpatk203.gif
+
+
+anim attack1
+	loop	0
+		delay  6
+		offset  60  128
+		bbox  46  55  31  70
+		Attack1  0
+	sound	data/sounds/armas/Whoosh.wav
+        hitfx	data/sounds/Armas/Corte.wav
+	frame  data/chars/players/hayate/a400.gif
+		attack1  65  69  59  17  10  0  0  0  0  10
+		delay  3
+		offset  54  128
+	frame	data/chars/players/hayate/a401.gif
+		delay  6
+	frame	data/chars/players/hayate/a402.gif
+
+
+
+anim attack2
+	loop	0
+	delay	6
+	offset	60 128
+	bbox	50 52 30 72
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Medio.wav
+	frame	data/chars/players/hayate/a101.gif
+        Sound	data/chars/players/hayate/a2.wav
+	frame	data/chars/players/hayate/a200.gif
+		attack2  64  68  58  30  10  0  0  0  0  10
+	frame	data/chars/players/hayate/a201.gif
+
+anim attack3
+	loop	0
+	delay	8
+	offset	67 128
+	bbox	55 46 19 82
+	sound	data/sounds/armas/Whoosh2.wav
+        hitfx	data/sounds/Armas/Corte2.wav
+	frame	data/chars/players/hayate/a300.gif
+	frame	data/chars/players/hayate/a301.gif
+		attack1  63  26  89  92  15  1  0  0  0  15
+	frame	data/chars/players/hayate/a302.gif
+		attack1  81  82  45  28  15  0  0  0  0  5
+	frame	data/chars/players/hayate/a303.gif
+		attack1  76  74  33  28  15  0  0  0  0  5
+	frame	data/chars/players/hayate/a304.gif
+
+
+
+anim grab
+	loop	0
+	delay	100
+	offset	61 129
+	bbox	52 52 23 78
+	frame	data/chars/players/hayate/a101.gif
+
+anim throw
+	loop	0
+	delay	10
+	offset	127 129
+        Sound	data/chars/players/hayate/a2.wav
+	frame	data/chars/players/hayate/throw00.gif
+	@cmd  spawn01  "T00"  0  0  0
+	frame	data/chars/players/hayate/throw01.gif
+	frame	data/chars/players/hayate/throw02.gif
+		Attack1  0
+	frame	data/chars/players/hayate/throw03.gif
+	frame	data/chars/players/hayate/throw04.gif
+
+
+anim Run
+	loop	1
+	delay	3
+        offset	60 125
+		bbox  50  66  37  44
+	frame	data/chars/players/hayate/Run00.gif
+	frame	data/chars/players/hayate/Run01.gif
+
+
+anim Runattack
+	loop	0
+	delay	5
+        offset	60 125
+		bbox  50  66  37  44
+		move  10
+	sound	data/sounds/armas/Whoosh2.wav
+        hitfx	data/sounds/Armas/Corte2.wav
+	frame	data/chars/players/hayate/ra00.gif
+		delay  2
+		attack3  39  30  93  88  10  1  0  0  0  15
+		move  5
+	frame	data/chars/players/hayate/ra01.gif
+	frame	data/chars/players/hayate/ra02.gif
+	frame  data/chars/players/hayate/ra01.gif
+	frame  data/chars/players/hayate/ra02.gif
+	frame  data/chars/players/hayate/ra01.gif
+		delay  5
+		attack3  64  81  34  20  10  1  0  0  0  15
+	frame	data/chars/players/hayate/ra03.gif
+		move  0
+		attack3  71  94  21  17  10  1  0  0  0  15
+		delay  10
+	frame  data/chars/players/hayate/ra04.gif
+
+
+
+
+anim Freespecial5
+	loop	0
+	delay	10
+        offset	60 125
+	frame	data/chars/players/hayate/dodge00.gif
+        Movez 7
+        Move 2
+	delay	8
+	frame	data/chars/players/hayate/dodge01.gif
+	frame	data/chars/players/hayate/dodge04.gif
+	frame	data/chars/players/hayate/dodge03.gif
+	frame	data/chars/players/hayate/dodge02.gif
+	frame	data/chars/players/hayate/dodge05.gif
+        Movez 0
+        Move 0
+	delay	10
+	frame	data/chars/players/hayate/dodge06.gif
+
+anim Freespecial6
+	loop	0
+	delay	10
+        offset	60 125
+	frame	data/chars/players/hayate/dodge00.gif
+        Movez -7
+        Move 2
+	delay	8
+	frame	data/chars/players/hayate/dodge01.gif
+	frame	data/chars/players/hayate/dodge02.gif
+	frame	data/chars/players/hayate/dodge03.gif
+	frame	data/chars/players/hayate/dodge04.gif
+	frame	data/chars/players/hayate/dodge05.gif
+		move  0
+	frame  data/chars/players/hayate/dodge06.gif
+anim pain
+	loop	0
+	offset	60 128
+	bbox	42 55 37 69
+	delay	15
+	frame	data/chars/players/hayate/pain00.gif
+	frame	data/chars/players/hayate/pain01.gif
+
+anim pain2
+	loop	0
+	offset	70 121
+	bbox	58 56 27 67
+	delay	15
+	frame	data/chars/players/hayate/pain200.gif
+	frame	data/chars/players/hayate/pain201.gif
+
+
+anim fall
+	loop	0
+	offset	60 125
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/players/hayate/fall00.gif
+		attack  30
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/players/hayate/fall00.gif
+		Attack1  0
+	frame	data/chars/players/hayate/fall01.gif
+
+anim fall3
+	loop	0
+	offset	63 127
+	delay	10
+	attack	40 60 43 64 12 1
+		bbox  41  59  41  67
+	frame	data/chars/players/hayate/fall705.gif
+	frame	data/chars/players/hayate/fall600.gif
+	frame	data/chars/players/hayate/fall601.gif
+	frame	data/chars/players/hayate/fall602.gif
+		Attack1  0
+		bbox  0
+	frame  data/chars/players/hayate/fall01.gif
+
+anim rise
+	loop	0
+	offset	60 125
+	delay	10
+	frame	data/chars/players/hayate/Rise00.gif
+	frame	data/chars/players/hayate/Rise01.gif
+		offset  60  125
+		delay  10
+	frame  data/chars/players/hayate/Rise00.gif
+	frame	data/chars/players/hayate/Rise02.gif
+
+
+anim special
+        energycost 20 1
+        MpOnly 1
+	loop	0
+	delay	8
+	offset	60 129
+        hitfx	data/sounds/golpes/forte.wav
+		attack1  0  0  0  0  25  0
+        Sound	data/chars/players/hayate/Sp02.wav
+	@cmd  spawn01  "HayateP01"  0  0  0
+	frame	data/chars/players/hayate/special00.gif
+		Attack1  0
+	frame	data/chars/players/hayate/special01.gif
+		delay  70
+	frame	data/chars/players/hayate/special02.gif
+		delay  8
+	frame	data/chars/players/hayate/special01.gif
+
+anim special2
+        energycost 20 1
+        MpOnly 1
+	loop	0
+	delay	60
+	offset	60 129
+        hitfx	data/sounds/golpes/forte.wav
+	Sound	data/chars/players/hayate/hayate2.wav
+		Attack1  0
+	@cmd  spawn01  "HayateP02"  0  75  0
+	frame	data/chars/players/hayate/a100.gif
+		delay  10
+        Sound	data/chars/players/hayate/a1.wav
+	frame	data/chars/players/hayate/a101.gif
+		delay  25
+	frame	data/chars/players/hayate/a102.gif
+
+
+
+
+
+
+
+
+anim grabattack
+	loop	0
+	offset	60 129
+	bbox	52 49 26 82
+	delay	6
+        hitfx	data/sounds/golpes/fraco.wav
+		Attack1  0
+        Sound	data/chars/players/hayate/a1.wav
+	frame	data/chars/players/hayate/a100.gif
+		attack1  55  59  46  23  10  0  0  0  0  15
+	frame	data/chars/players/hayate/a102.gif
+		Attack1  0
+	frame	data/chars/players/hayate/a101.gif
+
+
+
+anim grabattack2
+                loop	0
+	offset	66 128
+	bbox	54 52 28 76
+	delay	10
+		Attack1  0
+	sound	data/sounds/armas/Whoosh2.wav
+        hitfx	data/sounds/Armas/Corte2.wav
+        Sound	data/chars/players/hayate/a2.wav
+	frame	data/chars/players/hayate/a300.gif
+	frame	data/chars/players/hayate/a301.gif
+		attack1  69  34  82  84  15  1  0  0  0  15
+	frame	data/chars/players/hayate/a302.gif
+		attack1  81  78  43  30  15  1  0  0  0  15
+	frame	data/chars/players/hayate/a303.gif
+		attack1  80  77  29  26  15  1  0  0  0  15
+	frame	data/chars/players/hayate/a304.gif
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	60 125
+	bbox	50 69 34 57
+	frame	data/chars/players/hayate/jumpland00.gif
+
+anim attackbackward
+ 	loop	0
+ 	delay	10
+ 	offset	142 127
+ 	bbox	124 52 26 79
+        hitfx	data/sounds/golpes/Medio.wav
+        Sound	data/sounds/golpes/soco.wav
+ 	frame	data/chars/players/hayate/aboth00.gif
+		attack1  72  66  56  33  10  1  0  0  0  20
+ 	frame	data/chars/players/hayate/aboth01.gif
+		Attack1  0
+ 	frame	data/chars/players/hayate/aboth00.gif
+

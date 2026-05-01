@@ -1,0 +1,143 @@
+##MAIN
+name				Moto02
+type				None
+hostile				player npc
+candamage			enemy player npc obstacle
+
+
+##ICONS
+icon				data/chars/Enemys/fog/icon.gif 1
+
+##REMAPS
+remap				data/chars/Enemys/fog/idle00.gif data/chars/Enemys/fog/alter1.gif
+remap				data/chars/Enemys/fog/idle00.gif data/chars/Enemys/fog/alter2.gif
+remap				data/chars/Enemys/fog/idle00.gif data/chars/Enemys/fog/alter3.gif
+remap				data/chars/Enemys/fog/idle00.gif data/chars/Enemys/fog/alter4.gif
+
+##LOADS
+load				fog
+rider				fog
+
+##ANIMATIONS#############################################################################
+
+anim spawn
+	loop	0
+	delay	1
+	offset	145 179
+	frame	data/chars/Enemys/fog/mounted00.gif
+
+
+anim idle
+	loop	1
+	delay	2
+	offset	145 179
+	hitfx	data/sounds/HighPunch.wav
+	attack 99 135 101 46 24 1 1 0 0 12
+        sound	data/sounds/Bike.wav
+		move  10
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+        frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+        frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+	frame	data/chars/Enemys/fog/mounted00.gif
+        @cmd killentity getlocalvar("self")
+	frame	data/chars/Enemys/fog/mounted01.gif
+

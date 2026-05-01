@@ -1,0 +1,19 @@
+name			PosterGotaNone
+setlayer 5
+offscreenkill	1000
+
+anim idle
+	loop	1
+	delay	10
+	offset	0 0
+	frame	data/Bgs/St02/Gota01.gif
+	frame	data/Bgs/St02/Gota02.gif
+	frame	data/Bgs/St02/Gota03.gif
+	frame	data/Bgs/St02/Gota03.gif
+	frame	data/Bgs/St02/Gota03.gif
+	frame	data/Bgs/St02/Gota03.gif
+	frame	data/Bgs/St02/Gota03.gif
+	frame	data/Bgs/St02/Gota03.gif
+	frame	data/Bgs/St02/Gota04.gif
+
+

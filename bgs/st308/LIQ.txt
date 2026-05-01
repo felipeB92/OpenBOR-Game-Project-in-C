@@ -1,0 +1,20 @@
+name	  	 	LIQ
+type	  	 	none
+shadow	  	 	0
+#aLPHA 1
+setlayer	       9
+
+anim idle
+	loop	0
+	delay	400
+	offset	0 0
+	frame	data/bgs/st308/LIQ/00.gif
+	frame	data/bgs/st308/LIQ/01.gif
+	frame	data/bgs/st308/LIQ/02.gif
+	delay	12
+	frame	data/bgs/st308/LIQ/03.gif
+	frame	data/bgs/st308/LIQ/04.gif
+	frame	data/bgs/st308/LIQ/05.gif
+	frame	data/bgs/st308/LIQ/06.gif
+	delay	900
+	frame	data/bgs/st308/LIQ/07.gif

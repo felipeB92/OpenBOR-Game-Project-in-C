@@ -1,0 +1,312 @@
+name	Bruce
+health	100
+speed	12
+type	Enemy
+gfxshadow	1
+hostile				player npc
+candamage			player npc obstacle
+JUMPHEIGHT 1 1
+Jumpheight 3
+falldie 2
+atchain    1 2 3
+icon	data/chars/Enemys/Bruce/icon.gif 1
+diesound data/voices/die1.wav
+running	20	3	3	1	1
+
+##LOADS
+
+
+remap data/chars/Enemys/Bruce/idle00.gif data/chars/Enemys/Bruce/alter1.gif
+remap data/chars/Enemys/Bruce/idle00.gif data/chars/Enemys/Bruce/alter2.gif
+remap data/chars/Enemys/Bruce/idle00.gif data/chars/Enemys/Bruce/alter3.gif
+
+anim	spawn
+	loop	0
+	delay	16
+	offset	117 180
+	bbox	106 99 40 57
+	frame   data/chars/Enemys/Bruce/jump00.gif
+
+
+
+anim idle
+	loop	1
+	delay	12
+	offset	117 180
+	bbox	100 102 36 77
+	frame   data/chars/Enemys/Bruce/idle00.gif
+	frame   data/chars/Enemys/Bruce/idle01.gif
+
+
+anim walk
+	loop	1
+	delay	14
+	offset	117 180
+	bbox	103 109 35 54
+	frame	data/chars/Enemys/Bruce/walk00.gif
+	frame	data/chars/Enemys/Bruce/walk01.gif
+	frame	data/chars/Enemys/Bruce/walk02.gif
+	frame	data/chars/Enemys/Bruce/walk03.gif
+
+
+anim jump
+	loop	0
+	delay	30
+	offset	117 180
+	bbox	112 100 28 54
+	frame	data/chars/Enemys/Bruce/jump00.gif
+
+
+
+anim attack1
+	loop	0
+	delay	6
+        Range 0 100
+	offset	117 180
+	bbox	100 104 32 64
+		Attack1  0
+        hitfx	data/sounds/golpes/whip.wav
+        Sound	data/sounds/armas/whoosh2.wav
+	frame	data/chars/Enemys/Bruce/a100.gif
+		attack1  87  54  48  22  7
+	frame	data/chars/Enemys/Bruce/a101.gif
+	frame	data/chars/Enemys/Bruce/a102.gif
+		Attack1  0
+	frame	data/chars/Enemys/Bruce/a103.gif
+		attack1  107  120  144  26  10
+	frame	data/chars/Enemys/Bruce/a104.gif
+
+anim attack2
+	loop	0
+	delay	6
+	offset	117 180
+	bbox	104 109 26 72
+		Attack1  0
+        hitfx	data/sounds/golpes/whip.wav
+        Sound	data/sounds/armas/whoosh2.wav
+	frame	data/chars/Enemys/Bruce/a200.gif
+	frame	data/chars/Enemys/Bruce/a201.gif
+	frame	data/chars/Enemys/Bruce/a202.gif
+	frame	data/chars/Enemys/Bruce/a203.gif
+	frame	data/chars/Enemys/Bruce/a204.gif
+		attack2  118  129  186  20  7  0  0  0  0  20
+	frame	data/chars/Enemys/Bruce/a205.gif
+
+anim attack3
+	loop	0
+	delay	6
+	offset	117 180
+	bbox	101 107 31 75
+		Attack1  0
+        hitfx	data/sounds/golpes/whip.wav
+        Sound	data/sounds/armas/whoosh2.wav
+	frame	data/chars/Enemys/Bruce/a300.gif
+	frame	data/chars/Enemys/Bruce/a301.gif
+	frame	data/chars/Enemys/Bruce/a302.gif
+	frame	data/chars/Enemys/Bruce/a303.gif
+	frame	data/chars/Enemys/Bruce/a304.gif
+		attack1  129  123  97  60  10  1  0  0  0  10
+	frame	data/chars/Enemys/Bruce/a305.gif
+	frame	data/chars/Enemys/Bruce/a306.gif
+
+
+anim Freespecial
+	loop	0
+	delay	6
+        Range 0 150
+	offset	117 180
+	bbox	101 105 32 78
+		Attack1  0
+        hitfx	data/sounds/golpes/whip.wav
+        Sound	data/sounds/armas/whoosh2.wav
+	frame	data/chars/Enemys/Bruce/a200.gif
+		attack1  89  57  44  17  7  1  0  0  0  20
+	frame	data/chars/Enemys/Bruce/a201.gif
+	frame	data/chars/Enemys/Bruce/a202.gif
+	frame	data/chars/Enemys/Bruce/a203.gif
+		Attack1  0
+	frame	data/chars/Enemys/Bruce/a204.gif
+		attack1  138  125  165  31  10  1  0  0  1  10
+		delay  15
+	frame	data/chars/Enemys/Bruce/a205.gif
+
+
+
+
+
+
+
+anim grabbed
+	loop	0
+	delay	100
+	offset	117 180
+	bbox	106 116 21 65
+	frame	data/chars/Enemys/Bruce/grabbed00.gif
+
+
+
+anim rise
+	loop	0
+	offset	117 180
+	delay	10
+	frame	data/chars/Enemys/Bruce/Rise00.gif
+	frame	data/chars/Enemys/Bruce/Rise01.gif
+	frame	data/chars/Enemys/Bruce/Rise02.gif
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	117 180
+	bbox	106 127 36 39
+	frame	data/chars/Enemys/Bruce/jumpland00.gif
+
+anim pain
+	loop	0
+	offset	82 120
+	bbox	62 58 42 61
+		delay  30
+	frame	data/chars/Enemys/Bruce/pain01.gif
+
+
+anim pain2
+	loop	0
+	offset	75 119
+	bbox	60 54 29 64
+	delay	30
+	frame	data/chars/Enemys/Bruce/pain02.gif
+
+anim pain3
+	loop	0
+	offset	79 119
+	bbox	63 52 26 67
+	jumpframe  0  2  0  0
+	delay	10
+	frame	data/chars/Enemys/Bruce/Pain02.gif
+	frame	data/chars/Enemys/Bruce/fall100.gif
+	frame	data/chars/Enemys/Bruce/Pain01.gif
+
+
+
+anim fall
+	loop	0
+	offset	78 120
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Bruce/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Bruce/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Bruce/fall403.gif
+		Attack1  0
+	frame	data/chars/Enemys/Bruce/fall102.gif
+
+anim fall2
+	loop	0
+	offset	78 118
+	delay	20
+	jumpframe  0  2  -3.5  0
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Bruce/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Bruce/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Bruce/fall403.gif
+		Attack1  0
+		offset  78  118
+	frame	data/chars/Enemys/Bruce/fall102.gif
+#Shock
+
+anim fall4
+	loop	0
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Bruce/fall200.gif
+	frame	data/chars/Enemys/Bruce/fall201.gif
+	frame	data/chars/Enemys/Bruce/fall200.gif
+	frame	data/chars/Enemys/Bruce/fall201.gif
+	frame	data/chars/Enemys/Bruce/fall200.gif
+	frame	data/chars/Enemys/Bruce/fall201.gif
+	frame	data/chars/Enemys/Bruce/fall200.gif
+		offset  75  119
+	frame	data/chars/Enemys/Bruce/fall102.gif
+#Burn
+
+anim fall5
+	loop	0
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Bruce/fall300.gif
+	frame	data/chars/Enemys/Bruce/fall301.gif
+	frame	data/chars/Enemys/Bruce/fall302.gif
+	frame	data/chars/Enemys/Bruce/fall300.gif
+	frame	data/chars/Enemys/Bruce/fall301.gif
+	frame	data/chars/Enemys/Bruce/fall302.gif
+	frame	data/chars/Enemys/Bruce/fall300.gif
+	frame	data/chars/Enemys/Bruce/fall301.gif
+	frame	data/chars/Enemys/Bruce/fall302.gif
+		offset  76  120
+	frame	data/chars/Enemys/Bruce/fall102.gif
+
+anim fall8
+	loop	0
+	offset	76 119
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Bruce/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Bruce/fall101.gif
+		Attack1  0
+		offset  76  121
+	frame	data/chars/Enemys/Bruce/fall102.gif
+
+anim fall9
+	loop	0
+	offset	81 119
+	delay	999
+		Attack1  0
+	frame	data/chars/Enemys/Bruce/pain01.gif
+	frame	data/chars/Enemys/Bruce/pain02.gif
+		offset  77  119
+	frame	data/chars/Enemys/Bruce/fall400.gif
+		offset  113  105
+	frame	data/chars/Enemys/Bruce/fall401.gif
+		offset  89  135
+	frame	data/chars/Enemys/Bruce/fall402.gif
+		offset  80  113
+	frame	data/chars/Enemys/Bruce/fall403.gif
+		offset  103  110
+	frame	data/chars/Enemys/Bruce/fall404.gif
+		offset  72  119
+	frame	data/chars/Enemys/Bruce/fall405.gif
+	delay	50
+		offset  76  115
+	frame	data/chars/Enemys/Bruce/fall403.gif
+	delay	999
+		offset  74  120
+	frame	data/chars/Enemys/Bruce/fall405.gif
+
+anim death
+	loop	0
+	offset	76 118
+	delay	20
+	frame	data/chars/Enemys/Bruce/fall102.gif
+
+anim Pain8
+	loop	0
+	delay	15
+	offset	76 118
+	jumpframe  0  2  1  0
+	frame	data/chars/Enemys/Bruce/jump00.gif
+	frame	data/chars/Enemys/Bruce/jump00.gif
+

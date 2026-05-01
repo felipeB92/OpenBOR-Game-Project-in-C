@@ -1,0 +1,10 @@
+name			Mx02 #GROUND
+type			None
+setlayer 9
+
+anim idle
+	loop	1
+	delay	900
+	offset	222 190
+	frame	data/Bgs/St08/mrx00.gif
+

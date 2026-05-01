@@ -1,0 +1,1346 @@
+name	TerryP
+health	100
+mp 20
+#mprate 1
+speed	12
+type	None
+riseinv				0.4 1
+gfxshadow	1
+candamage			enemy npc obstacle
+antigrab 2
+JUMPHEIGHT 1 1
+Jumpheight 3
+atchain    1 1 2 3
+icon	data/chars/players/Terry/icon.gif
+diesound data/sounds/Terrydie.wav
+running	20	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+animationscript 	data/scripts/ani0020.h
+#ondrawscript 		data/scripts/player_ondrawscript.c
+
+Load T00
+Load NAda
+Load PW01
+Load PW02
+Load PG01
+Load TerryP
+
+Com d f a freespecial2
+Com d d freespecial5
+Com u u freespecial6
+
+
+
+
+remap data/chars/players/Terry/idle00.gif data/chars/players/Terry/alter1.gif
+remap data/chars/players/Terry/idle00.gif data/chars/players/Terry/alter2.gif
+remap data/chars/players/Terry/idle00.gif data/chars/players/Terry/alter3.gif
+
+
+
+anim idle
+	loop	1
+	delay	1
+	offset	78 121
+	bbox	69 44 26 79
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/idle00.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/idle00.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/idle00.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/idle00.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/idle00.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/idle00.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/idle00.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/idle00.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/idle00.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/idle00.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle01.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle01.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle01.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle01.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle01.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle02.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle02.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle02.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle02.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle02.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle02.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle02.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle02.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle02.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle02.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle03.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle03.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle03.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle03.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle03.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle03.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle03.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle03.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle03.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle03.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle04.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle04.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle04.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle04.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle04.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle04.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle04.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle04.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle04.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle04.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle05.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle05.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle05.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle05.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle05.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle05.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle05.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle05.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle05.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle05.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle06.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle06.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle06.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle06.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle06.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle06.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle06.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle06.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle06.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle06.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle07.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle07.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle07.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle07.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle07.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle07.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle07.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle07.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle07.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle07.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle08.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle08.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle08.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle08.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle08.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle08.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle08.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle08.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Idle08.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Idle08.gif
+
+
+
+
+
+
+
+
+
+
+anim walk
+	loop	1
+	delay	1
+	offset	84 125
+	bbox	57 45 39 68
+	jumpframe  0  0.001  0.001  0
+	landframe  1
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk00.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk00.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk00.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk00.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk00.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk00.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk00.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk00.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk00.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk00.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk01.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk01.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk01.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk01.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk01.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk02.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk02.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk02.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk02.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk02.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk02.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk02.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk02.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk02.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk02.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk03.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk03.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk03.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk03.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk03.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk03.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk03.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk03.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk03.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk03.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk04.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk04.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk04.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk04.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk04.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk04.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk04.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk04.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk04.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk04.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk05.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk05.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk05.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk05.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk05.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk05.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk05.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk05.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk05.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk05.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk06.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk06.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk06.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk06.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk06.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk06.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk06.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk06.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk06.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk06.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk07.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk07.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk07.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk07.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk07.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk07.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk07.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk07.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk07.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk07.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk08.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk08.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk08.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk08.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk08.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk08.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk08.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk08.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Walk08.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Walk08.gif
+
+anim get
+	loop	0
+	delay	10
+	offset	79 109
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame	data/chars/players/Terry/get00.gif
+
+
+anim jump
+	loop	0
+	delay	5
+	offset	81 137
+	bbox	59 42 39 58
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame	data/chars/players/Terry/jump00.gif
+	nodrawmethod
+	frame	data/chars/players/Terry/jump01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame	data/chars/players/Terry/jump02.gif
+	nodrawmethod
+	frame	data/chars/players/Terry/jump03.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame	data/chars/players/Terry/jump05.gif
+
+
+
+
+anim jumpattack
+	loop	0
+	delay	7
+	offset	60 125
+	bbox	49 43 30 71
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame	data/chars/players/Terry/JA300.gif
+		attack1  75  69  34  40  10  1  0  0  0  15
+		bbox  56  48  36  48
+	frame	data/chars/players/Terry/JA301.gif
+
+
+
+
+anim jumpattack2
+	loop	0
+	delay	7
+	offset	71 113
+	bbox	66 53 44 37
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+		Attack1  0
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame	data/chars/players/Terry/ja400.gif
+		attack1  91  65  44  45  10  1  0  0  0  15
+		delay  18
+	frame	data/chars/players/Terry/ja401.gif
+
+anim jumpforward
+	loop	0
+	delay	7
+	offset	71 113
+	bbox	48 47 36 48
+	attack	35 74 84 31 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/soco.wav
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame	data/chars/players/Terry/ja100.gif
+		attack1  50  75  79  25  7  1  0  0  0  15
+	frame	data/chars/players/Terry/ja101.gif
+
+
+anim runjumpattack
+	loop	0
+	delay	7
+	offset	71 113
+	bbox	48 47 36 48
+	attack	62 64 42 38 7 0
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame	data/chars/players/Terry/ja200.gif
+	nodrawmethod
+		attack1  61  61  67  23  10  1  0  0  0  15
+	frame	data/chars/players/Terry/ja201.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame	data/chars/players/Terry/ja202.gif
+
+anim attack1
+	loop	0
+		delay  6
+		offset  64  121
+		bbox  58  44  32  64
+		Attack1  0
+		Sound  data/sounds/golpes/Soco.wav
+		hitfx  data/sounds/golpes/fraco.wav
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame  data/chars/players/Terry/a100.gif
+		attack1  55  51  77  13  7  0  0  0  0  15
+		delay  3
+	nodrawmethod
+	frame	data/chars/players/Terry/a101.gif
+		bbox  56  42  25  66
+		attack1  68  48  58  20  7  0  0  0  0  15
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame	data/chars/players/Terry/a102.gif
+
+
+anim attack2
+	loop	0
+	delay	6
+	offset	65 122
+	bbox	42 40 38 81
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Medio.wav
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame	data/chars/players/Terry/a200.gif
+		delay  3
+	nodrawmethod
+	frame	data/chars/players/Terry/a201.gif
+		attack2  76  54  62  20  7  0  0  0  0  15
+	frame	data/chars/players/Terry/a202.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame	data/chars/players/Terry/a203.gif
+
+anim attack3
+	loop	0
+	delay	5
+	offset	85 120
+	bbox	68 58 27 57
+        Sound	data/sounds/golpes/Chut.wav
+        hitfx	data/sounds/golpes/Forte.wav
+		move  3
+	Sound	data/chars/players/Terry/ga300.wav
+	frame	data/chars/players/Terry/ga302.gif
+		attack4  88  66  34  37  5  0  0  0  0  15
+	frame	data/chars/players/Terry/ga303.gif
+	frame	data/chars/players/Terry/ga304.gif
+	frame	data/chars/players/Terry/ga307.gif
+		Attack1  0
+	Sound	data/chars/players/Terry/Terry1.wav
+	frame	data/chars/players/Terry/Fs300.gif
+	frame	data/chars/players/Terry/Fs301.gif
+		move  3
+		movea  1
+	frame	data/chars/players/Terry/Fs302.gif
+		offset  85  135
+	frame	data/chars/players/Terry/Fs303.gif
+		attack3  57  25  64  92  15  1  0  0  0  15
+	frame	data/chars/players/Terry/Fs304.gif
+	frame	data/chars/players/Terry/Fs305.gif
+	frame	data/chars/players/Terry/Fs306.gif
+	frame	data/chars/players/Terry/Fs307.gif
+	frame	data/chars/players/Terry/Fs303.gif
+	frame	data/chars/players/Terry/Fs302.gif
+	frame	data/chars/players/Terry/Fs301.gif
+		Attack1  0
+	frame	data/chars/players/Terry/Jump01.gif
+
+
+
+anim run
+        loop    1
+        delay  1
+	offset	70 116
+	bbox	60 42 41 63
+	jumpframe  0  0.001  0.001  0
+	landframe  1
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run00.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run00.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run00.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run00.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run00.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run00.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run00.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run00.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run00.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run00.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run01.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run01.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run01.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run01.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run01.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run02.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run02.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run02.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run02.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run02.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run02.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run02.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run02.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run02.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run02.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run03.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run03.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run03.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run03.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run03.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run03.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run03.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run03.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run03.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run03.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run04.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run04.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run04.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run04.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run04.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run04.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run04.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run04.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run04.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run04.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run05.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run05.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run05.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run05.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run05.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run05.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run05.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run05.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run05.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run05.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run06.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run06.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run06.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run06.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run06.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run06.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run06.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run06.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run06.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run06.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run07.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run07.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run07.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run07.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run07.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run07.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run07.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run07.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run07.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run07.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run08.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run08.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run08.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run08.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run08.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run08.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run08.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run08.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run08.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run08.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run09.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run09.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run09.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run09.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run09.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run09.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run09.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run09.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame   data/chars/players/Terry/Run09.gif
+	nodrawmethod
+	frame   data/chars/players/Terry/Run09.gif
+
+
+
+anim grab
+	loop	0
+	delay	100
+	offset	100 120
+	bbox	87 43 31 81
+        cancel	0 9 0 j freespecial
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame	data/chars/players/Terry/grab00.gif
+
+anim throw
+	loop	0
+	delay	10
+	offset	103 120
+	Sound	data/chars/players/Terry/Terry1.wav
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame	data/chars/players/Terry/t00.gif
+	@cmd  spawn01  "T00"  0  0  0
+	nodrawmethod
+	frame	data/chars/players/Terry/t01.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame	data/chars/players/Terry/t02.gif
+		Attack1  0
+	nodrawmethod
+	frame	data/chars/players/Terry/t03.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame	data/chars/players/Terry/t04.gif
+
+anim Freespecial
+	        loop	0
+		delay  5
+		offset  83  119
+        hitfx	data/sounds/golpes/Forte.wav
+		attack4  72  50  44  45  5  0  0  0  0  15
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	Sound	data/chars/players/Terry/ga300.wav
+	frame  data/chars/players/Terry/Ga300.gif
+		Attack1  0
+	frame  data/chars/players/Terry/Ga301.gif
+	nodrawmethod
+	frame  data/chars/players/Terry/Ga302.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+		attack2  79  61  43  51  15  1  0  0  0  15
+	frame  data/chars/players/Terry/Ga303.gif
+		delay  18
+	nodrawmethod
+	frame  data/chars/players/Terry/Ga304.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+		Attack1  0
+		delay  5
+	frame  data/chars/players/Terry/Ga305.gif
+	frame  data/chars/players/Terry/Ga306.gif
+
+anim Freespecial2
+	        loop	0
+		delay  6
+		offset  72  123
+        hitfx	data/sounds/golpes/Forte.wav
+		bbox  62  48  31  68
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	Sound	data/chars/players/Terry/Fs200.wav
+	frame  data/chars/players/Terry/fs100.gif
+	nodrawmethod
+	frame  data/chars/players/Terry/fs101.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame  data/chars/players/Terry/fs102.gif
+	nodrawmethod
+	frame  data/chars/players/Terry/fs103.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+		bbox  70  62  39  41
+	frame  data/chars/players/Terry/fs104.gif
+		bbox  63  60  39  43
+		delay  15
+	@cmd  spawn01  "Pw02" 50  0  0
+	frame  data/chars/players/Terry/fs105.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame  data/chars/players/Terry/fs106.gif
+		delay  8
+	nodrawmethod
+	frame  data/chars/players/Terry/fs107.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame  data/chars/players/Terry/fs108.gif
+	frame  data/chars/players/Terry/fs109.gif
+
+
+
+
+
+anim Freespecial5
+	loop	0
+	delay	10
+        offset	88 115
+	frame	data/chars/players/Terry/roll00.gif
+        Movez 4
+        Move 2
+	delay	3
+	frame	data/chars/players/Terry/roll01.gif
+		delay  7
+	frame	data/chars/players/Terry/roll02.gif
+	frame	data/chars/players/Terry/roll03.gif
+	frame	data/chars/players/Terry/roll04.gif
+	frame	data/chars/players/Terry/roll05.gif
+	frame	data/chars/players/Terry/roll06.gif
+	frame	data/chars/players/Terry/roll07.gif
+	frame	data/chars/players/Terry/roll08.gif
+        Movez 0
+        Move 0
+	delay	10
+	frame	data/chars/players/Terry/Roll09.gif
+
+anim Freespecial6
+	loop	0
+	delay	10
+        offset	90 116
+	frame	data/chars/players/Terry/roll00.gif
+        Movez -4
+        Move 2
+	delay	7
+	frame	data/chars/players/Terry/roll01.gif
+	frame	data/chars/players/Terry/roll02.gif
+	frame	data/chars/players/Terry/roll03.gif
+	frame	data/chars/players/Terry/roll04.gif
+	frame	data/chars/players/Terry/roll05.gif
+	frame	data/chars/players/Terry/roll06.gif
+	frame	data/chars/players/Terry/roll07.gif
+	frame	data/chars/players/Terry/roll08.gif
+        Movez 0
+        Move 0
+	delay	10
+	frame	data/chars/players/Terry/Roll09.gif
+
+
+
+anim pain
+	loop	0
+	offset	83 119
+	bbox	62 48 31 70
+	delay	15
+	frame	data/chars/players/Terry/pain00.gif
+	frame	data/chars/players/Terry/pain01.gif
+
+anim pain2
+	loop	0
+	offset	76 117
+	bbox	58 46 39 71
+	delay	15
+	frame	data/chars/players/Terry/pain200.gif
+	frame	data/chars/players/Terry/pain201.gif
+
+
+anim fall
+	loop	0
+	offset	60 139
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/players/Terry/fall00.gif
+		attack  30
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/players/Terry/fall00.gif
+		Attack1  0
+		offset  70  94
+	frame	data/chars/players/Terry/fall01.gif
+
+anim fall3
+	loop	0
+	offset	63 140
+	delay	10
+	attack	40 60 43 64 12 1
+		bbox  41  59  41  67
+	frame	data/chars/players/Terry/fall705.gif
+	frame	data/chars/players/Terry/fall600.gif
+	frame	data/chars/players/Terry/fall601.gif
+	frame	data/chars/players/Terry/fall602.gif
+		Attack1  0
+		bbox  0
+		offset  69  94
+	frame  data/chars/players/Terry/fall01.gif
+
+anim rise
+	loop	0
+	offset	75 115
+	delay	10
+	frame	data/chars/players/Terry/Rise00.gif
+	frame	data/chars/players/Terry/Rise01.gif
+	frame	data/chars/players/Terry/Rise02.gif
+	frame	data/chars/players/Terry/Rise03.gif
+		offset  79  113
+	frame	data/chars/players/Terry/Rise04.gif
+
+
+anim special
+        energycost 20 1
+        MpOnly 1
+	loop	0
+	delay	3
+	offset	85 153
+        hitfx	data/sounds/golpes/forte.wav
+		attack1  0  0  0  0  25  0
+	Sound	data/chars/players/Terry/sp01.wav
+		move  3
+	frame	data/chars/players/Terry/special00.gif
+		Attack1  0
+	frame	data/chars/players/Terry/special01.gif
+	frame	data/chars/players/Terry/special02.gif
+	frame	data/chars/players/Terry/special03.gif
+		attack3  35  93  46  28  25  1  0  0  0  20
+	frame	data/chars/players/Terry/special04.gif
+		attack3  27  77  68  33  25  1  0  0  0  20
+	frame	data/chars/players/Terry/special05.gif
+		attack3  46  57  56  49  25  1  0  0  0  20
+	frame	data/chars/players/Terry/special06.gif
+		attack1  40  32  65  67  25  1  0  0  0  20
+	frame	data/chars/players/Terry/special07.gif
+	frame	data/chars/players/Terry/special08.gif
+		attack1  34  38  91  69  25  1  0  0  0  20
+	frame	data/chars/players/Terry/special09.gif
+		attack1  32  38  97  97  25  1  0  0  0  20
+	frame	data/chars/players/Terry/special10.gif
+	frame	data/chars/players/Terry/special11.gif
+		delay  8
+	frame	data/chars/players/Terry/special12.gif
+		Attack1  0
+		offset  84  109
+	frame  data/chars/players/Terry/get00.gif
+
+anim special2
+        energycost 0 1
+        MpOnly 1
+	loop	0
+	delay	8
+	offset	76 120
+        custknife NAda
+        throwframe 0 45
+        hitfx	data/sounds/golpes/forte.wav
+	Sound	data/chars/players/Terry/Terry1.wav
+		Attack1  0
+	frame	data/chars/players/Terry/fs200.gif
+	frame	data/chars/players/Terry/fs201.gif
+	frame	data/chars/players/Terry/fs202.gif
+		delay  4
+	frame	data/chars/players/Terry/fs203.gif
+	frame	data/chars/players/Terry/fs204.gif
+	frame	data/chars/players/Terry/fs205.gif
+	@cmd  spawn01  "Pg01"  60  00  0
+        delay	4
+	frame	data/chars/players/Terry/fs206.gif
+	frame	data/chars/players/Terry/fs207.gif
+	frame	data/chars/players/Terry/fs208.gif
+	frame	data/chars/players/Terry/fs209.gif
+	frame	data/chars/players/Terry/fs210.gif
+	frame	data/chars/players/Terry/fs211.gif
+
+	frame  data/chars/players/Terry/fs100.gif
+	frame  data/chars/players/Terry/fs101.gif
+	frame  data/chars/players/Terry/fs102.gif
+	frame  data/chars/players/Terry/fs103.gif
+		bbox  70  62  39  41
+	frame  data/chars/players/Terry/fs104.gif
+        @cmd  spawn01  "Pg01"  90  00  0
+	frame  data/chars/players/Terry/fs105.gif
+	frame  data/chars/players/Terry/fs106.gif
+		delay  4
+	frame  data/chars/players/Terry/fs107.gif
+	frame  data/chars/players/Terry/fs108.gif
+	frame  data/chars/players/Terry/fs109.gif
+	delay	4
+	offset	76 120
+        hitfx	data/sounds/golpes/forte.wav
+	Sound	data/chars/players/Terry/sp03.wav
+		Attack1  0
+        quakeframe 5 2 2
+	frame	data/chars/players/Terry/fs200.gif
+	frame	data/chars/players/Terry/fs201.gif
+	frame	data/chars/players/Terry/fs202.gif
+	frame	data/chars/players/Terry/fs203.gif
+	frame	data/chars/players/Terry/fs204.gif
+	frame	data/chars/players/Terry/fs205.gif
+        @cmd  spawn01  "Pg01"  120  00  0
+        delay	4
+	frame	data/chars/players/Terry/fs206.gif
+        delay	8
+	frame	data/chars/players/Terry/fs207.gif
+	frame	data/chars/players/Terry/fs208.gif
+	frame	data/chars/players/Terry/fs209.gif
+	frame	data/chars/players/Terry/fs210.gif
+	frame	data/chars/players/Terry/fs211.gif
+
+
+
+
+
+anim runattack
+ 	loop	0
+ 	delay	3
+ 	offset	71 127
+		move  0
+        hitfx	data/sounds/golpes/forte.wav
+	Sound	data/chars/players/Terry/ra.wav
+ 	frame	data/chars/players/Terry/ra100.gif
+ 	frame	data/chars/players/Terry/ra101.gif
+		bbox  61  58  34  33
+ 	frame	data/chars/players/Terry/ra102.gif
+ 	frame	data/chars/players/Terry/ra103.gif
+		attack3  65  39  87  68  25  3  0  0  0  20
+		move  10
+		delay  4
+		bbox  66  46  40  42
+ 	frame	data/chars/players/Terry/ra201.gif
+ 	frame	data/chars/players/Terry/ra202.gif
+ 	frame	data/chars/players/Terry/ra203.gif
+ 	frame	data/chars/players/Terry/ra204.gif
+ 	frame	data/chars/players/Terry/ra201.gif
+ 	frame	data/chars/players/Terry/ra202.gif
+ 	frame	data/chars/players/Terry/ra203.gif
+ 	frame	data/chars/players/Terry/ra204.gif
+		Attack1  0
+		delay  8
+		move  0
+ 	frame	data/chars/players/Terry/ra102.gif
+
+
+
+
+
+anim grabattack
+	loop	0
+	offset	77 123
+	bbox	59 47 36 79
+	delay	4
+        hitfx	data/sounds/golpes/fraco.wav
+		Attack1  0
+	frame	data/chars/players/Terry/ga100.gif
+	frame	data/chars/players/Terry/ga101.gif
+		attack1  87  66  31  22  7  0  0  0  0  15
+	frame	data/chars/players/Terry/ga102.gif
+		attack1  87  46  35  35  7  0  0  0  0  15
+	frame	data/chars/players/Terry/ga103.gif
+		Attack1  0
+	frame	data/chars/players/Terry/ga104.gif
+
+
+
+anim grabattack2
+                loop	0
+	offset	72 121
+	bbox	72 59 31 58
+	delay	5
+		Attack1  0
+        hitfx	data/sounds/golpes/Forte.wav
+	Sound	data/chars/players/Terry/Terry1.wav
+	frame	data/chars/players/Terry/ga200.gif
+	frame	data/chars/players/Terry/ga201.gif
+		attack1  94  56  32  31  15  1  0  0  0  15
+	frame	data/chars/players/Terry/ga202.gif
+		attack1  83  43  35  37  15  1  0  0  0  15
+	frame	data/chars/players/Terry/ga203.gif
+		delay  15
+	frame	data/chars/players/Terry/ga204.gif
+		Attack1  0
+		delay  8
+		bbox  56  41  38  74
+	frame	data/chars/players/Terry/ga205.gif
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	83 110
+	bbox	55 58 49 46
+	frame	data/chars/players/Terry/get00.gif
+
+anim attackbackward
+ 	loop	0
+ 	delay	10
+ 	offset	98 98
+ 	bbox	88 48 27 35
+        hitfx	data/sounds/golpes/Medio.wav
+        Sound	data/sounds/golpes/soco.wav
+ 	frame	data/chars/players/Terry/aboth00.gif
+		attack1  34  59  56  26  15  1  0  0  0  15
+	frame  data/chars/players/Terry/aboth01.gif
+ 	frame	data/chars/players/Terry/aboth02.gif
+		Attack1  0
+	frame  data/chars/players/Terry/aboth00.gif
+

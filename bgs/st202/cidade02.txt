@@ -1,0 +1,20 @@
+name			Cidade02 #GROUND
+speed		8
+#scroll		-0.5
+shadow		0
+noquake 	1 1
+type			Panel
+setlayer -50
+
+anim idle
+	loop	1
+	delay	16
+	offset	0 0
+	frame	data/Bgs/St202/City06.gif
+	frame	data/Bgs/St202/City07.gif
+	frame	data/Bgs/St202/City08.gif
+	frame	data/Bgs/St202/City09.gif
+	
+	
+
+

@@ -1,0 +1,16 @@
+name			st1_wave_splash
+type			none
+shadow			0
+antigravity		100
+setlayer		-150
+animationscript	data/scripts/animation/default.c
+
+anim idle
+	loop	0
+	delay	24
+	offset	25 25
+	frame	data/bgs/sor3_st1/splash00.gif
+	frame	data/bgs/sor3_st1/splash01.gif
+	frame	data/bgs/sor3_st1/splash02.gif
+	@cmd suicide
+	frame	data/bgs/sor3_st1/splash02.gif

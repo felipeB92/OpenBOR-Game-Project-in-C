@@ -1,0 +1,394 @@
+music		data/bgs/St406/Lv406a.bor
+bossmusic	data/music/boss2.bor
+
+###BACKGROUND
+background		data/bgs/St406/back01.gif
+
+###BGLAYER/PANEL
+panel			data/bgs/St406/pN01.gif	none	none
+
+###MISC
+Frontpanel		data/bgs/St05/Front02.gif
+#order			a
+settime			99
+scrollspeed 	0.5
+stagenumber 	6
+cameratype 1
+backgroundSpeed 1 40
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	30 30  150
+spawn2  	35 30 150
+spawn3  	40 30  150
+
+light		128 -128
+at			0
+
+
+
+
+spawn  Cabine
+flip   1
+Item   1Up
+	coords  230 200
+	at  0
+
+spawn  Cabine
+flip   1
+Item   Apple
+	coords  320 200
+	at  0
+
+spawn  Lixo02
+Item   pipe
+	coords  600 200
+	at  0
+
+
+wait 
+at 0
+
+Group 5 5
+at 0
+
+spawn  Zumbie
+map    3
+health 150
+	coords  300 220
+	at  0
+
+
+
+spawn  Vento
+       flip 1
+	coords  500  0
+	at  0
+
+
+
+spawn  Zumbie
+map    1
+health 150
+	coords  350 260
+	at  0
+
+
+spawn  Zumbie
+flip   1
+health 150
+	coords  150 250
+	at  0
+
+
+spawn  Zelectra
+map    4
+health 150
+	coords  350 250 150
+	at  0
+
+
+spawn  Zumbie
+flip   1
+health 150
+	coords  520 250
+	at  0
+
+
+spawn  Zoombie
+map    1
+health 150
+	coords  -100 220
+	at  0
+
+spawn  Moto
+alias  Fog
+health 90
+	coords  500 220
+	at  100
+
+spawn  Moto
+alias  Fog
+health 90
+	coords  500 260
+	at  150
+
+
+
+wait 
+at 200
+
+Group 5 5
+at 200
+
+
+spawn  Zoombie
+map    1
+health 150
+	coords  500 220
+	at  200
+
+
+spawn  Zoombie
+health 150
+	coords  -100 250
+	at  200
+
+spawn  Zumbie
+map    2
+health 150
+	coords  500 220
+	at  200
+
+
+spawn  Moto02
+	coords  500 260
+	at  200
+
+
+spawn  Zice
+MAP    3
+health 150
+	coords  -100 250
+	at  200
+
+spawn  Vento
+       flip 1
+	coords  500  0
+	at  200
+
+
+spawn  Zombie
+map    2
+health 150
+	coords  -100 220
+	at  200
+
+
+spawn  Moto
+alias  Fog
+health 90
+	coords  500 260
+	at  200
+
+
+spawn  Zombie
+map    3
+health 150
+	coords  -100 250
+	at  200
+
+spawn  Cabine
+Item   Gold
+	coords  650 200
+	at  201
+
+spawn  Vento
+       flip 1
+	coords  500  0
+	at  201
+
+spawn  Lixo02
+Item   Apple
+	coords  650 225
+	at  375
+
+
+
+wait 
+at 701
+
+Group 4 4
+at 701
+
+spawn  Zice
+map    1
+health 70
+	coords  -100 220
+	at  701
+
+spawn  Vento
+       flip 1
+	coords  500  0
+	at  701
+
+spawn  Zumbie
+map    1
+health 70
+	coords  500 220
+	at  701
+
+spawn  Bigben
+map    1
+health 100
+	coords  -100 240 155
+	at  701
+
+spawn  Signal
+map    1
+health 70
+	coords  500 220
+	at  701
+
+spawn  Zelectra
+map    1
+health 70
+	coords  -100 220
+	at  701
+
+
+spawn  Zombie
+map    1
+health 70
+	coords  -100 240
+	at  701
+
+spawn  Moto
+Alias  Fog
+health 70
+	coords  500 220
+	at  701
+
+spawn  Zoombie
+map    1
+health 150
+	coords  -100 220
+	at  701
+
+spawn  Vento
+       flip 1
+	coords  500  0
+	at  701
+
+Group 3 3
+at 750
+
+
+spawn  Nora
+map    4
+health 150
+	coords  500 260
+	at  750
+
+spawn  Nora
+map    4
+health 150
+	coords  500 220
+	at  750
+
+spawn  Nora
+map    4
+health 150
+	coords  500 220
+	at  750
+
+Group 3 3
+at 751
+
+spawn  Electra
+map    4
+health 150
+	coords  500 260
+	at  751
+
+spawn  Electra
+map    4
+health 150
+	coords  500 220
+	at  751
+
+spawn  Electra
+map    4
+health 150
+	coords  500 220
+	at  751
+
+
+
+Group 3 3
+at 752
+
+spawn  Vento
+       flip 1
+	coords  500  0
+	at  752
+
+spawn  maclean
+map    1
+health 150
+	coords  500 260
+	at  752
+
+spawn  mcbride
+map    1
+health 150
+	coords  500 220
+	at  752
+
+spawn  macleod
+map    1
+health 150
+	coords  500 220
+	at  752
+
+spawn  Vento
+       flip 1
+	coords  500  0
+	at  800
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

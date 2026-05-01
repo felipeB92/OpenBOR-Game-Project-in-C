@@ -1,0 +1,450 @@
+name	YAmato_
+health	150
+speed	17
+riseinv				0.4 1
+hostile				player npc
+candamage			player npc obstacle
+Noblink 0
+falldie 1
+escapehits			2
+mp			        60
+mprate  			5
+type	Enemy
+gfxshadow	1
+JUMPHEIGHT 1 1
+Jumpheight 3
+risetime  170
+atchain   1 1 2
+icon	data/chars/Enemys/Yamato/icon.gif 1
+diesound data/voices/bossdie1.wav
+running	20	3	3	1	1
+animationscript		data/scripts/drago.c
+
+##LOADS
+
+LOAD STAR02
+
+
+
+remap data/chars/Enemys/Yamato/idle00.gif data/chars/Enemys/Yamato/alter1.gif
+remap data/chars/Enemys/Yamato/idle00.gif data/chars/Enemys/Yamato/alter2.gif
+remap data/chars/Enemys/Yamato/idle00.gif data/chars/Enemys/Yamato/alter3.gif
+remap data/chars/Enemys/Yamato/idle00.gif data/chars/Enemys/Yamato/alter4.gif
+remap data/chars/Enemys/Yamato/idle00.gif data/chars/Enemys/Yamato/alter5.gif
+
+anim	spawn
+	loop	0
+	delay	190
+	bbox	129 111 37 70
+		offset  145  182
+	jumpframe  2  3  0  1
+	landframe  6
+	frame   data/chars/Enemys/Yamato/explosion01.gif
+	delay	8
+	frame   data/chars/Enemys/Yamato/Jump00.gif
+	frame   data/chars/Enemys/Yamato/Jump00.gif
+	frame   data/chars/Enemys/Yamato/Jump00.gif
+	frame   data/chars/Enemys/Yamato/Jump00.gif
+	frame   data/chars/Enemys/Yamato/Jump00.gif
+	frame   data/chars/Enemys/Yamato/jumpland00.gif
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	157 180
+	bbox	145 102 32 75
+	frame   data/chars/Enemys/Yamato/idle00.gif
+	frame   data/chars/Enemys/Yamato/idle01.gif
+	frame   data/chars/Enemys/Yamato/idle02.gif
+	frame  data/chars/Enemys/Yamato/idle01.gif
+
+
+anim walk
+	loop	1
+	delay	10
+	offset	157 180
+	bbox	144 106 50 79
+	frame	data/chars/Enemys/Yamato/walk00.gif
+	frame	data/chars/Enemys/Yamato/walk01.gif
+	frame	data/chars/Enemys/Yamato/walk02.gif
+
+
+
+
+anim jump
+	loop	0
+	delay	30
+	offset	145 198
+	bbox	133 90 52 62
+	frame	data/chars/Enemys/Yamato/jump00.gif
+
+anim jumpattack
+	loop	0
+	delay	6
+        range   60 100
+	offset	157 180
+	bbox	130 136 40 42
+        hitfx	data/sounds/golpes/Forte.wav
+        hitfx	data/sounds/Cutter2.wav
+		Attack1  0
+	frame	data/chars/Enemys/Yamato/a201.gif
+	delay	30
+		attack1  120  110  127  28  10  1  0  0  0  20
+	frame	data/chars/Enemys/Yamato/a202.gif
+		attack1  75  110  118  28  10  1  0  0  0  20
+	frame	data/chars/Enemys/Yamato/a203.gif
+
+
+
+anim attack1
+	loop	0
+	delay	4
+        Range 0 60
+	offset	157 180
+	bbox	135 111 25 72
+        sound	data/voices/Yamato1.wav
+        hitfx	data/sounds/golpes/Fraco.wav
+		Attack1  0
+	frame	data/chars/Enemys/Yamato/a100.gif
+	frame	data/chars/Enemys/Yamato/a101.gif
+		Attack1  169  115  69  23  7  0  0  0  0  10
+		delay  15
+	frame	data/chars/Enemys/Yamato/a102.gif
+		delay  4
+		Attack1  0
+	frame  data/chars/Enemys/Yamato/a101.gif
+
+anim attack2
+	loop	0
+	delay	6
+	offset	157 180
+	bbox	136 106 24 77
+		Attack1  0
+	jumpframe  0  1  1  0
+	landframe  3
+        hitfx	data/sounds/Cutter2.wav
+	frame	data/chars/Enemys/Yamato/a200.gif
+		attack2  125  100  78  21  15  1  0  0  0  20
+		delay  7
+	frame	data/chars/Enemys/Yamato/a201.gif
+		delay  9
+		attack1  119  102  121  30  15  1  0  0  0  20
+	frame	data/chars/Enemys/Yamato/a202.gif
+		Attack1  80  115  107  21
+	frame	data/chars/Enemys/Yamato/a203.gif
+		Attack1  0
+	frame	data/chars/Enemys/Yamato/a204.gif
+
+anim freespecial
+	loop	0
+	Range 100 120
+	jumpframe  0  2  2  0
+	landframe  4
+        Range 70 100
+	offset	157 180
+	bbox	138 108 26 76
+		Attack1  0
+        hitfx	data/sounds/Cutter2.wav
+		move  0
+        sound	data/voices/Yamato1.wav
+	frame	data/chars/Enemys/Yamato/a200.gif
+		attack1  125  110  72  26  15  1  0  0  0  20
+		delay  7
+		move  10
+	frame	data/chars/Enemys/Yamato/a201.gif
+		delay  9
+		attack1  124  110  76  42  15  1  0  0  0  20
+	frame	data/chars/Enemys/Yamato/a202.gif
+	frame	data/chars/Enemys/Yamato/a203.gif
+		move  0
+		Attack1  0
+	frame	data/chars/Enemys/Yamato/a204.gif
+
+
+
+
+anim freespecial2
+	loop	0
+	delay	6
+        Range 150 200
+	offset	157 180
+	bbox	125 132 46 39
+	jumpframe  0  3  3  0
+	landframe  8
+        hitfx	data/sounds/golpes/Fraco.wav
+		Attack1  0
+        sound	data/voices/Yamato1.wav
+	frame	data/chars/Enemys/Yamato/Jump00.gif
+	frame	data/chars/Enemys/Yamato/Jump01.gif
+	frame	data/chars/Enemys/Yamato/Jump02.gif
+	frame	data/chars/Enemys/Yamato/Jump03.gif
+	frame	data/chars/Enemys/Yamato/Jump00.gif
+	frame	data/chars/Enemys/Yamato/Jump01.gif
+		attack1  116  100  89  24  10  1  0  0  0  20
+	frame	data/chars/Enemys/Yamato/a201.gif
+		attack1  122  102  122  37  10  1  0  0  0  20
+	frame	data/chars/Enemys/Yamato/a202.gif
+
+anim freespecial3
+	loop	0
+	delay	6
+        Range 100 150
+	offset	157 180
+        hitfx	data/sounds/golpes/Fraco.wav
+        sound	data/voices/Yamato2.wav
+		Attack1  0
+	frame	data/chars/Enemys/Yamato/spin00.gif
+	frame	data/chars/Enemys/Yamato/spin01.gif
+	frame	data/chars/Enemys/Yamato/spin02.gif
+	frame	data/chars/Enemys/Yamato/spin03.gif
+        delay	1
+		move  75
+	frame	data/chars/Enemys/Yamato/explosion01.gif
+	frame  data/chars/Enemys/Yamato/explosion01.gif
+	frame  data/chars/Enemys/Yamato/explosion01.gif
+		move  0
+        delay	6
+	frame	data/chars/Enemys/Yamato/spin01.gif
+	frame	data/chars/Enemys/Yamato/spin02.gif
+	frame	data/chars/Enemys/Yamato/spin03.gif
+	frame	data/chars/Enemys/Yamato/spin00.gif
+
+
+
+
+anim freespecial4
+	loop	0
+	delay	8
+        Range 200 250
+	offset	157 180
+	bbox	138 108 26 76
+		Attack1  0
+        hitfx	data/sounds/golpes/medio.wav
+        sound	data/voices/Yamato1.wav
+	frame	data/chars/Enemys/Yamato/a100.gif
+		delay  15
+	frame	data/chars/Enemys/Yamato/a101.gif
+		@cmd  spawn01  "sTAR02"  0  0  0
+		delay  8
+	frame	data/chars/Enemys/Yamato/a102.gif
+	frame	data/chars/Enemys/Yamato/a102.gif
+	frame	data/chars/Enemys/Yamato/a101.gif
+
+
+
+
+
+
+
+
+
+
+anim grabbed
+	loop	0
+	delay	100
+	offset	157 180
+	bbox	144 102 36 79
+	frame	data/chars/Enemys/Yamato/grabbed00.gif
+
+
+
+
+
+anim rise
+	loop	0
+	offset	157 180
+	delay	5
+	jumpframe  3  2  2  0
+	landframe  8
+	frame	data/chars/Enemys/Yamato/Rise00.gif
+	frame	data/chars/Enemys/Yamato/Rise01.gif
+	frame	data/chars/Enemys/Yamato/Rise02.gif
+	frame	data/chars/Enemys/Yamato/Rise03.gif
+	frame	data/chars/Enemys/Yamato/Jump01.gif
+	frame	data/chars/Enemys/Yamato/Jump02.gif
+	frame	data/chars/Enemys/Yamato/Jump03.gif
+	frame	data/chars/Enemys/Yamato/Jump04.gif
+	frame	data/chars/Enemys/Yamato/jumpland00.gif
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	157 180
+	bbox	128 133 46 41
+	frame	data/chars/Enemys/Yamato/jumpland00.gif
+
+anim pain
+	loop	0
+	offset	157 182
+	bbox	141 101 38 79
+		delay  30
+	frame	data/chars/Enemys/Yamato/pain01.gif
+
+
+anim pain2
+	loop	0
+	offset	154 182
+	bbox	138 95 37 86
+	delay	30
+	frame	data/chars/Enemys/Yamato/pain02.gif
+
+anim pain3
+	loop	0
+	offset	158 182
+	bbox	130 87 45 88
+	jumpframe  0  2  0  0
+	delay	10
+	frame	data/chars/Enemys/Yamato/Pain02.gif
+	frame	data/chars/Enemys/Yamato/fall400.gif
+	frame	data/chars/Enemys/Yamato/Pain01.gif
+
+
+
+anim fall
+	loop	0
+	offset	132 175
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Yamato/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Yamato/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  126  163
+	frame  data/chars/Enemys/Yamato/fall403.gif
+		Attack1  0
+		delay  8
+		offset  149  180
+	frame	data/chars/Enemys/Yamato/fall102.gif
+
+anim fall2
+	loop	0
+	offset	126 174
+	delay	20
+	jumpframe  0  2  -3.5  0
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Yamato/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  132  158
+	frame  data/chars/Enemys/Yamato/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Yamato/fall403.gif
+		Attack1  0
+		offset  149  178
+		delay  8
+	frame	data/chars/Enemys/Yamato/fall102.gif
+#Shock
+
+anim fall4
+	loop	0
+	offset	41 84
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Yamato/fall200.gif
+	frame	data/chars/Enemys/Yamato/fall201.gif
+	frame	data/chars/Enemys/Yamato/fall200.gif
+	frame	data/chars/Enemys/Yamato/fall201.gif
+	frame	data/chars/Enemys/Yamato/fall200.gif
+	frame	data/chars/Enemys/Yamato/fall201.gif
+	frame	data/chars/Enemys/Yamato/fall200.gif
+		offset  148  178
+	frame	data/chars/Enemys/Yamato/fall102.gif
+#Burn
+
+anim fall5
+	loop	0
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Yamato/fall300.gif
+	frame	data/chars/Enemys/Yamato/fall301.gif
+	frame	data/chars/Enemys/Yamato/fall302.gif
+	frame	data/chars/Enemys/Yamato/fall300.gif
+	frame	data/chars/Enemys/Yamato/fall301.gif
+	frame	data/chars/Enemys/Yamato/fall302.gif
+	frame	data/chars/Enemys/Yamato/fall300.gif
+	frame	data/chars/Enemys/Yamato/fall301.gif
+	frame	data/chars/Enemys/Yamato/fall302.gif
+		offset  150  179
+	frame	data/chars/Enemys/Yamato/fall102.gif
+
+anim fall8
+	loop	0
+	offset	124 178
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Yamato/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  136  178
+	frame  data/chars/Enemys/Yamato/fall101.gif
+		Attack1  0
+	frame	data/chars/Enemys/Yamato/fall102.gif
+
+anim fall9
+	loop	0
+	offset	151 181
+	delay	999
+		Attack1  0
+	frame	data/chars/Enemys/Yamato/pain01.gif
+	frame	data/chars/Enemys/Yamato/pain02.gif
+	frame	data/chars/Enemys/Yamato/fall400.gif
+		offset  179  187
+	frame	data/chars/Enemys/Yamato/fall401.gif
+		offset  143  204
+	frame	data/chars/Enemys/Yamato/fall402.gif
+		offset  135  156
+	frame	data/chars/Enemys/Yamato/fall403.gif
+		offset  151  170
+	frame	data/chars/Enemys/Yamato/fall404.gif
+		offset  152  176
+	frame	data/chars/Enemys/Yamato/fall405.gif
+	delay	50
+		offset  131  158
+	frame	data/chars/Enemys/Yamato/fall403.gif
+	delay	999
+		offset  152  181
+	frame	data/chars/Enemys/Yamato/fall405.gif
+
+
+anim Pain8
+	loop	0
+	delay	15
+	offset	137 177
+	jumpframe  0  2  1  0
+	frame	data/chars/Enemys/Yamato/jump00.gif
+	frame	data/chars/Enemys/Yamato/jump00.gif
+
+anim death
+	loop	0
+	offset	135 164
+	delay	20
+	jumpframe  0  1  -1  0
+	landframe  2
+	frame	data/chars/Enemys/Yamato/fall101.gif
+	frame  data/chars/Enemys/Yamato/fall100.gif
+		offset  152  183
+		delay  8
+	frame	data/chars/Enemys/Yamato/spin00.gif
+	frame	data/chars/Enemys/Yamato/spin01.gif
+	frame	data/chars/Enemys/Yamato/spin02.gif
+	frame	data/chars/Enemys/Yamato/spin03.gif
+	frame	data/chars/Enemys/Yamato/spin00.gif
+	frame	data/chars/Enemys/Yamato/spin01.gif
+	frame	data/chars/Enemys/Yamato/spin02.gif
+	frame	data/chars/Enemys/Yamato/spin03.gif
+	frame	data/chars/Enemys/Yamato/explosion00.gif
+		@cmd  spawn01  "Boom01"  0  0  0
+	frame	data/chars/Enemys/Yamato/explosion01.gif
+		@cmd  spawn01  "Boom01"  20  20  0
+	frame	data/chars/Enemys/Yamato/explosion00.gif
+		@cmd  spawn01  "Boom01"  -20  -20  0
+	frame	data/chars/Enemys/Yamato/explosion01.gif
+

@@ -1,0 +1,358 @@
+music		data/bgs/St207/Expander.ogg
+bossmusic	data/music/boss2.ogg
+scrollspeed 0.5#1
+stagenumber 7
+background	data/bgs/st207/back01.gif
+panel		data/bgs/st207/PN01.gif		none	none
+#fglayer			data/bgs/st201/fpn00.gif 0 -0.8 0.6 0 0 0 0 1 1 1
+frontpanel      data/bgs/st05/Front02.gif
+cameratype 1
+cameraoffset 	0 -60
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	50 20
+spawn2  	55 35
+spawn3  	60 50
+
+
+
+
+wall 0 275 271 399 1000 1000 64 10000
+
+light		128 -128
+at			0
+
+spawn  Time01
+	coords  0  0
+        Flip 1
+	at  0
+
+spawn  E200
+flip   1
+	coords  709   0   228
+	at  0
+
+spawn  Lata03
+Item   Chicken
+	coords  205  225
+	at  0
+
+spawn  Lata03
+2pItem   Chicken
+	coords  250  225
+	at  0
+
+wait
+at   0
+
+Group 5  5
+at   0
+
+
+
+spawn  Galsia
+map    1
+health 40
+	coords  -130  250
+	at  0
+
+spawn  Galsia
+map    1
+health 40
+	coords  -150  270
+	at  0
+
+spawn  signal
+health 50
+	coords  -100  230
+	at  0
+
+
+spawn  Donovan
+map    4
+health 50
+	coords  250  250 200
+	at  0
+
+spawn  Galsia
+map    5
+health 60
+	coords  260  270 200
+	at  0
+
+spawn  Donovan
+map    4
+health 60
+	coords  250  250 200
+	at  0
+
+
+spawn  signal
+map    3
+health 60
+	coords  -100  230
+	at  0
+
+
+
+wait
+at   1
+
+Group 5  5
+at   1
+
+spawn  Elevador01
+flip   1
+	coords  0  0 0
+	at  1
+
+spawn  E201
+flip   1
+	coords  709   0   228
+	at  1
+
+spawn  Galsia
+map    2
+health 60
+	coords  -100  230
+	at  1
+
+spawn  Galsia
+map    2
+health 60
+	coords  -100  260
+	at  1
+
+spawn  Donovan
+map    3
+health 60
+	coords  -150  250
+	at  1
+
+spawn  jet
+map    3
+health 100
+	coords  -150  250
+	at  1
+
+spawn  Galsia
+map    1
+health 40
+	coords  250  250 200
+	at  1
+
+spawn  Donovan
+health 40
+	coords  250  260 200
+	at  1
+
+spawn  Galsia
+map    1
+health 40
+	coords  220  260 200
+	at  1
+
+spawn  Donovan
+health 40
+	coords  250  260 200
+	at  1
+
+
+wait
+at   2
+
+Group 4  4
+at   2
+
+spawn  Elevador01
+flip   1
+	coords  0  0 0
+	at  2
+
+spawn  E202
+flip   1
+	coords  641   0   228
+	at  2
+
+spawn  Kusanagi
+health 60
+	coords  10  230 270
+	at  2
+
+spawn  Sword
+	coords  10 260 270
+	at  2
+
+spawn  Kusanagi
+map    4
+health 100
+	coords  150  260 270
+	at  2
+
+spawn  Hakuyo
+map    1
+health 100
+	coords  250  260 270
+	at  2
+
+spawn  Hakuyo
+map    2
+health 70
+	coords  200  260 270
+	at  2
+
+
+spawn  Hakuyo
+health 70
+	coords  50 230 270
+	at  2
+
+wait
+at   3
+
+Group 5  5
+at   3
+
+spawn  Elevador01
+flip   1
+	coords  0  0 0
+	at  3
+
+spawn  E203
+flip   1
+	coords  0   0   330
+	at  3
+
+spawn  Back200
+flip   1
+	coords  0   0   0
+	at  3
+
+spawn  Fog
+health 60
+	coords  -100  230
+	at  3
+
+spawn  Fog
+health 50
+	coords  -100  260
+	at  3
+
+spawn  Fog
+map    2
+health 70
+	coords  -150  250
+	at  3
+
+
+spawn  raven
+health 60
+	coords  150  260 270
+	at  3
+
+spawn  raven
+map    2
+health 70
+	coords  250  260 250
+	at  3
+
+spawn  Fog
+map    2
+health 70
+	coords  -150  250
+	at  3
+
+spawn  Fog
+health 50
+	coords  -100  260
+	at  3
+
+wait
+at   4
+
+Group 5  5
+at   4
+
+spawn  Elevador01
+flip   1
+	coords  0  0 0
+	at  4
+
+spawn  Back201
+flip   1
+	coords  0   0   0
+	at  4
+
+spawn  E204
+flip   1
+	coords  0   0   370
+	at  4
+
+spawn  galsia
+map    1
+health 40
+	coords  200  250 270
+	at  4
+
+spawn  Donovan
+health 40
+	coords  250  240 270
+	at  4
+
+spawn  galsia
+map    1
+health 40
+	coords  200  260 250
+	at  4
+
+spawn  Bigben
+health 100
+	coords  250  230 250
+	at  4
+
+spawn  Jack
+map    1
+health 200
+	coords  -100  240
+	at  4
+
+spawn  Elevador01
+flip   1
+	coords  0  0 0
+	at  5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

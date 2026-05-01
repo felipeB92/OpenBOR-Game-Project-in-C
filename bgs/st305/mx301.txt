@@ -1,0 +1,15 @@
+name			Mx301 #GROUND
+type			None
+setlayer -6
+
+anim idle
+	loop	0
+	delay	20
+	offset	0 0
+	frame	data/Bgs/st305/Mx200.gif
+	delay	60
+	frame	data/Bgs/st305/Mx201.gif
+	frame	data/Bgs/st305/Mx202.gif
+      @cmd killentity getlocalvar("self")
+	frame	data/Bgs/st305/Mx202.gif
+

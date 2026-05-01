@@ -1,0 +1,15 @@
+name			e306 #ELEVATOR ANIMATED BGLAYER
+type			none
+shadow			0
+setlayer		-8
+animationscript		data/scripts/drago.c
+
+load			Elevador01
+load			Elevador02
+
+anim idle
+	loop	0
+	delay	125
+	offset	0 0
+	frame	data/bgs/st303/back03.gif
+

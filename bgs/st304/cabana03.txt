@@ -1,0 +1,12 @@
+name			Cabana03 #GROUND
+type			None
+setlayer 6
+
+
+anim idle
+	loop	0
+	delay	50
+	offset	300 0
+	frame	data/Bgs/St304/y13.gif
+
+

@@ -1,0 +1,21 @@
+# Hit flash
+
+speed	19
+name	Monawave
+candamage  Player obstacle npc pshot
+type	pshot
+alpha 1
+
+
+anim idle
+	loop	1
+		delay  5
+		offset  121  195
+		hitfx  data/sounds/golpes/forte.wav
+		attack3  140
+	frame  data/chars/Enemys/MOnalisa/wave00.gif
+	frame	data/chars/Enemys/MOnalisa/wave01.gif
+	frame	data/chars/Enemys/MOnalisa/wave02.gif
+		attack3  139  181  49  24  20  1  0  0  0  10
+	frame	data/chars/Enemys/MOnalisa/wave03.gif
+

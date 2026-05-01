@@ -1,0 +1,332 @@
+music		data/bgs/St401/Lv401a.bor
+bossmusic	data/music/boss1.bor
+scrollspeed 0.5#1
+stagenumber 1
+background	data/bgs/st401/BAck02.gif	0.8 1 0 0 0 0 1 1 1
+bglayer		data/bgs/st401/BAck03.gif		0.3 1 -100 0 0 0 1 1 1 0 1 5 50 0.5
+panel		data/bgs/St401/Pn02.gif
+frontpanel      data/bgs/St401/Front02.gif
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	125 20
+spawn2  	130 35
+spawn3  	135  50
+
+light		128 -128
+at			0
+
+
+
+
+spawn  Luz401
+flip   1
+	coords  120 40
+	at  0
+
+spawn  Luz401
+	coords  190 40
+	at  0
+
+spawn  Luz401
+flip   1
+	coords  1150 40
+	at  0
+
+spawn  Luz401
+flip   1
+	coords  1395 40
+	at  0
+
+spawn  Luz401
+	coords  1470 40
+	at  0
+
+spawn  Lata
+Item   Cash
+	coords  400  220
+	at  0
+
+spawn  Lata
+Item   Apple
+	coords  450  230
+	at  0
+
+spawn  LAta
+2pItem   Apple
+	coords  500  260
+	at  0
+
+
+
+spawn  Galsia
+map    1
+health 50
+	coords  500  250
+	at  100
+
+
+spawn  Donovan
+health 50
+	coords  500  220
+	at  100
+
+wait  
+at    200
+
+Group  4  4
+at    200
+
+spawn  Pipe
+	coords  -50  220 5
+	at  200
+
+spawn  Fog
+map    1
+health 90
+	coords  -200  220
+	at  200
+
+
+spawn  Donovan
+health 50
+	coords  -200  250
+	at  200
+
+
+spawn  Donovan
+map    1
+health 70
+	coords  500  250
+	at  200
+
+
+spawn  slum
+health 50
+	coords  500  220
+	at  200
+
+spawn  Signal
+health 50
+	coords  500  220
+	at  300
+
+spawn  vice
+health 50
+	coords  500  250
+	at  400
+
+wait  
+at    500
+
+Group  4  4
+at    500
+
+
+spawn  Signal
+map    1
+health 70
+	coords  -200  250
+	at  500
+
+
+spawn  Signal
+health 50
+	coords  -200  220
+	at  500
+
+spawn  Galsia
+health 50
+	coords  500  250
+	at  500
+
+
+spawn  _haku_OH
+health 50
+	coords  320  180
+	at  500
+
+spawn  Haku_oh
+map    1
+health 50
+	coords  -200  250 150
+	at  500
+
+
+spawn  Signal
+health 50
+	coords  -200  220
+	at  500
+
+spawn  Fog
+map    2
+health 90
+	coords  500  250
+	at  500
+
+
+spawn  Haku_OH
+health 50
+	coords  250  220 150
+	at  500
+
+spawn  _haku_OH
+health 50
+	coords  320  180
+	at  600
+
+
+
+spawn  _haku_OH
+health 50
+	coords  320  180
+	at  700
+
+spawn  _haku_OH
+health 50
+	coords  320  180
+	at  800
+
+
+wait  
+at    900
+
+Group  4  4
+at    900
+
+spawn  fog
+health 70
+	coords  -200  250
+	at  900
+
+
+spawn  Signal
+health 50
+	coords  -200  220
+	at  900
+
+spawn  Vice
+map    2
+health 70
+	coords  500  250
+	at  900
+
+
+spawn  Donovan
+map    2
+health 70
+	coords  500  220
+	at  900
+
+spawn  Signal
+map    1
+health 50
+	coords  -200  250
+	at  900
+
+
+spawn  Signal
+health 50
+	coords  -200  220
+	at  900
+
+spawn  Galsia
+map    2
+health 70
+	coords  500  250
+	at  900
+
+spawn  _haku_OH
+flip    1
+map     1
+health 70
+	coords  150  180
+	at  900
+
+spawn  sandbag
+Item   Chicken
+	coords  500  220
+	at  901
+
+spawn  sandbag
+2pItem   Chicken
+	coords  550  260
+	at  901
+
+
+spawn  Heli401
+Flip   1
+	coords  500  20
+	at  1050
+
+
+
+wait  
+at    1340
+
+Group  1  1
+at    1340
+
+spawn  Delay
+	coords  500  250
+	at  1340
+
+spawn  Delay
+	coords  500  250
+	at  1340
+
+Group  3  3
+at    1341
+
+
+
+spawn  Bigben
+flip   1
+health 100
+	coords  230  210 150
+	at  1341
+
+spawn  Bob
+Alias  Fuba
+boss   1
+health 400
+	coords  450  250 150
+	at  1341
+
+
+spawn  Bigben
+Flip   1
+Alias  Baloom
+health 100
+	coords  223  265 150
+	at  1341
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+name			Esteira02s
+type			none
+shadow			0
+antigravity 	100
+animationscript		data/scripts/drago.c
+
+anim idle
+	loop	0
+	delay	42
+	offset	0 65
+	@cmd dasher 0.2 0 0
+	platform 126 -10 304 178 64 0.001
+	frame	data/bgs/st207/empty.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/bgs/st207/empty.gif
+

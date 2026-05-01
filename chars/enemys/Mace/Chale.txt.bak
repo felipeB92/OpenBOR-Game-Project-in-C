@@ -1,0 +1,35 @@
+# Hit flash
+speed	8
+name	Chale
+candamage  Player obstacle npc pshot
+type	None
+
+
+anim idle
+	loop	0
+	delay	5
+	offset	128 192
+        hitfx	data/sounds/golpes/forte.wav
+	frame   data/chars/Enemys/Mace/Chale.gif
+	frame   data/chars/Enemys/Mace/Chale.gif
+	frame   data/chars/Enemys/Mace/Chale.gif
+	frame   data/chars/Enemys/Mace/Chale.gif
+	frame   data/chars/Enemys/Mace/Chale.gif
+	frame   data/chars/Enemys/Mace/00.gif
+	frame   data/chars/Enemys/Mace/Chale.gif
+	frame   data/chars/Enemys/Mace/00.gif
+	frame   data/chars/Enemys/Mace/Chale.gif
+	frame   data/chars/Enemys/Mace/00.gif
+	frame   data/chars/Enemys/Mace/Chale.gif
+	frame   data/chars/Enemys/Mace/00.gif
+	frame   data/chars/Enemys/Mace/Chale.gif
+	frame   data/chars/Enemys/Mace/00.gif
+	frame   data/chars/Enemys/Mace/Chale.gif
+	frame   data/chars/Enemys/Mace/00.gif
+	frame   data/chars/Enemys/Mace/Chale.gif
+	frame   data/chars/Enemys/Mace/00.gif
+	frame   data/chars/Enemys/Mace/Chale.gif
+	@cmd killentity getlocalvar("self")
+	frame   data/chars/Enemys/Mace/00.gif
+	frame   data/chars/Enemys/Mace/Chale.gif
+

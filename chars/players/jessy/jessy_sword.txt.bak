@@ -1,0 +1,190 @@
+name	Jessy_Sword
+health	100
+speed	12
+type	none
+antigrab 2
+gfxshadow	1
+candamage			enemy npc obstacle
+JUMPHEIGHT 1 1
+Jumpheight 3
+icon	data/chars/players/Jessy/icon.gif
+diesound data/sounds/Jessydie.wav
+running	20	3	3	1	1
+
+Com d d freespecial5
+Com u u freespecial6
+
+Load SwordT
+
+
+
+
+
+remap data/chars/players/Jessy/alter0.gif data/chars/players/Jessy/alter1.gif
+remap data/chars/players/Jessy/alter0.gif data/chars/players/Jessy/alter2.gif
+remap data/chars/players/Jessy/alter0.gif data/chars/players/Jessy/alter3.gif
+
+
+
+anim idle
+	loop	1
+	delay	12
+	offset	154 188
+	bbox	141 114 25 75
+	frame   data/chars/players/Jessy/Sword/idle00.gif
+	frame   data/chars/players/Jessy/Sword/idle01.gif
+	frame   data/chars/players/Jessy/Sword/idle02.gif
+	frame   data/chars/players/Jessy/Sword/idle03.gif
+	frame   data/chars/players/Jessy/Sword/idle04.gif
+	frame   data/chars/players/Jessy/Sword/idle05.gif
+	frame   data/chars/players/Jessy/Sword/idle06.gif
+
+
+
+
+anim walk
+	loop	1
+	delay	1
+	offset	150 189
+	bbox	131 113 36 76
+	jumpframe  0  0.001  0.001  0
+	landframe  1
+	frame	data/chars/players/Jessy/Sword/walk00.gif
+	frame	data/chars/players/Jessy/Sword/walk00.gif
+	delay	14
+	frame	data/chars/players/Jessy/Sword/walk00.gif
+	frame	data/chars/players/Jessy/Sword/walk01.gif
+	frame	data/chars/players/Jessy/Sword/walk02.gif
+	frame	data/chars/players/Jessy/Sword/walk03.gif
+	frame	data/chars/players/Jessy/Sword/walk04.gif
+	frame	data/chars/players/Jessy/Sword/walk05.gif
+	frame	data/chars/players/Jessy/Sword/walk06.gif
+	frame	data/chars/players/Jessy/Sword/walk07.gif
+
+
+anim get
+	loop	0
+	delay	10
+	offset	135 174
+	frame	data/chars/players/Jessy/Sword/get00.gif
+
+
+anim jump
+	loop	0
+	delay	10
+	offset	152 184
+	bbox	141 118 24 65
+	frame	data/chars/players/Jessy/Sword/jump00.gif
+
+
+
+
+anim jumpattack
+	loop	0
+	delay	7
+	offset	137 181
+	bbox	123 117 25 38
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+		attack1  137  143  49  38  10  1  0  0  0  10
+		delay  25
+	frame	data/chars/players/Jessy/Sword/Jumpattack00.gif
+
+anim jumpattack2
+	loop	0
+	delay	7
+	offset	145 181
+	bbox	128 120 30 32
+	attack	139 145 52 26 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Jessy/Sword/Jumpattack200.gif
+
+anim jumpforward
+	loop	0
+	delay	7
+	offset	128 181
+	bbox	120 113 30 45
+	attack	141 143 45 40 7 1
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/soco.wav
+	frame	data/chars/players/Jessy/Sword/Jumpattack00.gif
+
+
+anim runjumpattack
+	loop	0
+	delay	7
+	offset	138 181
+	bbox	117 115 41 43
+	attack	116 138 39 38 7 0
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Jessy/Sword/Jumpattack300.gif
+
+anim attack1
+	loop	0
+	delay	6
+	offset	133 187
+	bbox	124 114 22 73
+		Attack1  0
+	sound	data/sounds/armas/Whoosh3.wav
+        hitfx	data/sounds/Armas/Corte2.wav
+	frame	data/chars/players/Jessy/Sword/a100.gif
+		attack1  127  125  60  19  15  1  0  0  0  15
+		offset  135  184
+		bbox  126  114  20  74
+	frame	data/chars/players/Jessy/Sword/a101.gif
+		attack1  143  128  92  18  25  1  0  0  0  15
+		delay  15
+	frame	data/chars/players/Jessy/Sword/a102.gif
+		delay  6
+		Attack1  0
+	frame	data/chars/players/Jessy/Sword/a101.gif
+
+anim Special2
+	loop	0
+	delay	6
+	offset	133 187
+	bbox	119 108 30 74
+		Attack1  0
+        custKnife Swordt
+        throwframe 2 40
+	sound	data/sounds/armas/Whoosh.wav
+	frame	data/chars/players/Jessy/Sword/a100.gif
+		offset  135  184
+	frame	data/chars/players/Jessy/Sword/a101.gif
+	frame	data/chars/players/Jessy/Sword/a102.gif
+	frame	data/chars/players/Jessy/Sword/a103.gif
+	frame	data/chars/players/Jessy/Sword/a104.gif
+
+
+
+anim run
+        loop    1
+        delay  10
+	offset	153 183
+	bbox	140 115 32 70
+	jumpframe  0  0.001  0.001  0
+	landframe  1
+        frame	data/chars/players/Jessy/Sword/run00.gif
+        frame	data/chars/players/Jessy/Sword/run01.gif
+        frame	data/chars/players/Jessy/Sword/run02.gif
+        frame	data/chars/players/Jessy/Sword/run03.gif
+        frame	data/chars/players/Jessy/Sword/run04.gif
+        frame	data/chars/players/Jessy/Sword/run05.gif
+
+
+
+
+
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	152 192
+	bbox	135 120 31 70
+	frame	data/chars/players/Jessy/Sword/jumpland00.gif
+

@@ -1,0 +1,12 @@
+name		st8_bubble
+type		none
+shadow		0
+lifespan	0.6
+antigravity	80
+setlayer	-5
+
+anim idle
+	loop	0
+	delay	8
+	offset	1 1
+	frame	data/bgs/sor3_st8/bubble00.gif

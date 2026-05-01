@@ -1,0 +1,499 @@
+name	BigBen
+lifespan 40
+health	80
+speed	5
+#riseinv				0.4 1
+hostile				player npc
+candamage			player npc obstacle
+Noblink 0
+falldie 2
+type	Enemy
+gfxshadow	1
+JUMPHEIGHT 1 1
+Jumpheight 3
+mp			        60
+mprate  			5
+icon	data/chars/Enemys/BigBen/icon.gif 1
+diesound data/voices/bossdie1.wav
+running	20	3	3	1	1
+animationscript		data/scripts/drago.c
+
+##LOADS
+
+Load Bigf01
+Load Bigf02
+Load Bigf03
+Load Bigf04
+
+
+
+remap data/chars/Enemys/BigBen/idle00.gif data/chars/Enemys/BigBen/alter1.gif
+remap data/chars/Enemys/BigBen/idle00.gif data/chars/Enemys/BigBen/alter2.gif
+remap data/chars/Enemys/BigBen/idle00.gif data/chars/Enemys/BigBen/alter3.gif
+remap data/chars/Enemys/BigBen/idle00.gif data/chars/Enemys/BigBen/alter4.gif
+
+anim	spawn
+	loop	0
+	delay	70
+	offset	145 177
+	bbox	108 120 86 40
+		#drawmethod  350  350  0  0  0  -1  -1
+	frame   data/chars/Enemys/BigBen/jumpatk200.gif
+
+
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	145 177
+	bbox	126 99 38 76
+		#drawmethod  350  350  0  0  0  -1  -1
+	frame   data/chars/Enemys/BigBen/idle00.gif
+
+	frame  data/chars/Enemys/BigBen/idle01.gif
+
+
+anim walk
+	loop	1
+	delay	14
+	offset	145 177
+	bbox	130 99 31 79
+	frame	data/chars/Enemys/BigBen/walk00.gif
+	frame	data/chars/Enemys/BigBen/walk01.gif
+	frame	data/chars/Enemys/BigBen/walk02.gif
+	frame	data/chars/Enemys/BigBen/walk03.gif
+
+anim jump
+	loop	0
+	delay	30
+	offset	145 177
+	bbox	134 104 29 68
+        hitfx	data/sounds/golpes/Forte.wav
+		#drawmethod  350  350  0  0  0  -1  -1
+	frame	data/chars/Enemys/BigBen/jump00.gif
+
+anim jumpattack
+	loop	0
+	delay	30
+	offset	145 177
+	bbox	124 126 42 40
+        hitfx	data/sounds/golpes/Forte.wav
+		attack1  115  120  81  40  10  1  0  0  0  20
+	frame	data/chars/Enemys/BigBen/jumpatk200.gif
+
+
+
+
+
+
+anim attack1
+	loop	0
+	delay	8
+        Range 0 40
+	offset	145 177
+	bbox	130 100 31 77
+		Attack1  0
+        hitfx	data/sounds/golpes/Medio.wav
+		#drawmethod  350  350  0  0  0  -1  -1
+	frame	data/chars/Enemys/BigBen/a100.gif
+		attack1  155  111  45  17  10  1  0  0  0  20
+	frame	data/chars/Enemys/BigBen/a101.gif
+		attack1  150  123  28  26  10  1  0  0  0  20
+	frame	data/chars/Enemys/BigBen/a102.gif
+		Attack1  0
+	frame	data/chars/Enemys/BigBen/a103.gif
+
+
+anim	Freespecial #fireRun down 
+	loop	0
+	delay	10
+	offset	145 177
+        range   150 250
+        rangez  0 550
+	bbox	126 103 35 78
+		#drawmethod  350  350  0  0  0  -1  -1
+	frame   data/chars/Enemys/BigBen/fire00.gif
+	frame   data/chars/Enemys/BigBen/fire01.gif
+		move  10
+	sound	data/sounds/Fire2.wav
+		movez  2
+		delay  6
+	frame   data/chars/Enemys/BigBen/Fire02.gif
+		@cmd  spawn01  "Bigf01"  0  1  0
+	frame   data/chars/Enemys/BigBen/Fire03.gif
+		@cmd  spawn01  "Bigf02"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire04.gif
+		@cmd  spawn01  "Bigf03"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire05.gif
+		@cmd  spawn01  "Bigf01"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire02.gif
+		@cmd  spawn01  "Bigf02"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire03.gif
+		@cmd  spawn01  "Bigf03"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire04.gif
+		@cmd  spawn01  "Bigf01"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire05.gif
+		@cmd  spawn01  "Bigf02"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire02.gif
+		@cmd  spawn01  "Bigf03"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire03.gif
+		@cmd  spawn01  "Bigf01"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire04.gif
+		@cmd  spawn01  "Bigf02"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire05.gif
+		@cmd  spawn01  "Bigf03"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire02.gif
+		@cmd  spawn01  "Bigf01"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire03.gif
+		@cmd  spawn01  "Bigf02"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire04.gif
+		@cmd  spawn01  "Bigf03"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire05.gif
+		@cmd  spawn01  "Bigf01"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire02.gif
+		@cmd  spawn01  "Bigf02"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire03.gif
+		@cmd  spawn01  "Bigf03"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire04.gif
+		@cmd  spawn01  "Bigf01"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire05.gif
+		@cmd  spawn01  "Bigf02"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire02.gif
+		@cmd  spawn01  "Bigf03"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire03.gif
+		@cmd  spawn01  "Bigf01"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire04.gif
+		@cmd  spawn01  "Bigf02"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire05.gif
+		@cmd  spawn01  "Bigf03"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire02.gif
+		@cmd  spawn01  "Bigf01"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire03.gif
+		@cmd  spawn01  "Bigf02"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire04.gif
+		@cmd  spawn01  "Bigf03"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire05.gif
+		@cmd  spawn01  "Bigf01"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire02.gif
+		@cmd  spawn01  "Bigf02"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire03.gif
+		@cmd  spawn01  "Bigf03"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire04.gif
+		@cmd  spawn01  "Bigf01"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire05.gif
+		@cmd  spawn01  "Bigf02"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire02.gif
+		@cmd  spawn01  "Bigf03"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire03.gif
+		@cmd  spawn01  "Bigf04"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire04.gif
+
+anim	Freespecial2 #fireFire up 
+	loop	0
+	delay	10
+	offset	145 177
+        range   150 250
+        rangez  -550 -1
+	bbox	128 97 33 80
+	frame   data/chars/Enemys/BigBen/fire00.gif
+	frame   data/chars/Enemys/BigBen/fire01.gif
+		move  10
+	sound	data/sounds/Fire2.wav
+		movez  -2
+		delay  5
+        frame   data/chars/Enemys/BigBen/Fire02.gif
+		@cmd  spawn01  "Bigf01"  0  1  0
+	frame   data/chars/Enemys/BigBen/Fire03.gif
+		@cmd  spawn01  "Bigf02"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire04.gif
+		@cmd  spawn01  "Bigf03"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire05.gif
+		@cmd  spawn01  "Bigf01"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire02.gif
+		@cmd  spawn01  "Bigf02"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire03.gif
+		@cmd  spawn01  "Bigf03"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire04.gif
+		@cmd  spawn01  "Bigf01"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire05.gif
+		@cmd  spawn01  "Bigf02"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire02.gif
+		@cmd  spawn01  "Bigf03"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire03.gif
+		@cmd  spawn01  "Bigf01"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire04.gif
+		@cmd  spawn01  "Bigf02"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire05.gif
+		@cmd  spawn01  "Bigf03"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire02.gif
+		@cmd  spawn01  "Bigf01"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire03.gif
+		@cmd  spawn01  "Bigf02"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire04.gif
+		@cmd  spawn01  "Bigf03"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire05.gif
+		@cmd  spawn01  "Bigf01"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire02.gif
+		@cmd  spawn01  "Bigf02"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire03.gif
+		@cmd  spawn01  "Bigf03"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire04.gif
+		@cmd  spawn01  "Bigf01"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire05.gif
+		@cmd  spawn01  "Bigf02"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire02.gif
+		@cmd  spawn01  "Bigf03"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire03.gif
+		@cmd  spawn01  "Bigf01"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire04.gif
+		@cmd  spawn01  "Bigf02"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire05.gif
+		@cmd  spawn01  "Bigf03"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire02.gif
+		@cmd  spawn01  "Bigf01"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire03.gif
+		@cmd  spawn01  "Bigf02"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire04.gif
+		@cmd  spawn01  "Bigf03"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire05.gif
+		@cmd  spawn01  "Bigf01"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire02.gif
+		@cmd  spawn01  "Bigf02"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire03.gif
+		@cmd  spawn01  "Bigf03"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire04.gif
+		@cmd  spawn01  "Bigf01"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire05.gif
+		@cmd  spawn01  "Bigf02"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire02.gif
+		@cmd  spawn01  "Bigf03"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire03.gif
+		@cmd  spawn01  "Bigf04"  0  0  0
+	frame   data/chars/Enemys/BigBen/Fire04.gif
+
+
+anim	Freespecial3 #roll
+	loop	0
+	delay	15
+        range   40 100
+	offset	145 177
+		Attack1  0
+		#drawmethod  350  350  0  0  0  -1  -1
+	frame   data/chars/Enemys/BigBen/Rise02.gif
+		delay  3
+		move  10
+	sound	data/sounds/roll.wav
+	frame   data/chars/Enemys/BigBen/roll00.gif
+		attack1  119  132  49  45  15  1  0  0  0  15
+	frame   data/chars/Enemys/BigBen/roll01.gif
+	frame   data/chars/Enemys/BigBen/roll02.gif
+	frame   data/chars/Enemys/BigBen/roll03.gif
+	frame   data/chars/Enemys/BigBen/roll04.gif
+	frame   data/chars/Enemys/BigBen/roll01.gif
+	frame   data/chars/Enemys/BigBen/roll02.gif
+	frame   data/chars/Enemys/BigBen/roll03.gif
+	frame   data/chars/Enemys/BigBen/roll04.gif
+	frame   data/chars/Enemys/BigBen/roll01.gif
+	frame   data/chars/Enemys/BigBen/roll02.gif
+	frame   data/chars/Enemys/BigBen/roll03.gif
+	frame   data/chars/Enemys/BigBen/roll04.gif
+		Attack1  0
+		move  0
+		delay  8
+		bbox  115  118  49  57
+	frame   data/chars/Enemys/BigBen/roll05.gif
+	frame   data/chars/Enemys/BigBen/roll06.gif
+	frame   data/chars/Enemys/BigBen/roll07.gif
+	frame   data/chars/Enemys/BigBen/roll05.gif
+	frame   data/chars/Enemys/BigBen/roll06.gif
+	frame   data/chars/Enemys/BigBen/roll07.gif
+	frame   data/chars/Enemys/BigBen/roll05.gif
+	frame   data/chars/Enemys/BigBen/roll06.gif
+	frame   data/chars/Enemys/BigBen/roll07.gif
+
+
+
+
+
+
+anim grabbed
+	loop	0
+	delay	100
+	offset	145 177
+	bbox	133 109 30 68
+		#drawmethod  350  350  0  0  0  -1  -1
+	frame	data/chars/Enemys/BigBen/grabbed00.gif
+
+
+
+anim rise
+	loop	0
+	offset	145 177
+	delay	10
+		#drawmethod  350  350  0  0  0  -1  -1
+	frame	data/chars/Enemys/BigBen/Rise00.gif
+	frame	data/chars/Enemys/BigBen/Rise01.gif
+	frame	data/chars/Enemys/BigBen/Rise02.gif
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	145 177
+	bbox	124 117 34 59
+		#drawmethod  350  350  0  0  0  -1  -1
+	frame	data/chars/Enemys/BigBen/Get00.gif
+
+anim pain
+	loop	0
+	offset	148 175
+	bbox	126 112 39 62
+		delay  30
+	frame	data/chars/Enemys/BigBen/pain01.gif
+
+
+anim pain2
+	loop	0
+	offset	146 179
+	bbox	133 118 24 61
+	delay	30
+	frame	data/chars/Enemys/BigBen/pain02.gif
+
+anim pain3
+	loop	0
+	offset	145 177
+	bbox	127 114 34 63
+	jumpframe  0  2  0  0
+	delay	10
+	frame	data/chars/Enemys/BigBen/Pain02.gif
+	frame	data/chars/Enemys/BigBen/fall100.gif
+	frame	data/chars/Enemys/BigBen/Pain01.gif
+
+
+
+anim fall
+	loop	0
+	offset	139 172
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/BigBen/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  138  180
+	frame  data/chars/Enemys/BigBen/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/BigBen/fall403.gif
+		Attack1  0
+		offset  133  175
+	frame	data/chars/Enemys/BigBen/fall102.gif
+
+anim fall2
+	loop	0
+	offset	129 177
+	delay	20
+	jumpframe  0  2  -3.5  0
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/BigBen/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  139  181
+	frame  data/chars/Enemys/BigBen/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/BigBen/fall403.gif
+		Attack1  0
+		offset  134  176
+	frame	data/chars/Enemys/BigBen/fall102.gif
+#Shock
+
+anim fall4
+	loop	0
+	offset	88 120
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/BigBen/fall200.gif
+	frame	data/chars/Enemys/BigBen/fall201.gif
+	frame	data/chars/Enemys/BigBen/fall200.gif
+	frame	data/chars/Enemys/BigBen/fall201.gif
+	frame	data/chars/Enemys/BigBen/fall200.gif
+	frame	data/chars/Enemys/BigBen/fall201.gif
+	frame	data/chars/Enemys/BigBen/fall200.gif
+		offset  136  175
+	frame	data/chars/Enemys/BigBen/fall102.gif
+#Burn
+
+anim fall5
+	loop	0
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/BigBen/fall300.gif
+	frame	data/chars/Enemys/BigBen/fall301.gif
+	frame	data/chars/Enemys/BigBen/fall302.gif
+	frame	data/chars/Enemys/BigBen/fall300.gif
+	frame	data/chars/Enemys/BigBen/fall301.gif
+	frame	data/chars/Enemys/BigBen/fall302.gif
+	frame	data/chars/Enemys/BigBen/fall300.gif
+	frame	data/chars/Enemys/BigBen/fall301.gif
+	frame	data/chars/Enemys/BigBen/fall302.gif
+		offset  135  174
+	frame	data/chars/Enemys/BigBen/fall102.gif
+
+anim fall8
+	loop	0
+	offset	130 177
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/BigBen/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  138  181
+	frame  data/chars/Enemys/BigBen/fall101.gif
+		Attack1  0
+		offset  133  176
+	frame	data/chars/Enemys/BigBen/fall102.gif
+
+anim fall9
+	loop	0
+	offset	146 176
+	delay	999
+		Attack1  0
+	frame	data/chars/Enemys/BigBen/pain01.gif
+	frame	data/chars/Enemys/BigBen/pain02.gif
+	frame	data/chars/Enemys/BigBen/fall400.gif
+		offset  161  165
+	frame	data/chars/Enemys/BigBen/fall401.gif
+		offset  148  189
+	frame	data/chars/Enemys/BigBen/fall402.gif
+		offset  138  180
+	frame	data/chars/Enemys/BigBen/fall403.gif
+		offset  123  176
+	frame	data/chars/Enemys/BigBen/fall404.gif
+		offset  134  176
+	frame	data/chars/Enemys/BigBen/fall405.gif
+	delay	50
+		offset  137  181
+	frame	data/chars/Enemys/BigBen/fall403.gif
+	delay	999
+		offset  130  175
+	frame	data/chars/Enemys/BigBen/fall405.gif
+
+anim death
+	loop	0
+	offset	134 176
+	delay	20
+	frame	data/chars/Enemys/BigBen/fall102.gif
+
+anim Pain8
+	loop	0
+	delay	15
+	offset	147 174
+	jumpframe  0  2  1  0
+	frame	data/chars/Enemys/BigBen/jump00.gif
+	frame	data/chars/Enemys/BigBen/jump00.gif
+

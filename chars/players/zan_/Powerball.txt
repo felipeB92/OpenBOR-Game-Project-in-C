@@ -1,0 +1,23 @@
+name			Powerball #THROWNED
+type			none
+Speed 15
+subtype			weapon
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		1 1
+noatflash 		1
+flash			noflash
+alpha                   1
+
+anim idle
+	loop	1
+	delay	2
+	offset	145 139
+	hitfx	data/sounds/Shock.wav
+	attack4 134 126 28 25 30 1 0 0 0 12
+		move  5
+	frame   data/chars/players/Zan_/Powerball/p00.gif
+	frame   data/chars/players/Zan_/Powerball/empty.gif
+	frame   data/chars/players/Zan_/Powerball/p01.gif
+

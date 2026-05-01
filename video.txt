@@ -1,0 +1,31 @@
+######################### Video Modes #############################
+#
+# Syntax: video [value]
+#
+# [value]:  0 = 240x224
+#
+#           1 = 480x272
+#
+#           2 = 640x480
+#
+#           3 = 720x480
+#
+#           4 = 800x480
+#
+#           5 = 800x600
+#
+#           6 = 960x540
+#
+#
+###################################################################
+video 1
+
+colourdepth 32bit
+
+loadingbg data/bgs/loading00.gif
+loadingbg data/bgs/loading01.gif
+loadingbg data/bgs/loading02.gif
+loadingbg data/bgs/loading03.gif
+loadingbg data/bgs/loading04.gif
+loadingbg data/bgs/loading05.gif
+loadingbg data/bgs/loading06.gif

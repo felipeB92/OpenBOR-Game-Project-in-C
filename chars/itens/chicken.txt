@@ -1,0 +1,25 @@
+name	chicken
+health	100
+type	none
+shadow	0
+#icon	data/chars/misc/meaticon.gif
+nolife 1
+animationscript	data/scripts/itens.c
+
+anim spawn
+	loop	0
+	flipframe  0
+	delay	5
+	offset	50 63
+	bbox	44 47 15 16
+	jumpframe  0  2  0  0
+	frame	data/chars/Itens/chicken00.gif
+
+anim idle
+	loop	1
+	delay	3
+	offset	53 63
+	bbox	36 42 29 24
+	@cmd    detector_item 100
+	frame	data/chars/Itens/chicken00.gif
+

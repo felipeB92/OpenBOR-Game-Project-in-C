@@ -1,0 +1,39 @@
+name			Shiva407a #GROUND
+type			None
+setlayer 5
+offscreenkill	1000
+
+anim idle
+	loop	0
+	delay	3
+	offset	141 204
+		move  -10
+        sound data/voices/die1.wav
+	frame   data/chars/Enemys/Shiva/fall00.gif
+	frame   data/chars/Enemys/Shiva/fall00.gif
+	frame   data/chars/Enemys/Shiva/fall00.gif
+	frame   data/chars/Enemys/Shiva/fall00.gif
+	frame   data/chars/Enemys/Shiva/fall00.gif
+	frame   data/chars/Enemys/Shiva/fall00.gif
+	frame   data/chars/Enemys/Shiva/fall00.gif
+	frame   data/chars/Enemys/Shiva/fall00.gif
+	frame   data/chars/Enemys/Shiva/fall00.gif
+	frame   data/chars/Enemys/Shiva/fall00.gif
+	frame   data/chars/Enemys/Shiva/fall00.gif
+	frame   data/chars/Enemys/Shiva/fall00.gif
+	frame   data/chars/Enemys/Shiva/fall00.gif
+	frame   data/chars/Enemys/Shiva/fall00.gif
+	frame   data/chars/Enemys/Shiva/fall00.gif
+	frame   data/chars/Enemys/Shiva/fall00.gif
+	frame   data/chars/Enemys/Shiva/fall00.gif
+	frame   data/chars/Enemys/Shiva/fall00.gif
+	frame   data/chars/Enemys/Shiva/fall00.gif
+	frame   data/chars/Enemys/Shiva/fall00.gif
+	frame  data/chars/Enemys/Shiva/fall900.gif
+	frame  data/chars/Enemys/Shiva/fall900.gif
+	frame  data/chars/Enemys/Shiva/fall900.gif
+		offset  141  195
+		move  0
+		delay  60
+	frame   data/chars/Enemys/Shiva/fall01.gif
+

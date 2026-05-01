@@ -1,0 +1,19 @@
+name			Elevador01 #GROUND
+type			None
+setlayer 999
+alpha 1
+offscreenkill	1000
+
+anim idle
+	loop	0
+	delay	7
+	offset	0 0
+        quakeframe 2 2 2
+        sound   Data/sounds/elevator_start.wav
+	frame	data/Bgs/St07/hide00.gif
+	frame	data/Bgs/St07/hide00.gif
+	frame	data/Bgs/St07/hide00.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/Bgs/St07/hide00.gif
+
+

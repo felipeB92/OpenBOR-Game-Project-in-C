@@ -1,0 +1,20 @@
+name			doctor2S #ENTITY TO MAKE SPAWN LOOP
+type			none
+shadow			0
+setlayer		-10
+animationscript		data/scripts/drago.c
+
+load			doctor2
+
+anim idle
+	loop	1
+	delay	600
+	offset	32 44
+	@cmd spawn01 "doctor2" 0 0 0
+	frame  data/bgs/st308/empty.gif
+	frame  data/bgs/st308/empty.gif
+	delay	222
+	offset	32 44
+	@cmd spawn01 "doctor2" 0 0 0
+	frame  data/bgs/st308/empty.gif
+	frame  data/bgs/st308/empty.gif

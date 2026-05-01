@@ -1,0 +1,74 @@
+name			PW02 #GROUND
+type			None
+candamage	        enemy npc obstacle
+nolife 1
+noname 1
+alpha  1
+
+
+anim idle
+	loop	1
+	delay	3
+	offset	92 120
+		attack3  45  67  75  54  15  1  0  0  0  15
+		move  10
+	frame	data/chars/players/Terry/p100.gif
+	frame	data/chars/players/Terry/p101.gif
+	frame	data/chars/players/Terry/p102.gif
+	frame	data/chars/players/Terry/p103.gif
+	frame	data/chars/players/Terry/p104.gif
+	frame	data/chars/players/Terry/p105.gif
+	frame	data/chars/players/Terry/p106.gif
+	frame	data/chars/players/Terry/p107.gif
+	frame	data/chars/players/Terry/p100.gif
+	frame	data/chars/players/Terry/p101.gif
+	frame	data/chars/players/Terry/p102.gif
+	frame	data/chars/players/Terry/p103.gif
+	frame	data/chars/players/Terry/p104.gif
+	frame	data/chars/players/Terry/p105.gif
+	frame	data/chars/players/Terry/p106.gif
+	frame	data/chars/players/Terry/p107.gif
+	frame	data/chars/players/Terry/p100.gif
+	frame	data/chars/players/Terry/p101.gif
+	frame	data/chars/players/Terry/p102.gif
+	frame	data/chars/players/Terry/p103.gif
+	frame	data/chars/players/Terry/p104.gif
+	frame	data/chars/players/Terry/p105.gif
+	frame	data/chars/players/Terry/p106.gif
+	frame	data/chars/players/Terry/p107.gif
+	frame	data/chars/players/Terry/p100.gif
+	frame	data/chars/players/Terry/p101.gif
+	frame	data/chars/players/Terry/p102.gif
+	frame	data/chars/players/Terry/p103.gif
+	frame	data/chars/players/Terry/p104.gif
+	frame	data/chars/players/Terry/p105.gif
+	frame	data/chars/players/Terry/p106.gif
+	frame	data/chars/players/Terry/p107.gif
+	frame	data/chars/players/Terry/p100.gif
+	frame	data/chars/players/Terry/p101.gif
+	frame	data/chars/players/Terry/p102.gif
+	frame	data/chars/players/Terry/p103.gif
+	frame	data/chars/players/Terry/p104.gif
+	frame	data/chars/players/Terry/p105.gif
+	frame	data/chars/players/Terry/p106.gif
+	frame	data/chars/players/Terry/p107.gif
+	frame	data/chars/players/Terry/p100.gif
+	frame	data/chars/players/Terry/p101.gif
+	frame	data/chars/players/Terry/p102.gif
+	frame	data/chars/players/Terry/p103.gif
+	frame	data/chars/players/Terry/p104.gif
+	frame	data/chars/players/Terry/p105.gif
+	frame	data/chars/players/Terry/p106.gif
+	frame	data/chars/players/Terry/p107.gif
+	frame	data/chars/players/Terry/p100.gif
+	frame	data/chars/players/Terry/p101.gif
+	frame	data/chars/players/Terry/p102.gif
+	frame	data/chars/players/Terry/p103.gif
+	frame	data/chars/players/Terry/p104.gif
+	frame	data/chars/players/Terry/p105.gif
+	frame	data/chars/players/Terry/p106.gif
+	frame	data/chars/players/Terry/p107.gif
+	frame	data/chars/players/Terry/empty.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/players/Terry/empty.gif
+

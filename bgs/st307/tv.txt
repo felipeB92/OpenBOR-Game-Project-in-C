@@ -1,0 +1,12 @@
+name		tv
+type		none
+shadow		0
+antigravity	100
+setlayer	6
+
+anim idle
+	loop	1
+	delay	4
+	offset	0 0
+	frame	data/bgs/st307/tv00.gif
+	frame	data/bgs/st307/tv01.gif

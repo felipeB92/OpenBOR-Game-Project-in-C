@@ -1,0 +1,36 @@
+name		 	Pessoas02
+type		 	panel
+hostile			enemy
+shadow		 	0
+speed		 	5
+scroll			-0.8
+setlayer	900
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	0 0
+	sound	data/sounds/Crowd3.wav
+	frame	data/bgs/st307/people00.gif
+	frame	data/bgs/st307/people01.gif
+	frame	data/bgs/st307/people02.gif
+	frame	data/bgs/st307/people03.gif
+	frame	data/bgs/st307/people00.gif
+	frame	data/bgs/st307/people01.gif
+	frame	data/bgs/st307/people02.gif
+	frame	data/bgs/st307/people03.gif
+	frame	data/bgs/st307/people00.gif
+	frame	data/bgs/st307/people01.gif
+	frame	data/bgs/st307/people02.gif
+	frame	data/bgs/st307/people03.gif
+	frame	data/bgs/st307/people00.gif
+	frame	data/bgs/st307/people01.gif
+	frame	data/bgs/st307/people02.gif
+	frame	data/bgs/st307/people03.gif
+	frame	data/bgs/st307/people00.gif
+	frame	data/bgs/st307/people01.gif
+	frame	data/bgs/st307/people02.gif
+	frame	data/bgs/st307/people03.gif
+	
+	

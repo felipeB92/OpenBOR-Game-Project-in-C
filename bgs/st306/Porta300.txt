@@ -1,0 +1,29 @@
+name		Porta300
+type		none
+shadow		0
+#setlayer	0
+antigravity	100
+
+anim idle
+	loop	0
+	delay	8
+	offset	24 97
+	frame	data/bgs/St306/pORTA01/P00.gif
+		sound  data/Sounds/gate.wav
+	frame	data/bgs/St306/pORTA01/P01.gif
+	frame	data/bgs/St306/pORTA01/P02.gif
+	frame	data/bgs/St306/pORTA01/P03.gif
+	frame	data/bgs/St306/pORTA01/P04.gif
+	frame	data/bgs/St306/pORTA01/P05.gif
+	frame	data/bgs/St306/pORTA01/P06.gif
+	frame	data/bgs/St306/pORTA01/P07.gif
+	frame	data/bgs/St306/pORTA01/P08.gif
+	frame	data/bgs/St306/pORTA01/P09.gif
+	frame	data/bgs/St306/pORTA01/P10.gif
+	frame	data/bgs/St306/pORTA01/P11.gif
+	frame	data/bgs/St306/pORTA01/P12.gif
+	frame	data/bgs/St306/pORTA01/P13.gif
+	frame	data/bgs/St306/pORTA01/P14.gif
+	frame	data/bgs/St306/pORTA01/P15.gif
+	frame	data/bgs/St306/pORTA01/P16.gif
+

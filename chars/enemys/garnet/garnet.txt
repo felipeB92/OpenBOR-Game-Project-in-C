@@ -1,0 +1,305 @@
+name	Garnet
+health	60
+falldie 2
+lifespan 40
+speed	10
+escapehits			2
+hostile				player npc
+candamage			player npc obstacle
+type	Enemy
+gfxshadow	1
+JUMPHEIGHT 1 1
+Jumpheight 3
+atchain    1 1 2
+icon	data/chars/Enemys/Garnet/icon.gif 1
+diesound data/voices/die3.wav
+running	20	3	3	1	1
+
+##LOADS
+
+
+remap data/chars/Enemys/Garnet/idle00.gif data/chars/Enemys/Garnet/alter1.gif
+remap data/chars/Enemys/Garnet/idle00.gif data/chars/Enemys/Garnet/alter2.gif
+remap data/chars/Enemys/Garnet/idle00.gif data/chars/Enemys/Garnet/alter3.gif
+remap data/chars/Enemys/Garnet/idle00.gif data/chars/Enemys/Garnet/alter4.gif
+
+anim	spawn
+	loop	0
+	delay	8
+	offset	150 180
+	bbox	135 103 32 77
+	frame   data/chars/Enemys/Garnet/idle00.gif
+
+
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	150 180
+	bbox	135 103 32 80
+	frame   data/chars/Enemys/Garnet/idle00.gif
+
+
+
+anim walk
+	loop	1
+	delay	14
+	offset	150 182
+		bbox  142  103  23  79
+	frame	data/chars/Enemys/Garnet/walk01.gif
+	frame	data/chars/Enemys/Garnet/walk02.gif
+	frame	data/chars/Enemys/Garnet/walk03.gif
+	frame	data/chars/Enemys/Garnet/walk00.gif
+
+
+
+anim jump
+	loop	0
+	delay	30
+	offset	150 180
+	bbox	128 100 42 75
+	frame	data/chars/Enemys/Garnet/jump00.gif
+
+anim jumpattack
+	loop	0
+	delay	7
+        Range 60 100
+	offset	150 180
+	bbox	141 99 30 42
+	frame	data/chars/Enemys/Garnet/jumpatk00.gif
+	delay	30
+		attack1  147  123  53  34  10  1  0  0  0  10
+	frame	data/chars/Enemys/Garnet/jumpatk01.gif
+
+
+
+
+anim attack1
+	loop	0
+	delay	6
+        Range 0 60
+	offset	150 180
+	bbox	139 105 24 75
+		Attack1  0
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/Enemys/Garnet/a100.gif
+		attack1  161  107  34  33  7  0  0  0  0  10
+	frame	data/chars/Enemys/Garnet/a101.gif
+	frame	data/chars/Enemys/Garnet/a103.gif
+		Attack1  0
+	frame	data/chars/Enemys/Garnet/a104.gif
+
+
+anim attack2
+	loop	0
+	delay	6
+	offset	150 180
+	bbox	136 105 25 78
+		Attack1  0
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/Enemys/Garnet/a100.gif
+		attack1  148  107  41  28  10  1  0  0  0  20
+	frame	data/chars/Enemys/Garnet/a101.gif
+		Attack1  0
+		delay  15
+	frame	data/chars/Enemys/Garnet/a103.gif
+
+
+
+
+
+anim grabbed
+	loop	0
+	delay	100
+	offset	150 180
+	bbox	137 118 29 63
+	frame	data/chars/Enemys/Garnet/grabbed00.gif
+
+
+
+
+anim Special
+	loop	0
+	offset	150 180
+	delay	50
+        sound   data/voices/die3.wav
+	frame	data/chars/Enemys/Garnet/Rise02.gif
+	frame	data/chars/Enemys/Garnet/get00.gif
+
+anim Special2
+	loop	0
+	offset	150 180
+	delay	50
+        sound   data/voices/die3.wav
+	frame	data/chars/Enemys/Garnet/Rise02.gif
+	frame	data/chars/Enemys/Garnet/get00.gif
+
+anim rise
+	loop	0
+	offset	150 180
+	delay	10
+	frame	data/chars/Enemys/Garnet/Rise00.gif
+	frame	data/chars/Enemys/Garnet/Rise01.gif
+	frame	data/chars/Enemys/Garnet/Rise02.gif
+	frame	data/chars/Enemys/Garnet/get00.gif
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	150 180
+	bbox	138 126 36 45
+	frame	data/chars/Enemys/Garnet/jumpland00.gif
+
+anim pain
+	loop	0
+	offset	148 182
+	bbox	135 117 31 66
+		delay  30
+	frame	data/chars/Enemys/Garnet/pain01.gif
+
+
+anim pain2
+	loop	0
+	offset	149 182
+	bbox	139 112 25 71
+	delay	30
+	frame	data/chars/Enemys/Garnet/pain02.gif
+
+anim pain3
+	loop	0
+	offset	151 182
+	bbox	134 108 31 73
+	jumpframe  0  2  0  0
+	delay	10
+	frame	data/chars/Enemys/Garnet/Pain02.gif
+	frame	data/chars/Enemys/Garnet/fall400.gif
+	frame	data/chars/Enemys/Garnet/Pain01.gif
+
+
+
+anim fall
+	loop	0
+	offset	147 182
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Garnet/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  139  170
+	frame  data/chars/Enemys/Garnet/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Garnet/fall403.gif
+		Attack1  0
+		offset  139  182
+	frame	data/chars/Enemys/Garnet/fall102.gif
+
+anim fall2
+	loop	0
+	offset	141 182
+	delay	20
+	jumpframe  0  2  -3.5  0
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Garnet/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  139  168
+	frame  data/chars/Enemys/Garnet/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Garnet/fall403.gif
+		Attack1  0
+		offset  139  182
+	frame	data/chars/Enemys/Garnet/fall102.gif
+#Shock
+
+anim fall4
+	loop	0
+	offset	129 177
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Garnet/fall200.gif
+	frame	data/chars/Enemys/Garnet/fall201.gif
+	frame	data/chars/Enemys/Garnet/fall200.gif
+	frame	data/chars/Enemys/Garnet/fall201.gif
+	frame	data/chars/Enemys/Garnet/fall200.gif
+	frame	data/chars/Enemys/Garnet/fall201.gif
+	frame	data/chars/Enemys/Garnet/fall200.gif
+		offset  135  182
+	frame	data/chars/Enemys/Garnet/fall102.gif
+#Burn
+
+anim fall5
+	loop	0
+	offset	121 186
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Garnet/fall300.gif
+	frame	data/chars/Enemys/Garnet/fall301.gif
+	frame	data/chars/Enemys/Garnet/fall302.gif
+	frame	data/chars/Enemys/Garnet/fall300.gif
+	frame	data/chars/Enemys/Garnet/fall301.gif
+	frame	data/chars/Enemys/Garnet/fall302.gif
+	frame	data/chars/Enemys/Garnet/fall300.gif
+	frame	data/chars/Enemys/Garnet/fall301.gif
+	frame	data/chars/Enemys/Garnet/fall302.gif
+		offset  141  182
+	frame	data/chars/Enemys/Garnet/fall102.gif
+
+anim fall8
+	loop	0
+	offset	139 181
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Garnet/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  136  167
+	frame  data/chars/Enemys/Garnet/fall101.gif
+		Attack1  0
+		offset  136  181
+	frame	data/chars/Enemys/Garnet/fall102.gif
+
+anim fall9
+	loop	0
+	offset	144 183
+	delay	999
+		Attack1  0
+	frame	data/chars/Enemys/Garnet/pain01.gif
+	frame	data/chars/Enemys/Garnet/pain02.gif
+	frame	data/chars/Enemys/Garnet/fall400.gif
+		offset  164  166
+	frame	data/chars/Enemys/Garnet/fall401.gif
+		offset  151  185
+	frame	data/chars/Enemys/Garnet/fall402.gif
+		offset  135  168
+	frame	data/chars/Enemys/Garnet/fall403.gif
+		offset  135  181
+	frame	data/chars/Enemys/Garnet/fall404.gif
+	frame	data/chars/Enemys/Garnet/fall405.gif
+	delay	50
+		offset  135  167
+	frame	data/chars/Enemys/Garnet/fall403.gif
+	delay	999
+		offset  137  182
+	frame	data/chars/Enemys/Garnet/fall405.gif
+
+anim death
+	loop	0
+	offset	139 181
+	delay	20
+	frame	data/chars/Enemys/Garnet/fall102.gif
+
+anim Pain8
+	loop	0
+	delay	15
+	offset	137 177
+	jumpframe  0  2  1  0
+	frame	data/chars/Enemys/Garnet/jump00.gif
+	frame	data/chars/Enemys/Garnet/jump00.gif
+

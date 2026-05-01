@@ -1,0 +1,11 @@
+name			st6_blockade
+type			panel
+shadow			0
+ondrawscript	data/scripts/ondraw/st6_blockade.c
+
+anim idle
+	loop	0
+	delay	16
+	offset	1 1
+	platform 0 0 2000 2000 200 1000
+	frame	data/bgs/sor2_st3/back00.gif

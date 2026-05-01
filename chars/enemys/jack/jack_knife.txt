@@ -1,0 +1,291 @@
+name	Jack_Knife
+health	100
+lifespan 60
+mp 35
+speed	12
+falldie 1
+type	None
+gfxshadow	1
+hostile				player npc
+candamage			player npc obstacle
+JUMPHEIGHT 1 1
+Jumpheight 3
+atchain    1 1 2
+weapons				JAck_Knife none None none
+icon	data/chars/Enemys/Jack/icon.gif 1
+diesound data/voices/die1.wav
+running	20	3	3	1	1
+
+animationscript		data/scripts/drago.c
+
+##LOADS
+
+Load KnifeT
+
+
+remap data/chars/Enemys/Jack/idle00.gif data/chars/Enemys/Jack/alter1.gif
+remap data/chars/Enemys/Jack/idle00.gif data/chars/Enemys/Jack/alter2.gif
+remap data/chars/Enemys/Jack/idle00.gif data/chars/Enemys/Jack/alter3.gif
+remap data/chars/Enemys/Jack/idle00.gif data/chars/Enemys/Jack/alter4.gif
+
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	129 184
+	bbox	119 114 37 71
+	frame   data/chars/Enemys/Jack/Knife/idle00.gif
+	frame   data/chars/Enemys/Jack/Knife/idle01.gif
+	frame   data/chars/Enemys/Jack/Knife/idle02.gif
+
+
+anim walk
+	loop	1
+	delay	14
+	offset	129 184
+	bbox	120 114 42 67
+	frame	data/chars/Enemys/Jack/Knife/walk00.gif
+	frame	data/chars/Enemys/Jack/Knife/walk01.gif
+	frame	data/chars/Enemys/Jack/Knife/walk02.gif
+	frame	data/chars/Enemys/Jack/Knife/walk03.gif
+
+
+anim get
+	loop	0
+	delay	10
+	offset	129 184
+	frame	data/chars/Enemys/Jack/get00.gif
+
+
+anim jump
+	loop	0
+	delay	30
+	offset	129 184
+	bbox	129 106 28 77
+	frame	data/chars/Enemys/Jack/jump00.gif
+
+
+
+anim attack1
+	loop	0
+	delay	9
+        Range 0 100
+	offset	129 184
+	bbox	127 111 27 71
+		Attack1  0
+	fastattack 1
+        hitfx	data/sounds/armas/corte.wav
+	frame	data/chars/Enemys/Jack/Knife/a100.gif
+       @cmd dasher 1 0 0
+		attack1  133  123  59  23  5  0  0  0  0  10
+	frame	data/chars/Enemys/Jack/Knife/a101.gif
+		attack1  152  103  71  50  5  0  0  0  0  10
+	frame	data/chars/Enemys/Jack/Knife/a102.gif
+		Attack1  0
+	frame	data/chars/Enemys/Jack/Knife/a103.gif
+		attack1  144  105  78  37  10  1  0  0  0  15
+	frame	data/chars/Enemys/Jack/Knife/a104.gif
+       @cmd dasher 0 0 0
+		attack1  142  103  73  71  10  1  0  0  0  15
+	frame	data/chars/Enemys/Jack/Knife/a105.gif
+		Attack1  0
+	frame	data/chars/Enemys/Jack/Knife/a106.gif
+
+
+
+
+anim Freespecial
+	loop	0
+	delay	8
+        energycost 30 1
+        MpOnly 1
+        custknife Knifet
+        throwframe 2 40
+        Range 0 300
+	offset	129 184
+	bbox	127 111 27 71
+		Attack1  0
+	hitfx	data/sounds/Cutter.wav
+	frame	data/chars/Enemys/Jack/Knife/A200.gif
+	frame	data/chars/Enemys/Jack/Knife/A201.gif
+	frame	data/chars/Enemys/Jack/Knife/A202.gif
+	delay	30
+	frame	data/chars/Enemys/Jack/Knife/A202.gif
+
+
+
+
+anim grabbed
+	loop	0
+	delay	100
+	offset	129 184
+	bbox	127 115 26 64
+	frame	data/chars/Enemys/Jack/grabbed00.gif
+
+
+anim rise
+	loop	0
+	offset	129 184
+	delay	10
+	frame	data/chars/Enemys/Jack/Rise00.gif
+	frame	data/chars/Enemys/Jack/Rise01.gif
+	frame	data/chars/Enemys/Jack/Rise02.gif
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	129 184
+	bbox	127 137 31 41
+	frame	data/chars/Enemys/Jack/jumpland00.gif
+
+anim pain
+	loop	0
+	offset	133 186
+	bbox	121 116 32 72
+		delay  30
+	frame	data/chars/Enemys/Jack/pain01.gif
+
+
+anim pain2
+	loop	0
+	offset	129 185
+	bbox	109 115 34 73
+	delay	30
+	frame	data/chars/Enemys/Jack/pain02.gif
+
+anim pain3
+	loop	0
+	offset	129 186
+	bbox	114 111 29 75
+	jumpframe  0  2  0  0
+	delay	10
+	frame	data/chars/Enemys/Jack/Pain02.gif
+	frame	data/chars/Enemys/Jack/fall400.gif
+	frame	data/chars/Enemys/Jack/Pain01.gif
+
+
+
+anim fall
+	loop	0
+	offset	131 185
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Jack/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  145  192
+	frame  data/chars/Enemys/Jack/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Jack/fall403.gif
+		Attack1  0
+		offset  131  181
+	frame	data/chars/Enemys/Jack/fall102.gif
+
+anim fall2
+	loop	0
+	offset	131 184
+	delay	20
+	jumpframe  0  2  -3.5  0
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Jack/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  142  190
+	frame  data/chars/Enemys/Jack/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Jack/fall403.gif
+		Attack1  0
+		offset  130  183
+	frame	data/chars/Enemys/Jack/fall102.gif
+#Shock
+
+anim fall4
+	loop	0
+	offset	146 190
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Jack/fall200.gif
+	frame	data/chars/Enemys/Jack/fall201.gif
+	frame	data/chars/Enemys/Jack/fall200.gif
+	frame	data/chars/Enemys/Jack/fall201.gif
+	frame	data/chars/Enemys/Jack/fall200.gif
+	frame	data/chars/Enemys/Jack/fall201.gif
+	frame	data/chars/Enemys/Jack/fall200.gif
+		offset  130  184
+	frame	data/chars/Enemys/Jack/fall102.gif
+#Burn
+
+anim fall5
+	loop	0
+	offset	134 172
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Jack/fall300.gif
+	frame	data/chars/Enemys/Jack/fall301.gif
+	frame	data/chars/Enemys/Jack/fall302.gif
+	frame	data/chars/Enemys/Jack/fall300.gif
+	frame	data/chars/Enemys/Jack/fall301.gif
+	frame	data/chars/Enemys/Jack/fall302.gif
+	frame	data/chars/Enemys/Jack/fall300.gif
+	frame	data/chars/Enemys/Jack/fall301.gif
+	frame	data/chars/Enemys/Jack/fall302.gif
+		offset  130  184
+	frame	data/chars/Enemys/Jack/fall102.gif
+
+anim fall8
+	loop	0
+	offset	130 185
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Jack/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  142  190
+	frame  data/chars/Enemys/Jack/fall101.gif
+		Attack1  0
+		offset  130  184
+	frame	data/chars/Enemys/Jack/fall102.gif
+
+anim fall9
+	loop	0
+	offset	130 186
+	delay	999
+		Attack1  0
+	frame	data/chars/Enemys/Jack/pain01.gif
+	frame	data/chars/Enemys/Jack/pain02.gif
+	frame	data/chars/Enemys/Jack/fall400.gif
+		offset  157  161
+	frame	data/chars/Enemys/Jack/fall401.gif
+		offset  176  180
+	frame	data/chars/Enemys/Jack/fall402.gif
+		offset  140  190
+	frame	data/chars/Enemys/Jack/fall403.gif
+		offset  131  185
+	frame	data/chars/Enemys/Jack/fall404.gif
+	frame	data/chars/Enemys/Jack/fall405.gif
+	delay	50
+	frame	data/chars/Enemys/Jack/fall403.gif
+	delay	999
+	frame	data/chars/Enemys/Jack/fall405.gif
+
+anim death
+	loop	0
+	offset	129 183
+	delay	20
+	frame	data/chars/Enemys/Jack/fall102.gif
+
+anim Pain8
+	loop	0
+	delay	15
+	offset	134 185
+	jumpframe  0  2  1  0
+	frame	data/chars/Enemys/Jack/jump00.gif
+	frame	data/chars/Enemys/Jack/jump00.gif
+

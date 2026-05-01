@@ -1,0 +1,22 @@
+name			L201 #GROUND
+type			None
+setlayer 5
+
+anim idle
+	loop	1
+	delay	20
+	offset	0 0
+	frame	data/Bgs/St201/dunk_a00.gif
+	frame	data/Bgs/St201/dunk_a01.gif
+	frame	data/Bgs/St201/dunk_a02.gif
+	frame	data/Bgs/St201/dunk_a03.gif
+	frame	data/Bgs/St201/dunk_a04.gif
+	frame	data/Bgs/St201/dunk_a05.gif
+	frame	data/Bgs/St201/dunk_a06.gif
+	frame	data/Bgs/St201/dunk_a07.gif
+	frame	data/Bgs/St201/dunk_a08.gif
+	frame	data/Bgs/St201/dunk_a09.gif
+	frame	data/Bgs/St201/dunk_a10.gif
+
+
+

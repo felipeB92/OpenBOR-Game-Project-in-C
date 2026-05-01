@@ -1,0 +1,410 @@
+music		data/bgs/St403/Lv403a.bor
+bossmusic	data/music/boss3.bor
+
+###BACKGROUND
+background		data/bgs/St403/back00.gif	
+
+###BGLAYER/PANEL
+panel			data/bgs/St403/pN00.gif	none	none
+
+###MISC
+Frontpanel			data/bgs/St403/Front00.gif
+#order			a
+settime			99
+scrollspeed 	0.5
+stagenumber 	3
+cameratype 1
+backgroundSpeed 1 40
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	30 0  150
+spawn2  	35 0  150
+spawn3  	40 0  150
+
+light		128 -128
+at			0
+
+
+
+spawn  Zombie
+health 70
+	coords  300 220
+	at  0
+
+
+spawn  Zombie
+flip   1
+health 70
+	coords  250 250
+	at  0
+
+spawn  Zombie
+health 70
+flip   1
+	coords  150 230
+	at  0
+
+spawn  Zombie
+health 70
+	coords  100 240
+	at  0
+
+spawn  Box04
+Item   Knife
+	coords  500 220
+	at  0
+
+spawn  Box04
+2pItem  Kunai
+	coords  550 220
+	at  0
+
+spawn  Box04
+Item   Gold
+	coords  600 220
+	at  0
+
+
+
+spawn  Gordoz
+health 70
+	coords  300 220 150
+	at  100
+
+
+Wait
+at 200
+
+Group 5  5
+at   200
+
+spawn  Skeleton
+health 70
+	coords  500 184
+	at  200
+
+
+spawn  Skeleton
+health 70
+	coords  -100 184
+	at  200
+
+
+spawn  Zombie
+health 70
+	coords  500 240
+	at  200
+
+
+
+
+
+spawn  corda403
+	coords  300 0
+	at  250
+
+spawn  Jonny
+health 50
+	coords  300 220 150
+	at  250
+
+Wait
+at 300
+
+Group 5  5
+at   300
+
+
+spawn  Donovan
+health 50
+	coords  250 220 150
+	at  300
+
+spawn  GordoZ
+map    1
+health 70
+	coords  -100 184
+	at  300
+
+spawn  Zombie
+health 70
+	coords  550 240
+	at  300
+
+spawn  corda403
+	coords  400 0
+	at  300
+
+
+spawn  corda403
+	coords  100 0
+	at  300
+
+
+spawn  Jonny
+map    2
+health 50
+	coords  100 220 150
+	at  300
+
+spawn  Fog
+map    2
+health 70
+	coords  400 220 150
+	at  300
+
+
+
+spawn  Vice
+health 50
+	coords  250 220 150
+	at  300
+
+spawn  BigBen
+map    1
+health 90
+	coords  100 220 150
+	at  300
+
+spawn  Galsia
+map    2
+health 70
+	coords  400 220 150
+	at  300
+
+Group 9  9
+at   301
+
+spawn  Box04
+Item   Pipe
+	coords  500 220
+	at  301
+
+spawn  Box04
+2pItem  Kunai
+	coords  550 220
+	at  301
+
+spawn  Box04
+Item   Pipe
+	coords  600 220
+	at  301
+
+
+spawn  Box04
+Item   apple
+	coords  520 255
+	at  301
+
+spawn  Box04
+2pItem Apple
+	coords  570 250
+	at  301
+
+spawn  Box04
+Item   cash
+	coords  620 250
+	at  301
+
+
+spawn  Gordoz
+map    1
+health 70
+	coords  550 220 150
+	at  600
+
+spawn  Gordoz
+map    2
+health 70
+	coords  570 240 150
+	at  600
+
+spawn  Zombie
+health 70
+	coords  550 220
+	at  700
+
+
+spawn  Zombie
+flip   1
+health 70
+	coords  550 250
+	at  800
+
+spawn  Zombie
+health 70
+flip   1
+	coords  550 230
+	at  850
+
+spawn  Zombie
+health 70
+	coords  550 240
+	at  900
+
+
+Wait
+at 1175
+
+Group 4  4
+at   1175
+
+spawn  Skeleton
+map    1
+health 70
+	coords  255 184
+	at  1175
+
+spawn  Skeleton
+map    1
+health 70
+	coords  300 184
+	at  1175
+
+spawn  Delay
+	coords  500 184
+	at  1175
+
+spawn  Delay
+	coords  800 184
+	at  1175
+
+spawn  Skeleton
+map    1
+health 70
+	coords  255 184
+	at  1175
+
+spawn  Skeleton
+map    1
+health 70
+	coords  300 184
+	at  1175
+
+
+spawn  Skeleton
+map    2
+health 90
+	coords  255 184
+	at  1175
+
+spawn  Skeleton
+map    2
+health 90
+	coords  300 184
+	at  1175
+
+spawn  Skeleton
+map    3
+health 100
+	coords  255 184
+	at  1175
+
+spawn  Skeleton
+map    3
+health 100
+	coords  300 184
+	at  1175
+
+
+
+spawn  Box04
+Item   apple
+	coords  520 255
+	at  1201
+
+spawn  Box04
+2pItem Apple
+	coords  650 250
+	at  1201
+
+
+
+
+
+spawn  _Gorgoro
+health 250
+	coords  500 200
+	at  1408
+
+spawn  Skeleton
+map    4
+health 90
+	coords  550 184
+	at  1540
+
+spawn  Skeleton
+map    4
+health 90
+	coords  -100 184
+	at  1540
+
+spawn  Zombie
+map    1
+flip   1
+health 70
+	coords  550 250
+	at  1540
+
+spawn  Zombie
+map    1
+health 70
+flip   1
+	coords  -100 230
+	at  1540
+
+spawn  Zombie
+map    1
+health 70
+	coords  550 240
+	at  1540
+
+spawn  Skeleton
+map    4
+health 90
+	coords  550 184
+	at  1540
+
+spawn  Skeleton
+map    4
+health 90
+	coords  -100 184
+	at  1540
+
+spawn  GordoZ
+map    4
+health 90
+	coords  550 250
+	at  1540
+
+spawn  GordoZ
+map    4
+health 90
+	coords  -100 250
+	at  1540
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

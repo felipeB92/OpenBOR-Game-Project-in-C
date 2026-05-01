@@ -1,0 +1,16 @@
+# Hit flash
+name	FredS
+candamage  Player obstacle npc pshot
+type	none
+alpha		1
+anim idle
+	loop	1
+	delay	2
+	offset	152 184
+		delay  5
+	frame	data/chars/Enemys/Fred/Sp.gif
+	frame	data/chars/Enemys/Fred/a302.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/Enemys/Fred/a302.gif
+
+

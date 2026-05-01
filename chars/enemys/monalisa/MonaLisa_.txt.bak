@@ -1,0 +1,596 @@
+name	MonaLisa_
+health	250
+falldie 2
+speed	12
+riseinv				0.4 1
+escapehits			2
+hostile				player npc
+candamage			player npc obstacle
+type	Enemy
+gfxshadow	1
+JUMPHEIGHT 1 1
+Jumpheight 3
+atchain    1 1 2 3
+icon	data/chars/Enemys/MonaLisa/icon.gif 1
+diesound data/voices/die3.wav
+running	20	3	3	1	1
+animationscript		data/scripts/drago.c
+
+##LOADS
+
+Load Monawave
+
+
+remap data/chars/Enemys/MonaLisa/idle00.gif data/chars/Enemys/MonaLisa/alter1.gif
+remap data/chars/Enemys/MonaLisa/idle00.gif data/chars/Enemys/MonaLisa/alter2.gif
+remap data/chars/Enemys/MonaLisa/idle00.gif data/chars/Enemys/MonaLisa/alter3.gif
+
+anim	spawn
+	loop	0
+	delay	300
+	offset	144 196#	130 192
+	bbox	125 145 48 47
+	jumpframe  2  3  3  0
+	landframe  14
+	frame   data/chars/Enemys/MonaLisa/shockwave00.gif
+        hitfx	data/sounds/golpes/Forte.wav
+        delay	8
+	frame	data/chars/Enemys/MonaLisa/jumpdelay00.gif
+	frame	data/chars/Enemys/MonaLisa/jump00.gif
+	frame	data/chars/Enemys/MonaLisa/jump01.gif
+	frame	data/chars/Enemys/MonaLisa/jump02.gif
+	frame	data/chars/Enemys/MonaLisa/jump03.gif
+	frame	data/chars/Enemys/MonaLisa/jump04.gif
+	frame	data/chars/Enemys/MonaLisa/jump05.gif
+		attack1  144  142  60  30  20  1  0  0  0  20
+	frame	data/chars/Enemys/MonaLisa/A100.gif
+	frame	data/chars/Enemys/MonaLisa/A100.gif
+	frame	data/chars/Enemys/MonaLisa/A100.gif
+	frame	data/chars/Enemys/MonaLisa/A100.gif
+	frame	data/chars/Enemys/MonaLisa/A100.gif
+	frame	data/chars/Enemys/MonaLisa/A100.gif
+	frame	data/chars/Enemys/MonaLisa/A100.gif
+	frame	data/chars/Enemys/MonaLisa/A100.gif
+
+
+
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	144 196#	130 190
+	bbox	127 124 34 69
+	frame   data/chars/Enemys/MonaLisa/idle00.gif
+@cmd  depost  0
+@cmd  throw  25  5  2  2  0  -1
+@cmd  clearL
+	frame   data/chars/Enemys/MonaLisa/idle01.gif
+	frame   data/chars/Enemys/MonaLisa/idle02.gif
+	frame   data/chars/Enemys/MonaLisa/idle03.gif
+	frame   data/chars/Enemys/MonaLisa/idle02.gif
+	frame   data/chars/Enemys/MonaLisa/idle01.gif
+
+
+
+anim walk
+	loop	1
+	delay	14
+	offset	144 196#	130 190
+	bbox	118 115 25 76
+	frame	data/chars/Enemys/MonaLisa/walk00.gif
+@cmd  depost  0
+@cmd  throw  25  5  2  2  0  -1
+@cmd  clearL
+	frame	data/chars/Enemys/MonaLisa/walk01.gif
+	frame	data/chars/Enemys/MonaLisa/walk02.gif
+	frame	data/chars/Enemys/MonaLisa/walk03.gif
+	frame	data/chars/Enemys/MonaLisa/walk04.gif
+		bbox  127  120  35  60
+	frame	data/chars/Enemys/MonaLisa/walk05.gif
+
+
+anim get
+	loop	0
+	delay	10
+	offset	144 196#	138 189
+	frame	data/chars/Enemys/MonaLisa/get00.gif
+
+
+anim jump
+	loop	0
+	delay	30
+	offset	144 196#	144 196
+	bbox	129 115 35 51
+	frame	data/chars/Enemys/MonaLisa/jump00.gif
+
+anim jumpattack
+	loop	0
+	delay	10
+        Range 100 150
+	offset	144 196#	150 179
+	bbox	129 122 40 42
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/Enemys/MonaLisa/Jump01.gif
+		attack1  148  135  52  31  7  1  0  0  0  20
+	delay	20
+	frame	data/chars/Enemys/MonaLisa/a100.gif
+
+
+
+anim grabbed
+	loop	0
+	delay	100
+	offset	144 196#	135 192
+	bbox	131 129 34 69
+	frame	data/chars/Enemys/MonaLisa/grabbed00.gif
+
+anim Upper
+	loop	0
+	delay	8
+	offset	144 196#	135 192
+	bbox	131 129 34 69
+        sound	data/voices/Attack5.wav
+	frame	data/chars/Enemys/MonaLisa/evade00.gif
+	frame	data/chars/Enemys/MonaLisa/evade01.gif
+		attack3  144  123  41  46  10  1  0  0  0  10
+	frame	data/chars/Enemys/MonaLisa/evade02.gif
+		attack3  138  92  41  49  10  1  0  0  0  10
+	frame	data/chars/Enemys/MonaLisa/evade03.gif
+		attack3  106  76  62  66  10  1  0  0  0  10
+	frame	data/chars/Enemys/MonaLisa/evade04.gif
+		Attack1  0
+	frame	data/chars/Enemys/MonaLisa/evade05.gif
+	frame	data/chars/Enemys/MonaLisa/evade06.gif
+
+anim Riseattack
+	loop	0
+	delay	8
+	offset	144 196#	135 192
+	bbox	131 129 34 69
+	frame	data/chars/Enemys/MonaLisa/evade00.gif
+	frame	data/chars/Enemys/MonaLisa/evade01.gif
+		attack3  144  123  41  46  10  1  0  0  0  10
+	frame	data/chars/Enemys/MonaLisa/evade02.gif
+		attack3  138  92  41  49  10  1  0  0  0  10
+	frame	data/chars/Enemys/MonaLisa/evade03.gif
+		attack3  106  76  62  66  10  1  0  0  0  10
+	frame	data/chars/Enemys/MonaLisa/evade04.gif
+		Attack1  0
+	frame	data/chars/Enemys/MonaLisa/evade05.gif
+	frame	data/chars/Enemys/MonaLisa/evade06.gif
+
+
+anim Attack1
+	loop	0
+	delay	5
+	range 0 50
+	rangeZ -10 10
+	offset	144 196#	130 190
+	bbox	127 124 34 69
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame   data/chars/Enemys/MonaLisa/evade06.gif
+		offset  141  198
+		delay  8
+		attack1  143  144  47  16  5  0  0  0  0  15
+	frame   data/chars/Enemys/MonaLisa/a200.gif
+
+anim Attack2
+	loop	0
+	delay	8
+	offset	135 191#	130 190
+	bbox	121 109 30 83
+        hitfx	data/sounds/golpes/Medio.wav
+	frame   data/chars/Enemys/MonaLisa/a300.gif
+		attack3  126  144  66  25  5  0  0  0  0  15
+		delay  15
+	frame   data/chars/Enemys/MonaLisa/a301.gif
+
+anim Attack3
+	loop	0
+	delay	8
+	offset	144 196#	130 190
+	bbox	127 124 34 69
+        hitfx	data/sounds/golpes/Forte.wav
+	frame   data/chars/Enemys/MonaLisa/evade00.gif
+	frame   data/chars/Enemys/MonaLisa/evade01.gif
+		attack2  104  95  85  77  12  1  0  0  0  15
+	frame   data/chars/Enemys/MonaLisa/evade02.gif
+	frame   data/chars/Enemys/MonaLisa/evade03.gif
+	frame   data/chars/Enemys/MonaLisa/evade04.gif
+	frame  data/chars/Enemys/MonaLisa/evade05.gif
+		Attack1  0
+	frame  data/chars/Enemys/MonaLisa/evade06.gif
+
+
+anim freeSpecial
+	loop	0
+	offset	144 196#	134 188
+	delay	7
+	jumpframe  0  3  3  0
+	landframe  12
+        Range   300 400
+	rangeZ -10 10
+	frame	data/chars/Enemys/MonaLisa/jumpdelay00.gif
+	frame	data/chars/Enemys/MonaLisa/jump00.gif
+	frame	data/chars/Enemys/MonaLisa/jump01.gif
+	frame	data/chars/Enemys/MonaLisa/jump02.gif
+	frame	data/chars/Enemys/MonaLisa/jump03.gif
+	frame	data/chars/Enemys/MonaLisa/jump04.gif
+	frame	data/chars/Enemys/MonaLisa/jump05.gif
+	frame	data/chars/Enemys/MonaLisa/jump02.gif
+	frame	data/chars/Enemys/MonaLisa/jump03.gif
+	frame	data/chars/Enemys/MonaLisa/jump04.gif
+	frame	data/chars/Enemys/MonaLisa/jump05.gif
+	frame	data/chars/Enemys/MonaLisa/jump01.gif
+	frame	data/chars/Enemys/MonaLisa/jumpdelay00.gif
+
+
+anim freeSpecial3
+	loop	0
+	offset	144 196#	134 188
+	delay	7
+	jumpframe  0  3  3  0
+	landframe  14
+        Range   150 200
+	rangeZ -10 10
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/Enemys/MonaLisa/jumpdelay00.gif
+	frame	data/chars/Enemys/MonaLisa/jump00.gif
+	frame	data/chars/Enemys/MonaLisa/jump01.gif
+	frame	data/chars/Enemys/MonaLisa/jump02.gif
+	frame	data/chars/Enemys/MonaLisa/jump03.gif
+	frame	data/chars/Enemys/MonaLisa/jump04.gif
+	frame	data/chars/Enemys/MonaLisa/jump01.gif
+		attack1  144  142  60  30  20  1  0  0  0  20
+	frame	data/chars/Enemys/MonaLisa/A100.gif
+	frame	data/chars/Enemys/MonaLisa/A100.gif
+	frame	data/chars/Enemys/MonaLisa/A100.gif
+	frame	data/chars/Enemys/MonaLisa/A100.gif
+	frame	data/chars/Enemys/MonaLisa/A100.gif
+	frame	data/chars/Enemys/MonaLisa/A100.gif
+	frame	data/chars/Enemys/MonaLisa/A100.gif
+	frame	data/chars/Enemys/MonaLisa/A100.gif
+
+
+anim freeSpecial4
+	loop	0
+	offset	144 196#	134 188
+	delay	7
+        Range   200 300
+	rangeZ -10 10
+        hitfx	data/sounds/golpes/Forte.wav
+        sound	data/voices/Attack5.wav
+	frame	data/chars/Enemys/MonaLisa/shockwave00.gif
+	frame	data/chars/Enemys/MonaLisa/shockwave01.gif
+	frame	data/chars/Enemys/MonaLisa/shockwave02.gif
+		delay  20
+        @cmd  spawn01  "Monawave"  0  1  0
+	frame	data/chars/Enemys/MonaLisa/shockwave03.gif
+	frame  data/chars/Enemys/MonaLisa/shockwave01.gif
+
+anim Freespecial5
+	loop	0
+	offset	147 197
+	delay	8
+        Range 50 70
+	rangeZ -10 10
+                Followcond 1
+                followanim 1
+		sound  data/sounds/slide.wav
+	frame	data/chars/Enemys/Monalisa/jumpdelay00.gif
+       @cmd dasher 2 0 0
+		offset  147  181
+		attack1  139  139  22  35  0  0  0  0  0  15
+	frame	data/chars/Enemys/Monalisa/jump02.gif
+	frame	data/chars/Enemys/Monalisa/jump03.gif
+	frame	data/chars/Enemys/Monalisa/jump04.gif
+	frame	data/chars/Enemys/Monalisa/jump05.gif
+	frame	data/chars/Enemys/Monalisa/jump02.gif
+	frame	data/chars/Enemys/Monalisa/jump03.gif
+	frame	data/chars/Enemys/Monalisa/jump04.gif
+	frame	data/chars/Enemys/Monalisa/jump05.gif
+       @cmd dasher 0 0 0
+		offset  147  196
+	frame	data/chars/Enemys/Monalisa/jumpdelay00.gif
+
+anim Freespecial6
+	loop	0
+	offset	145 196
+	delay	8
+        Range 70 100
+	rangeZ -10 10
+                Followcond 1
+                followanim 2
+		sound  data/sounds/slide.wav
+	frame	data/chars/Enemys/Monalisa/jumpdelay00.gif
+       @cmd dasher 2 0 0
+		offset  154  180
+		attack1  146  138  20  43  0  0  0  0  0  15
+	frame	data/chars/Enemys/Monalisa/jump02.gif
+	frame	data/chars/Enemys/Monalisa/jump03.gif
+	frame	data/chars/Enemys/Monalisa/jump04.gif
+	frame	data/chars/Enemys/Monalisa/jump05.gif
+	frame	data/chars/Enemys/Monalisa/jump02.gif
+	frame	data/chars/Enemys/Monalisa/jump03.gif
+	frame	data/chars/Enemys/Monalisa/jump04.gif
+	frame	data/chars/Enemys/Monalisa/jump05.gif
+       @cmd dasher 0 0 0
+		offset  146  198
+		attack1  136  143  28  54  0  0  0  0  0  15
+	frame	data/chars/Enemys/Monalisa/jumpdelay00.gif
+
+anim Follow1
+	loop	0
+	delay	8
+	offset	144 197
+		Attack1  0
+        hitfx	data/sounds/golpes/Forte.wav
+       @cmd dasher 0 0 0
+@cmd	slamstart
+@cmd	position 0 30 1 0 -1
+	frame	data/chars/Enemys/Monalisa/Grab00.gif
+@cmd	position 1 30 1 0 -1
+	frame	data/chars/Enemys/Monalisa/t00.gif
+@cmd	position 3 -10 10 0 -1
+	frame	data/chars/Enemys/Monalisa/t01.gif
+@cmd	position 4 -50 30 0 -1
+	frame	data/chars/Enemys/Monalisa/t02.gif
+@cmd	position 4 -60 25 0 -1
+	frame	data/chars/Enemys/Monalisa/t02.gif
+@cmd	position 8 -70 25 0 -1
+@cmd  depost  0
+@cmd  throw  20  -2  2  1  0  -1
+@cmd  clearL
+	frame	data/chars/Enemys/Monalisa/t02.gif
+	delay	20
+	frame	data/chars/Enemys/Monalisa/t02.gif
+	frame	data/chars/Enemys/Monalisa/t01.gif
+
+anim Follow2
+	loop	0
+	delay	12
+	offset	145 197
+		Attack1  0
+        quakeframe 3 2 2
+        hitfx	data/sounds/golpes/Forte.wav
+       @cmd dasher 0 0 0
+@cmd	slamstart
+@cmd	position 0 0 1 0 -1
+	frame	data/chars/Enemys/Monalisa/Grab00.gif
+@cmd	position 3 -30 20 0 -1
+	frame	data/chars/Enemys/Monalisa/Slam01.gif
+@cmd	position 4 -50 10 0 -1
+	frame	data/chars/Enemys/Monalisa/Slam02.gif
+		delay  20
+		sound  data/sounds/efeitos/solo.wav
+	frame	data/chars/Enemys/Monalisa/Slam02.gif
+@cmd	position 4 -60 1 0 -1
+		offset  136  189
+	frame	data/chars/Enemys/Monalisa/Rise03.gif
+@cmd	position 7 -65 1 0 -1
+@cmd  depost  0
+@cmd  throw  25  5  -1  1  0  1
+@cmd  clearL
+		offset  149  198
+	frame	data/chars/Enemys/Monalisa/Rise02.gif
+
+
+anim Special
+	loop	0
+        energycost 20 1
+        MpOnly 1
+	offset	144 196#	134 188
+	delay	8
+	jumpframe  0  3  -3  0
+	landframe  9
+	frame	data/chars/Enemys/MonaLisa/jumpdelay00.gif
+	frame	data/chars/Enemys/MonaLisa/evade00.gif
+	frame	data/chars/Enemys/MonaLisa/evade01.gif
+	frame	data/chars/Enemys/MonaLisa/evade02.gif
+	frame	data/chars/Enemys/MonaLisa/evade03.gif
+	frame	data/chars/Enemys/MonaLisa/evade04.gif
+	frame	data/chars/Enemys/MonaLisa/evade05.gif
+	frame	data/chars/Enemys/MonaLisa/evade01.gif
+	frame	data/chars/Enemys/MonaLisa/evade02.gif
+	frame	data/chars/Enemys/MonaLisa/evade03.gif
+	frame	data/chars/Enemys/MonaLisa/evade04.gif
+	frame	data/chars/Enemys/MonaLisa/evade05.gif
+	frame	data/chars/Enemys/MonaLisa/evade06.gif
+	frame	data/chars/Enemys/MonaLisa/jumpdelay00.gif
+
+anim Special2
+	loop	0
+        energycost 20 1
+        MpOnly 1
+	offset	144 196#	134 188
+	delay	8
+	jumpframe  0  3  -3  0
+	landframe  9
+	frame	data/chars/Enemys/MonaLisa/jumpdelay00.gif
+	frame	data/chars/Enemys/MonaLisa/evade00.gif
+	frame	data/chars/Enemys/MonaLisa/evade01.gif
+	frame	data/chars/Enemys/MonaLisa/evade02.gif
+	frame	data/chars/Enemys/MonaLisa/evade03.gif
+	frame	data/chars/Enemys/MonaLisa/evade04.gif
+	frame	data/chars/Enemys/MonaLisa/evade05.gif
+	frame	data/chars/Enemys/MonaLisa/evade01.gif
+	frame	data/chars/Enemys/MonaLisa/evade02.gif
+	frame	data/chars/Enemys/MonaLisa/evade03.gif
+	frame	data/chars/Enemys/MonaLisa/evade04.gif
+	frame	data/chars/Enemys/MonaLisa/evade05.gif
+	frame	data/chars/Enemys/MonaLisa/evade06.gif
+	frame	data/chars/Enemys/MonaLisa/jumpdelay00.gif
+
+
+anim rise
+	loop	0
+	offset	144 196#	130 192
+	delay	10
+	frame	data/chars/Enemys/MonaLisa/Rise00.gif
+	frame	data/chars/Enemys/MonaLisa/Rise01.gif
+	frame	data/chars/Enemys/MonaLisa/Rise02.gif
+        frame	data/chars/Enemys/MonaLisa/Rise03.gif
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	144 196#	136 188
+	bbox	121 126 36 61
+	frame	data/chars/Enemys/MonaLisa/jumpland00.gif
+
+
+anim pain
+	loop	0
+	offset	144 198
+	bbox	130 134 32 64
+		delay  30
+	frame	data/chars/Enemys/Monalisa/pain01.gif
+
+
+anim pain2
+	loop	0
+	offset	146 196
+	bbox	128 119 39 77
+	delay	30
+	frame	data/chars/Enemys/Monalisa/pain02.gif
+
+anim pain3
+	loop	0
+	offset	151 200
+	bbox	135 123 29 74
+	jumpframe  0  2  0  0
+	delay	10
+	frame	data/chars/Enemys/Monalisa/Pain02.gif
+	frame	data/chars/Enemys/Monalisa/fall400.gif
+	frame	data/chars/Enemys/Monalisa/Pain01.gif
+
+
+
+anim fall
+	loop	0
+	offset	129 194
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Monalisa/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  157  177
+	frame  data/chars/Enemys/Monalisa/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Monalisa/fall403.gif
+		Attack1  0
+		offset  139  195
+	frame	data/chars/Enemys/Monalisa/fall102.gif
+
+anim fall2
+	loop	0
+	offset	135 197
+	delay	20
+	jumpframe  0  2  -3.5  0
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Monalisa/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  157  175
+	frame  data/chars/Enemys/Monalisa/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Monalisa/fall403.gif
+		Attack1  0
+		offset  143  195
+	frame	data/chars/Enemys/Monalisa/fall102.gif
+#Shock
+
+anim fall4
+	loop	0
+	offset	119 181
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Monalisa/fall200.gif
+	frame	data/chars/Enemys/Monalisa/fall201.gif
+	frame	data/chars/Enemys/Monalisa/fall200.gif
+	frame	data/chars/Enemys/Monalisa/fall201.gif
+	frame	data/chars/Enemys/Monalisa/fall200.gif
+	frame	data/chars/Enemys/Monalisa/fall201.gif
+	frame	data/chars/Enemys/Monalisa/fall200.gif
+		offset  137  195
+	frame	data/chars/Enemys/Monalisa/fall102.gif
+#Burn
+
+anim fall5
+	loop	0
+	offset	125 187
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Monalisa/fall300.gif
+	frame	data/chars/Enemys/Monalisa/fall301.gif
+	frame	data/chars/Enemys/Monalisa/fall302.gif
+	frame	data/chars/Enemys/Monalisa/fall300.gif
+	frame	data/chars/Enemys/Monalisa/fall301.gif
+	frame	data/chars/Enemys/Monalisa/fall302.gif
+	frame	data/chars/Enemys/Monalisa/fall300.gif
+	frame	data/chars/Enemys/Monalisa/fall301.gif
+	frame	data/chars/Enemys/Monalisa/fall302.gif
+		offset  137  196
+	frame	data/chars/Enemys/Monalisa/fall102.gif
+
+anim fall8
+	loop	0
+	offset	132 196
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Monalisa/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  156  173
+	frame  data/chars/Enemys/Monalisa/fall101.gif
+		Attack1  0
+		offset  136  195
+	frame	data/chars/Enemys/Monalisa/fall102.gif
+
+anim fall9
+	loop	0
+	offset	137 197
+	delay	999
+		Attack1  0
+	frame	data/chars/Enemys/Monalisa/pain01.gif
+	frame	data/chars/Enemys/Monalisa/pain02.gif
+	frame	data/chars/Enemys/Monalisa/fall400.gif
+		offset  145  166
+	frame	data/chars/Enemys/Monalisa/fall401.gif
+		offset  156  169
+	frame	data/chars/Enemys/Monalisa/fall402.gif
+		offset  156  174
+	frame	data/chars/Enemys/Monalisa/fall403.gif
+		offset  130  197
+	frame	data/chars/Enemys/Monalisa/fall404.gif
+		offset  135  198
+	frame	data/chars/Enemys/Monalisa/fall405.gif
+	delay	50
+		offset  161  175
+	frame	data/chars/Enemys/Monalisa/fall403.gif
+	delay	999
+		offset  135  198
+	frame	data/chars/Enemys/Monalisa/fall405.gif
+
+anim death
+	loop	0
+	offset	137 195
+	delay	20
+	frame	data/chars/Enemys/Monalisa/fall102.gif
+
+anim Pain8
+	loop	0
+	delay	15
+	offset	142 198
+	jumpframe  0  2  1  0
+	frame	data/chars/Enemys/Monalisa/jump00.gif
+	frame	data/chars/Enemys/Monalisa/jump00.gif
+
+

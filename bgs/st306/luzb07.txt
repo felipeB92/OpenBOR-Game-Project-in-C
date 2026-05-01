@@ -1,0 +1,12 @@
+name		LuzB07
+type		none
+shadow		0
+setlayer	-3
+antigravity	100
+
+anim idle
+	loop	1
+	delay	4
+	offset	0 0
+	frame	data/bgs/St306/lights00.gif
+	frame	data/bgs/St306/lights01.gif

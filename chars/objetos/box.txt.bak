@@ -1,0 +1,26 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Box
+health	1
+type	obstacle
+gfxshadow	1
+#icon	data/chars/misc/charicon.gif
+diesound		data/sounds/Wood.wav
+noatflash	1
+
+anim idle
+	loop	0
+	delay	100
+	offset	99 168
+	bbox	84 113 31 55
+	platform 74 84 116 126 5 52
+	frame	data/chars/Objetos/Box00.gif
+
+
+anim fall
+	loop	1
+	delay	1000
+	offset	99 168
+	frame	data/chars/Objetos/Box01.gif
+

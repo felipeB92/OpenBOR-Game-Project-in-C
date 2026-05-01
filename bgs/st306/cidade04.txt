@@ -1,0 +1,22 @@
+name		Cidade04
+type		panel
+shadow		0
+speed		5
+scroll		0.5
+setlayer	-60
+noquake		1 1
+
+anim idle
+	loop	1
+	delay	16
+	offset	0 0
+	frame	data/bgs/St306/city00.gif
+	frame	data/bgs/St306/city01.gif
+	frame	data/bgs/St306/city02.gif
+	frame	data/bgs/St306/city03.gif
+	frame	data/bgs/St306/city04.gif
+	frame	data/bgs/St306/city05.gif
+	frame	data/bgs/St306/city04.gif
+	frame	data/bgs/St306/city03.gif
+	frame	data/bgs/St306/city02.gif
+	frame	data/bgs/St306/city01.gif

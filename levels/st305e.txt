@@ -1,0 +1,284 @@
+music		data/Bgs/st305/Moon.ogg
+bossmusic	data/music/boss3.ogg
+direction Up
+scrollspeed 0.5#1
+stagenumber 8
+background	data/bgs/St305/empty.gif
+panel		data/bgs/St305/pn06.gif		none	none
+#fglayer			data/bgs/st201/fpn00.gif 0 -0.8 0.6 0 0 0 0 1 1 1
+frontpanel      data/bgs/st05/Front02.gif
+cameratype 1
+cameraoffset 	0 -60
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	150 20
+spawn2  	155 35
+spawn3  	160 50
+
+light		128 -128
+at			0
+
+
+wall 0 275 -100 -100 156 40 58 10000
+
+wall 0 275 324 440 580 580 58 10000
+
+
+spawn  cidade03
+flip   1
+	coords  0   40  
+	at  0
+
+spawn  Back203
+flip   1
+	coords  0   0   0
+	at  0
+
+spawn  Back205
+flip   1
+	coords  0   0   0
+	at  0
+
+spawn  Box03
+Item   Chicken
+	coords  190  240
+	at  0
+
+spawn  Box03
+2pItem   Chicken
+	coords  300  240
+	at  0
+
+
+spawn  Pipe
+	coords  250  260
+	at  0
+
+wait
+at    1050
+
+Group  1  1
+at    1050
+
+
+
+
+spawn  _vice
+health 50
+	coords  250  220
+	at  1050
+
+Group  4  4
+at    1050
+
+
+spawn  _Slum
+health 50
+	coords  245  210
+	at  1050
+
+spawn  Tiger
+health 70
+	coords  250  250 150
+	at  1050
+
+spawn  _Vice
+health 50
+	coords  250  220
+	at  1050
+
+spawn  Tiger
+health 70
+	coords  230  230 150
+	at  1050
+
+spawn  _Slum
+health 50
+	coords  230  220
+	at  1050
+
+spawn  _vice
+health 50
+	coords  250  220
+	at  1050
+
+spawn  Tiger
+health 70
+	coords  230  250 150
+	at  1050
+
+
+spawn  _vice
+health 50
+	coords  250  220
+	at  1050
+
+
+spawn  Back205
+flip   1
+	coords  0   0   0
+	at  1051
+
+wait
+at    2100
+
+
+Group  3  3
+at    2100
+
+
+spawn  Galsia
+map    5
+health 50
+	coords  200  230 150
+	at  2100
+
+spawn  Donovan
+map    4
+health 50
+	coords  380  260 250
+	at  2100
+
+spawn  Knife
+	coords  250  250 230
+	at  2100
+
+spawn  galsia
+map    1
+health 50
+	coords  250  250 230
+	at  2100
+
+spawn  Donovan
+health 50
+	coords  380  260 250
+	at  2100
+
+spawn  Electra
+map    1
+health 70
+	coords  250  250 230
+	at  2100
+
+spawn  Electra
+map    4
+health 80
+	coords  380  260 250
+	at  2100
+
+spawn  Electra
+health 80
+	coords  200  230 250
+	at  2100
+
+
+
+spawn  Back205
+flip   1
+	coords  0   0   0
+	at  2101
+
+
+wait
+at    3150
+
+
+Group  4  4
+at    3150
+
+
+
+spawn  vice
+health 50
+	coords  250  240 200
+	at  3150
+
+
+
+spawn  Slum
+health 50
+	coords  245  240 200
+	at  3150
+
+spawn  electra
+health 80
+	coords  130  250 230
+	at  3150
+
+spawn  Electra
+map     3
+health 80
+	coords  250  250 230
+	at  3150
+
+spawn  Back205
+flip   1
+	coords  0   0   0
+	at  3151
+
+
+
+wait
+at    4200
+
+
+Group  3  3
+at    4200
+
+spawn  Electra
+health 60
+	coords  250  250 200
+	at  4200
+
+spawn  Electra
+map    4
+health 70
+	coords  200  230 200
+	at  4200
+
+spawn  Garnet
+health 80
+	coords  190  230 200
+	at  4200
+
+spawn  Electra
+map    3
+health 70
+	coords  230  230 200
+	at  4200
+
+spawn  Garnet
+map    3
+health 70
+	coords  250  200 200
+	at  4200
+
+spawn  Garnet
+map    3
+health 60
+	coords  200  240 200
+	at  4200
+
+spawn  Garnet
+health 50
+	coords  230  220 200
+	at  4200
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

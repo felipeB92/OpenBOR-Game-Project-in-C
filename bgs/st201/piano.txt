@@ -1,0 +1,10 @@
+name			piano #GROUND
+type			None
+setlayer 999
+
+anim idle
+	loop	1
+	delay	8
+	offset	401 0
+	frame	data/Bgs/St201/fpn03.gif
+

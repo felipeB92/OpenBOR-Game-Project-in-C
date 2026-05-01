@@ -1,0 +1,79 @@
+# Hit flash
+
+speed	8
+name	Meiovo
+candamage  Player obstacle npc pshot
+type	None
+setlayer 80
+
+
+anim idle
+	loop	0
+	delay	5
+	offset	204 335
+	frame   data/chars/Enemys/Alien/Egg03.gif
+	frame   data/chars/Enemys/Alien/Egg04.gif
+	frame   data/chars/Enemys/Alien/Egg05.gif
+	frame   data/chars/Enemys/Alien/Egg03.gif
+	frame   data/chars/Enemys/Alien/Egg04.gif
+	frame   data/chars/Enemys/Alien/Egg05.gif
+	frame   data/chars/Enemys/Alien/Egg03.gif
+	frame   data/chars/Enemys/Alien/Egg04.gif
+	frame   data/chars/Enemys/Alien/Egg05.gif
+	frame   data/chars/Enemys/Alien/Egg03.gif
+	frame   data/chars/Enemys/Alien/Egg04.gif
+	frame   data/chars/Enemys/Alien/Egg05.gif
+	frame   data/chars/Enemys/Alien/Egg03.gif
+	frame   data/chars/Enemys/Alien/Egg04.gif
+	frame   data/chars/Enemys/Alien/Egg05.gif
+	frame   data/chars/Enemys/Alien/Egg03.gif
+	frame   data/chars/Enemys/Alien/Egg04.gif
+	frame   data/chars/Enemys/Alien/Egg05.gif
+	frame   data/chars/Enemys/Alien/empty.gif
+	frame   data/chars/Enemys/Alien/Egg05.gif
+	frame   data/chars/Enemys/Alien/empty.gif
+	frame   data/chars/Enemys/Alien/Egg05.gif
+	frame   data/chars/Enemys/Alien/empty.gif
+	frame   data/chars/Enemys/Alien/Egg05.gif
+	frame   data/chars/Enemys/Alien/empty.gif
+	frame   data/chars/Enemys/Alien/Egg05.gif
+	frame   data/chars/Enemys/Alien/empty.gif
+	frame   data/chars/Enemys/Alien/Egg05.gif
+	frame   data/chars/Enemys/Alien/empty.gif
+	frame   data/chars/Enemys/Alien/Egg05.gif
+	frame   data/chars/Enemys/Alien/empty.gif
+	frame   data/chars/Enemys/Alien/Egg05.gif
+	frame   data/chars/Enemys/Alien/empty.gif
+	frame   data/chars/Enemys/Alien/Egg05.gif
+	frame   data/chars/Enemys/Alien/empty.gif
+	frame   data/chars/Enemys/Alien/Egg05.gif
+	frame   data/chars/Enemys/Alien/empty.gif
+	frame   data/chars/Enemys/Alien/Egg05.gif
+	frame   data/chars/Enemys/Alien/empty.gif
+	frame   data/chars/Enemys/Alien/Egg05.gif
+	frame   data/chars/Enemys/Alien/empty.gif
+	frame   data/chars/Enemys/Alien/Egg05.gif
+	frame   data/chars/Enemys/Alien/empty.gif
+	frame   data/chars/Enemys/Alien/Egg05.gif
+	frame   data/chars/Enemys/Alien/empty.gif
+	frame   data/chars/Enemys/Alien/Egg05.gif
+	frame   data/chars/Enemys/Alien/empty.gif
+	frame   data/chars/Enemys/Alien/Egg05.gif
+	frame   data/chars/Enemys/Alien/empty.gif
+	frame   data/chars/Enemys/Alien/Egg05.gif
+	frame   data/chars/Enemys/Alien/empty.gif
+	frame   data/chars/Enemys/Alien/Egg05.gif
+	frame   data/chars/Enemys/Alien/empty.gif
+	frame   data/chars/Enemys/Alien/Egg05.gif
+	frame   data/chars/Enemys/Alien/empty.gif
+	frame   data/chars/Enemys/Alien/Egg05.gif
+	frame   data/chars/Enemys/Alien/empty.gif
+	frame   data/chars/Enemys/Alien/Egg05.gif
+	frame   data/chars/Enemys/Alien/empty.gif
+	frame   data/chars/Enemys/Alien/Egg05.gif
+	frame   data/chars/Enemys/Alien/empty.gif
+	frame   data/chars/Enemys/Alien/Egg05.gif
+	frame   data/chars/Enemys/Alien/empty.gif
+	@cmd killentity getlocalvar("self")
+	frame   data/chars/Enemys/Alien/empty.gif
+

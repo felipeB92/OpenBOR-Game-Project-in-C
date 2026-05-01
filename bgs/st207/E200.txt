@@ -1,0 +1,14 @@
+name			E200 #GROUND
+type			Panel
+setlayer -14
+antigravity 100
+animationscript		data/scripts/drago.c
+
+anim idle
+	loop	0
+	delay	300
+	offset	709 1000
+	frame	data/Bgs/St207/bG03.gif
+	@cmd dasher 0 0 0
+	frame	data/Bgs/St207/bG03.gif
+

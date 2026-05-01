@@ -1,0 +1,417 @@
+name	abadede
+health	200
+speed	8
+riseinv				0.4 1
+falldie 2
+hostile				player npc
+candamage			player npc obstacle
+mp			        60
+mprate  			5
+type	Enemy
+gfxshadow	1
+JUMPHEIGHT 1 1
+Jumpheight 3
+atchain    1 2
+icon	data/chars/Enemys/abadede/icon.gif 1
+diesound data/voices/bossdie1.wav
+running	20	3	3	1	1
+
+animationscript		data/scripts/drago.c
+
+##LOADS
+Load abadedes
+
+
+remap data/chars/Enemys/abadede/idle00.gif data/chars/Enemys/abadede/alter1.gif
+remap data/chars/Enemys/abadede/idle00.gif data/chars/Enemys/abadede/alter2.gif
+remap data/chars/Enemys/abadede/idle00.gif data/chars/Enemys/abadede/alter3.gif
+
+anim	spawn
+	loop	0
+	delay	16
+	offset	152 201
+	bbox	136 106 42 77
+	frame   data/chars/Enemys/abadede/idle00.gif
+
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	152 201
+	bbox	129 101 47 102
+	frame   data/chars/Enemys/abadede/idle00.gif
+	frame   data/chars/Enemys/abadede/idle01.gif
+	frame   data/chars/Enemys/abadede/idle02.gif
+	frame   data/chars/Enemys/abadede/idle03.gif
+
+
+anim walk
+	loop	1
+	delay	14
+	offset	152 201
+	bbox	129 110 46 68
+	frame	data/chars/Enemys/abadede/walk00.gif
+	frame	data/chars/Enemys/abadede/walk01.gif
+	frame	data/chars/Enemys/abadede/walk02.gif
+	frame	data/chars/Enemys/abadede/walk03.gif
+	frame	data/chars/Enemys/abadede/walk04.gif
+
+
+
+
+anim jump
+	loop	0
+	delay	30
+	offset	152 201
+	bbox	141 113 64 49
+        hitfx	data/sounds/golpes/Forte.wav
+		attack1  119  114  92  57  10  1  0  0  0  20
+	frame	data/chars/Enemys/abadede/jumpatk00.gif
+
+anim jumpattack
+	loop	0
+	delay	6
+        range   60 100
+	offset	152 201
+	bbox	143 120 55 41
+        hitfx	data/sounds/golpes/Forte.wav
+		attack1  127  109  81  66  10  1  0  0  0  20
+	frame	data/chars/Enemys/abadede/jumpatk00.gif
+
+
+
+anim Upper
+	loop	0
+	delay	8
+        Range 0 60
+	offset	152 201
+	bbox	130 110 47 91
+		Attack1  0
+        hitfx	data/sounds/golpes/Medio.wav
+	frame	data/chars/Enemys/abadede/upper00.gif
+		attack1  194  135  33  35  10  1  0  0  0  20
+	frame	data/chars/Enemys/abadede/upper01.gif
+		attack1  157  74  36  87  10  1  0  0  0  20
+	frame	data/chars/Enemys/abadede/upper02.gif
+
+anim Special
+	loop	0
+	delay	8
+        mponly 1
+	energycost 30 1
+	offset	152 201
+		Attack1  0
+	sound	data/voices/Abadede1.wav
+        hitfx	data/sounds/golpes/Medio.wav
+	frame	data/chars/Enemys/abadede/upper00.gif
+		attack1  194  135  33  35  10  1  0  0  0  20
+	frame	data/chars/Enemys/abadede/upper01.gif
+		attack1  157  74  36  87  10  1  0  0  0  20
+	frame	data/chars/Enemys/abadede/upper02.gif
+
+anim Special2
+	loop	0
+	delay	8
+        mponly 1
+	energycost 30 1
+	offset	152 201
+		Attack1  0
+	sound	data/voices/Abadede1.wav
+        hitfx	data/sounds/golpes/Medio.wav
+	frame	data/chars/Enemys/abadede/upper00.gif
+		attack1  194  135  33  35  10  1  0  0  0  20
+	frame	data/chars/Enemys/abadede/upper01.gif
+		attack1  157  74  36  87  10  1  0  0  0  20
+	frame	data/chars/Enemys/abadede/upper02.gif
+
+
+anim attack1
+	loop	0
+	delay	8
+        Range 0 60
+	offset	152 201
+	bbox	130 110 47 91
+		Attack1  0
+        hitfx	data/sounds/golpes/Medio.wav
+	frame	data/chars/Enemys/abadede/a100.gif
+		attack1  166  131  35  23  10  0  0  0  0  20
+	frame	data/chars/Enemys/abadede/a101.gif
+		Attack1  0
+	frame	data/chars/Enemys/abadede/a102.gif
+
+anim attack2
+	loop	0
+	delay	6
+	offset	152 201
+	bbox	153 116 26 85
+		Attack1  0
+        hitfx	data/sounds/golpes/forte.wav
+	frame	data/chars/Enemys/abadede/a200.gif
+		attack1  176  99  42  51  20  1  0  0  0  20
+	frame	data/chars/Enemys/abadede/a201.gif
+		attack1  176  128  62  34  20  1  0  0  0  20
+	frame	data/chars/Enemys/abadede/a202.gif
+		attack1  169  131  29  70  20  1  0  0  0  20
+		delay  15
+	frame	data/chars/Enemys/abadede/a203.gif
+
+anim	Freespecial
+	loop	0
+	delay	5
+                Followcond 1
+                followanim 1
+        range   100 200
+	offset	152 201
+	bbox	124 115 50 87
+        sound	data/sounds/Run.wav
+	sound	data/voices/Abadede1.wav
+		attack1  118  114  77  50  0  0  0  0  0  20
+		move  10
+	frame   data/chars/Enemys/abadede/run00.gif
+		@cmd  spawn01  "abadedes"  0  0  0
+	frame   data/chars/Enemys/abadede/run01.gif
+		@cmd  spawn01  "abadedes"  0  0  0
+	frame   data/chars/Enemys/abadede/run02.gif
+		@cmd  spawn01  "abadedes"  0  0  0
+	frame   data/chars/Enemys/abadede/run03.gif
+		@cmd  spawn01  "abadedes"  0  0  0
+	frame   data/chars/Enemys/abadede/run04.gif
+		@cmd  spawn01  "abadedes"  0  0  0
+	frame   data/chars/Enemys/abadede/run00.gif
+		@cmd  spawn01  "abadedes"  0  0  0
+	frame   data/chars/Enemys/abadede/run01.gif
+		@cmd  spawn01  "abadedes"  0  0  0
+	frame   data/chars/Enemys/abadede/run02.gif
+		@cmd  spawn01  "abadedes"  0  0  0
+	frame   data/chars/Enemys/abadede/run03.gif
+		@cmd  spawn01  "abadedes"  0  0  0
+	frame   data/chars/Enemys/abadede/run04.gif
+		@cmd  spawn01  "abadedes"  0  0  0
+	frame   data/chars/Enemys/abadede/run00.gif
+		@cmd  spawn01  "abadedes"  0  0  0
+	frame   data/chars/Enemys/abadede/run01.gif
+		@cmd  spawn01  "abadedes"  0  0  0
+	frame   data/chars/Enemys/abadede/run02.gif
+		@cmd  spawn01  "abadedes"  0  0  0
+	frame   data/chars/Enemys/abadede/run03.gif
+		@cmd  spawn01  "abadedes"  0  0  0
+	frame   data/chars/Enemys/abadede/run04.gif
+		@cmd  spawn01  "abadedes"  0  0  0
+	frame   data/chars/Enemys/abadede/run00.gif
+		@cmd  spawn01  "abadedes"  0  0  0
+	frame   data/chars/Enemys/abadede/run01.gif
+		@cmd  spawn01  "abadedes"  0  0  0
+	frame   data/chars/Enemys/abadede/run02.gif
+		@cmd  spawn01  "abadedes"  0  0  0
+	frame   data/chars/Enemys/abadede/run03.gif
+		@cmd  spawn01  "abadedes"  0  0  0
+	frame   data/chars/Enemys/abadede/run04.gif
+		@cmd  spawn01  "abadedes"  0  0  0
+	frame   data/chars/Enemys/abadede/run00.gif
+		@cmd  spawn01  "abadedes"  0  0  0
+	frame   data/chars/Enemys/abadede/run01.gif
+		@cmd  spawn01  "abadedes"  0  0  0
+	frame   data/chars/Enemys/abadede/run02.gif
+		@cmd  spawn01  "abadedes"  0  0  0
+	frame   data/chars/Enemys/abadede/run03.gif
+		@cmd  spawn01  "abadedes"  0  0  0
+	frame   data/chars/Enemys/abadede/run04.gif
+		@cmd  spawn01  "abadedes"  0  0  0
+	frame   data/chars/Enemys/abadede/run00.gif
+		@cmd  spawn01  "abadedes"  0  0  0
+	frame   data/chars/Enemys/abadede/run01.gif
+		@cmd  spawn01  "abadedes"  0  0  0
+	frame   data/chars/Enemys/abadede/run02.gif
+		@cmd  spawn01  "abadedes"  0  0  0
+	frame   data/chars/Enemys/abadede/run03.gif
+		@cmd  spawn01  "abadedes"  0  0  0
+	frame   data/chars/Enemys/abadede/run04.gif
+		@cmd  spawn01  "abadedes"  0  0  0
+	frame   data/chars/Enemys/abadede/blitz00.gif
+		move  0
+	frame   data/chars/Enemys/abadede/blitz01.gif
+	frame   data/chars/Enemys/abadede/blitz02.gif
+		attack1  120  89  101  64  0  0  0  0  0  20
+	frame   data/chars/Enemys/abadede/blitz03.gif
+	frame   data/chars/Enemys/abadede/blitz04.gif
+
+
+anim	follow1
+		offset  152  201
+		delay  7
+	sound	data/sounds/SpecialAttack2.wav
+	frame   data/chars/Enemys/abadede/blitz00.gif
+	frame   data/chars/Enemys/abadede/blitz01.gif
+		attack3  152  97  64  75  25  1  0  0  0  25
+	frame   data/chars/Enemys/abadede/blitz02.gif
+	frame   data/chars/Enemys/abadede/blitz03.gif
+	frame   data/chars/Enemys/abadede/blitz04.gif
+
+
+
+anim rise
+	loop	0
+	offset	152 201
+	delay	10
+	frame	data/chars/Enemys/abadede/Rise00.gif
+	frame	data/chars/Enemys/abadede/Rise01.gif
+	frame	data/chars/Enemys/abadede/Rise02.gif
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	152 201
+	bbox	127 114 54 61
+	frame	data/chars/Enemys/abadede/jumpland00.gif
+
+anim grabbed
+	loop	0
+	offset	156 200
+	bbox	138 123 46 79
+	delay	30
+	frame	data/chars/Enemys/abadede/grabbed00.gif
+
+anim pain
+	loop	0
+	offset	155 201
+	bbox	139 123 49 82
+		delay  30
+	frame	data/chars/Enemys/abadede/pain01.gif
+
+
+anim pain2
+	loop	0
+	offset	146 199
+	bbox	128 106 41 93
+	delay	30
+	frame	data/chars/Enemys/abadede/pain02.gif
+
+anim pain3
+	loop	0
+	offset	148 200
+	bbox	130 110 41 92
+	jumpframe  0  2  0  0
+	delay	10
+	frame	data/chars/Enemys/abadede/Pain02.gif
+	frame	data/chars/Enemys/abadede/fall100.gif
+	frame	data/chars/Enemys/abadede/Pain01.gif
+
+
+anim fall
+	loop	0
+	offset	152 200
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/abadede/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/abadede/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  148  175
+	frame  data/chars/Enemys/abadede/fall403.gif
+		Attack1  0
+		offset  148  198
+	frame	data/chars/Enemys/abadede/fall102.gif
+
+anim fall2
+	loop	0
+	offset	132 199
+	delay	20
+	jumpframe  0  2  -3.5  0
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/abadede/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  129  171
+	frame  data/chars/Enemys/abadede/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/abadede/fall403.gif
+		Attack1  0
+		offset  148  200
+	frame	data/chars/Enemys/abadede/fall102.gif
+#Shock
+
+anim fall4
+	loop	0
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/abadede/fall200.gif
+	frame	data/chars/Enemys/abadede/fall201.gif
+	frame	data/chars/Enemys/abadede/fall200.gif
+	frame	data/chars/Enemys/abadede/fall201.gif
+	frame	data/chars/Enemys/abadede/fall200.gif
+	frame	data/chars/Enemys/abadede/fall201.gif
+	frame	data/chars/Enemys/abadede/fall200.gif
+		offset  148  199
+	frame	data/chars/Enemys/abadede/fall102.gif
+#Burn
+
+anim fall5
+	loop	0
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/abadede/fall300.gif
+	frame	data/chars/Enemys/abadede/fall301.gif
+	frame	data/chars/Enemys/abadede/fall302.gif
+	frame	data/chars/Enemys/abadede/fall300.gif
+	frame	data/chars/Enemys/abadede/fall301.gif
+	frame	data/chars/Enemys/abadede/fall302.gif
+	frame	data/chars/Enemys/abadede/fall300.gif
+	frame	data/chars/Enemys/abadede/fall301.gif
+	frame	data/chars/Enemys/abadede/fall302.gif
+		offset  151  199
+	frame	data/chars/Enemys/abadede/fall102.gif
+
+anim fall8
+	loop	0
+	offset	162 200
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/abadede/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  130  178
+	frame  data/chars/Enemys/abadede/fall101.gif
+		Attack1  0
+		offset  147  199
+	frame	data/chars/Enemys/abadede/fall102.gif
+
+anim fall9
+	loop	0
+	offset	153 200
+	delay	999
+		Attack1  0
+	frame	data/chars/Enemys/abadede/pain01.gif
+	frame	data/chars/Enemys/abadede/pain02.gif
+	frame	data/chars/Enemys/abadede/fall400.gif
+		offset  147  167
+	frame	data/chars/Enemys/abadede/fall401.gif
+		offset  147  184
+	frame	data/chars/Enemys/abadede/fall402.gif
+		offset  147  171
+	frame	data/chars/Enemys/abadede/fall403.gif
+		offset  144  198
+	frame	data/chars/Enemys/abadede/fall404.gif
+	frame	data/chars/Enemys/abadede/fall405.gif
+	delay	50
+		offset  144  173
+	frame	data/chars/Enemys/abadede/fall403.gif
+	delay	999
+		offset  144  199
+	frame	data/chars/Enemys/abadede/fall405.gif
+
+anim death
+	loop	0
+	delay	20
+		offset  145  200
+	frame	data/chars/Enemys/abadede/fall102.gif
+

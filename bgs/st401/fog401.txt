@@ -1,0 +1,17 @@
+name			Fog401 #GROUND
+type			None
+setlayer -5
+
+remap data/chars/Enemys/Fog/idle00.gif data/chars/Enemys/Fog/alter1.gif
+remap data/chars/Enemys/Fog/idle00.gif data/chars/Enemys/Fog/alter2.gif
+remap data/chars/Enemys/Fog/idle00.gif data/chars/Enemys/Fog/alter3.gif
+remap data/chars/Enemys/Fog/idle00.gif data/chars/Enemys/Fog/alter4.gif
+
+
+anim idle
+	loop	1
+	delay	24
+	offset	145 181
+	frame   data/chars/Enemys/Fog/grenade03.gif
+	frame   data/chars/Enemys/Fog/grenade04.gif
+

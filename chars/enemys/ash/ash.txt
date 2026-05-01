@@ -1,0 +1,370 @@
+name	Ash
+health	200
+speed	13
+type	Enemy
+lifespan 60
+riseinv				0.4 1
+gfxshadow	1
+hostile				player npc
+candamage			player npc obstacle
+JUMPHEIGHT 1 1
+Jumpheight 3
+falldie 1
+atchain    1 1 2
+icon	data/chars/Enemys/Ash/icon.gif 1
+diesound data/voices/die1.wav
+running	20	3	3	1	1
+
+
+
+remap data/chars/Enemys/Ash/idle00.gif data/chars/Enemys/Ash/alter1.gif
+remap data/chars/Enemys/Ash/idle00.gif data/chars/Enemys/Ash/alter2.gif
+remap data/chars/Enemys/Ash/idle00.gif data/chars/Enemys/Ash/alter3.gif
+
+
+anim	spawn
+	loop	0
+	delay	16
+	offset	182 188
+	bbox	167 87 28 78
+	frame   data/chars/Enemys/Ash/jump00.gif
+
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	171 188
+	bbox	154 97 37 75
+	frame   data/chars/Enemys/Ash/idle00.gif
+	frame   data/chars/Enemys/Ash/idle01.gif
+	frame   data/chars/Enemys/Ash/idle02.gif
+	frame   data/chars/Enemys/Ash/idle03.gif
+	frame   data/chars/Enemys/Ash/idle04.gif
+	frame   data/chars/Enemys/Ash/idle05.gif
+
+
+anim walk
+	loop	1
+	delay	12
+	offset	171 188
+	bbox	157 100 40 61
+	frame	data/chars/Enemys/Ash/walk00.gif
+	frame	data/chars/Enemys/Ash/walk01.gif
+	frame	data/chars/Enemys/Ash/walk02.gif
+	frame	data/chars/Enemys/Ash/walk03.gif
+	frame	data/chars/Enemys/Ash/walk04.gif
+	frame	data/chars/Enemys/Ash/walk05.gif
+
+
+anim get
+	loop	0
+	delay	10
+	offset	171 188
+	frame	data/chars/Enemys/Ash/get00.gif
+
+
+anim jump
+	loop	0
+	delay	30
+	offset	171 188
+	bbox	161 93 37 63
+	frame	data/chars/Enemys/Ash/jump00.gif
+
+anim jumpattack
+	loop	0
+	delay	6
+        range   60 100
+	offset	171 188
+	bbox	151 98 36 57
+        hitfx	data/sounds/golpes/Forte.wav
+		attack1  166  135  56  51  10  1  0  0  0  20
+	frame	data/chars/Enemys/Ash/jumpatk00.gif
+	delay	30
+	frame	data/chars/Enemys/Ash/jumpatk00.gif
+
+
+
+anim attack1
+	loop	0
+	delay	6
+        Range 0 60
+	offset	171 188
+	bbox	150 104 34 81
+		Attack1  0
+        hitfx	data/sounds/golpes/Fraco.wav
+		attack1  87  54  48  22  7
+	frame	data/chars/Enemys/Ash/a101.gif
+		attack1  170  121  44  18  10  0  0  0  0  10
+	frame	data/chars/Enemys/Ash/a102.gif
+
+anim attack2
+	loop	0
+	delay	6
+	offset	171 188
+	bbox	144 113 36 61
+		Attack1  0
+        hitfx	data/sounds/golpes/MEdio.wav
+	frame	data/chars/Enemys/Ash/a100.gif
+		attack1  171  96  25  39  7  1  0  0  0  20
+	frame	data/chars/Enemys/Ash/a101.gif
+		attack1  166  116  48  26  15  1  0  0  0  20
+		delay  15
+	frame	data/chars/Enemys/Ash/a102.gif
+
+
+
+anim freespecial
+	loop	0
+	delay	5
+        Range 200 300
+	offset	171 188
+        hitfx	data/sounds/golpes/forte.wav
+	bbox	148 113 44 50
+		move  10
+	frame	data/chars/Enemys/Ash/walk00.gif
+	frame	data/chars/Enemys/Ash/walk01.gif
+	frame	data/chars/Enemys/Ash/walk02.gif
+	frame	data/chars/Enemys/Ash/walk03.gif
+	frame	data/chars/Enemys/Ash/walk04.gif
+	frame	data/chars/Enemys/Ash/walk05.gif
+		bbox  136  139  35  44
+		move  10
+		delay  3
+		attack3  153  163  66  29  15  1  0  0  0  20
+        Sound	data/sounds/Dash.wav
+        frame	data/chars/Enemys/Ash/Rise01.gif
+        frame	data/chars/Enemys/Ash/Rise01.gif
+        frame	data/chars/Enemys/Ash/Rise01.gif
+        frame	data/chars/Enemys/Ash/Rise01.gif
+        frame	data/chars/Enemys/Ash/Rise01.gif
+        frame	data/chars/Enemys/Ash/Rise01.gif
+        frame	data/chars/Enemys/Ash/Rise01.gif
+        frame	data/chars/Enemys/Ash/Rise01.gif
+	frame  data/chars/Enemys/Ash/Rise01.gif
+	frame  data/chars/Enemys/Ash/Rise01.gif
+	frame  data/chars/Enemys/Ash/Rise01.gif
+	frame  data/chars/Enemys/Ash/Rise01.gif
+	frame  data/chars/Enemys/Ash/Rise01.gif
+	frame  data/chars/Enemys/Ash/Rise01.gif
+	frame  data/chars/Enemys/Ash/Rise01.gif
+	frame  data/chars/Enemys/Ash/Rise01.gif
+	frame  data/chars/Enemys/Ash/Rise01.gif
+	frame  data/chars/Enemys/Ash/Rise01.gif
+	frame  data/chars/Enemys/Ash/Rise01.gif
+	frame  data/chars/Enemys/Ash/Rise01.gif
+        frame	data/chars/Enemys/Ash/Rise01.gif
+	frame  data/chars/Enemys/Ash/Rise01.gif
+	frame  data/chars/Enemys/Ash/Rise01.gif
+        frame	data/chars/Enemys/Ash/Rise01.gif
+		move  0
+		delay  10
+		Attack1  0
+        frame	data/chars/Enemys/Ash/Rise02.gif
+		bbox  154  114  43  52
+        frame	data/chars/Enemys/Ash/Rise03.gif
+
+
+
+
+
+
+
+anim grabbed
+	loop	0
+	delay	100
+	offset	171 188
+	bbox	148 113 44 50
+	frame	data/chars/Enemys/Ash/grabbed00.gif
+
+
+
+
+
+
+anim death
+	loop	0
+	offset	171 188
+	delay	8
+	frame	data/chars/Enemys/Ash/cry00.gif
+        frame	data/chars/Enemys/Ash/cry01.gif
+	frame	data/chars/Enemys/Ash/cry00.gif
+        frame	data/chars/Enemys/Ash/cry01.gif
+	frame	data/chars/Enemys/Ash/cry00.gif
+        frame	data/chars/Enemys/Ash/cry01.gif
+	frame	data/chars/Enemys/Ash/cry00.gif
+        frame	data/chars/Enemys/Ash/cry01.gif
+	frame	data/chars/Enemys/Ash/cry00.gif
+        frame	data/chars/Enemys/Ash/cry01.gif
+	frame	data/chars/Enemys/Ash/cry00.gif
+        frame	data/chars/Enemys/Ash/cry01.gif
+	frame	data/chars/Enemys/Ash/cry00.gif
+        frame	data/chars/Enemys/Ash/cry01.gif
+	frame	data/chars/Enemys/Ash/fall102.gif
+
+
+
+anim rise
+	loop	0
+	offset	171 188
+	delay	10
+	frame	data/chars/Enemys/Ash/Rise00.gif
+	frame	data/chars/Enemys/Ash/Rise01.gif
+	frame	data/chars/Enemys/Ash/Rise02.gif
+	frame	data/chars/Enemys/Ash/Rise03.gif
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	171 188
+	bbox	157 118 44 43
+	frame	data/chars/Enemys/Ash/jumpland00.gif
+
+anim pain
+	loop	0
+	offset	166 188
+	bbox	158 124 30 67
+		delay  30
+	frame	data/chars/Enemys/Ash/pain01.gif
+
+
+anim pain2
+	loop	0
+	offset	163 191
+	bbox	145 98 30 90
+	delay	30
+	frame	data/chars/Enemys/Ash/pain02.gif
+
+anim pain3
+	loop	0
+	offset	164 187
+	bbox	142 112 41 75
+	jumpframe  0  2  0  0
+	delay	10
+	frame	data/chars/Enemys/Ash/Pain02.gif
+	frame	data/chars/Enemys/Ash/fall400.gif
+	frame	data/chars/Enemys/Ash/Pain01.gif
+
+
+
+anim fall
+	loop	0
+	offset	158 185
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Ash/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  142  164
+	frame  data/chars/Enemys/Ash/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Ash/fall403.gif
+		Attack1  0
+		offset  157  186
+	frame	data/chars/Enemys/Ash/fall102.gif
+
+anim fall2
+	loop	0
+	offset	146 185
+	delay	20
+	jumpframe  0  2  -3.5  0
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Ash/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  141  158
+	frame  data/chars/Enemys/Ash/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Ash/fall403.gif
+		Attack1  0
+		offset  152  189
+	frame	data/chars/Enemys/Ash/fall102.gif
+#Shock
+
+anim fall4
+	loop	0
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Ash/fall200.gif
+	frame	data/chars/Enemys/Ash/fall201.gif
+	frame	data/chars/Enemys/Ash/fall200.gif
+	frame	data/chars/Enemys/Ash/fall201.gif
+	frame	data/chars/Enemys/Ash/fall200.gif
+	frame	data/chars/Enemys/Ash/fall201.gif
+	frame	data/chars/Enemys/Ash/fall200.gif
+		offset  159  189
+	frame	data/chars/Enemys/Ash/fall102.gif
+#Burn
+
+anim fall5
+	loop	0
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Ash/fall300.gif
+	frame	data/chars/Enemys/Ash/fall301.gif
+	frame	data/chars/Enemys/Ash/fall302.gif
+	frame	data/chars/Enemys/Ash/fall300.gif
+	frame	data/chars/Enemys/Ash/fall301.gif
+	frame	data/chars/Enemys/Ash/fall302.gif
+	frame	data/chars/Enemys/Ash/fall300.gif
+	frame	data/chars/Enemys/Ash/fall301.gif
+	frame	data/chars/Enemys/Ash/fall302.gif
+		offset  158  189
+	frame	data/chars/Enemys/Ash/fall102.gif
+
+anim fall8
+	loop	0
+	offset	155 184
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Ash/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  145  161
+	frame  data/chars/Enemys/Ash/fall101.gif
+		Attack1  0
+		offset  158  188
+	frame	data/chars/Enemys/Ash/fall102.gif
+
+anim fall9
+	loop	0
+	offset	171 191
+	delay	999
+		Attack1  0
+	frame	data/chars/Enemys/Ash/pain01.gif
+	frame	data/chars/Enemys/Ash/pain02.gif
+	frame	data/chars/Enemys/Ash/fall400.gif
+		offset  158  182
+	frame	data/chars/Enemys/Ash/fall401.gif
+		offset  139  188
+	frame	data/chars/Enemys/Ash/fall402.gif
+		offset  137  157
+	frame	data/chars/Enemys/Ash/fall403.gif
+		offset  163  182
+	frame	data/chars/Enemys/Ash/fall404.gif
+		offset  152  190
+	frame	data/chars/Enemys/Ash/fall405.gif
+	delay	50
+		offset  136  158
+	frame	data/chars/Enemys/Ash/fall403.gif
+	delay	999
+		offset  155  188
+	frame	data/chars/Enemys/Ash/fall405.gif
+
+
+anim Pain8
+	loop	0
+	delay	15
+	offset	180 193
+	jumpframe  0  2  1  0
+	frame	data/chars/Enemys/Ash/jump00.gif
+	frame	data/chars/Enemys/Ash/jump00.gif
+

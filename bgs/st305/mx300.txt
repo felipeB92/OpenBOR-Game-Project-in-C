@@ -1,0 +1,18 @@
+name			Mx300 #GROUND
+type			Panel
+setlayer -7
+offscreenkill	5000
+antigravity 100
+animationscript		data/scripts/drago.c
+Load Elevador02
+
+anim idle
+	loop	0
+	offset	0 276
+		delay  200
+	@cmd dasher 0 -1 0
+	frame	data/Bgs/St305/BG01.gif
+	@cmd  spawn01  "Elevador02"  0  0  0
+	@cmd dasher 0 0 0
+	frame	data/Bgs/st305/BG01.gif
+

@@ -1,0 +1,18 @@
+name		Porta300
+type		none
+shadow		0
+#setlayer	0
+antigravity	100
+
+anim idle
+	loop	0
+	delay	12
+	offset	0 0
+	frame	data/bgs/St306/pORTA01/P00.gif
+	frame	data/bgs/St306/pORTA01/P01.gif
+	frame	data/bgs/St306/pORTA01/P02.gif
+	frame	data/bgs/St306/pORTA01/P03.gif
+	frame	data/bgs/St306/pORTA01/P04.gif
+	frame	data/bgs/St306/pORTA01/P05.gif
+	frame	data/bgs/St306/pORTA01/P06.gif
+	frame	data/bgs/St306/pORTA01/P07.gif

@@ -1,0 +1,21 @@
+# Hit flash
+
+speed	13
+name	Missil
+candamage  Player obstacle npc pshot
+type	pshot
+
+Load Boom01
+
+
+anim idle
+	loop	1
+		delay  5
+		Hitflash  Boom01
+		hitfx  data/sounds/golpes/Forte.wav
+		attack1  15
+		offset  -13  90
+		bbox  14  22  25  11
+	frame  data/chars/Enemys/RobotX/M00.gif
+	frame	data/chars/Enemys/RobotX/M01.gif
+

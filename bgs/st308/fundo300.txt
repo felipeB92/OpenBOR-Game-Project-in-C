@@ -1,0 +1,23 @@
+name		Fundo300
+type		panel
+shadow		0
+speed		5
+scroll		-0.5
+setlayer	12
+
+anim idle
+	loop	1
+	delay	8
+	offset	0 0
+	frame	data/bgs/st308/leds00.gif
+	frame	data/bgs/st308/leds01.gif
+	frame	data/bgs/st308/leds02.gif
+	frame	data/bgs/st308/leds03.gif
+	frame	data/bgs/st308/leds04.gif
+	frame	data/bgs/st308/leds05.gif
+	frame	data/bgs/st308/leds06.gif
+	frame	data/bgs/st308/leds05.gif
+	frame	data/bgs/st308/leds04.gif
+	frame	data/bgs/st308/leds03.gif
+	frame	data/bgs/st308/leds02.gif
+	frame	data/bgs/st308/leds01.gif

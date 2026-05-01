@@ -1,0 +1,37 @@
+name			BAck205 #GROUND
+type			None
+setlayer -9
+#noquake 	1 1
+#offscreenkill	1000
+animationscript		data/scripts/drago.c
+
+Load Back206
+
+anim idle
+	loop	0
+	offset	0 0
+		delay  10
+	frame	data/Bgs/St208/PORTA/P16.gif
+	frame	data/Bgs/St208/PORTA/P15.gif
+	frame	data/Bgs/St208/PORTA/P14.gif
+	frame	data/Bgs/St208/PORTA/P13.gif
+	frame	data/Bgs/St208/PORTA/P12.gif
+	frame	data/Bgs/St208/PORTA/P11.gif
+	frame	data/Bgs/St208/PORTA/P10.gif
+	frame	data/Bgs/St208/PORTA/P09.gif
+	frame	data/Bgs/St208/PORTA/P08.gif
+	frame	data/Bgs/St208/PORTA/P07.gif
+	frame	data/Bgs/St208/PORTA/P06.gif
+	frame	data/Bgs/St208/PORTA/P05.gif
+	frame	data/Bgs/St208/PORTA/P04.gif
+	frame	data/Bgs/St208/PORTA/P03.gif
+	frame	data/Bgs/St208/PORTA/P02.gif
+	frame	data/Bgs/St208/PORTA/P01.gif
+	frame	data/Bgs/St208/PORTA/P00.gif
+	@cmd  spawn01  "Back206"  0  768  0
+	frame	data/Bgs/St208/PORTA/P00.gif
+      @cmd killentity getlocalvar("self")
+	frame	data/Bgs/St208/PORTA/P00.gif
+
+
+

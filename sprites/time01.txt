@@ -1,0 +1,19 @@
+name			Time01 #GROUND
+type			Panel
+setlayer 99
+Speed 0
+scroll		0.5
+#Alpha 1
+antigravity 100
+noquake 	1 1
+#offscreenkill	1000
+
+
+anim idle
+	loop	1
+	offset	0 0
+		delay  50
+	frame	data/Sprites/Time.gif
+	frame	data/Sprites/00.gif
+
+

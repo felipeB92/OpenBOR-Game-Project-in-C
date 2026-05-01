@@ -1,0 +1,23 @@
+name			e305 #ELEVATOR ANIMATED BGLAYER
+type			none
+shadow			0
+setlayer		-9
+antigravity 100
+animationscript		data/scripts/drago.c
+
+load			Elevador01
+load			Elevador02
+
+anim idle
+	loop	0
+	delay	257
+	offset	0 150
+	@cmd  spawn01  "Elevador01"  0  0  -1
+       	@cmd dasher 1 0 0
+	frame	data/bgs/st303/bg00.gif
+       	@cmd dasher 0 0 0
+	@cmd  spawn01  "Elevador02"  0  0  -1
+	delay	20
+	frame	data/bgs/st303/bg00.gif
+	frame	data/bgs/st303/bg00.gif
+

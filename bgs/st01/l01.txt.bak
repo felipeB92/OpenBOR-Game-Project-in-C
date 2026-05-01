@@ -1,0 +1,12 @@
+name			L01 #GROUND
+type			None
+
+anim idle
+	loop	1
+	delay	20
+	offset	0 0
+	frame	data/Bgs/St01/L101.gif
+	frame	data/Bgs/St01/L102.gif
+	frame	data/Bgs/St01/L103.gif
+	frame	data/Bgs/St01/L104.gif
+

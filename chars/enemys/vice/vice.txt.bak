@@ -1,0 +1,290 @@
+name	Vice
+health	100
+speed	8
+type	Enemy
+gfxshadow	1
+hostile				player npc
+candamage			player npc obstacle
+JUMPHEIGHT 1 1
+Jumpheight 3
+falldie 2
+atchain    1 2 3
+icon	data/chars/Enemys/Vice/icon.gif 1
+diesound data/voices/die1.wav
+running	20	3	3	1	1
+
+##LOAD
+
+remap data/chars/Enemys/Vice/idle00.gif data/chars/Enemys/Vice/alter1.gif
+remap data/chars/Enemys/Vice/idle00.gif data/chars/Enemys/Vice/alter2.gif
+remap data/chars/Enemys/Vice/idle00.gif data/chars/Enemys/Vice/alter3.gif
+remap data/chars/Enemys/Vice/idle00.gif data/chars/Enemys/Vice/alter4.gif
+
+anim	spawn
+	loop	0
+	delay	40
+	offset	138 176
+	bbox	122 104 39 51
+	frame   data/chars/Enemys/Vice/jump00.gif
+
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	138 176
+	bbox	124 105 34 47
+	frame   data/chars/Enemys/Vice/idle00.gif
+	frame   data/chars/Enemys/Vice/idle01.gif
+	frame   data/chars/Enemys/Vice/idle02.gif
+	frame   data/chars/Enemys/Vice/idle03.gif
+
+
+anim walk
+	loop	1
+	delay	14
+	offset	138 176
+	bbox	124 101 30 57
+	frame	data/chars/Enemys/Vice/walk00.gif
+	frame	data/chars/Enemys/Vice/walk01.gif
+	frame	data/chars/Enemys/Vice/walk02.gif
+	frame	data/chars/Enemys/Vice/walk03.gif
+
+
+anim get
+	loop	0
+	delay	10
+	offset	138 176
+	frame	data/chars/Enemys/Vice/get00.gif
+
+
+anim jump
+	loop	0
+	delay	30
+	offset	138 176
+	bbox	119 104 46 51
+	frame	data/chars/Enemys/Vice/jump00.gif
+
+
+
+
+anim attack1
+	loop	0
+	delay	6
+        Range 0 60
+	offset	138 176
+	bbox	124 99 31 72
+		Attack1  0
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/Enemys/Vice/a100.gif
+		attack1  145  115  45  12  7  0  0  0  0  10
+	frame	data/chars/Enemys/Vice/a101.gif
+		Attack1  0
+	frame	data/chars/Enemys/Vice/a102.gif
+
+anim attack2
+	loop	0
+	delay	4
+        Range 0 60
+	offset	138 176
+	bbox	119 106 32 60
+		Attack1  0
+        hitfx	data/sounds/golpes/MEdio.wav
+	frame	data/chars/Enemys/Vice/a200.gif
+	frame	data/chars/Enemys/Vice/a201.gif
+		attack2  146  110  51  16  7  0  0  0  0  10
+	frame	data/chars/Enemys/Vice/a202.gif
+	frame	data/chars/Enemys/Vice/a203.gif
+	frame	data/chars/Enemys/Vice/a204.gif
+		Attack1  0
+	frame	data/chars/Enemys/Vice/a205.gif
+	frame	data/chars/Enemys/Vice/a206.gif
+
+anim attack3
+	loop	0
+	delay	6
+        Range 0 60
+	offset	138 176
+	bbox	116 104 36 65
+		Attack1  0
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/Enemys/Vice/grabatk00.gif
+		attack1  130  104  43  30  10  1  0  0  0  10
+		move  5
+	frame	data/chars/Enemys/Vice/grabatk01.gif
+	frame	data/chars/Enemys/Vice/grabatk01.gif
+		Attack1  0
+	frame	data/chars/Enemys/Vice/grab00.gif
+
+
+
+anim grabbed
+	loop	0
+	delay	100
+	offset	138 176
+	bbox	124 113 32 52
+	frame	data/chars/Enemys/Vice/grabbed00.gif
+
+
+
+
+anim rise
+	loop	0
+	offset	138 176
+	delay	10
+	frame	data/chars/Enemys/Vice/Rise00.gif
+	frame	data/chars/Enemys/Vice/Rise01.gif
+	frame	data/chars/Enemys/Vice/Rise02.gif
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	138 176
+	bbox	127 127 37 42
+	frame	data/chars/Enemys/Vice/jumpland00.gif
+
+anim pain
+	loop	0
+	offset	140 176
+	bbox	122 114 39 64
+		delay  30
+	frame	data/chars/Enemys/Vice/pain01.gif
+
+
+anim pain2
+	loop	0
+	offset	139 176
+	bbox	118 97 31 79
+	delay	30
+	frame	data/chars/Enemys/Vice/pain02.gif
+
+anim pain3
+	loop	0
+	offset	137 175
+	bbox	120 98 31 78
+	jumpframe  0  2  0  0
+	delay	10
+	frame	data/chars/Enemys/Vice/Pain02.gif
+	frame	data/chars/Enemys/Vice/fall400.gif
+	frame	data/chars/Enemys/Vice/Pain01.gif
+
+
+
+anim fall
+	loop	0
+	offset	132 175
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Vice/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Vice/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Vice/fall403.gif
+		Attack1  0
+	frame	data/chars/Enemys/Vice/fall102.gif
+
+anim fall2
+	loop	0
+	offset	126 174
+	delay	20
+	jumpframe  0  2  -3.5  0
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Vice/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  131  177
+	frame  data/chars/Enemys/Vice/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Vice/fall403.gif
+		Attack1  0
+	frame	data/chars/Enemys/Vice/fall102.gif
+#Shock
+
+anim fall4
+	loop	0
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Vice/fall200.gif
+	frame	data/chars/Enemys/Vice/fall201.gif
+	frame	data/chars/Enemys/Vice/fall200.gif
+	frame	data/chars/Enemys/Vice/fall201.gif
+	frame	data/chars/Enemys/Vice/fall200.gif
+	frame	data/chars/Enemys/Vice/fall201.gif
+	frame	data/chars/Enemys/Vice/fall200.gif
+		offset  135  177
+	frame	data/chars/Enemys/Vice/fall102.gif
+#Burn
+
+anim fall5
+	loop	0
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Vice/fall300.gif
+	frame	data/chars/Enemys/Vice/fall301.gif
+	frame	data/chars/Enemys/Vice/fall302.gif
+	frame	data/chars/Enemys/Vice/fall300.gif
+	frame	data/chars/Enemys/Vice/fall301.gif
+	frame	data/chars/Enemys/Vice/fall302.gif
+	frame	data/chars/Enemys/Vice/fall300.gif
+	frame	data/chars/Enemys/Vice/fall301.gif
+	frame	data/chars/Enemys/Vice/fall302.gif
+		offset  134  175
+	frame	data/chars/Enemys/Vice/fall102.gif
+
+anim fall8
+	loop	0
+	offset	124 178
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Vice/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  136  178
+	frame  data/chars/Enemys/Vice/fall101.gif
+		Attack1  0
+	frame	data/chars/Enemys/Vice/fall102.gif
+
+anim fall9
+	loop	0
+	offset	140 175
+	delay	999
+		Attack1  0
+	frame	data/chars/Enemys/Vice/pain01.gif
+	frame	data/chars/Enemys/Vice/pain02.gif
+	frame	data/chars/Enemys/Vice/fall400.gif
+		offset  164  166
+	frame	data/chars/Enemys/Vice/fall401.gif
+		offset  151  185
+	frame	data/chars/Enemys/Vice/fall402.gif
+		offset  135  175
+	frame	data/chars/Enemys/Vice/fall403.gif
+	frame	data/chars/Enemys/Vice/fall404.gif
+	frame	data/chars/Enemys/Vice/fall405.gif
+	delay	50
+	frame	data/chars/Enemys/Vice/fall403.gif
+	delay	999
+	frame	data/chars/Enemys/Vice/fall405.gif
+
+anim death
+	loop	0
+	offset	134 176
+	delay	20
+	frame	data/chars/Enemys/Vice/fall102.gif
+
+anim Pain8
+	loop	0
+	delay	15
+	offset	137 177
+	jumpframe  0  2  1  0
+	frame	data/chars/Enemys/Vice/jump00.gif
+	frame	data/chars/Enemys/Vice/jump00.gif
+

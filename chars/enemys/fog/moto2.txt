@@ -1,0 +1,92 @@
+##MAIN
+name				Moto2
+type				enemy
+subtype				biker
+hostile				player npc
+candamage			player npc obstacle
+
+##LIFE
+health				1 #SCRIPT
+
+##POWER
+offense 			1 #SCRIPT
+
+##SPEED
+speed				1 #SCRIPT
+
+##ENERGY
+mp					1
+mprate  			1 #SCRIPT
+
+##MISC
+atchain				0
+weapons				none none none none
+gfxshadow			1 1
+dust				dust
+
+##SCRIPTS
+ondrawscript		data/scripts/ondraw/moto.c
+onspawnscript		data/scripts/onspawn/moto.c
+animationscript	 	data/scripts/animation/default.c
+
+##ICONS
+icon				data/chars/fog/icon.gif 1
+
+##REMAPS
+remap				data/chars/fog/idle00.gif data/chars/fog/alter1.gif
+remap				data/chars/fog/idle00.gif data/chars/fog/alter2.gif
+remap				data/chars/fog/idle00.gif data/chars/fog/alter3.gif
+remap				data/chars/fog/idle00.gif data/chars/fog/alter4.gif
+
+##LOADS
+load				fog2
+rider				fog2
+
+##ANIMATIONS#############################################################################
+
+anim spawn
+	loop	0
+	delay	1
+	offset	145 179
+	frame	data/chars/fog/mounted00.gif
+
+anim idle
+	fastattack 1
+	jugglecost 31
+	forcedirection 0
+	loop	1
+	delay	6
+	offset	145 179
+	bbox 	123 101 47 80
+	hitfx	data/sounds/HighPunch.wav
+	attack 99 135 101 46 24 1 1 0 0 12
+	@cmd offScreenHurt 100 1 0 1
+	frame	data/chars/fog/mounted00.gif
+	frame	data/chars/fog/mounted01.gif
+	
+anim follow1
+	fastattack 1
+	jugglecost 31
+	forcedirection 0
+	loop	0
+	delay	6
+	offset	145 179
+	bbox 	123 101 47 80
+	hitfx	data/sounds/HighPunch.wav
+	sound	data/voices/Fog1.wav
+	attack 99 135 101 46 24 1 1 0 0 12
+	frame	data/chars/fog/grenade00.gif
+	@cmd toss "fog_grenade" 5 70 0 -0.4 3 0 0
+	frame	data/chars/fog/grenade01.gif
+	
+anim pain
+	fastattack 1
+	jugglecost 31
+	forcedirection 0
+	loop	1
+	delay	8
+	offset	145 179
+	hitfx	data/sounds/HighPunch.wav
+	attack 99 135 101 46 24 1 1 0 0 12
+	frame	data/chars/fog/unmounted00.gif
+	frame	data/chars/fog/unmounted01.gif

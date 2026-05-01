@@ -1,0 +1,74 @@
+name			Esteira05
+type			none
+shadow			0
+candamage		Enemy
+animationscript		data/scripts/drago.c
+
+load			Esteira05s
+
+anim idle
+	loop	1
+	delay	40
+	offset	1 116
+	fastattack 1
+	@cmd spawn01 "esteira05s" 0 0 0
+		attack8  1  -1  30  20  0  0  0  0  0  100
+	frame	data/bgs/st308/machine01.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+		attack8  23  9  33  23  0  0  0  0  0  100
+	frame	data/bgs/st308/machine01.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+		attack8  70  31  26  26  0  0  0  0  0  100
+	frame	data/bgs/st308/machine01.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+		attack8  92  42  29  26  0  0  0  0  0  100
+	frame	data/bgs/st308/machine01.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+		attack8  110  47  28  28  0  0  0  0  0  100
+	frame	data/bgs/st308/machine01.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+		attack8  131  57  30  30  0  0  0  0  0  100
+	frame	data/bgs/st308/machine01.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+		attack8  153  74  42  27  0  0  0  0  0  100
+	frame	data/bgs/st308/machine01.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+		attack8  188  88  30  25  0  0  0  0  0  100
+	frame	data/bgs/st308/machine01.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+		attack8  210  100  28  24  0  0  0  0  0  100
+	frame	data/bgs/st308/machine01.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+		Attack1  0
+	frame	data/bgs/st308/machine01.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+		offset  1  116
+		attack8  564  95  38  24  0  0  0  0  0  100
+	frame	data/bgs/st308/machine01.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+		attack8  542  85  36  22  0  0  0  0  0  100
+	frame	data/bgs/st308/machine01.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+		attack8  527  74  29  26  0  0  0  0  0  100
+	frame	data/bgs/st308/machine01.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+	frame	data/bgs/st308/machine01.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+	frame	data/bgs/st308/machine01.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+	frame	data/bgs/st308/machine01.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+	frame	data/bgs/st308/machine01.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+	frame	data/bgs/st308/machine01.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+	frame	data/bgs/st308/machine01.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+	frame	data/bgs/st308/machine01.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+	frame	data/bgs/st308/machine01.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+	frame	data/bgs/st308/machine01.gif
+	@cmd spawn01 "esteira05s" 0 0 0
+	frame	data/bgs/st308/machine01.gif
+

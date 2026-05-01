@@ -1,0 +1,338 @@
+name	Mace_
+health	100
+falldie 2
+lifespan 60
+speed	10
+escapehits			2
+hostile				player npc
+candamage			player npc obstacle
+type	Enemy
+gfxshadow	1
+JUMPHEIGHT 1 1
+Jumpheight 3
+atchain    1 2 3
+icon	data/chars/Enemys/Mace/icon.gif 1
+diesound data/voices/die3.wav
+running	20	3	3	1	1
+animationscript		data/scripts/drago.c
+
+##LOADS
+Load Chale
+
+
+remap data/chars/Enemys/Mace/idle00.gif data/chars/Enemys/Mace/Map01.gif
+remap data/chars/Enemys/Mace/idle00.gif data/chars/Enemys/Mace/Map02.gif
+remap data/chars/Enemys/Mace/idle00.gif data/chars/Enemys/Mace/Map03.gif
+remap data/chars/Enemys/Mace/idle00.gif data/chars/Enemys/Mace/Map04.gif
+
+anim	spawn
+	loop	0
+	delay	400
+	offset	128 192
+	frame   data/chars/Enemys/Mace/S00.gif
+	delay	8
+	frame   data/chars/Enemys/Mace/S01.gif
+		@cmd  spawn01  "Chale"  0  0  -2
+	frame   data/chars/Enemys/Mace/S02.gif
+	frame   data/chars/Enemys/Mace/S03.gif
+	frame   data/chars/Enemys/Mace/S04.gif
+	frame   data/chars/Enemys/Mace/S05.gif
+	frame   data/chars/Enemys/Mace/S06.gif
+	frame   data/chars/Enemys/Mace/S07.gif
+	frame   data/chars/Enemys/Mace/S08.gif
+
+
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	130 191
+	bbox	111 109 41 83
+	frame   data/chars/Enemys/Mace/idle00.gif
+	frame   data/chars/Enemys/Mace/idle01.gif
+	frame   data/chars/Enemys/Mace/idle02.gif
+	frame   data/chars/Enemys/Mace/idle03.gif
+	frame   data/chars/Enemys/Mace/idle04.gif
+
+
+
+anim walk
+	loop	1
+	delay	14
+	offset	130 191
+	bbox	116 113 28 81
+	frame	data/chars/Enemys/Mace/walk00.gif
+	frame	data/chars/Enemys/Mace/walk01.gif
+	frame	data/chars/Enemys/Mace/walk02.gif
+	frame	data/chars/Enemys/Mace/walk03.gif
+
+
+
+anim jump
+	loop	0
+	delay	30
+	offset	130 192
+	bbox	115 108 29 84
+	frame	data/chars/Enemys/Mace/jump00.gif
+
+
+
+
+anim attack1
+	loop	0
+	delay	6
+        Range 0 80
+	offset	130 192
+	bbox	108 112 39 79
+		Attack1  0
+        hitfx	data/sounds/golpes/whip.wav
+        Sound	data/sounds/armas/whoosh2.wav
+	frame	data/chars/Enemys/Mace/a100.gif
+	frame	data/chars/Enemys/Mace/a101.gif
+	frame	data/chars/Enemys/Mace/a103.gif
+		attack1  144  119  75  52  9  1  0  0  0  20
+	frame	data/chars/Enemys/Mace/a105.gif
+
+anim Freespecial
+	loop	0
+	delay	6
+        Range 80 120
+	offset	119 192
+	bbox	108 112 39 79
+		Attack1  0
+        hitfx	data/sounds/golpes/whip.wav
+	frame	data/chars/Enemys/Mace/a300.gif
+	frame	data/chars/Enemys/Mace/a301.gif
+	frame	data/chars/Enemys/Mace/a302.gif
+	frame	data/chars/Enemys/Mace/a200.gif
+	frame	data/chars/Enemys/Mace/a201.gif
+		attack4  137  141  84  15  15  1  0  0  0  15
+		sound  data/Sounds/Shock.wav
+	frame	data/chars/Enemys/Mace/a202.gif
+	frame	data/chars/Enemys/Mace/a203.gif
+	frame	data/chars/Enemys/Mace/a204.gif
+	frame	data/chars/Enemys/Mace/a205.gif
+	frame	data/chars/Enemys/Mace/a206.gif
+	frame	data/chars/Enemys/Mace/a207.gif
+	frame	data/chars/Enemys/Mace/a208.gif
+	frame	data/chars/Enemys/Mace/a209.gif
+	frame	data/chars/Enemys/Mace/a210.gif
+	frame	data/chars/Enemys/Mace/a211.gif
+		attack4  139  136  91  22  15  1  0  0  0  15
+	frame	data/chars/Enemys/Mace/a212.gif
+	frame	data/chars/Enemys/Mace/a213.gif
+
+anim Freespecial2
+	loop	0
+	delay	30
+        Range 120 150
+	offset	119 192
+	bbox	108 112 39 79
+		Attack1  0
+	jumpframe  1  2  3  0
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/Enemys/Mace/a200.gif
+		offset  134  206
+		delay  10
+	frame	data/chars/Enemys/Mace/Jump00.gif
+		attack1  121  138  67  50  7  1  0  0  0  15
+		delay  25
+	frame	data/chars/Enemys/Mace/Ja100.gif
+
+
+
+anim Special
+	loop	0
+	offset	122 184
+	delay	50
+        sound   data/voices/die3.wav
+	frame	data/chars/Enemys/Mace/Rise02.gif
+	frame	data/chars/Enemys/Mace/Rise02.gif
+
+anim Special2
+	loop	0
+	offset	121 184
+	delay	50
+        sound   data/voices/die3.wav
+	frame	data/chars/Enemys/Mace/Rise02.gif
+	frame	data/chars/Enemys/Mace/Rise02.gif
+
+anim rise
+	loop	0
+	offset	116 183
+	delay	10
+	frame	data/chars/Enemys/Mace/Rise00.gif
+	frame	data/chars/Enemys/Mace/Rise01.gif
+	frame	data/chars/Enemys/Mace/Rise02.gif
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	123 192
+	bbox	109 124 34 71
+	frame	data/chars/Enemys/Mace/a200.gif
+
+anim grabbed
+	loop	0
+	offset	130 192
+	bbox	122 118 24 74
+	delay	30
+	frame	data/chars/Enemys/Mace/pain01.gif
+
+anim pain
+	loop	0
+	offset	130 191
+	bbox	120 119 28 73
+		delay  30
+	frame	data/chars/Enemys/Mace/pain01.gif
+
+
+anim pain2
+	loop	0
+	offset	127 191
+	bbox	109 121 34 72
+	delay	30
+	frame	data/chars/Enemys/Mace/pain02.gif
+
+anim pain3
+	loop	0
+	offset	127 191
+	bbox	111 115 28 76
+	jumpframe  0  2  0  0
+	delay	10
+	frame	data/chars/Enemys/Mace/Pain02.gif
+	frame	data/chars/Enemys/Mace/fall400.gif
+	frame	data/chars/Enemys/Mace/Pain01.gif
+
+
+
+anim fall
+	loop	0
+	offset	133 186
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Mace/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  114  181
+	frame  data/chars/Enemys/Mace/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  143  192
+	frame  data/chars/Enemys/Mace/fall403.gif
+		Attack1  0
+		offset  112  183
+	frame	data/chars/Enemys/Mace/fall102.gif
+
+anim fall2
+	loop	0
+	offset	111 191
+	delay	20
+	jumpframe  0  2  -3.5  0
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Mace/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  113  183
+	frame  data/chars/Enemys/Mace/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  144  192
+	frame  data/chars/Enemys/Mace/fall403.gif
+		Attack1  0
+		offset  112  183
+	frame	data/chars/Enemys/Mace/fall102.gif
+#Shock
+
+anim fall4
+	loop	0
+	offset	125 180
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Mace/fall200.gif
+	frame	data/chars/Enemys/Mace/fall201.gif
+	frame	data/chars/Enemys/Mace/fall200.gif
+	frame	data/chars/Enemys/Mace/fall201.gif
+	frame	data/chars/Enemys/Mace/fall200.gif
+	frame	data/chars/Enemys/Mace/fall201.gif
+	frame	data/chars/Enemys/Mace/fall200.gif
+		offset  115  183
+	frame	data/chars/Enemys/Mace/fall102.gif
+#Burn
+
+anim fall5
+	loop	0
+	offset	119 186
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Mace/fall300.gif
+	frame	data/chars/Enemys/Mace/fall301.gif
+	frame	data/chars/Enemys/Mace/fall302.gif
+	frame	data/chars/Enemys/Mace/fall300.gif
+	frame	data/chars/Enemys/Mace/fall301.gif
+	frame	data/chars/Enemys/Mace/fall302.gif
+	frame	data/chars/Enemys/Mace/fall300.gif
+	frame	data/chars/Enemys/Mace/fall301.gif
+	frame	data/chars/Enemys/Mace/fall302.gif
+		offset  113  183
+	frame	data/chars/Enemys/Mace/fall102.gif
+
+anim fall8
+	loop	0
+	offset	112 192
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Mace/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  118  190
+	frame  data/chars/Enemys/Mace/fall101.gif
+		Attack1  0
+		offset  116  182
+	frame	data/chars/Enemys/Mace/fall102.gif
+
+anim fall9
+	loop	0
+	offset	126 191
+	delay	999
+		Attack1  0
+	frame	data/chars/Enemys/Mace/pain01.gif
+	frame	data/chars/Enemys/Mace/pain02.gif
+		offset  126  189
+	frame	data/chars/Enemys/Mace/fall400.gif
+		offset  157  140
+	frame	data/chars/Enemys/Mace/fall401.gif
+		offset  172  179
+	frame	data/chars/Enemys/Mace/fall402.gif
+		offset  145  194
+	frame	data/chars/Enemys/Mace/fall403.gif
+		offset  112  192
+	frame	data/chars/Enemys/Mace/fall404.gif
+		offset  117  182
+	frame	data/chars/Enemys/Mace/fall405.gif
+	delay	50
+		offset  143  192
+	frame	data/chars/Enemys/Mace/fall403.gif
+	delay	999
+		offset  111  183
+	frame	data/chars/Enemys/Mace/fall405.gif
+
+anim death
+	loop	0
+	offset	110 183
+	delay	20
+	frame	data/chars/Enemys/Mace/fall102.gif
+
+anim Pain8
+	loop	0
+	delay	15
+	offset	127 198
+	jumpframe  0  2  1  0
+	frame	data/chars/Enemys/Mace/jump00.gif
+	frame	data/chars/Enemys/Mace/jump00.gif
+

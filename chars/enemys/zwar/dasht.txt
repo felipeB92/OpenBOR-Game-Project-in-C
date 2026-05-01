@@ -1,0 +1,20 @@
+# Hit flash
+
+speed	8
+name	DashT
+Noname 1
+candamage  Player obstacle npc pshot
+type	None
+alpha 1
+
+
+anim idle
+	loop	0
+		delay  3
+		offset	93 140
+		Attack1  0
+	frame  data/chars/Enemys/Zwar/DashT.gif
+	frame  data/chars/Enemys/Zwar/00.gif
+	@cmd killentity getlocalvar("self")
+	frame  data/chars/Enemys/Zwar/00.gif
+

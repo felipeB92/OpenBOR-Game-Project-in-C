@@ -1,0 +1,19 @@
+name			Luzb00 #GROUND
+speed		8
+#scroll		-0.5
+shadow		0
+noquake 	1 1
+type			Panel
+setlayer 50
+
+anim idle
+	loop	1
+	delay	160
+	offset	0 0
+	frame	data/Bgs/St302/disco00.gif
+	frame	data/Bgs/St302/disco00.gif
+
+	
+	
+
+

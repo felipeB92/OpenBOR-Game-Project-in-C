@@ -1,0 +1,10 @@
+name			Front407 #GROUND
+type			None
+setlayer 999
+
+anim idle
+	loop	1
+	delay	2
+	offset	0 0
+	frame	data/Bgs/St407/Front01.gif
+

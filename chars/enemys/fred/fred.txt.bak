@@ -1,0 +1,500 @@
+name	Fred
+health	200
+speed	14
+riseinv				0.4 1
+hostile				player npc
+candamage			player npc obstacle
+Noblink 0
+falldie 1
+escapehits			2
+mp			        70
+mprate  			5
+type	Enemy
+gfxshadow	1
+JUMPHEIGHT 1 1
+Jumpheight 3
+risetime  5
+atchain    1 2
+icon	data/chars/Enemys/Fred/icon.gif 1
+diesound data/voices/bossdie1.wav
+running	20	3	3	1	1
+animationscript		data/scripts/drago.c
+
+##LOADS
+
+Load Freds
+
+
+remap data/chars/Enemys/Fred/idle00.gif data/chars/Enemys/Fred/alter1.gif
+remap data/chars/Enemys/Fred/idle00.gif data/chars/Enemys/Fred/alter2.gif
+remap data/chars/Enemys/Fred/idle00.gif data/chars/Enemys/Fred/alter3.gif
+remap data/chars/Enemys/Fred/idle00.gif data/chars/Enemys/Fred/alter4.gif
+
+anim spawn
+	loop	0
+	delay	16
+	offset	152 184
+	bbox	134 102 44 82
+	frame   data/chars/Enemys/Fred/idle00.gif
+
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	152 184
+	bbox	140 104 30 80
+	frame   data/chars/Enemys/Fred/idle00.gif
+
+
+anim walk
+	loop	1
+	offset	146 184
+	bbox	131 110 28 72
+		delay  12
+	frame	data/chars/Enemys/Fred/walk00.gif
+	frame	data/chars/Enemys/Fred/walk01.gif
+	frame	data/chars/Enemys/Fred/walk02.gif
+
+
+
+
+anim jump
+	loop	0
+	delay	30
+	offset	152 184
+	bbox	130 115 44 57
+	frame	data/chars/Enemys/Fred/jump00.gif
+
+
+
+anim attack1
+	loop	0
+	delay	6
+        Range 0 60
+	offset	152 184
+	bbox	127 111 27 71
+		Attack1  0
+	sound	data/sounds/armas/Whoosh.wav
+        hitfx	data/sounds/Armas/Corte.wav
+	frame	data/chars/Enemys/Fred/a100.gif
+	frame	data/chars/Enemys/Fred/a101.gif
+	frame	data/chars/Enemys/Fred/a102.gif
+		attack1  157  133  53  28  10  0  0  0  0  20
+	frame	data/chars/Enemys/Fred/a103.gif
+
+anim attack2
+	loop	0
+	delay	6
+	offset	152 184
+	bbox	127 111 27 71
+		Attack1  0
+	sound	data/sounds/armas/Whoosh2.wav
+        hitfx	data/sounds/Armas/Corte2.wav
+	frame	data/chars/Enemys/Fred/a200.gif
+	frame	data/chars/Enemys/Fred/a201.gif
+		attack3  163  127  43  43  15  1  1  0  0  20
+	frame	data/chars/Enemys/Fred/a202.gif
+	frame	data/chars/Enemys/Fred/a203.gif
+
+
+anim Special
+	loop	0
+	delay	12
+        mponly 1
+	energycost 60 1
+	offset	152 184
+        hitfx	data/sounds/Armas/Corte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Fred/a100.gif
+	frame	data/chars/Enemys/Fred/a101.gif
+		move  10
+		attack2  150  102  58  38  10  1  0  0  0  20
+		delay  5
+		@cmd  spawn01  "freds"  0  0  0
+	frame	data/chars/Enemys/Fred/a102.gif
+		@cmd  spawn01  "freds"  0  0  0
+	frame	data/chars/Enemys/Fred/a102.gif
+		@cmd  spawn01  "freds"  0  0  0
+	frame	data/chars/Enemys/Fred/a102.gif
+		@cmd  spawn01  "freds"  0  0  0
+		Attack1  0
+	frame	data/chars/Enemys/Fred/a102.gif
+		attack1  157  133  53  28  10  0  0  0  0  20
+		move  3
+	frame	data/chars/Enemys/Fred/a103.gif
+	sound	data/sounds/armas/Whoosh2.wav
+        hitfx	data/sounds/Armas/Corte2.wav
+	frame	data/chars/Enemys/Fred/a200.gif
+		Attack1  0
+	frame	data/chars/Enemys/Fred/a201.gif
+		attack3  163  127  43  43  15  1  1  0  0  20
+	frame	data/chars/Enemys/Fred/a202.gif
+	frame	data/chars/Enemys/Fred/a203.gif
+
+
+
+anim Special2
+	loop	0
+	delay	12
+        mponly 1
+	energycost 60 1
+	offset	152 184
+        hitfx	data/sounds/Armas/Corte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Fred/a100.gif
+	frame	data/chars/Enemys/Fred/a101.gif
+		move  10
+		attack2  150  102  58  38  10  1  0  0  0  20
+		delay  5
+		@cmd  spawn01  "freds"  0  0  0
+	frame	data/chars/Enemys/Fred/a102.gif
+		@cmd  spawn01  "freds"  0  0  0
+	frame	data/chars/Enemys/Fred/a102.gif
+		@cmd  spawn01  "freds"  0  0  0
+	frame	data/chars/Enemys/Fred/a102.gif
+		@cmd  spawn01  "freds"  0  0  0
+		Attack1  0
+	frame	data/chars/Enemys/Fred/a102.gif
+		attack1  157  133  53  28  10  0  0  0  0  20
+		move  3
+	frame	data/chars/Enemys/Fred/a103.gif
+	sound	data/sounds/armas/Whoosh2.wav
+        hitfx	data/sounds/Armas/Corte2.wav
+	frame	data/chars/Enemys/Fred/a200.gif
+		Attack1  0
+	frame	data/chars/Enemys/Fred/a201.gif
+		attack3  163  127  43  43  15  1  1  0  0  20
+	frame	data/chars/Enemys/Fred/a202.gif
+	frame	data/chars/Enemys/Fred/a203.gif
+
+anim Upper
+	loop	0
+	delay	12
+        Range 60 100
+	offset	152 184
+        hitfx	data/sounds/Armas/Corte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Fred/a100.gif
+	frame	data/chars/Enemys/Fred/a101.gif
+		move  10
+		attack2  150  102  58  38  10  1  0  0  0  20
+		delay  5
+		@cmd  spawn01  "freds"  0  0  0
+	frame	data/chars/Enemys/Fred/a102.gif
+		@cmd  spawn01  "freds"  0  0  0
+	frame	data/chars/Enemys/Fred/a102.gif
+		@cmd  spawn01  "freds"  0  0  0
+	frame	data/chars/Enemys/Fred/a102.gif
+		@cmd  spawn01  "freds"  0  0  0
+		Attack1  0
+	frame	data/chars/Enemys/Fred/a102.gif
+		attack1  157  133  53  28  10  0  0  0  0  20
+		move  3
+	frame	data/chars/Enemys/Fred/a103.gif
+	sound	data/sounds/armas/Whoosh2.wav
+        hitfx	data/sounds/Armas/Corte2.wav
+	frame	data/chars/Enemys/Fred/a200.gif
+		Attack1  0
+	frame	data/chars/Enemys/Fred/a201.gif
+		attack3  163  127  43  43  15  1  1  0  0  20
+	frame	data/chars/Enemys/Fred/a202.gif
+	frame	data/chars/Enemys/Fred/a203.gif
+
+
+anim Freespecial2
+	loop	0
+	delay	12
+        Range 60 100
+	offset	152 184
+        hitfx	data/sounds/Armas/Corte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Fred/a100.gif
+	frame	data/chars/Enemys/Fred/a101.gif
+		move  10
+		attack2  150  102  58  38  10  1  0  0  0  20
+		delay  5
+		@cmd  spawn01  "freds"  0  0  0
+	frame	data/chars/Enemys/Fred/a102.gif
+		@cmd  spawn01  "freds"  0  0  0
+	frame	data/chars/Enemys/Fred/a102.gif
+		@cmd  spawn01  "freds"  0  0  0
+	frame	data/chars/Enemys/Fred/a102.gif
+		@cmd  spawn01  "freds"  0  0  0
+	frame	data/chars/Enemys/Fred/a102.gif
+		@cmd  spawn01  "freds"  0  0  0
+	frame	data/chars/Enemys/Fred/a102.gif
+		@cmd  spawn01  "freds"  0  0  0
+	frame	data/chars/Enemys/Fred/a102.gif
+		@cmd  spawn01  "freds"  0  0  0
+	frame	data/chars/Enemys/Fred/a102.gif
+		@cmd  spawn01  "freds"  0  0  0
+	frame	data/chars/Enemys/Fred/a102.gif
+		@cmd  spawn01  "freds"  0  0  0
+	frame	data/chars/Enemys/Fred/a102.gif
+		@cmd  spawn01  "freds"  0  0  0
+		Attack1  0
+	frame	data/chars/Enemys/Fred/a102.gif
+		attack1  157  133  53  28  10  0  0  0  0  20
+		move  3
+	frame	data/chars/Enemys/Fred/a103.gif
+	sound	data/sounds/armas/Whoosh2.wav
+        hitfx	data/sounds/Armas/Corte2.wav
+	frame	data/chars/Enemys/Fred/a200.gif
+		Attack1  0
+	frame	data/chars/Enemys/Fred/a201.gif
+		attack3  163  127  43  43  15  1  1  0  0  20
+	frame	data/chars/Enemys/Fred/a202.gif
+	frame	data/chars/Enemys/Fred/a203.gif
+
+
+anim Freespecial
+	loop	0
+	delay	5
+        Range   100 150
+	offset	152 184
+		Attack1  0
+        hitfx	data/sounds/Armas/Corte2.wav
+		move  5
+	frame	data/chars/Enemys/Fred/a100.gif
+	frame	data/chars/Enemys/Fred/a101.gif
+	frame	data/chars/Enemys/Fred/a300.gif
+	frame	data/chars/Enemys/Fred/a301.gif
+		move  50
+	frame	data/chars/Enemys/Fred/a302.gif
+	sound	data/sounds/armas/Whoosh.wav
+		offset  9  122
+		move  0
+		delay  3
+	frame	data/chars/Enemys/Fred/P101.gif
+	frame	data/chars/Enemys/Fred/P102.gif
+		attack3  -1  21  35  101  25  1  0  0  0  25
+	frame	data/chars/Enemys/Fred/P103.gif
+		attack3  -2  1  37  121  25  1  0  0  0  25
+	frame	data/chars/Enemys/Fred/P104.gif
+	frame	data/chars/Enemys/Fred/P105.gif
+	frame	data/chars/Enemys/Fred/P106.gif
+	frame	data/chars/Enemys/Fred/P107.gif
+		Attack1  0
+	frame	data/chars/Enemys/Fred/P108.gif
+	sound	data/sounds/armas/Whoosh2.wav
+		move  50
+	frame	data/chars/Enemys/Fred/a302.gif
+		move  0
+	frame	data/chars/Enemys/Fred/P101.gif
+	frame	data/chars/Enemys/Fred/P102.gif
+	frame	data/chars/Enemys/Fred/P103.gif
+		attack3  0  0  34  122  25  1  0  0  0  20
+	frame	data/chars/Enemys/Fred/P104.gif
+	frame	data/chars/Enemys/Fred/P105.gif
+	frame	data/chars/Enemys/Fred/P106.gif
+	frame	data/chars/Enemys/Fred/P107.gif
+		Attack1  0
+	frame	data/chars/Enemys/Fred/P108.gif
+		move  50
+	frame	data/chars/Enemys/Fred/a302.gif
+	sound	data/sounds/armas/Whoosh3.wav
+		move  0
+	frame	data/chars/Enemys/Fred/P101.gif
+	frame	data/chars/Enemys/Fred/P102.gif
+	frame	data/chars/Enemys/Fred/P103.gif
+		attack3  2  1  31  120  25  1  0  0  0  20
+	frame	data/chars/Enemys/Fred/P104.gif
+	frame	data/chars/Enemys/Fred/P105.gif
+	frame	data/chars/Enemys/Fred/P106.gif
+	frame	data/chars/Enemys/Fred/P107.gif
+	frame	data/chars/Enemys/Fred/P108.gif
+		offset  152  184
+		move  50
+		Attack1  0
+		delay  5
+	frame	data/chars/Enemys/Fred/a302.gif
+		move  5
+	frame	data/chars/Enemys/Fred/a301.gif
+	frame	data/chars/Enemys/Fred/a300.gif
+	frame	data/chars/Enemys/Fred/a101.gif
+
+
+
+
+
+anim grabbed
+	loop	0
+	delay	100
+	offset	152 184
+	bbox	140 113 33 61
+	frame	data/chars/Enemys/Fred/grabbed00.gif
+
+
+
+
+anim rise
+	loop	0
+	offset	152 184
+	delay	10
+	frame	data/chars/Enemys/Fred/Rise01.gif
+	frame	data/chars/Enemys/Fred/Rise02.gif
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	152 184
+	bbox	127 137 31 41
+	frame	data/chars/Enemys/Fred/jumpland00.gif
+
+anim death
+	loop	0
+	offset	152 184
+	delay	20
+	jumpframe  0  1  -1  0
+	landframe  2
+	frame	data/chars/Enemys/Fred/fall101.gif
+	frame	data/chars/Enemys/Fred/fall100.gif
+	frame	data/chars/Enemys/Fred/fall102.gif
+
+anim pain
+	loop	0
+	offset	146 183
+	bbox	123 112 39 72
+		delay  30
+	frame	data/chars/Enemys/Fred/pain01.gif
+
+
+anim pain2
+	loop	0
+	offset	149 184
+	bbox	137 112 32 70
+	delay	30
+	frame	data/chars/Enemys/Fred/pain02.gif
+
+anim pain3
+	loop	0
+	offset	150 183
+	bbox	146 120 29 64
+	jumpframe  0  2  0  0
+	delay	10
+	frame	data/chars/Enemys/Fred/Pain02.gif
+	frame	data/chars/Enemys/Fred/fall100.gif
+	frame	data/chars/Enemys/Fred/Pain01.gif
+
+
+anim fall
+	loop	0
+	offset	151 181
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Fred/fall101.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Fred/fall100.gif
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  140  172
+	frame  data/chars/Enemys/Fred/fall403.gif
+		Attack1  0
+		offset  137  184
+	frame	data/chars/Enemys/Fred/fall102.gif
+
+anim fall2
+	loop	0
+	offset	136 183
+	delay	20
+	jumpframe  0  2  -3.5  0
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Fred/fall101.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Fred/fall100.gif
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  142  174
+	frame  data/chars/Enemys/Fred/fall403.gif
+		Attack1  0
+		offset  138  184
+	frame	data/chars/Enemys/Fred/fall102.gif
+#Shock
+
+anim fall4
+	loop	0
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Fred/fall200.gif
+	frame	data/chars/Enemys/Fred/fall201.gif
+	frame	data/chars/Enemys/Fred/fall200.gif
+	frame	data/chars/Enemys/Fred/fall201.gif
+	frame	data/chars/Enemys/Fred/fall200.gif
+	frame	data/chars/Enemys/Fred/fall201.gif
+	frame	data/chars/Enemys/Fred/fall200.gif
+		offset  137  185
+	frame	data/chars/Enemys/Fred/fall102.gif
+#Burn
+
+anim fall5
+	loop	0
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Fred/fall300.gif
+	frame	data/chars/Enemys/Fred/fall301.gif
+	frame	data/chars/Enemys/Fred/fall302.gif
+	frame	data/chars/Enemys/Fred/fall300.gif
+	frame	data/chars/Enemys/Fred/fall301.gif
+	frame	data/chars/Enemys/Fred/fall302.gif
+	frame	data/chars/Enemys/Fred/fall300.gif
+	frame	data/chars/Enemys/Fred/fall301.gif
+	frame	data/chars/Enemys/Fred/fall302.gif
+		offset  137  184
+	frame	data/chars/Enemys/Fred/fall102.gif
+
+anim fall8
+	loop	0
+	offset	146 184
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Fred/fall101.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Fred/fall100.gif
+		Attack1  0
+		offset  138  185
+	frame	data/chars/Enemys/Fred/fall102.gif
+
+anim fall9
+	loop	0
+	offset	144 182
+	delay	999
+		Attack1  0
+	frame	data/chars/Enemys/Fred/pain01.gif
+	frame	data/chars/Enemys/Fred/pain02.gif
+	frame	data/chars/Enemys/Fred/fall400.gif
+		offset  155  162
+	frame	data/chars/Enemys/Fred/fall401.gif
+		offset  159  183
+	frame	data/chars/Enemys/Fred/fall402.gif
+		offset  136  168
+	frame	data/chars/Enemys/Fred/fall403.gif
+		offset  144  184
+	frame	data/chars/Enemys/Fred/fall404.gif
+		offset  137  183
+	frame	data/chars/Enemys/Fred/fall405.gif
+	delay	50
+		offset  145  161
+	frame	data/chars/Enemys/Fred/fall403.gif
+	delay	999
+		offset  133  182
+	frame	data/chars/Enemys/Fred/fall405.gif
+
+
+anim Pain8
+	loop	0
+	delay	30
+	offset	157 190
+	jumpframe  0  2  1  0
+	frame	data/chars/Enemys/fred/jump00.gif
+	frame	data/chars/Enemys/fred/jump00.gif
+

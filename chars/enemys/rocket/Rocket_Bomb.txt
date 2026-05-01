@@ -1,0 +1,70 @@
+name	 Rocket_Bomb
+health   1
+nomove 1 1
+#type	pshot#npc#pshot
+subtype  weapon
+
+type    enemy
+cantgrab 1
+antigrab 5
+nopain 1
+speed 10
+falldie 1
+candamage player
+
+Load Boom02
+
+animationscript		data/scripts/drago.c
+
+anim	idle
+	loop	0
+	delay	20
+	offset	25 33
+        sound	data/sounds/golpes/Soco.wav
+	frame   data/chars/Enemys/Rocket/bomb/bomb00.gif
+	delay	5
+	frame   data/chars/Enemys/Rocket/bomb/bomb01.gif
+	frame   data/chars/Enemys/Rocket/bomb/bomb02.gif
+	frame   data/chars/Enemys/Rocket/bomb/bomb03.gif
+	frame   data/chars/Enemys/Rocket/bomb/bomb03.gif
+        @cmd spawn01 "Boom02" 0 0 0
+	frame	data/chars/objetos/empty.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/objetos/empty.gif
+
+anim  pain
+	loop  0
+		delay  15
+		offset  25  33
+	sound  data/sounds/glass3.wav
+	frame   data/chars/Enemys/Rocket/bomb/bomb00.gif
+	@cmd killentity getlocalvar("self")
+	frame   data/chars/Enemys/Rocket/bomb/bomb00.gif
+
+anim	spawn#idle
+	loop	0
+	offset	25 33
+	delay	69
+	bbox  21  19  9  13
+	frame   data/chars/Enemys/Rocket/bomb/bomb00.gif
+	@cmd    anichange "ANI_idle"
+	frame	data/chars/objetos/empty.gif
+
+anim  death
+	loop  0
+		delay  45
+		offset  25  33
+		sound  data/sounds/glass3.wav
+	frame   data/chars/Enemys/Rocket/bomb/bomb00.gif
+        @cmd killentity getlocalvar("self")
+	frame   data/chars/Enemys/Rocket/bomb/bomb00.gif
+
+anim  fall
+	loop  0
+		delay  60
+		offset  25  32
+		sound  data/sounds/glass3.wav
+	frame   data/chars/Enemys/Rocket/bomb/bomb00.gif
+@cmd killentity getlocalvar("self")
+	frame   data/chars/Enemys/Rocket/bomb/bomb00.gif
+

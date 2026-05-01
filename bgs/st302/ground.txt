@@ -1,0 +1,14 @@
+name		st2_ground
+type		none
+shadow		0
+antigravity	100
+setlayer	-3
+
+anim idle
+	loop	1
+	delay	32
+	offset	1 1
+	frame	data/bgs/sor3_st2/ground00.gif
+	frame	data/bgs/sor3_st2/ground01.gif
+	frame	data/bgs/sor3_st2/ground02.gif
+	frame	data/bgs/sor3_st2/ground03.gif

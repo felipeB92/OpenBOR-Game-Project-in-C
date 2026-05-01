@@ -1,0 +1,22 @@
+name		zero300
+type		panel
+shadow		0
+speed		5
+scroll		-0.5
+setlayer	11
+
+anim idle
+	loop	1
+	delay	8
+	offset	32 44
+	frame	data/bgs/st308/zero00.gif
+	frame	data/bgs/st308/zero01.gif
+	frame	data/bgs/st308/zero02.gif
+	frame	data/bgs/st308/zero03.gif
+	frame	data/bgs/st308/zero04.gif
+	frame	data/bgs/st308/zero05.gif
+	frame	data/bgs/st308/zero06.gif
+	frame	data/bgs/st308/zero07.gif
+	frame	data/bgs/st308/zero08.gif
+	frame	data/bgs/st308/zero09.gif
+

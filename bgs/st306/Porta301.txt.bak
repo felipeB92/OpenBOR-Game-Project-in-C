@@ -1,0 +1,24 @@
+name		Porta301
+type		none
+shadow		0
+#setlayer	0
+antigravity	100
+
+anim idle
+	loop	0
+	delay	9
+	offset	0 0
+	frame	data/bgs/St306/PORTA02/P00.gif
+	frame	data/bgs/St306/PORTA02/P01.gif
+	frame	data/bgs/St306/PORTA02/P02.gif
+	frame	data/bgs/St306/PORTA02/P03.gif
+	frame	data/bgs/St306/PORTA02/P04.gif
+	frame	data/bgs/St306/PORTA02/P05.gif
+	frame	data/bgs/St306/PORTA02/P06.gif
+	frame	data/bgs/St306/PORTA02/P07.gif
+	frame	data/bgs/St306/PORTA02/P08.gif
+	frame	data/bgs/St306/PORTA02/P09.gif
+	frame	data/bgs/St306/PORTA02/P10.gif
+	frame	data/bgs/St306/PORTA02/P11.gif
+	frame	data/bgs/St306/PORTA02/P12.gif
+	frame	data/bgs/St306/PORTA02/P13.gif

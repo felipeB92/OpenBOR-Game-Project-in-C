@@ -1,0 +1,260 @@
+music		data/bgs/St404/Lv404b.bor
+bossmusic	data/music/boss2.bor
+
+###BACKGROUND
+background		data/bgs/St404/back02.gif
+
+###BGLAYER/PANEL
+panel			data/bgs/St404/pN02.gif	none	none
+
+###MISC
+Frontpanel			data/bgs/St05/Front02.gif
+#order			a
+settime			99
+scrollspeed 	0.5
+stagenumber 	4
+cameratype 1
+backgroundSpeed 1 40
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	50 80  150
+spawn2  	55 80  150
+spawn3  	60 80  150
+
+light		128 -128
+at			0
+
+
+
+
+spawn  Box02
+map    1
+Item   Apple
+	coords  96 230
+	at  0
+
+
+
+spawn  Box02
+Item   Kunai
+	coords  240 230
+	at  0
+
+spawn  Box02
+2pItem   Knife
+	coords  300 280
+	at  0
+
+
+spawn  Box02
+map    1
+Item   Cash
+	coords  400 240
+	at  0
+
+wait
+at 0
+
+Group   4 4
+at 0
+
+spawn  Galsia_
+MAp    4
+health 90
+	coords  420 250
+	at  0
+
+spawn  Donovan_
+MAp    4
+health 90
+	coords  400 260
+	at  0
+
+spawn  Signal_
+MAp    3
+health 70
+	coords  350 245
+	at  0
+
+spawn  Signal
+health 50
+	coords  -100 245
+	at  0
+
+
+spawn  Vice
+health 50
+	coords  500 245
+	at  0
+
+spawn  Vice
+health 50
+	coords  -100 245
+	at  0
+
+spawn  Slum
+map    4
+health 90
+	coords  500 245
+	at  0
+
+spawn  Slum
+map    4
+health 90
+	coords  -100 245
+	at  0
+
+
+
+spawn  Box
+Item   Apple
+	coords  582 231
+	at  1
+
+wait
+at 280
+
+Group 4  4
+at 280
+
+spawn  Kusanagi
+flip   1
+health 70
+	coords  100 200 150
+	at  280
+
+spawn  Kusanagi
+flip   1
+health 70
+	coords  130 250 150
+	at  280
+
+
+spawn  Kusanagi
+health 70
+	coords  350 200 150
+	at  280
+
+spawn  Kusanagi
+health 70
+	coords  400 250 150
+	at  280
+
+spawn  Sword
+	coords  500 250 140
+	at  280
+
+spawn  Kusanagi
+map    1
+health 80
+	coords  550 250 150
+	at  280
+
+
+spawn  Kunai
+	coords  -100 250 140
+	at  280
+
+spawn  Kusanagi
+map    1
+health 80
+	coords  -100 250 150
+	at  280
+
+spawn  Kusanagi
+map    4
+health 100
+	coords  500 250 150
+	at  280
+
+
+spawn  Kusanagi
+map    4
+health 100
+	coords  -100 250 150
+	at  280
+
+
+
+
+
+
+Group 9  9
+at 281
+
+spawn  BOx
+2pitem Chicken
+	coords  519 243
+	at  281
+
+
+spawn  BOx
+item   Chicken
+	coords  531 262
+	at  281
+
+
+spawn  Lata
+Flip   1
+item   Pipe
+	coords  547 205
+	at  281
+
+
+
+spawn  Lata
+item   Knife
+	coords  600 260
+	at  281
+
+
+
+
+spawn  Zamza
+map    4
+health 400
+boss   1
+	coords  600 217 150
+	at  675
+
+spawn  Tiger
+flip   1
+health 70
+	coords  100 200 150
+	at  675
+
+spawn  Hakuyo
+flip   1
+health 70
+	coords  130 250 150
+	at  675
+
+
+spawn  Haku_Oh
+health 70
+	coords  350 200 150
+	at  675
+
+spawn  Kusanagi
+health 70
+	coords  400 250 150
+	at  675
+
+
+
+
+
+
+
+
+
+

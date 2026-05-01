@@ -1,0 +1,429 @@
+music		data/bgs/St404/Lv404a.bor
+bossmusic	data/music/boss3.bor
+
+###BACKGROUND
+background		data/bgs/St404/back00a.gif      0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.7
+bglayer			data/bgs/St404/back00.gif	0.1 1 0 0 0 0 -1 1 1 
+
+###BGLAYER/PANEL
+panel			data/bgs/St404/pN00.gif	none	none
+
+###MISC
+Frontpanel			data/bgs/St404/Front00.gif
+#order			a
+settime			99
+scrollspeed 	0.5
+stagenumber 	4
+cameratype 1
+backgroundSpeed 1 40
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	30 30  150
+spawn2  	35 30 150
+spawn3  	40 30  150
+
+light		128 -128
+at			0
+
+
+spawn  Luz02
+	coords  250 0
+	at  0
+
+spawn  Poste404
+	coords  250 1
+	at  0
+
+
+spawn  Luz02
+	coords  750 0
+	at  0
+
+spawn  Poste404
+	coords  750 1
+	at  0
+
+
+spawn  Luz02
+	coords  1250 0
+	at  0
+
+spawn  Poste404
+	coords  1250 1
+	at  0
+
+spawn  Luz02
+	coords  1750 0
+	at  0
+
+spawn  Poste404
+	coords  1750 1
+	at  0
+
+
+spawn  Lata
+2pItem Gold
+	coords  250 240
+	at  0
+
+spawn  Lata
+Item Pipe
+	coords  300 241
+	at  0
+
+spawn  Lata
+Item Cash
+	coords  350 242
+	at  0
+
+
+spawn  Fog_
+health 70
+	coords  450 200
+	at  0
+
+spawn  Jonny
+health 50
+	coords  -100 230 150
+	at  50
+
+spawn  Jonny
+health 50
+	coords  500 230 150
+	at  50
+
+
+spawn  Donovan
+map    1
+health 70
+	coords  560 260 150
+	at  100
+
+
+wait 
+at  200
+
+Group 5 5
+at  200
+
+spawn  Fog
+map    1
+health 80
+	coords  -100 260 150
+	at  200
+
+
+spawn  Garnet
+map    1
+health 70
+	coords  500 190 150
+	at  200
+
+
+spawn  Electra
+map    1
+health 80
+	coords  500 230 150
+	at  200
+
+spawn  Nora
+flip   1
+map    1
+health 70
+	coords  -100 190
+	at  200
+
+spawn  Tiger
+map    1
+health 80
+	coords  300 250 150
+	at  200
+
+spawn  Nora
+flip   1
+map    2
+health 70
+	coords  500 240
+	at  200
+
+
+spawn  NOra
+flip   1
+map    2
+health 90
+	coords  -100 240
+	at  200
+
+spawn  Moto
+alias  Fog
+health 50
+	coords  500 240
+	at  201
+
+wait 
+at  400
+
+Group 4 4
+at  400
+
+
+
+spawn  Pipe
+	coords  -100 240 140
+	at  400
+
+spawn  Fog
+health 70
+	coords  -100 240 150
+	at  400
+
+spawn  Pipe
+	coords  600 240 140
+	at  400
+
+spawn  Fog
+health 70
+	coords  600 240 150
+	at  400
+
+
+spawn  pipe
+	coords  -100 260 140
+	at  400
+
+spawn  Fog
+health 70
+	coords  -100 260 150
+	at  400
+
+
+spawn  Pipe
+	coords  600 260 140
+	at  400
+
+spawn  Fog
+health 70
+	coords  600 260 150
+	at  400
+
+
+spawn  GArnet
+health 50
+	coords  -100 190
+	at  400
+
+spawn  Garnet
+health 50
+	coords  600 190
+	at  400
+
+spawn  GAlsia
+health 50
+	coords  -100 240
+	at  400
+
+spawn  Donovan
+map    1
+health 70
+	coords  600 240
+	at  400
+
+wait 
+at  401
+
+spawn  Moto
+Alias  Fog
+health 70
+	coords  500 260
+	at  401
+
+spawn  Moto
+Alias  Fog
+health 70
+	coords  -100 235
+	at  401
+
+
+spawn  Lata
+2pItem Apple
+	coords  500 240
+	at  402
+
+spawn  Lata
+Item Apple
+	coords  510 260
+	at  0
+
+
+
+spawn  Clown
+health 70
+	coords  -100 235
+	at  450
+
+spawn  Clown_
+health 70
+	coords  500 235
+	at  450
+
+wait 
+at  620
+
+Group 4 4
+at  620
+
+
+spawn  Haku_oh
+map    4
+health 90
+	coords  600 240
+	at  620
+
+
+spawn  Hakuyo
+map    4
+health 90
+	coords -100 240
+	at  620
+
+spawn  Tiger
+map    4
+health 90
+	coords 250 240 150
+	at  620
+
+
+spawn  Lata
+Item Chicken
+	coords  572 240
+	at  627
+
+spawn  Lata
+2pItem apple
+	coords  527 260
+	at  621
+
+
+
+
+spawn  Bigben
+map    3
+health 100
+	coords 600 240
+	at  700
+
+Group 2 2
+at  800
+
+Wait
+at  800
+
+spawn  Bigben
+map    3
+health 100
+	coords 600 260
+	at  800
+
+spawn  Bigben
+map    4
+health 90
+	coords 650 240
+	at  800
+
+
+Group 9 9
+at  801
+
+
+
+
+spawn  Haku_OH
+map    4
+health 90
+	coords 600 240
+	at  900
+
+wait 
+at  1000
+
+Group 4 4
+at  1000
+
+
+spawn  HAku_OH
+map    4
+health 90
+	coords 600 240
+	at  1000
+
+spawn  HAku_OH
+map    4
+health 90
+	coords -100 240 50
+	at  1000
+
+
+
+
+
+
+
+
+spawn  Tiger
+map    4
+health 90
+	coords -100 240 150
+	at  1000
+
+wait 
+at  1541
+
+Group 2 2
+at  1541
+
+
+spawn  JAck
+flip   1
+map    3
+health 200
+	coords  -100 30
+	at  1541
+
+
+spawn  Antonio
+MAp    3
+health 200
+	coords  550 240
+	at  1541
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

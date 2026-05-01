@@ -1,0 +1,18 @@
+name			e300 #ELEVATOR ANIMATED BGLAYER
+type			none
+shadow			0
+setlayer		-15
+animationscript		data/scripts/drago.c
+
+load			Elevador01
+load			Elevador02
+
+anim idle
+	loop	1
+	delay	16
+	offset	0 800
+	frame	data/bgs/st303/bg00.gif
+	frame	data/bgs/st303/bg01.gif
+	frame	data/bgs/st303/bg02.gif
+	frame	data/bgs/st303/bg03.gif
+

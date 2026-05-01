@@ -1,0 +1,88 @@
+##MAIN
+name		 st6_door4
+type		 item
+subtype		 touch
+candamage	 player
+
+##ENERGY
+mp			 1
+
+##MISC
+shadow		 0
+nolife		 1
+antigravity	 100
+setlayer	 -1100
+
+##SCRIPTS
+didhitscript data/scripts/didhit/doors.c
+script		 data/scripts/updateentity/st6_doors.c
+
+##ANIMATIONS#############################################################################
+
+anim idle #CLOSED
+	loop	0
+	delay	128
+	offset	50 100
+	frame	data/bgs/sor3_st6/door00.gif
+	
+anim follow1 #OPENED
+	loop	0
+	delay	12
+	offset	50 100
+	frame	data/bgs/sor3_st6/door00.gif
+		delay	2
+		offset	48 100
+	sound	data/sounds/Door.wav
+	frame	data/bgs/sor3_st6/door00.gif
+		offset	46 100
+	frame	data/bgs/sor3_st6/door00.gif
+		offset	44 100
+	frame	data/bgs/sor3_st6/door00.gif
+		offset	42 100
+	frame	data/bgs/sor3_st6/door00.gif
+		offset	40 100
+	frame	data/bgs/sor3_st6/door00.gif
+		offset	38 100
+	frame	data/bgs/sor3_st6/door00.gif
+		offset	36 100
+	frame	data/bgs/sor3_st6/door00.gif
+		offset	34 100
+	frame	data/bgs/sor3_st6/door00.gif
+		offset	32 100
+	frame	data/bgs/sor3_st6/door00.gif
+		offset	30 100
+	frame	data/bgs/sor3_st6/door00.gif
+		offset	28 100
+	frame	data/bgs/sor3_st6/door00.gif
+		offset	26 100
+	frame	data/bgs/sor3_st6/door00.gif
+		offset	24 100
+	frame	data/bgs/sor3_st6/door00.gif
+		offset	22 100
+	frame	data/bgs/sor3_st6/door00.gif
+		offset	20 100
+	frame	data/bgs/sor3_st6/door00.gif
+		offset	18 100
+	frame	data/bgs/sor3_st6/door00.gif
+		offset	16 100
+	frame	data/bgs/sor3_st6/door00.gif
+		offset	14 100
+	frame	data/bgs/sor3_st6/door00.gif
+		offset	12 100
+	frame	data/bgs/sor3_st6/door00.gif
+		offset	10 100
+	frame	data/bgs/sor3_st6/door00.gif
+		offset	8 100
+	frame	data/bgs/sor3_st6/door00.gif
+		offset	6 100
+	frame	data/bgs/sor3_st6/door00.gif
+		offset	4 100
+	frame	data/bgs/sor3_st6/door00.gif
+		offset	2 100
+	frame	data/bgs/sor3_st6/door00.gif
+		offset	0 100
+	frame	data/bgs/sor3_st6/door00.gif
+		offset	0 100
+	attack -25 3 49 98 0 0 0 1 0 12
+	noreflect 1
+	frame	data/bgs/sor3_st6/door00.gif

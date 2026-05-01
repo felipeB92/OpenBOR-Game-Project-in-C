@@ -1,0 +1,19 @@
+name			Onda #GROUND
+type			None
+setlayer 999
+
+anim idle
+	loop	1
+	delay	15
+	offset	0 0
+	frame	data/Bgs/St03/Onda01.gif
+	frame	data/Bgs/St03/Onda02.gif
+	frame	data/Bgs/St03/Onda03.gif
+	frame	data/Bgs/St03/Onda04.gif
+		delay  15
+		offset  0  0
+	frame	data/Bgs/St03/Onda05.gif
+		delay  30
+		offset  0  -5
+	frame  data/Bgs/St03/Onda05.gif
+
