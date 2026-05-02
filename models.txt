@@ -98,6 +98,7 @@ know	shiva_pipe	data/chars/Players/Shiva_/Shiva_pipe.txt
 know	shiva_Sword	data/chars/Players/Shiva_/Shiva_Sword.txt
 know	shivaSp1	data/chars/Players/Shiva_/ShivaSp1.txt
 know	shivaSp2	data/chars/Players/Shiva_/ShivaSp2.txt
+know	shivap01	data/chars/Players/Shiva_/Shivap01.txt
 
 load	shiva__		data/chars/Players/Shiva_/Shiva__.txt
 

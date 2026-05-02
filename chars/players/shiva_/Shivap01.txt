@@ -1,0 +1,63 @@
+name	Shivap01
+health	100
+mp 20
+#mprate 1
+riseinv				0.4 1
+speed	14
+Alpha 1
+type	none
+gfxshadow	1
+candamage			enemy npc obstacle
+antigrab 2
+JUMPHEIGHT 1 1
+Jumpheight 3
+atchain    1 1 2 3
+weapons				Blaze_Knife Blaze_Sword Blaze_pipe Blaze_Kunai
+diesound data/chars/Players/Shiva_/death.wav
+running	27	3	2	1	1
+
+
+
+remap data/chars/Players/Shiva_/idle00.gif data/chars/Players/Shiva_/alter1.gif
+remap data/chars/Players/Shiva_/idle00.gif data/chars/Players/Shiva_/alter2.gif
+remap data/chars/Players/Shiva_/idle00.gif data/chars/Players/Shiva_/alter3.gif
+remap data/chars/Players/Shiva_/idle00.gif data/chars/Players/Shiva_/alter4.gif
+
+
+
+
+anim idle
+	loop	0
+	delay	4
+		delay  5
+		offset  127  201
+		Attack1  0
+	fastattack 1
+        hitfx	data/sounds/golpes/medio.wav
+	Sound	data/chars/Players/Shiva_/p01.wav
+	frame	data/chars/Players/Shiva_/orb/P00.gif
+		attack1  148  114  96  60  5  0  0  0  0  15
+	frame	data/chars/Players/Shiva_/orb/P01.gif
+		Attack1  0
+	frame	data/chars/Players/Shiva_/orb/P02.gif
+		attack2  148  114  96  60  5  0  0  0  0  15
+	frame	data/chars/Players/Shiva_/orb/P03.gif
+		Attack1  0
+	frame	data/chars/Players/Shiva_/orb/P04.gif
+		attack1  148  114  96  60  5  0  0  0  0  15
+	frame	data/chars/Players/Shiva_/orb/P05.gif
+		Attack1  0
+	frame	data/chars/Players/Shiva_/orb/P06.gif
+		attack2  148  114  96  60  5  0  0  0  0  15
+	frame	data/chars/Players/Shiva_/orb/P07.gif
+		Attack1  0
+	frame	data/chars/Players/Shiva_/orb/P08.gif
+	frame	data/chars/Players/Shiva_/orb/P09.gif
+		attack2  148  114  96  60  30  1  0  0  25  15
+	frame	data/chars/Players/Shiva_/orb/P10.gif
+	frame	data/chars/Players/Shiva_/orb/P11.gif
+	frame	data/chars/Players/Shiva_/orb/P12.gif
+	frame	data/chars/Players/Shiva_/orb/P13.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/Players/Shiva_/orb/P13.gif
+

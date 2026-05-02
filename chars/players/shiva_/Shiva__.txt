@@ -20,7 +20,7 @@ running	27	3	2	1	1
 animationscript		data/scripts/drago.c
 
 
-Load T00
+Load Shivap01
 Load ShivaSP1
 Load ShivaSP2
 
@@ -147,6 +147,7 @@ anim jumpforward
         hitfx	data/sounds/golpes/Forte.wav
         Sound	data/sounds/golpes/soco.wav
 		Attack1  0
+	Sound	data/chars/Enemys/Shiva/a2.wav
 	frame	data/chars/Players/Shiva_/ja300.gif
 		attack1  139  117  71  51  10  1  0  0  0  15
 		offset  153  192
@@ -264,6 +265,7 @@ anim Freespecial
 		attack3  126  142  66  53  5  0  0  0  0  15
 	frame	data/chars/Players/Shiva_/sp202.gif
 		Attack1  0
+		sound  data/chars/Enemys/Shiva/fs.wav
 	frame	data/chars/Players/Shiva_/sp203.gif
 		attack2  120  88  87  106  15  1  0  0  0  15
 	frame	data/chars/Players/Shiva_/sp204.gif
@@ -281,6 +283,7 @@ anim Freespecial2
 	offset	136 192
         hitfx	data/sounds/golpes/forte.wav
 	Sound	data/sounds/golpes/Grab.wav
+        quakeframe 5 2 2
 		Attack1  0
 @cmd	slamstart
 @cmd	position 1 50 1 0 -1
@@ -295,14 +298,14 @@ anim Freespecial2
 @cmd	position 2 -20 30 0 1
 	frame	data/chars/Players/Shiva_/slam01.gif
 @cmd	position 5 -30 10 0 1
-		delay  30
+		delay  25
 		attack1  60  154  86  38  7  1  0  0  0  15
+		sound  data/chars/Enemys/Shiva/a2.wav
 	frame	data/chars/Players/Shiva_/slam02.gif
 @cmd	position 4 -35 1 0 1
 		attack1  49  159  77  39  7  1  0  0  0  15
 		sound  data/sounds/efeitos/solo.wav
 		offset  136  195
-		delay  25
 @cmd	position 7 -45 1 0 1
 @cmd  depost  0
 @cmd  throw  25  5  -1  1  0  -1
@@ -395,9 +398,10 @@ anim special
 	offset	138 194
 	Fastattack 1
         hitfx	data/sounds/golpes/MEdio.wav
-	@cmd  spawn01  "ShivaSP2"  0  0  -1
+	@cmd  spawn01  "ShivaSP1"  0  0  -1
 	frame	data/chars/Players/Shiva_/Sp100.gif
-	@cmd  spawn01  "ShivaSP2"  0  0  -1
+	Sound	data/chars/Enemys/Shiva/a2.wav
+	@cmd  spawn01  "ShivaSP1"  0  0  -1
 		delay  5
 		move  5
 		attack1  87  139  52  37  25  1  0  0  25  15
@@ -420,12 +424,14 @@ anim special2
         energycost 20 1
         MpOnly 1
 	loop	0
-	delay	20
+	delay	10
 	offset	138 194
         hitfx	data/sounds/golpes/forte.wav
 	frame	data/chars/Players/Shiva_/Sp300.gif
+		delay  20
 	frame	data/chars/Players/Shiva_/Sp301.gif
 		delay  3
+	@cmd  spawn01  "ShivaP01"  0  0  1
 	frame	data/chars/Players/Shiva_/Sp302.gif
 	frame	data/chars/Players/Shiva_/Sp303.gif
 	frame	data/chars/Players/Shiva_/Sp301.gif
@@ -501,6 +507,7 @@ anim Follow6
 		Attack1  0
 		delay  6
 	frame	data/chars/Players/Shiva_/ra104.gif
+		sound  data/chars/Enemys/Shiva/a2.wav
 	frame	data/chars/Players/Shiva_/ra105.gif
 	frame	data/chars/Players/Shiva_/ra106.gif
 		attack5  139  93  53  90  15  1  0  0  15  15
