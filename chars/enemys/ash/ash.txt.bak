@@ -2,6 +2,7 @@ name	Ash
 health	200
 speed	13
 type	Enemy
+lifespan 60
 riseinv				0.4 1
 gfxshadow	1
 hostile				player npc
@@ -199,7 +200,7 @@ anim death
         frame	data/chars/Enemys/Ash/cry01.gif
 	frame	data/chars/Enemys/Ash/cry00.gif
         frame	data/chars/Enemys/Ash/cry01.gif
-	frame	data/chars/Enemys/Ash/fall01.gif
+	frame	data/chars/Enemys/Ash/fall102.gif
 
 
 
@@ -224,27 +225,27 @@ anim land
 
 anim pain
 	loop	0
-	offset	82 120
-	bbox	62 58 42 61
+	offset	166 188
+	bbox	158 124 30 67
 		delay  30
 	frame	data/chars/Enemys/Ash/pain01.gif
 
 
 anim pain2
 	loop	0
-	offset	75 119
-	bbox	60 54 29 64
+	offset	163 191
+	bbox	145 98 30 90
 	delay	30
 	frame	data/chars/Enemys/Ash/pain02.gif
 
 anim pain3
 	loop	0
-	offset	79 119
-	bbox	63 52 26 67
+	offset	164 187
+	bbox	142 112 41 75
 	jumpframe  0  2  0  0
 	delay	10
 	frame	data/chars/Enemys/Ash/Pain02.gif
-	frame	data/chars/Enemys/Ash/fall100.gif
+	frame	data/chars/Enemys/Ash/fall400.gif
 	frame	data/chars/Enemys/Ash/Pain01.gif
 
 
@@ -258,15 +259,17 @@ anim fall
 	frame	data/chars/Enemys/Ash/fall100.gif
 		attack  101
 		hitfx  data/sounds/golpes/Forte.wav
+		offset  142  164
 	frame  data/chars/Enemys/Ash/fall101.gif
 		hitfx  data/sounds/golpes/Forte.wav
 	frame  data/chars/Enemys/Ash/fall403.gif
 		Attack1  0
+		offset  157  186
 	frame	data/chars/Enemys/Ash/fall102.gif
 
 anim fall2
 	loop	0
-	offset	78 118
+	offset	146 185
 	delay	20
 	jumpframe  0  2  -3.5  0
         hitfx	data/sounds/golpes/Forte.wav
@@ -274,11 +277,12 @@ anim fall2
 	frame	data/chars/Enemys/Ash/fall100.gif
 		attack  101
 		hitfx  data/sounds/golpes/Forte.wav
+		offset  141  158
 	frame  data/chars/Enemys/Ash/fall101.gif
 		hitfx  data/sounds/golpes/Forte.wav
 	frame  data/chars/Enemys/Ash/fall403.gif
 		Attack1  0
-		offset  78  118
+		offset  152  189
 	frame	data/chars/Enemys/Ash/fall102.gif
 #Shock
 
@@ -294,7 +298,7 @@ anim fall4
 	frame	data/chars/Enemys/Ash/fall200.gif
 	frame	data/chars/Enemys/Ash/fall201.gif
 	frame	data/chars/Enemys/Ash/fall200.gif
-		offset  75  119
+		offset  159  189
 	frame	data/chars/Enemys/Ash/fall102.gif
 #Burn
 
@@ -312,54 +316,54 @@ anim fall5
 	frame	data/chars/Enemys/Ash/fall300.gif
 	frame	data/chars/Enemys/Ash/fall301.gif
 	frame	data/chars/Enemys/Ash/fall302.gif
-		offset  76  120
+		offset  158  189
 	frame	data/chars/Enemys/Ash/fall102.gif
 
 anim fall8
 	loop	0
-	offset	76 119
+	offset	155 184
 	delay	20
         hitfx	data/sounds/golpes/Forte.wav
 		Attack1  0
 	frame	data/chars/Enemys/Ash/fall100.gif
 		attack  101
 		hitfx  data/sounds/golpes/Forte.wav
+		offset  145  161
 	frame  data/chars/Enemys/Ash/fall101.gif
 		Attack1  0
-		offset  76  121
+		offset  158  188
 	frame	data/chars/Enemys/Ash/fall102.gif
 
 anim fall9
 	loop	0
-	offset	81 119
+	offset	171 191
 	delay	999
 		Attack1  0
 	frame	data/chars/Enemys/Ash/pain01.gif
 	frame	data/chars/Enemys/Ash/pain02.gif
-		offset  77  119
 	frame	data/chars/Enemys/Ash/fall400.gif
-		offset  113  105
+		offset  158  182
 	frame	data/chars/Enemys/Ash/fall401.gif
-		offset  89  135
+		offset  139  188
 	frame	data/chars/Enemys/Ash/fall402.gif
-		offset  80  113
+		offset  137  157
 	frame	data/chars/Enemys/Ash/fall403.gif
-		offset  103  110
+		offset  163  182
 	frame	data/chars/Enemys/Ash/fall404.gif
-		offset  72  119
+		offset  152  190
 	frame	data/chars/Enemys/Ash/fall405.gif
 	delay	50
-		offset  76  115
+		offset  136  158
 	frame	data/chars/Enemys/Ash/fall403.gif
 	delay	999
-		offset  74  120
+		offset  155  188
 	frame	data/chars/Enemys/Ash/fall405.gif
 
 
 anim Pain8
 	loop	0
 	delay	15
-	offset	76 118
+	offset	180 193
 	jumpframe  0  2  1  0
 	frame	data/chars/Enemys/Ash/jump00.gif
 	frame	data/chars/Enemys/Ash/jump00.gif

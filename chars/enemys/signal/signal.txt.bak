@@ -1,5 +1,6 @@
 name	Signal
-health	90
+health	50
+lifespan 40
 speed	10
 GrabForce 4
 falldie 2
@@ -96,6 +97,7 @@ anim Freespecial
 	bbox	136 104 24 80
 		Attack1  0
         hitfx	data/sounds/golpes/medio.wav
+		sound  data/sounds/slide.wav
 	frame	data/chars/Enemys/Signal/a200.gif
 		attack1  146  172  46  15  7  1  0  0  7  20
 	@cmd dasher 2 0 0

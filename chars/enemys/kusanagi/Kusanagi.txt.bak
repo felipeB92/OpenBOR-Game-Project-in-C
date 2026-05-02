@@ -1,5 +1,6 @@
 name	Kusanagi
-health	100
+health	75
+lifespan 60
 speed	12
 falldie 2
 type	Enemy
@@ -274,49 +275,51 @@ anim land
 
 anim pain
 	loop	0
-	offset	82 120
-	bbox	62 58 42 61
+	offset	148 182
+	bbox	136 109 27 75
 		delay  30
 	frame	data/chars/Enemys/Kusanagi/pain01.gif
 
 
 anim pain2
 	loop	0
-	offset	75 119
-	bbox	60 54 29 64
+	offset	143 183
+	bbox	126 104 31 82
 	delay	30
 	frame	data/chars/Enemys/Kusanagi/pain02.gif
 
 anim pain3
 	loop	0
-	offset	79 119
-	bbox	63 52 26 67
+	offset	147 182
+	bbox	129 107 32 76
 	jumpframe  0  2  0  0
 	delay	10
 	frame	data/chars/Enemys/Kusanagi/Pain02.gif
-	frame	data/chars/Enemys/Kusanagi/fall100.gif
+	frame	data/chars/Enemys/Kusanagi/fall400.gif
 	frame	data/chars/Enemys/Kusanagi/Pain01.gif
 
 
 
 anim fall
 	loop	0
-	offset	78 120
+	offset	125 179
 	delay	20
         hitfx	data/sounds/golpes/Forte.wav
 		Attack1  0
 	frame	data/chars/Enemys/Kusanagi/fall100.gif
 		attack  101
 		hitfx  data/sounds/golpes/Forte.wav
+		offset  137  169
 	frame  data/chars/Enemys/Kusanagi/fall101.gif
 		hitfx  data/sounds/golpes/Forte.wav
 	frame  data/chars/Enemys/Kusanagi/fall403.gif
 		Attack1  0
+		offset  137  180
 	frame	data/chars/Enemys/Kusanagi/fall102.gif
 
 anim fall2
 	loop	0
-	offset	78 118
+	offset	140 179
 	delay	20
 	jumpframe  0  2  -3.5  0
         hitfx	data/sounds/golpes/Forte.wav
@@ -324,11 +327,12 @@ anim fall2
 	frame	data/chars/Enemys/Kusanagi/fall100.gif
 		attack  101
 		hitfx  data/sounds/golpes/Forte.wav
+		offset  140  168
 	frame  data/chars/Enemys/Kusanagi/fall101.gif
 		hitfx  data/sounds/golpes/Forte.wav
 	frame  data/chars/Enemys/Kusanagi/fall403.gif
 		Attack1  0
-		offset  78  118
+		offset  140  180
 	frame	data/chars/Enemys/Kusanagi/fall102.gif
 #Shock
 
@@ -344,7 +348,7 @@ anim fall4
 	frame	data/chars/Enemys/Kusanagi/fall200.gif
 	frame	data/chars/Enemys/Kusanagi/fall201.gif
 	frame	data/chars/Enemys/Kusanagi/fall200.gif
-		offset  75  119
+		offset  141  181
 	frame	data/chars/Enemys/Kusanagi/fall102.gif
 #Burn
 
@@ -362,12 +366,12 @@ anim fall5
 	frame	data/chars/Enemys/Kusanagi/fall300.gif
 	frame	data/chars/Enemys/Kusanagi/fall301.gif
 	frame	data/chars/Enemys/Kusanagi/fall302.gif
-		offset  76  120
+		offset  139  181
 	frame	data/chars/Enemys/Kusanagi/fall102.gif
 
 anim fall8
 	loop	0
-	offset	76 119
+	offset	139 176
 	delay	20
         hitfx	data/sounds/golpes/Forte.wav
 		Attack1  0
@@ -376,47 +380,46 @@ anim fall8
 		hitfx  data/sounds/golpes/Forte.wav
 	frame  data/chars/Enemys/Kusanagi/fall101.gif
 		Attack1  0
-		offset  76  121
+		offset  139  181
 	frame	data/chars/Enemys/Kusanagi/fall102.gif
 
 anim fall9
 	loop	0
-	offset	81 119
+	offset	146 181
 	delay	999
 		Attack1  0
 	frame	data/chars/Enemys/Kusanagi/pain01.gif
 	frame	data/chars/Enemys/Kusanagi/pain02.gif
-		offset  77  119
 	frame	data/chars/Enemys/Kusanagi/fall400.gif
-		offset  113  105
+		offset  166  170
 	frame	data/chars/Enemys/Kusanagi/fall401.gif
-		offset  89  135
+		offset  151  184
 	frame	data/chars/Enemys/Kusanagi/fall402.gif
-		offset  80  113
+		offset  135  165
 	frame	data/chars/Enemys/Kusanagi/fall403.gif
-		offset  103  110
+		offset  135  179
 	frame	data/chars/Enemys/Kusanagi/fall404.gif
-		offset  72  119
 	frame	data/chars/Enemys/Kusanagi/fall405.gif
 	delay	50
-		offset  76  115
+		offset  135  166
 	frame	data/chars/Enemys/Kusanagi/fall403.gif
 	delay	999
-		offset  74  120
+		offset  141  181
 	frame	data/chars/Enemys/Kusanagi/fall405.gif
 
 anim death
 	loop	0
-	offset	76 118
+	offset	140 181
 	delay	20
 	frame	data/chars/Enemys/Kusanagi/fall102.gif
 
 anim Pain8
 	loop	0
-	delay	15
-	offset	76 118
+	delay	5
+	offset	146 184
 	jumpframe  0  2  1  0
 	frame	data/chars/Enemys/Kusanagi/jump00.gif
-	frame	data/chars/Enemys/Kusanagi/jump00.gif
-
+	frame	data/chars/Enemys/Kusanagi/jump01.gif
+	frame  data/chars/Enemys/Kusanagi/jump02.gif
+	frame  data/chars/Enemys/Kusanagi/kick03.gif
 

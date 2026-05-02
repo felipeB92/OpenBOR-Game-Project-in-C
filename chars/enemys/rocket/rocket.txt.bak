@@ -115,17 +115,16 @@ anim freespecial
 	frame	data/chars/Enemys/Rocket/Idle00.gif
 		delay  6
 		Range  100  150
-		offset  155  200
+		offset  155  210
 		hitfx  data/sounds/golpes/medio.wav
 	frame  data/chars/Enemys/Rocket/idle01.gif
-		offset  155  180
+		offset  155  200
 		hitfx  data/sounds/golpes/medio.wav
 	frame  data/chars/Enemys/Rocket/Idle00.gif
-		offset  155  160
+		offset  155  190
 		hitfx  data/sounds/golpes/medio.wav
 	frame  data/chars/Enemys/Rocket/idle01.gif
 		delay  20
-		Range  100  150
 		hitfx  data/sounds/golpes/medio.wav
 	frame  data/chars/Enemys/Rocket/a100.gif
 		delay  7
@@ -301,7 +300,7 @@ anim Freespecial3
 anim Freespecial4
 
 	loop	0
-		Range  200  300
+	Range  200  250
 	offset	155 220
 	bbox	136 104 24 80
         hitfx	data/sounds/golpes/Forte.wav

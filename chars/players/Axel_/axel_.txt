@@ -179,6 +179,7 @@ anim attack1
 	offset	73 126
 	bbox	62 52 29 75
 		Attack1  0
+	fastattack 1
         Sound	data/sounds/golpes/Soco.wav
         hitfx	data/sounds/golpes/fraco.wav
 	cancel	0 9 0 b A freespecial7
@@ -193,6 +194,7 @@ anim attack2
 	offset	76 126
 	bbox	63 48 29 77
 		Attack1  0
+	fastattack 1
         Sound	data/sounds/golpes/Soco.wav
         hitfx	data/sounds/golpes/Medio.wav
 	cancel	0 9 0 b A freespecial7
@@ -209,6 +211,7 @@ anim attack3
 	delay	8
 	offset	76 128
 	bbox	55 51 40 76
+	fastattack 1
         Sound	data/sounds/golpes/Chut.wav
         hitfx	data/sounds/golpes/Forte.wav
 	cancel	0 9 0 b A freespecial7

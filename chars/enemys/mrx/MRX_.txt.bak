@@ -1,0 +1,530 @@
+name	Mrx_
+nodieblink			3
+hostile				player npc
+candamage			player npc obstacle
+health	400
+riseinv				0.4 1
+Noblink 1
+mp      70
+mprate  5
+speed	12
+type	Enemy
+falldie 2
+gfxshadow	1
+JUMPHEIGHT 1 1
+Jumpheight 3
+atchain    1
+escapehits			2
+icon	data/chars/Enemys/Mrx/icon.gif 1
+diesound data/voices/bossdie2.wav
+running	20	3	3	1	1
+animationscript		data/scripts/drago.c
+
+##LOADS
+
+Load Tiro01
+Load Tiro02
+Load Tiro03
+Load Tiro04
+Load Tiro05
+Load MX202
+Load cap
+Load cap2
+
+
+remap data/chars/Enemys/Mrx/laugh00.gif data/chars/Enemys/Mrx/alter1.gif
+remap data/chars/Enemys/Mrx/laugh00.gif data/chars/Enemys/Mrx/alter2.gif
+remap data/chars/Enemys/Mrx/laugh00.gif data/chars/Enemys/Mrx/alter3.gif
+
+
+anim	spawn
+	loop	0
+	delay	16
+	offset	140 200
+	bbox	122 109 34 61
+		Attack1  0
+		@cmd  spawn01  "mx202"  0  0  0
+	frame   data/chars/Enemys/Mrx/laugh00.gif
+		bbox  0
+	frame   data/chars/Enemys/Mrx/laugh01.gif
+	sound	data/voices/Mrx1.wav
+	frame   data/chars/Enemys/Mrx/laugh02.gif
+	frame   data/chars/Enemys/Mrx/laugh03.gif
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	150 200
+	bbox	110 107 35 67
+		offset  140  200
+	frame  data/chars/Enemys/Mrx/idle00.gif
+
+
+anim walk
+	loop	1
+	delay	14
+	offset	140 200
+	bbox	120 112 39 67
+	frame	data/chars/Enemys/Mrx/walk00.gif
+	frame	data/chars/Enemys/Mrx/walk01.gif
+	frame	data/chars/Enemys/Mrx/walk02.gif
+	frame	data/chars/Enemys/Mrx/walk03.gif
+	frame	data/chars/Enemys/Mrx/walk04.gif
+	frame	data/chars/Enemys/Mrx/walk05.gif
+
+
+
+
+
+
+anim attack1
+	loop	0
+	delay	6
+        Range 0 60
+	offset	150 200
+	bbox	135 114 31 72
+		Attack1  0
+        sound	data/voices/Mrx2.wav
+        hitfx	data/sounds/golpes/forte.wav
+	frame	data/chars/Enemys/Mrx/a100.gif
+	frame	data/chars/Enemys/Mrx/a101.gif
+	frame	data/chars/Enemys/Mrx/a102.gif
+		attack1  148  99  52  62  15  1  0  0  0  20
+	frame	data/chars/Enemys/Mrx/a103.gif
+	frame	data/chars/Enemys/Mrx/a104.gif
+		Attack1  0
+	frame  data/chars/Enemys/Mrx/a102.gif
+
+
+anim freespecial
+	loop	0
+	delay	8
+        Range   150 250
+	offset	150 200
+	bbox	136 104 24 80
+		Attack1  0
+        hitfx	data/sounds/golpes/Forte.wav
+       sound	data/sounds/reload.wav
+	frame	data/chars/Enemys/Mrx/reload00.gif
+	frame	data/chars/Enemys/Mrx/reload01.gif
+	frame	data/chars/Enemys/Mrx/reload00.gif
+	frame	data/chars/Enemys/Mrx/shot01.gif
+        sound	data/sounds/Shot.wav
+		@cmd  spawn01  "Tiro01"  60  60  0
+	frame	data/chars/Enemys/Mrx/shot00.gif
+                @cmd  spawn01  "cap2"  0  70  0
+	frame	data/chars/Enemys/Mrx/shot01.gif
+        sound	data/sounds/Shot.wav
+		@cmd  spawn01  "Tiro01"  60  60  0
+	frame	data/chars/Enemys/Mrx/shot00.gif
+                @cmd  spawn01  "cap"  0  70  0
+	frame	data/chars/Enemys/Mrx/shot01.gif
+        sound	data/sounds/Shot.wav
+		@cmd  spawn01  "Tiro01"  60  60  0
+	frame	data/chars/Enemys/Mrx/shot00.gif
+                @cmd  spawn01  "cap2"  0  70  0
+	frame	data/chars/Enemys/Mrx/shot01.gif
+        sound	data/sounds/Shot.wav
+		@cmd  spawn01  "Tiro01"  60  60  0
+	frame	data/chars/Enemys/Mrx/shot00.gif
+                @cmd  spawn01  "cap"  0  70  0
+	frame	data/chars/Enemys/Mrx/shot01.gif
+
+
+anim freespecial2
+	loop	0
+	delay	8
+        Range 150 400
+        rangez  0 550
+	offset	150 200
+        energycost 10 1
+        mponly 1
+	bbox	136 104 24 80
+		Attack1  0
+        hitfx	data/sounds/golpes/Forte.wav
+       sound	data/sounds/reload.wav
+	frame	data/chars/Enemys/Mrx/reload00.gif
+	frame	data/chars/Enemys/Mrx/reload01.gif
+	frame	data/chars/Enemys/Mrx/reload00.gif
+       sound	data/sounds/Shot.wav
+		@cmd  spawn01  "Tiro01"  60  60  0
+                @cmd  spawn01  "cap"  0  70  0
+	frame	data/chars/Enemys/Mrx/shot00.gif
+	frame	data/chars/Enemys/Mrx/shot01.gif
+       sound	data/sounds/Shot.wav
+                @cmd  spawn01  "cap2"  0  70  0
+		@cmd  spawn01  "Tiro04"  40  50  0
+	frame	data/chars/Enemys/Mrx/shot02.gif
+                @cmd  spawn01  "cap"  0  0  0
+		@cmd  spawn01  "Tiro02"  40  50  0
+	frame	data/chars/Enemys/Mrx/shot03.gif
+       sound	data/sounds/Shot.wav
+                @cmd  spawn01  "cap2"  0  70  0
+		@cmd  spawn01  "Tiro03"  20  50  0
+	frame	data/chars/Enemys/Mrx/shot04.gif
+	frame	data/chars/Enemys/Mrx/shot05.gif
+       sound	data/sounds/Shot.wav
+                @cmd  spawn01  "cap"  0  70  0
+		@cmd  spawn01  "Tiro04"  20  50  0
+	frame	data/chars/Enemys/Mrx/shot04.gif
+	frame	data/chars/Enemys/Mrx/shot03.gif
+       sound	data/sounds/Shot.wav
+                @cmd  spawn01  "cap2"  0  70  0
+		@cmd  spawn01  "Tiro05"  40  50  0
+	frame	data/chars/Enemys/Mrx/shot02.gif
+                @cmd  spawn01  "cap"  0  70  0
+		@cmd  spawn01  "Tiro02"  40  50  0
+	frame	data/chars/Enemys/Mrx/shot01.gif
+       sound	data/sounds/Shot.wav
+                @cmd  spawn01  "cap2"  0  70  0
+		@cmd  spawn01  "Tiro01"  60  60  0
+	frame	data/chars/Enemys/Mrx/shot00.gif
+	frame	data/chars/Enemys/Mrx/shot01.gif
+
+
+
+
+
+
+anim freespecial3
+	loop	0
+	delay	4
+        energycost 15 1
+        mponly 1
+        Range   60 150
+	offset	137 200
+	bbox	122 116 37 72
+                Followcond 1
+                followanim 2
+        hitfx	data/sounds/golpes/forte.wav
+		move  10
+		attack1  140  124  40  63  0  0  0  0  0  20
+	frame	data/chars/Enemys/Mrx/walk00.gif
+	frame	data/chars/Enemys/Mrx/walk01.gif
+	frame	data/chars/Enemys/Mrx/walk02.gif
+	frame	data/chars/Enemys/Mrx/walk03.gif
+	frame	data/chars/Enemys/Mrx/walk04.gif
+	frame	data/chars/Enemys/Mrx/walk05.gif
+        sound	data/voices/Mrx2.wav
+	frame	data/chars/Enemys/Mrx/a100.gif
+	frame	data/chars/Enemys/Mrx/a101.gif
+		attack1  136  91  61  69  15  1  0  0  0  20
+		move  2
+	frame	data/chars/Enemys/Mrx/a102.gif
+	frame	data/chars/Enemys/Mrx/a103.gif
+	frame	data/chars/Enemys/Mrx/a104.gif
+	frame  data/chars/Enemys/Mrx/a104.gif
+	frame  data/chars/Enemys/Mrx/a104.gif
+	frame  data/chars/Enemys/Mrx/a104.gif
+		Attack1  0
+	frame  data/chars/Enemys/Mrx/a102.gif
+
+anim freespecial4
+	loop	0
+	delay	6
+        Range 150 200
+        rangez  -550 -1
+	offset	135 201
+	bbox	113 102 37 65
+		move  10
+		movez  -10
+	frame	data/chars/Enemys/Mrx/walk00.gif
+	frame	data/chars/Enemys/Mrx/walk01.gif
+	frame	data/chars/Enemys/Mrx/walk02.gif
+	frame	data/chars/Enemys/Mrx/walk03.gif
+	frame	data/chars/Enemys/Mrx/walk04.gif
+	frame	data/chars/Enemys/Mrx/walk05.gif
+        hitfx	data/sounds/golpes/Forte.wav
+       sound	data/sounds/reload.wav
+		move  0
+		movez  0
+        delay	8
+	frame	data/chars/Enemys/Mrx/reload00.gif
+	frame	data/chars/Enemys/Mrx/reload01.gif
+	frame	data/chars/Enemys/Mrx/reload00.gif
+       sound	data/sounds/Shot.wav
+		@cmd  spawn01  "Tiro01"  60  60  0
+                @cmd  spawn01  "cap"  0  70  0
+	frame	data/chars/Enemys/Mrx/shot00.gif
+	frame	data/chars/Enemys/Mrx/shot01.gif
+       sound	data/sounds/Shot.wav
+                @cmd  spawn01  "cap2"  0  70  0
+		@cmd  spawn01  "Tiro04"  40  50  0
+	frame	data/chars/Enemys/Mrx/shot02.gif
+                @cmd  spawn01  "cap"  0  0  0
+		@cmd  spawn01  "Tiro02"  40  50  0
+	frame	data/chars/Enemys/Mrx/shot03.gif
+       sound	data/sounds/Shot.wav
+                @cmd  spawn01  "cap2"  0  70  0
+		@cmd  spawn01  "Tiro03"  20  50  0
+	frame	data/chars/Enemys/Mrx/shot04.gif
+	frame	data/chars/Enemys/Mrx/shot05.gif
+       sound	data/sounds/Shot.wav
+                @cmd  spawn01  "cap"  0  70  0
+		@cmd  spawn01  "Tiro04"  20  50  0
+	frame	data/chars/Enemys/Mrx/shot04.gif
+	frame	data/chars/Enemys/Mrx/shot03.gif
+       sound	data/sounds/Shot.wav
+                @cmd  spawn01  "cap2"  0  70  0
+		@cmd  spawn01  "Tiro05"  40  50  0
+	frame	data/chars/Enemys/Mrx/shot02.gif
+                @cmd  spawn01  "cap"  0  70  0
+		@cmd  spawn01  "Tiro02"  40  50  0
+	frame	data/chars/Enemys/Mrx/shot01.gif
+       sound	data/sounds/Shot.wav
+                @cmd  spawn01  "cap2"  0  70  0
+		@cmd  spawn01  "Tiro01"  60  60  0
+	frame	data/chars/Enemys/Mrx/shot00.gif
+	frame	data/chars/Enemys/Mrx/shot01.gif
+
+anim follow2
+	loop	0
+	delay	6
+
+	offset	150 200
+	bbox	135 114 31 72
+		Attack1  0
+        sound	data/voices/Mrx2.wav
+        hitfx	data/sounds/golpes/forte.wav
+	frame	data/chars/Enemys/Mrx/a100.gif
+	frame	data/chars/Enemys/Mrx/a101.gif
+	frame	data/chars/Enemys/Mrx/a102.gif
+		attack1  148  99  52  62  15  1  0  0  0  20
+	frame	data/chars/Enemys/Mrx/a103.gif
+	frame	data/chars/Enemys/Mrx/a104.gif
+		Attack1  0
+	frame  data/chars/Enemys/Mrx/a102.gif
+
+anim special
+	loop	0
+	delay	4
+	offset	150 200
+        energycost 60 1
+		Attack1  0
+        hitfx	data/sounds/golpes/forte.wav
+	frame	data/chars/Enemys/Mrx/a101.gif
+	frame	data/chars/Enemys/Mrx/a102.gif
+		attack1  148  99  52  62  15  1  0  0  0  20
+		delay  5
+	frame	data/chars/Enemys/Mrx/a103.gif
+	frame	data/chars/Enemys/Mrx/a104.gif
+		Attack1  0
+	frame  data/chars/Enemys/Mrx/a102.gif
+
+anim special2
+	loop	0
+	delay	4
+	offset	150 200
+        energycost 60 1
+		Attack1  0
+        hitfx	data/sounds/golpes/forte.wav
+	frame	data/chars/Enemys/Mrx/a101.gif
+	frame	data/chars/Enemys/Mrx/a102.gif
+		attack1  148  99  52  62  15  1  0  0  0  20
+	frame	data/chars/Enemys/Mrx/a103.gif
+	frame	data/chars/Enemys/Mrx/a104.gif
+		Attack1  0
+	frame  data/chars/Enemys/Mrx/a102.gif
+
+anim Upper
+	loop	0
+	delay	6
+	offset	150 200
+	bbox	135 114 31 72
+		Attack1  0
+        hitfx	data/sounds/golpes/forte.wav
+	frame	data/chars/Enemys/Mrx/a100.gif
+	frame	data/chars/Enemys/Mrx/a101.gif
+	frame	data/chars/Enemys/Mrx/a102.gif
+		attack1  148  99  52  62  15  1  0  0  0  20
+	frame	data/chars/Enemys/Mrx/a103.gif
+	frame	data/chars/Enemys/Mrx/a104.gif
+		Attack1  0
+	frame  data/chars/Enemys/Mrx/a102.gif
+
+
+
+
+
+anim rise
+	loop	0
+	offset	150 200
+	delay	10
+	frame	data/chars/Enemys/Mrx/Rise01.gif
+	frame	data/chars/Enemys/Mrx/Rise02.gif
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	150 200
+	bbox	129 133 37 66
+	frame	data/chars/Enemys/Mrx/get00.gif
+
+anim grabbed
+	loop	0
+	offset	150 200
+	bbox	128 129 37 76
+	delay	30
+	frame	data/chars/Enemys/Mrx/grabbed00.gif
+
+anim pain
+	loop	0
+	offset	138 202
+	bbox	123 130 39 78
+		delay  30
+	frame	data/chars/Enemys/Mrx/pain01.gif
+
+
+anim pain2
+	loop	0
+	bbox	120 119 59 85
+	delay	30
+		offset  152  203
+	frame	data/chars/Enemys/Mrx/pain02.gif
+
+anim pain3
+	loop	0
+	offset	150 203
+	bbox	128 119 43 85
+	jumpframe  0  2  0  0
+	delay	10
+	frame	data/chars/Enemys/Mrx/Pain02.gif
+	frame	data/chars/Enemys/Mrx/fall100.gif
+	frame	data/chars/Enemys/Mrx/Pain01.gif
+
+
+
+anim fall
+	loop	0
+	offset	140 200
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Mrx/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  134  158
+	frame  data/chars/Enemys/Mrx/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  158  172
+	frame  data/chars/Enemys/Mrx/fall403.gif
+		Attack1  0
+		offset  138  199
+	frame	data/chars/Enemys/Mrx/fall102.gif
+
+anim fall2
+	loop	0
+	offset	147 202
+	delay	20
+	jumpframe  0  2  -3.5  0
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Mrx/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  136  171
+	frame  data/chars/Enemys/Mrx/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  161  175
+	frame  data/chars/Enemys/Mrx/fall403.gif
+		Attack1  0
+		offset  134  199
+	frame	data/chars/Enemys/Mrx/fall102.gif
+#Shock
+
+anim fall4
+	loop	0
+	offset	144 209
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Mrx/fall200.gif
+	frame	data/chars/Enemys/Mrx/fall201.gif
+	frame	data/chars/Enemys/Mrx/fall200.gif
+	frame	data/chars/Enemys/Mrx/fall201.gif
+	frame	data/chars/Enemys/Mrx/fall200.gif
+	frame	data/chars/Enemys/Mrx/fall201.gif
+	frame	data/chars/Enemys/Mrx/fall200.gif
+		offset  134  199
+	frame	data/chars/Enemys/Mrx/fall102.gif
+#Burn
+
+anim fall5
+	loop	0
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Mrx/fall300.gif
+	frame	data/chars/Enemys/Mrx/fall301.gif
+	frame	data/chars/Enemys/Mrx/fall302.gif
+	frame	data/chars/Enemys/Mrx/fall300.gif
+	frame	data/chars/Enemys/Mrx/fall301.gif
+	frame	data/chars/Enemys/Mrx/fall302.gif
+	frame	data/chars/Enemys/Mrx/fall300.gif
+	frame	data/chars/Enemys/Mrx/fall301.gif
+	frame	data/chars/Enemys/Mrx/fall302.gif
+		offset  139  199
+	frame	data/chars/Enemys/Mrx/fall102.gif
+
+anim fall8
+	loop	0
+	offset	138 200
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Mrx/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  131  163
+	frame  data/chars/Enemys/Mrx/fall101.gif
+		Attack1  0
+		offset  131  199
+	frame	data/chars/Enemys/Mrx/fall102.gif
+
+anim fall9
+	loop	0
+	offset	142 202
+	delay	999
+		Attack1  0
+	frame	data/chars/Enemys/Mrx/pain01.gif
+	frame	data/chars/Enemys/Mrx/pain02.gif
+	frame	data/chars/Enemys/Mrx/fall400.gif
+		offset  142  171
+	frame	data/chars/Enemys/Mrx/fall401.gif
+		offset  157  181
+	frame	data/chars/Enemys/Mrx/fall402.gif
+	frame	data/chars/Enemys/Mrx/fall403.gif
+		offset  136  199
+	frame	data/chars/Enemys/Mrx/fall404.gif
+	frame	data/chars/Enemys/Mrx/fall405.gif
+	delay	50
+		offset  158  176
+	frame	data/chars/Enemys/Mrx/fall403.gif
+	delay	999
+		offset  133  198
+	frame	data/chars/Enemys/Mrx/fall405.gif
+
+anim death
+	loop	0
+	offset	139 202
+	delay	20
+	jumpframe  0  1  -1  0
+	landframe  2
+	frame	data/chars/Enemys/Mrx/fall100.gif
+		offset  132  160
+	frame  data/chars/Enemys/Mrx/fall101.gif
+		offset  132  200
+	frame	data/chars/Enemys/Mrx/fall102.gif
+
+anim Pain8
+	loop	0
+	delay	15
+	offset	150 203
+	jumpframe  0  2  1  0
+	frame	data/chars/Enemys/Mrx/jump00.gif
+	frame	data/chars/Enemys/Mrx/jump00.gif
+
+

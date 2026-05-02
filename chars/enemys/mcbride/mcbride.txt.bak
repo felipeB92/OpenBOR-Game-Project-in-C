@@ -1,0 +1,307 @@
+name	McBride
+health	100
+lifespan 60
+speed	12
+falldie 2
+type	Enemy
+gfxshadow	1
+hostile				player npc
+candamage			player npc obstacle
+JUMPHEIGHT 1 1
+Jumpheight 3
+atchain    1 1 2
+icon	data/chars/Enemys/McBride/icon.gif 1
+diesound data/voices/die2.wav
+running	20	3	3	1	1
+animationscript		data/scripts/drago.c
+
+##LOADS
+
+LOAD Tiro06
+
+
+
+remap data/chars/Enemys/McBride/idle00.gif data/chars/Enemys/McBride/alter1.gif
+remap data/chars/Enemys/McBride/idle00.gif data/chars/Enemys/McBride/alter2.gif
+remap data/chars/Enemys/McBride/idle00.gif data/chars/Enemys/McBride/alter3.gif
+
+anim	spawn
+	loop	0
+	delay	8
+	bbox	129 111 37 70
+		offset  145 181
+	frame   data/chars/Enemys/McBride/idle00.gif
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	145 181
+	bbox	130 113 32 69
+	frame   data/chars/Enemys/McBride/idle00.gif
+
+
+
+anim walk
+	loop	1
+	delay	10
+	offset	145 181
+	bbox	129 108 35 76
+	frame	data/chars/Enemys/McBride/walk00.gif
+	frame	data/chars/Enemys/McBride/walk01.gif
+	frame	data/chars/Enemys/McBride/walk02.gif
+	frame	data/chars/Enemys/McBride/walk03.gif
+
+
+
+anim get
+	loop	0
+	delay	10
+	offset	145 181
+	frame	data/chars/Enemys/McBride/get00.gif
+
+
+anim jump
+	loop	0
+	delay	30
+	offset	145 181
+	bbox	123 128 48 44
+	frame	data/chars/Enemys/McBride/jump00.gif
+
+
+
+
+anim attack1
+	loop	0
+	delay	4
+        Range 0 60
+	offset	145 181
+	bbox	135 111 25 72
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/Enemys/McBride/a100.gif
+	frame	data/chars/Enemys/McBride/a101.gif
+		attack1  158  120  51  19  7  0  0  0  0  10
+	frame	data/chars/Enemys/McBride/a102.gif
+	frame	data/chars/Enemys/McBride/a103.gif
+	frame	data/chars/Enemys/McBride/a104.gif
+		Attack1  0
+	frame	data/chars/Enemys/McBride/a105.gif
+	frame	data/chars/Enemys/McBride/a106.gif
+
+anim attack2
+	loop	0
+	delay	4
+	offset	145 181
+	bbox	136 106 24 77
+		Attack1  0  0  0  0
+        hitfx	data/sounds/golpes/medio.wav
+	frame	data/chars/Enemys/McBride/a200.gif
+		attack1  144  133  54  23  10  1  0  0  0  20
+	frame	data/chars/Enemys/McBride/a201.gif
+	frame	data/chars/Enemys/McBride/a202.gif
+	frame	data/chars/Enemys/McBride/a203.gif
+		Attack1  0
+	frame	data/chars/Enemys/McBride/a204.gif
+
+
+anim freespecial
+	loop	0
+	delay	6
+        Range 100 250
+	offset	145 181
+	bbox	138 108 26 76
+		Attack1  0
+        hitfx	data/sounds/golpes/medio.wav
+		move  0
+        sound	data/sounds/Shot.wav
+	frame	data/chars/Enemys/McBride/shot00.gif
+        @cmd  spawn01  "Tiro06"  0  60  -1
+	frame	data/chars/Enemys/McBride/shot01.gif
+	frame	data/chars/Enemys/McBride/shot00.gif
+        delay	25
+	frame	data/chars/Enemys/McBride/reload00.gif
+
+
+
+
+
+
+
+anim grabbed
+	loop	0
+	delay	100
+	offset	145 181
+	bbox	130 113 32 72
+	frame	data/chars/Enemys/McBride/grabbed00.gif
+
+
+
+
+anim rise
+	loop	0
+	offset	145 181
+	delay	10
+	frame	data/chars/Enemys/McBride/Rise00.gif
+	frame	data/chars/Enemys/McBride/Rise01.gif
+	frame	data/chars/Enemys/McBride/Rise02.gif
+
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	145 181
+	bbox	128 133 46 41
+	frame	data/chars/Enemys/McBride/jumpland00.gif
+
+anim pain
+	loop	0
+	offset	139 182
+	bbox	134 118 23 65
+		delay  30
+	frame	data/chars/Enemys/McBride/pain01.gif
+
+
+anim pain2
+	loop	0
+	offset	143 183
+	bbox	130 113 29 71
+	delay	30
+	frame	data/chars/Enemys/McBride/pain02.gif
+
+anim pain3
+	loop	0
+	offset	145 183
+	bbox	133 110 27 73
+	jumpframe  0  2  0  0
+	delay	10
+	frame	data/chars/Enemys/McBride/Pain02.gif
+	frame	data/chars/Enemys/McBride/fall400.gif
+		offset  142  183
+	frame	data/chars/Enemys/McBride/Pain01.gif
+
+
+
+anim fall
+	loop	0
+	offset	116 181
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/McBride/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  142  176
+	frame  data/chars/Enemys/McBride/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/McBride/fall403.gif
+		Attack1  0
+	frame	data/chars/Enemys/McBride/fall102.gif
+
+anim fall2
+	loop	0
+	offset	119 183
+	delay	20
+	jumpframe  0  2  -3.5  0
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/McBride/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  139  172
+	frame  data/chars/Enemys/McBride/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/McBride/fall403.gif
+		Attack1  0
+		offset  139  179
+	frame	data/chars/Enemys/McBride/fall102.gif
+#Shock
+
+anim fall4
+	loop	0
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/McBride/fall200.gif
+	frame	data/chars/Enemys/McBride/fall201.gif
+	frame	data/chars/Enemys/McBride/fall200.gif
+	frame	data/chars/Enemys/McBride/fall201.gif
+	frame	data/chars/Enemys/McBride/fall200.gif
+	frame	data/chars/Enemys/McBride/fall201.gif
+	frame	data/chars/Enemys/McBride/fall200.gif
+		offset  146  180
+	frame	data/chars/Enemys/McBride/fall102.gif
+#Burn
+
+anim fall5
+	loop	0
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/McBride/fall300.gif
+	frame	data/chars/Enemys/McBride/fall301.gif
+	frame	data/chars/Enemys/McBride/fall302.gif
+	frame	data/chars/Enemys/McBride/fall300.gif
+	frame	data/chars/Enemys/McBride/fall301.gif
+	frame	data/chars/Enemys/McBride/fall302.gif
+	frame	data/chars/Enemys/McBride/fall300.gif
+	frame	data/chars/Enemys/McBride/fall301.gif
+	frame	data/chars/Enemys/McBride/fall302.gif
+		offset  139  180
+	frame	data/chars/Enemys/McBride/fall102.gif
+
+anim fall8
+	loop	0
+	offset	125 178
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/McBride/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  141  172
+	frame  data/chars/Enemys/McBride/fall101.gif
+		Attack1  0
+		offset  141  179
+	frame	data/chars/Enemys/McBride/fall102.gif
+
+anim fall9
+	loop	0
+	offset	141 181
+	delay	999
+		Attack1  0
+	frame	data/chars/Enemys/McBride/pain01.gif
+	frame	data/chars/Enemys/McBride/pain02.gif
+	frame	data/chars/Enemys/McBride/fall400.gif
+		offset  158  160
+	frame	data/chars/Enemys/McBride/fall401.gif
+		offset  152  182
+	frame	data/chars/Enemys/McBride/fall402.gif
+		offset  141  172
+	frame	data/chars/Enemys/McBride/fall403.gif
+		offset  124  174
+	frame	data/chars/Enemys/McBride/fall404.gif
+		offset  143  181
+	frame	data/chars/Enemys/McBride/fall405.gif
+	delay	50
+		offset  137  172
+	frame	data/chars/Enemys/McBride/fall403.gif
+	delay	999
+		offset  141  178
+	frame	data/chars/Enemys/McBride/fall405.gif
+
+anim death
+	loop	0
+	offset	144 180
+	delay	20
+	frame	data/chars/Enemys/McBride/fall102.gif
+
+anim Pain8
+	loop	0
+	delay	15
+	offset	141 186
+	jumpframe  0  2  1  0
+	frame	data/chars/Enemys/McBride/jump00.gif
+	frame	data/chars/Enemys/McBride/jump00.gif
+

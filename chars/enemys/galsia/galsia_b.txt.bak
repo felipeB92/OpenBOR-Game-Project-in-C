@@ -1,7 +1,8 @@
 name	galsia_B
-health	100
+health	50
 speed	8
 type	Enemy
+lifespan 40
 falldie 2
 gfxshadow	1
 JUMPHEIGHT 1 1
@@ -27,12 +28,14 @@ remap data/chars/Enemys/galsia/idle00.gif data/chars/Enemys/galsia/alter5.gif
 anim	spawn
 	loop	0
 	delay	300
-	offset	74 119
+	offset	74 134
 	frame	data/chars/Enemys/galsia/fall102.gif
 	delay	30
 	frame	data/chars/Enemys/galsia/rise00.gif
 		offset  82  120
-	frame	data/chars/Enemys/galsia/IDle00.gif
+		delay  20
+	frame	data/chars/Enemys/galsia/Rise02.gif
+	frame  data/chars/Enemys/galsia/IDle00.gif
 
 
 anim idle

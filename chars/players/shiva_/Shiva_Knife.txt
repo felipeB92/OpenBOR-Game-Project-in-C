@@ -49,3 +49,5 @@ anim get
 		delay  20
 	frame	data/chars/Enemys/Shiva/knife/a204.gif
 
+
+

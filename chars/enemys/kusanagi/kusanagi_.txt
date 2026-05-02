@@ -355,7 +355,7 @@ anim fall4
 
 anim fall5
 	loop	0
-	offset	50 77
+	offset	41 67
 	delay	10
 		Attack1  0
 	frame	data/chars/Enemys/Kusanagi/fall300.gif
@@ -423,5 +423,4 @@ anim Pain8
 	frame	data/chars/Enemys/Kusanagi/jump01.gif
 	frame  data/chars/Enemys/Kusanagi/jump02.gif
 	frame  data/chars/Enemys/Kusanagi/kick03.gif
-
 

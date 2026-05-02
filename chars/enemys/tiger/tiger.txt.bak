@@ -1,5 +1,6 @@
 name	Tiger
 health	75
+lifespan 60
 speed	13
 falldie 2
 hostile				player npc
@@ -250,8 +251,8 @@ anim fall4
 		Attack1  0
 	frame	data/chars/Enemys/Tiger/fall200.gif
 	frame	data/chars/Enemys/Tiger/fall201.gif
-	frame	data/chars/Enemys/Tiger/fall200.gif
 	frame	data/chars/Enemys/Tiger/fall201.gif
+	frame	data/chars/Enemys/Tiger/fall200.gif
 	frame	data/chars/Enemys/Tiger/fall200.gif
 	frame	data/chars/Enemys/Tiger/fall201.gif
 	frame	data/chars/Enemys/Tiger/fall200.gif
@@ -320,7 +321,7 @@ anim death
 anim Pain8
 	loop	0
 	delay	15
-	offset	137 177
+	offset	151 177
 	jumpframe  0  2  1  0
 	frame	data/chars/Enemys/Tiger/jump00.gif
 	frame	data/chars/Enemys/Tiger/jump00.gif

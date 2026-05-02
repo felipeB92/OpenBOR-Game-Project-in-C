@@ -5,7 +5,7 @@ riseinv				0.4 1
 hostile				player npc
 candamage			player npc obstacle
 Noblink 0
-falldie 1
+falldie 2
 escapehits			2
 mp			        70
 mprate  			5
@@ -349,10 +349,6 @@ anim death
 	loop	0
 	offset	152 184
 	delay	20
-	jumpframe  0  1  -1  0
-	landframe  2
-	frame	data/chars/Enemys/Fred/fall101.gif
-	frame	data/chars/Enemys/Fred/fall100.gif
 	frame	data/chars/Enemys/Fred/fall102.gif
 
 anim pain
@@ -492,7 +488,7 @@ anim fall9
 
 anim Pain8
 	loop	0
-	delay	30
+	delay	15
 	offset	157 190
 	jumpframe  0  2  1  0
 	frame	data/chars/Enemys/fred/jump00.gif

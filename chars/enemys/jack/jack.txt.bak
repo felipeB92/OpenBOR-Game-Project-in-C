@@ -1,8 +1,9 @@
 name	Jack
-health	100
+health	150
+lifespan 60
 mp 35
 speed	12
-falldie 1
+falldie 2
 type	Enemy
 gfxshadow	1
 hostile				player npc
@@ -33,7 +34,7 @@ anim	spawn
 	delay	12
 	offset	129 184
 	bbox	132 110 23 72
-		@cmd dasher 0.3 0 -2
+		@cmd dasher 0.3 0 0.8
 	frame   data/chars/Enemys/Jack/walk00.gif
 	frame   data/chars/Enemys/Jack/walk01.gif
 	frame   data/chars/Enemys/Jack/walk02.gif
@@ -292,7 +293,7 @@ anim fall9
 
 anim death
 	loop	0
-	offset	76 118
+	offset	130 185
 	delay	20
 	frame	data/chars/Enemys/Jack/fall102.gif
 

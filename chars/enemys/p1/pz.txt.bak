@@ -1,11 +1,10 @@
 name	pZ
-health	150
+health	75
 speed	14
 CANTGRAB 1
 riseinv				0.4 1
 hostile				player npc
 candamage			player npc obstacle
-Noblink 0
 falldie 2
 mp			        60
 mprate  			5
@@ -151,7 +150,7 @@ anim Freespecial2
 
 anim Freespecial3
 	loop	0
-	delay	12
+	delay	6
         Range 250 500
 	offset	141 182
 	jumpframe  0  3  3  0
@@ -199,7 +198,7 @@ anim Freespecial4
 
 anim Freespecial5
 	loop	0
-	delay	12
+	delay	6
         Range 0 100
         Rangez -200 -1
 	jumpframe  4  2  3  -1
@@ -241,10 +240,11 @@ anim grabbed
 anim death
 	loop	0
 	offset	141 182
-	delay	20
+	delay	6
 	frame	data/chars/Enemys/p1/death00.gif
 	frame	data/chars/Enemys/p1/death00.gif
         @cmd  spawn01  "Boom02"  0  0  0
+		delay  20
 	frame	data/chars/Enemys/p1/death01.gif
         @cmd  spawn01  "Boom02"  0  5  0
 	frame	data/chars/Enemys/p1/death02.gif

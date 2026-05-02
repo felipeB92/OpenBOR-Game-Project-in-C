@@ -277,7 +277,7 @@ anim fall4
 
 anim fall5
 	loop	0
-	offset	50 77
+	offset	37 69
 	delay	10
 		Attack1  0
 	frame	data/chars/Enemys/haku_oh/fall300.gif
@@ -289,7 +289,7 @@ anim fall5
 	frame	data/chars/Enemys/haku_oh/fall300.gif
 	frame	data/chars/Enemys/haku_oh/fall301.gif
 	frame	data/chars/Enemys/haku_oh/fall302.gif
-		offset  76  120
+		offset  76  118
 	frame	data/chars/Enemys/haku_oh/fall102.gif
 
 anim fall8

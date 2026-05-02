@@ -5,7 +5,7 @@ riseinv				0.4 1
 hostile				player npc
 candamage			player npc obstacle
 Noblink 0
-falldie
+falldie 2
 type	Enemy
 gfxshadow	1
 JUMPHEIGHT 1 1
@@ -567,19 +567,13 @@ anim fall9
 
 anim death
 	loop	0
-	offset	76 118
 	delay	20
-	jumpframe  0  1  -1  0
-	landframe  2
-	frame	data/chars/Enemys/Bob/fall100.gif
-		offset  99  109
-	frame  data/chars/Enemys/Bob/fall101.gif
 		offset  142  173
 	frame	data/chars/Enemys/Bob/fall102.gif
 
 anim Pain8
 	loop	0
-	delay	30
+	delay	15
 	offset	155 199
 	jumpframe  0  2  1  0
 	frame	data/chars/Enemys/Bob/run01.gif

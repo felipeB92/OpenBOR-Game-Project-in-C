@@ -1,5 +1,6 @@
 name	Jet_Jr
 health	100
+lifespan 60
 CANTGRAB 1
 speed	14
 riseinv				0.4 1
@@ -7,7 +8,7 @@ hostile				player npc
 candamage			player npc obstacle
 Noblink 0
 type	Enemy
-falldie 1
+falldie 2
 gfxshadow	1
 JUMPHEIGHT 1 1
 Jumpheight 3
@@ -16,7 +17,10 @@ icon	data/chars/Enemys/Jet_Jr/icon.gif 1
 diesound data/voices/bossdie2.wav
 running	20	3	3	1	1
 
-
+remap data/chars/Enemys/Jet_jr/idle00.gif data/chars/Enemys/Jet_jr/Map01.gif
+remap data/chars/Enemys/Jet_jr/idle00.gif data/chars/Enemys/Jet_jr/Map02.gif
+remap data/chars/Enemys/Jet_jr/idle00.gif data/chars/Enemys/Jet_jr/Map03.gif
+remap data/chars/Enemys/Jet_jr/idle00.gif data/chars/Enemys/Jet_jr/Map04.gif
 
 anim	spawn
 	loop	0
@@ -36,7 +40,7 @@ anim	spawn
 
 anim idle
 	loop	1
-	delay	16
+	delay	4
 	offset	155 220
 	bbox	138 102 38 80
 	frame   data/chars/Enemys/Jet_Jr/idle00.gif
@@ -288,19 +292,20 @@ anim pain3
 
 anim fall
 	loop	0
-	offset	177 220
+	offset	136 224
 	delay	20
         hitfx	data/sounds/golpes/Forte.wav
 		Attack1  0
 	frame	data/chars/Enemys/Jet_Jr/fall100.gif
 		attack  101
 		hitfx  data/sounds/golpes/Forte.wav
-		offset  134  193
+		offset  155  193
 	frame  data/chars/Enemys/Jet_Jr/fall101.gif
 		hitfx  data/sounds/golpes/Forte.wav
+		offset  155  179
 	frame  data/chars/Enemys/Jet_Jr/fall403.gif
 		Attack1  0
-		offset  148  183
+		offset  132  191
 	frame	data/chars/Enemys/Jet_Jr/fall102.gif
 
 anim fall2
@@ -318,28 +323,25 @@ anim fall2
 		hitfx  data/sounds/golpes/Forte.wav
 	frame  data/chars/Enemys/Jet_Jr/fall403.gif
 		Attack1  0
-		offset  146  182
+		offset  146  192
 	frame	data/chars/Enemys/Jet_Jr/fall102.gif
 #Shock
 
 anim fall4
 	loop	0
-	offset	50 160
+	offset	42 120
 	delay	10
 		Attack1  0
 	frame	data/chars/Enemys/Jet_Jr/fall200.gif
-		offset  50  140
 	frame	data/chars/Enemys/Jet_Jr/fall201.gif
-		offset  50  130
+		offset  42  100
 	frame	data/chars/Enemys/Jet_Jr/fall200.gif
 	frame	data/chars/Enemys/Jet_Jr/fall201.gif
-		offset  50  110
+		offset  42  80
 	frame	data/chars/Enemys/Jet_Jr/fall200.gif
-		offset  50  100
 	frame	data/chars/Enemys/Jet_Jr/fall201.gif
-		offset  50  90
 	frame	data/chars/Enemys/Jet_Jr/fall200.gif
-		offset  149  183
+		offset  143  190
 	frame	data/chars/Enemys/Jet_Jr/fall102.gif
 #Burn
 
@@ -363,7 +365,7 @@ anim fall5
 	frame	data/chars/Enemys/Jet_Jr/fall301.gif
 		offset  50  80
 	frame	data/chars/Enemys/Jet_Jr/fall302.gif
-		offset  148  184
+		offset  134  191
 	frame	data/chars/Enemys/Jet_Jr/fall102.gif
 
 anim fall8
@@ -378,30 +380,31 @@ anim fall8
 		offset  143  183
 	frame  data/chars/Enemys/Jet_Jr/fall101.gif
 		Attack1  0
+		offset  143  192
 	frame	data/chars/Enemys/Jet_Jr/fall102.gif
 
 anim fall9
 	loop	0
-	offset	160 180
+	offset	151 192
 	delay	999
 		Attack1  0
 	frame	data/chars/Enemys/Jet_Jr/pain01.gif
 	frame	data/chars/Enemys/Jet_Jr/pain02.gif
 	frame	data/chars/Enemys/Jet_Jr/fall400.gif
 	frame	data/chars/Enemys/Jet_Jr/fall401.gif
-		offset  126  187
+		offset  143  180
 	frame	data/chars/Enemys/Jet_Jr/fall402.gif
-		offset  135  153
+		offset  150  162
 	frame	data/chars/Enemys/Jet_Jr/fall403.gif
-		offset  148  185
+		offset  148  192
 	frame	data/chars/Enemys/Jet_Jr/fall404.gif
-		offset  141  179
+		offset  141  194
 	frame	data/chars/Enemys/Jet_Jr/fall405.gif
 	delay	50
-		offset  145  155
+		offset  155  163
 	frame	data/chars/Enemys/Jet_Jr/fall403.gif
 	delay	999
-		offset  147  181
+		offset  147  192
 	frame	data/chars/Enemys/Jet_Jr/fall405.gif
 
 anim death
@@ -417,5 +420,4 @@ anim Pain8
 	jumpframe  0  2  1  0
 	frame	data/chars/Enemys/Jet_Jr/rise02.gif
 	frame	data/chars/Enemys/Jet_Jr/rise01.gif
-
 

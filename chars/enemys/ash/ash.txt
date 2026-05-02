@@ -304,7 +304,7 @@ anim fall4
 
 anim fall5
 	loop	0
-	offset	50 77
+	offset	43 68
 	delay	10
 		Attack1  0
 	frame	data/chars/Enemys/Ash/fall300.gif

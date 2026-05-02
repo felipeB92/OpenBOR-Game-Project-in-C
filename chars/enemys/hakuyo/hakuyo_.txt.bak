@@ -1,5 +1,6 @@
 name	Hakuyo_
-health	100
+health	70
+lifespan 60
 speed	8
 falldie 2
 hostile				player npc
@@ -233,10 +234,12 @@ anim fall
 	frame	data/chars/Enemys/Hakuyo/fall100.gif
 		attack  101
 		hitfx  data/sounds/golpes/Forte.wav
+		offset  143  198
 	frame  data/chars/Enemys/Hakuyo/fall101.gif
 		hitfx  data/sounds/golpes/Forte.wav
 	frame  data/chars/Enemys/Hakuyo/fall403.gif
 		Attack1  0
+		offset  120  177
 	frame	data/chars/Enemys/Hakuyo/fall102.gif
 
 anim fall2
@@ -249,11 +252,12 @@ anim fall2
 	frame	data/chars/Enemys/Hakuyo/fall100.gif
 		attack  101
 		hitfx  data/sounds/golpes/Forte.wav
+		offset  138  196
 	frame  data/chars/Enemys/Hakuyo/fall101.gif
 		hitfx  data/sounds/golpes/Forte.wav
 	frame  data/chars/Enemys/Hakuyo/fall403.gif
 		Attack1  0
-		offset  78  118
+		offset  121  178
 	frame	data/chars/Enemys/Hakuyo/fall102.gif
 #Shock
 

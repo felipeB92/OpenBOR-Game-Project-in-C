@@ -1,12 +1,13 @@
 name	galsia
-health	100
+health	50
 speed	8
+lifespan 40
 type	Enemy
 gfxshadow	1
 hostile				player npc
 candamage			player npc obstacle
 Jumpheight 3
-falldie 1
+falldie 2
 atchain    1 1 2
 weapons				galsia_knife none None none
 icon	data/chars/Enemys/galsia/icon.gif 1
@@ -74,7 +75,7 @@ anim jumpattack
         hitfx	data/sounds/golpes/Forte.wav
 	frame	data/chars/Enemys/galsia/jumpatk00.gif
 	delay	30
-		attack1  73  52  41  44  10  1  0  0  0  20
+		attack1  74  61  39  26  10  1  0  0  0  20
 	frame	data/chars/Enemys/galsia/jumpatk01.gif
 
 
@@ -273,10 +274,6 @@ anim death
 	loop	0
 	offset	76 118
 	delay	20
-	jumpframe  0  1  -1  0
-	landframe  2
-	frame	data/chars/Enemys/galsia/fall100.gif
-	frame  data/chars/Enemys/galsia/fall101.gif
 	frame	data/chars/Enemys/galsia/fall102.gif
 
 anim Pain8

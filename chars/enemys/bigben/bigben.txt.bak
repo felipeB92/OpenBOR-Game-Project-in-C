@@ -1,5 +1,6 @@
 name	BigBen
-health	150
+lifespan 40
+health	80
 speed	5
 #riseinv				0.4 1
 hostile				player npc
@@ -62,14 +63,6 @@ anim walk
 	frame	data/chars/Enemys/BigBen/walk01.gif
 	frame	data/chars/Enemys/BigBen/walk02.gif
 	frame	data/chars/Enemys/BigBen/walk03.gif
-
-anim get
-	loop	0
-	delay	10
-	offset	145 177
-		#drawmethod  350  350  0  0  0  -1  -1
-	frame	data/chars/Enemys/BigBen/get00.gif
-
 
 anim jump
 	loop	0
@@ -356,23 +349,23 @@ anim land
 
 anim pain
 	loop	0
-	offset	82 120
-	bbox	62 58 42 61
+	offset	148 175
+	bbox	126 112 39 62
 		delay  30
 	frame	data/chars/Enemys/BigBen/pain01.gif
 
 
 anim pain2
 	loop	0
-	offset	75 119
-	bbox	60 54 29 64
+	offset	146 179
+	bbox	133 118 24 61
 	delay	30
 	frame	data/chars/Enemys/BigBen/pain02.gif
 
 anim pain3
 	loop	0
-	offset	79 119
-	bbox	63 52 26 67
+	offset	145 177
+	bbox	127 114 34 63
 	jumpframe  0  2  0  0
 	delay	10
 	frame	data/chars/Enemys/BigBen/Pain02.gif
@@ -390,6 +383,7 @@ anim fall
 	frame	data/chars/Enemys/BigBen/fall100.gif
 		attack  101
 		hitfx  data/sounds/golpes/Forte.wav
+		offset  138  180
 	frame  data/chars/Enemys/BigBen/fall101.gif
 		hitfx  data/sounds/golpes/Forte.wav
 	frame  data/chars/Enemys/BigBen/fall403.gif
@@ -399,7 +393,7 @@ anim fall
 
 anim fall2
 	loop	0
-	offset	78 118
+	offset	129 177
 	delay	20
 	jumpframe  0  2  -3.5  0
         hitfx	data/sounds/golpes/Forte.wav
@@ -407,17 +401,18 @@ anim fall2
 	frame	data/chars/Enemys/BigBen/fall100.gif
 		attack  101
 		hitfx  data/sounds/golpes/Forte.wav
+		offset  139  181
 	frame  data/chars/Enemys/BigBen/fall101.gif
 		hitfx  data/sounds/golpes/Forte.wav
 	frame  data/chars/Enemys/BigBen/fall403.gif
 		Attack1  0
-		offset  78  118
+		offset  134  176
 	frame	data/chars/Enemys/BigBen/fall102.gif
 #Shock
 
 anim fall4
 	loop	0
-	offset	50 77
+	offset	88 120
 	delay	10
 		Attack1  0
 	frame	data/chars/Enemys/BigBen/fall200.gif
@@ -427,7 +422,7 @@ anim fall4
 	frame	data/chars/Enemys/BigBen/fall200.gif
 	frame	data/chars/Enemys/BigBen/fall201.gif
 	frame	data/chars/Enemys/BigBen/fall200.gif
-		offset  75  119
+		offset  136  175
 	frame	data/chars/Enemys/BigBen/fall102.gif
 #Burn
 
@@ -445,47 +440,47 @@ anim fall5
 	frame	data/chars/Enemys/BigBen/fall300.gif
 	frame	data/chars/Enemys/BigBen/fall301.gif
 	frame	data/chars/Enemys/BigBen/fall302.gif
-		offset  76  120
+		offset  135  174
 	frame	data/chars/Enemys/BigBen/fall102.gif
 
 anim fall8
 	loop	0
-	offset	76 119
+	offset	130 177
 	delay	20
         hitfx	data/sounds/golpes/Forte.wav
 		Attack1  0
 	frame	data/chars/Enemys/BigBen/fall100.gif
 		attack  101
 		hitfx  data/sounds/golpes/Forte.wav
+		offset  138  181
 	frame  data/chars/Enemys/BigBen/fall101.gif
 		Attack1  0
-		offset  76  121
+		offset  133  176
 	frame	data/chars/Enemys/BigBen/fall102.gif
 
 anim fall9
 	loop	0
-	offset	81 119
+	offset	146 176
 	delay	999
 		Attack1  0
 	frame	data/chars/Enemys/BigBen/pain01.gif
 	frame	data/chars/Enemys/BigBen/pain02.gif
-		offset  77  119
 	frame	data/chars/Enemys/BigBen/fall400.gif
-		offset  113  105
+		offset  161  165
 	frame	data/chars/Enemys/BigBen/fall401.gif
-		offset  89  135
+		offset  148  189
 	frame	data/chars/Enemys/BigBen/fall402.gif
-		offset  80  113
+		offset  138  180
 	frame	data/chars/Enemys/BigBen/fall403.gif
-		offset  103  110
+		offset  123  176
 	frame	data/chars/Enemys/BigBen/fall404.gif
-		offset  72  119
+		offset  134  176
 	frame	data/chars/Enemys/BigBen/fall405.gif
 	delay	50
-		offset  76  115
+		offset  137  181
 	frame	data/chars/Enemys/BigBen/fall403.gif
 	delay	999
-		offset  74  120
+		offset  130  175
 	frame	data/chars/Enemys/BigBen/fall405.gif
 
 anim death
@@ -497,7 +492,7 @@ anim death
 anim Pain8
 	loop	0
 	delay	15
-	offset	76 118
+	offset	147 174
 	jumpframe  0  2  1  0
 	frame	data/chars/Enemys/BigBen/jump00.gif
 	frame	data/chars/Enemys/BigBen/jump00.gif

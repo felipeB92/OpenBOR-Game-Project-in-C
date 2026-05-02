@@ -231,7 +231,7 @@ anim fall4
 
 anim fall5
 	loop	0
-	offset	50 77
+	offset	40 68
 	delay	10
 		Attack1  0
 	frame	data/chars/Enemys/Slum/fall300.gif

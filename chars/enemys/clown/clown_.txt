@@ -186,6 +186,7 @@ anim fall
 	frame	data/chars/Enemys/Clown/fall100.gif
 		attack  101
 		hitfx  data/sounds/golpes/Forte.wav
+		offset  144  168
 	frame  data/chars/Enemys/Clown/fall101.gif
 		hitfx  data/sounds/golpes/Forte.wav
 		offset  149  158
@@ -204,8 +205,10 @@ anim fall2
 	frame	data/chars/Enemys/Clown/fall100.gif
 		attack  101
 		hitfx  data/sounds/golpes/Forte.wav
+		offset  144  167
 	frame  data/chars/Enemys/Clown/fall101.gif
 		hitfx  data/sounds/golpes/Forte.wav
+		offset  144  155
 	frame  data/chars/Enemys/Clown/fall403.gif
 		Attack1  0
 		offset  154  184
@@ -230,7 +233,7 @@ anim fall4
 
 anim fall5
 	loop	0
-	offset	50 77
+	offset	41 69
 	delay	10
 		Attack1  0
 	frame	data/chars/Enemys/Clown/fall300.gif

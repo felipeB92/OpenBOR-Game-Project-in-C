@@ -82,6 +82,15 @@ know	Zan_powerball	data/chars/Players/Zan_/Zan_Powerball.txt
 know	powerball	data/chars/Players/Zan_/Powerball.txt
 
 
+load	Roo_		data/chars/Players/Roo_/Roo_.txt
+know	Roo_Knife	data/chars/Players/Roo_/Roo_Knife.txt
+know	Roo_Kunai	data/chars/Players/Roo_/Roo_Kunai.txt
+know	Roo_Pipe	data/chars/Players/Roo_/Roo_Pipe.txt
+know	Roo_Sword	data/chars/Players/Roo_/Roo_Sword.txt
+know	RooSP1		data/chars/Players/Roo_/RooSP1.txt
+know	RooSP2		data/chars/Players/Roo_/RooSP2.txt
+
+
 load	shiva_		data/chars/Players/Shiva_/Shiva_.txt
 know	shiva_Knife	data/chars/Players/Shiva_/Shiva_Knife.txt
 know	shiva_Kunai	data/chars/Players/Shiva_/Shiva_Kunai.txt
@@ -90,13 +99,7 @@ know	shiva_Sword	data/chars/Players/Shiva_/Shiva_Sword.txt
 know	shivaSp1	data/chars/Players/Shiva_/ShivaSp1.txt
 know	shivaSp2	data/chars/Players/Shiva_/ShivaSp2.txt
 
-load	Roo_		data/chars/Players/Roo_/Roo_.txt
-know	Roo_Knife	data/chars/Players/Roo_/Roo_Knife.txt
-know	Roo_Kunai	data/chars/Players/Roo_/Roo_Kunai.txt
-know	Roo_Pipe	data/chars/Players/Roo_/Roo_Pipe.txt
-know	Roo_Sword	data/chars/Players/Roo_/Roo_Sword.txt
-know	RooSP1		data/chars/Players/Roo_/RooSP1.txt
-know	RooSP2		data/chars/Players/Roo_/RooSP2.txt
+load	shiva__		data/chars/Players/Shiva_/Shiva__.txt
 
 load	MR_X_		data/chars/Players/MRX_/MR_X_.txt
 know	MR_X_Knife	data/chars/Players/MRX_/MR_X_Knife.txt

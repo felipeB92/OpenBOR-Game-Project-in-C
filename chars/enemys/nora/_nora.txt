@@ -264,7 +264,7 @@ anim fall4
 
 anim fall5
 	loop	0
-	offset	50 77
+	offset	39 68
 	delay	10
 		Attack1  0
 	frame	data/chars/Enemys/Nora/fall300.gif
@@ -328,6 +328,4 @@ anim Death
 	frame	data/chars/Enemys/Nora/Rise03.gif
 	frame	data/chars/Enemys/Nora/Rise02.gif
 	frame  data/chars/Enemys/Nora/Rise01.gif
-
-
 

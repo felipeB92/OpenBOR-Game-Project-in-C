@@ -1,7 +1,8 @@
 name	Macleod
 health	100
 speed	12
-falldie 1
+lifespan 60
+falldie 2
 type	Enemy
 gfxshadow	1
 hostile				player npc
@@ -12,9 +13,7 @@ atchain    1 1 2
 icon	data/chars/Enemys/Macleod/icon.gif 1
 diesound data/voices/die2.wav
 running	20	3	3	1	1
-onblockwscript	data/scripts/bounceF.c
-animationscript 	data/scripts/ani0020.h
-ondrawscript 		data/scripts/player_ondrawscript.c
+animationscript		data/scripts/drago.c
 
 ##LOADS
 
@@ -48,49 +47,8 @@ anim walk
 	delay	10
 	offset	145 182
 	bbox	129 108 35 76
-	jumpframe  6  1  1  0
-	landframe  8
 	frame	data/chars/Enemys/Macleod/walk00.gif
 	frame	data/chars/Enemys/Macleod/walk01.gif
-	frame	data/chars/Enemys/Macleod/walk02.gif
-	frame	data/chars/Enemys/Macleod/walk03.gif
-	frame	data/chars/Enemys/Macleod/walk00.gif
-	frame	data/chars/Enemys/Macleod/walk01.gif
-	frame	data/chars/Enemys/Macleod/walk02.gif
-	frame	data/chars/Enemys/Macleod/walk03.gif
-	frame	data/chars/Enemys/Macleod/walk00.gif
-	frame	data/chars/Enemys/Macleod/walk01.gif
-	frame	data/chars/Enemys/Macleod/walk02.gif
-	frame	data/chars/Enemys/Macleod/walk03.gif
-	frame	data/chars/Enemys/Macleod/walk00.gif
-	frame	data/chars/Enemys/Macleod/walk01.gif
-	frame	data/chars/Enemys/Macleod/walk02.gif
-	frame	data/chars/Enemys/Macleod/walk03.gif
-	frame	data/chars/Enemys/Macleod/walk00.gif
-	frame	data/chars/Enemys/Macleod/walk01.gif
-	frame	data/chars/Enemys/Macleod/walk02.gif
-	frame	data/chars/Enemys/Macleod/walk03.gif
-	frame	data/chars/Enemys/Macleod/walk00.gif
-	frame	data/chars/Enemys/Macleod/walk01.gif
-	frame	data/chars/Enemys/Macleod/walk02.gif
-	frame	data/chars/Enemys/Macleod/walk03.gif
-	frame	data/chars/Enemys/Macleod/walk00.gif
-	frame	data/chars/Enemys/Macleod/walk00.gif
-	frame	data/chars/Enemys/Macleod/walk01.gif
-	frame	data/chars/Enemys/Macleod/walk02.gif
-	frame	data/chars/Enemys/Macleod/walk03.gif
-	frame	data/chars/Enemys/Macleod/walk00.gif
-	frame	data/chars/Enemys/Macleod/walk01.gif
-	frame	data/chars/Enemys/Macleod/walk02.gif
-	frame	data/chars/Enemys/Macleod/walk03.gif
-	frame	data/chars/Enemys/Macleod/walk00.gif
-	frame	data/chars/Enemys/Macleod/walk01.gif
-	frame	data/chars/Enemys/Macleod/walk02.gif
-	frame	data/chars/Enemys/Macleod/walk03.gif
-	frame	data/chars/Enemys/Macleod/walk00.gif
-		attack1  142  116  43  31  1  0  0  0  0  10
-	frame	data/chars/Enemys/Macleod/a101.gif
-		Attack1  0
 	frame	data/chars/Enemys/Macleod/walk02.gif
 	frame	data/chars/Enemys/Macleod/walk03.gif
 
@@ -114,7 +72,7 @@ anim jump
 
 anim attack1
 	loop	0
-	delay	6
+	delay	4
         Range 0 60
 	offset	145 182
 	bbox	135 111 25 72
@@ -131,7 +89,7 @@ anim attack1
 
 anim attack2
 	loop	0
-	delay	6
+	delay	4
 	offset	145 182
 	bbox	136 106 24 77
 		Attack1  0  0  0  0
@@ -156,7 +114,7 @@ anim freespecial
 		move  0
         sound	data/sounds/Shot.wav
 	frame	data/chars/Enemys/Macleod/shot00.gif
-        @cmd  spawn01  "Tiro06"  0  0  0
+        @cmd  spawn01  "Tiro06"  0  60  -1
 	frame	data/chars/Enemys/Macleod/shot01.gif
 	frame	data/chars/Enemys/Macleod/shot00.gif
         delay	25
@@ -177,132 +135,6 @@ anim grabbed
 
 
 
-anim pain
-	loop	0
-	offset	145 182
-	bbox	133 106 33 78
-	delay	15
-	frame	data/chars/Enemys/Macleod/pain00.gif
-	frame	data/chars/Enemys/Macleod/pain01.gif
-
-anim pain2
-	loop	0
-	offset	145 182
-	bbox	134 109 32 74
-	delay	15
-	frame	data/chars/Enemys/Macleod/pain200.gif
-	frame	data/chars/Enemys/Macleod/pain201.gif
-
-anim pain4
-	loop	0
-	offset	145 182
-	bbox	127 116 35 68
-	delay	250
-	frame	data/chars/Enemys/Macleod/pain00.gif
-
-anim pain5
-	loop	0
-	offset	145 182
-	delay	10
-	frame	data/chars/Enemys/Macleod/pain00.gif
-		move  10
-	frame	data/chars/Enemys/Macleod/fall705.gif
-		move  30
-		delay  10
-	frame	data/chars/Enemys/Macleod/fall603.gif
-        quakeframe 4 2 2
-        Sound	data/Sounds/Efeitos/Estrondo.wav
-	frame	data/chars/Enemys/Macleod/fall900.gif
-		move  1
-		movea  5
-	frame  data/chars/Enemys/Macleod/fall900.gif
-		movea  -5
-	frame  data/chars/Enemys/Macleod/fall900.gif
-		delay  50
-		move  0
-		movea  0
-		Attack1  0
-	frame	data/chars/Enemys/Macleod/Fall01.gif
-		delay  10
-		offset  145 181
-	frame	data/chars/Enemys/Macleod/Rise00.gif
-	frame	data/chars/Enemys/Macleod/Rise01.gif
-	frame  data/chars/Enemys/Macleod/Rise01.gif
-
-
-anim death
-	loop	0
-	offset	145 182
-	delay	20
-	jumpframe  0  1  -1  0
-	landframe  2
-	frame	data/chars/Enemys/Macleod/fall701.gif
-	frame  data/chars/Enemys/Macleod/fall00.gif
-	frame	data/chars/Enemys/Macleod/fall01.gif
-
-
-anim death5
-	loop	0
-	offset	145 182
-	delay	10
-	frame	data/chars/Enemys/Macleod/pain00.gif
-		move  10
-	frame	data/chars/Enemys/Macleod/fall705.gif
-		move  30
-		delay  10
-	frame	data/chars/Enemys/Macleod/fall603.gif
-	frame	data/chars/Enemys/Macleod/fall900.gif
-		move  1
-		movea  5
-	frame  data/chars/Enemys/Macleod/fall900.gif
-		movea  -5
-	frame  data/chars/Enemys/Macleod/fall900.gif
-		delay  50
-		move  0
-		movea  0
-	frame	data/chars/Enemys/Macleod/Fall01.gif
-
-
-anim fall
-	loop	0
-	offset	145 182
-        hitfx	data/sounds/golpes/Forte.wav
-		delay  20
-		Attack1  0
-	frame	data/chars/Enemys/Macleod/pain00.gif
-		attack  41
-		hitfx  data/sounds/golpes/Forte.wav
-	frame  data/chars/Enemys/Macleod/fall00.gif
-		Attack1  0
-	frame	data/chars/Enemys/Macleod/fall01.gif
-
-anim fall3
-	loop	0
-	offset	145 182
-	delay	5
-	jumpframe  0  3  -3  0
-	landframe  8
-		bbox  128  111  38  42
-		Attack1  0
-	frame	data/chars/Enemys/Macleod/fall705.gif
-	frame	data/chars/Enemys/Macleod/fall600.gif
-	frame	data/chars/Enemys/Macleod/fall601.gif
-	frame	data/chars/Enemys/Macleod/fall602.gif
-	frame	data/chars/Enemys/Macleod/fall705.gif
-	frame	data/chars/Enemys/Macleod/fall600.gif
-	frame	data/chars/Enemys/Macleod/fall601.gif
-	frame	data/chars/Enemys/Macleod/fall602.gif
-	frame	data/chars/Enemys/Macleod/fall705.gif
-	frame	data/chars/Enemys/Macleod/fall600.gif
-	frame	data/chars/Enemys/Macleod/fall601.gif
-	frame	data/chars/Enemys/Macleod/fall602.gif
-	frame  data/chars/Enemys/Macleod/fall705.gif
-	frame  data/chars/Enemys/Macleod/fall600.gif
-		Attack1  0
-		bbox  0
-		move  0
-	frame  data/chars/Enemys/Macleod/fall01.gif
-
 anim rise
 	loop	0
 	offset	145 182
@@ -320,4 +152,155 @@ anim land
 	offset	145 182
 	bbox	128 133 46 41
 	frame	data/chars/Enemys/Macleod/jumpland00.gif
+
+anim pain
+	loop	0
+	offset	139 182
+	bbox	134 118 23 65
+		delay  30
+	frame	data/chars/Enemys/Macleod/pain01.gif
+
+
+anim pain2
+	loop	0
+	offset	143 183
+	bbox	130 113 29 71
+	delay	30
+	frame	data/chars/Enemys/Macleod/pain02.gif
+
+anim pain3
+	loop	0
+	offset	145 183
+	bbox	133 110 27 73
+	jumpframe  0  2  0  0
+	delay	10
+	frame	data/chars/Enemys/Macleod/Pain02.gif
+	frame	data/chars/Enemys/Macleod/fall400.gif
+		offset  142  183
+	frame	data/chars/Enemys/Macleod/Pain01.gif
+
+
+
+anim fall
+	loop	0
+	offset	116 181
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Macleod/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  142  176
+	frame  data/chars/Enemys/Macleod/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Macleod/fall403.gif
+		Attack1  0
+	frame	data/chars/Enemys/Macleod/fall102.gif
+
+anim fall2
+	loop	0
+	offset	119 183
+	delay	20
+	jumpframe  0  2  -3.5  0
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Macleod/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  139  172
+	frame  data/chars/Enemys/Macleod/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Macleod/fall403.gif
+		Attack1  0
+		offset  139  179
+	frame	data/chars/Enemys/Macleod/fall102.gif
+#Shock
+
+anim fall4
+	loop	0
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Macleod/fall200.gif
+	frame	data/chars/Enemys/Macleod/fall201.gif
+	frame	data/chars/Enemys/Macleod/fall200.gif
+	frame	data/chars/Enemys/Macleod/fall201.gif
+	frame	data/chars/Enemys/Macleod/fall200.gif
+	frame	data/chars/Enemys/Macleod/fall201.gif
+	frame	data/chars/Enemys/Macleod/fall200.gif
+		offset  146  180
+	frame	data/chars/Enemys/Macleod/fall102.gif
+#Burn
+
+anim fall5
+	loop	0
+	offset	50 77
+	delay	10
+		Attack1  0
+	frame	data/chars/Enemys/Macleod/fall300.gif
+	frame	data/chars/Enemys/Macleod/fall301.gif
+	frame	data/chars/Enemys/Macleod/fall302.gif
+	frame	data/chars/Enemys/Macleod/fall300.gif
+	frame	data/chars/Enemys/Macleod/fall301.gif
+	frame	data/chars/Enemys/Macleod/fall302.gif
+	frame	data/chars/Enemys/Macleod/fall300.gif
+	frame	data/chars/Enemys/Macleod/fall301.gif
+	frame	data/chars/Enemys/Macleod/fall302.gif
+		offset  139  180
+	frame	data/chars/Enemys/Macleod/fall102.gif
+
+anim fall8
+	loop	0
+	offset	125 178
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Enemys/Macleod/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  141  172
+	frame  data/chars/Enemys/Macleod/fall101.gif
+		Attack1  0
+		offset  141  179
+	frame	data/chars/Enemys/Macleod/fall102.gif
+
+anim fall9
+	loop	0
+	offset	141 181
+	delay	999
+		Attack1  0
+	frame	data/chars/Enemys/Macleod/pain01.gif
+	frame	data/chars/Enemys/Macleod/pain02.gif
+	frame	data/chars/Enemys/Macleod/fall400.gif
+		offset  158  160
+	frame	data/chars/Enemys/Macleod/fall401.gif
+		offset  152  182
+	frame	data/chars/Enemys/Macleod/fall402.gif
+		offset  141  172
+	frame	data/chars/Enemys/Macleod/fall403.gif
+		offset  124  174
+	frame	data/chars/Enemys/Macleod/fall404.gif
+		offset  143  181
+	frame	data/chars/Enemys/Macleod/fall405.gif
+	delay	50
+		offset  137  172
+	frame	data/chars/Enemys/Macleod/fall403.gif
+	delay	999
+		offset  141  178
+	frame	data/chars/Enemys/Macleod/fall405.gif
+
+anim death
+	loop	0
+	offset	144 180
+	delay	20
+	frame	data/chars/Enemys/Macleod/fall102.gif
+
+anim Pain8
+	loop	0
+	delay	15
+	offset	141 186
+	jumpframe  0  2  1  0
+	frame	data/chars/Enemys/Macleod/jump00.gif
+	frame	data/chars/Enemys/Macleod/jump00.gif
+
 

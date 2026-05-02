@@ -1,6 +1,6 @@
 name	Nora
 health	100
-falldie 1
+falldie 2
 speed	10
 escapehits			2
 hostile				player npc
@@ -314,14 +314,12 @@ anim Death
 	loop	0
 	offset	151 192
 	delay	7
-	frame	data/chars/Enemys/Nora/Rise03.gif
-	frame	data/chars/Enemys/Nora/Rise02.gif
 	frame  data/chars/Enemys/Nora/Rise01.gif
 
 
 anim Pain8
 	loop	0
-	delay	30
+	delay	15
 	offset	137 185
 	jumpframe  0  2  1  0
 	frame	data/chars/Enemys/nora/jump00.gif

@@ -1,5 +1,6 @@
 name	Bruce
 health	100
+lifespan 60
 speed	12
 type	Enemy
 gfxshadow	1
@@ -123,6 +124,7 @@ anim Freespecial
 		attack1  89  57  44  17  7  1  0  0  0  20
 	frame	data/chars/Enemys/Bruce/a201.gif
 	frame	data/chars/Enemys/Bruce/a202.gif
+		attack1  81  104  23  71  7  1  0  0  0  20
 	frame	data/chars/Enemys/Bruce/a203.gif
 		Attack1  0
 	frame	data/chars/Enemys/Bruce/a204.gif
@@ -165,49 +167,51 @@ anim land
 
 anim pain
 	loop	0
-	offset	82 120
-	bbox	62 58 42 61
+	offset	113 182
+	bbox	103 120 26 61
 		delay  30
 	frame	data/chars/Enemys/Bruce/pain01.gif
 
 
 anim pain2
 	loop	0
-	offset	75 119
-	bbox	60 54 29 64
+	offset	117 180
+	bbox	106 119 27 64
 	delay	30
 	frame	data/chars/Enemys/Bruce/pain02.gif
 
 anim pain3
 	loop	0
-	offset	79 119
-	bbox	63 52 26 67
+	offset	118 180
+	bbox	108 123 23 57
 	jumpframe  0  2  0  0
 	delay	10
 	frame	data/chars/Enemys/Bruce/Pain02.gif
-	frame	data/chars/Enemys/Bruce/fall100.gif
+	frame	data/chars/Enemys/Bruce/fall400.gif
 	frame	data/chars/Enemys/Bruce/Pain01.gif
 
 
 
 anim fall
 	loop	0
-	offset	78 120
+	offset	98 178
 	delay	20
         hitfx	data/sounds/golpes/Forte.wav
 		Attack1  0
 	frame	data/chars/Enemys/Bruce/fall100.gif
 		attack  101
 		hitfx  data/sounds/golpes/Forte.wav
+		offset  143  202
 	frame  data/chars/Enemys/Bruce/fall101.gif
 		hitfx  data/sounds/golpes/Forte.wav
 	frame  data/chars/Enemys/Bruce/fall403.gif
 		Attack1  0
+		offset  109  183
 	frame	data/chars/Enemys/Bruce/fall102.gif
 
 anim fall2
 	loop	0
-	offset	78 118
+	offset	100 179
 	delay	20
 	jumpframe  0  2  -3.5  0
         hitfx	data/sounds/golpes/Forte.wav
@@ -215,11 +219,12 @@ anim fall2
 	frame	data/chars/Enemys/Bruce/fall100.gif
 		attack  101
 		hitfx  data/sounds/golpes/Forte.wav
+		offset  144  202
 	frame  data/chars/Enemys/Bruce/fall101.gif
 		hitfx  data/sounds/golpes/Forte.wav
 	frame  data/chars/Enemys/Bruce/fall403.gif
 		Attack1  0
-		offset  78  118
+		offset  107  182
 	frame	data/chars/Enemys/Bruce/fall102.gif
 #Shock
 
@@ -235,7 +240,7 @@ anim fall4
 	frame	data/chars/Enemys/Bruce/fall200.gif
 	frame	data/chars/Enemys/Bruce/fall201.gif
 	frame	data/chars/Enemys/Bruce/fall200.gif
-		offset  75  119
+		offset  111  180
 	frame	data/chars/Enemys/Bruce/fall102.gif
 #Burn
 
@@ -253,59 +258,60 @@ anim fall5
 	frame	data/chars/Enemys/Bruce/fall300.gif
 	frame	data/chars/Enemys/Bruce/fall301.gif
 	frame	data/chars/Enemys/Bruce/fall302.gif
-		offset  76  120
+		offset  110  182
 	frame	data/chars/Enemys/Bruce/fall102.gif
 
 anim fall8
 	loop	0
-	offset	76 119
+	offset	97 179
 	delay	20
         hitfx	data/sounds/golpes/Forte.wav
 		Attack1  0
 	frame	data/chars/Enemys/Bruce/fall100.gif
 		attack  101
 		hitfx  data/sounds/golpes/Forte.wav
+		offset  145  205
 	frame  data/chars/Enemys/Bruce/fall101.gif
 		Attack1  0
-		offset  76  121
+		offset  109  181
 	frame	data/chars/Enemys/Bruce/fall102.gif
 
 anim fall9
 	loop	0
-	offset	81 119
+	offset	110 180
 	delay	999
 		Attack1  0
 	frame	data/chars/Enemys/Bruce/pain01.gif
+		offset  117  180
 	frame	data/chars/Enemys/Bruce/pain02.gif
-		offset  77  119
 	frame	data/chars/Enemys/Bruce/fall400.gif
-		offset  113  105
+		offset  158  131
 	frame	data/chars/Enemys/Bruce/fall401.gif
-		offset  89  135
+		offset  187  179
 	frame	data/chars/Enemys/Bruce/fall402.gif
-		offset  80  113
+		offset  144  201
 	frame	data/chars/Enemys/Bruce/fall403.gif
-		offset  103  110
+		offset  98  180
 	frame	data/chars/Enemys/Bruce/fall404.gif
-		offset  72  119
+		offset  109  179
 	frame	data/chars/Enemys/Bruce/fall405.gif
 	delay	50
-		offset  76  115
+		offset  145  203
 	frame	data/chars/Enemys/Bruce/fall403.gif
 	delay	999
-		offset  74  120
+		offset  110  180
 	frame	data/chars/Enemys/Bruce/fall405.gif
 
 anim death
 	loop	0
-	offset	76 118
+	offset	110 181
 	delay	20
 	frame	data/chars/Enemys/Bruce/fall102.gif
 
 anim Pain8
 	loop	0
 	delay	15
-	offset	76 118
+	offset	122 179
 	jumpframe  0  2  1  0
 	frame	data/chars/Enemys/Bruce/jump00.gif
 	frame	data/chars/Enemys/Bruce/jump00.gif

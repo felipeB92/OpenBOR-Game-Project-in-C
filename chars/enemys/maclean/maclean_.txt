@@ -237,7 +237,7 @@ anim fall4
 
 anim fall5
 	loop	0
-	offset	50 77
+	offset	41 66
 	delay	10
 		Attack1  0
 	frame	data/chars/Enemys/Maclean/fall300.gif

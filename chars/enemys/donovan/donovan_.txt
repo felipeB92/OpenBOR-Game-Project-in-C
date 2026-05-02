@@ -228,7 +228,7 @@ anim fall4
 
 anim fall5
 	loop	0
-	offset	50 77
+	offset	39 69
 	delay	10
 		Attack1  0
 	frame	data/chars/Enemys/Donovan/fall300.gif
@@ -295,5 +295,4 @@ anim Pain8
 	jumpframe  0  2  1  0
 	frame	data/chars/Enemys/Donovan/jump00.gif
 	frame	data/chars/Enemys/Donovan/jump00.gif
-
 

@@ -3,6 +3,7 @@ health	100
 speed	8
 falldie 2
 type	Enemy
+lifespan 40
 gfxshadow	1
 JUMPHEIGHT 1 1
 Jumpheight 3

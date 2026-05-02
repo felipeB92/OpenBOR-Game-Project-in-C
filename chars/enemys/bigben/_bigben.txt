@@ -419,7 +419,7 @@ anim fall4
 
 anim fall5
 	loop	0
-	offset	50 77
+	offset	38 67
 	delay	10
 		Attack1  0
 	frame	data/chars/Enemys/BigBen/fall300.gif

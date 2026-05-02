@@ -410,9 +410,10 @@ anim fall
 	frame	data/chars/Enemys/Jet/fall100.gif
 		attack  101
 		hitfx  data/sounds/golpes/Forte.wav
-		offset  134  193
+		offset  142  175
 	frame  data/chars/Enemys/Jet/fall101.gif
 		hitfx  data/sounds/golpes/Forte.wav
+		offset  143  155
 	frame  data/chars/Enemys/Jet/fall403.gif
 		Attack1  0
 		offset  148  183
@@ -428,9 +429,10 @@ anim fall2
 	frame	data/chars/Enemys/Jet/fall100.gif
 		attack  101
 		hitfx  data/sounds/golpes/Forte.wav
-		offset  149  188
+		offset  139  166
 	frame  data/chars/Enemys/Jet/fall101.gif
 		hitfx  data/sounds/golpes/Forte.wav
+		offset  138  153
 	frame  data/chars/Enemys/Jet/fall403.gif
 		Attack1  0
 		offset  146  182
@@ -439,20 +441,17 @@ anim fall2
 
 anim fall4
 	loop	0
-	offset	50 160
+	offset	50 140
 	delay	10
 		Attack1  0
 	frame	data/chars/Enemys/Jet/fall200.gif
-		offset  50  140
 	frame	data/chars/Enemys/Jet/fall201.gif
-		offset  50  130
+		offset  50  120
 	frame	data/chars/Enemys/Jet/fall200.gif
 	frame	data/chars/Enemys/Jet/fall201.gif
-		offset  50  110
+		offset  50  80
 	frame	data/chars/Enemys/Jet/fall200.gif
-		offset  50  100
 	frame	data/chars/Enemys/Jet/fall201.gif
-		offset  50  90
 	frame	data/chars/Enemys/Jet/fall200.gif
 		offset  149  183
 	frame	data/chars/Enemys/Jet/fall102.gif
@@ -460,23 +459,22 @@ anim fall4
 
 anim fall5
 	loop	0
-	offset	50 140
+	offset	41 140
 	delay	10
 		Attack1  0
 	frame	data/chars/Enemys/Jet/fall300.gif
+		offset  41  120
 	frame	data/chars/Enemys/Jet/fall301.gif
+		offset  41  110
 	frame	data/chars/Enemys/Jet/fall302.gif
-		offset  50  140
+		offset  41  100
 	frame	data/chars/Enemys/Jet/fall300.gif
-		offset  50  130
+		offset  41  80
 	frame	data/chars/Enemys/Jet/fall301.gif
-		offset  50  120
+		offset  41  70
 	frame	data/chars/Enemys/Jet/fall302.gif
-		offset  50  100
 	frame	data/chars/Enemys/Jet/fall300.gif
-		offset  50  90
 	frame	data/chars/Enemys/Jet/fall301.gif
-		offset  50  80
 	frame	data/chars/Enemys/Jet/fall302.gif
 		offset  148  184
 	frame	data/chars/Enemys/Jet/fall102.gif

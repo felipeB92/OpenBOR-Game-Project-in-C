@@ -1,5 +1,6 @@
 name	p1
-health	150
+health	70
+lifespan 60
 speed	14
 CANTGRAB 1
 riseinv				0.4 1
@@ -153,7 +154,7 @@ anim Freespecial2
 
 anim Freespecial3
 	loop	0
-	delay	12
+	delay	6
         Range 250 500
 	offset	141 182
 	jumpframe  0  3  3  0
@@ -201,7 +202,7 @@ anim Freespecial4
 
 anim Freespecial5
 	loop	0
-	delay	12
+	delay	6
         Range 0 100
         Rangez -200 -1
 	jumpframe  4  2  3  -1
@@ -243,10 +244,11 @@ anim grabbed
 anim death
 	loop	0
 	offset	141 182
-	delay	20
+	delay	6
 	frame	data/chars/Enemys/p1/death00.gif
 	frame	data/chars/Enemys/p1/death00.gif
         @cmd  spawn01  "Boom02"  0  0  0
+		delay  20
 	frame	data/chars/Enemys/p1/death01.gif
         @cmd  spawn01  "Boom02"  0  5  0
 	frame	data/chars/Enemys/p1/death02.gif

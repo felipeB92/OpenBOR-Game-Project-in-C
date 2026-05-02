@@ -1,5 +1,6 @@
 name	Vice
-health	100
+health	50
+lifespan 40
 speed	8
 type	Enemy
 gfxshadow	1
