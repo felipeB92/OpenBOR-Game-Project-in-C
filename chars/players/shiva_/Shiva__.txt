@@ -12,7 +12,7 @@ antigrab 2
 JUMPHEIGHT 1 1
 Jumpheight 3
 atchain    1 1 2 3
-weapons				Shiva_Knife Shiva_Sword Shiva_pipe Shiva_Kunai
+weapons				Shiva__Knife Shiva__Sword Shiva__pipe Shiva__Kunai
 icon	data/chars/Players/Shiva_/icon.gif 1
 diesound data/chars/Players/Shiva_/death.wav
 running	27	3	2	1	1
@@ -26,10 +26,10 @@ Load ShivaSP2
 
 
 
-Load Shiva_Knife
-Load Shiva_Pipe
-Load Shiva_Kunai
-Load Shiva_Sword
+Load Shiva__Knife
+Load Shiva__Pipe
+Load Shiva__Kunai
+Load Shiva__Sword
 
 Com d d freespecial5
 Com u u freespecial6
@@ -283,7 +283,7 @@ anim Freespecial2
 	offset	136 192
         hitfx	data/sounds/golpes/forte.wav
 	Sound	data/sounds/golpes/Grab.wav
-        quakeframe 5 2 2
+        quakeframe 6 2 2
 		Attack1  0
 @cmd	slamstart
 @cmd	position 1 50 1 0 -1
@@ -294,18 +294,20 @@ anim Freespecial2
 @cmd	position 0 30 1 0 -1
 	frame	data/chars/Players/Shiva_/grab02.gif
 @cmd	position 0 10 30 0 -1
+		sound  data/chars/Enemys/Shiva/a1.wav
+		delay  20
 	frame	data/chars/Players/Shiva_/slam00.gif
 @cmd	position 2 -20 30 0 1
+		delay  10
 	frame	data/chars/Players/Shiva_/slam01.gif
 @cmd	position 5 -30 10 0 1
-		delay  25
+		delay  15
 		attack1  60  154  86  38  7  1  0  0  0  15
-		sound  data/chars/Enemys/Shiva/a2.wav
 	frame	data/chars/Players/Shiva_/slam02.gif
 @cmd	position 4 -35 1 0 1
 		attack1  49  159  77  39  7  1  0  0  0  15
 		sound  data/sounds/efeitos/solo.wav
-		offset  136  195
+		offset  136  193
 @cmd	position 7 -45 1 0 1
 @cmd  depost  0
 @cmd  throw  25  5  -1  1  0  -1
@@ -323,16 +325,31 @@ anim freespecial4
 	Sound	data/chars/Players/Shiva_/a3.wav
 		Attack1  0
 @cmd	slamstart
-@cmd	position 0 30 1 0 -1
+@cmd	position 0 20 1 0 -1
 	frame	data/chars/Players/Shiva_/t00.gif
+@cmd	position 2 25 10 0 -1
 	frame	data/chars/Players/Shiva_/t01.gif
+@cmd	position 3 -10 30 0 -1
+		attack1  84  124  46  28  12  1  0  0  0  15
 	frame	data/chars/Players/Shiva_/t02.gif
-@cmd	position 7 -45 1 0 1
-@cmd  depost  0
-@cmd  throw  25  5  -1  1  0  -1
-@cmd  clearL
+@cmd	position 4 -40 25 0 -1
+		attack1  48  118  27  50  12  1  0  0  0  15
+		sound  data/chars/Enemys/Shiva/a1.wav
 	frame	data/chars/Players/Shiva_/t03.gif
+@cmd	position 4 -40 25 0 -1
+	frame	data/chars/Players/Shiva_/t03.gif
+@cmd	position 8 -70 25 0 -1
+@cmd  depost  0
+@cmd  throw  20  -2  2  1  0  -1
+@cmd  clearL
+		attack1  -2  121  49  36  12  1  0  0  0  15
+	frame	data/chars/Players/Shiva_/t03.gif
+	delay	12
+		attack1  -31  121  49  36  12  1  0  0  0  15
 	frame	data/chars/Players/Shiva_/t02.gif
+
+
+
 
 
 anim Freespecial5
@@ -429,6 +446,7 @@ anim special2
         hitfx	data/sounds/golpes/forte.wav
 	frame	data/chars/Players/Shiva_/Sp300.gif
 		delay  20
+		sound  data/chars/Enemys/Shiva/sp02.wav
 	frame	data/chars/Players/Shiva_/Sp301.gif
 		delay  3
 	@cmd  spawn01  "ShivaP01"  0  0  1
@@ -481,6 +499,7 @@ anim Follow5
  	offset	139 190
        @cmd dasher 0.7 0 0
 		attack5  143  87  42  82  10  1  0  0  0  15
+		sound  data/chars/Enemys/Shiva/a3.wav
 	frame	data/chars/Players/Shiva_/ra102.gif
 	frame	data/chars/Players/Shiva_/ra102.gif
 	frame	data/chars/Players/Shiva_/ra103.gif
@@ -496,6 +515,7 @@ anim Follow6
 	jumpframe  6  3  1  0
        @cmd dasher 0.7 0 0
 		Attack1  0
+		sound  data/chars/Enemys/Shiva/a1.wav
 	frame	data/chars/Players/Shiva_/ra102.gif
 		attack1  146  89  41  71  5  0  0  0  0  15
 	frame	data/chars/Players/Shiva_/ra102.gif

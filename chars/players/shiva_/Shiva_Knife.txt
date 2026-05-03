@@ -26,6 +26,7 @@ remap data/chars/Enemys/Shiva/idle00.gif data/chars/Enemys/Shiva/alter4.gif
 
 
 Load KnifeT
+Load NADA
 
 
 anim get
@@ -48,6 +49,9 @@ anim get
 	frame	data/chars/Enemys/Shiva/knife/a204.gif
 		delay  20
 	frame	data/chars/Enemys/Shiva/knife/a204.gif
+
+
+
 
 
 

@@ -1,0 +1,117 @@
+name	Shiva__Sword
+health	100
+mp 20
+#mprate 1
+riseinv				0.4 1
+speed	12
+type	none
+gfxshadow	1
+candamage			enemy npc obstacle
+antigrab 2
+JUMPHEIGHT 1 1
+Jumpheight 3
+atchain    1 1 2 3
+weapons				Adam_Knife Adam_Sword Adam_pipe Adam_Kunai
+icon	data/chars/players/Shiva_/icon.gif 1
+diesound data/sounds/Adamdie.wav
+running	20	3	2	1	1
+#onblockwscript	data/scripts/bounceF.c
+animationscript		data/scripts/drago.c
+#ondrawscript 		data/scripts/player_ondrawscript.c
+
+load SwordT
+Load T00
+
+
+Com d d freespecial5
+Com u u freespecial6
+com b A freespecial3
+
+remap data/chars/players/Shiva_/idle00.gif data/chars/players/Shiva_/map01.gif
+remap data/chars/players/Shiva_/idle00.gif data/chars/players/Shiva_/map02.gif
+remap data/chars/players/Shiva_/idle00.gif data/chars/players/Shiva_/map03.gif
+remap data/chars/players/Shiva_/idle00.gif data/chars/players/Shiva_/map04.gif
+
+
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	138 194
+	bbox	128 110 26 83
+	frame   data/chars/players/Shiva_/Sword/idle00.gif
+@cmd  depost  0
+@cmd  throw  25  5  2  2  0  -1
+@cmd  clearL
+	frame   data/chars/players/Shiva_/Sword/idle01.gif
+	frame   data/chars/players/Shiva_/Sword/idle02.gif
+
+
+
+anim walk
+	loop	1
+	delay	12
+	offset	137 193
+	bbox	127 112 24 69
+	frame	data/chars/players/Shiva_/Sword/walk00.gif
+@cmd  depost  0
+@cmd  throw  25  5  2  2  0  -1
+@cmd  clearL
+	frame	data/chars/players/Shiva_/Sword/walk01.gif
+	frame	data/chars/players/Shiva_/Sword/walk02.gif
+	frame	data/chars/players/Shiva_/Sword/walk03.gif
+	frame	data/chars/players/Shiva_/Sword/walk04.gif
+	frame	data/chars/players/Shiva_/Sword/walk05.gif
+
+
+
+anim attack1
+	loop	0
+	delay	6
+	offset	144 194
+	bbox	138 116 22 79
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/Armas/Corte.wav
+	cancel	0 9 0 b A freespecial7
+	frame	data/chars/players/Shiva_/Sword/a300.gif
+	frame	data/chars/players/Shiva_/Sword/a301.gif
+		attack1  155  141  69  14  20  1  0  0  0  15
+		delay  20
+	frame	data/chars/players/Shiva_/Sword/a302.gif
+
+
+
+
+
+anim run
+        loop    1
+        delay  9
+	offset	135 195
+	bbox	129 115 25 47
+        frame	data/chars/players/Shiva_/Sword/run00.gif
+        frame	data/chars/players/Shiva_/Sword/run01.gif
+        frame	data/chars/players/Shiva_/Sword/run02.gif
+        frame	data/chars/players/Shiva_/Sword/run03.gif
+        frame	data/chars/players/Shiva_/Sword/run04.gif
+        frame	data/chars/players/Shiva_/Sword/run05.gif
+
+
+anim special2
+        energycost 0 1
+        custknife Swordt
+        throwframe 2 55
+        MpOnly 1
+	loop	0
+	delay	5
+	offset	144 193
+	fastattack 1
+        hitfx	data/sounds/golpes/forte.wav
+	frame	data/chars/players/Shiva_/Sword/a400.gif
+	frame	data/chars/players/Shiva_/Sword/a401.gif
+	frame	data/chars/players/Shiva_/Sword/a402.gif
+	frame	data/chars/players/Shiva_/Sword/a403.gif
+		delay  25
+	frame	data/chars/players/Shiva_/Sword/a404.gif
+

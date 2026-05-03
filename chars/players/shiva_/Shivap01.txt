@@ -36,24 +36,24 @@ anim idle
         hitfx	data/sounds/golpes/medio.wav
 	Sound	data/chars/Players/Shiva_/p01.wav
 	frame	data/chars/Players/Shiva_/orb/P00.gif
-		attack1  148  114  96  60  5  0  0  0  0  15
+		attack1  148  114  96  60  5  0  0  0  0  25
 	frame	data/chars/Players/Shiva_/orb/P01.gif
 		Attack1  0
 	frame	data/chars/Players/Shiva_/orb/P02.gif
-		attack2  148  114  96  60  5  0  0  0  0  15
+		attack2  148  114  96  60  5  0  0  0  0  25
 	frame	data/chars/Players/Shiva_/orb/P03.gif
 		Attack1  0
 	frame	data/chars/Players/Shiva_/orb/P04.gif
-		attack1  148  114  96  60  5  0  0  0  0  15
+		attack1  148  114  96  60  5  0  0  0  0  25
 	frame	data/chars/Players/Shiva_/orb/P05.gif
 		Attack1  0
 	frame	data/chars/Players/Shiva_/orb/P06.gif
-		attack2  148  114  96  60  5  0  0  0  0  15
+		attack2  148  114  96  60  5  0  0  0  0  25
 	frame	data/chars/Players/Shiva_/orb/P07.gif
 		Attack1  0
 	frame	data/chars/Players/Shiva_/orb/P08.gif
 	frame	data/chars/Players/Shiva_/orb/P09.gif
-		attack2  148  114  96  60  30  1  0  0  25  15
+		attack2  148  114  96  60  30  1  0  0  25  25
 	frame	data/chars/Players/Shiva_/orb/P10.gif
 	frame	data/chars/Players/Shiva_/orb/P11.gif
 	frame	data/chars/Players/Shiva_/orb/P12.gif

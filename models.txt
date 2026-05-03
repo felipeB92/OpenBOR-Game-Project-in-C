@@ -101,6 +101,10 @@ know	shivaSp2	data/chars/Players/Shiva_/ShivaSp2.txt
 know	shivap01	data/chars/Players/Shiva_/Shivap01.txt
 
 load	shiva__		data/chars/Players/Shiva_/Shiva__.txt
+know	shiva__Knife	data/chars/Players/Shiva_/Shiva__Knife.txt
+know	shiva__Kunai	data/chars/Players/Shiva_/Shiva__Kunai.txt
+know	shiva__pipe	data/chars/Players/Shiva_/Shiva__pipe.txt
+know	shiva__Sword	data/chars/Players/Shiva_/Shiva__Sword.txt
 
 load	MR_X_		data/chars/Players/MRX_/MR_X_.txt
 know	MR_X_Knife	data/chars/Players/MRX_/MR_X_Knife.txt
