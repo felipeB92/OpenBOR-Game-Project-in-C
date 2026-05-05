@@ -1,0 +1,57 @@
+name			BigBen401 #GROUND
+type			None
+setlayer -5
+onblockwscript	data/scripts/bounceF.c
+animationscript 	data/scripts/ani0020.h
+ondrawscript 		data/scripts/player_ondrawscript.c
+
+Load _Bigben
+
+
+
+
+anim idle
+	loop	0
+	delay	14
+	offset	145 177
+	bbox	130 99 31 79
+	frame	data/chars/Enemys/BigBen/walk00.gif
+	frame	data/chars/Enemys/BigBen/walk01.gif
+	frame	data/chars/Enemys/BigBen/walk02.gif
+	frame	data/chars/Enemys/BigBen/walk03.gif
+	frame	data/chars/Enemys/BigBen/walk00.gif
+	frame	data/chars/Enemys/BigBen/walk01.gif
+	frame	data/chars/Enemys/BigBen/walk02.gif
+	frame	data/chars/Enemys/BigBen/walk03.gif
+	frame	data/chars/Enemys/BigBen/walk00.gif
+	frame	data/chars/Enemys/BigBen/walk01.gif
+	frame	data/chars/Enemys/BigBen/walk02.gif
+	frame	data/chars/Enemys/BigBen/walk03.gif
+	frame	data/chars/Enemys/BigBen/walk00.gif
+	frame	data/chars/Enemys/BigBen/walk01.gif
+	frame	data/chars/Enemys/BigBen/walk02.gif
+	frame	data/chars/Enemys/BigBen/walk03.gif
+	frame	data/chars/Enemys/BigBen/walk00.gif
+	frame	data/chars/Enemys/BigBen/walk01.gif
+	frame	data/chars/Enemys/BigBen/walk02.gif
+	frame	data/chars/Enemys/BigBen/walk03.gif
+	frame	data/chars/Enemys/BigBen/walk00.gif
+	frame	data/chars/Enemys/BigBen/walk01.gif
+	frame	data/chars/Enemys/BigBen/walk02.gif
+	frame	data/chars/Enemys/BigBen/walk03.gif
+	frame	data/chars/Enemys/BigBen/walk00.gif
+	frame	data/chars/Enemys/BigBen/walk01.gif
+	frame	data/chars/Enemys/BigBen/walk02.gif
+	frame	data/chars/Enemys/BigBen/walk03.gif
+	frame	data/chars/Enemys/BigBen/walk00.gif
+	frame	data/chars/Enemys/BigBen/walk01.gif
+	frame	data/chars/Enemys/BigBen/walk02.gif
+	frame	data/chars/Enemys/BigBen/walk03.gif
+	frame	data/chars/Enemys/BigBen/walk00.gif
+	frame	data/chars/Enemys/BigBen/walk01.gif
+	frame	data/chars/Enemys/BigBen/walk02.gif
+	frame	data/chars/Enemys/BigBen/walk03.gif
+		@cmd  spawn01  "_BigBen"  0  0  0
+	frame	data/chars/Enemys/Bigben/empty.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/Enemys/Bigben/empty.gif

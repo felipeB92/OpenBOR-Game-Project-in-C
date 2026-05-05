@@ -509,3 +509,25 @@ Scene      data/scenes/ending3.txt
 Scene      data/scenes/Unl.txt
 
 end
+
+set	    Streets_of_rage_N
+lives         5
+credits       99
+nosame	      1 1
+continuescore 2
+canSave       2
+script continue data/scripts/continue.c
+
+
+
+
+#-------------------
+
+
+
+
+
+
+z	150 466
+
+file	data/levels/St401a.txt

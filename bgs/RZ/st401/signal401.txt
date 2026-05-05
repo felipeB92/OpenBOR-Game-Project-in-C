@@ -1,0 +1,16 @@
+name			Signal401 #GROUND
+type			None
+setlayer -5
+
+remap data/chars/Enemys/Signal/idle00.gif data/chars/Enemys/Signal/alter1.gif
+remap data/chars/Enemys/Signal/idle00.gif data/chars/Enemys/Signal/alter2.gif
+remap data/chars/Enemys/Signal/idle00.gif data/chars/Enemys/Signal/alter3.gif
+remap data/chars/Enemys/Signal/idle00.gif data/chars/Enemys/Signal/alter4.gif
+
+
+anim idle
+	loop	1
+	offset	152 184
+		delay  20
+	frame	data/chars/Enemys/Signal/walk01.gif
+	frame	data/chars/Enemys/Signal/walk02.gif
