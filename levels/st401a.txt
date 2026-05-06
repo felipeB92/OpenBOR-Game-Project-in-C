@@ -2,7 +2,7 @@ music		data/bgs/St307/The_Poets_II.ogg
 bossmusic	data/music/boss1.bor
 scrollspeed 0.5#1
 stagenumber 1
-background	data/bgs/st401/Back00.gif 0 0 
+background	data/bgs/st401/Back.gif 0 0 
 panel		data/bgs/St401/Pn00.gif
 frontpanel      data/bgs/St05/Front02.gif
 cameratype 1
@@ -34,6 +34,12 @@ spawn  Donovan
 health 50
 	coords  500  220
 	at  100
+
+
+spawn  Galsia
+health 50
+	coords  500  220
+	at  800
 
 
 
