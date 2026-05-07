@@ -2,9 +2,9 @@ music		data/bgs/St307/The_Poets_II.ogg
 bossmusic	data/music/boss1.bor
 scrollspeed 0.5#1
 stagenumber 1
-background	data/bgs/st401/Back00.gif 0 0
-panel		data/bgs/St401/Pn01.gif
-frontpanel      data/bgs/St401/Front01.gif
+background	data/bgs/st401/Back.gif 0 0 
+panel		data/bgs/St401/Pn00.gif
+frontpanel      data/bgs/St05/Front02.gif
 cameratype 1
 cameraoffset 0 -30
 #levelscript @script
@@ -22,49 +22,12 @@ spawn2  	130 35
 spawn3  	135  50
 
 light		128 -128
-at			-10
+at			0
 
 
 
-spawn  Fire401
-flip 1
-	coords  700  116
-	at  0
 
-spawn  Fire401
-flip 1
-	coords  877  116
-	at  0
 
-spawn  Fire401
-flip 1
-	coords  1052  116
-	at  0
-
-spawn  Fire401
-flip 1
-	coords  1242  126
-	at  0
-
-spawn  Fire401
-flip 1
-	coords  1752  118
-	at  0
-
-spawn  Fire401
-flip 1
-	coords  1941  118
-	at  0
-
-spawn  Fire401b
-flip 1
-	coords  874  111
-	at  0
-
-spawn  Fire401b
-flip 1
-	coords  1055  111
-	at  0
 
 
 spawn  Donovan
@@ -77,5 +40,25 @@ spawn  Galsia
 health 50
 	coords  500  220
 	at  800
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

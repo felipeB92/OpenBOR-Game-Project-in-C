@@ -475,13 +475,9 @@ know	DOCTORS    	data/Bgs/St308/DOCTORS.txt
 know	dOCTOR2    	data/Bgs/St308/dOCTOR2.txt
 know	DOCTOR2S    	data/Bgs/St308/DOCTOR2S.txt
 
-know	aLARME401     	data/Bgs/St401/aLARME401.txt
-know	Fog401     	data/Bgs/St401/Fog401.txt
-know	Signal401     	data/Bgs/St401/Signal401.txt
-know	Ash401     	data/Bgs/St401/Ash401.txt
-know	Bigben401     	data/Bgs/St401/Bigben401.txt
-know	Luz401     	data/Bgs/St401/Luz401.txt
-know	HEli401     	data/Bgs/St401/Heli401.txt
+know	Fire401     	data/Bgs/St401/Fire401.txt
+know	Fire401b     	data/Bgs/St401/Fire401b.txt
+know	Fire401c     	data/Bgs/St401/Fire401c.txt
 
 know	HakuB01     	data/Bgs/St402/HAkuB01.txt
 know	HakuB02     	data/Bgs/St402/HAkuB02.txt

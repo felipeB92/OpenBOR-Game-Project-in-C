@@ -1,0 +1,15 @@
+name			Fire401b
+type			none
+shadow			0
+setlayer		8
+antigravity 100
+Alpha 1
+
+anim idle
+	loop	1
+	delay	12
+	offset	42 74
+	frame	data/bgs/sT401/Fire/F200.gif
+	frame	data/bgs/sT401/Fire/F201.gif
+	frame	data/bgs/sT401/Fire/F202.gif
+
