@@ -1,4 +1,5 @@
 name	MR_X_
+Secret  0 1
 health	100
 mp 20
 #mprate 1
@@ -526,9 +527,7 @@ anim pain3
 	jumpframe  0  2  0  0
 	delay	10
 	frame	data/chars/players/MRX_/Pain2.gif
-		bbox  57  59  36  71
 	frame	data/chars/players/MRX_/fall400.gif
-		bbox  60  63  35  65
 	frame	data/chars/players/MRX_/Pain1.gif
 
 

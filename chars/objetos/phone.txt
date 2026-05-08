@@ -1,0 +1,25 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Phone
+health	1
+type	obstacle
+nolife        1
+shadow	1
+#icon	data/chars/misc/charicon.gif
+diesound data/sounds/glass.wav
+
+
+anim idle
+	loop	0
+	delay	100
+	offset	33 112
+	bbox	0 1 57 112
+	frame	data/chars/Objetos/phone.gif
+
+
+anim fall
+	loop	1
+	delay	1000
+	offset	33 112
+	frame	data/chars/Objetos/phone2.gif

@@ -8,7 +8,7 @@ Alpha 1
 anim idle
 	loop	1
 	delay	12
-	offset	40 73
+	offset	141 276
 	frame	data/bgs/sT401/Fire/F300.gif
 	frame	data/bgs/sT401/Fire/F301.gif
 	frame	data/bgs/sT401/Fire/F302.gif

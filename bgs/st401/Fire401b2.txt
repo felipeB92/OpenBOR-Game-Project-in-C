@@ -1,7 +1,7 @@
-name			Fire401b
+name			Fire401b2
 type			none
 shadow			0
-setlayer		7
+setlayer		9
 antigravity 100
 Alpha 1
 

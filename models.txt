@@ -164,6 +164,7 @@ know    Fog		data/chars/Enemys/Fog/Fog.txt
 know    Fog_		data/chars/Enemys/Fog/Fog_.txt
 know    Fog_B		data/chars/Enemys/Fog/Fog_B.txt
 know    G_Fog		data/chars/Enemys/Fog/G_Fog.txt
+know    G_Fog2		data/chars/Enemys/Fog/G_Fog2.txt
 know    Moto		data/chars/Enemys/Fog/Moto.txt
 know    Moto02		data/chars/Enemys/Fog/Moto02.txt
 know    Motofall	data/chars/Enemys/Fog/Motofall.txt
@@ -475,8 +476,10 @@ know	DOCTORS    	data/Bgs/St308/DOCTORS.txt
 know	dOCTOR2    	data/Bgs/St308/dOCTOR2.txt
 know	DOCTOR2S    	data/Bgs/St308/DOCTOR2S.txt
 
+know	B401     	data/Bgs/St401/B401.txt
 know	Fire401     	data/Bgs/St401/Fire401.txt
 know	Fire401b     	data/Bgs/St401/Fire401b.txt
+know	Fire401b2     	data/Bgs/St401/Fire401b2.txt
 know	Fire401c     	data/Bgs/St401/Fire401c.txt
 
 know	HakuB01     	data/Bgs/St402/HAkuB01.txt
@@ -544,6 +547,7 @@ know	Estatua01 	data/chars/Objetos/Estatua01.txt
 know	Estatua02 	data/chars/Objetos/Estatua02.txt
 know	Painel  	data/chars/Objetos/Painel.txt
 know	Axe		data/chars/Objetos/Axe.txt
+know	Phone		data/chars/Objetos/Phone.txt
 
 
 # Intens

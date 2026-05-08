@@ -1,30 +1,34 @@
-music		data/bgs/St307/The_Poets_II.ogg
+music		data/bgs/St401/The-Prologue.ogg
 bossmusic	data/music/boss1.bor
 scrollspeed 0.5#1
 stagenumber 1
-background	data/bgs/st401/Back00.gif 0 0
+background	data/bgs/st401/002.gif 0 0
 panel		data/bgs/St401/Pn01.gif
 frontpanel      data/bgs/St401/Front01.gif
 cameratype 1
 cameraoffset 0 -30
-#levelscript @script
-#void main() {
-#	changelevelproperty("camerazoffset", 0);
-#	changelevelproperty("cameraxoffset", 0);
-#}
-#@end_script
+
 settime         99
 notime          0
 noslow          1
 order		a
-spawn1  	125 20
-spawn2  	130 35
-spawn3  	135  50
+spawn1  	125 70
+spawn2  	130 60
+spawn3  	135  80
 
 light		128 -128
 at			-10
 
+spawn  Time01
+	coords  0  0
+        Flip 1
+	at  0
 
+
+spawn  B401
+flip 1
+	coords  0  0
+	at  0
 
 spawn  Fire401
 flip 1
@@ -62,20 +66,247 @@ flip 1
 	at  0
 
 spawn  Fire401b
-flip 1
 	coords  1055  111
 	at  0
 
+spawn  Fire401b2
+	coords  1510  130
+	at  0
 
-spawn  Donovan
-health 50
+spawn  Fire401c
+flip 1
+	coords  1460  112
+	at  0
+
+spawn  Gota
+flip 1
+	coords  386  105
+	at  0
+
+spawn  Gota
+flip 1
+	coords  1146  100
+	at  0
+
+
+
+spawn  Phone
+item Cash
+	coords  266  210
+	at  0
+
+spawn  Lixo03
+Flip 1
+item Cash
+	coords  55  185
+	at  0
+
+spawn  Lixo03
+Flip 1
+	coords  100  185
+	at  0
+
+spawn  Galsia
+health 30
+	coords  500  220
+	at  50
+
+spawn  Galsia
+health 30
+	coords  500  250
+	at  75
+
+spawn  Galsia
+health 30
 	coords  500  220
 	at  100
 
 
-spawn  Galsia
-health 50
+Wait
+	at  375
+
+
+group		5 5
+at		375
+
+spawn  Signal
+health 40
 	coords  500  220
-	at  800
+	at  375
+
+spawn  Signal
+health 40
+	coords  550  250
+	at  375
+
+spawn  Donovan
+health 30
+	coords  -150  260
+	at  375
+
+spawn  Signal
+health 40
+	coords  -200  220
+	at  375
+
+spawn  Signal
+map 1
+health 60
+	coords  -100  250
+	at  375
+
+group		99 99
+	at  376
+
+spawn  Lata02
+item Apple
+	coords 550  180
+	at  376
+
+spawn  Lata02
+	coords  600  180
+	at  376
+
+
+spawn  Donovan_
+health 50
+	coords  505  233
+	at  376
+
+spawn  Galsia_
+health 40
+	coords  523  256
+	at  376
+
+spawn  Pipe
+	coords  434  266 300
+	at  376
+
+spawn  _donovan
+health 40
+	coords  404  276 
+	at  400
+
+
+spawn  donovan
+Map 1
+health 40
+	coords  500  276 
+	at  450
+
+spawn  Galsia
+Map 1
+health 40
+	coords  -100  276 
+	at  475
+
+spawn  Galsia
+Map 1
+health 40
+	coords  500  276 
+	at  500
+
+spawn  Vice
+Map 1
+health 40
+	coords  500  276 
+	at  550
+
+spawn  Vice
+Map 1
+health 40
+	coords  500  276 
+	at  600
+
+
+
+Wait
+	at  1333
+
+
+group		5 5
+at		1333
+
+spawn  G_FOG2
+	coords  92  160
+	at  1333
+
+spawn  Vice
+Map 1
+health 40
+	coords  -100  276 
+	at  1333
+
+spawn  Jack
+Map 1
+health 130
+	coords  500  250 
+	at  1333
+
+spawn  Pipe
+	coords  291  276  300
+	at  1333
+
+spawn  _donovan
+health 50
+	coords  291  276 
+	at  1333
+
+spawn  Lata
+item cash
+	coords  627  260 
+	at  1334
+
+spawn  Lata
+	coords  620  215 
+	at  1334
+
+spawn  Lata
+item Apple
+	coords  678  190 
+	at  1334
+
+spawn  Lata
+	coords  676  235 
+	at  1334
+
+
+
+spawn  donovan
+health 40
+	coords  500  276 
+	at  1600
+
+spawn  Galsia
+Map 1
+health 40
+	coords  -100  276 
+	at  1600
+
+spawn  Galsia
+health 40
+	coords  500  276 
+	at  1600
+
+spawn  Signal
+health 40
+	coords  500  276 
+	at  1600
+
+spawn  Vice
+Map 1
+health 40
+	coords  500  276 
+	at  1600
+
+spawn  Vice
+health 50
+	coords  500  276 
+	at  1600
+
+spawn  Signal
+health 60
+	coords  500  276 
+	at  1600
 
 

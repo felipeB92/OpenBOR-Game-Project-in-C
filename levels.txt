@@ -510,7 +510,7 @@ Scene      data/scenes/Unl.txt
 
 end
 
-set	    Streets_of_rage_N
+set	    Streets_of_rage_R
 lives         5
 credits       99
 nosame	      1 1
@@ -519,15 +519,12 @@ canSave       2
 script continue data/scripts/continue.c
 
 
-
-
 #-------------------
 
+#z	183 270
 
+#file	data/levels/St401a.txt
 
+z	183 270
 
-
-
-z	150 466
-
-file	data/levels/St401a.txt
+file	data/levels/St401B.txt
