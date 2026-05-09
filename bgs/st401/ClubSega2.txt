@@ -1,0 +1,31 @@
+name			ClubSega2
+type			none
+shadow			0
+setlayer		8
+antigravity 100
+#Alpha 1
+
+anim idle
+	loop	1
+	delay	12
+	offset	0 0
+frame   data/bgs/sT401/Paineis/026.gif
+frame   data/bgs/sT401/Paineis/027.gif
+frame   data/bgs/sT401/Paineis/028.gif
+frame   data/bgs/sT401/Paineis/029.gif
+frame   data/bgs/sT401/Paineis/030.gif
+frame   data/bgs/sT401/Paineis/031.gif
+frame   data/bgs/sT401/Paineis/032.gif
+frame   data/bgs/sT401/Paineis/033.gif
+frame   data/bgs/sT401/Paineis/034.gif
+frame   data/bgs/sT401/Paineis/035.gif
+frame   data/bgs/sT401/Paineis/036.gif
+frame   data/bgs/sT401/Paineis/037.gif
+frame   data/bgs/sT401/Paineis/038.gif
+frame   data/bgs/sT401/Paineis/039.gif
+frame   data/bgs/sT401/Paineis/040.gif
+frame   data/bgs/sT401/Paineis/041.gif
+frame   data/bgs/sT401/Paineis/042.gif
+frame   data/bgs/sT401/Paineis/043.gif
+frame   data/bgs/sT401/Paineis/044.gif
+frame   data/bgs/sT401/Paineis/045.gif

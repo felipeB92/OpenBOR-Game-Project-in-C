@@ -1,0 +1,14 @@
+name			Beer
+type			none
+shadow			0
+setlayer		8
+antigravity 100
+#Alpha 1
+
+anim idle
+	loop	1
+	delay	4
+	offset	0 0
+	frame	data/bgs/sT401/Paineis/Beer00.gif
+	frame	data/bgs/sT401/Paineis/Beer01.gif
+

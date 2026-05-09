@@ -1,0 +1,18 @@
+name			Laele
+type			none
+shadow			0
+setlayer		8
+antigravity 100
+#Alpha 1
+
+anim idle
+	loop	1
+	delay	12
+	offset	0 0
+	frame	data/bgs/sT401/Paineis/Laele01.gif
+	frame	data/bgs/sT401/Paineis/Laele02.gif
+	frame	data/bgs/sT401/Paineis/Laele03.gif
+	frame	data/bgs/sT401/Paineis/Laele04.gif
+	frame	data/bgs/sT401/Paineis/Laele05.gif
+	frame	data/bgs/sT401/Paineis/Laele06.gif
+	frame	data/bgs/sT401/Paineis/Laele07.gif

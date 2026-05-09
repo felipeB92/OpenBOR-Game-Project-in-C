@@ -4,7 +4,7 @@ while True:
     action = input('Nome dos aquivos: ')
 
     for c in range(0,q):
-        print(f'    frame   {local}{action}{c:02}.gif')
+        print(f'frame   {local}{action}{c:02}.gif')
 
     print()
     Q =input('quer gerar outro? [S/N]').upper()

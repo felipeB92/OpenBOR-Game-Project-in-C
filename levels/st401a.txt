@@ -1,5 +1,5 @@
 music		data/bgs/St401/The-Prologue.ogg
-bossmusic	data/music/boss1.bor
+bossmusic	data/music/boss1.ogg
 scrollspeed 0.5#1
 stagenumber 1
 background	data/bgs/st401/002.gif 0 0
@@ -32,60 +32,60 @@ flip 1
 
 spawn  Fire401
 flip 1
-	coords  700  116
+	coords  614  141
 	at  0
 
 spawn  Fire401
 flip 1
-	coords  877  116
+	coords  767  141
 	at  0
 
 spawn  Fire401
 flip 1
-	coords  1052  116
+	coords  927  141
 	at  0
 
 spawn  Fire401
 flip 1
-	coords  1242  126
+	coords  1090  141
 	at  0
 
 spawn  Fire401
 flip 1
-	coords  1752  118
+	coords  1678 141
 	at  0
 
 spawn  Fire401
 flip 1
-	coords  1941  118
+	coords  1527  138
 	at  0
 
 spawn  Fire401b
 flip 1
-	coords  874  111
+	coords  766  134
 	at  0
 
 spawn  Fire401b
-	coords  1055  111
+	coords  923  134
 	at  0
 
 spawn  Fire401b2
-	coords  1510  130
+	coords  1317  148
 	at  0
 
 spawn  Fire401c
 flip 1
-	coords  1460  112
+	coords  1254  142
 	at  0
 
 spawn  Gota
 flip 1
-	coords  386  105
+	coords  336  117
 	at  0
 
 spawn  Gota
 flip 1
-	coords  1146  100
+	coords  997  113
 	at  0
 
 
@@ -98,12 +98,12 @@ item Cash
 spawn  Lixo03
 Flip 1
 item Cash
-	coords  55  185
+	coords  55  200
 	at  0
 
 spawn  Lixo03
 Flip 1
-	coords  100  185
+	coords  100  200
 	at  0
 
 spawn  Galsia
@@ -123,68 +123,69 @@ health 30
 
 
 Wait
-	at  375
+	at  335
 
 
 group		5 5
-at		375
+at		335
 
 spawn  Signal
 health 40
 	coords  500  220
-	at  375
+	at  335
 
 spawn  Signal
 health 40
 	coords  550  250
-	at  375
+	at  335
 
 spawn  Donovan
 health 30
 	coords  -150  260
-	at  375
+	at  335
 
 spawn  Signal
 health 40
 	coords  -200  220
-	at  375
+	at  335
 
 spawn  Signal
 map 1
 health 60
 	coords  -100  250
-	at  375
+	at  335
 
 group		99 99
-	at  376
+	at  336
 
 spawn  Lata02
 item Apple
-	coords 550  180
-	at  376
+	coords 550  200
+	at  336
 
 spawn  Lata02
-	coords  600  180
-	at  376
+	coords  600  200
+	at  336
 
 
 spawn  Donovan_
 health 50
 	coords  505  233
-	at  376
+	at  336
 
 spawn  Galsia_
 health 40
-	coords  523  256
-	at  376
+	coords  525  275
+	at  336
 
 spawn  Pipe
-	coords  434  266 300
-	at  376
+	coords  247 266 300
+	at  350
+
 
 spawn  _donovan
 health 40
-	coords  404  276 
+	coords  297  276 
 	at  400
 
 
@@ -221,92 +222,92 @@ health 40
 
 
 Wait
-	at  1333
+	at  1056
 
 
 group		5 5
-at		1333
+at		1056
 
 spawn  G_FOG2
-	coords  92  160
-	at  1333
+	coords  180  175
+	at  1056
 
 spawn  Vice
 Map 1
 health 40
 	coords  -100  276 
-	at  1333
+	at  1056
 
 spawn  Jack
 Map 1
 health 130
 	coords  500  250 
-	at  1333
+	at  1056
 
 spawn  Pipe
-	coords  291  276  300
-	at  1333
+	coords  254  275  300
+	at  1056
 
 spawn  _donovan
 health 50
-	coords  291  276 
-	at  1333
+	coords  254  275
+	at  1155
 
 spawn  Lata
 item cash
-	coords  627  260 
-	at  1334
+	coords  555  204
+	at  1155
 
 spawn  Lata
-	coords  620  215 
-	at  1334
+	coords  538  253
+	at  1155
 
 spawn  Lata
 item Apple
-	coords  678  190 
-	at  1334
+	coords  586 268 
+	at  1155
 
 spawn  Lata
-	coords  676  235 
-	at  1334
+	coords  594 225 
+	at  1155
 
 
 
 spawn  donovan
 health 40
 	coords  500  276 
-	at  1600
+	at  1430
 
 spawn  Galsia
 Map 1
 health 40
 	coords  -100  276 
-	at  1600
+	at  1430
 
 spawn  Galsia
 health 40
 	coords  500  276 
-	at  1600
+	at  1430
 
 spawn  Signal
 health 40
 	coords  500  276 
-	at  1600
+	at  1430
 
 spawn  Vice
 Map 1
 health 40
 	coords  500  276 
-	at  1600
+	at  1430
 
 spawn  Vice
 health 50
 	coords  500  276 
-	at  1600
+	at  1430
 
 spawn  Signal
 health 60
 	coords  500  276 
-	at  1600
+	at  1430
 
 

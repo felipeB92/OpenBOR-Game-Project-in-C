@@ -1,0 +1,44 @@
+name			Bgun
+type			none
+shadow			0
+setlayer		8
+antigravity 100
+#Alpha 1
+
+anim idle
+	loop	1
+	delay	12
+	offset	0 0
+frame   data/bgs/sT401/Paineis/Bgun/Bgun00.gif
+frame   data/bgs/sT401/Paineis/Bgun/Bgun01.gif
+frame   data/bgs/sT401/Paineis/Bgun/Bgun02.gif
+frame   data/bgs/sT401/Paineis/Bgun/Bgun03.gif
+frame   data/bgs/sT401/Paineis/Bgun/Bgun04.gif
+frame   data/bgs/sT401/Paineis/Bgun/Bgun05.gif
+frame   data/bgs/sT401/Paineis/Bgun/Bgun06.gif
+frame   data/bgs/sT401/Paineis/Bgun/Bgun07.gif
+frame   data/bgs/sT401/Paineis/Bgun/Bgun08.gif
+frame   data/bgs/sT401/Paineis/Bgun/Bgun09.gif
+frame   data/bgs/sT401/Paineis/Bgun/Bgun10.gif
+frame   data/bgs/sT401/Paineis/Bgun/Bgun11.gif
+frame   data/bgs/sT401/Paineis/Bgun/Bgun12.gif
+frame   data/bgs/sT401/Paineis/Bgun/Bgun13.gif
+frame   data/bgs/sT401/Paineis/Bgun/Bgun14.gif
+frame   data/bgs/sT401/Paineis/Bgun/Bgun15.gif
+	frame  data/bgs/sT401/Paineis/Bgun/Bgun02.gif
+	frame  data/bgs/sT401/Paineis/Bgun/Bgun03.gif
+	frame  data/bgs/sT401/Paineis/Bgun/Bgun02.gif
+frame   data/bgs/sT401/Paineis/Bgun/Bgun16.gif
+frame   data/bgs/sT401/Paineis/Bgun/Bgun17.gif
+frame   data/bgs/sT401/Paineis/Bgun/Bgun18.gif
+frame   data/bgs/sT401/Paineis/Bgun/Bgun19.gif
+frame   data/bgs/sT401/Paineis/Bgun/Bgun20.gif
+frame   data/bgs/sT401/Paineis/Bgun/Bgun21.gif
+frame   data/bgs/sT401/Paineis/Bgun/Bgun22.gif
+frame   data/bgs/sT401/Paineis/Bgun/Bgun23.gif
+frame   data/bgs/sT401/Paineis/Bgun/Bgun24.gif
+frame   data/bgs/sT401/Paineis/Bgun/Bgun25.gif
+frame   data/bgs/sT401/Paineis/Bgun/Bgun26.gif
+frame   data/bgs/sT401/Paineis/Bgun/Bgun27.gif
+	frame  data/bgs/sT401/Paineis/Bgun/Bgun03.gif
+

@@ -1,0 +1,24 @@
+name			CB401
+type			none
+shadow			0
+setlayer		8
+antigravity 100
+#Alpha 1
+
+anim idle
+	loop	1
+	delay	12
+	offset	0 0
+	frame	data/bgs/sT401/Paineis/CB00.gif
+	frame	data/bgs/sT401/Paineis/CB01.gif
+	frame	data/bgs/sT401/Paineis/CB02.gif
+	frame	data/bgs/sT401/Paineis/CB00.gif
+	frame	data/bgs/sT401/Paineis/CB01.gif
+	frame	data/bgs/sT401/Paineis/CB02.gif
+	frame	data/bgs/sT401/Paineis/CB00.gif
+	frame	data/bgs/sT401/Paineis/CB01.gif
+	frame	data/bgs/sT401/Paineis/CB02.gif
+	frame	data/bgs/sT401/Paineis/CB00.gif
+	frame	data/bgs/sT401/Paineis/CB01.gif
+	frame	data/bgs/sT401/Paineis/CB02.gif
+	frame	data/bgs/sT401/Paineis/CB03.gif

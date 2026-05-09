@@ -477,10 +477,19 @@ know	dOCTOR2    	data/Bgs/St308/dOCTOR2.txt
 know	DOCTOR2S    	data/Bgs/St308/DOCTOR2S.txt
 
 know	B401     	data/Bgs/St401/B401.txt
+know	B401b     	data/Bgs/St401/B401b.txt
 know	Fire401     	data/Bgs/St401/Fire401.txt
 know	Fire401b     	data/Bgs/St401/Fire401b.txt
 know	Fire401b2     	data/Bgs/St401/Fire401b2.txt
 know	Fire401c     	data/Bgs/St401/Fire401c.txt
+know	ClubSega     	data/Bgs/St401/ClubSega.txt
+know	ClubSega2     	data/Bgs/St401/ClubSega2.txt
+know	Beer     	data/Bgs/St401/Beer.txt
+know	laele     	data/Bgs/St401/Laele.txt
+know	bar401     	data/Bgs/St401/Bar401.txt
+know	CB401     	data/Bgs/St401/CB401.txt
+know	Primas     	data/Bgs/St401/Primas.txt
+know	Bgun     	data/Bgs/St401/Bgun.txt
 
 know	HakuB01     	data/Bgs/St402/HAkuB01.txt
 know	HakuB02     	data/Bgs/St402/HAkuB02.txt

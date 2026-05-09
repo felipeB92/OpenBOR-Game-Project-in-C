@@ -1,0 +1,17 @@
+name			Primas
+type			none
+shadow			0
+setlayer		8
+antigravity 100
+#Alpha 1
+
+anim idle
+	loop	1
+	delay	8
+	offset	0 0
+frame   data/bgs/sT401/Paineis/Primas00.gif
+frame   data/bgs/sT401/Paineis/Primas01.gif
+frame   data/bgs/sT401/Paineis/Primas02.gif
+frame   data/bgs/sT401/Paineis/Primas03.gif
+
+

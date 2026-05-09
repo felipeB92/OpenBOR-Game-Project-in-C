@@ -4,7 +4,7 @@ scrollspeed 0.5#1
 stagenumber 1
 background	data/bgs/st401/002.gif	0.8 1 0 0 0 0 1 1 1
 panel		data/bgs/St401/Pn02.gif
-#frontpanel      data/bgs/St401/Front02.gif
+frontpanel      data/bgs/St401/Front02.gif
 cameratype 1
 cameraoffset 0 -30
 #levelscript @script
@@ -23,36 +23,75 @@ spawn3  	135  50
 
 light		128 -128
 at			0
+spawn  Time01
+	coords  0  0
+        Flip 1
+	at  0
+
+Wall  2827  271  -209  0  40  80  106  999
+
+spawn  b401b
+Flip   1
+	coords  858  112
+	at  0
+
+spawn  ClubSega
+Flip   1
+	coords  720  36
+	at  0
+
+spawn  ClubSega2
+Flip   1
+	coords 750 37
+	at  0
+
+spawn  ClubSega
+Flip   1
+	coords  1162  36
+	at  0
+
+spawn  Beer
+Flip   1
+	coords  1318  42
+	at  0
+
+spawn  laele
+Flip   1
+	coords  1579  35
+	at  0
+
+spawn  Bar401
+Flip   1
+	coords  1871  120
+	at  0
+
+spawn  CB401
+Flip   1
+	coords  1849  34
+	at  0
+
+spawn  Bar401
+Flip   1
+	coords  2080  120
+	at  0
+
+spawn  Primas
+Flip   1
+	coords  2229  106
+	at  0
+
+spawn  Bgun
+Flip   1
+	coords  2238  40
+	at  0
 
 
 
-
-
-
-spawn  Bigben
+spawn  BigBEn
 Flip   1
 Alias  Baloom
 health 100
 	coords  223  265 150
 	at  1341
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

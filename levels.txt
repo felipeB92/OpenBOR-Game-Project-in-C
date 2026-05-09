@@ -101,54 +101,56 @@ script continue data/scripts/continue.c
 
 #------------------
 
+#1 - Ruas da Cidade
 z 160 260
 
 file	data/levels/St01.txt
 
 next
 
+#2 - Ruas de tras
 z 150 260
 
 file	data/levels/St02.txt
 
 next
 
-
+#3 - Beira-mar
 z 185 268
 
 file	data/levels/St03.txt
 
 next
 
-
+#4 - Ponte em Obras
 z 185 268
 
 file	data/levels/St04.txt
 
 next
 
-
+#5 - Convés do Navio
 z 185 268
 
 file	data/levels/St05.txt
 
 next
 
-
+#6 - Fábrica
 z 185 268
 
 file	data/levels/St06.txt
 
 next
 
-
+#7 - Elevador
 z 185 268
 
 file	data/levels/St07.txt
 
 next
 
-
+#8 - Sede do Sindicato
 z 170 275
 
 file	data/levels/St08.txt
@@ -179,125 +181,140 @@ script continue data/scripts/continue.c
 
 
 
-
+#1A - Centro Urbano
 z	150 466
 
 file	data/levels/St201a.txt
 
+#1b - Bar Jack's
 z	210 270
 
 file	data/levels/St201b.txt
 
+#1C - Becos
 z	210 270
 
 file	data/levels/St201c.txt
 
 Next
 
-
+#2A - Viaduto
 z	210 270
 
 file	data/levels/St202a.txt
 
-
+#2B - Interior do caminhão
 z	225 270
 
 file	data/levels/St202b.txt
 
-
+#2C - Ponte de Brooklyn
 z	210 270
 
 file	data/levels/St202c.txt
 
 Next
 
-
+#3A - Entrada Parque de Diversões
 z	175 270
 
 file	data/levels/St203a.txt
 
+#3B - Fliperama
 z	140 426
 
 file	data/levels/St203b.txt
 
-
+#3C - Corredor Piratas 1
 z	220 270
 
 file	data/levels/St203c.txt
 
+#3D - Corredor Piratas 2
 z	220 270
 
 file	data/levels/St203d.txt
 
+#3E - Navio Pirata
 z	220 270
 
 file	data/levels/St203E.txt
 
+#3F - Parque de Diversões
 z	175 270
 
 file	data/levels/St203F.txt
 
+#3G - Caverna Alien
 z	175 270
 
 file	data/levels/St203G.txt
 
 Next
 
-
+#4A - Entrada Estádio
 z	220 270
 
 file	data/levels/St204a.txt
 
+#4B - Estádio
 z	220 270
 
 file	data/levels/St204b.txt
 
+#4C - Elevador
 z	220 270
 
 file	data/levels/St204c.txt
 
+#4D - Arena Gladiador
 z	180 270
 
 file	data/levels/St204D.txt
 
 next
 
+#5A - Iternior Navio
 z	210 270
 
 file	data/levels/St205a.txt
 
 
-
+#5B - Iternior Navio 2
 z	210 270
 
 file	data/levels/St205b.txt
 
+#5C - Navio
 z	225 280
 
 file	data/levels/St205c.txt
 
 next
 
+#6A - Praia
 z	170 270
 
 file	data/levels/St206a.txt
 
-
+#6B - Estrada da Floresta
 z	152 461
 
 file	data/levels/St206b.txt
 
 next
 
+#7A - Fabrica
 z	215 275
 
 file	data/levels/St207a.txt
 
+#7B - Elevador
 z	215 270
 
 file	data/levels/St207b.txt
 
-
+#7C - Topo Elevador
 z	220 270
 
 file	data/levels/St207c.txt
@@ -305,16 +322,18 @@ file	data/levels/St207c.txt
 next
 
 
-
+#8A - Entrada Base secreta
 z	210 270
 
 file	data/levels/St208a.txt
 
 
+#8B - Elevador Base
 z	230 270
 
 file	data/levels/St208b.txt
 
+#8C - Salão MR.X
 z	200 270
 
 file	data/levels/St208c.txt
@@ -343,105 +362,110 @@ custfade 100
 
 #-------------------
 
-
+#1A - Armazém
 z	160 260
 
 file	data/levels/St301a.txt
 
-
+#1B - Porto
 z	175 260
 
 file	data/levels/St301b.txt
 
-
+#1C - Docas
 z	220 260
 
 file	data/levels/St301c.txt
 
 next
 
-
+#2A - Cidade Noturna
 z	175 260
 
 file	data/levels/St302a.txt
 
+#2B - Boate
 z	175 260
 
 file	data/levels/St302b.txt
 
+#2C - Mona's Bar
 z	195 260
 
 file	data/levels/St302c.txt
 
 next
 
-
+#3A - entrada constução
 z	220 270
 
 file	data/levels/St303a.txt
 
+#3B - Area planada
 z	220 270
 
 file	data/levels/St303b.txt
 
-
+#3C - Elevador de serviço
 z	220 270
 
 file	data/levels/St303c.txt
 
+#3D - Teto Construção
 z	220 270
 
 file	data/levels/St303D.txt
 
 next
 
+#4a - Entrada Trilhos
 z	220 270
 
 file	data/levels/St304a.txt
 
-
+#4B - Corredor Trilhos
 z	220 270
 
 file	data/levels/St304b.txt
 
+#4C - Portão Base ninja Secreta
 z	220 270
 
 file	data/levels/St304c.txt
 
 Next
 
-
+#5A - Entrada Base Ninja
 z	220 270
 
 file	data/levels/St305a.txt
 
-
+#5B - Corredor Base Ninja
 z	220 270
 
 file	data/levels/St305b.txt
 
 
 
-
+#5C - Corredor Pequeno Base ninja
 z	220 270
 
 file	data/levels/St305c.txt
 
 
 
-
+#5D - Mansão (Corte brusco de senarios não?)
 z	220 270
 
 file	data/levels/St305D.txt
 
-
+#5E - Elevador
 z	220 270
 
 file	data/levels/St305E.txt
 
 
-
-
+#5F - Salão Falço MR.X
 z	205 270
 
 file	data/levels/St305f.txt
@@ -450,56 +474,61 @@ file	data/levels/St305f.txt
 Next
 
 
-
+#6A - Piso 1 Predio
 z	170 270
 
 file	data/levels/St306a.txt
 
+#6B - Piso 2 Predio
 z	170 270
 
 file	data/levels/St306b.txt
 
+#6C - Piso 3 Predio
 z	170 270
 
 file	data/levels/St306c.txt
 
-
+#6C - Teto Predio
 z	220 270
 
 file	data/levels/St306D.txt
 
 Next
 
-
+#7A - Frente Casa Branca
 z	220 270
 
 file	data/levels/St307a.txt
 
+#7B - Interior Casa Branca
 z	165 270
 
 file	data/levels/St307b.txt
 
-
+#7C - Sala de imprensa Casa branca
 z	220 270
 
 file	data/levels/St307c.txt
 
 Next
 
-
+#8A - Floresta
 z	220 270
 
 file	data/levels/St308a.txt
 
+#8B - Fabrica de Robos
 z	160 270
 
 file	data/levels/St308b.txt
 
+#8C - Sala robos Dr.Zero
 z	215 270
 
 file	data/levels/St308c.txt
 
-
+#8D - Sala do cerebro MR.X
 z	160 270
 
 file	data/levels/St308d.txt
@@ -521,10 +550,12 @@ script continue data/scripts/continue.c
 
 #-------------------
 
-#z	183 270
+#1A - Rua em chamas 
+#z	195 270
 
 #file	data/levels/St401a.txt
 
-z	183 270
+#1B - Centro Comercial
+z	205 270
 
 file	data/levels/St401B.txt
