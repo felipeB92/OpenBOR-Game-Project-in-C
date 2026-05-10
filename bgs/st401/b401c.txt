@@ -1,0 +1,17 @@
+name			B401c
+type			none
+shadow			0
+setlayer		8
+antigravity 100
+#Alpha 1
+
+anim idle
+	loop	1
+	delay	18
+	offset	0 0
+	frame	data/bgs/sT401/b200.gif
+	frame	data/bgs/sT401/b201.gif
+	frame	data/bgs/sT401/b202.gif
+	frame	data/bgs/sT401/b203.gif
+	frame	data/bgs/sT401/b202.gif
+	frame	data/bgs/sT401/b201.gif

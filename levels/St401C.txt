@@ -1,0 +1,230 @@
+music		data/bgs/St401/Restaurant.ogg
+bossmusic	data/music/boss2.ogg
+scrollspeed 0.5#1
+stagenumber 1
+background	data/bgs/st401/002.gif	0.8 1 0 0 0 0 1 1 1
+panel		data/bgs/St401/Pn03.gif
+frontpanel      data/bgs/St401/Front03.gif
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	125 20
+spawn2  	130 35
+spawn3  	135  50
+
+light		128 -128
+at			0
+
+Wall  302  213  -51  0  346  339  30  41
+Wall  862  247  -134  0  74  142  64  173
+
+spawn  Time01
+	coords  0  0
+        Flip 1
+	at  0
+
+spawn  B401c
+	coords  0  0
+        Flip 1
+	at  0
+
+spawn  Galsia_
+health 50
+	coords  285  240
+	at  0
+
+spawn  Galsia_
+health 50
+	coords 330  255
+	at  0
+
+spawn  Vaso02
+item Apple
+	coords 350  220
+	at  0
+
+spawn  Vaso02
+	coords 420  220
+	at  0
+
+spawn  Vaso02
+Item cash
+	coords 485  220
+	at  0
+
+spawn  Bigben
+health 70
+	coords 600  250 100
+	at  0
+
+spawn  Donovan
+health 50
+	coords -100  255 150
+	at  100
+
+wait 
+        at    150
+
+group  4    4
+        at    150
+
+
+spawn  Galsia
+health 40
+	coords 510  230 100
+	at  150
+
+spawn  Bigben
+map 1
+health 70
+	coords -100  230 100
+	at  150
+
+spawn  Signal
+map 1
+health 40
+	coords 510  220 100
+	at  150
+
+spawn  Signal
+map 1
+health 40
+	coords 510  230 100
+	at  150
+
+spawn  Signal
+health 40
+	coords -100  230 100
+	at  150
+
+spawn  Signal
+health 40
+	coords -100  250 100
+	at  150
+
+spawn  Signal
+health 40
+	coords -100  240 100
+	at  150
+
+spawn  Signal
+health 40
+	coords 510  230 100
+	at  150
+
+
+spawn  Haku_oh
+health 40
+	coords 150  250 100
+	at  150
+
+spawn  Haku_oh
+map 1
+health 60
+	coords 250  240 100
+	at  150
+
+spawn  Haku_oh
+health 50
+	coords 350  230 100
+	at  150
+
+spawn  Knife
+	coords 350  230 50
+	at  150
+
+spawn  Galsia
+health 40
+	coords 350  230 100
+	at  150
+
+spawn  Haku_oh
+health 60
+	coords 350  230 100
+	at  150
+
+spawn  Vaso02
+item Chicken
+	coords 610  215
+	at  151
+
+spawn  Vaso02
+	coords 675  255
+	at  151
+
+spawn  Haku_oh
+health 60
+	coords 400  230 100
+	at  200
+
+spawn  Haku_oh
+health 60
+	coords 400  250 100
+	at  250
+
+
+spawn  Barbon
+boss 1
+	coords 500  235
+	at  275
+
+spawn  Galsia
+health 40
+	coords -100  230 100
+	at  305
+
+spawn  Galsia
+health 40
+	coords -100  240 100
+	at  305
+
+spawn  Donovan
+health 40
+	coords -100  250 100
+	at  305
+
+spawn  Galsia
+health 40
+	coords -100  230 100
+	at  305
+
+spawn  Galsia
+health 40
+	coords -100  240 100
+	at  305
+
+spawn  Donovan
+health 40
+	coords -100  250 100
+	at  305
+
+spawn  Galsia
+health 40
+	coords -100  230 100
+	at  305
+
+spawn  Galsia
+health 40
+	coords -100  240 100
+	at  305
+
+spawn  Donovan
+health 40
+	coords -100  250 100
+	at  305
+
+
+
+
+
+
+

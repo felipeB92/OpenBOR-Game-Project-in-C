@@ -1,4 +1,4 @@
-music		data/bgs/St401/The-Prologue.ogg
+music		data/bgs/St401/Entertainment-Street.ogg
 bossmusic	data/music/boss1.bor
 scrollspeed 0.5#1
 stagenumber 1
@@ -85,13 +85,378 @@ Flip   1
 	coords  2238  40
 	at  0
 
-
-
-spawn  BigBEn
+spawn  Chuva02
 Flip   1
-Alias  Baloom
-health 100
-	coords  223  265 150
-	at  1341
+	coords  0  0
+	at  0
+
+spawn  Chuva02
+Flip   1
+	coords  600  0
+	at  0
+
+spawn  Chuva02
+Flip   1
+	coords  1200  0
+	at  0
+
+spawn  Chuva02
+Flip   1
+	coords  1800  0
+	at  0
+
+spawn  Chuva02
+Flip   1
+	coords  2400  0
+	at  0
+
+spawn  Gotas02
+flip   1
+	coords  -100  10
+	at  0
+
+spawn  Gotas02
+flip   1
+	coords  300  10
+	at  0
+
+spawn  Gotas02
+flip   1
+	coords  700  10
+	at  0
+
+spawn  Gotas02
+flip   1
+	coords  1100  10
+	at  0
+
+spawn  Gotas02
+flip   1
+	coords  1500  10
+	at  0
+
+spawn  Gotas02
+flip   1
+	coords  1900  10
+	at  0
+
+spawn  Gotas02
+flip   1
+	coords  2300  10
+	at  0
+
+spawn  Lixo01
+item  Apple
+	coords  570  205
+	at  0
+
+spawn  Lixo01
+	coords  620  205
+	at  0
+
+spawn  Galsia
+health 40
+	coords  600  220 150
+	at  200
+
+spawn  Donovan
+map 1
+health 40
+	coords  600  220 150
+	at  220
+
+spawn  Signal
+health 40
+	coords  600  220 150
+	at  300
+
+spawn  Signal
+map 1
+health 50
+	coords  -100  260 150
+	at  300
+
+spawn  Lixo01
+item  Cash
+	coords  515  205
+	at  395
+
+spawn  Galsia
+health 40
+	coords  600  220 150
+	at  400
+
+spawn  Donovan
+health 40
+	coords  600  250 150
+	at  400
+
+
+
+Wait
+	at  650
+
+
+group		5 5
+at		650
+
+spawn  Donovan
+health 40
+	coords  -100  250 150
+	at  650
+
+spawn  Donovan
+Map 1
+health 50
+	coords  -100  205 150
+	at  650
+
+spawn  Signal
+health 40
+	coords  -100  250 150
+	at  650
+
+spawn  Knife
+	coords  600  220 50
+	at  650
+
+spawn  Galsia
+health 40
+	coords  600  220 150
+	at  650
+
+spawn  Signal
+health 40
+	coords  -100  250 150
+	at  650
+
+spawn  Signal
+Map 1
+health 40
+	coords  600  250 150
+	at  650
+
+group		99 99
+at		651
+
+spawn  Lixo01
+item  Knife
+	coords  615  205
+	at  700
+
+spawn  Slum__
+Map 1
+health 50
+	coords  541  194
+	at  700
+
+spawn  _Slum
+health 50
+	coords  329  205
+	at  1050
+
+spawn  _Vice
+health 50
+	coords  277  205
+	at  1100
+
+spawn  Knife
+	coords  550  205 50
+	at  1250
+
+spawn  Galsia
+health 40
+	coords  600  205 150
+	at  1250
+
+Wait
+	at  1485
+
+
+group		4 4
+at		1485
+
+spawn  Donovan
+health 40
+	coords  -100  205 150
+	at  1485
+
+spawn  Vice
+health 40
+	coords  -150  220 150
+	at  1485
+
+spawn  Signal
+health 40
+	coords  -100  250 150
+	at  1485
+
+
+spawn  Slum 
+health 40
+	coords  600  250 150
+	at  1485
+
+spawn  Vice
+map 2
+health 50
+	coords  600  205 150
+	at  1485
+
+spawn  Macleod
+health 60
+	coords  155  205 3
+	at  1485
+
+spawn  Vice
+map 2
+health 50
+	coords  -100  230 150
+	at  1485
+
+spawn  Maclean
+health 60
+	coords  155  205 3
+	at  1485
+
+group		99 99
+at		1486
+
+spawn  _Donovan
+health 50
+	coords  200  265
+	at  1745
+
+spawn  Galsia
+health 40
+	coords  600  220 150
+	at  1780
+
+spawn  Donovan
+health 40
+	coords  600  250 150
+	at  1780
+
+spawn  Pipe
+	coords  550 230 50
+	at  1850
+
+spawn  Donovan
+health 40
+	coords  600  230 150
+	at  1900
+
+spawn  Donovan
+map 1
+health 50
+	coords  600  230 150
+	at  1950
+
+spawn  Donovan
+health 40
+	coords  600  230 150
+	at  2000
+
+spawn  Signal
+Map 1
+health 50
+	coords  600  230 150
+	at  2050
+
+spawn  Signal
+Map 1
+health 50
+	coords  600  230 150
+	at  2070
+
+
+Wait
+	at  2100
+
+
+group		4 4
+at		2100
+
+spawn  Mace
+Map 1
+health 150
+	coords  256  205 5
+	at  2100
+
+spawn  Electra
+Map 1
+health 70
+	coords  250  205 5
+	at  2100
+
+spawn  Electra
+health 70
+	coords  -100  205 50
+	at  2100
+
+spawn  Lanterna
+Item Apple
+	coords  605 227 
+	at  2101
+
+spawn  Lanterna
+	coords  660 256 
+	at  2101
+
+
+spawn  Knife
+	coords  -150  230 50
+	at  2400
+
+
+spawn  Galsia
+Map 1
+health 50
+	coords  -150  230 150
+	at  2400
+
+spawn  Donovan
+Map 1
+health 50
+	coords  -100  205 150
+	at  2400
+
+spawn  Haku_oh
+Map 4
+health 70
+	coords  250  220 150
+	at  2400
+
+spawn  Haku_oh
+Map 4
+health 70
+	coords  150  250 150
+	at  2400
+
+spawn  Haku_oh
+Map 2
+health 70
+	coords  250  220 150
+	at  2400
+
+spawn  Haku_oh
+Map 2
+health 70
+	coords  150  250 150
+	at  2400
+
+spawn  Signal
+Map 1
+health 50
+	coords  -100  205 150
+	at  2400
+
+
+
+
+
+
+
+
 
 

@@ -108,17 +108,17 @@ Flip 1
 
 spawn  Galsia
 health 30
-	coords  500  220
+	coords  500  220 150
 	at  50
 
 spawn  Galsia
 health 30
-	coords  500  250
+	coords  500  250 150
 	at  75
 
 spawn  Galsia
 health 30
-	coords  500  220
+	coords  500  220 150
 	at  100
 
 
@@ -131,28 +131,28 @@ at		335
 
 spawn  Signal
 health 40
-	coords  500  220
+	coords  500  220 150
 	at  335
 
 spawn  Signal
 health 40
-	coords  550  250
+	coords  550  250 150
 	at  335
 
 spawn  Donovan
 health 30
-	coords  -150  260
+	coords  -150  260 150
 	at  335
 
 spawn  Signal
 health 40
-	coords  -200  220
+	coords  -200  220 150
 	at  335
 
 spawn  Signal
 map 1
 health 60
-	coords  -100  250
+	coords  -100  250 150
 	at  335
 
 group		99 99
@@ -185,38 +185,38 @@ spawn  Pipe
 
 spawn  _donovan
 health 40
-	coords  297  276 
+	coords  297  276
 	at  400
 
 
 spawn  donovan
 Map 1
 health 40
-	coords  500  276 
+	coords  500  276 150
 	at  450
 
 spawn  Galsia
 Map 1
 health 40
-	coords  -100  276 
+	coords  -100  276 150
 	at  475
 
 spawn  Galsia
 Map 1
 health 40
-	coords  500  276 
+	coords  500  276 150
 	at  500
 
 spawn  Vice
 Map 1
 health 40
-	coords  500  276 
+	coords  500  276 150
 	at  550
 
 spawn  Vice
 Map 1
 health 40
-	coords  500  276 
+	coords  500  276 150
 	at  600
 
 
@@ -235,13 +235,13 @@ spawn  G_FOG2
 spawn  Vice
 Map 1
 health 40
-	coords  -100  276 
+	coords  -100  276 150
 	at  1056
 
 spawn  Jack
 Map 1
 health 130
-	coords  500  250 
+	coords  500  250 150
 	at  1056
 
 spawn  Pipe
@@ -275,39 +275,39 @@ spawn  Lata
 
 spawn  donovan
 health 40
-	coords  500  276 
+	coords  500  276 150
 	at  1430
 
 spawn  Galsia
 Map 1
 health 40
-	coords  -100  276 
+	coords  -100  276  150
 	at  1430
 
 spawn  Galsia
 health 40
-	coords  500  276 
+	coords  500  276 150
 	at  1430
 
 spawn  Signal
 health 40
-	coords  500  276 
+	coords  500  276 150
 	at  1430
 
 spawn  Vice
 Map 1
 health 40
-	coords  500  276 
+	coords  500  276 150
 	at  1430
 
 spawn  Vice
 health 50
-	coords  500  276 
+	coords  500  276 150
 	at  1430
 
 spawn  Signal
 health 60
-	coords  500  276 
+	coords  500  276 150
 	at  1430
 
 

@@ -241,6 +241,7 @@ know    _Shiva          data/chars/Enemys/Shiva/_Shiva.txt
 know    Shiva_N           data/chars/Enemys/Shiva/Shiva_N.txt
 know    Slum            data/chars/Enemys/Slum/Slum.txt
 know    Slum_           data/chars/Enemys/Slum/Slum_.txt
+know    Slum__          data/chars/Enemys/Slum/Slum__.txt
 know    Vice            data/chars/Enemys/Vice/Vice.txt
 know    zice            data/chars/Enemys/zice/zice.txt
 know    garnet          data/chars/Enemys/Garnet/Garnet.txt
@@ -478,6 +479,7 @@ know	DOCTOR2S    	data/Bgs/St308/DOCTOR2S.txt
 
 know	B401     	data/Bgs/St401/B401.txt
 know	B401b     	data/Bgs/St401/B401b.txt
+know	B401C     	data/Bgs/St401/B401c.txt
 know	Fire401     	data/Bgs/St401/Fire401.txt
 know	Fire401b     	data/Bgs/St401/Fire401b.txt
 know	Fire401b2     	data/Bgs/St401/Fire401b2.txt
@@ -550,6 +552,7 @@ know	Boom02		data/chars/Objetos/Boom02.txt
 know	Granada		data/chars/Objetos/granada.txt
 know	Sandbag		data/chars/Objetos/sandbag.txt
 know	Vaso 		data/chars/Objetos/VAso.txt
+know	Vaso02 		data/chars/Objetos/VAso02.txt
 know	Lanterna	data/chars/Objetos/Lanterna.txt
 know	Bau 		data/chars/Objetos/Bau.txt
 know	Estatua01 	data/chars/Objetos/Estatua01.txt
