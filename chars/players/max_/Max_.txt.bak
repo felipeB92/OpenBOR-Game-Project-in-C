@@ -200,7 +200,6 @@ anim attack2
         hitfx	data/sounds/golpes/Medio.wav
 	cancel	0 9 0 b A freespecial7
 	frame	data/chars/players/Max_/a200.gif
-		attack2  74  62  56  14  5  0  0  0  0  15
 		delay  10
 	frame	data/chars/players/Max_/a201.gif
 		delay  6
@@ -235,8 +234,8 @@ anim attack3
 
 anim run
         loop    1
-        delay  9
-	offset	158 191
+        delay  8
+	offset	158 190
 	bbox	151 106 49 48
         frame	data/chars/players/Max_/run00.gif
         frame	data/chars/players/Max_/run01.gif
@@ -308,7 +307,7 @@ frame	data/chars/players/Max_/t02.gif
 frame	data/chars/players/Max_/t03.gif
 @cmd	position 7 -60 1 0 -1
 @cmd  depost  0
-@cmd  throw  20  -2  2  1  0  -1
+@cmd  throw  25  -2  2  1  0  -1
 @cmd  clearL
 		Attack1  0
 	delay	9

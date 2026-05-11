@@ -32,30 +32,11 @@ Com u u freespecial6
 anim Idle
 	loop	0
 	delay	8
-	offset	156 183
+	offset  156  195
 	drawmethod tintmode 6
 	drawmethod tintcolor -255
-	jumpframe  2  2  1  0
-	frame	data/chars/Enemys/Roo/special00.gif
-	frame	data/chars/Enemys/Roo/special01.gif
-	frame	data/chars/Enemys/Roo/special02.gif
 	delay	3
 	frame	data/chars/Enemys/Roo/special03.gif
-	frame	data/chars/Enemys/Roo/special04.gif
-	frame	data/chars/Enemys/Roo/special05.gif
-	frame	data/chars/Enemys/Roo/special06.gif
-	frame	data/chars/Enemys/Roo/special03.gif
-	frame	data/chars/Enemys/Roo/special04.gif
-	frame	data/chars/Enemys/Roo/special05.gif
-	frame	data/chars/Enemys/Roo/special06.gif
-	frame	data/chars/Enemys/Roo/special03.gif
-	frame	data/chars/Enemys/Roo/special04.gif
-	frame	data/chars/Enemys/Roo/special05.gif
-	frame	data/chars/Enemys/Roo/special06.gif
-	delay	8
-	frame	data/chars/Enemys/Roo/special07.gif
 	@cmd killentity getlocalvar("self")
 	frame	data/chars/Enemys/Roo/special07.gif
-
-
 

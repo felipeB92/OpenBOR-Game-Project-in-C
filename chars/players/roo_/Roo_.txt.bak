@@ -2,6 +2,7 @@ name	Roo_
 health	100
 mp 20
 #mprate 1
+Secret 0 1
 riseinv				0.4 1
 speed	13
 type	player
@@ -22,6 +23,11 @@ animationscript		data/scripts/drago.c
 Load T00
 Load RooSP1
 Load RooSP2
+Load RooSP3
+Load RooSP4
+Load RooSP5
+
+
 
 
 
@@ -401,6 +407,16 @@ anim special
 	frame	data/chars/Enemys/Roo/special203.gif
 		attack2  137  101  47  68  25  1  0  0  25  15
 	frame	data/chars/Enemys/Roo/special204.gif
+	@cmd  spawn01  "RooSP1"  0  0  -1
+		attack2  137  113  69  45  27  1  0  0  25  15
+	frame	data/chars/Enemys/Roo/special201.gif
+		attack2  139  110  40  43  27  1  0  0  25  15
+	frame	data/chars/Enemys/Roo/special202.gif
+		attack2  113  117  63  45  25  1  0  0  25  15
+		sound  data/sounds/golpes/Chut.wav
+	frame	data/chars/Enemys/Roo/special203.gif
+		attack2  137  101  47  68  25  1  0  0  25  15
+	frame	data/chars/Enemys/Roo/special204.gif
 		attack2  135  139  43  48  25  1  0  0  25  15
 	frame	data/chars/Enemys/Roo/special205.gif
 
@@ -413,7 +429,6 @@ anim special2
 	jumpframe  2  3  2  0
 	Fastattack 1
         hitfx	data/sounds/golpes/MEdio.wav
-	@cmd  spawn01  "RooSP2"  0  0  -1
 	frame	data/chars/Enemys/Roo/special00.gif
 		move  0
 	frame	data/chars/Enemys/Roo/special01.gif
@@ -421,22 +436,34 @@ anim special2
 	frame	data/chars/Enemys/Roo/special02.gif
 	delay	3
 		sound  data/sounds/golpes/Chut.wav
+	@cmd  spawn01  "RooSP2"  0  0  -1
 	frame	data/chars/Enemys/Roo/special03.gif
+	@cmd  spawn01  "RooSP3"  0  0  -1
 	frame	data/chars/Enemys/Roo/special04.gif
 		sound  data/sounds/golpes/Chut.wav
+	@cmd  spawn01  "RooSP4"  0  0  -1
 	frame	data/chars/Enemys/Roo/special05.gif
+	@cmd  spawn01  "RooSP5"  0  0  -1
 	frame	data/chars/Enemys/Roo/special06.gif
 		sound  data/sounds/golpes/Chut.wav
+	@cmd  spawn01  "RooSP2"  0  0  -1
 	frame	data/chars/Enemys/Roo/special03.gif
+	@cmd  spawn01  "RooSP3"  0  0  -1
 	frame	data/chars/Enemys/Roo/special04.gif
 		sound  data/sounds/golpes/Chut.wav
+	@cmd  spawn01  "RooSP4"  0  0  -1
 	frame	data/chars/Enemys/Roo/special05.gif
+	@cmd  spawn01  "RooSP5"  0  0  -1
 	frame	data/chars/Enemys/Roo/special06.gif
 		sound  data/sounds/golpes/Chut.wav
+	@cmd  spawn01  "RooSP2"  0  0  -1
 	frame	data/chars/Enemys/Roo/special03.gif
+	@cmd  spawn01  "RooSP3"  0  0  -1
 	frame	data/chars/Enemys/Roo/special04.gif
 		sound  data/sounds/golpes/Chut.wav
+	@cmd  spawn01  "RooSP4"  0  0  -1
 	frame	data/chars/Enemys/Roo/special05.gif
+	@cmd  spawn01  "RooSP5"  0  0  -1
 	frame	data/chars/Enemys/Roo/special06.gif
 		Attack1  0
 	delay	8
@@ -452,16 +479,27 @@ anim Runattack
        @cmd dasher 1 0 0
 	frame	data/chars/Enemys/Roo/runatk00.gif
 	frame	data/chars/Enemys/Roo/runatk01.gif
+		delay  4
 	frame	data/chars/Enemys/Roo/runatk02.gif
-		attack1  158  122  35  64  12  1  0  0  0  15
+		attack1  158  122  35  64  4  0  0  0  0  15
       @cmd dasher 2 0 0
 		sound  data/sounds/slide.wav
 	frame	data/chars/Enemys/Roo/runatk03.gif
+		Attack1  0
 	frame	data/chars/Enemys/Roo/runatk04.gif
+		attack1  158  122  35  64  4  0  0  0  0  15
 	frame  data/chars/Enemys/Roo/runatk03.gif
+		Attack1  0
+	frame  data/chars/Enemys/Roo/runatk03.gif
+		attack2  158  122  35  64  4  0  0  0  0  15
+	frame  data/chars/Enemys/Roo/runatk04.gif
+		Attack1  0
 	frame  data/chars/Enemys/Roo/runatk04.gif
        @cmd dasher 1 0 0
+		attack1  118  125  73  57  12  1  0  0  0  15
+		delay  8
 	frame	data/chars/Enemys/Roo/runatk05.gif
+		Attack1  0
 	frame	data/chars/Enemys/Roo/runatk06.gif
 	frame	data/chars/Enemys/Roo/runatk07.gif
 	frame	data/chars/Enemys/Roo/runatk08.gif

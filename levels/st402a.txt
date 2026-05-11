@@ -1,38 +1,12 @@
-music		data/bgs/St402/Lv402a.bor
-bossmusic	data/music/boss1.bor
-
-###BACKGROUND
-background		data/bgs/St402/back00.gif	1 1 0 0 0 0 1 -1 1 0
-bglayer			data/bgs/St402/back01.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.5
-
-###SKY
-bglayer			data/bgs/St402/bg000.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.6
-bglayer			data/bgs/St402/bg001.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.7
-bglayer			data/bgs/St402/bg002.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.8
-bglayer			data/bgs/St402/bg003.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.9
-
-###GRASS
-bglayer			data/bgs/St402/bg00.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.5
-bglayer			data/bgs/St402/bg01.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.6
-bglayer			data/bgs/St402/bg02.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.7
-bglayer			data/bgs/St402/bg03.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.8
-bglayer			data/bgs/St402/bg04.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.9
-
-###BGLAYER/PANEL
-bglayer			data/bgs/St402/bg05.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 1
-bglayer			data/bgs/St402/pn00.gif 0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 1
-panel			data/bgs/St402/pN01.gif	none	none
-
-###MISC
-fglayer			data/bgs/St05/Front02.gif 			1000 1 1 0 0 0 0 -1 -1 1 2
-#order			a
-settime			99
-bgspeed 15 0
-Rock 2
-scrollspeed 	0.5
-stagenumber 	2
+music		data/bgs/St402/Up-and-Up.ogg
+bossmusic	data/music/boss2.ogg
+scrollspeed 0.5#1
+stagenumber 1
+background	data/bgs/st402/BAck00.gif
+panel		data/bgs/St402/Pn01.gif
+#frontpanel      data/bgs/St402/Front03.gif
+bglayer		data/bgs/St402/Back01.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.9
 cameratype 1
-backgroundSpeed 1 40
 cameraoffset 0 -30
 #levelscript @script
 #void main() {
@@ -44,180 +18,270 @@ settime         99
 notime          0
 noslow          1
 order		a
-spawn1  	126 0  0
-spawn2  	131 0
-spawn3  	136  0
+spawn1  	150 20
+spawn2  	138 35
+spawn3  	135  50
 
-light		128 -128
+light		5 -5
+at			0
+
+Wall  -205  242  10  0  394  254  82  113
+
+spawn  Time01
+	coords  0  0
+        Flip 1
+	at  0
+
+spawn  Bar402
+	coords  1236  151
+        Flip 1
+	at  0
+
+Wait
+	at  0
+
+group		4 4
+at			0
+
+spawn  Garnet
+health 40
+	coords -100 210 150
+	at  0
+
+spawn  Garnet
+health 40
+	coords -150 185 150
+	at  0
+
+spawn  Galsia_
+health 40
+	coords 465 210
+	at  0
+
+spawn  Donovan_
+health 40
+	coords 435 185
+	at  0
+
+spawn  Garnet
+Map 1
+health 40
+	coords 600 185 150
+	at  0
+
+spawn  Knife
+	coords 300 210 100
+	at  0
+
+spawn  Galsia
+health 40
+	coords 300 210 150
+	at  0
+
+spawn  signal
+Map 1 
+health 40
+	coords 600 185 150
+	at  0
+
+
+spawn  Signal
+health 50
+	coords 550 200 150
+	at  0
+
+spawn  signal
+Map 1 
+health 40
+	coords 600 225 150
+	at  0
+
+group		99 99
+at			1
+
+
+spawn  Haku_oh
+Flip 1
+Map 2
+health 50
+	coords 150 225 150
+	at  350
+
+spawn  Haku_oh
+Map 2
+health 50
+	coords 400 225 150
+	at  350
+
+
+spawn  Haku_oh
+Flip 1
+Map 3
+health 50
+	coords 150 225 150
+	at  450
+
+spawn  Haku_oh
+Map 3
+health 50
+	coords 400 225 150
+	at  450
+
+Wait
+	at  500
+
+
+group		4 4
 at			0
 
 
+spawn  Garnet
+Map 1
+health 50
+	coords 550 200 150
+	at  500
 
-Hole  -261  228  -7  0  267  266  41
-Hole  413  233  0  0  139  157  48
+spawn  Garnet
+health 50
+	coords 600 225 150
+	at  500
+
+spawn  Garnet
+Map 1 
+health 50
+	coords -100 225 150
+	at  500
+
+spawn  Garnet
+Flip 1
+health 50
+	coords 200 225 150
+	at  500
+
+group		99 99
+at			501
+
+spawn  lata
+Item Apple
+	coords 502 185
+	at  501
+
+spawn  lata
+	coords 530 200
+	at  501
 
 
-Group 2 2
-at  0
+spawn  Bigben
+Map 1 
+health 70
+	coords 550 225 150
+	at  600
 
-spawn  Truck402a
-flip   1
-	coords  -200  250
-	at  0
+spawn  Donovan
+map 2
+health 50
+	coords 550 180 150
+	at  650
+
+spawn  Donovan
+health 40
+	coords 570 225 150
+	at  650
+
+
+Wait
+	at  1050
+
+group		4 4
+at			1050
+
+spawn  Donovan
+Flip 1
+health 50
+	coords 300 180 150
+	at  1050
+
+spawn  Pipe
+	coords 300 180 100
+	at  1050
+
+spawn  Galsia
+health 40
+	coords 400 225 150
+	at  1050
+
+spawn  Bigben
+Flip 1
+health 70
+	coords 400 225 150
+	at  1050
+
+spawn  Donovan
+health 40
+	coords -100 225 150
+	at  1050
+
+spawn  Galsia
+health 40
+	coords 600 225 150
+	at  1050
+
+spawn  lata
+Item Apple
+	coords 600 185
+	at  1051
+
+spawn  Ralf_
+Map 1
+health 70
+	coords 615 200
+	at  1100
+
+spawn  Garnet
+map 3
+health 50
+	coords 407 173 3
+	at  1300
 
 
 spawn  Galsia
-map    1
+health 30
+	coords -100 200
+	at  1300
+
+spawn  Garnet
+map 2
 health 50
-	coords  250  200 150
-	at  0
+	coords 407 173 3
+	at  1300
 
-spawn  HakuB02
-flip   1
-	coords  -100  220
-	at  0
+spawn  Donovan
+health 30
+	coords -100 200
+	at  1300
 
-Group 3 3
-at  0
+spawn  Garnet
+health 50
+	coords 407 173 3
+	at  1300
 
+spawn  Garnet
+map 3
+health 50
+	coords 407 173 3
+	at  1300
 
-spawn  delay
-flip   1
-	coords  -100  220
-	at  0
-
-spawn  HakuB01
-flip   1
-	coords  -150  220
-	at  0
-
-
-
-
-spawn  Truck402b
-flip   1
-	coords  -200  250
-	at  0
+spawn  Haku_oh
+flip 1
+health 70
+	coords 250 200 150
+	at  1300
 
 
-spawn  HakuB01
-flip   1
-	coords  -150  220
-	at  0
+spawn  Haku_oh
+health 70
+	coords 450 200 150
+	at  1300
 
-spawn  delay
-flip   1
-	coords  -100  220
-	at  0
-
-spawn  HakuB02
-flip   1
-	coords  -100  220
-	at  0
-
-spawn  delay
-flip   1
-	coords  -100  220
-	at  0
-
-spawn  HakuB01
-flip   1
-	coords  -150  220
-	at  0
-
-
-spawn  Truck402c
-flip   1
-	coords  -200  250
-	at  0
-
-
-spawn  HakuB01
-flip   1
-	coords  -150  220
-	at  0
-
-spawn  delay
-flip   1
-	coords  -100  220
-	at  0
-
-spawn  HakuB02
-flip   1
-	coords  -100  220
-	at  0
-
-spawn  delay
-flip   1
-	coords  -100  220
-	at  0
-
-spawn  HakuB01
-flip   1
-	coords  -150  220
-	at  0
-
-
-spawn  Truck402a
-flip   1
-	coords  -200  250
-	at  0
-
-
-spawn  HakuB01
-flip   1
-	coords  -150  220
-	at  0
-
-spawn  delay
-flip   1
-	coords  -100  220
-	at  0
-
-spawn  HakuB02
-flip   1
-	coords  -100  220
-	at  0
-
-spawn  delay
-flip   1
-	coords  -100  220
-	at  0
-
-spawn  HakuB01
-flip   1
-	coords  -150  220
-	at  0
-
-spawn  Truck402D
-flip   1
-	coords  -200  250
-	at  0
-
-
-spawn  HakuB01
-flip   1
-	coords  -150  220
-	at  0
-
-spawn  delay
-flip   1
-	coords  -100  220
-	at  0
-
-spawn  HakuB02
-flip   1
-	coords  -100  220
-	at  0
-
-spawn  delay
-flip   1
-	coords  -100  220
-	at  0
-
-spawn  HakuB01
-flip   1
-	coords  -150  220
-	at  0
 
 

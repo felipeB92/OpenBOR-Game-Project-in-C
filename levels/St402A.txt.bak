@@ -1,0 +1,50 @@
+music		data/bgs/St402/Up-and-Up.ogg
+bossmusic	data/music/boss2.ogg
+scrollspeed 0.5#1
+stagenumber 1
+background	data/bgs/st402/BAck00.gif	
+panel		data/bgs/St402/Pn01.gif
+#frontpanel      data/bgs/St402/Front03.gif
+bglayer		data/bgs/St402/Back01.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.9
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	125 20
+spawn2  	130 35
+spawn3  	135  50
+
+light		128 -128
+at			0
+
+
+spawn  Time01
+	coords  0  0
+        Flip 1
+	at  0
+
+spawn  Bar402
+	coords  1236  151
+        Flip 1
+	at  0
+
+
+spawn  Donovan
+health 40
+	coords -100  250 100
+	at  305
+
+
+
+
+
+
+

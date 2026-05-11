@@ -89,6 +89,9 @@ know	Roo_Pipe	data/chars/Players/Roo_/Roo_Pipe.txt
 know	Roo_Sword	data/chars/Players/Roo_/Roo_Sword.txt
 know	RooSP1		data/chars/Players/Roo_/RooSP1.txt
 know	RooSP2		data/chars/Players/Roo_/RooSP2.txt
+know	RooSP3		data/chars/Players/Roo_/RooSP3.txt
+know	RooSP4		data/chars/Players/Roo_/RooSP4.txt
+know	RooSP5		data/chars/Players/Roo_/RooSP5.txt
 
 
 load	shiva_		data/chars/Players/Shiva_/Shiva_.txt
@@ -281,6 +284,10 @@ know 	Rocket_Bomb2    data/chars/Enemys/Rocket/Rocket_Bomb2.txt
 know 	P1      	data/chars/Enemys/P1/p1.txt
 know 	PZ      	data/chars/Enemys/P1/pZ.txt
 know 	nEOx      	data/chars/Enemys/NeoX/nEOx.txt
+know 	Jonny      	data/chars/Enemys/Jonny/jonny.txt
+know 	Jonny_      	data/chars/Enemys/Jonny/jonny_.txt
+know 	Ralf      	data/chars/Enemys/Ralf/Ralf.txt
+know 	Ralf_      	data/chars/Enemys/Ralf/Ralf_.txt
 
 
 
@@ -493,12 +500,7 @@ know	CB401     	data/Bgs/St401/CB401.txt
 know	Primas     	data/Bgs/St401/Primas.txt
 know	Bgun     	data/Bgs/St401/Bgun.txt
 
-know	HakuB01     	data/Bgs/St402/HAkuB01.txt
-know	HakuB02     	data/Bgs/St402/HAkuB02.txt
-know	Truck402a     	data/Bgs/St402/Truck402a.txt
-know	Truck402b     	data/Bgs/St402/Truck402b.txt
-know	Truck402c     	data/Bgs/St402/Truck402c.txt
-know	Truck402D     	data/Bgs/St402/Truck402D.txt
+know	bar402     	data/Bgs/St402/Bar402.txt
 
 know	Corda403     	data/Bgs/St403/Corda403.txt
 

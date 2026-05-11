@@ -1,0 +1,17 @@
+name			BAr402
+type			none
+shadow			0
+setlayer		8
+antigravity 100
+#Alpha 1
+
+anim idle
+	loop	1
+	delay	250
+	offset	111 124
+frame   data/bgs/sT402/BAr01.gif
+		delay  3
+frame   data/bgs/sT402/BAr00.gif
+	frame  data/bgs/sT402/BAr01.gif
+	frame  data/bgs/sT402/BAr00.gif
+
