@@ -1,0 +1,19 @@
+name			Train402
+type			none
+shadow			0
+setlayer		-7
+antigravity 100
+#Alpha 1
+animationscript		data/scripts/drago.c
+load Fog
+
+anim idle
+	loop	0
+	delay	950
+	offset	0 0
+	@cmd dasher -3 0 0
+	frame  data/bgs/sT402/Train.gif
+	frame  data/bgs/sT402/Train.gif
+	@cmd killentity getlocalvar("self")
+	frame  data/bgs/sT402/Train.gif
+

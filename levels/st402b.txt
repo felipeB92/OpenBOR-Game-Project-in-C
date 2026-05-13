@@ -37,7 +37,7 @@ spawn  Time01
 spawn  Donovan
 Flip 1
 map 1
-health 50
+health 30
 	coords 100 200 150
 	at  100
 
@@ -49,13 +49,13 @@ health 40
 
 spawn  Donovan
 Flip 1
-health 50
+health 30
 	coords 100 200 150
 	at  200
 
 spawn  Galsia
 Map 2
-health 40
+health 30
 	coords 300 200 150
 	at  400
 
@@ -72,36 +72,34 @@ health 50
 
 spawn  G_FOG
 map 2
-health 50
 	coords 60 220
 	at  500
 
 spawn  Garnet
 map 4
-health 50
+health 30
 	coords -100 200 150
 	at  500
 
 spawn  Garnet
-health 50
+health 30
 	coords -100 240 150
 	at  500
 
 spawn  Garnet
 map 4
-health 50
+health 40
 	coords -100 220 150
 	at  500
 
 spawn  G_FOG
 map 2
-health 50
 	coords 220 220
 	at  500
 
 spawn  Tiger
 map 2
-health 60
+health 50
 	coords 400 220 150
 	at  500
 
@@ -113,7 +111,7 @@ health 50
 
 spawn  Tiger
 map 2
-health 60
+health 50
 	coords 200 220 150
 	at  500
 
@@ -122,31 +120,31 @@ group		99 99
 at		501
 
 spawn  Signal
-health 50
+health 40
 	coords 400 220 150
 	at  800
 
 spawn  Galsia
 map 3
-health 50
+health 30
 	coords 200 220 150
 	at  900
 
 spawn  Signal
 map 2
-health 50
+health 40
 	coords 400 220 150
 	at  950
 
 spawn Bigben
 map 2
-health 70
+health 50
 	coords 600 220 150
 	at  1000
 
 spawn Donovan
 map 4
-health 60
+health 40
 	coords 600 240 150
 	at  1000
 
@@ -159,13 +157,13 @@ at			1100
 
 spawn Hakuyo
 map 4
-health 60
+health 50
 	coords 200 240 150
 	at  1100
 
 spawn Hakuyo
 map 4
-health 60
+health 50
 	coords 450 220 150
 	at  1100
 
@@ -193,17 +191,17 @@ health 60
 	at  1200
 
 spawn Signal
-health 50
+health 40
 	coords 250 220 150
 	at  1300
 
 spawn Donovan
-health 50
+health 30
 	coords 600 220 150
 	at  1300
 
 spawn Galsia
-health 50
+health 30
 	coords 600 240 150
 	at  1300
 
@@ -214,12 +212,12 @@ group		4 4
 at			1500
 
 spawn Donovan
-health 50
+health 30
 	coords 400 220 150
 	at  1500
 
 spawn Signal
-health 50
+health 40
 	coords 250 220 150
 	at  1500
 

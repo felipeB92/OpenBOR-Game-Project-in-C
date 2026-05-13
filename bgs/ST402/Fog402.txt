@@ -1,0 +1,31 @@
+name			Fog402
+type			none
+shadow			0
+setlayer		7
+antigravity 100
+#Alpha 1
+animationscript		data/scripts/drago.c
+load Fog
+
+anim idle
+	loop	0
+	delay	12
+	offset	141 183
+	frame  data/chars/enemys/Fog/Jump00.gif
+	@cmd dasher 1 0 0
+	frame  data/chars/enemys/Fog/walk00.gif
+	frame  data/chars/enemys/Fog/walk01.gif
+	frame  data/chars/enemys/Fog/walk02.gif
+	frame  data/chars/enemys/Fog/walk03.gif
+	frame  data/chars/enemys/Fog/walk00.gif
+	frame  data/chars/enemys/Fog/walk01.gif
+	frame  data/chars/enemys/Fog/walk02.gif
+	frame  data/chars/enemys/Fog/walk03.gif
+	frame  data/chars/enemys/Fog/walk02.gif
+	frame  data/chars/enemys/Fog/walk03.gif
+	@cmd dasher 0 0 0
+	@cmd  spawn01  "Fog"  0  5  0
+	frame  data/chars/enemys/Fog/IDle00.gif
+	@cmd killentity getlocalvar("self")
+	frame  data/chars/enemys/Fog/IDle00.gif
+

@@ -14,6 +14,7 @@ anim idle
 	offset	25 27
 	delay	5
 		offset  25  33
+	quakeframe 3 2 2
 	sound	data/sounds/Explosion.wav
 	frame	data/chars/Objetos/explosion00.gif
 		attack5  6  9  37  33  15  1  0  0  0  20

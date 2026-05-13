@@ -1,0 +1,273 @@
+music		data/bgs/St402/Crazy-Train.ogg
+bossmusic	data/music/boss2.ogg
+scrollspeed 0.5#1
+stagenumber 2
+background	data/bgs/st402/BAck00.gif
+panel		data/bgs/St402/Pn03.gif
+bglayer		data/bgs/St402/Back04.gif 0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 1
+frontpanel      data/bgs/St402/Front01.gif
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+bgspeed 15 0
+#Rock 2
+order		a
+spawn1  	100 20
+spawn2  	110 35
+spawn3  	120  50
+
+light		100 -100
+at			0
+
+
+spawn  Time01
+	coords  0  0
+        Flip 1
+	at  0
+
+spawn Slum__
+health 30
+	coords 112 210
+	at  0
+
+spawn Vice_
+health 30
+	coords 254 210
+	at  0
+
+spawn Box05
+Item Apple
+	coords 305 235
+	at  0
+
+spawn Signal_
+health 40
+	coords 437 215
+	at  0
+
+Wait
+	at  100
+
+group		4 4
+at			100
+
+spawn Signal
+Map 2
+health 40
+	coords -100 225 150
+	at  100
+
+spawn Signal
+Map 2
+health 40
+	coords -130 240 150
+	at  100
+
+spawn Signal
+Map 2
+health 40
+	coords -130 240 150
+	at  100
+
+spawn Slum
+Map 2
+health 30
+	coords 600 240 150
+	at  100
+
+spawn Signal
+health 30
+	coords 540 200 150
+	at  100
+
+spawn Slum
+health 30
+	coords 600 240 150
+	at  100
+
+spawn Vice
+map 1
+health 30
+	coords -100 200 150
+	at  100
+
+spawn Vice
+Map 1
+health 30
+	coords -100 240 150
+	at  100
+
+group		99 99
+at			101
+
+spawn Galsia_B
+map 1
+health 30
+	coords 500 200
+	at  101
+
+spawn Donovan_B
+Flip 1
+Map 1
+health 30
+	coords 590 200
+	at  101
+
+spawn Box05
+Item Knife
+	coords 615 240
+	at  101
+
+spawn Box05
+Item Cash
+	coords 640 225
+	at  101
+
+spawn Fog
+Map 1
+health 40
+	coords 550 220 150
+	at  300
+
+spawn Fog
+Map 2
+health 40
+	coords -100 220 150
+	at  400
+
+spawn Fog
+Map 2
+health 40
+	coords -100 250 150
+	at  400
+
+
+Wait
+	at  540
+
+group		4 4
+at			540
+
+
+spawn Pipe
+	coords 500 250 50
+	at  540
+
+spawn Fog
+health 40
+	coords 500 250 150
+	at  540
+
+spawn Jack
+health 100
+	coords 500 250 150
+	at  540
+
+spawn Galsia
+health 30
+	coords -100 250 150
+	at  540
+
+spawn Galsia
+health 30
+	coords -100 230 150
+	at  540
+
+group		99 99
+at			541
+
+spawn Fog
+health 40
+	coords 500 250 150
+	at  541
+
+spawn Box05
+Item Apple
+	coords 615 240
+	at  541
+
+spawn Box05
+Item Cash
+	coords 640 225
+	at  541
+
+
+spawn Signal_
+health 40
+	coords 566 210
+	at  541
+
+spawn Signal_
+Flip 1
+Map 1
+health 40
+	coords 510 210
+	at  541
+
+spawn Hakuyo_
+health 50
+	coords 515 220
+	at  600
+
+spawn Hakuyo_
+health 50
+	coords 530 240
+	at  600
+
+
+spawn  B402a
+	coords  0  0
+        Flip 1
+	at  767
+
+spawn  B402B
+	coords  500  0
+        Flip 1
+	at  767
+
+
+group		4 4
+at			767
+
+spawn Delay
+	coords 300 220 150
+	at  767
+
+spawn Delay
+	coords 300 220 150
+	at  767
+
+
+spawn  Signal402
+	coords  230  183
+        Flip 1
+	at  767
+
+spawn  Fog402
+	coords  200  183
+        Flip 1
+	at  767
+
+spawn Delay
+	coords 300 220 150
+	at  767
+
+spawn Galsia
+health 40
+	coords 30 210 10
+	at  767
+
+spawn  Fog402
+	coords  230  183
+        Flip 1
+	at  767
+
+

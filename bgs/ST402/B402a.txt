@@ -1,0 +1,24 @@
+name			B402a
+type			none
+shadow			0
+setlayer		8
+antigravity 100
+#Alpha 1
+
+anim idle
+	loop	0
+	delay	300
+	offset	0 0
+	frame  data/bgs/sT402/Porta/00.gif
+		delay  12
+	frame  data/bgs/sT402/Porta/01.gif
+	frame  data/bgs/sT402/Porta/02.gif
+	frame  data/bgs/sT402/Porta/03.gif
+	frame  data/bgs/sT402/Porta/04.gif
+	frame  data/bgs/sT402/Porta/05.gif
+	frame  data/bgs/sT402/Porta/06.gif
+	frame  data/bgs/sT402/Porta/07.gif
+	frame  data/bgs/sT402/Porta/08.gif
+	frame  data/bgs/sT402/Porta/09.gif
+	frame  data/bgs/sT402/Porta/10.gif
+

@@ -26,7 +26,7 @@ remap data/chars/Enemys/Fog/idle00.gif data/chars/Enemys/Fog/alter4.gif
 
 anim	spawn
 	loop	0
-	delay	40
+	delay	20
 	offset	144 181
 	bbox	132 110 23 72
 	frame   data/chars/Enemys/Fog/Jump00.gif

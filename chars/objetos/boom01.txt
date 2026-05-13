@@ -13,6 +13,7 @@ anim idle
 	loop	0
 	delay	40
 	offset	25 27
+	quakeframe 3 2 2
 	frame	data/chars/Objetos/explosion04.gif
 	delay	5
 		offset  25  33

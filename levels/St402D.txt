@@ -1,0 +1,285 @@
+music		data/bgs/St302/Dub_Slash.ogg
+bossmusic	data/music/boss1.ogg
+scrollspeed 0.5#1
+stagenumber 1
+background	data/bgs/st402/BAck05.gif
+panel		data/bgs/St402/Pn04.gif
+#frontpanel      data/bgs/St402/Front03.gif
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	150 20
+spawn2  	138 35
+spawn3  	135  50
+
+light		128 -128
+at			0
+
+
+
+spawn  Time01
+	coords  0  0
+        Flip 1
+	at  0
+
+spawn  Train402
+	coords  0  0
+        Flip 1
+	at  0
+
+spawn Lixo01
+Item cash
+	coords 366 240
+	at  0
+
+
+spawn  Knife
+	coords -100 250 50
+	at  0
+
+spawn  Galsia
+health 30
+	coords -100 250 150
+	at  0
+
+spawn  Galsia
+health 30
+	coords 600 220 150
+	at  0
+
+spawn  Galsia
+health 30
+	coords 620 260 150
+	at  0
+
+
+spawn  Signal_
+Map 2
+health 40
+	coords 600 220
+	at  200
+
+spawn  Signal_
+Map 1
+health 40
+	coords 620 260
+	at  200
+
+
+spawn  Garnet
+flip 1
+Map 1
+health 30
+	coords 150 260 150
+	at  350
+
+
+spawn  Garnet
+health 40
+	coords 600 260 150
+	at  400
+
+
+spawn Lixo01
+	coords 550 240
+	at  400
+
+spawn Lixo01
+Item Chicken
+	coords 580 240
+	at  400
+
+
+spawn  Signal
+health 40
+	coords 600 260 150
+	at  400
+
+
+
+
+Wait
+	at  600
+
+group		4 4
+at			600
+
+
+spawn  Galsia
+health 30
+	coords 600 260 150
+	at  600
+
+
+spawn  Galsia
+health 30
+	coords -100 220 150
+	at  600
+
+spawn  Garnet
+health 30
+	coords 600 260 150
+	at  600
+
+
+spawn  Garnet
+health 40
+	coords -100 220 150
+	at  600
+
+
+spawn  Garnet
+map  3
+health 30
+	coords 400 260 150
+	at  600
+
+
+spawn  Garnet
+Flip 1
+map 3
+health 40
+	coords 150 220 150
+	at  600
+
+
+group		99 99
+at		601
+
+
+spawn Lixo01
+item Pipe
+	coords 550 260
+	at  601
+
+spawn Lixo01
+Item Cash
+	coords 580 260
+	at  601
+
+
+spawn  Bigben
+map 3
+health 75
+	coords 600 220 150
+	at  700
+
+
+spawn  Bigben
+health 50
+	coords 250 240 150
+	at  700
+
+spawn  Bigben
+map 3
+health 75
+	coords -100 240 150
+	at  700
+
+
+spawn  Signal_
+map 3
+health 30
+	coords 600 220
+	at  800
+
+
+spawn  Signal_
+health 40
+	coords 560 240
+	at  800
+
+Wait
+	at  1000
+group		4 4
+at			1000
+
+spawn  Knife
+	coords 400 240 100
+	at  1000
+
+spawn  galsia
+health 30
+	coords 400 240 150
+	at  1000
+
+
+
+spawn  Knife
+	coords 400 240
+	at  1000
+
+
+spawn  galsia
+health 30
+	coords 400 220 150
+	at  1000
+
+spawn  Knife
+	coords 400 220 150
+	at  1000
+
+spawn  Bigben
+map 3
+health 50
+	coords 150 240 150
+	at  1000
+
+spawn Lixo01
+	coords 800 235
+	at  1001
+
+spawn Lixo01
+Item Chicken
+	coords 850 235
+	at  1001
+
+group		2 2
+at			1500
+
+
+spawn  Train402
+	coords  600  0
+        Flip 1
+	at  1500
+
+
+spawn  Delay
+	coords 400 220 150
+	at  1500
+
+spawn  Delay
+	coords 150 240 150
+	at  1500
+
+
+spawn  Fred
+map 1
+boss 1
+	coords 400 240 150
+	at  1500
+
+spawn  Fred
+flip 1
+boss 1
+alias Souther
+	coords 150 240 150
+	at  1500
+
+
+
+
+
+
+
+
+

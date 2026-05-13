@@ -241,12 +241,12 @@ know    particleZ       data/chars/Enemys/particle/particleZ.txt
 know    Laser           data/chars/Enemys/particle/Laser.txt
 know    Shiva           data/chars/Enemys/Shiva/Shiva.txt
 know    _Shiva          data/chars/Enemys/Shiva/_Shiva.txt
-know    Shiva_N           data/chars/Enemys/Shiva/Shiva_N.txt
+know    Shiva_N         data/chars/Enemys/Shiva/Shiva_N.txt
 know    Slum            data/chars/Enemys/Slum/Slum.txt
 know    Slum_           data/chars/Enemys/Slum/Slum_.txt
 know    Slum__          data/chars/Enemys/Slum/Slum__.txt
 know    Vice            data/chars/Enemys/Vice/Vice.txt
-know    zice            data/chars/Enemys/zice/zice.txt
+know    Vice_           data/chars/Enemys/Vice/Vice_.txt
 know    garnet          data/chars/Enemys/Garnet/Garnet.txt
 know    garnet_         data/chars/Enemys/Garnet/Garnet_.txt
 know    _Slum           data/chars/Enemys/Slum/_Slum.txt
@@ -288,11 +288,6 @@ know 	Jonny      	data/chars/Enemys/Jonny/jonny.txt
 know 	Jonny_      	data/chars/Enemys/Jonny/jonny_.txt
 know 	Ralf      	data/chars/Enemys/Ralf/Ralf.txt
 know 	Ralf_      	data/chars/Enemys/Ralf/Ralf_.txt
-
-
-
-
-
 
 # Senarios
 
@@ -501,6 +496,12 @@ know	Primas     	data/Bgs/St401/Primas.txt
 know	Bgun     	data/Bgs/St401/Bgun.txt
 
 know	bar402     	data/Bgs/St402/Bar402.txt
+know	B402a     	data/Bgs/St402/B402a.txt
+know	B402b     	data/Bgs/St402/B402b.txt
+know	B402b     	data/Bgs/St402/B402b.txt
+know	Train402     	data/Bgs/St402/Train402.txt
+know	Fog402     	data/Bgs/St402/Fog402.txt
+know	Signal402     	data/Bgs/St402/Signal402.txt
 
 know	Corda403     	data/Bgs/St403/Corda403.txt
 
@@ -538,6 +539,7 @@ know	Box		data/chars/Objetos/Box.txt
 know	Box02		data/chars/Objetos/Box02.txt
 know	Box03		data/chars/Objetos/Box03.txt
 know	Box04		data/chars/Objetos/Box04.txt
+know	Box05		data/chars/Objetos/Box05.txt
 know	Kart01		data/chars/Objetos/Kart01.txt
 know	Kart02		data/chars/Objetos/Kart02.txt
 know	Lixo01		data/chars/Objetos/Lixo01.txt

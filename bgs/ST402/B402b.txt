@@ -1,0 +1,24 @@
+name			B402b
+type			None
+shadow			0
+setlayer		6
+antigravity 100
+noquake 1
+#Alpha 1
+animationscript		data/scripts/drago.c
+
+anim idle
+	loop	0
+	delay	75
+	offset	0 0
+       @cmd dasher -2 0 0
+	frame  data/bgs/sT402/Porta/Es.gif
+       @cmd dasher -1 0 0
+	frame  data/bgs/sT402/Porta/ES.gif
+       @cmd dasher -0.5 0 0
+	frame  data/bgs/sT402/Porta/ES.gif
+       @cmd dasher 0 0 0
+	frame  data/bgs/sT402/Porta/ES.gif
+
+
+

@@ -1,0 +1,29 @@
+name			Signal402
+type			none
+shadow			0
+setlayer		7
+antigravity 100
+#Alpha 1
+animationscript		data/scripts/drago.c
+
+anim idle
+	loop	0
+	delay	300
+	offset	0 0
+	frame  data/chars/enemys/Signal/Jump00.gif
+	@cmd dasher 2 0 0
+	frame  data/chars/enemys/Signal/walk00.gif
+	frame  data/chars/enemys/Signal/walk01.gif
+	frame  data/chars/enemys/Signal/walk02.gif
+	frame  data/chars/enemys/Signal/walk03.gif
+	frame  data/chars/enemys/Signal/walk00.gif
+	frame  data/chars/enemys/Signal/walk01.gif
+	frame  data/chars/enemys/Signal/walk02.gif
+	frame  data/chars/enemys/Signal/walk03.gif
+	@cmd dasher 0 0 0
+	frame  data/chars/enemys/Signal/IDle00.gif
+	frame  data/chars/enemys/Signal/IDle01.gif
+	@cmd killentity getlocalvar("self")
+	frame  data/chars/enemys/Signal/IDle00.gif
+
+

@@ -25,12 +25,12 @@ remap data/chars/Enemys/Slum/idle00.gif data/chars/Enemys/Slum/alter4.gif
 anim	spawn
 	loop	0
 	delay	400
-	offset	139 175
-	bbox	127 99 33 61
+	offset	139 201
 	frame   data/chars/Enemys/Slum/fall102.gif
 	delay   15
 	frame   data/chars/Enemys/Slum/Rise00.gif
-	frame   data/chars/Enemys/Slum/Rise01.gif
+		offset  139  175
+	frame   data/chars/Enemys/Slum/Rise02.gif
 
 
 
