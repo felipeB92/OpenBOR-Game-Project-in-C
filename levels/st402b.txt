@@ -1,7 +1,7 @@
 music		data/bgs/St402/Crazy-Train.ogg
 bossmusic	data/music/boss2.ogg
 scrollspeed 0.5#1
-stagenumber 1
+stagenumber 2
 background	data/bgs/st402/BAck00.gif
 panel		data/bgs/St402/Pn02.gif
 bglayer		data/bgs/St402/Back00.gif 0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.2

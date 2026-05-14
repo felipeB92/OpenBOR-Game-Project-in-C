@@ -503,20 +503,13 @@ know	Train402     	data/Bgs/St402/Train402.txt
 know	Fog402     	data/Bgs/St402/Fog402.txt
 know	Signal402     	data/Bgs/St402/Signal402.txt
 
-know	Corda403     	data/Bgs/St403/Corda403.txt
+know	FontE403A     	data/Bgs/St403/Fonte403A.txt
+know	FontE403B     	data/Bgs/St403/Fonte403B.txt
+know	FontE403C     	data/Bgs/St403/Fonte403C.txt
+know	BontE403A     	data/Bgs/St403/Bonte403A.txt
+know	BontE403B     	data/Bgs/St403/Bonte403B.txt
+know	BontE403C     	data/Bgs/St403/Bonte403C.txt
 
-know	poste404    	data/Bgs/St404/Poste404.txt
-
-
-know	Shiva407a    	data/Bgs/St407/Shiva407a.txt
-know	MX407a    	data/Bgs/St407/Mx407a.txt
-know	MX407b    	data/Bgs/St407/Mx407b.txt
-know	MX407c    	data/Bgs/St407/Mx407c.txt
-know	MX407D    	data/Bgs/St407/Mx407D.txt
-know	NAve407    	data/Bgs/St407/Nave407.txt
-know	Front407   	data/Bgs/St407/Front407.txt
-know	PC407   	data/Bgs/St407/PC407.txt
-know	PC407b   	data/Bgs/St407/PC407b.txt
 
 
 

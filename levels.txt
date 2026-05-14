@@ -568,23 +568,31 @@ script continue data/scripts/continue.c
 #Next
 
 #2A - Teto Bar Kunukle
-z	175 230
+#z	175 230
 
-file	data/levels/St402A.txt
+#file	data/levels/St402A.txt
 
 #2B - Teto do metro
-z	195 240
+#z	195 240
 
-file	data/levels/St402B.txt
+#file	data/levels/St402B.txt
 
 
 
 #2C - Interior Metro
-z	218 260
+#z	218 260
 
-file	data/levels/St402c.txt
+#file	data/levels/St402c.txt
 
 #2D - Estação Metro
-z	222 275
+#z	222 275
 
-file	data/levels/St402D.txt
+#file	data/levels/St402D.txt
+
+
+#Next
+
+#3A - Passarela das Fontes
+z	225 275
+
+file	data/levels/St403A.txt

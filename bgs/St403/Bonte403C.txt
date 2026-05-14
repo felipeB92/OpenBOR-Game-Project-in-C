@@ -1,0 +1,51 @@
+name			Bonte403C
+type			none
+shadow			0
+setlayer		-8
+antigravity 100
+Alpha 1
+
+anim idle
+	loop	1
+	delay	9
+	offset	20 9
+	frame  data/Bgs/St403/Fonte/Bont00.gif
+	frame  data/Bgs/St403/Fonte/Bont01.gif
+	frame  data/Bgs/St403/Fonte/Bont00.gif
+	frame  data/Bgs/St403/Fonte/Bont01.gif
+	frame  data/Bgs/St403/Fonte/Bont00.gif
+	frame  data/Bgs/St403/Fonte/Bont00.gif
+	frame  data/Bgs/St403/Fonte/Bont01.gif
+	frame  data/Bgs/St403/Fonte/Bont00.gif
+	frame  data/Bgs/St403/Fonte/Bont01.gif
+	frame  data/Bgs/St403/Fonte/Bont00.gif
+	frame  data/Bgs/St403/Fonte/Bont01.gif
+	frame  data/Bgs/St403/Fonte/Bont00.gif
+	frame  data/Bgs/St403/Fonte/Bont01.gif
+	frame  data/Bgs/St403/Fonte/Bont00.gif
+	frame  data/Bgs/St403/Fonte/Bont01.gif
+	frame  data/Bgs/St403/Fonte/Bont00.gif
+	frame  data/Bgs/St403/Fonte/Bont01.gif
+	frame  data/Bgs/St403/Fonte/Bont00.gif
+	frame  data/Bgs/St403/Fonte/Bont01.gif
+	frame  data/Bgs/St403/Fonte/Bont00.gif
+	frame  data/Bgs/St403/Fonte/Bont01.gif
+	frame  data/Bgs/St403/Fonte/Bont00.gif
+	frame  data/Bgs/St403/Fonte/Bont01.gif
+	frame  data/Bgs/St403/Fonte/Bont02.gif
+	frame  data/Bgs/St403/Fonte/Bont03.gif
+	frame  data/Bgs/St403/Fonte/Bont04.gif
+	frame  data/Bgs/St403/Fonte/Bont05.gif
+	frame  data/Bgs/St403/Fonte/Bont04.gif
+	frame  data/Bgs/St403/Fonte/Bont05.gif
+	frame  data/Bgs/St403/Fonte/Bont04.gif
+	frame  data/Bgs/St403/Fonte/Bont05.gif
+	frame  data/Bgs/St403/Fonte/Bont04.gif
+	frame  data/Bgs/St403/Fonte/Bont05.gif
+	frame  data/Bgs/St403/Fonte/Bont04.gif
+	frame  data/Bgs/St403/Fonte/Bont05.gif
+	frame  data/Bgs/St403/Fonte/Bont06.gif
+	frame  data/Bgs/St403/Fonte/Bont07.gif
+	frame  data/Bgs/St403/Fonte/Bont08.gif
+	frame  data/Bgs/St403/Fonte/Bont09.gif
+

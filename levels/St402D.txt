@@ -1,7 +1,7 @@
 music		data/bgs/St302/Dub_Slash.ogg
 bossmusic	data/music/boss1.ogg
 scrollspeed 0.5#1
-stagenumber 1
+stagenumber 2
 background	data/bgs/st402/BAck05.gif
 panel		data/bgs/St402/Pn04.gif
 #frontpanel      data/bgs/St402/Front03.gif

@@ -1,0 +1,39 @@
+name			Fonte403A
+type			none
+shadow			0
+setlayer		-7
+antigravity 100
+#Alpha 1
+
+anim idle
+	loop	1
+	delay	9
+	offset	20 62
+	frame  data/Bgs/St403/Fonte/Fonte00.gif
+	frame  data/Bgs/St403/Fonte/Fonte01.gif
+	frame  data/Bgs/St403/Fonte/Fonte00.gif
+	frame  data/Bgs/St403/Fonte/Fonte01.gif
+	frame  data/Bgs/St403/Fonte/Fonte00.gif
+	frame  data/Bgs/St403/Fonte/Fonte00.gif
+	frame  data/Bgs/St403/Fonte/Fonte01.gif
+	frame  data/Bgs/St403/Fonte/Fonte00.gif
+	frame  data/Bgs/St403/Fonte/Fonte01.gif
+	frame  data/Bgs/St403/Fonte/Fonte00.gif
+	frame  data/Bgs/St403/Fonte/Fonte01.gif
+	frame  data/Bgs/St403/Fonte/Fonte02.gif
+	frame  data/Bgs/St403/Fonte/Fonte03.gif
+	frame  data/Bgs/St403/Fonte/Fonte04.gif
+	frame  data/Bgs/St403/Fonte/Fonte05.gif
+	frame  data/Bgs/St403/Fonte/Fonte04.gif
+	frame  data/Bgs/St403/Fonte/Fonte05.gif
+	frame  data/Bgs/St403/Fonte/Fonte04.gif
+	frame  data/Bgs/St403/Fonte/Fonte05.gif
+	frame  data/Bgs/St403/Fonte/Fonte04.gif
+	frame  data/Bgs/St403/Fonte/Fonte05.gif
+	frame  data/Bgs/St403/Fonte/Fonte04.gif
+	frame  data/Bgs/St403/Fonte/Fonte05.gif
+	frame  data/Bgs/St403/Fonte/Fonte06.gif
+	frame  data/Bgs/St403/Fonte/Fonte07.gif
+	frame  data/Bgs/St403/Fonte/Fonte08.gif
+	frame  data/Bgs/St403/Fonte/Fonte09.gif
+

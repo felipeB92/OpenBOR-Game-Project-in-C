@@ -1,7 +1,7 @@
 music		data/bgs/St402/Up-and-Up.ogg
 bossmusic	data/music/boss2.ogg
 scrollspeed 0.5#1
-stagenumber 1
+stagenumber 2
 background	data/bgs/st402/BAck00.gif
 panel		data/bgs/St402/Pn01.gif
 #frontpanel      data/bgs/St402/Front03.gif
