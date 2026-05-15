@@ -1,0 +1,379 @@
+music		data/bgs/St02/DilapidatedTown.ogg
+bossmusic	data/music/boss2.ogg
+scrollspeed 1
+stagenumber 3
+background	data/bgs/st403/back03.gif	0 1 0 0 0 0 -1 1 0 0 0 0 0 0 0
+panel		data/bgs/st403/Pn02B.gif	none	none
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	150 20
+spawn2  	138 35
+spawn3  	135  50
+
+light		100 -100
+at			0
+
+
+spawn  Time01
+	coords  0  0
+        Flip 1
+	at  0
+
+spawn  Luz403
+	coords  182  259
+        Flip 1
+	at  0
+
+spawn  Luz403
+	coords  588  256
+        Flip 1
+	at  0
+
+spawn  Luz403
+	coords 1173  262
+        Flip 1
+	at  0
+
+spawn  Luz403
+	coords 1717  261
+        Flip 1
+	at  0
+
+
+spawn  Lixo02
+item   Chicken
+	coords 400 230
+	at  0
+
+spawn  Lixo02
+	coords 450 230
+	at  0
+
+wait 
+at      170
+
+Group   4  4
+at      170
+
+spawn  Signal
+Map 2
+health 40
+	coords 600 225 150
+	at  170
+
+spawn  Signal
+health 40
+	coords -100 250 150
+	at  170
+
+spawn  Signal
+Map 2
+health 40
+	coords -100 225 150
+	at  170
+
+spawn  Signal
+health 40
+	coords 600 250 150
+	at  170
+
+
+spawn  Fog
+Map 2
+health 40
+	coords 600 225 150
+	at  170
+
+spawn  Galsia
+health 40
+	coords -100 250 150
+	at  170
+
+spawn  Pipe
+	coords -100 225 50
+	at  170
+
+spawn  Donovan
+Map 2
+health 40
+	coords -100 225 150
+	at  170
+
+spawn  Garnet
+health 40
+	coords 600 250 150
+	at  170
+
+Group   99  99
+at      171
+
+spawn  Donovan_
+Map 2
+health 40
+	coords 600 225 150
+	at  200
+
+spawn  galsia
+health 40
+	coords 600 250 150
+	at  250
+
+spawn  Signal_
+Map 2
+health 40
+	coords 600 225 150
+	at  300
+
+spawn  Bigben
+health 75
+	coords 600 250 150
+	at  400
+
+
+wait 
+at      610
+
+Group   4  4
+at      610
+
+
+spawn  Garnet
+Map 2
+health 40
+	coords 600 225 150
+	at  610
+
+spawn  Garnet
+health 40
+	coords -100 250 150
+	at  610
+
+spawn  Garnet
+Map 2
+health 40
+	coords -100 225 150
+	at  610
+
+spawn  Garnet
+health 40
+	coords 600 250 150
+	at  610
+
+
+spawn  Electra
+Map 2
+health 40
+	coords 600 225 150
+	at  610
+
+spawn  Electra
+health 40
+	coords -100 250 150
+	at  610
+
+spawn  Electra
+Map 2
+health 40
+	coords -100 225 150
+	at  610
+
+spawn  Electra
+health 40
+	coords 600 250 150
+	at  610
+
+
+spawn  Nora
+Map 2
+health 40
+	coords 600 225 150
+	at  610
+
+spawn  Nora
+health 40
+	coords -100 250 150
+	at  610
+
+spawn  Nora
+Map 2
+health 40
+	coords -100 225 150
+	at  610
+
+spawn  Nora
+health 40
+	coords 600 250 150
+	at  610
+
+
+spawn  Mace
+Map 2
+health 60
+	coords -100 225 150
+	at  610
+
+spawn  MAce
+health 60
+	coords 600 250 150
+	at  610
+
+Group   99  99
+at      611
+
+spawn  Moto
+alias Fog
+health 50
+	coords  500 230
+	at  640
+
+
+spawn  Signal
+Map 1
+health 40
+	coords -100 225 150
+	at  640
+
+spawn  Moto02
+Flip   1
+	coords  -100 240
+	at  700
+
+
+spawn  Galsia
+Map 1
+health 40
+	coords -150 250 150
+	at  800
+
+spawn  Moto02
+	coords  500 225
+	at  900
+
+
+spawn  Donovan
+Map 2
+health 40
+	coords 550 225 150
+	at  900
+
+spawn  Lixo02
+item   Chicken
+	coords 650 230
+	at  1000
+
+spawn  Lixo02
+	coords 600 230
+	at  1000
+
+
+wait 
+at      1260
+
+Group   4  4
+at      1260
+
+spawn  Vice
+Map 2
+health 40
+	coords 600 225 150
+	at  1260
+
+spawn  Vice
+health 40
+	coords -100 250 150
+	at  1260
+
+
+spawn  Slum
+Map 2
+health 40
+	coords 600 250 150
+	at  1260
+
+spawn  Slum
+health 40
+	coords -100 225 150
+	at  1260
+
+spawn  Abadede_
+Flip 1 
+Boss 1
+	coords 213 209
+	at  1260
+
+
+spawn  Vice
+health 40
+	coords 600 225 150
+	at  1260
+
+spawn  Vice
+health 40
+	coords -100 250 150
+	at  1260
+
+
+spawn  Slum
+Map 2
+health 40
+	coords 600 250 150
+	at  1260
+
+spawn  Slum
+health 40
+	coords -100 225 150
+	at  1260
+
+spawn  Vice
+health 40
+	coords 600 225 150
+	at  1260
+
+spawn  Vice
+health 40
+	coords -100 250 150
+	at  1260
+
+
+spawn  Slum
+health 40
+	coords 600 250 150
+	at  1260
+
+spawn  Slum
+health 40
+	coords -100 225 150
+	at  1260
+
+spawn  Vice
+health 40
+	coords 600 225 150
+	at  1260
+
+spawn  Vice
+health 40
+	coords -100 250 150
+	at  1260
+
+
+spawn  Slum
+health 40
+	coords 600 250 150
+	at  1260
+
+spawn  Slum
+health 40
+	coords -100 225 150
+	at  1260
+
+

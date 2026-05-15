@@ -1,0 +1,383 @@
+music		data/bgs/St403/Waterfront.ogg
+bossmusic	data/music/boss2.ogg
+scrollspeed 1
+stagenumber 3
+background	data/bgs/st403/back00.gif	0.3 1 0 0 0 0 -1 1 0 0 0 0 0 0 0
+bglayer		data/bgs/st403/back01.gif	0.2 1 0 0 0 0 -1 1 1 0 0 0 0 0 6
+bglayer		data/bgs/st403/back02.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 3
+panel		data/bgs/st403/Pn03.gif		none	none
+fglayer		data/bgs/st403/Front03.gif	0 -0.4 0 0 0 0 1 -1 1 1 0
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	150 20
+spawn2  	138 35
+spawn3  	135  50
+
+light		100 -100
+at			0
+
+
+spawn  Time01
+	coords  0  0
+        Flip 1
+	at  0
+
+
+
+spawn  Bloqueio
+Flip 1
+Item Apple
+	coords 600 245
+	at  0
+
+spawn  Bloqueio
+Flip 1
+	coords 600 270
+	at  0
+
+
+spawn  Donovan_
+health 50
+	coords 550 230
+	at  0
+
+spawn  Donovan_
+health 50
+	coords 500 250
+	at  0
+
+
+
+group		4 4
+at			600
+
+wait
+at			600
+
+spawn  Donovan
+Map 2
+health 40
+	coords 550 220 150
+	at  600
+
+spawn  Donovan
+Map 2
+health 40
+	coords 600 270 150
+	at  600
+
+
+spawn  Galsia
+Map 2
+health 40
+	coords -100 220 150
+	at  600
+
+spawn  Galsia
+Map 2
+health 40
+	coords -150 270 150
+	at  600
+
+spawn  Mace
+Map 2
+health 150
+	coords 600 230 150
+	at  600
+
+spawn  Electra
+Map 2
+health 40
+	coords 550 220 150
+	at  600
+
+spawn  Electra
+Map 2
+health 40
+	coords 600 270 150
+	at  600
+
+
+
+spawn  Nora
+Map 2
+health 40
+	coords -100 220 150
+	at  600
+
+spawn  Nora
+Map 2
+health 40
+	coords -150 270 150
+	at  600
+
+spawn  Cone
+item   cash
+	coords 500 222
+	at  601
+
+spawn  Cone
+	coords 530 240
+	at  601
+
+spawn  Cone
+item   apple
+	coords 573 260
+	at  601
+
+group		99 99
+at			601
+
+
+spawn  Fog
+Map 2
+health 40
+	coords 550 220 150
+	at  700
+
+spawn  Fog
+Map 2
+health 40
+	coords 550 270 150
+	at  750
+
+
+spawn  Vice
+Map 2
+health 40
+	coords 550 220 150
+	at  775
+
+spawn  Vice
+Map 2
+health 40
+	coords 550 270 150
+	at  800
+
+spawn Moto
+health 60
+alias  Fog
+	coords  -100  220
+	at  800
+
+spawn  Moto02
+map    1
+health 60
+alias  Fog
+	coords  500  250
+	at  800
+
+
+
+spawn  Moto02
+map    1
+health 60
+alias  Fog
+	coords  550  220
+	at  1000
+
+spawn  Moto02
+health 60
+alias  Fog
+	coords  600  240
+	at  1050
+
+spawn  Moto02
+map    2
+flip 1
+health 60
+alias  Fog
+	coords  -100  260
+	at  1150
+
+group		4 4
+at			1200
+
+wait
+at			1200
+
+
+spawn  Fog
+Map 2
+health 40
+	coords 550 270 150
+	at  1200
+
+spawn  Hakuyo
+Map 2
+health 50
+	coords 400 250 150
+	at  1200
+
+
+spawn  haku_oh
+Flip 1
+Map 1
+health 50
+	coords 150 250 150
+	at  1200
+
+spawn  Haku_oh
+Map 2
+health 50
+	coords 400 250 150
+	at  1200
+
+
+spawn  Garnet
+Map 2
+health 40
+	coords -100 270 150
+	at  1200
+
+spawn  Slum
+Map 2
+health 40
+	coords 550 220 150
+	at  1200
+
+
+spawn  Vice
+Map 2
+health 40
+	coords -100 270 150
+	at  1200
+
+spawn  Signal
+Map 2
+health 40
+	coords 550 220 150
+	at  1200
+
+
+spawn  Tiger
+Flip 1
+Map 2
+health 50
+	coords 150 250 150
+	at  1200
+
+
+group		99 99
+at			1201
+
+spawn  Bloqueio
+Flip 1
+Item Apple
+	coords 600 245
+	at  1201
+
+spawn  Bloqueio
+Flip 1
+	coords 600 270
+	at  1201
+
+spawn  Pino
+Item Gold
+Flip 1
+	coords 600 250
+	at  1250
+
+spawn  Slum
+Map 2
+health 40
+	coords 550 220 150
+	at  1400
+
+
+spawn  Vice
+Map 2
+health 40
+	coords -100 270 150
+	at  1450
+
+
+spawn  Slum
+health 40
+	coords 550 220 150
+	at  1500
+
+
+spawn  Vice
+health 40
+	coords -100 270 150
+	at  1650
+
+spawn  Nora
+MAp 4
+health 60
+	coords 550 220 150
+	at  1800
+
+
+spawn  Nora
+health 70
+	coords 600 270 150
+	at  1800
+
+spawn  JAck
+Map 2
+health 150
+	coords 550 270 150
+	at  1900
+
+group		4 4
+at			1900
+
+
+
+spawn  Garnet
+Map 2
+health 40
+	coords 550 220 150
+	at  1900
+
+
+spawn  Garnet
+Map 2
+health 40
+	coords -100 270 150
+	at  1900
+
+
+spawn  Garnet
+health 40
+	coords 550 220 150
+	at  1900
+
+
+spawn  Signal
+Map 2
+health 40
+	coords 550 220 150
+	at  1900
+
+
+spawn  Signal
+Map 2
+health 40
+	coords -100 270 150
+	at  1900
+
+
+spawn  Signal
+health 40
+	coords 550 220 150
+	at  1900
+
+
+
+
+
+
+

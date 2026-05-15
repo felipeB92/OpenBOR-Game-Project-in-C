@@ -188,6 +188,7 @@ know    Tocha		data/chars/Enemys/clown/Tocha.txt
 know    Fred		data/chars/Enemys/Fred/Fred.txt
 know    Freds		data/chars/Enemys/Fred/Freds.txt
 know    abadede		data/chars/Enemys/abadede/abadede.txt
+know    abadede_	data/chars/Enemys/abadede/abadede_.txt
 know    abadedeS	data/chars/Enemys/abadede/abadedeS.txt
 know    Bob		data/chars/Enemys/Bob/Bob.txt
 know    Bobf00		data/chars/Enemys/Bob/Bobf00.txt
@@ -509,6 +510,8 @@ know	FontE403C     	data/Bgs/St403/Fonte403C.txt
 know	BontE403A     	data/Bgs/St403/Bonte403A.txt
 know	BontE403B     	data/Bgs/St403/Bonte403B.txt
 know	BontE403C     	data/Bgs/St403/Bonte403C.txt
+know	Luz403    	data/Bgs/St403/Luz403.txt
+know	Porta403    	data/Bgs/St403/Porta403.txt
 
 
 

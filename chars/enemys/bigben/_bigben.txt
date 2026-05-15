@@ -1,6 +1,7 @@
 name	_BigBen
 health	80
-lifespan 40
+lifespan 70
+MP 40
 speed	5
 #riseinv				0.4 1
 hostile				player npc
@@ -119,6 +120,8 @@ anim attack1
 anim	Freespecial #fireRun down 
 	loop	0
 	delay	10
+        energycost 20 1
+        MpOnly 1
 	offset	145 177
         range   150 250
         rangez  0 550
@@ -204,6 +207,8 @@ anim	Freespecial2 #fireFire up
 	loop	0
 	delay	10
 	offset	145 177
+        energycost 20 1
+        MpOnly 1
         range   150 250
         rangez  -550 -1
 	bbox	128 97 33 80
@@ -287,6 +292,8 @@ anim	Freespecial2 #fireFire up
 anim	Freespecial3 #roll
 	loop	0
 	delay	15
+        energycost 30 1
+        MpOnly 1
         range   40 100
 	offset	145 177
 		Attack1  0

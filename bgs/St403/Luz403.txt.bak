@@ -1,0 +1,19 @@
+name			Luz403
+type			none
+shadow			0
+antigravity 100
+#Alpha 1
+
+anim idle
+	loop	1
+	delay	200
+	offset	20 62
+	frame  data/Bgs/St403/LUZ.gif
+	delay	3
+	frame  data/Bgs/St403/00.gif
+	frame  data/Bgs/St403/LUZ.gif
+	frame  data/Bgs/St403/00.gif
+	frame  data/Bgs/St403/LUZ.gif
+	frame  data/Bgs/St403/00.gif
+	frame  data/Bgs/St403/LUZ.gif
+

@@ -1,5 +1,6 @@
 name	BigBen
-lifespan 40
+lifespan 70
+MAp04
 health	80
 speed	5
 #riseinv				0.4 1
@@ -108,6 +109,8 @@ anim attack1
 anim	Freespecial #fireRun down 
 	loop	0
 	delay	10
+        energycost 20 1
+        MpOnly 1
 	offset	145 177
         range   150 250
         rangez  0 550
@@ -192,6 +195,8 @@ anim	Freespecial #fireRun down
 anim	Freespecial2 #fireFire up 
 	loop	0
 	delay	10
+        energycost 20 1
+        MpOnly 1
 	offset	145 177
         range   150 250
         rangez  -550 -1
@@ -277,6 +282,8 @@ anim	Freespecial3 #roll
 	loop	0
 	delay	15
         range   40 100
+        energycost 30 1
+        MpOnly 1
 	offset	145 177
 		Attack1  0
 		#drawmethod  350  350  0  0  0  -1  -1
