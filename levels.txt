@@ -593,17 +593,23 @@ script continue data/scripts/continue.c
 #Next
 
 #3A - Passarela das Fontes
-z	225 275
+#z	225 275
 
-file	data/levels/St403A.txt
+#file	data/levels/St403A.txt
 
 #3B - Ponte
-z	220 275
+#z	220 275
 
-file	data/levels/St403B.txt
+#file	data/levels/St403B.txt
 
 
 #3C - Rua comercial
+#z	230 275
+
+#file	data/levels/St403C.txt
+
+#4A - saguão Aeroporto
+
 z	230 275
 
-file	data/levels/St403C.txt
+file	data/levels/St404A.txt

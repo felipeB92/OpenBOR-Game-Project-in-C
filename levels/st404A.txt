@@ -1,0 +1,47 @@
+music		data/bgs/St403/Waterfront.ogg
+bossmusic	data/music/boss2.ogg
+scrollspeed 1
+stagenumber 3
+background	data/bgs/st404/back00.gif	0.3 1 0 0 0 0 -1 1 0 0 0 0 0 0 0
+bglayer		data/bgs/st404/back01.gif	0.2 1 0 0 0 0 -1 1 1 0 0 0 0 0 6
+panel		data/bgs/st404/Pn01.gif		none	none
+#fglayer		data/bgs/st403/Front03.gif	0 -0.4 0 0 0 0 1 -1 1 1 0
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	150 20
+spawn2  	138 35
+spawn3  	135  50
+
+light		100 -100
+at			0
+
+
+spawn  Time01
+	coords  0  0
+        Flip 1
+	at  0
+
+
+
+
+spawn  Signal
+health 40
+	coords 550 220 150
+	at  1900
+
+
+
+
+
+
+
