@@ -117,12 +117,22 @@ anim Freespecial
 	frame	data/chars/Enemys/Signal/a202.gif
 
 
+anim Freespecial2
+	loop	0
+	delay	5
+        Range   0 30
+	offset	152 184
+                Followcond 1
+                followanim 1
+	bbox	136 104 24 80
+		Attack1  0
+        hitfx	data/sounds/golpes/grab.wav
+	frame	data/chars/Enemys/Signal/grab01.gif
+	frame	data/chars/Enemys/Signal/grab00.gif
 
 
 
-
-
-anim freespecial2
+anim follow
 	loop	0
 	delay	10
 	range 0 30

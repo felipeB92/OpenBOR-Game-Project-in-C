@@ -1,0 +1,292 @@
+music		data/bgs/St207/BacktotheIndustry.ogg
+bossmusic	data/music/boss2.ogg
+scrollspeed 1
+stagenumber 4
+background	data/bgs/st404/back02.gif	0.3 1 0 0 0 0 -1 1 0 0 0 0 0 0 0
+bglayer		data/bgs/st404/back02b.gif	0.2 1 0 0 0 0 -1 1 1 0 0 0 0 0 6
+panel		data/bgs/st404/Pn02.gif		none	none
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	150 20
+spawn2  	138 35
+spawn3  	135  50
+
+light		100 -100
+at			0
+
+
+spawn  Time01
+	coords  0  0
+        Flip 1
+	at  0
+
+spawn  Av404
+	coords  0  0
+        Flip 1
+	at  0
+
+
+spawn  Box
+Item   Gold
+	coords  300  230
+        Flip 1
+	at  0
+
+spawn  Box
+Item   Chicken
+	coords  400  230
+        Flip 1
+	at  0
+
+wait 
+at 0
+
+group       4 4
+at          0
+
+spawn   Galsia
+health  40
+    coords  550 230 150
+    at   0
+
+spawn   Slum
+health  40
+    coords  560 250 150
+    at   0
+
+spawn   Donovan
+health  40
+    coords  -60 225 150
+    at   0
+
+spawn   Vice
+map 1
+health  40
+    coords  -80 245 150
+    at   0
+
+spawn   Vice
+Map 1
+health  40
+    coords  550 230 150
+    at   0
+
+spawn   Vice
+health  40
+    coords  560 250 150
+    at   0
+
+spawn   Slum
+health  40
+    coords  -60 225 150
+    at   0
+
+spawn   Vice
+health  40
+    coords  -80 245 150
+    at   0
+
+
+spawn   Donovan_
+health  40
+    coords  600 225
+    at   1
+
+spawn   Galsia_
+health  40
+    coords  550 245
+    at   1
+
+
+wait
+at 350
+
+group       4 4
+at          350
+
+spawn   Signal
+health  50
+    coords  550 220 150
+    at   350
+
+spawn   Jonny
+health  50
+    coords  -70 260 150
+    at   350
+
+spawn   Moto
+health  40
+    coords  570 240
+    at   350
+
+spawn   Galsia
+health  40
+    coords  570 240 150
+    at   350
+
+spawn   Slum
+health  40
+    coords  -50 235 150
+    at   350
+
+spawn   Jonny
+Map 1
+health  50
+    coords  -70 260 150
+    at   350
+
+
+spawn   Jonny
+Map 2
+health  50
+    coords  600 260 150
+    at   350
+
+spawn   Bloqueio02
+flip 1
+Item Apple
+    coords  720 260
+    at   351
+
+spawn   Bloqueio02
+flip 1
+2PItem Apple
+    coords  700 230
+    at   351
+
+wait
+at 700
+
+group       4 4
+at          700
+
+spawn   Bigben
+health  80
+    coords  560 250 150
+    at   700
+
+spawn   Ralf
+health  50
+    coords  -60 230 150
+    at   700
+
+spawn   Fog
+health  50
+    coords  550 220 150
+    at   700
+
+spawn   Donovan
+health  40
+    coords  -80 260 150
+    at   700
+
+spawn   Ralf
+map 2
+health  50
+    coords  -60 230 150
+    at   700
+
+spawn   Fog
+map 1
+health  50
+    coords  550 220 150
+    at   700
+
+spawn   Donovan
+health  40
+    coords  -80 260 150
+    at   700
+
+spawn   Nora
+health  60
+    coords  -80 260 150
+    at   700
+
+wait
+at 1000
+
+group       4 4
+at          1000
+
+
+spawn   Jack
+health  150
+    coords  550 240 150
+    at   1000
+
+spawn   Signal
+health  50
+    coords  -70 225 150
+    at   1000
+
+spawn   Vice
+health  40
+    coords  570 255 150
+    at   1000
+
+spawn   Galsia
+health  40
+    coords  -50 235 150
+    at   1000
+
+spawn   Signal
+health  50
+    coords  600 225 150
+    at   1000
+
+spawn   Signal
+Map 1
+health  50
+    coords  -100 225 150
+    at   1000
+
+spawn   Garnet
+health  40
+    coords  -50 235 150
+    at   1000
+
+spawn   Garnet
+health  50
+    coords  600 225 150
+    at   1000
+
+spawn   Signal
+health  50
+    coords  600 225 150
+    at   1000
+
+spawn   Signal
+Map 1
+health  50
+    coords  -100 225 150
+    at   1000
+
+spawn   Garnet
+health  40
+    coords  -50 235 150
+    at   1000
+
+spawn   Garnet
+health  50
+    coords  600 225 150
+    at   1000
+
+
+
+
+
+
+
+
+
+

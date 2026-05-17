@@ -90,6 +90,7 @@ health 40
 
 
 spawn Lixo01
+2PItem Chicken
 	coords 550 240
 	at  400
 
@@ -235,6 +236,7 @@ health 50
 	at  1000
 
 spawn Lixo01
+2PItem Chicken
 	coords 800 235
 	at  1001
 

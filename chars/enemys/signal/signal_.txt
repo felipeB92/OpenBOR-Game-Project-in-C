@@ -144,7 +144,23 @@ anim Freespecial
 
 
 
-anim freespecial2
+anim Freespecial2
+	loop	0
+	delay	5
+        Range   0 30
+	offset	152 184
+                Followcond 1
+                followanim 1
+	bbox	136 104 24 80
+		Attack1  139  117  64  15  0  0  0  0  0  20
+        hitfx	data/sounds/golpes/grab.wav
+	frame	data/chars/Enemys/Signal/grab01.gif
+		Attack1  0
+	frame	data/chars/Enemys/Signal/grab00.gif
+
+
+
+anim follow1
 	loop	0
 	delay	10
 	range 0 30
@@ -164,7 +180,6 @@ anim freespecial2
 @cmd  throw  25  5  2  2  0  -1
 @cmd  clearL
 	frame	data/chars/Enemys/Signal/throw01.gif
-
 
 
 

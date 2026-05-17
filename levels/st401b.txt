@@ -151,6 +151,7 @@ item  Apple
 	at  0
 
 spawn  Lixo01
+2Pitem  Apple
 	coords  620  205
 	at  0
 
@@ -400,6 +401,7 @@ Item Apple
 	at  2101
 
 spawn  Lanterna
+2pitem  Apple
 	coords  660 256 
 	at  2101
 

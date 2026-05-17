@@ -1,0 +1,156 @@
+music		data/bgs/St205/Slow-Moon.ogg
+bossmusic	data/music/boss2.ogg
+scrollspeed 0.5#1
+stagenumber 4
+background	data/bgs/st404/BAck03.gif
+panel		data/bgs/St404/Pn03.gif
+bglayer		data/bgs/St404/Back03.gif 0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.2
+fglayer		data/bgs/st404/Front03.gif	0 0 0 0 0 0 1 -1 1 1 0
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+bgspeed 15 0
+#Rock 2
+order		a
+spawn1  	150 20
+spawn2  	138 35
+spawn3  	135  50
+
+light		100 -100
+at			0
+
+
+spawn  Time01
+	coords  0  0
+        Flip 1
+	at  0
+
+Wall  1121  197  -20  0  45  71  66  193
+
+spawn   KArt01
+Item apple
+    coords  430 190
+    at   0
+
+wait
+at 0
+
+group       4 4
+at          0
+
+spawn   MacLean
+health  50
+    coords  550 230 150
+    at   0
+
+spawn   Macleod
+health  50
+    coords  550 250 150
+    at   0
+
+
+spawn   McBride
+health  50
+    coords  550 250 150
+    at   0
+
+spawn   Nora
+health  50
+    coords  550 230 150
+    at   0
+
+spawn   Nora
+MAp 4
+health  50
+    coords  550 250 150
+    at   0
+
+
+spawn   KArt02
+Item Knife
+    coords  600 220
+    at   0
+
+
+spawn   Nora
+MAp 2
+health  50
+    coords  550 240 150
+    at   0
+
+
+spawn   Bigben
+MAp 2
+health  50
+    coords  550 240 150
+    at   200
+
+
+spawn   KArt01
+Item Chicken
+    coords  695 180
+    at   300
+
+spawn   KArt01
+2pItem Chicken
+    coords  550 220
+    at   300
+
+
+wait
+at 650
+
+group       4 4
+at          650
+
+spawn   Shiva
+map 3
+Boss 1
+    coords  550 230 150
+    at   650
+
+spawn   galsia
+health  50
+    coords  -100 230 150
+    at   650
+
+spawn   Jonny
+MAp 4
+health  50
+    coords  550 250 150
+    at   650
+
+
+spawn   Ralf
+MAp 2
+health  50
+    coords  -100 240 150
+    at   650
+
+
+spawn   Donovan
+health  50
+    coords  -100 230 150
+    at   650
+
+spawn   Vice
+MAp 4
+health  50
+    coords  550 250 150
+    at   650
+
+
+spawn   Slum
+MAp 2
+health  50
+    coords  -100 240 150
+    at   650
+

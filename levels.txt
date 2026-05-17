@@ -613,3 +613,17 @@ script continue data/scripts/continue.c
 z	230 275
 
 file	data/levels/St404A.txt
+
+
+#4B - Pista de Pouso
+
+z	220 275
+
+file	data/levels/St404B.txt
+
+#4C - interior Avião
+
+z	170 275
+
+file	data/levels/St404C.txt
+

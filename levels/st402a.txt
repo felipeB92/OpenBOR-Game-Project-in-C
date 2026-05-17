@@ -167,6 +167,7 @@ Item Apple
 	at  501
 
 spawn  lata
+2PItem Apple
 	coords 530 200
 	at  501
 

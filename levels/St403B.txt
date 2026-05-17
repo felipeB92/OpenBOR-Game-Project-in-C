@@ -42,6 +42,7 @@ Item Apple
 
 spawn  Bloqueio
 Flip 1
+2PItem Apple
 	coords 600 270
 	at  0
 
@@ -127,6 +128,7 @@ item   cash
 	at  601
 
 spawn  Cone
+2PItem Apple
 	coords 530 240
 	at  601
 

@@ -1,11 +1,10 @@
-music		data/bgs/St403/Waterfront.ogg
+music		data/bgs/St404/Profile.ogg
 bossmusic	data/music/boss2.ogg
 scrollspeed 1
-stagenumber 3
+stagenumber 4
 background	data/bgs/st404/back00.gif	0.3 1 0 0 0 0 -1 1 0 0 0 0 0 0 0
 bglayer		data/bgs/st404/back01.gif	0.2 1 0 0 0 0 -1 1 1 0 0 0 0 0 6
 panel		data/bgs/st404/Pn01.gif		none	none
-#fglayer		data/bgs/st403/Front03.gif	0 -0.4 0 0 0 0 1 -1 1 1 0
 cameratype 1
 cameraoffset 0 -30
 #levelscript @script
@@ -31,13 +30,235 @@ spawn  Time01
         Flip 1
 	at  0
 
+spawn  Signal_
+MAp 1
+health 40
+	coords 400 235
+	at  0
 
+
+spawn  Signal_
+health 40
+	coords 450 250
+	at  0
+
+spawn  Galsia_B
+health 40
+	coords 230 220
+	at  0
+
+
+wait 
+at 200
+
+group		4 4
+at			200
+
+spawn  Vice
+health 40
+	coords 600 230 150
+	at  200
+
+spawn  Vice
+health 40
+	coords -100 260 150
+	at  200
+
+spawn  Slum
+health 40
+	coords -100 230 150
+	at  200
+
+spawn  Slum
+health 40
+	coords 600 260 150
+	at  200
+
+
+spawn  Donovan
+health 40
+	coords 600 230 150
+	at  200
+
+spawn  Galsia
+health 40
+	coords -100 260 150
+	at  200
+
+spawn  Signal
+health 40
+	coords -100 230 150
+	at  200
+
+spawn  GArnet
+health 40
+	coords 600 260 150
+	at  200
+
+
+spawn  Donovan_
+health 40
+	coords 600 260 150
+	at  300
+
+spawn  Bigben
+Map 1
+health 60
+	coords 450 260 150
+	at  400
+
+
+spawn  Slum
+map 3
+health 40
+	coords 600 260 150
+	at  500
+
+
+wait 
+at 750
+
+group		4 4
+at			750
+
+
+spawn  Vice
+map 3
+health 40
+	coords 600 260 150
+	at  750
+
+
+spawn  Slum
+map 3
+health 40
+	coords 600 260 150
+	at  750
+
+spawn  Vice
+map 3
+health 40
+	coords 600 260 150
+	at  750
+
+
+spawn  Macleod
+health 60
+	coords 240 213
+	at  750
+
+
+spawn  Garnet
+map 3
+health 40
+	coords 600 260 150
+	at  750
+
+
+spawn  Maclean
+health 60
+	coords 450 213
+	at  750
+
+spawn  Galsia
+map 3
+health 40
+	coords 600 260 150
+	at  750
+
+spawn  MCBride
+health 60
+	coords 450 213
+	at  750
+
+
+spawn  Galsia
+map 3
+health 40
+	coords -100 260 150
+	at  750
+
+spawn  Macleod
+health 60
+	coords 240 213
+	at  750
+
+
+
+spawn  Maclean
+health 60
+	coords 450 213
+	at  750
+
+
+spawn  MCBride
+health 60
+	coords 450 213
+	at  750
+
+spawn  Galsia_A
+Flip 1
+health 60
+	coords 540 220
+	at  751
+
+
+wait 
+at 1050
+
+group		4 4
+at			1050
+
+spawn  Nora
+health 70
+	coords 152 212
+	at  1050
+
+
+spawn  JAck
+health 150
+	coords 600 240
+	at  1050
+
+
+spawn  bigben
+health 70
+	coords -100 240
+	at  1050
+
+spawn  Galsia
+health 40
+	coords 600 240
+	at  1050
+
+spawn  Donovan
+health 40
+	coords 600 240
+	at  1050
+
+spawn  bigben
+health 70
+	coords 600 240
+	at  1050
+
+spawn  Signal
+health 40
+	coords 600 240
+	at  1050
 
 
 spawn  Signal
 health 40
-	coords 550 220 150
-	at  1900
+	coords -100 240
+	at  1050
+
+spawn  Mace
+health 70
+	coords 152 212
+	at  1050
+
+
+
 
 
 

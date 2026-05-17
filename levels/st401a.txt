@@ -164,6 +164,7 @@ item Apple
 	at  336
 
 spawn  Lata02
+2pitem Apple
 	coords  600  200
 	at  336
 
@@ -268,6 +269,7 @@ item Apple
 	at  1155
 
 spawn  Lata
+2pitem Apple
 	coords  594 225 
 	at  1155
 

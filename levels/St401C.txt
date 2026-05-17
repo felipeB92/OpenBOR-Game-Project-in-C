@@ -53,6 +53,7 @@ item Apple
 	at  0
 
 spawn  Vaso02
+2Pitem  Apple
 	coords 420  220
 	at  0
 
@@ -158,6 +159,7 @@ item Chicken
 	at  151
 
 spawn  Vaso02
+2Pitem Chicken
 	coords 675  255
 	at  151
 
