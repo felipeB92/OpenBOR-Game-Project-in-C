@@ -1,0 +1,44 @@
+name				Train
+type				enemy
+subtype				notgrab
+candamage			player enemy npc obstacle
+health				1000000
+nolife				1
+nomove				1 1
+facing				1
+gfxshadow			1 1
+score				0 -1
+didhitscript		data/scripts/didhit/default.c
+ondoattackscript	data/scripts/ondoattack/default.c
+ondrawscript		data/scripts/ondraw/train.c
+animationscript		data/scripts/animation/default.c
+script				data/scripts/updateentity/train.c
+
+anim idle
+	fastattack 1
+	jugglecost 0
+	forcedirection 0
+	otg 1
+	loop	1
+	delay	4
+	offset	100 167
+	shadowcoords 100 157
+	@cmd hitfx "data/sounds/sor3_hit4.wav"
+	@cmd sound "data/sounds/sor3_train.wav"
+	@cmd quake "regular" 2 4 10
+	attack 32 129 135 40 30 1 1 0 0 0
+	attack.size.z.background 22
+	attack.size.z.foreground 5
+	frame	data/chars/vehicles/train00.png
+	frame	data/chars/vehicles/train01.png
+	frame	data/chars/vehicles/train02.png
+	frame	data/chars/vehicles/train03.png
+	frame	data/chars/vehicles/train04.png
+	frame	data/chars/vehicles/train05.png
+	frame	data/chars/vehicles/train00.png
+	frame	data/chars/vehicles/train01.png
+	frame	data/chars/vehicles/train02.png
+	frame	data/chars/vehicles/train03.png
+	frame	data/chars/vehicles/train04.png
+	@cmd offScreenKillD 160
+	frame	data/chars/vehicles/train05.png

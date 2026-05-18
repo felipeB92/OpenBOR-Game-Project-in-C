@@ -1,0 +1,25 @@
+name			Helicopter #SOR1 COP HELICOPTER
+type			text
+subtype			noskip
+shadow			0
+animationscript	data/scripts/animation/default.c
+script			data/scripts/updateentity/cop.c
+
+anim idle
+	loop	0
+	delay	24
+	offset	190 258
+	frame	data/chars/vehicles/helicopter00.png
+		delay	4
+	@cmd sound "data/sounds/sor3_helicopter.wav"
+	@cmd setLayer 1000000001
+	@cmd dasher 2.8 0.2 0
+	frame	data/chars/vehicles/helicopter01.png
+	frame	data/chars/vehicles/helicopter00.png
+	frame	data/chars/vehicles/helicopter01.png
+	@cmd looper 2 44
+	frame	data/chars/vehicles/helicopter00.png
+	@cmd copShoot "Explosion_C"
+	@cmd sound "data/sounds/sor1_cop4.wav"
+	@cmd suicide
+	frame	data/chars/vehicles/helicopter00.png

@@ -1,0 +1,104 @@
+name				Bike #GENERIC BIKE VEHICLE
+type				none
+subtype				notgrab
+candamage			player enemy npc obstacle
+nolife				1
+gfxshadow			1 1
+didhitscript		data/scripts/didhit/default.c
+ondoattackscript	data/scripts/ondoattack/default.c
+onspawnscript		data/scripts/onspawn/new_type.c
+ondrawscript		data/scripts/ondraw/moto.c
+animationscript		data/scripts/animation/default.c
+script				data/scripts/updateentity/moto.c
+
+anim idle #SOR3 BIKE MODEL
+	loop	0
+	delay	-1000
+	offset	148 179
+	frame	data/chars/vehicles/bike300.png
+	frame	data/chars/vehicles/bike301.png
+	frame	data/chars/vehicles/bike302.png
+	frame	data/chars/vehicles/bike303.png
+
+anim follow1 #SOR2 BIKE MODEL
+	loop	0
+	delay	-1000
+	offset	148 179
+	frame	data/chars/vehicles/bike200.png
+	frame	data/chars/vehicles/bike201.png
+
+anim death #SOR3 BIKE FALL
+	loop	0
+	delay	8
+	offset	148 179
+	frame	data/chars/vehicles/bike304.png
+	frame	data/chars/vehicles/bike305.png
+	frame	data/chars/vehicles/bike306.png
+	frame	data/chars/vehicles/bike304.png
+	frame	data/chars/vehicles/bike305.png
+	frame	data/chars/vehicles/bike306.png
+	frame	data/chars/vehicles/bike304.png
+	frame	data/chars/vehicles/bike305.png
+	frame	data/chars/vehicles/bike306.png
+	frame	data/chars/vehicles/bike304.png
+	frame	data/chars/vehicles/bike305.png
+	frame	data/chars/vehicles/bike306.png
+		delay	-1000
+	frame	data/chars/vehicles/bike307.png
+
+anim attack2 #SOR2 BIKE MODEL, "EXPLODING" VERSION
+	fastattack 1
+	jugglecost 0
+	forcedirection -1
+	otg 1
+	loop	0
+	delay	2
+	offset	148 179
+	@cmd hitfx "data/sounds/sor2_hit5.wav"
+	@cmd sound "data/sounds/bike.wav"
+	@cmd dasher 3 0 0
+	@cmd setShadow
+	@cmd changeShadow 7
+	attack 99 126 101 55 16 1 1 0 0 12
+	frame	data/chars/vehicles/bike200.png
+	frame	data/chars/vehicles/bike200.png
+	frame	data/chars/vehicles/bike201.png
+	frame	data/chars/vehicles/bike200.png
+	frame	data/chars/vehicles/bike201.png
+	frame	data/chars/vehicles/bike200.png
+	frame	data/chars/vehicles/bike201.png
+	frame	data/chars/vehicles/bike200.png
+	frame	data/chars/vehicles/bike201.png
+	frame	data/chars/vehicles/bike200.png
+	frame	data/chars/vehicles/bike201.png
+	frame	data/chars/vehicles/bike200.png
+	frame	data/chars/vehicles/bike201.png
+	frame	data/chars/vehicles/bike200.png
+	frame	data/chars/vehicles/bike201.png
+	frame	data/chars/vehicles/bike200.png
+	frame	data/chars/vehicles/bike201.png
+		delay	8
+	@cmd dasher 2.5 0 0
+	@cmd setShadow
+	@cmd changeShadow 0
+	attack 128 144 47 54 16 1 1 0 0 12
+	frame	data/chars/vehicles/bike204.png
+	@cmd dasher 2 0 0
+	frame	data/chars/vehicles/bike205.png
+	@cmd dasher 1.5 0 0
+	frame	data/chars/vehicles/bike206.png
+	@cmd dasher 1 0 0
+	frame	data/chars/vehicles/bike207.png
+	@cmd dasher 0.5
+	frame	data/chars/vehicles/bike207.png
+		delay	24
+	@cmd dasher 0 0 0
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/vehicles/bike207.png
+		delay	16
+	@cmd spawnBind "Explosion" 0 30 1
+	frame	data/chars/vehicles/bike207.png
+	@cmd spawnBind "Explosion" 0 0 1
+	frame	data/chars/vehicles/bike207.png
+	@cmd suicide
+	frame	data/chars/vehicles/bike207.png

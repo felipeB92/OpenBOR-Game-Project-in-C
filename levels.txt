@@ -608,22 +608,42 @@ script continue data/scripts/continue.c
 
 #file	data/levels/St403C.txt
 
-#4A - saguão Aeroporto
+___________________________________________________________
+#5A - Ruas com pontes
+
+#z	180 255
+
+#file	data/levels/St404A.txt
+
+
+#5A - cORRIDA DESERTO
+z	180 255
+
+file	data/levels/St404b.txt
+
+
+#5A - cORRIDA PONTES
+
+z	180 255
+
+file	data/levels/St404c.txt
+
+#5A - saguão Aeroporto
 
 z	230 275
 
-file	data/levels/St404A.txt
+file	data/levels/St405A.txt
 
 
-#4B - Pista de Pouso
+#5B - Pista de Pouso
 
 z	220 275
 
-file	data/levels/St404B.txt
+file	data/levels/St405B.txt
 
-#4C - interior Avião
+#5C - interior Avião
 
 z	170 275
 
-file	data/levels/St404C.txt
+file	data/levels/St405C.txt
 

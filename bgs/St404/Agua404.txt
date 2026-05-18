@@ -1,0 +1,16 @@
+name			Agua404
+type			none
+shadow			0
+setlayer		-8
+antigravity 100
+Alpha 1
+
+anim idle
+	loop	1
+	delay	999
+	offset	0 0
+	frame  data/Bgs/St404/agua.gif
+	frame  data/Bgs/St404/agua.gif
+	frame  data/Bgs/St404/agua.gif
+
+

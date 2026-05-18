@@ -53,7 +53,8 @@ know	Adam_Knife	data/chars/Players/Adam_/Adam_Knife.txt
 know	Adam_Kunai	data/chars/Players/Adam_/Adam_Kunai.txt
 know	Adam_pipe	data/chars/Players/Adam_/Adam_pipe.txt
 know	Adam_Sword	data/chars/Players/Adam_/Adam_Sword.txt
-know	AdamSP1		data/chars/Players/Adam_/AdamSP1.txt
+know	Adam_Bike	data/chars/Players/Adam_/Adam_BIke.txt
+know	AdamSp1		data/chars/Players/Adam_/AdamSP1.txt
 know	AdamSP2		data/chars/Players/Adam_/AdamSP2.txt
 know	Adam_E		data/chars/Players/Adam_/Adam_E.txt
 know	AdamESP1	data/chars/Players/Adam_/AdamESP1.txt
@@ -165,12 +166,15 @@ know    signal		data/chars/Enemys/signal/signal.txt
 know    signal_		data/chars/Enemys/signal/signal_.txt
 know    Fog		data/chars/Enemys/Fog/Fog.txt
 know    Fog_		data/chars/Enemys/Fog/Fog_.txt
+know    Fog_Bike	data/chars/Enemys/Fog/Fog_Bike.txt
 know    Fog_B		data/chars/Enemys/Fog/Fog_B.txt
 know    G_Fog		data/chars/Enemys/Fog/G_Fog.txt
 know    G_Fog2		data/chars/Enemys/Fog/G_Fog2.txt
 know    Moto		data/chars/Enemys/Fog/Moto.txt
 know    Moto02		data/chars/Enemys/Fog/Moto02.txt
 know    Motofall	data/chars/Enemys/Fog/Motofall.txt
+know    Motofall2	data/chars/Enemys/Fog/Motofall2.txt
+know    Motofall3	data/chars/Enemys/Fog/Motofall3.txt
 know    Fog_pipe	data/chars/Enemys/Fog/Fog_Pipe.txt
 know    haku_oh		data/chars/Enemys/haku_oh/haku_oh.txt
 know    _haku_oh	data/chars/Enemys/haku_oh/_haku_oh.txt
@@ -513,7 +517,9 @@ know	BontE403C     	data/Bgs/St403/Bonte403C.txt
 know	Luz403    	data/Bgs/St403/Luz403.txt
 know	Porta403    	data/Bgs/St403/Porta403.txt
 
-know	Av404    	data/Bgs/St404/Av404.txt
+know	Agua404    	data/Bgs/St404/Agua404.txt
+
+know	Av405    	data/Bgs/St405/Av405.txt
 
 
 

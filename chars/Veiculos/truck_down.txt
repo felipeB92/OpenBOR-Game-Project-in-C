@@ -1,0 +1,13 @@
+name			Truck_Down
+type			none
+subtype			notgrab
+subject_to_maxz	0
+nomove			1 1
+shadow			0
+
+anim idle
+	loop	1
+	delay	8
+	offset	150 229
+	frame	data/chars/vehicles/truck01.png
+	frame	data/chars/vehicles/truck02.png

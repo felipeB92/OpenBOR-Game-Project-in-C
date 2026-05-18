@@ -1,0 +1,79 @@
+name				Car #SOR1 COP CAR
+type				text
+subtype				noskip
+candamage			enemy obstacle
+gfxshadow			1 1
+didhitscript		data/scripts/didhit/default.c
+ondoattackscript	data/scripts/ondoattack/default.c
+ondrawscript		data/scripts/ondraw/cop.c
+animationscript		data/scripts/animation/default.c
+script				data/scripts/updateentity/cop.c
+
+anim idle
+	fastattack 0
+	jugglecost 60
+	forcedirection 0
+	otg 1
+	loop	0
+	delay	24
+	offset	150 207
+	@cmd hitfx "data/sounds/sor2_hit5.wav"
+	@cmd setShadow
+	attack 41 144 218 72 30 1 1 0 0 24
+	frame	data/chars/vehicles/car00.png
+		delay	4
+	@cmd sound "data/sounds/sor1_cop.wav"
+	@cmd dasher 8.4 0 0
+	frame	data/chars/vehicles/car00.png
+	frame	data/chars/vehicles/car01.png
+	frame	data/chars/vehicles/car02.png
+	frame	data/chars/vehicles/car03.png
+	frame	data/chars/vehicles/car00.png
+	frame	data/chars/vehicles/car01.png
+	frame	data/chars/vehicles/car02.png
+	frame	data/chars/vehicles/car03.png
+	frame	data/chars/vehicles/car00.png
+	frame	data/chars/vehicles/car01.png
+	frame	data/chars/vehicles/car02.png
+	frame	data/chars/vehicles/car03.png
+	frame	data/chars/vehicles/car00.png
+	@cmd dasher 6 0 0
+	frame	data/chars/vehicles/car01.png
+	@cmd dasher 5 0 0
+	frame	data/chars/vehicles/car02.png
+	@cmd dasher 4 0 0
+	frame	data/chars/vehicles/car03.png
+	@cmd dasher 3 0 0
+	@cmd sound "data/sounds/sor1_cop2.wav"
+	frame	data/chars/vehicles/car00.png
+	@cmd dasher 2 0 0
+	frame	data/chars/vehicles/car00.png
+	@cmd dasher 1 0 0
+	frame	data/chars/vehicles/car00.png
+	@cmd dasher 0.5 0 0
+	frame	data/chars/vehicles/car00.png
+		delay	8
+	@cmd dasher 0 0 0
+	attack 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/vehicles/car00.png
+	frame	data/chars/vehicles/car04.png
+	frame	data/chars/vehicles/car05.png
+		delay	24
+	frame	data/chars/vehicles/car06.png
+		delay	4
+	frame	data/chars/vehicles/car07.png
+	frame	data/chars/vehicles/car08.png
+	@cmd sound "data/sounds/sor1_cop3.wav"
+	frame	data/chars/vehicles/car09.png
+	frame	data/chars/vehicles/car10.png
+	frame	data/chars/vehicles/car11.png
+	frame	data/chars/vehicles/car12.png
+	frame	data/chars/vehicles/car13.png
+	frame	data/chars/vehicles/car14.png
+		delay	24
+	frame	data/chars/vehicles/car06.png
+		delay	-1000
+	@cmd copShoot "Explosion_C"
+	@cmd sound "data/sounds/sor1_cop4.wav"
+	@cmd setVar "remove" 240 "entity"
+	frame	data/chars/vehicles/car06.png

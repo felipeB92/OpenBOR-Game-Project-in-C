@@ -364,7 +364,7 @@ anim fall9
 		offset  76  115
 	frame	data/chars/Enemys/Ralf/fall403.gif
 	delay	999
-		offset  74  120
+		offset  74  102
 	frame	data/chars/Enemys/Ralf/fall405.gif
 
 anim death

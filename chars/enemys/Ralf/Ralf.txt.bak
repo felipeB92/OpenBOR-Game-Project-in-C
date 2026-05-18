@@ -40,6 +40,8 @@ anim idle
 	offset	79 120
 	bbox	74 48 22 71
 	frame   data/chars/Enemys/Ralf/idle00.gif
+@cmd  depost  0
+@cmd  clearL
 	frame   data/chars/Enemys/Ralf/idle01.gif
 	frame   data/chars/Enemys/Ralf/idle02.gif
 
@@ -50,6 +52,8 @@ anim walk
 	offset	78 120
 	bbox	70 47 34 74
 	frame	data/chars/Enemys/Ralf/walk00.gif
+@cmd  depost  0
+@cmd  clearL
 	frame	data/chars/Enemys/Ralf/walk01.gif
 	frame	data/chars/Enemys/Ralf/walk02.gif
 
@@ -115,6 +119,8 @@ anim Upper
 		Attack1  0
         hitfx	data/sounds/golpes/Medio.wav
 	frame	data/chars/Enemys/Ralf/Upper00.gif
+		delay  20
+		attack1  75  31  19  70  12  1  0  0  0  20
 	frame	data/chars/Enemys/Ralf/Upper01.gif
 
 
@@ -126,7 +132,7 @@ anim Freespecial
                 Followcond 1
                 followanim 2
 	bbox	66 47 27 72
-		Attack1  0
+		Attack1  89  49  19  72  0  0  0  0  0  15
         hitfx	data/sounds/golpes/Grab.wav
 	@cmd dasher 2 0 0
 	frame	data/chars/Enemys/Ralf/Run00.gif
@@ -142,7 +148,7 @@ anim Freespecial2
         Range 80 100
 	offset	79 120
 	bbox	66 47 27 72
-		Attack1  0
+		Attack1  85  55  20  66  0  0  0  0  0  15
                 Followcond 1
                 followanim 1
         hitfx	data/sounds/golpes/Medio.wav
@@ -156,30 +162,46 @@ anim Freespecial2
 
 anim Follow1
 	loop	0
-	delay	6
-        Range 60 80
+	delay	8
 	offset	79 120
-	bbox	66 47 27 72
+	bbox	70 42 25 36
 		Attack1  0
         hitfx	data/sounds/golpes/forte.wav
 	@cmd dasher 0.5 0 0
 	frame	data/chars/Enemys/Ralf/ra100.gif
+		attack2  65  40  66  58  15  1  0  0  0  20
 	frame	data/chars/Enemys/Ralf/ra101.gif
 	@cmd dasher 0 0 0
+		attack2  42  43  89  66  15  1  0  0  0  20
 	frame	data/chars/Enemys/Ralf/ra102.gif
+		offset  71  127
 	frame	data/chars/Enemys/Ralf/ra103.gif
+		offset  88  103
+		Attack1  0
+		bbox  74  58  34  38
 	frame	data/chars/Enemys/Ralf/rise02.gif
 
 anim Follow2
 	loop	0
-	delay	6
-        Range 60 80
+	delay	10
 	offset	79 120
 	bbox	66 47 27 72
 		Attack1  0
 	@cmd dasher 0 0 0
+@cmd	slamstart
+@cmd	position 0 10 0 0 -1
 	frame	data/chars/Enemys/Ralf/t00.gif
+@cmd	position 2 5 5 0 -1
 	frame	data/chars/Enemys/Ralf/t01.gif
+@cmd	position 3 0 20 0 -1
+		delay  20
+	frame	data/chars/Enemys/Ralf/t02.gif
+@cmd	position 4 -30 25 0 -1
+	frame	data/chars/Enemys/Ralf/t02.gif
+@cmd	position 8 -50 35 0 -1
+@cmd  depost  0
+@cmd  throw  25  5  2  2  0  -1
+@cmd  clearL
 	frame	data/chars/Enemys/Ralf/t02.gif
 
 

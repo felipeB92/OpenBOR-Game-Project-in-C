@@ -1,268 +1,161 @@
-music		data/bgs/St404/Profile.ogg
+music		data/bgs/St206/Wave_131.ogg
 bossmusic	data/music/boss2.ogg
-scrollspeed 1
-stagenumber 4
-background	data/bgs/st404/back00.gif	0.3 1 0 0 0 0 -1 1 0 0 0 0 0 0 0
-bglayer		data/bgs/st404/back01.gif	0.2 1 0 0 0 0 -1 1 1 0 0 0 0 0 6
-panel		data/bgs/st404/Pn01.gif		none	none
+scrollspeed 0.5#1
+stagenumber 6
+background	data/bgs/st404/back00.gif	0.8 1 0 0 0 0 1 1 1
+bglayer		data/bgs/st404/back00.gif		0.3 1 -100 0 0 0 1 1 1 0 1 5 50 0.5
+panel		data/bgs/st404/pn01.gif		none	none
+fglayer		data/bgs/st404/Front01.gif	0 0 0 0 0 0 1 -1 1 1 0
 cameratype 1
-cameraoffset 0 -30
-#levelscript @script
-#void main() {
-#	changelevelproperty("camerazoffset", 0);
-#	changelevelproperty("cameraxoffset", 0);
-#}
-#@end_script
+cameraoffset 	0 -60
 settime         99
 notime          0
 noslow          1
 order		a
-spawn1  	150 20
-spawn2  	138 35
-spawn3  	135  50
+spawn1  	50 20
+spawn2  	55 35
+spawn3  	60 50
 
-light		100 -100
+light		128 -128
 at			0
 
+
+Wall  602  274  66  0  368  446  49  300
 
 spawn  Time01
 	coords  0  0
         Flip 1
 	at  0
 
-spawn  Signal_
-MAp 1
-health 40
-	coords 400 235
+spawn  Agua404
+	coords  0  0
+        Flip 1
 	at  0
 
+spawn  CLown
+health 90
+	coords  -50  220 150
+	at  50
 
-spawn  Signal_
+spawn  Galsia
+map    1
 health 40
-	coords 450 250
-	at  0
+	coords  500  190 150
+	at  100
 
-spawn  Galsia_B
+
+
+spawn  Galsia
+map    4
+health 50
+	coords  500  180 150
+	at  150
+
+spawn  Galsia
+map    1
 health 40
-	coords 230 220
-	at  0
+	coords  500  190 150
+	at  150
+
+wait
+        at   200
 
 
-wait 
-at 200
+Group  5  5
+        at   200
 
-group		4 4
-at			200
-
-spawn  Vice
-health 40
-	coords 600 230 150
+spawn  Donovan
+map    3
+health 50
+	coords  -100  200 150
 	at  200
 
-spawn  Vice
-health 40
-	coords -100 260 150
+spawn  Kunai
+	coords  500  190 50
 	at  200
 
-spawn  Slum
-health 40
-	coords -100 230 150
+
+spawn  Clown_
+map    3
+health 70
+	coords  550  180 150
 	at  200
 
-spawn  Slum
+Group  9  9
+        at   201
+
+
+spawn  Galsia
+map    1
 health 40
-	coords 600 260 150
-	at  200
+	coords  500  200 150
+	at  300
 
 
 spawn  Donovan
 health 40
-	coords 600 230 150
-	at  200
+	coords  500  180 150
+	at  450
 
 spawn  Galsia
+map    1
 health 40
-	coords -100 260 150
-	at  200
+	coords  500  200 150
+	at  500
 
-spawn  Signal
-health 40
-	coords -100 230 150
-	at  200
-
-spawn  GArnet
-health 40
-	coords 600 260 150
-	at  200
-
-
-spawn  Donovan_
-health 40
-	coords 600 260 150
-	at  300
-
-spawn  Bigben
-Map 1
-health 60
-	coords 450 260 150
-	at  400
-
-
-spawn  Slum
-map 3
-health 40
-	coords 600 260 150
+spawn  Donovan
+map    4
+health 70
+	coords  550  180 150
 	at  500
 
 
-wait 
-at 750
-
-group		4 4
-at			750
-
-
-spawn  Vice
-map 3
-health 40
-	coords 600 260 150
-	at  750
-
-
-spawn  Slum
-map 3
-health 40
-	coords 600 260 150
-	at  750
-
-spawn  Vice
-map 3
-health 40
-	coords 600 260 150
-	at  750
-
-
-spawn  Macleod
-health 60
-	coords 240 213
-	at  750
-
-
-spawn  Garnet
-map 3
-health 40
-	coords 600 260 150
-	at  750
-
-
-spawn  Maclean
-health 60
-	coords 450 213
-	at  750
-
-spawn  Galsia
-map 3
-health 40
-	coords 600 260 150
-	at  750
-
-spawn  MCBride
-health 60
-	coords 450 213
-	at  750
-
-
-spawn  Galsia
-map 3
-health 40
-	coords -100 260 150
-	at  750
-
-spawn  Macleod
-health 60
-	coords 240 213
-	at  750
-
-
-
-spawn  Maclean
-health 60
-	coords 450 213
-	at  750
-
-
-spawn  MCBride
-health 60
-	coords 450 213
-	at  750
-
-spawn  Galsia_A
-Flip 1
-health 60
-	coords 540 220
-	at  751
-
-
-wait 
-at 1050
-
-group		4 4
-at			1050
-
-spawn  Nora
-health 70
-	coords 152 212
-	at  1050
-
-
-spawn  JAck
-health 150
-	coords 600 240
-	at  1050
-
-
-spawn  bigben
-health 70
-	coords -100 240
-	at  1050
-
-spawn  Galsia
-health 40
-	coords 600 240
-	at  1050
-
 spawn  Donovan
-health 40
-	coords 600 240
-	at  1050
-
-spawn  bigben
+map    4
 health 70
-	coords 600 240
-	at  1050
+	coords  550  180 150
+	at  650
+wait 
+        at 700
 
-spawn  Signal
+spawn  G_FOG
+	coords  233  150
+	at  700
+
+spawn  Galsia
+map    1
 health 40
-	coords 600 240
-	at  1050
+	coords  500  200 150
+	at  700
 
 
-spawn  Signal
-health 40
-	coords -100 240
-	at  1050
 
-spawn  Mace
+spawn  FOg
+health 50
+	coords  600  220 150
+	at  800
+
+
+spawn  FOg
+health 50
+	coords  550  190 150
+	at  1000
+
+
+spawn  Raven
 health 70
-	coords 152 212
-	at  1050
+	coords  -100  250 150
+	at  1200
 
 
+spawn  Raven
+health 70
+	coords  -100  200 150
+	at  1200
 
-
-
-
-
-
-
+spawn  Raven
+map    1
+health 130
+	coords  500  200 150
+	at  1200
 

@@ -1,0 +1,233 @@
+##MAIN
+name				Adam_Bike
+type				none
+subtype				notgrab
+
+##LIFE
+health				0
+
+##POWER
+offense 			1 #SCRIPT
+
+##SPEED
+speed				1 #SCRIPT
+
+##JUMP
+jumpheight 			1 #SCRIPT
+
+##ENERGY
+mp					0
+mprate  			1 #SCRIPT
+
+##GRAB
+grabdistance 		33 #39/36/33/30/27/24
+grabfinish 			0 #PLAYER=0/ENEMY=1
+
+##WEIGHT/HEIGHT
+antigravity			-2 #-1/-2/-3
+height				79
+
+##MISC
+jugglepoints		60
+guardpoints			20
+guardrate			2
+risetime			170
+riseinv				0.5 1 #HEROES/BOSSES=0.5 - ENEMIES=0
+makeinv				2 0
+atchain				1
+weapons				none none none none none none none none
+gfxshadow			1 1
+dust				Dust
+noquake				1 0
+facing				1
+nodrop				2
+cantgrab			1
+modelflag			3
+weaploss			3
+
+##SCRIPTS
+didhitscript		data/scripts/didhit/moto.c
+onmodelcopyscript	data/scripts/onmodelcopy/default.c
+animationscript	 	data/scripts/animation/default.c
+script				data/scripts/updateentity/moto.c
+
+##ICONS
+icon				data/sprites/icons/Adam.png 1
+
+##PARROWS
+parrow				data/sprites/parrow.png 	-15 -140
+parrow2				data/sprites/parrow2.png 	-15 -140
+parrow3				data/sprites/parrow3.png 	-15 -140
+parrow4				data/sprites/parrow4.png 	-15 -140
+
+##REMAPS
+palette				data/chars/heroes/adam/_palette.png
+alternatepal		data/chars/heroes/adam/alter1.png
+alternatepal		data/chars/heroes/adam/alter2.png
+alternatepal		data/chars/heroes/adam/alter3.png
+
+##COMMANDS
+com 				j		freespecial		#KICK
+
+## DEFAULT ANIMATIONS #########################################################################
+
+anim idle
+	idle 	1 #REDUNTANT BUT NEEDED TO AVOID PLAYERS TO FREEZE DURING LEVEL START AND MODEL CHANGE TO BIKE TYPE, MAYBE ENGINE BUG
+	loop	1
+	delay	8
+	offset	137 172
+	bbox	114 98 19 76
+	@cmd bindBike 0 0 0 -1 1 openborconstant("ANI_FOLLOW1")
+	frame	data/chars/heroes/adam/bike/idle00.png
+		offset	137 173
+	@cmd bindBike 0 0 0 -1 1 openborconstant("ANI_FOLLOW1")
+	frame	data/chars/heroes/adam/bike/idle00.png
+	
+anim walk
+	idle 	1 #REDUNTANT BUT NEEDED TO AVOID PLAYERS TO FREEZE DURING LEVEL START AND MODEL CHANGE TO BIKE TYPE, MAYBE ENGINE BUG
+	loop	1
+	delay	8
+	offset	137 172
+	bbox	116 98 26 76
+	@cmd bindBike 0 0 0 -1 1 openborconstant("ANI_FOLLOW1")
+	frame	data/chars/heroes/adam/bike/walkright00.png
+		offset	137 173
+	@cmd bindBike 0 0 0 -1 1 openborconstant("ANI_FOLLOW1")
+	frame	data/chars/heroes/adam/bike/walkright00.png
+	
+anim up
+	idle 1 #REDUNTANT BUT NEEDED TO AVOID PLAYERS TO FREEZE DURING LEVEL START AND MODEL CHANGE TO BIKE TYPE, MAYBE ENGINE BUG
+	fastattack 1
+	jugglecost 4
+	forcedirection 1
+	otg 1
+	loop	1
+	delay	8
+	offset	137 172
+	@cmd hitfx "data/sounds/sor3_hit2.wav"
+	attack3 137 131 50 43 8 0 0 0 15 12
+	bbox	115 98 23 76
+	@cmd bindBike 0 0 0 -1 1 openborconstant("ANI_FOLLOW1")
+	frame	data/chars/heroes/adam/bike/walkup00.png
+		offset	137 173
+	@cmd bindBike 0 0 0 -1 1 openborconstant("ANI_FOLLOW1")
+	frame	data/chars/heroes/adam/bike/walkup00.png
+	
+anim down
+	idle 1 #REDUNTANT BUT NEEDED TO AVOID PLAYERS TO FREEZE DURING LEVEL START AND MODEL CHANGE TO BIKE TYPE, MAYBE ENGINE BUG
+	fastattack 1
+	jugglecost 4
+	forcedirection 1
+	otg 1
+	loop	1
+	delay	8
+	offset	137 172
+	@cmd hitfx "data/sounds/sor3_hit2.wav"
+	attack3 137 131 50 43 8 0 0 0 15 12
+	bbox	115 101 23 73
+	@cmd bindBike 0 0 0 -1 1 openborconstant("ANI_FOLLOW1")
+	frame	data/chars/heroes/adam/bike/walkdown00.png
+		offset	137 173
+	@cmd bindBike 0 0 0 -1 1 openborconstant("ANI_FOLLOW1")
+	frame	data/chars/heroes/adam/bike/walkdown00.png
+	
+anim backwalk
+	idle 	1 #REDUNTANT BUT NEEDED TO AVOID PLAYERS TO FREEZE DURING LEVEL START AND MODEL CHANGE TO BIKE TYPE, MAYBE ENGINE BUG
+	loop	1
+	delay	8
+	offset	137 172
+	bbox	114 98 19 76
+	@cmd bindBike 0 0 0 -1 1 openborconstant("ANI_FOLLOW1")
+	frame	data/chars/heroes/adam/bike/idle00.png
+		offset	137 173
+	@cmd bindBike 0 0 0 -1 1 openborconstant("ANI_FOLLOW1")
+	frame	data/chars/heroes/adam/bike/idle00.png
+	
+anim walkoff
+	loop	1
+	delay	8
+	offset	137 172
+	@cmd jump 1
+	@cmd bindBike 0 0 0 -1 1 openborconstant("ANI_FOLLOW1")
+	frame	data/chars/heroes/adam/bike/idle00.png
+		offset	137 173
+	@cmd bindBike 0 0 0 -1 1 openborconstant("ANI_FOLLOW1")
+	frame	data/chars/heroes/adam/bike/idle00.png
+	
+anim jumpland
+	loop	0
+	delay	8
+	offset	137 172
+	@cmd bindBike 0 0 0 -1 1 openborconstant("ANI_FOLLOW1")
+	frame	data/chars/heroes/adam/bike/idle00.png
+		offset	137 173
+	@cmd bindBike 0 0 0 -1 1 openborconstant("ANI_FOLLOW1")
+	frame	data/chars/heroes/adam/bike/idle00.png
+	
+anim pain
+	loop	0
+	delay	8
+	offset	137 172
+	@cmd bindBike 0 0 0 -1 1 openborconstant("ANI_FOLLOW1")
+	frame	data/chars/heroes/adam/bike/pain00.png
+		offset	137 173
+	@cmd bindBike 0 0 0 -1 1 openborconstant("ANI_FOLLOW1")
+	frame	data/chars/heroes/adam/bike/pain00.png
+		idle 1
+		offset	137 172
+		shadowcoords 137 172
+	@cmd bindBike 0 0 0 -1 1 openborconstant("ANI_FOLLOW1")
+	frame	data/chars/heroes/adam/bike/pain00.png
+		offset	137 173
+	@cmd bindBike 0 0 0 -1 1 openborconstant("ANI_FOLLOW1")
+	frame	data/chars/heroes/adam/bike/pain00.png
+	
+anim fall
+	loop	0
+	delay	8
+	offset	137 172
+	@cmd bindBike 0 0 0 -1 1 openborconstant("ANI_FOLLOW1")
+	frame	data/chars/heroes/adam/bike/pain00.png
+		offset	137 173
+	@cmd spawnBind "Destruction" 0 40 1
+	@cmd bindBike 0 0 0 -1 1 openborconstant("ANI_FOLLOW1")
+	frame	data/chars/heroes/adam/bike/pain00.png
+	
+anim attack1 #BACK ATTACK
+	fastattack 1
+	jugglecost 4
+	forcedirection 1
+	otg 1
+	loop	0
+	delay	8
+	offset	137 172
+	@cmd hitfx "data/sounds/sor2_hit.wav"
+	@cmd sound "data/sounds/sor2_attack.wav"
+	@cmd bindBike 0 0 0 -1 1 openborconstant("ANI_FOLLOW1")
+	frame	data/chars/heroes/adam/bike/a100.png
+		offset	137 173
+	@cmd bindBike 0 0 0 -1 1 openborconstant("ANI_FOLLOW1")
+	frame	data/chars/heroes/adam/bike/a100.png
+		offset	137 172
+		shadowcoords 137 172
+	attack 81 103 43 14 8 0 0 0 15 12
+	@cmd bindBike 0 0 0 -1 1 openborconstant("ANI_FOLLOW1")
+	frame	data/chars/heroes/adam/bike/a101.png
+		offset	137 173
+	@cmd bindBike 0 0 0 -1 1 openborconstant("ANI_FOLLOW1")
+	frame	data/chars/heroes/adam/bike/a101.png
+		offset	137 172
+		shadowcoords 137 172
+	bbox	114 96 20 78
+	@cmd bindBike 0 0 0 -1 1 openborconstant("ANI_FOLLOW1")
+	frame	data/chars/heroes/adam/bike/a101.png
+		offset	137 173
+	@cmd bindBike 0 0 0 -1 1 openborconstant("ANI_FOLLOW1")
+	frame	data/chars/heroes/adam/bike/a101.png
+
+anim idle2 #STOP BIKE
+	loop	1
+	delay	-1000
+	offset	137 172
+	@cmd bindBike 0 0 0 -1 1 openborconstant("ANI_FOLLOW1")
+	frame	data/chars/heroes/adam/bike/idle00.png

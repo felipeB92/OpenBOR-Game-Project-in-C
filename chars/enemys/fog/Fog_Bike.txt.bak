@@ -1,0 +1,155 @@
+
+name	Fog_Bike
+health	100
+speed	8
+nodrop 2
+falldie 2
+lifespan 40
+type	Enemy
+gfxshadow	1
+JUMPHEIGHT 1 1
+Jumpheight 3
+hostile				player npc
+candamage			player npc obstacle
+atchain    1 1 2
+weapons				none none Fog_pipe none
+icon	data/chars/Enemys/Fog/icon.gif 1
+diesound data/voices/die2.wav
+running	20	3	3	1	1
+facing				1
+animationscript		data/scripts/drago.c
+
+##LOADS
+load				MotoFall2
+
+
+remap data/chars/Enemys/Fog/idle00.gif data/chars/Enemys/Fog/alter1.gif
+remap data/chars/Enemys/Fog/idle00.gif data/chars/Enemys/Fog/alter2.gif
+remap data/chars/Enemys/Fog/idle00.gif data/chars/Enemys/Fog/alter3.gif
+remap data/chars/Enemys/Fog/idle00.gif data/chars/Enemys/Fog/alter4.gif
+
+anim	spawn
+	loop	0
+	delay	10
+	offset	144 181
+		Attack1  0
+        sound	data/sounds/Bike.wav
+	frame   data/chars/Enemys/Fog/mounted00.gif
+
+
+
+anim idle
+	loop	1
+	delay	6
+	offset	144 181
+	bbox	125 102 35 50
+	frame   data/chars/Enemys/Fog/mounted00.gif
+	frame   data/chars/Enemys/Fog/mounted01.gif
+
+
+anim walk
+	loop	1
+	delay	6
+	offset	144 181
+	bbox	126 100 35 52
+	frame   data/chars/Enemys/Fog/mounted00.gif
+	frame   data/chars/Enemys/Fog/mounted01.gif
+
+
+
+
+
+anim jump
+	loop	0
+	delay	30
+	offset	144 181
+	bbox	129 106 28 77
+	frame	data/chars/Enemys/Fog/jump00.gif
+
+
+
+anim attack1
+	loop	0
+	delay	6
+        Range 0 40
+	offset	144 181
+	bbox	124 101 34 46
+		Attack1  0
+	frame   data/chars/Enemys/Fog/mounted00.gif
+	frame   data/chars/Enemys/Fog/mounted01.gif
+		attack1  129  113  53  17  5  0  0  0  0  15
+	frame   data/chars/Enemys/Fog/mounted02.gif
+	frame   data/chars/Enemys/Fog/mounted03.gif
+	frame   data/chars/Enemys/Fog/mounted02.gif
+	frame   data/chars/Enemys/Fog/mounted03.gif
+
+
+
+
+
+
+anim rise
+	loop	0
+	offset	144 181
+	delay	10
+	frame   data/chars/Enemys/Fog/mounted00.gif
+	frame   data/chars/Enemys/Fog/mounted01.gif
+
+
+
+
+
+anim pain
+	loop	0
+	offset	144 182
+	bbox	125 108 32 45
+		delay  6
+	frame   data/chars/Enemys/Fog/p01.gif
+	frame   data/chars/Enemys/Fog/P02.gif
+
+
+anim fall
+	loop	0
+	offset	144 182
+	delay  1
+	frame   data/chars/Enemys/Fog/p01.gif
+	offset	148 182
+	delay	20
+		Attack1  0
+		@cmd  spawn01  "Motofall2"  0  0  0
+	frame	data/chars/Enemys/Fog/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  176  167
+	frame  data/chars/Enemys/Fog/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Enemys/Fog/fall403.gif
+		Attack1  0
+		offset  190  178
+	frame	data/chars/Enemys/Fog/fall102.gif
+
+
+anim death
+	loop	0
+	offset	186 180
+	delay	5
+		move  -5
+	frame	data/chars/Enemys/Fog/fall102.gif
+	frame	data/chars/Enemys/Fog/fall102.gif
+	frame	data/chars/Enemys/Fog/fall102.gif
+	frame	data/chars/Enemys/Fog/fall102.gif
+	frame	data/chars/Enemys/Fog/fall102.gif
+	frame	data/chars/Enemys/Fog/fall102.gif
+	frame	data/chars/Enemys/Fog/fall102.gif
+	frame	data/chars/Enemys/Fog/fall102.gif
+	frame	data/chars/Enemys/Fog/fall102.gif
+	frame	data/chars/Enemys/Fog/fall102.gif
+	frame	data/chars/Enemys/Fog/fall102.gif
+	frame	data/chars/Enemys/Fog/fall102.gif
+	frame	data/chars/Enemys/Fog/fall102.gif
+	frame	data/chars/Enemys/Fog/fall102.gif
+	frame	data/chars/Enemys/Fog/fall102.gif
+	frame	data/chars/Enemys/Fog/fall102.gif
+	frame	data/chars/Enemys/Fog/fall102.gif
+	frame	data/chars/Enemys/Fog/00.gif
+
