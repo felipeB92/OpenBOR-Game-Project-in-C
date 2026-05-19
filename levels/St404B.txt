@@ -23,7 +23,13 @@ spawn  Time01
 	at  0
 
 
+
 spawn  Fog_bike
+health 50
+	coords  500  190 150
+	at  100
+
+spawn  Donovan_bike
 map    1
 health 50
 	coords  500  190 150

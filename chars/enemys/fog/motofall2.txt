@@ -12,8 +12,8 @@ anim idle
 	delay	4
 	offset	145 179
 	hitfx	data/sounds/HighPunch.wav
-	attack1 182 152 20 28 15 1 1 0 0 12
 	@cmd dasher 2 0 0
+		Attack1  0
 	frame	data/chars/Enemys/fog/unmounted00.gif
 	frame	data/chars/Enemys/fog/unmounted01.gif
 	frame	data/chars/Enemys/fog/unmounted00.gif

@@ -154,6 +154,7 @@ know    Donovan		data/chars/Enemys/donovan/donovan.txt
 know    _Donovan	data/chars/Enemys/donovan/_donovan.txt
 know    Donovan_	data/chars/Enemys/donovan/donovan_.txt
 know    Donovan_B	data/chars/Enemys/donovan/donovan_B.txt
+know    Donovan_Bike	data/chars/Enemys/donovan/donovan_Bike.txt
 know    Donovan_A	data/chars/Enemys/donovan/donovan_A.txt
 know    Donovan_pipe	data/chars/Enemys/donovan/donovan_pipe.txt
 know    Galsia		data/chars/Enemys/galsia/galsia.txt
