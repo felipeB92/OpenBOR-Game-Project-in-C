@@ -1,0 +1,192 @@
+name	Jack_Bike
+health	100
+speed	6
+mp 40
+nodrop 2
+falldie 2
+lifespan 60
+type	Enemy
+gfxshadow	1
+JUMPHEIGHT 1 1
+Jumpheight 3
+hostile				player npc
+candamage			player npc obstacle
+atchain    1 1 2
+icon	data/chars/Enemys/Jack/icon.gif 1
+diesound data/voices/die2.wav
+running	20	3	3	1	1
+facing				1
+animationscript		data/scripts/drago.c
+
+##LOADS
+load				MotoFall2
+load				Knifet2
+
+
+remap data/chars/Enemys/Jack/idle00.gif data/chars/Enemys/Jack/alter1.gif
+remap data/chars/Enemys/Jack/idle00.gif data/chars/Enemys/Jack/alter2.gif
+remap data/chars/Enemys/Jack/idle00.gif data/chars/Enemys/Jack/alter3.gif
+remap data/chars/Enemys/Jack/idle00.gif data/chars/Enemys/Jack/alter4.gif
+
+anim	spawn
+	loop	0
+	delay	10
+	offset	144 181
+		Attack1  0
+        sound	data/sounds/Bike.wav
+	frame   data/chars/Enemys/Jack/Bike/Idle00.gif
+
+
+
+anim idle
+	loop	1
+	delay	6
+	offset	144 181
+	bbox	125 102 35 50
+	frame   data/chars/Enemys/Jack/Bike/Idle00.gif
+	frame   data/chars/Enemys/Jack/Bike/Idle01.gif
+
+
+anim walk
+	loop	1
+	delay	6
+	offset	144 181
+	bbox	126 100 35 52
+	frame   data/chars/Enemys/Jack/Bike/Idle00.gif
+	frame   data/chars/Enemys/Jack/Bike/Idle01.gif
+
+
+
+
+
+anim jump
+	loop	0
+	delay	30
+	offset	144 181
+	bbox	129 106 28 77
+	frame   data/chars/Enemys/Jack/Bike/Idle00.gif
+
+
+
+anim attack1
+	loop	0
+	delay	6
+        Range 40 50
+        Rangez -10 10
+	offset	144 181
+	bbox	124 101 34 46
+	frame   data/chars/Enemys/Jack/Bike/a100.gif
+	frame   data/chars/Enemys/Jack/Bike/a101.gif
+		attack1  121  111  57  30  10  0  0  0  0  15
+	frame   data/chars/Enemys/Jack/Bike/a102.gif
+	frame   data/chars/Enemys/Jack/Bike/a103.gif
+		attack1  131  104  75  23  10  0  0  0  0  15
+	frame   data/chars/Enemys/Jack/Bike/a104.gif
+	frame   data/chars/Enemys/Jack/Bike/a105.gif
+
+
+anim Freespecial
+	loop	0
+	delay	6
+        Range 0 39
+        energycost 20 1
+        MpOnly 1
+	offset	144 181
+	bbox	124 101 34 46
+	@cmd dasher 3 0 0
+	frame   data/chars/Enemys/Jack/Bike/Run00.gif
+	frame   data/chars/Enemys/Jack/Bike/Run01.gif
+	frame   data/chars/Enemys/Jack/Bike/Run00.gif
+	frame   data/chars/Enemys/Jack/Bike/Run01.gif
+	frame   data/chars/Enemys/Jack/Bike/Run00.gif
+	frame   data/chars/Enemys/Jack/Bike/Run01.gif
+	frame   data/chars/Enemys/Jack/Bike/Run00.gif
+	frame   data/chars/Enemys/Jack/Bike/Run01.gif
+	frame   data/chars/Enemys/Jack/Bike/Run00.gif
+	frame   data/chars/Enemys/Jack/Bike/Run01.gif
+	frame   data/chars/Enemys/Jack/Bike/Run00.gif
+	frame   data/chars/Enemys/Jack/Bike/Run01.gif
+	@cmd dasher 0 0 0
+	frame   data/chars/Enemys/Jack/Bike/a200.gif
+	frame   data/chars/Enemys/Jack/Bike/a201.gif
+	frame   data/chars/Enemys/Jack/Bike/a202.gif
+	frame   data/chars/Enemys/Jack/Bike/a203.gif
+	frame   data/chars/Enemys/Jack/Bike/a204.gif
+	frame   data/chars/Enemys/Jack/Bike/a205.gif
+	frame   data/chars/Enemys/Jack/Bike/a206.gif
+	frame   data/chars/Enemys/Jack/Bike/a207.gif
+	@cmd  spawn01  "Knifet2"  0  40  0
+	frame   data/chars/Enemys/Jack/Bike/a208.gif
+	frame   data/chars/Enemys/Jack/Bike/a209.gif
+
+
+
+
+
+
+anim rise
+	loop	0
+	offset	144 181
+	delay	10
+	frame   data/chars/Enemys/Jack/Bike/Idle00.gif
+	frame   data/chars/Enemys/Jack/Bike/Idle01.gif
+
+
+
+
+
+anim pain
+	loop	0
+	offset	144 182
+	bbox	125 108 32 45
+		delay  6
+	frame   data/chars/Enemys/Jack/Bike/Pain00.gif
+	frame   data/chars/Enemys/Jack/Bike/Pain01.gif
+
+
+anim fall
+	loop	0
+	offset	144 182
+	delay  1
+	frame   data/chars/Enemys/Jack/Bike/Pain01.gif
+	offset	148 182
+	delay	20
+		Attack1  0
+		@cmd  spawn01  "Motofall2"  0  0  0
+	frame	data/chars/Enemys/Jack/fall100.gif
+		attack  101
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  176  167
+	frame  data/chars/Enemys/Jack/fall101.gif
+		hitfx  data/sounds/golpes/Forte.wav
+		offset  185  182
+	frame  data/chars/Enemys/Jack/fall403.gif
+		Attack1  0
+		offset  179  183
+	frame	data/chars/Enemys/Jack/fall102.gif
+
+
+anim death
+	loop	0
+	offset	179 183
+	delay	5
+		move  -5
+	frame	data/chars/Enemys/Jack/fall102.gif
+	frame	data/chars/Enemys/Jack/fall102.gif
+	frame	data/chars/Enemys/Jack/fall102.gif
+	frame	data/chars/Enemys/Jack/fall102.gif
+	frame	data/chars/Enemys/Jack/fall102.gif
+	frame	data/chars/Enemys/Jack/fall102.gif
+	frame	data/chars/Enemys/Jack/fall102.gif
+	frame	data/chars/Enemys/Jack/fall102.gif
+	frame	data/chars/Enemys/Jack/fall102.gif
+	frame	data/chars/Enemys/Jack/fall102.gif
+	frame	data/chars/Enemys/Jack/fall102.gif
+	frame	data/chars/Enemys/Jack/fall102.gif
+	frame	data/chars/Enemys/Jack/fall102.gif
+	frame	data/chars/Enemys/Jack/fall102.gif
+	frame	data/chars/Enemys/Jack/fall102.gif
+	frame	data/chars/Enemys/Jack/fall102.gif
+	frame	data/chars/Enemys/Jack/fall102.gif
+	frame	data/chars/Enemys/Fog/00.gif
+

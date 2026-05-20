@@ -137,6 +137,7 @@ know	Pipe		data/chars/Armas/Pipe.txt
 know	Pipet		data/chars/Armas/Pipet.txt
 know	Knife		data/chars/Armas/Knife.txt
 know	Knifet		data/chars/Armas/Knifet.txt
+know	Knifet2		data/chars/Armas/Knifet2.txt
 know	Kunai		data/chars/Armas/Kunai.txt
 know	KunaiT		data/chars/Armas/KunaiT.txt
 know	sword		data/chars/Armas/sword.txt
@@ -175,7 +176,6 @@ know    Moto		data/chars/Enemys/Fog/Moto.txt
 know    Moto02		data/chars/Enemys/Fog/Moto02.txt
 know    Motofall	data/chars/Enemys/Fog/Motofall.txt
 know    Motofall2	data/chars/Enemys/Fog/Motofall2.txt
-know    Motofall3	data/chars/Enemys/Fog/Motofall3.txt
 know    Fog_pipe	data/chars/Enemys/Fog/Fog_Pipe.txt
 know    haku_oh		data/chars/Enemys/haku_oh/haku_oh.txt
 know    _haku_oh	data/chars/Enemys/haku_oh/_haku_oh.txt
@@ -215,6 +215,7 @@ know    cap		data/chars/Enemys/MRX/cap.txt
 know    cap2		data/chars/Enemys/MRX/cap2.txt
 know    JAck		data/chars/Enemys/JAck/JAck.txt
 know    JAck_knife	data/chars/Enemys/JAck/JAck_Knife.txt
+know    JAck_Bike	data/chars/Enemys/JAck/JAck_Bike.txt
 know    Barbon		data/chars/Enemys/barbon/Barbon.txt
 know    Barbon_		data/chars/Enemys/barbon/Barbon_.txt
 know    Trapos		data/chars/Enemys/Barbon/Trapos.txt

@@ -34,3 +34,9 @@ map    1
 health 50
 	coords  500  190 150
 	at  100
+
+spawn  JAck_bike
+map    1
+health 75
+	coords  500  190 150
+	at  100
