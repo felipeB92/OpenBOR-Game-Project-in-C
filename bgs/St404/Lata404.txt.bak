@@ -1,0 +1,28 @@
+name			Lata404
+type			none
+shadow			0
+#antigravity 100
+animationscript		data/scripts/drago.c
+anim idle
+	loop	1
+	delay	8
+	offset	38 64
+		attack1  29  34  49  16  20  1  0  0  0  20
+	frame  data/Bgs/St404/Truck/La00.gif
+	@cmd dasher -1 0 0
+	frame  data/Bgs/St404/Truck/La01.gif
+	frame  data/Bgs/St404/Truck/La02.gif
+	frame  data/Bgs/St404/Truck/La03.gif
+	frame  data/Bgs/St404/Truck/La00.gif
+	frame  data/Bgs/St404/Truck/La01.gif
+	frame  data/Bgs/St404/Truck/La02.gif
+	frame  data/Bgs/St404/Truck/La03.gif
+	frame  data/Bgs/St404/Truck/La00.gif
+	frame  data/Bgs/St404/Truck/La01.gif
+	frame  data/Bgs/St404/Truck/La02.gif
+	frame  data/Bgs/St404/Truck/La03.gif
+	frame  data/Bgs/St404/Truck/La00.gif
+	frame  data/Bgs/St404/Truck/La01.gif
+	frame  data/Bgs/St404/Truck/La02.gif
+	frame  data/Bgs/St404/Truck/La03.gif
+

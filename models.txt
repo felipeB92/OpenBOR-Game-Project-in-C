@@ -520,6 +520,10 @@ know	Luz403    	data/Bgs/St403/Luz403.txt
 know	Porta403    	data/Bgs/St403/Porta403.txt
 
 know	Agua404    	data/Bgs/St404/Agua404.txt
+know	lata404   	data/Bgs/St404/Lata404.txt
+know	Truck404A    	data/Bgs/St404/Truck404A.txt
+know	Truck404B    	data/Bgs/St404/Truck404B.txt
+know	Truck404C    	data/Bgs/St404/Truck404C.txt
 
 know	Av405    	data/Bgs/St405/Av405.txt
 
@@ -558,6 +562,9 @@ know	Ovo		data/chars/Objetos/Ovo.txt
 know	Boom01		data/chars/Objetos/Boom01.txt
 know	Boom02		data/chars/Objetos/Boom02.txt
 know	Granada		data/chars/Objetos/granada.txt
+know	Molotov		data/chars/Objetos/Molotov.txt
+know	Burn01		data/chars/Objetos/Burn01.txt
+know	Burn02		data/chars/Objetos/Burn02.txt
 know	Sandbag		data/chars/Objetos/sandbag.txt
 know	Vaso 		data/chars/Objetos/VAso.txt
 know	Vaso02 		data/chars/Objetos/VAso02.txt

@@ -6,6 +6,7 @@ speed           10
 velocity        10 0 0
 antigravity     100
 gravity         0
+candamage			player npc obstacle enemy
 friction        0
 lifespan		60
 remove			1

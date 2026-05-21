@@ -2,7 +2,7 @@ name	Ash
 health	200
 speed	13
 type	Enemy
-lifespan 60
+lifespan 75
 riseinv				0.4 1
 gfxshadow	1
 hostile				player npc

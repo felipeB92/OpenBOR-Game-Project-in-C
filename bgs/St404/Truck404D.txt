@@ -1,0 +1,20 @@
+name			Truck404D
+type			none
+shadow			0
+antigravity 100
+
+animationscript		data/scripts/drago.c
+
+Load Lata404
+
+
+anim idle
+	loop	1
+	delay	8
+	offset	0 0
+	@cmd dasher -0.5 0 0
+	frame  data/Bgs/St404/Truck02/t00.gif
+	frame  data/Bgs/St404/Truck02/t01.gif
+	frame  data/Bgs/St404/Truck02/t02.gif
+	frame  data/Bgs/St404/Truck02/t03.gif
+

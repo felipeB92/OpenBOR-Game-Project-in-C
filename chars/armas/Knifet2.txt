@@ -7,6 +7,7 @@ velocity        10 0 0
 antigravity     100
 gravity         0
 friction        0
+candamage			player npc obstacle
 lifespan		60
 remove			1
 noatflash 		1

@@ -1,0 +1,38 @@
+# Hit flash
+
+speed	8
+name	Burn01
+noname 1
+candamage  Player enemy obstacle npc pshot
+type	None
+antigravity		100
+Alpha   1
+
+
+animationscript		data/scripts/drago.c
+
+
+Load Burn02
+
+anim idle
+	loop	0
+	delay	6
+	offset	49 82
+	quakeframe 3 2 2
+	frame	data/chars/objetos/Molotov/Burn00.gif
+	delay	5
+	frame	data/chars/objetos/Molotov/Burn01.gif
+		attack5  39  35  21  50  15  1  0  0  0  20
+	frame	data/chars/objetos/Molotov/Burn02.gif
+	frame	data/chars/objetos/Molotov/Burn03.gif
+	frame	data/chars/objetos/Molotov/Burn04.gif
+	frame	data/chars/objetos/Molotov/Burn05.gif
+        @cmd spawn01 "Burn02" 0 0 -20
+        @cmd spawn01 "Burn02" 0 0 20
+        @cmd spawn01 "Burn02" 20 0 0
+        @cmd spawn01 "Burn02" -20 0 0
+	frame	data/chars/objetos/Molotov/Burn06.gif
+	frame	data/chars/objetos/Molotov/Burn07.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/objetos/Molotov/Burn04.gif
+

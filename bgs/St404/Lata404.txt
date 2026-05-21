@@ -1,0 +1,31 @@
+name			Lata404
+type			none
+lifespan 5
+shadow			0
+#antigravity 100
+hostile				player npc
+candamage			player npc obstacle
+
+animationscript		data/scripts/drago.c
+
+anim idle
+	loop	1
+	delay	8
+	offset	71 65
+		attack1  29  31  53  21  20  1  0  0  0  20
+	frame  data/Bgs/St404/Truck/La00.gif
+	@cmd dasher -1 0 0
+		offset  71  75
+	frame  data/Bgs/St404/Truck/La01.gif
+		offset  71  85
+	frame  data/Bgs/St404/Truck/La02.gif
+		offset  71  95
+	frame  data/Bgs/St404/Truck/La03.gif
+		offset  71  85
+	frame  data/Bgs/St404/Truck/La00.gif
+		offset  71  75
+	frame  data/Bgs/St404/Truck/La01.gif
+		offset  71  65
+	frame  data/Bgs/St404/Truck/La02.gif
+	Sound  data/sounds/Iron.wav
+	frame  data/Bgs/St404/Truck/La03.gif

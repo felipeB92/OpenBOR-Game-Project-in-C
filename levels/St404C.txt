@@ -1,3 +1,4 @@
+music		data/bgs/St301/The_Poets_II.ogg
 background		data/bgs/St404/b/bk00.png		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 0.3
 bglayer			data/bgs/St404/b/bg00.png		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 0.4
 bglayer			data/bgs/St404/b/bg01.png		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 0.5
