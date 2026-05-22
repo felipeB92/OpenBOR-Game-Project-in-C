@@ -75,7 +75,7 @@ anim jump
 
 anim attack1
 	loop	0
-	delay	4
+	delay	3
 	offset	78 115
 	bbox	58 37 28 80
 		Attack1  0
@@ -87,9 +87,8 @@ anim attack1
 	frame	data/chars/players/Adam_/Bike/a103.gif
 		attack1  23  42  57  17  10  0  0  0  0  20
 	frame	data/chars/players/Adam_/Bike/a104.gif
-		delay  12
-	frame	data/chars/players/Adam_/Bike/a105.gif
 		delay  5
+	frame	data/chars/players/Adam_/Bike/a105.gif
 		Attack1  0
 	frame	data/chars/players/Adam_/Bike/a106.gif
 	frame	data/chars/players/Adam_/Bike/a107.gif

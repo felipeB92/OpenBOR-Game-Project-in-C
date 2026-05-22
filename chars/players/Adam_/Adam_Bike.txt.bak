@@ -1,7 +1,7 @@
 name	Adam_Bike
 health	100
 mp 20
-Falldie 1
+Falldie 3
 speed	12
 type	None
 candamage			enemy npc obstacle
@@ -12,7 +12,6 @@ atchain    1 1 1 1
 icon	data/chars/players/Adam_/icon.gif 1
 diesound data/sounds/Adamdie.wav
 gfxshadow			1 1
-dust				Dust
 noquake				1 0
 facing				1
 nodrop				2
@@ -23,7 +22,7 @@ weaploss			3
 animationscript		data/scripts/drago.c
 
 Load T00
-Load Knifet
+Load Motofall2
 
 
 Com d d freespecial5
@@ -88,9 +87,11 @@ anim attack1
 	frame	data/chars/players/Adam_/Bike/a103.gif
 		attack1  23  42  57  17  10  0  0  0  0  20
 	frame	data/chars/players/Adam_/Bike/a104.gif
+		delay  12
 	frame	data/chars/players/Adam_/Bike/a105.gif
-	frame	data/chars/players/Adam_/Bike/a106.gif
+		delay  5
 		Attack1  0
+	frame	data/chars/players/Adam_/Bike/a106.gif
 	frame	data/chars/players/Adam_/Bike/a107.gif
 
 
@@ -117,8 +118,12 @@ anim pain
 
 anim Fall
 	loop	0
-	offset	50 83
+	offset	78 115
+	delay	1
+	frame	data/chars/players/Adam_/Bike/pain00.gif
 	delay	20
+	offset	50 83
+	@cmd  spawn01  "Motofall2"  0  0  0
 	frame	data/chars/players/Adam_/fall100.gif
 		offset  77  78
 	frame  data/chars/players/Adam_/fall101.gif

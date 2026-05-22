@@ -616,17 +616,23 @@ ___________________________________________________________
 #file	data/levels/St404A.txt
 
 
-#5A - cORRIDA DESERTO
+#5A - cORRIDA Ponte
+#z	180 255
+
+#file	data/levels/St404b.txt
+
+
+#5A - cORRIDA deserto
+
+#z	180 255
+
+#file	data/levels/St404c.txt
+
+#5A - cORRIDA caminhão
+
 z	180 255
 
-file	data/levels/St404b.txt
-
-
-#5A - cORRIDA PONTES
-
-z	180 255
-
-file	data/levels/St404c.txt
+file	data/levels/St404D.txt
 
 #5A - saguão Aeroporto
 

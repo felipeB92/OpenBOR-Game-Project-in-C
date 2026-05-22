@@ -17,19 +17,24 @@ settime			99
 noslow			1
 bgspeed			1.5 0
 stagenumber		4
-setweap		5
+#setweap		5
 spawn1			240 230 300
 spawn2			240 220 300
 spawn3			240 250 300
 spawn4			240 270 300
 
-
+Wall  323  286  -19  0  180  180  100  144
+Hole  -234  276  -54  0  287  235  102
 
 spawn  Time01
 	coords  0  0
         Flip 1
 	at  0
 
+spawn  Truck404E
+Flip 1
+	coords  14  100  0
+	at  0
 
 wait
 at 0
@@ -39,72 +44,12 @@ at          0
 
 
 
-spawn  Fog_bike
+spawn  Fog
 health 50
-	coords  550  190 150
-	at  0
-
-spawn  Fog_bike
-map    1
-health 50
-	coords  -100 270 150
-	at  0
-
-spawn  Fog_bike
-health 50
-	coords  600  270 150
-	at  0
-
-spawn  Fog_bike
-health 50
-	coords  -100  190 150
-	at  0
-
-
-spawn  Fog_bike
-health 50
-	coords  600  190 150
+	coords  250  250 150
 	at  0
 
 
 
-spawn  Donovan_bike
-health 50
-	coords  -100 270 150
-	at  0
 
 
-spawn  Fog_bike
-health 50
-	coords  600  190 150
-	at  0
-
-
-spawn  Truck404D
-Flip 1
-	coords  510  100
-	at  0
-
-spawn  Fog_bike
-health 50
-	coords  -100  250 150
-	at  0
-
-
-spawn  Fog_bike
-health 50
-	coords  -100  190 150
-	at  0
-
-
-
-spawn  Donovan_bike
-health 50
-	coords  -100 270 150
-	at  0
-
-
-spawn  Fog_bike
-health 50
-	coords  -100  190 150
-	at  0

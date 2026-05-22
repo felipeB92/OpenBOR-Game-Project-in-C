@@ -79,7 +79,7 @@ health 50
 spawn  JAck_bike
 map    1
 health 75
-	coords  500  190 150
+	coords  600  190 150
 	at  0
 
 spawn  Donovan_bike

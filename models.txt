@@ -524,6 +524,8 @@ know	lata404   	data/Bgs/St404/Lata404.txt
 know	Truck404A    	data/Bgs/St404/Truck404A.txt
 know	Truck404B    	data/Bgs/St404/Truck404B.txt
 know	Truck404C    	data/Bgs/St404/Truck404C.txt
+know	Truck404D    	data/Bgs/St404/Truck404D.txt
+know	Truck404E    	data/Bgs/St404/Truck404E.txt
 
 know	Av405    	data/Bgs/St405/Av405.txt
 
