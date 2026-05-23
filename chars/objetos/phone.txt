@@ -13,13 +13,14 @@ diesound data/sounds/glass.wav
 anim idle
 	loop	0
 	delay	100
-	offset	33 112
-	bbox	0 1 57 112
+	offset	100 167
+	bbox	72 58 56 111 6 0
+	platform 62 171 0 0 77 77 13 1000
 	frame	data/chars/Objetos/phone.gif
 
 
 anim fall
 	loop	1
 	delay	1000
-	offset	33 112
+	offset	100 167
 	frame	data/chars/Objetos/phone2.gif

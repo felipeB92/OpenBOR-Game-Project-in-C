@@ -1,0 +1,150 @@
+name			Van404B
+type			none
+shadow			0
+antigravity 100
+
+animationscript		data/scripts/drago.c
+
+Load Jonny
+Load Signal
+
+
+
+anim idle
+	loop	1
+	delay	6
+	offset	100 200
+	frame  data/Bgs/St404/Van/T200.gif
+	@cmd dasher -0.7 0 0
+	frame  data/Bgs/St404/Van/T200.gif
+	frame  data/Bgs/St404/Van/T201.gif
+	frame  data/Bgs/St404/Van/T200.gif
+	frame  data/Bgs/St404/Van/T201.gif
+	frame  data/Bgs/St404/Van/T200.gif
+	frame  data/Bgs/St404/Van/T201.gif
+	frame  data/Bgs/St404/Van/T200.gif
+	frame  data/Bgs/St404/Van/T201.gif
+	frame  data/Bgs/St404/Van/T200.gif
+	frame  data/Bgs/St404/Van/T201.gif
+	frame  data/Bgs/St404/Van/T200.gif
+	frame  data/Bgs/St404/Van/T201.gif
+	frame  data/Bgs/St404/Van/T200.gif
+	frame  data/Bgs/St404/Van/T201.gif
+	frame  data/Bgs/St404/Van/T200.gif
+	frame  data/Bgs/St404/Van/T201.gif
+	frame  data/Bgs/St404/Van/T200.gif
+	frame  data/Bgs/St404/Van/T201.gif
+	frame  data/Bgs/St404/Van/T200.gif
+	frame  data/Bgs/St404/Van/T201.gif
+	frame  data/Bgs/St404/Van/T200.gif
+	frame  data/Bgs/St404/Van/T201.gif
+	frame  data/Bgs/St404/Van/T200.gif
+	frame  data/Bgs/St404/Van/T201.gif
+	frame  data/Bgs/St404/Van/T200.gif
+	frame  data/Bgs/St404/Van/T201.gif
+	frame  data/Bgs/St404/Van/T200.gif
+	frame  data/Bgs/St404/Van/T201.gif
+	frame  data/Bgs/St404/Van/T200.gif
+	frame  data/Bgs/St404/Van/T201.gif
+	frame  data/Bgs/St404/Van/T200.gif
+	frame  data/Bgs/St404/Van/T201.gif
+	frame  data/Bgs/St404/Van/T200.gif
+	frame  data/Bgs/St404/Van/T201.gif
+	frame  data/Bgs/St404/Van/T200.gif
+	frame  data/Bgs/St404/Van/T201.gif
+	frame  data/Bgs/St404/Van/T200.gif
+	frame  data/Bgs/St404/Van/T201.gif
+	frame  data/Bgs/St404/Van/T200.gif
+	frame  data/Bgs/St404/Van/T201.gif
+	frame  data/Bgs/St404/Van/T200.gif
+	frame  data/Bgs/St404/Van/T201.gif
+	@cmd dasher 0 0 0
+	frame  data/Bgs/St404/Van/T200.gif
+	frame  data/Bgs/St404/Van/T201.gif
+	frame  data/Bgs/St404/Van/T200.gif
+	frame  data/Bgs/St404/Van/T201.gif
+	frame  data/Bgs/St404/Van/T202.gif
+	frame  data/Bgs/St404/Van/T203.gif
+	frame  data/Bgs/St404/Van/T204.gif
+		@cmd  spawn01  "Jonny"  0  60  -15
+	frame  data/Bgs/St404/Van/T206.gif
+	frame  data/Bgs/St404/Van/T207.gif
+	frame  data/Bgs/St404/Van/T208.gif
+	frame  data/Bgs/St404/Van/T209.gif
+		@cmd  spawn01  "Signal"  -50  60  -15
+		@cmd  spawn01  "Signal"  50  60  -15
+	frame  data/Bgs/St404/Van/T00.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T00.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T00.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T00.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T00.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T00.gif
+	@cmd dasher 0.7 0 0
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T00.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T00.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T00.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T00.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T00.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T00.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T00.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T00.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T00.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T00.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T00.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T00.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T00.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T00.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T00.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T00.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T00.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T00.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T00.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T00.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T00.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T00.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T00.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T00.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T00.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T00.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T00.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	frame  data/Bgs/St404/Van/T00.gif
+	frame  data/Bgs/St404/Van/T01.gif
+	@cmd killentity getlocalvar("self")
+	frame  data/Bgs/St404/Van/T01.gif
+

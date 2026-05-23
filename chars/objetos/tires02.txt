@@ -14,14 +14,15 @@ noatflash	1
 anim idle
 	loop	0
 	delay	100
-	offset	99 168
-	bbox	84 113 31 55
+	offset	100 167
+	bbox	81 99 38 70 4 0
+	platform 71 171 0 0 59 59 12 1000
 	frame	data/chars/Objetos/floater00.gif
 
 
 anim fall
 	loop	1
 	delay	1000
-	offset	99 168
+	offset	100 167
 	frame	data/chars/Objetos/floater00.gif
 

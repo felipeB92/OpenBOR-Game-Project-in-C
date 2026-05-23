@@ -1,17 +1,17 @@
 music		data/bgs/St301/The_Poets_II.ogg
-background		data/bgs/St404/b/bk00.png		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 0.3
-bglayer			data/bgs/St404/b/bg00.png		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 0.4
-bglayer			data/bgs/St404/b/bg01.png		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 0.5
-bglayer			data/bgs/St404/b/bg02.png		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 0.6
-bglayer			data/bgs/St404/b/bg03.png		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 0.7
-bglayer			data/bgs/St404/b/bg04.png		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 4
-bglayer			data/bgs/St404/b/bg05.png		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 5
-bglayer			data/bgs/St404/b/bg06.png		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 6
-bglayer			data/bgs/St404/b/bg07.png		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 7
-bglayer			data/bgs/St404/b/bg08.png		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 8
-bglayer			data/bgs/St404/b/bg09.png		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 10
-bglayer			data/bgs/St404/b/bg10.png		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 10
-panel			data/bgs/St404/b/_map.png		none	none
+background		data/bgs/St404/b/bk00.gif		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 0.3
+bglayer			data/bgs/St404/b/bg00.gif		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 0.4
+bglayer			data/bgs/St404/b/bg01.gif		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 0.5
+bglayer			data/bgs/St404/b/bg02.gif		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 0.6
+bglayer			data/bgs/St404/b/bg03.gif		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 0.7
+bglayer			data/bgs/St404/b/bg04.gif		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 4
+bglayer			data/bgs/St404/b/bg05.gif		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 5
+bglayer			data/bgs/St404/b/bg06.gif		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 6
+bglayer			data/bgs/St404/b/bg07.gif		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 7
+bglayer			data/bgs/St404/b/bg08.gif		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 8
+bglayer			data/bgs/St404/b/bg09.gif		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 10
+bglayer			data/bgs/St404/b/bg10.gif		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 10
+panel			data/bgs/St404/b/_map.gif		none	none
 order			a
 settime			99
 noslow			1

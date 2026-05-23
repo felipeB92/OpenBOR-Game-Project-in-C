@@ -2,7 +2,7 @@ name			Truck404C
 type			none
 shadow			0
 antigravity 100
-setlayer		-8
+setlayer		999
 animationscript		data/scripts/drago.c
 
 Load Lata404

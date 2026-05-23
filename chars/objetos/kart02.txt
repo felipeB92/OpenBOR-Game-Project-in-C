@@ -17,7 +17,7 @@ offscreenkill	1000
 anim spawn
 	loop	0
 	delay	1
-	offset	38 69
+	offset	100 167
 	bbox	16 22 41 46
 	sound	data/sounds/Wheel.wav
 	frame	data/chars/Objetos/Kart00.gif
@@ -25,7 +25,7 @@ anim spawn
 anim idle
 	loop	1
 	delay	3
-	offset	38 69
+	offset	100 167
 	bbox	6 22 60 43
         hitfx	data/sounds/Armas/Pipe.wav
 		attack3  18  30  36  32  15  1  0  0  0  20
@@ -36,6 +36,6 @@ anim idle
 anim fall
 	loop	1
 	delay	1000
-	offset	38 69
+	offset	100 167
 	frame	data/chars/Objetos/Kart01.gif
 

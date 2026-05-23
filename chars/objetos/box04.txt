@@ -16,7 +16,7 @@ anim idle
 	delay	100
 	offset	105 170
 	bbox	87 107 31 63
-	platform 74 84 116 126 5 52
+	platform 66 171 0 0 68 68 12 1000
 	frame	data/chars/Objetos/box04.gif
 
 

@@ -14,14 +14,16 @@ noatflash	1
 anim idle
 	loop	0
 	delay	100
-	offset	99 168
-	bbox	78 126 52 42
+	offset	100 167
+	bbox	78 99 45 70 11 0
+	shadowcoords 100 164
+	platform 68 171 0 0 66 66 18 1000
 	frame	data/chars/Objetos/sandbag00.gif
 
 
 anim fall
 	loop	1
 	delay	1000
-	offset	99 168
+	offset	100 167
 	frame	data/chars/Objetos/sandbag01.gif
 

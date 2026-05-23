@@ -14,14 +14,16 @@ noatflash	1
 anim idle
 	loop	0
 	delay	100
-	offset	99 168
-	bbox	84 113 31 55
+	offset	100 167
+	bbox	86 99 28 70 2 0
+	shadowcoords 100 165
+	platform 75 171 0 0 51 51 9 1000
 	frame	data/chars/Objetos/barrel03.gif
 
 
 anim fall
 	loop	1
 	delay	1000
-	offset	99 168
+	offset	100 167
 	frame	data/chars/Objetos/barrel04.gif
 

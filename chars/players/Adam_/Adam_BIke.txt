@@ -61,15 +61,66 @@ anim walk
 
 
 
-anim jump
-	delay	5
+anim special2
+        energycost 20 1
+        MpOnly 1
+	loop 0
+	delay	3
 	offset	78 115
-	bbox	61 35 26 73
-	frame   data/chars/players/Adam_/Bike/idle00.gif
-@cmd  depost  0
-@cmd  throw  25  5  2  2  0  -1
-@cmd  clearL
-	frame   data/chars/players/Adam_/Bike/idle01.gif
+		sound  data/sounds/Bike.wav
+		attack1  67  41  51  74  50  0  0  0  20  25
+	frame   data/chars/players/Adam_/Bike/Sp100.gif
+       @cmd dasher 2 0 0
+	frame   data/chars/players/Adam_/Bike/Sp101.gif
+	frame   data/chars/players/Adam_/Bike/Sp100.gif
+	frame   data/chars/players/Adam_/Bike/Sp101.gif
+	frame   data/chars/players/Adam_/Bike/Sp100.gif
+	frame   data/chars/players/Adam_/Bike/Sp101.gif
+	frame   data/chars/players/Adam_/Bike/Sp100.gif
+	frame   data/chars/players/Adam_/Bike/Sp101.gif
+	frame   data/chars/players/Adam_/Bike/Sp100.gif
+	frame   data/chars/players/Adam_/Bike/Sp101.gif
+	frame   data/chars/players/Adam_/Bike/Sp100.gif
+	frame   data/chars/players/Adam_/Bike/Sp101.gif
+	frame   data/chars/players/Adam_/Bike/Sp100.gif
+	frame   data/chars/players/Adam_/Bike/Sp101.gif
+	frame   data/chars/players/Adam_/Bike/Sp100.gif
+	frame   data/chars/players/Adam_/Bike/Sp101.gif
+	frame   data/chars/players/Adam_/Bike/Sp100.gif
+	frame   data/chars/players/Adam_/Bike/Sp101.gif
+	frame   data/chars/players/Adam_/Bike/Sp100.gif
+	frame   data/chars/players/Adam_/Bike/Sp101.gif
+
+anim special
+        energycost 20 1
+        MpOnly 1
+	loop 0
+	delay	3
+	offset	78 115
+		sound  data/sounds/Bike.wav
+		attack1  67  48  49  69  50  0  0  0  20  20
+	frame   data/chars/players/Adam_/Bike/Sp100.gif
+       @cmd dasher 2 0 0
+		bbox  0
+	frame   data/chars/players/Adam_/Bike/Sp101.gif
+	frame   data/chars/players/Adam_/Bike/Sp100.gif
+	frame   data/chars/players/Adam_/Bike/Sp101.gif
+	frame   data/chars/players/Adam_/Bike/Sp100.gif
+	frame   data/chars/players/Adam_/Bike/Sp101.gif
+	frame   data/chars/players/Adam_/Bike/Sp100.gif
+	frame   data/chars/players/Adam_/Bike/Sp101.gif
+	frame   data/chars/players/Adam_/Bike/Sp100.gif
+	frame   data/chars/players/Adam_/Bike/Sp101.gif
+	frame   data/chars/players/Adam_/Bike/Sp100.gif
+	frame   data/chars/players/Adam_/Bike/Sp101.gif
+	frame   data/chars/players/Adam_/Bike/Sp100.gif
+	frame   data/chars/players/Adam_/Bike/Sp101.gif
+	frame   data/chars/players/Adam_/Bike/Sp100.gif
+	frame   data/chars/players/Adam_/Bike/Sp101.gif
+	frame   data/chars/players/Adam_/Bike/Sp100.gif
+	frame   data/chars/players/Adam_/Bike/Sp101.gif
+	frame   data/chars/players/Adam_/Bike/Sp100.gif
+	frame   data/chars/players/Adam_/Bike/Sp101.gif
 
 
 

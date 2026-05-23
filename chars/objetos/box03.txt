@@ -16,7 +16,7 @@ anim idle
 	delay	100
 	offset	105 170
 	bbox	87 107 31 63
-	platform 74 84 116 126 5 52
+	platform 74 171 0 0 53 53 10 1000
 	frame	data/chars/Objetos/Box200.gif
 
 

@@ -1,17 +1,17 @@
 music		data/bgs/St301/The_Poets_II.ogg
-background		data/bgs/St404/b/bk00.png		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 0.3
-bglayer			data/bgs/St404/b/bg00.png		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 0.4
-bglayer			data/bgs/St404/b/bg01.png		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 0.5
-bglayer			data/bgs/St404/b/bg02.png		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 0.6
-bglayer			data/bgs/St404/b/bg03.png		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 0.7
-bglayer			data/bgs/St404/b/bg04.png		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 4
-bglayer			data/bgs/St404/b/bg05.png		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 5
-bglayer			data/bgs/St404/b/bg06.png		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 6
-bglayer			data/bgs/St404/b/bg07.png		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 7
-bglayer			data/bgs/St404/b/bg08.png		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 8
-bglayer			data/bgs/St404/b/bg09.png		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 10
-bglayer			data/bgs/St404/b/bg10.png		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 10
-panel			data/bgs/St404/b/_map.png		none	none
+background		data/bgs/St404/b/bk00.gif		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 0.3
+bglayer			data/bgs/St404/b/bg00.gif		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 0.4
+bglayer			data/bgs/St404/b/bg01.gif		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 0.5
+bglayer			data/bgs/St404/b/bg02.gif		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 0.6
+bglayer			data/bgs/St404/b/bg03.gif		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 0.7
+bglayer			data/bgs/St404/b/bg04.gif		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 4
+bglayer			data/bgs/St404/b/bg05.gif		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 5
+bglayer			data/bgs/St404/b/bg06.gif		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 6
+bglayer			data/bgs/St404/b/bg07.gif		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 7
+bglayer			data/bgs/St404/b/bg08.gif		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 8
+bglayer			data/bgs/St404/b/bg09.gif		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 10
+bglayer			data/bgs/St404/b/bg10.gif		0 0 0 0 0 0 -1 1 1 0 0 0 0 0 10
+panel			data/bgs/St404/b/_map.gif		none	none
 order			a
 settime			99
 noslow			1
@@ -23,7 +23,7 @@ spawn2			240 220 300
 spawn3			240 250 300
 spawn4			240 270 300
 
-Wall  323  286  -19  0  180  180  100  144
+Wall  323  286  -19  0  300  300  150  130
 Hole  -234  276  -54  0  287  235  102
 
 spawn  Time01
@@ -39,15 +39,129 @@ Flip 1
 wait
 at 0
 
-group       4 4
+group       3 3
 at          0
 
 
 
-spawn  Fog
-health 50
-	coords  250  250 150
+
+spawn  lata
+Item Cash
+	coords  250  200
 	at  0
+
+spawn  lata
+Item Apple
+	coords  220  220
+	at  0
+
+spawn  Fog
+health 30
+	coords  150  190 150
+	at  0
+
+
+spawn  Delay
+	coords  250  270 150
+	at  0
+
+
+spawn  Delay
+	coords  250  270 150
+	at  0
+
+spawn  Heli404a
+Flip 1
+	coords  -100  270
+	at  0
+
+
+spawn  Kusanagi
+health 30
+	coords  250  200 150
+	at  0
+
+spawn  Kusanagi
+MAp 1
+health 30
+	coords  150  190 150
+	at  0
+
+
+spawn  Delay
+	coords  250  270 150
+	at  0
+
+spawn  Van404A
+Flip 1
+	coords  600  270
+	at  0
+
+spawn  Fog
+health 30
+	coords  250  270 150
+	at  0
+
+spawn  Tiger
+Map 1
+health 30
+	coords  250  270 150
+	at  0
+
+spawn  Kusanagi
+Map 1
+health 30
+	coords  250  270 150
+	at  0
+
+
+spawn  Heli404B
+	coords  600  270
+	at  1
+
+
+spawn  Delay
+	coords  250  270 150
+	at  0
+
+spawn  Kusanagi
+MAp 1
+health 30
+	coords  150  190 150
+	at  1
+
+
+spawn  Delay
+	coords  250  270 150
+	at  1
+
+spawn  Van404B
+Flip 1
+	coords  600  270
+	at  1
+
+
+spawn  Kusanagi
+health 30
+	coords  250  270 150
+	at  1
+
+spawn  Kusanagi
+MAp 1
+health 30
+	coords  150  190 150
+	at  1
+
+
+spawn  Heli404C
+Flip 1
+	coords  -100  270
+	at  1
+
+spawn  Delay
+	coords  250  270 150
+	at  0
+
 
 
 

@@ -30,6 +30,7 @@ know	axel_Knife	data/chars/Players/axel_/axel_Knife.txt
 know	axel_Kunai	data/chars/Players/axel_/axel_Kunai.txt
 know	axel_pipe	data/chars/Players/axel_/axel_Pipe.txt
 know	axel_sword	data/chars/Players/axel_/axel_sword.txt
+know	Axel_Bike	data/chars/Players/Axel_/Axel_BIke.txt
 know	axelSP1		data/chars/Players/axel_/axelSP1.txt
 know	axelSP2		data/chars/Players/axel_/axelSP2.txt
 know	axel_E		data/chars/Players/axel_/axel_E.txt
@@ -42,6 +43,7 @@ know	Blaze_Knife	data/chars/Players/Blaze_/Blaze_Knife.txt
 know	Blaze_Kunai	data/chars/Players/Blaze_/Blaze_Kunai.txt
 know	Blaze_pipe	data/chars/Players/Blaze_/Blaze_pipe.txt
 know	Blaze_Sword	data/chars/Players/Blaze_/Blaze_Sword.txt
+know	Blaze_Bike	data/chars/Players/Blaze_/Blaze_BIke.txt
 know	BlazeSP1	data/chars/Players/Blaze_/BlazeSp1.txt
 know	BlazeSP2	data/chars/Players/Blaze_/BlazeSp2.txt
 know	Blaze_E		data/chars/Players/Blaze_/Blaze_E.txt
@@ -526,6 +528,11 @@ know	Truck404B    	data/Bgs/St404/Truck404B.txt
 know	Truck404C    	data/Bgs/St404/Truck404C.txt
 know	Truck404D    	data/Bgs/St404/Truck404D.txt
 know	Truck404E    	data/Bgs/St404/Truck404E.txt
+know	Van404A   	data/Bgs/St404/Van404A.txt
+know	Van404B   	data/Bgs/St404/Van404B.txt
+know	Heli404A   	data/Bgs/St404/Heli404A.txt
+know	Heli404B   	data/Bgs/St404/Heli404B.txt
+know	Heli404C   	data/Bgs/St404/Heli404C.txt
 
 know	Av405    	data/Bgs/St405/Av405.txt
 

@@ -1,0 +1,110 @@
+name			Heli404C
+type			none
+shadow			0
+antigravity 100
+
+animationscript		data/scripts/drago.c
+
+Load HAku_oh
+Load HakuYo
+
+
+
+anim idle
+	loop	1
+	delay	6
+	offset	186 403
+	frame  data/Bgs/St404/Heli/H300.gif
+	Sound  data/Bgs/St404/heli/helicopter.wav
+	@cmd dasher 0.7 0 0
+	frame  data/Bgs/St404/Heli/H301.gif
+	frame  data/Bgs/St404/Heli/H300.gif
+	frame  data/Bgs/St404/Heli/H301.gif
+	frame  data/Bgs/St404/Heli/H300.gif
+	frame  data/Bgs/St404/Heli/H301.gif
+	frame  data/Bgs/St404/Heli/H300.gif
+	frame  data/Bgs/St404/Heli/H301.gif
+	frame  data/Bgs/St404/Heli/H300.gif
+	frame  data/Bgs/St404/Heli/H301.gif
+	frame  data/Bgs/St404/Heli/H300.gif
+	frame  data/Bgs/St404/Heli/H301.gif
+	frame  data/Bgs/St404/Heli/H300.gif
+	frame  data/Bgs/St404/Heli/H301.gif
+	frame  data/Bgs/St404/Heli/H300.gif
+	frame  data/Bgs/St404/Heli/H301.gif
+	frame  data/Bgs/St404/Heli/H300.gif
+	frame  data/Bgs/St404/Heli/H301.gif
+	frame  data/Bgs/St404/Heli/H300.gif
+	frame  data/Bgs/St404/Heli/H301.gif
+	frame  data/Bgs/St404/Heli/H300.gif
+	frame  data/Bgs/St404/Heli/H301.gif
+	frame  data/Bgs/St404/Heli/H300.gif
+	frame  data/Bgs/St404/Heli/H301.gif
+	frame  data/Bgs/St404/Heli/H300.gif
+	frame  data/Bgs/St404/Heli/H301.gif
+	frame  data/Bgs/St404/Heli/H300.gif
+	frame  data/Bgs/St404/Heli/H301.gif
+	frame  data/Bgs/St404/Heli/H300.gif
+	frame  data/Bgs/St404/Heli/H301.gif
+	frame  data/Bgs/St404/Heli/H300.gif
+	frame  data/Bgs/St404/Heli/H301.gif
+	frame  data/Bgs/St404/Heli/H300.gif
+	frame  data/Bgs/St404/Heli/H301.gif
+	frame  data/Bgs/St404/Heli/H300.gif
+	@cmd dasher 0 0 0
+	frame  data/Bgs/St404/Heli/H301.gif
+	frame  data/Bgs/St404/Heli/H300.gif
+	frame  data/Bgs/St404/Heli/H301.gif
+	frame  data/Bgs/St404/Heli/H300.gif
+	frame  data/Bgs/St404/Heli/H301.gif
+	frame  data/Bgs/St404/Heli/H300.gif
+	frame  data/Bgs/St404/Heli/H301.gif
+	frame  data/Bgs/St404/Heli/H300.gif
+		@cmd  spawn01  "Haku_oh"  -45  173 -20
+		@cmd  spawn01  "Haku_oh"  -40  173 -10
+		@cmd  spawn01  "Hakuyo"  80  173 -10
+		@cmd  spawn01  "Hakuyo"  65  173 -20
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	@cmd dasher 0.7 0 0
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	@cmd killentity getlocalvar("self")
+	frame  data/Bgs/St404/Van/T01.gif
+

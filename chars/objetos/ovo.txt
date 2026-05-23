@@ -17,8 +17,9 @@ Load Boom01
 anim idle
 	loop	1
 	delay	20
-	offset	100 165
-	bbox	84 117 33 49
+	offset	100 167
+	bbox	84 99 32 70 4 0
+	platform 74 171 0 0 53 53 12 1000
 	frame	data/chars/Objetos/egg00.gif
 	frame	data/chars/Objetos/egg01.gif
 	frame	data/chars/Objetos/egg02.gif
@@ -28,7 +29,7 @@ anim idle
 anim fall
 	loop	0
 	delay	2
-	offset	100 165
+	offset	100 167
 	frame	data/chars/Objetos/egg03.gif
 	@cmd  spawn01  "Boom01"  0  1  0
 	frame	data/chars/Objetos/egg04.gif

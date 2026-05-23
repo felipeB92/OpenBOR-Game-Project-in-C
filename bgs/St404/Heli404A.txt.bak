@@ -1,0 +1,110 @@
+name			Heli404A
+type			none
+shadow			0
+antigravity 100
+
+animationscript		data/scripts/drago.c
+
+Load Galsia
+
+
+
+anim idle
+	loop	1
+	delay	6
+	offset	186 403
+	frame  data/Bgs/St404/heli/H100.gif
+	Sound  data/Bgs/St404/heli/helicopter.wav
+	@cmd dasher 0.7 0 0
+	frame  data/Bgs/St404/Heli/H101.gif
+	frame  data/Bgs/St404/Heli/H100.gif
+	frame  data/Bgs/St404/Heli/H101.gif
+	frame  data/Bgs/St404/Heli/H100.gif
+	frame  data/Bgs/St404/Heli/H101.gif
+	frame  data/Bgs/St404/Heli/H100.gif
+	frame  data/Bgs/St404/Heli/H101.gif
+	frame  data/Bgs/St404/Heli/H100.gif
+	frame  data/Bgs/St404/Heli/H101.gif
+	frame  data/Bgs/St404/Heli/H100.gif
+	frame  data/Bgs/St404/Heli/H101.gif
+	frame  data/Bgs/St404/Heli/H100.gif
+	frame  data/Bgs/St404/Heli/H101.gif
+	frame  data/Bgs/St404/Heli/H100.gif
+	frame  data/Bgs/St404/Heli/H101.gif
+	frame  data/Bgs/St404/Heli/H100.gif
+	frame  data/Bgs/St404/Heli/H101.gif
+	frame  data/Bgs/St404/Heli/H100.gif
+	frame  data/Bgs/St404/Heli/H101.gif
+	frame  data/Bgs/St404/Heli/H100.gif
+	frame  data/Bgs/St404/Heli/H101.gif
+	frame  data/Bgs/St404/Heli/H100.gif
+	frame  data/Bgs/St404/Heli/H101.gif
+	frame  data/Bgs/St404/Heli/H100.gif
+	frame  data/Bgs/St404/Heli/H101.gif
+	frame  data/Bgs/St404/Heli/H100.gif
+	frame  data/Bgs/St404/Heli/H101.gif
+	frame  data/Bgs/St404/Heli/H100.gif
+	frame  data/Bgs/St404/Heli/H101.gif
+	frame  data/Bgs/St404/Heli/H100.gif
+	frame  data/Bgs/St404/Heli/H101.gif
+	frame  data/Bgs/St404/Heli/H100.gif
+	frame  data/Bgs/St404/Heli/H101.gif
+	frame  data/Bgs/St404/Heli/H100.gif
+	@cmd dasher 0 0 0
+	frame  data/Bgs/St404/Heli/H101.gif
+	frame  data/Bgs/St404/Heli/H100.gif
+	frame  data/Bgs/St404/Heli/H101.gif
+	frame  data/Bgs/St404/Heli/H100.gif
+	frame  data/Bgs/St404/Heli/H101.gif
+	frame  data/Bgs/St404/Heli/H100.gif
+	frame  data/Bgs/St404/Heli/H101.gif
+	frame  data/Bgs/St404/Heli/H100.gif
+		@cmd  spawn01  "Galsia"  -45  173 -20
+		@cmd  spawn01  "Galsia"  -40  173 -10
+		@cmd  spawn01  "Galsia"  80  173 -10
+		@cmd  spawn01  "Galsia"  65  173 -20
+		offset  183  403
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	@cmd dasher 0.7 0 0
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	frame  data/Bgs/St404/Heli/H00.gif
+	frame  data/Bgs/St404/Heli/H01.gif
+	@cmd killentity getlocalvar("self")
+	frame  data/Bgs/St404/Van/T01.gif
+

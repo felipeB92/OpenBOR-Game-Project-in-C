@@ -4,23 +4,27 @@
 name	Box
 health	1
 type	obstacle
-gfxshadow	1
+gfxshadow	0
+nolife 1
+noname 1
 #icon	data/chars/misc/charicon.gif
 diesound		data/sounds/Wood.wav
 noatflash	1
 
+
 anim idle
-	loop	0
-	delay	100
-	offset	99 168
-	bbox	84 113 31 55
-	platform 74 84 116 126 5 52
-	frame	data/chars/Objetos/Box00.gif
+    loop 0
+    delay 100
+    offset	105 170
+
+    bbox 16 8 32 56
+    platform 74 171 0 0 53 53 11 1000
+    frame data/chars/Objetos/Box00.gif
 
 
 anim fall
 	loop	1
 	delay	1000
-	offset	99 168
+	offset	48 72
 	frame	data/chars/Objetos/Box01.gif
 

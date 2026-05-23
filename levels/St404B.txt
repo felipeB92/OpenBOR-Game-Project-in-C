@@ -1,11 +1,11 @@
 music		data/bgs/St301/The_Poets_II.ogg
-background	data/bgs/St404/A/bk00.png	0 0 0 0 0 0 -1 1 1 0 0 0 0 0 0.1
-bglayer		data/bgs/St404/A/bg00.png	0 0 0 0 0 0 -1 1 1 0 0 0 0 0 0.15
-bglayer		data/bgs/St404/A/bg01.png	0 0 0 0 0 0 -1 1 1 0 0 0 0 0 0.2
-bglayer		data/bgs/St404/A/bg02.png	0 0 0 0 0 0 -1 1 1 0 1 3 10 0.3 0.2
-bglayer		data/bgs/St404/A/bg03.png	0 0 0 0 0 0 -1 1 1 0 0 0 0 0 0.2
-bglayer		data/bgs/St404/A/bg04.png	0 0 0 0 0 0 -1 1 1 0 0 0 0 0 10 1
-panel		data/bgs/St404/A/_map.png		none	none
+background	data/bgs/St404/A/bk00.gif	0 0 0 0 0 0 -1 1 1 0 0 0 0 0 0.1
+bglayer		data/bgs/St404/A/bg00.gif	0 0 0 0 0 0 -1 1 1 0 0 0 0 0 0.15
+bglayer		data/bgs/St404/A/bg01.gif	0 0 0 0 0 0 -1 1 1 0 0 0 0 0 0.2
+bglayer		data/bgs/St404/A/bg02.gif	0 0 0 0 0 0 -1 1 1 0 1 3 10 0.3 0.2
+bglayer		data/bgs/St404/A/bg03.gif	0 0 0 0 0 0 -1 1 1 0 0 0 0 0 0.2
+bglayer		data/bgs/St404/A/bg04.gif	0 0 0 0 0 0 -1 1 1 0 0 0 0 0 10 1
+panel		data/bgs/St404/A/_map.gif		none	none
 order			a
 settime			99
 noslow			1

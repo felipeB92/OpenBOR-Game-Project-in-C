@@ -11,18 +11,19 @@ noname 1
 diesound		data/sounds/Wood.wav
 noatflash	1
 
+
 anim idle
-	loop	0
-	delay	100
-	offset	48 72
-	bbox	8 0 67 72
-	platform 74 84 116 126 5 52
-	frame	data/chars/Objetos/Box00.gif
+    loop 0
+    delay 100
+    offset	105 170
+    bbox 83 108 41 63
+    platform 74 171 0 0 53 53 11 1000
+    frame data/chars/Objetos/Box00.gif
 
 
 anim fall
 	loop	1
 	delay	1000
-	offset	48 72
+    offset	105 170
 	frame	data/chars/Objetos/Box01.gif
 

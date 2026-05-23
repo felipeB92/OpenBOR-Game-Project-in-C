@@ -609,30 +609,40 @@ script continue data/scripts/continue.c
 #file	data/levels/St403C.txt
 
 ___________________________________________________________
-#5A - Ruas com pontes
+#4A - Ruas com pontes
 
 #z	180 255
 
 #file	data/levels/St404A.txt
 
 
-#5A - cORRIDA Ponte
-#z	180 255
+#4A - Corrida Ponte
 
-#file	data/levels/St404b.txt
+z	180 255
+
+file	data/levels/St404b.txt
 
 
-#5A - cORRIDA deserto
+#4A - Corrida deserto
 
-#z	180 255
+z	180 255
 
-#file	data/levels/St404c.txt
+file	data/levels/St404c.txt
 
-#5A - cORRIDA caminhão
+#4A - cORRIDA caminhão
 
 z	180 255
 
 file	data/levels/St404D.txt
+
+#4E - estrada
+
+z	180 255
+
+file	data/levels/St404E.txt
+
+
+Next
 
 #5A - saguão Aeroporto
 
@@ -652,4 +662,23 @@ file	data/levels/St405B.txt
 z	170 275
 
 file	data/levels/St405C.txt
+
+
+#------------------
+
+set	    T
+lives         5
+credits       99
+nosame	      1 1
+continuescore 2
+canSave       2
+script continue data/scripts/continue.c
+
+
+#------------------
+
+#Treino
+z 185 270
+
+file	data/levels/T.txt
 

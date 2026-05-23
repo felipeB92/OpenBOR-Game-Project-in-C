@@ -13,15 +13,16 @@ noatflash	1
 
 anim idle
 	loop	0
+	offset	100 167
 	delay	100
-	offset	33 54
-	bbox	5 5 42 47
+	bbox	76 99 48 70 15 0
+	platform 56 171 0 0 88 88 23 1000
 	frame	data/chars/Objetos/Bloqueio00.gif
 
 
 anim fall
 	loop	1
 	delay	1000
-	offset	26 61
+	offset	100 167
 	frame	data/chars/Objetos/Bloqueio01.gif
 

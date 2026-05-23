@@ -11,7 +11,7 @@ antigrab 2
 JUMPHEIGHT 1 1
 Jumpheight 3
 atchain    1 1 2 3
-weapons				Axel_Knife Axel_Sword Axel_pipe Axel_Kunai
+weapons				Axel_Knife Axel_Sword Axel_pipe Axel_Kunai Axel_Bike
 icon	data/chars/players/Axel_/icon.gif 1
 diesound data/sounds/Adamdie.wav
 running	20	3	2	1	1
@@ -27,6 +27,7 @@ Load Axel_Knife
 Load Axel_Pipe
 Load Axel_Kunai
 Load Axel_Sword
+Load Axel_Bike
 
 Com d d freespecial5
 Com u u freespecial6
