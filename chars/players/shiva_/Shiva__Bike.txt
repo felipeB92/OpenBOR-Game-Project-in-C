@@ -1,0 +1,222 @@
+name	Shiva__Bike
+health	100
+mp 20
+Falldie 3
+speed	12
+type	None
+candamage			enemy npc obstacle
+antigrab 9
+JUMPHEIGHT 1 1
+Jumpheight 3
+atchain    1 1 1 1
+icon	data/chars/players/Shiva_/icon.gif 1
+diesound data/sounds/Adamdie.wav
+gfxshadow			1 1
+noquake				1 0
+facing				1
+nodrop				2
+cantgrab			1
+modelflag			3
+weaploss			3
+
+animationscript		data/scripts/drago.c
+
+Load T00
+Load Motofall2
+
+
+Com d d freespecial5
+Com u u freespecial6
+
+remap data/chars/players/Shiva_/idle00.gif data/chars/players/Shiva_/map01.gif
+remap data/chars/players/Shiva_/idle00.gif data/chars/players/Shiva_/map02.gif
+remap data/chars/players/Shiva_/idle00.gif data/chars/players/Shiva_/map03.gif
+remap data/chars/players/Shiva_/idle00.gif data/chars/players/Shiva_/map04.gif
+
+
+
+
+anim idle
+	loop	1
+	delay	6
+	offset	78 115
+	bbox	47 31 22 50
+	frame   data/chars/players/Shiva_/Bike/idle00.gif
+@cmd  depost  0
+@cmd  throw  25  5  2  2  0  -1
+@cmd  clearL
+	frame   data/chars/players/Shiva_/Bike/idle01.gif
+
+
+anim walk
+	loop	1
+	delay	4
+	offset	78 115
+	bbox	48 37 22 39
+	frame   data/chars/players/Shiva_/Bike/idle00.gif
+@cmd  depost  0
+@cmd  throw  25  5  2  2  0  -1
+@cmd  clearL
+	frame   data/chars/players/Shiva_/Bike/idle01.gif
+
+
+
+anim special2
+        energycost 20 1
+        MpOnly 1
+	loop 0
+	delay	3
+	offset	78 115
+		sound  data/sounds/Bike.wav
+		attack1  67  41  51  74  50  0  0  0  20  25
+	frame   data/chars/players/Shiva_/Bike/Sp100.gif
+       @cmd dasher 2 0 0
+	frame   data/chars/players/Shiva_/Bike/Sp101.gif
+	frame   data/chars/players/Shiva_/Bike/Sp100.gif
+	frame   data/chars/players/Shiva_/Bike/Sp101.gif
+	frame   data/chars/players/Shiva_/Bike/Sp100.gif
+	frame   data/chars/players/Shiva_/Bike/Sp101.gif
+	frame   data/chars/players/Shiva_/Bike/Sp100.gif
+	frame   data/chars/players/Shiva_/Bike/Sp101.gif
+	frame   data/chars/players/Shiva_/Bike/Sp100.gif
+	frame   data/chars/players/Shiva_/Bike/Sp101.gif
+	frame   data/chars/players/Shiva_/Bike/Sp100.gif
+	frame   data/chars/players/Shiva_/Bike/Sp101.gif
+	frame   data/chars/players/Shiva_/Bike/Sp100.gif
+	frame   data/chars/players/Shiva_/Bike/Sp101.gif
+	frame   data/chars/players/Shiva_/Bike/Sp100.gif
+	frame   data/chars/players/Shiva_/Bike/Sp101.gif
+	frame   data/chars/players/Shiva_/Bike/Sp100.gif
+	frame   data/chars/players/Shiva_/Bike/Sp101.gif
+	frame   data/chars/players/Shiva_/Bike/Sp100.gif
+	frame   data/chars/players/Shiva_/Bike/Sp101.gif
+
+anim special
+        energycost 20 1
+        MpOnly 1
+	loop 0
+	delay	3
+	offset	78 115
+		sound  data/sounds/Bike.wav
+		attack1  67  48  49  69  50  0  0  0  20  20
+	frame   data/chars/players/Shiva_/Bike/Sp100.gif
+       @cmd dasher 2 0 0
+		bbox  0
+	frame   data/chars/players/Shiva_/Bike/Sp101.gif
+	frame   data/chars/players/Shiva_/Bike/Sp100.gif
+	frame   data/chars/players/Shiva_/Bike/Sp101.gif
+	frame   data/chars/players/Shiva_/Bike/Sp100.gif
+	frame   data/chars/players/Shiva_/Bike/Sp101.gif
+	frame   data/chars/players/Shiva_/Bike/Sp100.gif
+	frame   data/chars/players/Shiva_/Bike/Sp101.gif
+	frame   data/chars/players/Shiva_/Bike/Sp100.gif
+	frame   data/chars/players/Shiva_/Bike/Sp101.gif
+	frame   data/chars/players/Shiva_/Bike/Sp100.gif
+	frame   data/chars/players/Shiva_/Bike/Sp101.gif
+	frame   data/chars/players/Shiva_/Bike/Sp100.gif
+	frame   data/chars/players/Shiva_/Bike/Sp101.gif
+	frame   data/chars/players/Shiva_/Bike/Sp100.gif
+	frame   data/chars/players/Shiva_/Bike/Sp101.gif
+	frame   data/chars/players/Shiva_/Bike/Sp100.gif
+	frame   data/chars/players/Shiva_/Bike/Sp101.gif
+	frame   data/chars/players/Shiva_/Bike/Sp100.gif
+	frame   data/chars/players/Shiva_/Bike/Sp101.gif
+
+
+
+anim attack1
+	loop	0
+	delay	3
+	offset	78 115
+	bbox	58 37 28 80
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/players/Shiva_/Bike/a100.gif
+	frame	data/chars/players/Shiva_/Bike/a101.gif
+	frame	data/chars/players/Shiva_/Bike/a102.gif
+	frame	data/chars/players/Shiva_/Bike/a103.gif
+		attack1  0  54  61  23  10  0  0  0  0  20
+	frame	data/chars/players/Shiva_/Bike/a104.gif
+		delay  5
+	frame	data/chars/players/Shiva_/Bike/a105.gif
+
+
+anim rise
+	delay	16
+	offset	78 115
+	bbox	42 36 32 41
+	frame   data/chars/players/Shiva_/Bike/idle00.gif
+@cmd  depost  0
+@cmd  throw  25  5  2  2  0  -1
+@cmd  clearL
+	frame   data/chars/players/Shiva_/Bike/idle01.gif
+
+
+anim pain
+	loop	0
+	offset	78 115
+	bbox	50 37 35 71
+	delay	6
+	frame	data/chars/players/Shiva_/Bike/pain00.gif
+	frame	data/chars/players/Shiva_/Bike/pain01.gif
+
+
+
+anim Fall
+	loop	0
+	offset	78 115
+	delay	1
+	frame	data/chars/players/Shiva_/Bike/pain00.gif
+	delay	20
+	@cmd  spawn01  "Motofall2"  0  0  0
+		offset  201  183
+	frame	data/chars/players/Shiva_/fall100.gif
+		offset  170  179
+	frame  data/chars/players/Shiva_/fall101.gif
+		offset  194  179
+	frame	data/chars/players/Shiva_/fall102.gif
+
+
+anim Death
+	loop	0
+	offset	189 178
+	delay	5
+		move  -5
+	frame	data/chars/players/Shiva_/fall102.gif
+	frame  data/chars/players/Shiva_/fall102.gif
+	frame	data/chars/players/Shiva_/fall102.gif
+	frame	data/chars/players/Shiva_/fall102.gif
+	frame  data/chars/players/Shiva_/fall102.gif
+	frame	data/chars/players/Shiva_/fall102.gif
+	frame	data/chars/players/Shiva_/fall102.gif
+	frame  data/chars/players/Shiva_/fall102.gif
+	frame	data/chars/players/Shiva_/fall102.gif
+	frame	data/chars/players/Shiva_/fall102.gif
+	frame  data/chars/players/Shiva_/fall102.gif
+	frame	data/chars/players/Shiva_/fall102.gif
+	frame	data/chars/players/Shiva_/fall102.gif
+	frame  data/chars/players/Shiva_/fall102.gif
+	frame	data/chars/players/Shiva_/fall102.gif
+	frame	data/chars/players/Shiva_/fall102.gif
+	frame  data/chars/players/Shiva_/fall102.gif
+	frame	data/chars/players/Shiva_/fall102.gif
+	frame	data/chars/players/Shiva_/fall102.gif
+	frame  data/chars/players/Shiva_/fall102.gif
+	frame	data/chars/players/Shiva_/fall102.gif
+	frame	data/chars/players/Shiva_/fall102.gif
+	frame  data/chars/players/Shiva_/fall102.gif
+	frame	data/chars/players/Shiva_/fall102.gif
+	frame	data/chars/players/Shiva_/fall102.gif
+	frame  data/chars/players/Shiva_/fall102.gif
+	frame	data/chars/players/Shiva_/fall102.gif
+	frame	data/chars/players/Shiva_/fall102.gif
+	frame  data/chars/players/Shiva_/fall102.gif
+	frame	data/chars/players/Shiva_/fall102.gif
+	frame	data/chars/players/Shiva_/fall102.gif
+	frame  data/chars/players/Shiva_/fall102.gif
+	frame	data/chars/players/Shiva_/fall102.gif
+	frame	data/chars/players/Shiva_/fall102.gif
+	frame  data/chars/players/Shiva_/fall102.gif
+	frame	data/chars/players/Adam_/00.gif
+

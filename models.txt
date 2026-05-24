@@ -68,6 +68,7 @@ know	MaxSP2		data/chars/Players/Max_/MaxSP2.txt
 know	MAx_Knife	data/chars/Players/Max_/Max_Knife.txt
 know	MAx_kunai	data/chars/Players/Max_/Max_kunai.txt
 know	MAx_Pipe	data/chars/Players/Max_/Max_Pipe.txt
+know	MAx_Bike	data/chars/Players/Max_/Max_Bike.txt
 know	MAx_Sword	data/chars/Players/Max_/Max_Sword.txt
 
 load	Skate_		data/chars/Players/Skate_/Skate_.txt
@@ -75,6 +76,7 @@ know	Skate_Knife	data/chars/Players/Skate_/Skate_Knife.txt
 know	Skate_Kunai	data/chars/Players/Skate_/Skate_Kunai.txt
 know	Skate_Sword	data/chars/Players/Skate_/Skate_Sword.txt
 know	Skate_pipe	data/chars/Players/Skate_/Skate_pipe.txt
+know	Skate_Bike	data/chars/Players/Skate_/Skate_Bike.txt
 know	SkateSp1	data/chars/Players/Skate_/SkateSp1.txt
 know	SkateSp2	data/chars/Players/Skate_/SkateSp2.txt
 
@@ -82,6 +84,7 @@ load	Zan_		data/chars/Players/Zan_/Zan_.txt
 know	ZanSp1		data/chars/Players/Zan_/ZanSP1.txt
 know	ZanSp2		data/chars/Players/Zan_/ZanSP2.txt
 know	Zan_powerball	data/chars/Players/Zan_/Zan_Powerball.txt
+know	Zan_Bike	data/chars/Players/Zan_/Zan_Bike.txt
 know	powerball	data/chars/Players/Zan_/Powerball.txt
 
 
@@ -90,6 +93,7 @@ know	Roo_Knife	data/chars/Players/Roo_/Roo_Knife.txt
 know	Roo_Kunai	data/chars/Players/Roo_/Roo_Kunai.txt
 know	Roo_Pipe	data/chars/Players/Roo_/Roo_Pipe.txt
 know	Roo_Sword	data/chars/Players/Roo_/Roo_Sword.txt
+know	Roo_Bike	data/chars/Players/Roo_/Roo_Bike.txt
 know	RooSP1		data/chars/Players/Roo_/RooSP1.txt
 know	RooSP2		data/chars/Players/Roo_/RooSP2.txt
 know	RooSP3		data/chars/Players/Roo_/RooSP3.txt
@@ -102,6 +106,7 @@ know	shiva_Knife	data/chars/Players/Shiva_/Shiva_Knife.txt
 know	shiva_Kunai	data/chars/Players/Shiva_/Shiva_Kunai.txt
 know	shiva_pipe	data/chars/Players/Shiva_/Shiva_pipe.txt
 know	shiva_Sword	data/chars/Players/Shiva_/Shiva_Sword.txt
+know	shiva_Bike	data/chars/Players/Shiva_/Shiva_Bike.txt
 know	shivaSp1	data/chars/Players/Shiva_/ShivaSp1.txt
 know	shivaSp2	data/chars/Players/Shiva_/ShivaSp2.txt
 know	shivap01	data/chars/Players/Shiva_/Shivap01.txt
@@ -111,12 +116,14 @@ know	shiva__Knife	data/chars/Players/Shiva_/Shiva__Knife.txt
 know	shiva__Kunai	data/chars/Players/Shiva_/Shiva__Kunai.txt
 know	shiva__pipe	data/chars/Players/Shiva_/Shiva__pipe.txt
 know	shiva__Sword	data/chars/Players/Shiva_/Shiva__Sword.txt
+know	shiva__Bike	data/chars/Players/Shiva_/Shiva__Bike.txt
 
 load	MR_X_		data/chars/Players/MRX_/MR_X_.txt
 know	MR_X_Knife	data/chars/Players/MRX_/MR_X_Knife.txt
 know	MR_X_Kunai	data/chars/Players/MRX_/MR_X_Kunai.txt
 know	MR_X_Pipe	data/chars/Players/MRX_/MR_X_Pipe.txt
 know	MR_X_Sword	data/chars/Players/MRX_/MR_X_Sword.txt
+know	MR_X_Bike	data/chars/Players/MRX_/MR_X_Bike.txt
 know    Tiro01P		data/chars/Enemys/MRX/Tiro01P.txt
 know    Tiro01PP	data/chars/Enemys/MRX/Tiro01PP.txt
 know    Tiro02P		data/chars/Enemys/MRX/Tiro02P.txt

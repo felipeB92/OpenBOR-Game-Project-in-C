@@ -11,7 +11,7 @@ antigrab 2
 JUMPHEIGHT 1 1
 Jumpheight 3
 atchain    1 1 2 3
-weapons				Max_Knife Max_Sword Max_pipe Max_Kunai
+weapons				Max_Knife Max_Sword Max_pipe Max_Kunai Max_bike
 icon	data/chars/players/Max_/icon.gif 1
 diesound data/sounds/Adamdie.wav
 running	19	3	2	1	1
@@ -29,6 +29,7 @@ Load Max_Knife
 Load max_Pipe
 Load Max_Kunai
 Load Max_Sword
+Load max_Bike
 
 Com d d freespecial5
 Com u u freespecial6

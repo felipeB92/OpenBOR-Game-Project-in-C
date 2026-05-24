@@ -1,0 +1,226 @@
+name	Blaze_Bike
+health	100
+mp 20
+Falldie 3
+speed	12
+type	None
+candamage			enemy npc obstacle
+antigrab 9
+JUMPHEIGHT 1 1
+Jumpheight 3
+atchain    1 1 1 1
+icon	data/chars/players/Blaze_/icon.gif 1
+diesound data/sounds/Blazedie.wav
+gfxshadow			1 1
+noquake				1 0
+facing				1
+nodrop				2
+cantgrab			1
+modelflag			3
+weaploss			3
+
+animationscript		data/scripts/drago.c
+
+Load T00
+Load Motofall2
+
+
+Com d d freespecial5
+Com u u freespecial6
+
+remap data/chars/players/Blaze_/idle00.gif data/chars/players/Blaze_/map01.gif
+remap data/chars/players/Blaze_/idle00.gif data/chars/players/Blaze_/map02.gif
+remap data/chars/players/Blaze_/idle00.gif data/chars/players/Blaze_/map03.gif
+remap data/chars/players/Blaze_/idle00.gif data/chars/players/Blaze_/map04.gif
+
+
+
+
+anim idle
+	loop	1
+	delay	6
+	offset	114 181
+	bbox	101 107 31 52
+	frame   data/chars/players/Blaze_/Bike/idle00.gif
+@cmd  depost  0
+@cmd  throw  25  5  2  2  0  -1
+@cmd  clearL
+	frame   data/chars/players/Blaze_/Bike/idle01.gif
+
+
+anim walk
+	loop	1
+	delay	4
+	offset	114 182
+	bbox	111 108 26 44
+	frame   data/chars/players/Blaze_/Bike/idle00.gif
+@cmd  depost  0
+@cmd  throw  25  5  2  2  0  -1
+@cmd  clearL
+	frame   data/chars/players/Blaze_/Bike/idle01.gif
+
+
+
+anim special2
+        energycost 20 1
+        MpOnly 1
+	loop 0
+	delay	3
+	offset	114 182
+		sound  data/sounds/Bike.wav
+		attack1  100  111  59  72  50  0  0  0  20  25
+	frame   data/chars/players/Blaze_/Bike/Sp100.gif
+       @cmd dasher 2 0 0
+	frame   data/chars/players/Blaze_/Bike/Sp101.gif
+	frame   data/chars/players/Blaze_/Bike/Sp100.gif
+	frame   data/chars/players/Blaze_/Bike/Sp101.gif
+	frame   data/chars/players/Blaze_/Bike/Sp100.gif
+	frame   data/chars/players/Blaze_/Bike/Sp101.gif
+	frame   data/chars/players/Blaze_/Bike/Sp100.gif
+	frame   data/chars/players/Blaze_/Bike/Sp101.gif
+	frame   data/chars/players/Blaze_/Bike/Sp100.gif
+	frame   data/chars/players/Blaze_/Bike/Sp101.gif
+	frame   data/chars/players/Blaze_/Bike/Sp100.gif
+	frame   data/chars/players/Blaze_/Bike/Sp101.gif
+	frame   data/chars/players/Blaze_/Bike/Sp100.gif
+	frame   data/chars/players/Blaze_/Bike/Sp101.gif
+	frame   data/chars/players/Blaze_/Bike/Sp100.gif
+	frame   data/chars/players/Blaze_/Bike/Sp101.gif
+	frame   data/chars/players/Blaze_/Bike/Sp100.gif
+	frame   data/chars/players/Blaze_/Bike/Sp101.gif
+	frame   data/chars/players/Blaze_/Bike/Sp100.gif
+	frame   data/chars/players/Blaze_/Bike/Sp101.gif
+
+anim special
+        energycost 20 1
+        MpOnly 1
+	loop 0
+	delay	3
+	offset	114 182
+		sound  data/sounds/Bike.wav
+		attack1  115  113  40  69  50  0  0  0  20  20
+	frame   data/chars/players/Blaze_/Bike/Sp100.gif
+       @cmd dasher 2 0 0
+		bbox  0
+	frame   data/chars/players/Blaze_/Bike/Sp101.gif
+	frame   data/chars/players/Blaze_/Bike/Sp100.gif
+	frame   data/chars/players/Blaze_/Bike/Sp101.gif
+	frame   data/chars/players/Blaze_/Bike/Sp100.gif
+	frame   data/chars/players/Blaze_/Bike/Sp101.gif
+	frame   data/chars/players/Blaze_/Bike/Sp100.gif
+	frame   data/chars/players/Blaze_/Bike/Sp101.gif
+	frame   data/chars/players/Blaze_/Bike/Sp100.gif
+	frame   data/chars/players/Blaze_/Bike/Sp101.gif
+	frame   data/chars/players/Blaze_/Bike/Sp100.gif
+	frame   data/chars/players/Blaze_/Bike/Sp101.gif
+	frame   data/chars/players/Blaze_/Bike/Sp100.gif
+	frame   data/chars/players/Blaze_/Bike/Sp101.gif
+	frame   data/chars/players/Blaze_/Bike/Sp100.gif
+	frame   data/chars/players/Blaze_/Bike/Sp101.gif
+	frame   data/chars/players/Blaze_/Bike/Sp100.gif
+	frame   data/chars/players/Blaze_/Bike/Sp101.gif
+	frame   data/chars/players/Blaze_/Bike/Sp100.gif
+	frame   data/chars/players/Blaze_/Bike/Sp101.gif
+
+
+
+anim attack1
+	loop	0
+	delay	3
+	offset	134 181
+	bbox	123 106 31 43
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/players/Blaze_/Bike/a201.gif
+	frame	data/chars/players/Blaze_/Bike/a202.gif
+	frame	data/chars/players/Blaze_/Bike/a203.gif
+		attack1  95  114  51  19  9  0  0  0  0  20
+	frame	data/chars/players/Blaze_/Bike/a204.gif
+		delay  5
+	frame	data/chars/players/Blaze_/Bike/a205.gif
+		Attack1  0
+	frame	data/chars/players/Blaze_/Bike/a202.gif
+	frame	data/chars/players/Blaze_/Bike/a201.gif
+
+
+anim rise
+	delay	16
+	offset	114 182
+	bbox	52 37 34 61
+	frame   data/chars/players/Blaze_/Bike/idle00.gif
+@cmd  depost  0
+@cmd  throw  25  5  2  2  0  -1
+@cmd  clearL
+		bbox  111  108  32  49
+	frame   data/chars/players/Blaze_/Bike/idle01.gif
+
+
+anim pain
+	loop	0
+	offset	114 182
+	bbox	50 37 35 71
+	delay	6
+	frame	data/chars/players/Blaze_/Bike/pain00.gif
+		bbox  108  104  23  61
+	frame	data/chars/players/Blaze_/Bike/pain01.gif
+
+
+
+anim Fall
+	loop	0
+	offset	115 182
+	delay	1
+	frame	data/chars/players/Blaze_/Bike/pain00.gif
+	delay	20
+	@cmd  spawn01  "Motofall2"  0  0  0
+		offset  161  179
+	frame	data/chars/players/Blaze_/fall100.gif
+		offset  185  178
+	frame  data/chars/players/Blaze_/fall101.gif
+		offset  185  180
+	frame	data/chars/players/Blaze_/fall102.gif
+
+
+anim Death
+	loop	0
+	offset	179 180
+	delay	5
+		move  -5
+	frame	data/chars/players/Blaze_/fall102.gif
+	frame  data/chars/players/Blaze_/fall102.gif
+	frame	data/chars/players/Blaze_/fall102.gif
+	frame	data/chars/players/Blaze_/fall102.gif
+	frame  data/chars/players/Blaze_/fall102.gif
+	frame	data/chars/players/Blaze_/fall102.gif
+	frame	data/chars/players/Blaze_/fall102.gif
+	frame  data/chars/players/Blaze_/fall102.gif
+	frame	data/chars/players/Blaze_/fall102.gif
+	frame	data/chars/players/Blaze_/fall102.gif
+	frame  data/chars/players/Blaze_/fall102.gif
+	frame	data/chars/players/Blaze_/fall102.gif
+	frame	data/chars/players/Blaze_/fall102.gif
+	frame  data/chars/players/Blaze_/fall102.gif
+	frame	data/chars/players/Blaze_/fall102.gif
+	frame	data/chars/players/Blaze_/fall102.gif
+	frame  data/chars/players/Blaze_/fall102.gif
+	frame	data/chars/players/Blaze_/fall102.gif
+	frame	data/chars/players/Blaze_/fall102.gif
+	frame  data/chars/players/Blaze_/fall102.gif
+	frame	data/chars/players/Blaze_/fall102.gif
+	frame	data/chars/players/Blaze_/fall102.gif
+	frame  data/chars/players/Blaze_/fall102.gif
+	frame	data/chars/players/Blaze_/fall102.gif
+	frame	data/chars/players/Blaze_/fall102.gif
+	frame  data/chars/players/Blaze_/fall102.gif
+	frame	data/chars/players/Blaze_/fall102.gif
+	frame	data/chars/players/Blaze_/fall102.gif
+	frame  data/chars/players/Blaze_/fall102.gif
+	frame	data/chars/players/Blaze_/fall102.gif
+	frame	data/chars/players/Blaze_/fall102.gif
+	frame  data/chars/players/Blaze_/fall102.gif
+	frame	data/chars/players/Blaze_/fall102.gif
+	frame	data/chars/players/Blaze_/fall102.gif
+	frame  data/chars/players/Blaze_/fall102.gif
+	frame	data/chars/players/Adam_/00.gif
+

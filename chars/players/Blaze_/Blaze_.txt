@@ -11,7 +11,7 @@ antigrab 2
 JUMPHEIGHT 1 1
 Jumpheight 3
 atchain    1 1 2 3
-weapons				Blaze_Knife Blaze_Sword Blaze_pipe Blaze_Kunai
+weapons				Blaze_Knife Blaze_Sword Blaze_pipe Blaze_Kunai	Blaze_bike
 icon	data/chars/players/Blaze_/icon.gif 1
 diesound data/chars/players/Blaze_/death.wav
 running	24	3	2	1	1
@@ -29,6 +29,7 @@ Load Blaze_Knife
 Load Blaze_Pipe
 Load Blaze_Kunai
 Load Blaze_Sword
+Load Blaze_Bike
 
 Com d d freespecial5
 Com u u freespecial6

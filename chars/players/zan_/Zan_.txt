@@ -11,7 +11,7 @@ antigrab 2
 JUMPHEIGHT 1 1
 Jumpheight 3
 atchain    1 1 2
-weapons				Zan_PowerBall Zan_PowerBall Zan_PowerBall Zan_PowerBall
+weapons				Zan_PowerBall Zan_PowerBall Zan_PowerBall Zan_PowerBall Zan_bike
 icon	data/chars/players/Zan_/icon.gif 1
 diesound data/chars/players/Zan_/death.wav
 running	24	3	2	1	1
@@ -26,6 +26,7 @@ Load ZanSP2
 
 
 Load Zan_PowerBall
+Load Zan_Bike
 
 
 Com d d freespecial5

@@ -40,17 +40,18 @@ spawn  Box03
 	coords  350  190
 	at  0
 
-spawn  Yasha
+spawn  Bob
+Alias Bongo
 MAp 4
 Boss 1
-	coords  410  190
-	at  0
+	coords  600  190
+	at  300
 
-spawn  Monalisa
+spawn  Bob
 Boss 1
 map 3 
-	coords  450  270
-	at  0
+	coords -100  270
+	at  300
 
 
 
