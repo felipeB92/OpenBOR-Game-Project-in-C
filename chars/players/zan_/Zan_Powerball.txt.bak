@@ -4,7 +4,7 @@ mp 20
 #mprate 1
 riseinv				0.4 1
 speed	14
-type	player
+type	none
 gfxshadow	1
 candamage			enemy npc obstacle
 antigrab 2
@@ -37,7 +37,7 @@ remap data/chars/players/Zan_/idle00.gif data/chars/players/Zan_/map04.gif
 
 anim idle
 	loop	1
-	delay	2
+	delay	6
 	offset	141 172
 	bbox	125 91 32 82
 	frame   data/chars/players/Zan_/Powerball/idle100.gif
@@ -49,11 +49,11 @@ anim idle
 	frame   data/chars/players/Zan_/idle00.gif
 	frame   data/chars/players/Zan_/Powerball/idle101.gif
 	frame   data/chars/players/Zan_/idle01.gif
-	frame   data/chars/players/Zan_/Powerball/idle101.gif
+	frame   data/chars/players/Zan_/Powerball/idle103.gif
 	frame   data/chars/players/Zan_/idle01.gif
-	frame   data/chars/players/Zan_/Powerball/idle102.gif
+	frame   data/chars/players/Zan_/Powerball/idle103.gif
 	frame   data/chars/players/Zan_/idle02.gif
-	frame   data/chars/players/Zan_/Powerball/idle102.gif
+	frame   data/chars/players/Zan_/Powerball/idle106.gif
 	frame   data/chars/players/Zan_/idle02.gif
 
 
@@ -161,8 +161,15 @@ anim attack1
 	cancel	0 9 0 b A freespecial7
 	frame	data/chars/players/Zan_/PowerBAll/a100.gif
 		attack1  125  102  88  21  12  1  0  0  0  15
-		delay  12
+		delay  3
 	frame	data/chars/players/Zan_/PowerBAll/a101.gif
+	frame  data/chars/players/Zan_/a201.gif
+	frame	data/chars/players/Zan_/PowerBAll/a101.gif
+	frame  data/chars/players/Zan_/a201.gif
+	frame	data/chars/players/Zan_/PowerBAll/a101.gif
+	frame  data/chars/players/Zan_/a201.gif
+	frame	data/chars/players/Zan_/PowerBAll/a101.gif
+	frame  data/chars/players/Zan_/a201.gif
 
 
 anim attack2

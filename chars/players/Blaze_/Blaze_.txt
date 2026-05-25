@@ -110,7 +110,7 @@ anim follow10
 	delay	6
 	offset	128 180
         hitfx	data/sounds/efeitos/silencio.wav
-		attack8  120  134  21  46  0  0  0  0  0  15
+		attack8  120  134  21  46  0  1  0  0  0  15
 	frame	data/chars/players/Blaze_/get00.gif
 	sound data/sounds/Item.wav
 	@cmd	position 8 30 0 0 -1
@@ -124,7 +124,7 @@ anim follow11
 	delay	6
 	offset	128 180
         hitfx	data/sounds/efeitos/silencio.wav
-		attack8  121  130  28  50  0  0  0  0  0  15
+		attack8  121  130  28  50  0  1  0  0  0  15
 	frame	data/chars/players/Blaze_/get00.gif
 	sound data/sounds/Coin.wav
 	@cmd	position 8 30 0 0 -1

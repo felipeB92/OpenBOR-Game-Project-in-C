@@ -12,7 +12,7 @@ antigrab 2
 JUMPHEIGHT 1 1
 Jumpheight 3
 atchain    1 1 2 3
-weapons				Mr_X_Knife MR_X_Sword MR_X_pipe MR_X_Kunai
+weapons				Mr_X_Knife MR_X_Sword MR_X_pipe MR_X_Kunai MR_X_Bike
 icon	data/chars/players/MRX_/icon.gif 1
 diesound data/sounds/Adamdie.wav
 running	20	3	2	1	1
@@ -33,6 +33,7 @@ Load MR_X_Knife
 Load MR_X_Pipe
 Load MR_X_Kunai
 Load MR_X_Sword
+Load MR_X_Bike
 
 Com d d freespecial5
 Com u u freespecial6
@@ -64,7 +65,7 @@ anim idle
 anim walk
 	loop	1
 	delay	9
-	offset	31 91
+	offset	31 86
 	bbox	20 1 28 84
 	frame	data/chars/players/MRX_/walk00.gif
 @cmd  depost  0

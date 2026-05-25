@@ -637,7 +637,7 @@ file	data/levels/St404D.txt
 
 #4E - estrada
 
-z	180 255
+z	190 255
 
 file	data/levels/St404E.txt
 

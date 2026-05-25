@@ -81,7 +81,7 @@ anim follow10
 	delay	6
 	offset	151 163
         hitfx	data/sounds/efeitos/silencio.wav
-		attack8  144  106  30  58  0  0  0  0  0  15
+		attack8  144  106  30  58  0  1  0  0  0  15
 	frame	data/chars/players/Zan_/get00.gif
 	@cmd	position 8 30 0 0 -1
 	@cmd  depost  0

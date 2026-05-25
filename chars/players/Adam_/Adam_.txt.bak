@@ -10,7 +10,7 @@ candamage			enemy npc obstacle
 antigrab 2
 Jumpheight 3
 atchain    1 1 2 3
-weapons				Adam_Knife Adam_Sword Adam_pipe Adam_Kunai
+weapons				Adam_Knife Adam_Sword Adam_pipe Adam_Kunai Adam_Bike
 icon	data/chars/players/Adam_/icon.gif 1
 diesound data/sounds/Adamdie.wav
 running	20	3	2	1	1
@@ -26,6 +26,7 @@ Load Adam_Knife
 Load Adam_Pipe
 Load Adam_Kunai
 Load Adam_Sword
+Load Adam_bike
 
 Com d d freespecial5
 Com u u freespecial6
@@ -497,6 +498,7 @@ anim Follow5
         hitfx	data/sounds/golpes/forte.wav
 		@cmd  dasher  0.3  0  0
 		Attack1  0
+		sound  data/chars/players/Adam_/a3.wav
  	frame	data/chars/players/Adam_/ra102.gif
 		Attack1  30  25  35  74  3  0  0  0  0  15
 	frame  data/chars/players/Adam_/ra102.gif

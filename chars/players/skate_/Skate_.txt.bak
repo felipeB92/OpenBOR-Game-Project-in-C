@@ -11,7 +11,7 @@ antigrab 2
 JUMPHEIGHT 1 1
 Jumpheight 3
 atchain    1 1 2 3
-weapons				Skate_Knife Skate_Sword Skate_pipe Skate_Kunai
+weapons				Skate_Knife Skate_Sword Skate_pipe Skate_Kunai Skate_bike
 icon	data/chars/players/Skate_/icon.gif 1
 diesound Sound	data/chars/players/Skate_/skate1.wav
 running	30	3	2	1	1
@@ -29,6 +29,7 @@ Load Skate_Knife
 Load Skate_Pipe
 Load Skate_Kunai
 Load Skate_Sword
+Load Skate_Bike
 
 Com d d freespecial5
 Com u u freespecial6
@@ -254,7 +255,7 @@ anim attack3
 anim run
         loop    1
         delay  9
-	offset	147 177
+	offset	147 175
 	bbox	122 108 32 58
 	jumpframe  0  0.001  0.001  0
 	landframe  1

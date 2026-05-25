@@ -11,7 +11,7 @@ antigrab 2
 JUMPHEIGHT 1 1
 Jumpheight 3
 atchain    1 1 2 3
-weapons				Max_Knife Max_Sword Max_pipe Max_Kunai
+weapons				Max_Knife Max_Sword Max_pipe Max_Kunai Max_bike
 icon	data/chars/players/Max_/icon.gif 1
 diesound data/sounds/Adamdie.wav
 running	19	3	2	1	1
@@ -29,6 +29,7 @@ Load Max_Knife
 Load max_Pipe
 Load Max_Kunai
 Load Max_Sword
+Load max_Bike
 
 Com d d freespecial5
 Com u u freespecial6
@@ -271,7 +272,7 @@ anim Freespecial
 	delay	30
 	frame	data/chars/players/Max_/Gj01.gif
 @cmd	position 0 20 0 0 -1
-	frame	data/chars/players/Max_/Gj01.gif
+	frame	data/chars/players/Max_/Gj02.gif
 	delay	6
 	sound  data/sounds/efeitos/solo.wav
 	frame	data/chars/players/Max_/Gj200.gif
@@ -370,12 +371,12 @@ anim special
 		attack2  147  119  59  43  35  1  0  0  25  15
 	frame	data/chars/players/Max_/sp101.gif
 	@cmd  spawn01  "MaxSP1"  0  0  -1
-		attack2  94  118  52  35  35  1  0  0  25  15
+		attack2  94  118  52  35  35  1  0  0  25  30
 	frame	data/chars/players/Max_/sp102.gif
 	@cmd  spawn01  "MaxSP1"  0  0  -1
 		attack2  87  122  59  33  35  1  0  0  25  15
 	frame	data/chars/players/Max_/sp103.gif
-		attack2  123  112  61  39  35  1  0  0  25  15
+		attack2  123  112  61  39  35  1  0  0  25  30
 	frame	data/chars/players/Max_/sp104.gif
 	frame	data/chars/players/Max_/sp105.gif
 

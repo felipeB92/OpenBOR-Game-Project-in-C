@@ -106,7 +106,7 @@ anim follow10
 	delay	12
 	offset	154 175
         hitfx	data/sounds/efeitos/silencio.wav
-		attack8  151  120  27  56  0  0  0  0  0  15
+		attack8  151  120  27  56  0  1  0  0  0  15
 	frame	data/chars/players/Skate_/get00.gif
 	@cmd	position 8 30 0 0 -1
 	@cmd  depost  0
@@ -120,7 +120,7 @@ anim follow11
 	delay	12
 	offset	154 175
         hitfx	data/sounds/efeitos/silencio.wav
-		attack8  147  128  24  49  0  0  0  0  0  15
+		attack8  147  128  24  49  0  1  0  0  0  15
 	frame	data/chars/players/Skate_/get00.gif
 	@cmd	position 8 30 0 0 -1
 	@cmd  depost  0

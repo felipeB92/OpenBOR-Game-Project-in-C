@@ -85,7 +85,7 @@ anim follow10
 	delay	5
 	offset	23 84
         hitfx	data/sounds/efeitos/silencio.wav
-		attack1  22  31  25  53  0  0  0  0  0  5
+		attack1  22  31  25  53  0  1  0  0  0  5
 	frame	data/chars/players/Adam_/get00.gif
 	@cmd	position 8 30 0 0 -1
 	@cmd  depost  0
@@ -106,7 +106,7 @@ anim follow11
 	@cmd  throw  5	5  2  2  0  -1
 	@cmd  clearL
 	sound data/sounds/Coin.wav
-		attack8  20  29  29  56  0  0  0  0  0  15
+		attack8  20  29  29  56  0  1  0  0  0  15
 	frame	data/chars/players/Adam_/get00.gif
 
 

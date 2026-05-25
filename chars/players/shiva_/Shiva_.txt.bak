@@ -1,6 +1,7 @@
 name	Shiva_
 health	100
 mp 20
+Secret 0 1
 #mprate 1
 riseinv				0.4 1
 speed	14
@@ -11,7 +12,7 @@ antigrab 2
 JUMPHEIGHT 1 1
 Jumpheight 3
 atchain    1 1 2 3
-weapons				Shiva_Knife Shiva_Sword Shiva_pipe Shiva_Kunai
+weapons				Shiva_Knife Shiva_Sword Shiva_pipe Shiva_Kunai Shiva_bike
 icon	data/chars/Enemys/Shiva/iconP.gif 1
 diesound data/chars/Enemys/Shiva/death.wav
 running	27	3	2	1	1
@@ -29,6 +30,7 @@ Load Shiva_Knife
 Load Shiva_Pipe
 Load Shiva_Kunai
 Load Shiva_Sword
+Load Shiva_Bike
 
 Com d d freespecial5
 Com u u freespecial6
@@ -415,14 +417,14 @@ anim special
 	@cmd  spawn01  "ShivaSP1"  0  0  -1
 	frame	data/chars/Enemys/Shiva/special02.gif
 	@cmd  spawn01  "ShivaSP1"  0  0  -1
-		attack2  72  115  82  47  25  1  0  0  0  15
+		attack2  72  115  82  47  25  1  0  0  25  15
        @cmd dasher 1 0 0
 	frame	data/chars/Enemys/Shiva/special03.gif
-		attack2  95  88  89  70  25  1  0  0  0  15
+		attack2  95  88  89  70  25  1  0  0  25  15
 	frame	data/chars/Enemys/Shiva/special04.gif
-		attack2  121  102  86  55  25  1  0  0  0  15
+		attack2  121  102  86  55  25  1  0  0  25  15
 	frame	data/chars/Enemys/Shiva/special05.gif
-		attack2  138  136  65  48  25  1  0  0  0  15
+		attack2  138  136  65  48  25  1  0  0  25  15
        @cmd dasher 0 0 0
 	frame	data/chars/Enemys/Shiva/special06.gif
 		Attack1  0
@@ -464,7 +466,7 @@ anim special2
 	frame  data/chars/Enemys/Shiva/Sp104.gif
 		Attack1  0
 	frame  data/chars/Enemys/Shiva/Sp104.gif
-		attack2  0  127  222  69  20  1  0  0  0  15
+		attack2  0  127  222  69  20  1  0  0  25  15
 		delay  15
 	frame  data/chars/Enemys/Shiva/Sp104.gif
 
