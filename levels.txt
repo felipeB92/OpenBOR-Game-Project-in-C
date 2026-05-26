@@ -609,37 +609,32 @@ script continue data/scripts/continue.c
 #file	data/levels/St403C.txt
 
 ___________________________________________________________
-#4A - Ruas com pontes
+#4A - Corrida Ponte
 
 #z	180 255
 
 #file	data/levels/St404A.txt
 
 
-#4A - Corrida Ponte
+#4A - Corrida Deserto
 
-z	180 255
+#z	180 255
 
-file	data/levels/St404b.txt
+#file	data/levels/St404b.txt
 
 
-#4A - Corrida deserto
+#4A - Corrida Caminhão
 
-z	180 255
+#z	180 255
 
-file	data/levels/St404c.txt
+#file	data/levels/St404c.txt
 
-#4A - cORRIDA caminhão
+#4A - Pier
 
-z	180 255
+z	200 275
 
 file	data/levels/St404D.txt
 
-#4E - estrada
-
-z	190 255
-
-file	data/levels/St404E.txt
 
 
 Next

@@ -17,94 +17,153 @@ settime			99
 noslow			1
 bgspeed			1.5 0
 stagenumber		4
-setweap		5
+#setweap		5
 spawn1			240 230 300
 spawn2			240 220 300
 spawn3			240 250 300
 spawn4			240 270 300
 
-
+Wall  323  286  -19  0  300  300  150  130
+Hole  -234  276  -54  0  287  235  102
 
 spawn  Time01
 	coords  0  0
         Flip 1
 	at  0
 
+spawn  Truck404E
+Flip 1
+	coords  14  100  0
+	at  0
 
 wait
 at 0
 
-group       4 4
+group       3 3
 at          0
 
 
 
-spawn  Fog_bike
-health 50
-	coords  550  190 150
+
+spawn  lata
+Item Cash
+	coords  250  200
 	at  0
 
-spawn  Fog_bike
-map    1
-health 50
-	coords  -100 270 150
+spawn  lata
+Item Apple
+	coords  220  220
 	at  0
 
-spawn  Fog_bike
-health 50
-	coords  600  270 150
-	at  0
-
-spawn  Fog_bike
-health 50
-	coords  -100  190 150
+spawn  Fog
+health 30
+	coords  150  190 150
 	at  0
 
 
-spawn  Fog_bike
-health 50
-	coords  600  190 150
+spawn  Delay
+	coords  250  270 150
 	at  0
 
 
-
-spawn  Donovan_bike
-health 50
-	coords  -100 270 150
+spawn  Delay
+	coords  250  270 150
 	at  0
 
-
-spawn  Fog_bike
-health 50
-	coords  600  190 150
-	at  0
-
-
-spawn  Truck404D
+spawn  Heli404a
 Flip 1
-	coords  510  100
-	at  0
-
-spawn  Fog_bike
-health 50
-	coords  -100  250 150
+	coords  -100  270
 	at  0
 
 
-spawn  Fog_bike
-health 50
-	coords  -100  190 150
+spawn  Kusanagi
+health 30
+	coords  250  200 150
+	at  0
+
+spawn  Kusanagi
+MAp 1
+health 30
+	coords  150  190 150
+	at  0
+
+
+spawn  Delay
+	coords  250  270 150
+	at  0
+
+spawn  Van404A
+Flip 1
+	coords  600  270
+	at  0
+
+spawn  Fog
+health 30
+	coords  250  270 150
+	at  0
+
+spawn  Tiger
+Map 1
+health 30
+	coords  250  270 150
+	at  0
+
+spawn  Kusanagi
+Map 1
+health 30
+	coords  250  270 150
+	at  0
+
+
+spawn  Heli404B
+	coords  600  270
+	at  1
+
+
+spawn  Delay
+	coords  250  270 150
+	at  0
+
+spawn  Kusanagi
+MAp 1
+health 30
+	coords  150  190 150
+	at  1
+
+
+spawn  Delay
+	coords  250  270 150
+	at  1
+
+spawn  Van404B
+Flip 1
+	coords  600  270
+	at  1
+
+
+spawn  Kusanagi
+health 30
+	coords  250  270 150
+	at  1
+
+spawn  Kusanagi
+MAp 1
+health 30
+	coords  150  190 150
+	at  1
+
+
+spawn  Heli404C
+Flip 1
+	coords  -100  270
+	at  1
+
+spawn  Delay
+	coords  250  270 150
 	at  0
 
 
 
-spawn  Donovan_bike
-health 50
-	coords  -100 270 150
-	at  0
 
 
-spawn  Fog_bike
-health 50
-	coords  -100  190 150
-	at  0
+
