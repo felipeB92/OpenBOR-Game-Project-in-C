@@ -27,11 +27,267 @@ spawn  Time01
 	at  0
 
 
+spawn  Tires02
+item 	cash
+	coords  400  200
+	at  0
+
+spawn  Tires02
+Item apple
+	coords  450  200
+	at  0
+
+wait
+at   0
+
+Group 4  4
+at   0
+
+
 
 
 spawn  Raven
-map    1
-health 130
+health 70
 	coords  500  200 150
-	at  1200
+	at  0
+
+spawn  Raven
+map    4
+health 130
+	coords  600  220 150
+	at  0
+
+spawn  Raven
+health 70
+	coords  500  270 150
+	at  0
+
+spawn  Pipe
+	coords  600 200 50
+	at  0
+
+spawn  Donovan
+health 40
+	coords  600 200 150
+	at  0
+
+
+
+spawn  Fog
+health 40
+	coords  -100 200 150
+	at  0
+
+spawn  Fog
+health 40
+	coords  -100 270 150
+	at  0
+
+spawn  Tires02
+2PItem 1UP
+	coords  550  260
+	at  1
+
+spawn  Tires02
+Item apple
+	coords  600  265
+	at  1
+
+spawn  Tires02
+Item 1Up
+	coords  650  260
+	at  1
+
+
+spawn  Signal
+health 50
+	coords  550 200 150
+	at  100
+
+spawn  Signal
+health 50
+	coords  600 270 150
+	at  100
+
+spawn  Slum
+health 40
+	coords  600 270 150
+	at  200
+
+wait
+at   300
+
+Group 4  4
+at   300
+
+
+spawn  Antonio
+Map 4
+health 200
+	coords  600 270 150
+	at  300
+
+
+spawn  Garnet
+health 50
+	coords  -100 200 150
+	at  300
+
+spawn  Vice
+Map 1
+health 50
+	coords  -100 270 150
+	at  300
+
+spawn  Slum
+health 40
+	coords  -100 270 150
+	at  300
+
+spawn  Knife
+	coords  600 270 50
+	at  300
+
+spawn  Galsia
+health 40
+	coords  600 270 150
+	at  300
+
+spawn  Pipe
+	coords  600 200 50
+	at  300
+
+spawn  Donovan
+health 40
+	coords  600 200 150
+	at  300
+
+
+spawn  Knife
+	coords  -100 200 50
+	at  300
+
+spawn  Galsia
+health 40
+	coords  -100 200 150
+	at  300
+
+spawn  Pipe
+	coords  -100 270 50
+	at  300
+
+spawn  Donovan
+health 40
+	coords  -100 270 150
+	at  300
+
+
+wait
+at   650
+
+Group 4  4
+at   650
+
+
+spawn  _haku_Oh
+Map 3
+health 40
+	coords  150 130
+	at  650
+
+spawn  Fog
+Map 3
+health 40
+	coords  550 200 150
+	at  650
+
+spawn  _haku_Oh
+Map 2
+health 40
+	coords  220 130
+	at  650
+
+spawn  Fog
+Map 3
+health 40
+	coords  -100 200 150
+	at  650
+
+spawn  _haku_Oh
+health 40
+	coords  50 130
+	at  650
+
+
+spawn  _haku_Oh
+Map 3
+health 40
+	coords  150 130
+	at  650
+
+spawn  _haku_Oh
+health 40
+	coords  400 130
+	at  650
+
+spawn  _haku_Oh
+Map 2
+health 40
+	coords  220 130
+	at  650
+
+spawn  _haku_Oh
+health 40
+	coords  150 130
+	at  650
+
+spawn  _haku_Oh
+health 40
+	coords  50 130
+	at  650
+
+spawn  Tires02
+item 	Chicken
+	coords  520  200
+	at  651
+
+spawn  Tires02
+2Pitem 	Chicken
+	coords  570  200
+	at  651
+
+Group 3  3
+at   800
+
+
+spawn  Bear
+Boss 1
+Map 3
+	coords  550 240 150
+	at  800
+
+spawn  _haku_Oh
+Map 3
+health 40
+	coords  150 130
+	at  800
+
+spawn  _haku_Oh
+health 40
+	coords  50 130
+	at  800
+
+spawn  _haku_Oh
+Map 2
+health 40
+	coords  220 130
+	at  800
+
+spawn  _haku_Oh
+health 40
+	coords  150 130
+	at  800
+
+
+
 

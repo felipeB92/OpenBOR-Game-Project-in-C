@@ -608,7 +608,7 @@ script continue data/scripts/continue.c
 
 #file	data/levels/St403C.txt
 
-___________________________________________________________
+
 #4A - Corrida Ponte
 
 #z	180 255
@@ -631,26 +631,26 @@ ___________________________________________________________
 
 #4A - Pier
 
-z	200 275
+#z	200 275
 
-file	data/levels/St404D.txt
+#file	data/levels/St404D.txt
 
 
 
-Next
+#Next
 
 #5A - saguão Aeroporto
 
-z	230 275
+#z	230 275
 
-file	data/levels/St405A.txt
+#file	data/levels/St405A.txt
 
 
 #5B - Pista de Pouso
 
-z	220 275
+#z	220 275
 
-file	data/levels/St405B.txt
+#file	data/levels/St405B.txt
 
 #5C - interior Avião
 
