@@ -9,7 +9,7 @@ falldie                         2
 hostile				Enemy npc
 candamage			Enemy npc obstacle
 escapehits			2
-mp			        60
+mp			        30
 mprate  			5
 aimove				chase
 type	NPC
@@ -336,6 +336,7 @@ anim Riseattack
  	loop	0
  	delay	8
 	fastattack 1
+        energycost 30 1
  	offset	131 193
 	jumpframe  4  3  1  0
 	frame	data/chars/Enemys/Shiva/finalcrash00.gif
