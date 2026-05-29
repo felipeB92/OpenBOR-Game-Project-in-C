@@ -1,0 +1,34 @@
+music		data/bgs/St401/The-Prologue.ogg
+bossmusic	data/music/boss1.ogg
+scrollspeed 0.5#1
+stagenumber 6
+background	data/bgs/st406/BAck01c.gif 0 0
+panel		data/bgs/St406/Pn02.gif
+frontpanel      data/bgs/St406/Front01.gif
+cameratype 1
+cameraoffset 0 -30
+
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	125 70
+spawn2  	130 60
+spawn3  	135  80
+
+light		128 -128
+at			-10
+
+spawn  Time01
+	coords  0  0
+        Flip 1
+	at  0
+
+
+
+spawn  Signal
+health 60
+	coords  500  276 150
+	at  1430
+
+
