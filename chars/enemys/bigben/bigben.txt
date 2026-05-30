@@ -12,7 +12,6 @@ type	Enemy
 gfxshadow	1
 JUMPHEIGHT 1 1
 Jumpheight 3
-mp			        60
 mprate  			5
 icon	data/chars/Enemys/BigBen/icon.gif 1
 diesound data/voices/bossdie1.wav

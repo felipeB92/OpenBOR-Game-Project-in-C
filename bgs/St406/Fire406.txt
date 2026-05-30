@@ -1,0 +1,15 @@
+name			Fire406
+type			none
+shadow			0
+setlayer		8
+antigravity 100
+#Alpha 1
+
+anim idle
+	loop	1
+	delay	12
+	offset	6 13
+	frame  data/bgs/sT406/f00.gif
+	frame  data/bgs/sT406/f01.gif
+	frame  data/bgs/sT406/f02.gif
+

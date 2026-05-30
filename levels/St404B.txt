@@ -40,28 +40,33 @@ at          0
 
 
 spawn  Fog_bike
+alias Fog
 health 50
 	coords  550  190 150
 	at  0
 
 spawn  Fog_bike
+alias Fog
 map    1
 health 50
 	coords  -100 270 150
 	at  0
 
 spawn  Fog_bike
+alias Fog
 health 50
 	coords  600  270 150
 	at  0
 
 spawn  Fog_bike
+alias Fog
 health 50
 	coords  -100  190 150
 	at  0
 
 
 spawn  Fog_bike
+alias Fog
 health 50
 	coords  600  190 150
 	at  0
@@ -69,12 +74,14 @@ health 50
 
 
 spawn  Donovan_bike
+alias Donovan
 health 50
 	coords  -100 270 150
 	at  0
 
 
 spawn  Fog_bike
+alias Fog
 health 50
 	coords  600  190 150
 	at  0
@@ -86,12 +93,14 @@ Flip 1
 	at  0
 
 spawn  Fog_bike
+alias Fog
 health 50
 	coords  -100  250 150
 	at  0
 
 
 spawn  Fog_bike
+alias Fog
 health 50
 	coords  -100  190 150
 	at  0
@@ -99,12 +108,14 @@ health 50
 
 
 spawn  Donovan_bike
+alias Donovan
 health 50
 	coords  -100 270 150
 	at  0
 
 
 spawn  Fog_bike
+alias Fog
 health 50
 	coords  -100  190 150
 	at  0

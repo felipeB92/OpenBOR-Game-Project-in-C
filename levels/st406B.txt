@@ -1,0 +1,311 @@
+music		data/bgs/St406/Sojutsu.ogg
+bossmusic	data/music/boss2.ogg
+scrollspeed 0.5#1
+stagenumber 6
+background	data/bgs/st406/BAck01c.gif	0.05 1 0 0 0 0 -1 1 1 0 0 0 0 0 
+bglayer		data/bgs/st406/back01b.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 
+bglayer		data/bgs/st406/back01a.gif	0.03 1 0 0 0 0 -1 1 1 0 0 0 0 0
+bglayer		data/bgs/st406/back01.gif	0.02 1 0 0 0 0 -1 1 1 0 0 0 0 0
+panel		data/bgs/St406/Pn02.gif
+frontpanel      data/bgs/St406/Front01.gif
+cameratype 1
+cameraoffset 0 -30
+
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	125 70
+spawn2  	130 60
+spawn3  	135  80
+
+light		128 -128
+at			-10
+
+spawn  Time01
+	coords  0  0
+        Flip 1
+	at  0
+
+spawn  Fire406
+	coords  1581  171
+        Flip 1
+	at  0
+
+spawn  Fire406
+	coords  1685  171
+        Flip 1
+	at  0
+
+spawn  Lanterna
+Item Apple
+	coords  400  220
+	at  0
+
+spawn  Lanterna
+2PItem Apple
+	coords  500  220
+	at  0
+
+
+spawn  Sword
+	coords  550  220
+	at  0
+
+spawn  Kunai
+	coords  530  240
+	at  0
+
+spawn  Kusanagi
+health 50
+	coords  600  240 150
+	at  0
+
+
+spawn  Kusanagi
+health 50
+	coords  650  220 150
+	at  0
+
+wait
+at   300
+
+group 4 4
+at   300
+
+spawn  Tiger
+health 50
+	coords  600  240 150
+	at  300
+
+
+spawn  Tiger
+health 50
+	coords  -100  220 150
+	at  300
+
+
+spawn  Hakuyo
+health 50
+	coords  -100  240 150
+	at  300
+
+
+spawn  Hakuyo
+health 50
+	coords  650  220 150
+	at  300
+
+spawn  Haku_oh
+health 50
+	coords  -100  240 150
+	at  300
+
+
+spawn  Haku_oh
+health 50
+	coords  650  220 150
+	at  300
+
+spawn  Kusanagi
+MAp 4
+health 50
+	coords  600  240 150
+	at  300
+
+
+spawn  Kusanagi
+Map 4
+health 50
+	coords  650  220 150
+	at  300
+
+spawn  Lanterna
+Item Apple
+	coords  550  220
+	at  301
+
+spawn  Lanterna
+2PItem Apple
+	coords  600  220
+	at  301
+
+spawn  Kusanagi
+MAp 3
+health 50
+	coords  250  220 150
+	at  400
+
+
+spawn  Hakuyo
+Map 4
+health 50
+	coords  250  220 150
+	at  450
+
+spawn  Kusanagi
+MAp 2
+health 50
+	coords  250  220 150
+	at  500
+
+wait
+at   600
+
+group 4 4
+at   600
+
+
+spawn  Tiger
+Map 4
+health 50
+	coords  400  220 150
+	at  600
+
+spawn  Tiger
+MAp 2
+health 50
+	coords  450  260 150
+	at  600
+
+spawn  Tiger
+Flip 1
+Map 4
+health 50
+	coords  100  220 150
+	at  600
+
+spawn  Tiger
+Flip 1
+MAp 2
+health 50
+	coords  150  260 150
+	at  600
+
+spawn  Kusanagi
+MAp 3
+health 50
+	coords  250  220 150
+	at  600
+
+
+spawn  Hakuyo
+Map 4
+health 50
+	coords  150  220 150
+	at  600
+
+spawn  Kusanagi
+MAp 2
+health 50
+	coords  250  220 150
+	at  600
+
+group 99 99
+at   601
+
+spawn  Haku_oh
+Map 4
+health 50
+	coords  400  230 150
+	at  650
+
+spawn  Haku_oh
+Map 4
+health 50
+	coords  400  230 150
+	at  700
+
+spawn  Haku_oh
+Map 4
+health 50
+	coords  400  230 150
+	at  800
+
+spawn  Haku_oh
+Flip 1
+Map 4
+health 50
+	coords  150 230 150
+	at  800
+
+
+
+wait
+at   900
+
+group 4 4
+at   900
+
+spawn  _Haku_oh
+health 30
+	coords  400  186
+	at  900
+
+spawn  _Haku_oh
+Map 2
+health 40
+	coords  100  186
+	at  900
+
+spawn  _Haku_oh
+Map 2
+health 50
+	coords  300  186
+	at  900
+
+spawn  _Haku_oh
+Flip 1
+health 40
+	coords  150 186
+	at  900
+
+spawn  _Haku_oh
+health 40
+	coords  400  186
+	at  900
+
+spawn  _Haku_oh
+Map 2
+health 50
+	coords  100  186
+	at  900
+
+spawn  _Haku_oh
+Map 2
+health 40
+	coords  450  186
+	at  900
+
+spawn  _Haku_oh
+Flip 1
+health 30
+	coords  150 186
+	at  900
+
+
+spawn  Lanterna
+Item Chicken
+	coords  855  220
+	at  901
+
+spawn  Lanterna
+2PItem Chicken
+	coords  643  220
+	at  901
+
+
+spawn  Zamza
+Map 3
+Alias Mizuno
+Boss 1
+	coords  -100  245 150
+	at  1300
+
+spawn  Zamza
+Map4
+Boss 1
+	coords  600  245 150
+	at  1300
+
+

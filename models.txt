@@ -543,6 +543,8 @@ know	Heli404C   	data/Bgs/St404/Heli404C.txt
 
 know	Av405    	data/Bgs/St405/Av405.txt
 
+know	Fire406    	data/Bgs/St406/Fire406.txt
+
 
 
 # Objetos

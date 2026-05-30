@@ -637,7 +637,7 @@ script continue data/scripts/continue.c
 
 
 
-#Next
+
 
 #5A - saguão Aeroporto
 
@@ -654,9 +654,23 @@ script continue data/scripts/continue.c
 
 #5C - interior Avião
 
-z	170 275
+#z	170 275
 
-file	data/levels/St405C.txt
+#file	data/levels/St405C.txt
+
+#Next
+
+#6A - Entrada Floresta
+
+z	210 275
+
+file	data/levels/St406A.txt
+
+#6B - BAnboo Garden
+
+z	208 255
+
+file	data/levels/St406B.txt
 
 
 #------------------
