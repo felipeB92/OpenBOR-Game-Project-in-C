@@ -94,7 +94,7 @@ anim follow10
 	delay	7
 	offset	50 112
         hitfx	data/sounds/efeitos/silencio.wav
-		attack8  17  44  61  68  0  0  0  0  0  15
+		attack8  17  44  61  68  0  1  0  0  0  15
 	frame	data/chars/players/MRX_/get00.gif
 	@cmd	position 8 30 0 0 -1
 	@cmd  depost  0
@@ -108,7 +108,7 @@ anim follow11
 	delay	7
 	offset	49 113
         hitfx	data/sounds/efeitos/silencio.wav
-		attack8  31  44  45  70  0  0  0  0  0  15
+		attack8  31  44  45  70  0  1  0  0  0  15
 	frame	data/chars/players/MRX_/get00.gif
 	@cmd	position 8 30 0 0 -1
 	@cmd  depost  0

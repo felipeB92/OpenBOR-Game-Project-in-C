@@ -662,15 +662,43 @@ script continue data/scripts/continue.c
 
 #6A - Entrada Floresta
 
-z	210 275
+#z	210 275
 
-file	data/levels/St406A.txt
+#file	data/levels/St406A.txt
 
 #6B - BAnboo Garden
 
-z	208 255
+#z	208 255
 
-file	data/levels/St406B.txt
+#file	data/levels/St406B.txt
+
+
+
+#7A - Entrada do Hotel
+
+z	225 270
+
+file	data/levels/St407A.txt
+
+#7B - Hotel
+
+z	225 270
+
+file	data/levels/St407B.txt
+
+#7C- Elevador
+
+z	225 270
+
+file	data/levels/St407C.txt
+
+
+#7D - Salas ADM
+
+z	225 270
+
+file	data/levels/St407D.txt
+
 
 
 #------------------

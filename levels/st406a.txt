@@ -52,7 +52,7 @@ health 70
 	at 300
 
 spawn  Bigben
-health 80
+health 50
 	coords  -100  260 150
 	at 300
 
@@ -216,15 +216,21 @@ Map 2
 	coords  -100  190 150
 	at 1000
 
+spawn  Monalisa
+health 90
+Map 3
+	coords  550  260 150
+	at 1000
+
 
 spawn  Bigben
-health 70
+health 50
 Map 2
 	coords  550  190 150
 	at 1000
 
 spawn  Bigben
-health 70
+health 50
 Map 2
 	coords  -100  260 150
 	at 1000

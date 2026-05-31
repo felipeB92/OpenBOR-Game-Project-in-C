@@ -224,7 +224,7 @@ anim attack3
 		Attack1  0
 	frame	data/chars/players/MRX_/a301.gif
 	frame	data/chars/players/MRX_/a302.gif
-		attack1  30  -5  46  118  12  1  0  0  0  15
+		attack1  30  -5  46  118  15  1  0  0  0  15
 		delay  6
 	frame	data/chars/players/MRX_/a303.gif
 		delay  15
