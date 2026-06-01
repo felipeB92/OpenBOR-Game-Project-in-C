@@ -3,6 +3,7 @@ bossmusic	data/music/boss1.ogg
 scrollspeed 0.5#1
 stagenumber 7
 background	data/bgs/st407/BAck03B.gif
+bglayer		data/bgs/St407/BAck03c.gif		0 1 0 0 0 0 -1 1 1 0 1 0 0 0 
 panel		data/bgs/St407/Pn03.gif
 #frontpanel      data/bgs/St407/Front02.gif
 cameratype 1
@@ -24,7 +25,8 @@ spawn  Time01
         Flip 1
 	at  0
 
-
+Wall  -450  274  2  0  572  464  115  306
+Wall  483  283  -116  0  490  448  119  300
 
 spawn  Box02
 Item Gold
@@ -46,8 +48,4 @@ spawn  Raven
 health 70
 	coords  550  200 150
 	at 300
-
-
-
-
 

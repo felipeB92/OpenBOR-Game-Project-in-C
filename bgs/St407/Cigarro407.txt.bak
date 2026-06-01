@@ -1,0 +1,23 @@
+name			Cigarro407
+type			none
+shadow			0
+#setlayer		8
+antigravity 100
+#Alpha 1
+
+anim idle
+	loop	1
+	delay	12
+	offset	14 98
+	frame	data/bgs/sT407/Cigarro00.gif
+	frame	data/bgs/sT407/Cigarro01.gif
+	frame	data/bgs/sT407/Cigarro02.gif
+	frame	data/bgs/sT407/Cigarro03.gif
+	frame	data/bgs/sT407/Cigarro04.gif
+	frame	data/bgs/sT407/Cigarro05.gif
+	frame	data/bgs/sT407/Cigarro06.gif
+	frame	data/bgs/sT407/Cigarro07.gif
+	frame	data/bgs/sT407/Cigarro08.gif
+	frame	data/bgs/sT407/Cigarro09.gif
+	frame	data/bgs/sT407/Cigarro10.gif
+

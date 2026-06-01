@@ -44,7 +44,7 @@ Item Pipe
 
 
 spawn  Raven
-health 70
+health 20
 	coords  550  200 150
 	at 300
 

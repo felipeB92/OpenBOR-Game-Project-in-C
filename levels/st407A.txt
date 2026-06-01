@@ -24,28 +24,104 @@ spawn  Time01
         Flip 1
 	at  0
 
-
-
-spawn  Box02
-Item Gold
-	coords  450  220
+spawn  Vaso02
+Item Knife
+	coords  500  235
 	at 0
 
-spawn  Box02
+spawn  Vaso02
 Item Cash
-	coords  350  220
+	coords  570  235
 	at 0
 
-spawn  Box02
-Item Pipe
-	coords  250  250
+spawn  Cigarro407
+Flip 1
+	coords  640  205
 	at 0
 
 
-spawn  Raven
-health 70
-	coords  550  200 150
+
+spawn  GAlsia_
+map 5
+health 50
+	coords  320  250
+	at 0
+
+spawn  GAlsia_
+map 4
+health 50
+	coords  350  265
+	at 0
+
+spawn  Signal_
+map 4
+health 50
+	coords  420  250
+	at 0
+
+spawn  signal_
+map 4
+health 50
+	coords  450  265
+	at 0
+
+
+wait
+at   300
+
+group 4 4
+at   300
+
+spawn  Donovan
+map 4
+health 40
+	coords  550  265 150
 	at 300
+
+spawn  Fog
+map 4
+health 50
+	coords  -100  265 150
+	at 300
+
+
+spawn  Galsia
+map 4
+health 40
+	coords  550  230 150
+	at 300
+
+spawn  Signal
+map 4
+health 40
+	coords  -100  230 150
+	at 300
+
+
+spawn  Nora
+map 4
+health 60
+	coords  550  230 150
+	at 300
+
+spawn  Nora
+map 4
+health 60
+	coords  600  230 150
+	at 300
+
+spawn  Jack
+map 4
+health 200
+	coords  600  230 150
+	at 400
+
+spawn  Mace
+map 4
+health 200
+	coords  550  260 150
+	at 400
+
 
 
 

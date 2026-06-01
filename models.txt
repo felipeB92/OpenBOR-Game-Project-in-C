@@ -545,6 +545,8 @@ know	Av405    	data/Bgs/St405/Av405.txt
 
 know	Fire406    	data/Bgs/St406/Fire406.txt
 
+know	Cigarro407    	data/Bgs/St407/Cigarro407.txt
+
 
 
 # Objetos

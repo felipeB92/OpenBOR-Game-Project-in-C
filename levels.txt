@@ -682,22 +682,28 @@ file	data/levels/St407A.txt
 
 #7B - Hotel
 
-z	225 270
+z	230 270
 
 file	data/levels/St407B.txt
 
 #7C- Elevador
 
-z	225 270
+z	170 270
 
 file	data/levels/St407C.txt
 
 
 #7D - Salas ADM
 
-z	225 270
+z	215 240
 
 file	data/levels/St407D.txt
+
+#7D - Salas Chefe
+
+z	180 275
+
+file	data/levels/St407E.txt
 
 
 
