@@ -1,0 +1,33 @@
+name			Ele407
+type			none
+shadow			0
+#setlayer		8
+antigravity 100
+#Alpha 1
+animationscript		data/scripts/drago.c
+
+
+Load Bruce
+
+anim idle
+	loop	0
+	delay	150
+	offset	14 98
+	frame	data/bgs/sT407/ele/00.gif
+	delay	15
+	frame	data/bgs/sT407/ele/01.gif
+	frame	data/bgs/sT407/ele/02.gif
+	frame	data/bgs/sT407/ele/03.gif
+	frame	data/bgs/sT407/ele/04.gif
+	frame	data/bgs/sT407/ele/05.gif
+	frame	data/bgs/sT407/ele/06.gif
+	frame	data/bgs/sT407/ele/07.gif
+	frame	data/bgs/sT407/ele/08.gif
+	frame	data/bgs/sT407/ele/09.gif
+	frame	data/bgs/sT407/ele/10.gif
+	frame	data/bgs/sT407/ele/11.gif
+	frame	data/bgs/sT407/ele/12.gif
+	frame	data/bgs/sT407/ele/13.gif
+	@cmd  spawn01  "Bruce"  0  2  0
+	frame	data/bgs/sT407/ele/14.gif
+

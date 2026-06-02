@@ -4,7 +4,7 @@ scrollspeed 0.5#1
 stagenumber 7
 background	data/bgs/st407/BAck01.gif
 panel		data/bgs/St407/Pn02.gif
-#frontpanel      data/bgs/St407/Front02.gif
+frontpanel      data/bgs/St407/Front02.gif
 cameratype 1
 cameraoffset 0 -30
 
@@ -26,19 +26,14 @@ spawn  Time01
 
 
 
-spawn  Box02
-Item Gold
-	coords  450  220
+spawn  lixo03
+Item Apple
+	coords  450  230
 	at 0
 
-spawn  Box02
-Item Cash
-	coords  350  220
-	at 0
-
-spawn  Box02
-Item Pipe
-	coords  250  250
+spawn  Lixo03
+2PItem Apple
+	coords  400  230
 	at 0
 
 
@@ -46,6 +41,15 @@ spawn  Raven
 health 20
 	coords  550  200 150
 	at 300
+
+spawn  Ele407
+flip 1
+	coords  333  218
+	at 830
+
+spawn  Ele407
+	coords  449  218
+	at 830
 
 
 
