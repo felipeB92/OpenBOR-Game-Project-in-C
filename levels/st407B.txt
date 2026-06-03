@@ -12,9 +12,9 @@ settime         99
 notime          0
 noslow          1
 order		a
-spawn1  	125 30
-spawn2  	130 40
-spawn3  	135 50
+spawn1  	125 0
+spawn2  	130 20
+spawn3  	135 30
 
 light		128 -128
 at			-10
@@ -38,18 +38,137 @@ spawn  Lixo03
 
 
 spawn  Raven
-health 20
-	coords  550  200 150
+Map 4
+health 70
+	coords  550  230 150
 	at 300
+
+spawn  Raven
+Map 4
+health 70
+	coords  600  260 150
+	at 300
+
+
+spawn  garnet
+Map 4
+health 40
+	coords  550  230 150
+	at 400
+
+spawn  Garnet
+Map 4
+health 40
+	coords  550  230 150
+	at 450
+
+
+spawn  mcbride
+	coords  600  260 150
+	at 500
+
+wait 
+at 600
+
+group 4 4
+at  600
+
+
+spawn  GAlsia
+Map 4
+health 40
+	coords  -100  230 150
+	at 600
+
+
+spawn  Signal
+health 40
+	coords  600  260 150
+	at 600
+
+
+spawn  Electra
+Map 4
+health 40
+	coords  600  230 150
+	at 600
+
+
+spawn  Electra
+health 70
+	coords  -100  260 150
+	at 600
+
+spawn  macLean
+health 50
+	coords  600  260 150
+	at 600
+
+spawn  macLeod
+health 50
+	coords  -100  230 150
+	at 600
+
+spawn  Vaso02
+Item Chicken
+	coords  622  230
+	at 601
+
+wait 
+at 853
+
+group 4 4
+at  853
+
+spawn  HAku_oh
+health 40
+	coords  -100  260 150
+	at 853
+
+spawn  HAku_oh
+health 40
+	coords  600  230 150
+	at 853
+
+spawn  HAku_oh
+health 40
+	coords  -100  230 150
+	at 853
+
+spawn  HAku_oh
+health 40
+	coords  600  260 150
+	at 853
 
 spawn  Ele407
 flip 1
-	coords  333  218
-	at 830
+	coords  311  218
+	at 853
 
 spawn  Ele407
-	coords  449  218
-	at 830
+	coords  427  218
+	at 853
+
+
+spawn  macLean
+health 50
+	coords  600  260 150
+	at 853
+
+spawn  macLeod
+health 60
+	coords  -100  230 150
+	at 853
+
+spawn  Fog
+health 50
+	coords  600  260 150
+	at 853
+
+spawn  Fog
+health 60
+	coords  -100  230 150
+	at 853
 
 
 

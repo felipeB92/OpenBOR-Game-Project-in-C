@@ -1,6 +1,7 @@
 name	Macleod_
 health	100
 lifespan 60
+Mp 20
 speed	12
 falldie 1
 type	Enemy
@@ -111,6 +112,7 @@ anim freespecial
 	offset	145 182
 	bbox	138 108 26 76
 		Attack1  0
+        energycost 20 1
         hitfx	data/sounds/golpes/medio.wav
 		move  0
         sound	data/sounds/Shot.wav

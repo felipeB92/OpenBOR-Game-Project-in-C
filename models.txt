@@ -547,6 +547,8 @@ know	Fire406    	data/Bgs/St406/Fire406.txt
 
 know	Cigarro407    	data/Bgs/St407/Cigarro407.txt
 know	Ele407    	data/Bgs/St407/Ele407.txt
+know	E407A    	data/Bgs/St407/E407A.txt
+know	E407B    	data/Bgs/St407/E407B.txt
 
 
 

@@ -1,0 +1,25 @@
+name			e407A
+type			none
+shadow			0
+#setlayer		8
+#antigravity 100
+#Alpha 1
+animationscript		data/scripts/drago.c
+
+
+load Elevador01
+Load Elevador02
+
+anim idle
+	loop	0
+	delay	1
+	offset	0 202
+	@cmd  spawn01  "elevador01"  0  0  0
+	frame	data/bgs/sT407/BAck03.gif
+	delay	150
+	@cmd  spawn01  "elevador02"  0  0  0
+	frame	data/bgs/sT407/BAck03.gif
+      @cmd killentity getlocalvar("self")
+		offset  0  202
+	frame	data/bgs/sT407/BAck03.gif
+
