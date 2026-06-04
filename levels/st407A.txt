@@ -1,4 +1,4 @@
-music		data/bgs/St301/Fuze.ogg
+music		data/bgs/St08/The-Last-Soul.ogg
 bossmusic	data/music/boss1.ogg
 scrollspeed 0.5#1
 stagenumber 7

@@ -676,9 +676,9 @@ script continue data/scripts/continue.c
 
 #7A - Entrada do Hotel
 
-#z	225 270
+z	225 270
 
-#file	data/levels/St407A.txt
+file	data/levels/St407A.txt
 
 #7B - Hotel
 

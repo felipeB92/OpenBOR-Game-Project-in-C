@@ -56,12 +56,11 @@ spawn  Tires02
 
 
 
-spawn  Antonio
-alias  Antoonio_Jr
+spawn  Garnet
        Map 2
        Boss 1
 	coords  -100  200
-	at  3551
+	at  150
 
 
 

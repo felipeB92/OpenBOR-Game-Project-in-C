@@ -25,28 +25,225 @@ spawn  Time01
         Flip 1
 	at  0
 
-
+spawn  TV407
+	coords  0  0
+        Flip 1
+	at  0
 
 spawn  Box02
-Item Gold
-	coords  450  220
+Item Apple
+	coords  250  235
 	at 0
+
+
 
 spawn  Box02
 Item Cash
-	coords  350  220
+	coords  450  225
 	at 0
 
-spawn  Box02
-Item Pipe
-	coords  250  250
+wait 
+at 0
+
+group 3 3
+at  0
+
+spawn  Galsia
+health 40
+	coords  550  230 150
 	at 0
+
+spawn  Donovan
+health 40
+	coords  600  230 150
+	at 0
+
+spawn  Garnet
+health 40
+	coords  600  230 150
+	at 0
+
+spawn  Slum
+health 40
+	coords  -100  230 150
+	at 0
+
+spawn  Vice
+health 40
+	coords  600  230 150
+	at 0
+
+spawn  Fog
+health 40
+	coords  -100  230 150
+	at 0
+
+
+
+group 99 99
+at  1
+
+spawn  Box02
+Item Gold
+	coords  600  240
+	at 1
+
+
+spawn  Donovan
+health 40
+	coords  550  230 150
+	at 100
+
+spawn  Fog
+health 40
+	coords  550  230 150
+	at 200
+
+spawn  Slum
+health 40
+	coords  550  230 150
+	at 300
+
+spawn  Vice
+health 40
+	coords  550  230 150
+	at 400
+
+spawn  Garnet
+health 40
+	coords  550  230 150
+	at 500
+
+
+wait 
+at 600
+
+group 3 3
+at  600
 
 
 spawn  Raven
-health 20
+health 70
 	coords  550  200 150
-	at 300
+	at 600
+
+
+spawn  Donovan
+health 40
+	coords  -100  230 150
+	at 100
+
+spawn  Fog
+health 40
+	coords  550  230 150
+	at 200
+
+spawn  Slum
+health 40
+	coords  -100  230 150
+	at 600
+
+spawn  Vice
+health 40
+	coords  550  230 150
+	at 600
+
+spawn  Garnet
+health 40
+	coords  -100  230 150
+	at 600
+
+
+spawn  Nora
+Map 2
+health 70
+	coords  550  230 150
+	at 600
+
+group 99 99
+at  601
+
+spawn  Box02
+Item Apple
+	coords  550  235
+	at 601
+
+spawn  Box02
+2pItem Apple
+	coords  600  235
+	at 601
+
+spawn  Galsia
+health 40
+	coords  550  230 150
+	at 700
+
+spawn  Donovan
+health 40
+	coords  550  230 150
+	at 800
+
+spawn  Fog
+health 40
+	coords  550  230 150
+	at 900
+
+spawn  Slum
+health 40
+	coords  550  230 150
+	at 1000
+
+wait 
+at 1120
+
+group 3 3
+at  1120
+
+
+spawn  raven
+health 50
+	coords  550  230 150
+	at 1120
+
+spawn  Raven
+health 60
+	coords  -100 230 150
+	at 1120
+
+spawn  nora
+map 4
+health 70
+	coords  550  230 150
+	at 1120
+
+spawn  Slum
+health 40
+	coords  -100  230 150
+	at 1120
+
+
+spawn  Fog
+health 50
+	coords  550  230 150
+	at 1120
+
+spawn  Donovan
+health 60
+	coords  -100  230 150
+	at 1120
+
+spawn  nora
+map 3
+health 50
+	coords  550  230 150
+	at 1120
+
+spawn  Garnet
+health 40
+	coords  -100  230 150
+	at 1120
+
+
 
 
 

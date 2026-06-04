@@ -212,6 +212,7 @@ know    Bobf03		data/chars/Enemys/Bob/Bobf03.txt
 know    Bobf04		data/chars/Enemys/Bob/Bobf04.txt
 know    Fireball	data/chars/Enemys/Bob/Fireball.txt
 know    Yasha		data/chars/Enemys/Yasha/Yasha.txt
+know    Yasha_		data/chars/Enemys/Yasha/Yasha_.txt
 know    MRX		data/chars/Enemys/MRX/MRX.txt
 know    MRX4		data/chars/Enemys/MRX/MRX4.txt
 know    MRX_		data/chars/Enemys/MRX/MRX_.txt
@@ -287,6 +288,7 @@ know 	Yamato		data/chars/Enemys/Yamato/Yamato.txt
 know 	Yamato_		data/chars/Enemys/Yamato/Yamato_.txt
 know 	star02		data/chars/Enemys/Yamato/Star02.txt
 know 	RobotX		data/chars/Enemys/RobotX/RobotX.txt
+know 	RobotX_		data/chars/Enemys/RobotX/RobotX_.txt
 know 	RobotZ		data/chars/Enemys/RobotX/RobotZ.txt
 know 	Robot		data/chars/Enemys/RobotX/Robot.txt
 know 	Trapos02	data/chars/Enemys/RobotX/Trapos02.txt
@@ -549,6 +551,7 @@ know	Cigarro407    	data/Bgs/St407/Cigarro407.txt
 know	Ele407    	data/Bgs/St407/Ele407.txt
 know	E407A    	data/Bgs/St407/E407A.txt
 know	E407B    	data/Bgs/St407/E407B.txt
+know	TV407    	data/Bgs/St407/TV407.txt
 
 
 

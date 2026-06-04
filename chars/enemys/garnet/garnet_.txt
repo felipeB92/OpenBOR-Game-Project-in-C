@@ -74,12 +74,16 @@ anim jump
 	bbox	128 100 42 75
 	frame	data/chars/Enemys/Garnet/jump00.gif
 
-anim jumpattack
+anim freespecial
 	loop	0
-	delay	7
+	delay	25
+	jumpframe  1  3  2  0
         Range 60 100
 	offset	150 180
 	bbox	141 99 30 42
+	frame	data/chars/Enemys/Garnet/get00.gif
+	delay	7
+	frame	data/chars/Enemys/Garnet/jump00.gif
 	frame	data/chars/Enemys/Garnet/jumpatk00.gif
 	delay	30
 		attack1  147  123  53  34  10  1  0  0  0  10

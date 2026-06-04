@@ -15,7 +15,7 @@ anim idle
 		hitfx  data/sounds/golpes/forte.wav
 		Attack1  0
 	frame  data/chars/Enemys/Bob/fire00.gif
-		attack3  170  83  86  83  25  1  0  0  0  25
+		attack7  170  83  86  83  25  1  0  0  0  25
 	frame	data/chars/Enemys/Bob/fire01.gif
 	frame	data/chars/Enemys/Bob/fire02.gif
 	frame	data/chars/Enemys/Bob/fire03.gif

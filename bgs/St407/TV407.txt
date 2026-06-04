@@ -1,0 +1,30 @@
+name			Tv407
+type			none
+shadow			0
+setlayer		7
+antigravity 100
+#Alpha 1
+
+anim idle
+	loop	1
+	delay	150
+	offset	0 0
+	frame	data/bgs/sT407/TV/00.gif
+	delay	12
+	frame	data/bgs/sT407/TV/01.gif
+	frame	data/bgs/sT407/TV/02.gif
+	frame	data/bgs/sT407/TV/01.gif
+	frame	data/bgs/sT407/TV/02.gif
+	frame	data/bgs/sT407/TV/01.gif
+	frame	data/bgs/sT407/TV/02.gif
+	frame	data/bgs/sT407/TV/01.gif
+	frame	data/bgs/sT407/TV/02.gif
+	delay	150
+	frame	data/bgs/sT407/TV/03.gif
+	frame	data/bgs/sT407/TV/04.gif
+	delay	12
+	frame	data/bgs/sT407/TV/01.gif
+	frame	data/bgs/sT407/TV/02.gif
+	frame	data/bgs/sT407/TV/01.gif
+	frame	data/bgs/sT407/TV/02.gif
+

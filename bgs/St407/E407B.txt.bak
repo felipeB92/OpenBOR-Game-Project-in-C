@@ -1,8 +1,8 @@
-name			e407A
+name			e407B
 type			none
 shadow			0
 #setlayer		8
-antigravity 90
+antigravity 95
 #Alpha 1
 animationscript		data/scripts/drago.c
 
@@ -16,10 +16,11 @@ anim idle
 	offset	0 200
 	@cmd  spawn01  "elevador01"  0  0  0
 	frame	data/bgs/sT407/BAck03.gif
-	delay	330
+	delay	480
 	frame	data/bgs/sT407/BAck03.gif
 	@cmd  spawn01  "elevador02"  0  0  0
 	frame	data/bgs/sT407/BAck03.gif
       @cmd killentity getlocalvar("self")
 	frame	data/bgs/sT407/BAck03.gif
+
 
