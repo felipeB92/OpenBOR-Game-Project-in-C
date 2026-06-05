@@ -1,5 +1,5 @@
 name	Fog_B
-health	100
+health	50
 speed	8
 lifespan 40
 falldie 2

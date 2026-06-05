@@ -1,5 +1,5 @@
 name	Fog_Pipe
-health	100
+health	50
 speed	6
 lifespan 40
 type	Enemy

@@ -1,4 +1,4 @@
-name	Fog
+name	Fog_
 health	50
 speed	8
 falldie 2
@@ -26,10 +26,16 @@ remap data/chars/Enemys/Fog/idle00.gif data/chars/Enemys/Fog/alter4.gif
 
 anim	spawn
 	loop	0
-	delay	20
-	offset	144 181
-	bbox	132 110 23 72
-	frame   data/chars/Enemys/Fog/Jump00.gif
+	delay	300
+	offset	144 191
+		Attack1  0
+	frame   data/chars/Enemys/Fog/pain200.gif
+		delay  10
+		offset  144  181
+		bbox  132  110  23  72
+	frame  data/chars/Enemys/Fog/jump00.gif
+		bbox  128  139  38  35
+	frame  data/chars/Enemys/Fog/jumpland00.gif
 
 
 

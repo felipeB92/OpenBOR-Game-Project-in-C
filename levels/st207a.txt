@@ -10,6 +10,7 @@ panel		data/bgs/st207/pn00.gif		none	none
 #fglayer			data/bgs/st201/fpn00.gif 0 -0.8 0.6 0 0 0 0 1 1 1
 frontpanel      data/bgs/st05/Front02.gif
 cameratype 1
+bgspeed 1 0
 cameraoffset 	0 -60
 settime         99
 notime          0

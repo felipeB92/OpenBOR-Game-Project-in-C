@@ -676,34 +676,40 @@ script continue data/scripts/continue.c
 
 #7A - Entrada do Hotel
 
-z	225 270
+#z	225 270
 
-file	data/levels/St407A.txt
+#file	data/levels/St407A.txt
 
 #7B - Hotel
 
-z	230 270
+#z	230 270
 
-file	data/levels/St407B.txt
+#file	data/levels/St407B.txt
 
 #7C- Elevador
 
-z	170 270
+#z	170 270
 
-file	data/levels/St407C.txt
+#file	data/levels/St407C.txt
 
 
 #7D - Salas ADM
 
-z	215 240
+#z	215 240
 
-file	data/levels/St407D.txt
+#file	data/levels/St407D.txt
 
 #7D - Salas Chefe
 
+#z	180 275
+
+#file	data/levels/St407E.txt
+
+#8A - Fabrica
+
 z	180 275
 
-file	data/levels/St407E.txt
+file	data/levels/St408A.txt
 
 
 

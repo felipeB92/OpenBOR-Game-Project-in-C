@@ -1,6 +1,6 @@
 
 name	Fog_Bike
-health	100
+health	50
 speed	8
 nodrop 2
 falldie 2
