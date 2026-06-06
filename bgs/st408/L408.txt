@@ -1,0 +1,19 @@
+name			L408
+type			none
+shadow			0
+setlayer		7
+antigravity 100
+#Alpha 1
+
+anim idle
+	loop	1
+	delay	12
+	offset	0 0
+	frame	data/bgs/sT408/L/00.gif
+	frame	data/bgs/sT408/L/01.gif
+	frame	data/bgs/sT408/L/02.gif
+	frame	data/bgs/sT408/L/03.gif
+	frame	data/bgs/sT408/L/04.gif
+
+
+

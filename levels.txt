@@ -707,9 +707,28 @@ script continue data/scripts/continue.c
 
 #8A - Fabrica
 
-z	180 275
+#z	215 275
 
-file	data/levels/St408A.txt
+#file	data/levels/St408A.txt
+
+#8B - Fabrica2
+
+#z	215 275
+
+#file	data/levels/St408B.txt
+
+#8C - Fabrica/Armazem
+
+#z	215 275
+
+#file	data/levels/St408C.txt
+
+#8C - Fabrica/Elevador
+
+z	90 250
+
+file	data/levels/St408D.txt
+
 
 
 

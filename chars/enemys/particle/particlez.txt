@@ -451,6 +451,8 @@ anim death
 	loop	0
 	offset	143 192
 	delay	20
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
 	frame	data/chars/Enemys/particle/special03.gif
 	frame	data/chars/Enemys/particle/special02.gif
 	frame	data/chars/Enemys/particle/special03.gif

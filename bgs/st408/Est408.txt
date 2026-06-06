@@ -1,0 +1,46 @@
+name			Est408
+type			none
+shadow			0
+setlayer		7
+antigravity 100
+#Alpha 1
+
+anim idle
+	loop	1
+	delay	5
+	offset	0 0
+	frame	data/bgs/sT408/Est/00.gif
+	frame	data/bgs/sT408/Est/01.gif
+	frame	data/bgs/sT408/Est/02.gif
+	frame	data/bgs/sT408/Est/03.gif
+	frame	data/bgs/sT408/Est/04.gif
+	frame	data/bgs/sT408/Est/05.gif
+	frame	data/bgs/sT408/Est/06.gif
+	frame	data/bgs/sT408/Est/07.gif
+	frame	data/bgs/sT408/Est/08.gif
+	frame	data/bgs/sT408/Est/09.gif
+	frame	data/bgs/sT408/Est/10.gif
+	frame	data/bgs/sT408/Est/11.gif
+	frame	data/bgs/sT408/Est/12.gif
+	frame	data/bgs/sT408/Est/13.gif
+	frame	data/bgs/sT408/Est/14.gif
+	frame	data/bgs/sT408/Est/15.gif
+	frame	data/bgs/sT408/Est/16.gif
+	frame	data/bgs/sT408/Est/17.gif
+	frame	data/bgs/sT408/Est/18.gif
+	frame	data/bgs/sT408/Est/19.gif
+	frame	data/bgs/sT408/Est/20.gif
+	frame	data/bgs/sT408/Est/21.gif
+	frame	data/bgs/sT408/Est/22.gif
+	frame	data/bgs/sT408/Est/23.gif
+	frame	data/bgs/sT408/Est/24.gif
+	frame	data/bgs/sT408/Est/25.gif
+	frame	data/bgs/sT408/Est/27.gif
+	frame	data/bgs/sT408/Est/28.gif
+	frame	data/bgs/sT408/Est/29.gif
+	frame	data/bgs/sT408/Est/30.gif
+	frame	data/bgs/sT408/Est/31.gif
+	frame	data/bgs/sT408/Est/32.gif
+
+
+

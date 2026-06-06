@@ -245,6 +245,8 @@ anim death
 	loop	0
 	offset	141 182
 	delay	6
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
 	frame	data/chars/Enemys/p1/death00.gif
 	frame	data/chars/Enemys/p1/death00.gif
         @cmd  spawn01  "Boom02"  0  0  0

@@ -1,0 +1,194 @@
+music		data/bgs/St207/BacktotheIndustry.ogg
+bossmusic	data/music/boss2.ogg
+scrollspeed 0.5#1
+stagenumber 8
+background	data/bgs/st408/back02.gif	0.6 1 0 0 0 0 -1 1 1 0  0 0 0 0 0
+panel		data/bgs/st408/pn02.gif		none	none
+#fglayer			data/bgs/st201/fpn00.gif 0 -0.8 0.6 0 0 0 0 1 1 1
+#frontpanel      data/bgs/st05/Front02.gif
+cameratype 1
+bgspeed 1 0
+cameraoffset 	0 -60
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	50 60
+spawn2  	55 70
+spawn3  	60 80
+
+light		128 -128
+at			0
+
+spawn  Time01
+	coords  0  0
+        Flip 1
+	at  0
+
+spawn  Est408
+	coords  0  30
+        Flip 1
+	at  0
+
+spawn  Lata03
+Item Apple
+	coords  350  250
+	at  0
+
+spawn  Lata03
+Item Apple
+	coords  400  260
+	at  0
+
+spawn  Bigben
+MAp 1
+health 50
+	coords  600  260 150
+	at  100
+
+spawn  Bigben
+MAp 1
+health 50
+	coords  -100  230 150
+	at  300
+
+wait 
+at 430
+
+group 4 4
+at  430
+
+spawn  P1
+MAp 1
+health 50
+	coords  -100  260 150
+	at  430
+
+spawn  P1
+MAp 2
+health 50
+	coords  600  260 150
+	at  430
+
+spawn  Yamato
+MAp 4
+health 200
+	coords  600  230 150
+	at  430
+
+spawn  Hakuyo
+MAp 2
+health 50
+	coords  600  230 150
+	at  430
+
+spawn  Tiger
+MAp 1
+health 50
+	coords  -100  260 150
+	at  430
+
+spawn  Kusanagi
+MAp 2
+health 50
+	coords  600  230 150
+	at  430
+
+
+spawn  Tiger
+MAp 4
+health 50
+	coords  500  260 150
+	at  500
+
+spawn  Kusanagi
+MAp 4
+health 50
+	coords  600  230 150
+	at  600
+
+spawn  Kusanagi
+MAp 4
+health 50
+	coords  600  260 150
+	at  600
+
+
+
+spawn  P1
+Map 1
+health 50
+	coords  600  260 150
+	at  750
+
+
+spawn  P1
+Map 2
+health 50
+	coords  -100  230 150
+	at  750
+
+spawn  P1
+Map 1
+health 50
+	coords  600  230 150
+	at  750
+
+spawn  Bob
+Alias Bongo
+Map 1
+health 200
+	coords  600  230 150
+	at  750
+
+
+spawn  Bob
+Map 2
+health 200
+	coords  -100  230 150
+	at  750
+
+
+spawn  P1
+Map 2
+health 50
+	coords  -100  260 150
+	at  750
+
+
+spawn  P1
+Map 2
+health 50
+	coords  600  260 150
+	at  750
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

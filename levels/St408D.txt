@@ -1,0 +1,222 @@
+music		data/Bgs/st305/Moon.ogg
+bossmusic	data/music/boss2.ogg
+scrollspeed 0.5
+vbgspeed	16 1
+stagenumber 4
+direction Down
+background	data/bgs/st408/BAck04B.gif
+panel		data/bgs/st408/pn04.gif
+frontpanel	data/bgs/st204/Time.gif
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	230 60 150
+spawn2  	230 65 150
+spawn3  	230 70 150
+
+
+
+
+
+Wall  371  181  -3  0  75  80  38  300
+Wall  39  184  -3  0  75  80  42  300
+Wall  -97  277  -50  0  61  397  159  300
+Wall  -143  181  -38  0  566  211  192  300
+Wall  186  279  293  0  389  488  152  300
+Wall  404  172  -352  0  258  269  171  300
+
+
+light		128 -128
+at			0
+
+
+spawn  Elevador01
+flip   1
+	coords  0  0 0
+	at  0
+
+
+group 3 3
+at   0
+
+spawn  P1
+map    2
+health 40
+Flip 1
+	coords  155  171 230
+	at  0
+
+spawn  P1
+map    3
+health 40
+	coords  235  125 230
+	at  0
+
+spawn  P1
+map    2
+health 40
+	coords  300  171 230
+	at  0
+
+
+spawn  P1
+map    3
+health 40
+	coords  235  215 230
+	at  0
+
+spawn  Robot
+map    2
+health 40
+Flip 1
+	coords  155  171 230
+	at  0
+
+spawn  Robot
+map    3
+health 40
+	coords  235  125 230
+	at  0
+
+spawn  Robot
+map    2
+health 40
+	coords  300  171 230
+	at  0
+
+
+spawn  Robot
+map    3
+health 40
+	coords  235  215 230
+	at  0
+
+spawn  Galsia
+map    2
+health 40
+Flip 1
+	coords  155  171 230
+	at  0
+
+spawn  Donovan
+map    3
+health 40
+	coords  235  125 230
+	at  0
+
+spawn  Vice
+map    2
+health 40
+	coords  300  171 230
+	at  0
+
+
+spawn  Slum
+map    3
+health 40
+	coords  235  215 230
+	at  0
+
+spawn  Garnet
+map    3
+health 40
+	coords  235  125 230
+	at  0
+
+spawn  Nora
+map    2
+health 40
+	coords  300  171 230
+	at  0
+
+
+spawn  mace
+map    3
+health 40
+	coords  235  215 230
+	at  0
+
+spawn  Electra
+map    2
+health 40
+Flip 1
+	coords  155  171 230
+	at  0
+
+spawn  Fog
+map    3
+health 40
+	coords  235  125 230
+	at  0
+
+spawn  Fog
+map    2
+health 40
+	coords  300  171 230
+	at  0
+
+
+spawn  Hakuyo
+map    3
+health 40
+	coords  235  215 230
+	at  0
+
+spawn  Tiger
+map    2
+health 40
+Flip 1
+	coords  155  171 230
+	at  0
+
+spawn  Kusanagi
+map    3
+health 40
+	coords  235  125 230
+	at  0
+
+spawn  Kusanagi
+map    2
+health 40
+	coords  300  171 230
+	at  0
+
+
+spawn  Bigben
+map    3
+health 60
+	coords  235  215 230
+	at  0
+
+spawn  Jet
+map    3
+health 150
+	coords  235  125 230
+	at  0
+
+spawn  Rocket
+map    2
+health 150
+	coords  300  171 230
+	at  0
+
+
+spawn  Jet_JR
+map    3
+health 150
+	coords  235  215 230
+	at  0
+
+
+
+
+

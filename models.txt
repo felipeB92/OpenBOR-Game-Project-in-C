@@ -553,6 +553,9 @@ know	E407A    	data/Bgs/St407/E407A.txt
 know	E407B    	data/Bgs/St407/E407B.txt
 know	TV407    	data/Bgs/St407/TV407.txt
 
+know	Est408    	data/Bgs/St408/Est408.txt
+know	L408    	data/Bgs/St408/L408.txt
+
 
 
 
