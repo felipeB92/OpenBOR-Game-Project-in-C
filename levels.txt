@@ -725,9 +725,16 @@ script continue data/scripts/continue.c
 
 #8C - Fabrica/Elevador
 
-z	90 250
+#z	90 250
 
-file	data/levels/St408D.txt
+#file	data/levels/St408D.txt
+
+#8C - Fabrica/Sala Chefe
+
+z	150 270
+
+file	data/levels/St408E.txt
+
 
 
 

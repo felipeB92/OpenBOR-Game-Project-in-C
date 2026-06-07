@@ -213,6 +213,7 @@ know    Bobf04		data/chars/Enemys/Bob/Bobf04.txt
 know    Fireball	data/chars/Enemys/Bob/Fireball.txt
 know    Yasha		data/chars/Enemys/Yasha/Yasha.txt
 know    Yasha_		data/chars/Enemys/Yasha/Yasha_.txt
+know	MR_X__		data/chars/Players/MRX_/MR_X__.txt
 know    MRX		data/chars/Enemys/MRX/MRX.txt
 know    MRX4		data/chars/Enemys/MRX/MRX4.txt
 know    MRX_		data/chars/Enemys/MRX/MRX_.txt
@@ -555,6 +556,8 @@ know	TV407    	data/Bgs/St407/TV407.txt
 
 know	Est408    	data/Bgs/St408/Est408.txt
 know	L408    	data/Bgs/St408/L408.txt
+know	Cadeira408A    	data/Bgs/St408/Cadeira408A.txt
+know	Cadeira408B    	data/Bgs/St408/Cadeira408B.txt
 
 
 

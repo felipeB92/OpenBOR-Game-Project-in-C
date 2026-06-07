@@ -1,0 +1,16 @@
+name			Cadeira408B
+type			none
+shadow			0
+setlayer		7
+antigravity 100
+#Alpha 1
+
+anim idle
+	loop	1
+	delay	75
+	offset	49 92
+	frame	data/bgs/sT408/Cadeira408B.gif
+	frame	data/bgs/sT408/Cadeira408C.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/bgs/sT408/Cadeira408C.gif
+

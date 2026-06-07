@@ -1,0 +1,410 @@
+music		data/music/Boss1.ogg
+bossmusic	data/music/FinalBoss2.ogg
+scrollspeed 0.5
+stagenumber 8
+background	data/bgs/st408/BAck05.gif
+panel		data/bgs/st408/pn05.gif
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	230 60 150
+spawn2  	230 65 150
+spawn3  	230 70 150
+
+
+light		128 -128
+at			0
+
+spawn  Time01
+	coords  0  0
+        Flip 1
+	at  0
+
+spawn  Lata03
+Item Chicken
+	coords  55  160
+	at  0
+
+spawn  Lata03
+Flip 1
+2PItem Chicken
+	coords  435  160
+	at  0
+
+spawn  Cadeira408B
+Flip 1
+	coords  240  152
+	at  0
+
+wait
+at 0
+
+group 2 2
+at   0
+
+
+spawn  RobotX
+health 200
+	coords  400  200
+	at  0
+
+spawn  RobotX
+health 200
+	coords  100  200
+	at  0
+
+wait
+at 1
+
+group 2 2
+at   1
+
+spawn  Cadeira408B
+Flip 1
+	coords  240  152
+	at  1
+
+spawn  NeoX
+health 200
+	coords  600  200 150
+	at  1
+
+spawn  NeoX
+Map 4
+health 200
+	coords  -100  200 150
+	at  1
+
+wait
+at 2
+
+group 5 5
+at   2
+
+spawn  MR_X__
+Flip 1
+Boss 1
+	coords  240  153
+	at  2
+
+
+spawn  Donovan
+Map 4
+health 40
+	coords  600  200 150
+	at  2
+
+spawn  Galsia
+Map 4
+health 40
+	coords  -100  240 150
+	at  2
+
+
+spawn  Donovan
+Map 4
+health 40
+	coords  600  230 150
+	at  2
+
+spawn  Galsia
+Map 4
+health 40
+	coords  -100  200 150
+	at  2
+
+spawn  Donovan
+Map 4
+health 40
+	coords  600  200 150
+	at  2
+
+spawn  Galsia
+Map 4
+health 40
+	coords  -100  240 150
+	at  2
+
+
+spawn  Donovan
+Map 4
+health 40
+	coords  600  230 150
+	at  2
+
+spawn  Galsia
+Map 4
+health 40
+	coords  -100  200 150
+	at  2
+
+
+spawn  Donovan
+Map 4
+health 40
+	coords  600  200 150
+	at  2
+
+spawn  Galsia
+Map 4
+health 40
+	coords  -100  240 150
+	at  2
+
+
+spawn  Donovan
+Map 4
+health 40
+	coords  600  230 150
+	at  2
+
+spawn  Galsia
+Map 4
+health 40
+	coords  -100  200 150
+	at  2
+
+
+spawn  Donovan
+Map 4
+health 40
+	coords  600  200 150
+	at  2
+
+spawn  Galsia
+Map 4
+health 40
+	coords  -100  240 150
+	at  2
+
+
+spawn  Donovan
+Map 4
+health 40
+	coords  600  230 150
+	at  2
+
+spawn  Galsia
+Map 4
+health 40
+	coords  -100  200 150
+	at  2
+
+
+spawn  Donovan
+Map 4
+health 40
+	coords  600  200 150
+	at  2
+
+spawn  Galsia
+Map 4
+health 40
+	coords  -100  240 150
+	at  2
+
+
+spawn  Donovan
+Map 4
+health 40
+	coords  600  230 150
+	at  2
+
+spawn  Galsia
+Map 4
+health 40
+	coords  -100  200 150
+	at  2
+
+
+spawn  Donovan
+Map 4
+health 40
+	coords  600  200 150
+	at  2
+
+spawn  Galsia
+Map 4
+health 40
+	coords  -100  240 150
+	at  2
+
+
+spawn  Donovan
+Map 4
+health 40
+	coords  600  230 150
+	at  2
+
+spawn  Galsia
+Map 4
+health 40
+	coords  -100  200 150
+	at  2
+
+spawn  Donovan
+Map 4
+health 40
+	coords  600  200 150
+	at  2
+
+spawn  Galsia
+Map 4
+health 40
+	coords  -100  240 150
+	at  2
+
+
+spawn  Donovan
+Map 4
+health 40
+	coords  600  230 150
+	at  2
+
+spawn  Galsia
+Map 4
+health 40
+	coords  -100  200 150
+	at  2
+
+spawn  Donovan
+Map 4
+health 40
+	coords  600  200 150
+	at  2
+
+spawn  Galsia
+Map 4
+health 40
+	coords  -100  240 150
+	at  2
+
+
+spawn  Donovan
+Map 4
+health 40
+	coords  600  230 150
+	at  2
+
+spawn  Galsia
+Map 4
+health 40
+	coords  -100  200 150
+	at  2
+
+
+spawn  Donovan
+Map 4
+health 40
+	coords  600  200 150
+	at  2
+
+spawn  Galsia
+Map 4
+health 40
+	coords  -100  240 150
+	at  2
+
+
+spawn  Donovan
+Map 4
+health 40
+	coords  600  230 150
+	at  2
+
+spawn  Galsia
+Map 4
+health 40
+	coords  -100  200 150
+	at  2
+
+
+spawn  Donovan
+Map 4
+health 40
+	coords  600  200 150
+	at  2
+
+spawn  Galsia
+Map 4
+health 40
+	coords  -100  240 150
+	at  2
+
+
+spawn  Donovan
+Map 4
+health 40
+	coords  600  230 150
+	at  2
+
+spawn  Galsia
+Map 4
+health 40
+	coords  -100  200 150
+	at  2
+
+
+spawn  Donovan
+Map 4
+health 40
+	coords  600  200 150
+	at  2
+
+spawn  Galsia
+Map 4
+health 40
+	coords  -100  240 150
+	at  2
+
+
+spawn  Donovan
+Map 4
+health 40
+	coords  600  230 150
+	at  2
+
+spawn  Galsia
+Map 4
+health 40
+	coords  -100  200 150
+	at  2
+
+
+spawn  Donovan
+Map 4
+health 40
+	coords  600  200 150
+	at  2
+
+spawn  Galsia
+Map 4
+health 40
+	coords  -100  240 150
+	at  2
+
+
+spawn  Donovan
+Map 4
+health 40
+	coords  600  230 150
+	at  2
+
+spawn  Galsia
+Map 4
+health 40
+	coords  -100  200 150
+	at  2
+
+
+
+

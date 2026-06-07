@@ -1,0 +1,13 @@
+name			Cadeira408A
+type			none
+shadow			0
+setlayer		7
+antigravity 100
+#Alpha 1
+
+anim idle
+	loop	1
+	delay	999
+	offset	49 92
+	frame	data/bgs/sT408/Cadeira408A.gif
+

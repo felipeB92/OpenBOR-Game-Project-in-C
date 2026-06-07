@@ -34,6 +34,7 @@ Load Rocket_Bomb2
 remap data/chars/Enemys/NeoX/idle00.gif data/chars/Enemys/NeoX/alter1.gif
 remap data/chars/Enemys/NeoX/idle00.gif data/chars/Enemys/NeoX/alter2.gif
 remap data/chars/Enemys/NeoX/idle00.gif data/chars/Enemys/NeoX/alter3.gif
+remap data/chars/Enemys/NeoX/idle00.gif data/chars/Enemys/NeoX/alter4.gif
 
 anim	spawn
 	loop	0
