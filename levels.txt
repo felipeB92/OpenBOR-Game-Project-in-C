@@ -551,17 +551,17 @@ script continue data/scripts/continue.c
 #-------------------
 
 #1A - Rua em chamas 
-#z	195 270
+z	195 270
 
-#file	data/levels/St401a.txt
+file	data/levels/St401a.txt
 
 #1B - Centro Comercial
-#z	205 270
+z	205 270
 
-#file	data/levels/St401B.txt
+file	data/levels/St401B.txt
 
 #1C - Restaurante Chines
-#z	205 270
+z	205 270
 
 #file	data/levels/St401C.txt
 
