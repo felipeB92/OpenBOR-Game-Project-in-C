@@ -30,21 +30,25 @@ spawn  Time01
 	at  0
 
 spawn  Vaso
+Item Knife
 	coords 50  250
         Flip 1
 	at  0
 
 spawn  Vaso02
+Item Kunai
 	coords 150  250
         Flip 1
 	at  0
 
 spawn  Box
+Item Pipe
 	coords 250  250
         Flip 1
 	at  0
 
 spawn  Tires
+Item Sword
 	coords 350  250
         Flip 1
 	at  0
@@ -61,6 +65,15 @@ spawn  Garnet
        Boss 1
 	coords  -100  200
 	at  150
+
+
+
+spawn  Galsia
+       Map 2
+       Boss 1
+	coords  -100  200
+	at  150
+
 
 
 

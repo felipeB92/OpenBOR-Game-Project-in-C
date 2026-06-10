@@ -1,0 +1,212 @@
+name	Blaze_CopKnife
+health	100
+mp 20
+#mprate 1
+riseinv				0.4 1
+speed	14
+type	None
+gfxshadow	1
+candamage			enemy npc obstacle
+antigrab 2
+JUMPHEIGHT 1 1
+Jumpheight 3
+atchain    1 2 3
+weapons				Blaze_Knife Blaze_Sword Blaze_pipe Blaze_Kunai	Blaze_bike
+icon	data/chars/players/Blaze_COP/icon.gif 1
+diesound data/chars/players/Blaze/death.wav
+running	24	3	2	1	1
+#onblockwscript	data/scripts/bounceF.c
+animationscript		data/scripts/drago.c
+#ondrawscript 		data/scripts/player_ondrawscript.c
+
+Load Knifet
+
+Com d d freespecial5
+Com u u freespecial6
+com b A freespecial3
+
+remap data/chars/players/Blaze_COP/idle00.gif data/chars/players/Blaze_COP/map01.gif
+remap data/chars/players/Blaze_COP/idle00.gif data/chars/players/Blaze_COP/map02.gif
+remap data/chars/players/Blaze_COP/idle00.gif data/chars/players/Blaze_COP/map03.gif
+remap data/chars/players/Blaze_COP/idle00.gif data/chars/players/Blaze_COP/map04.gif
+
+
+
+
+anim idle
+	loop	1
+	delay	18
+	offset	70 112
+	bbox	62 36 24 77
+	frame   data/chars/players/Blaze_COP/Knife/idle00.gif
+@cmd  depost  0
+@cmd  throw  25  5  2  2  0  -1
+@cmd  clearL
+	frame   data/chars/players/Blaze_COP/Knife/idle01.gif
+		offset  70  111
+	frame   data/chars/players/Blaze_COP/Knife/idle02.gif
+		offset  70  112
+	frame   data/chars/players/Blaze_COP/Knife/idle01.gif
+
+
+
+anim walk
+	loop	1
+	delay	12
+	offset	69 114
+	bbox	63 36 19 58
+	frame	data/chars/players/Blaze_COP/Knife/walk00.gif
+@cmd  depost  0
+@cmd  throw  25  5  2  2  0  -1
+@cmd  clearL
+	frame	data/chars/players/Blaze_COP/Knife/walk01.gif
+	frame	data/chars/players/Blaze_COP/Knife/walk02.gif
+	frame	data/chars/players/Blaze_COP/Knife/walk03.gif
+	frame	data/chars/players/Blaze_COP/Knife/walk04.gif
+	frame	data/chars/players/Blaze_COP/Knife/walk05.gif
+
+
+
+
+anim jump
+	loop	0
+	delay	20
+	offset	70 109
+	bbox	60 42 33 58
+	frame	data/chars/players/Blaze_COP/Knife/jump00.gif
+	frame	data/chars/players/Blaze_COP/Knife/jump00.gif
+	frame	data/chars/players/Blaze_COP/Knife/jump00.gif
+
+
+
+
+
+anim attack1
+	loop	0
+	delay	5
+	offset	76 110
+	bbox	73 45 14 63
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/armas/corte.wav
+	cancel	0 9 0 b A freespecial7
+	frame	data/chars/players/Blaze_COP/Knife/a100.gif
+		attack1  83  59  43  10  8  0  0  0  0  15
+		offset  70  109
+	frame	data/chars/players/Blaze_COP/Knife/a101.gif
+
+
+anim attack2
+	loop	0
+	delay	4
+	offset	68 110
+	bbox	68 38 17 69
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/armas/corte.wav
+	cancel	0 9 0 b A freespecial7
+	frame	data/chars/players/Blaze_COP/Knife/a200.gif
+		delay  10
+		offset  66  111
+	frame	data/chars/players/Blaze_COP/Knife/a201.gif
+		offset  69  123
+		attack2  81  31  32  91  7  0  0  0  0  15
+	frame	data/chars/players/Blaze_COP/Knife/a202.gif
+		delay  7
+		bbox  50  39  17  69
+		offset  71  110
+		Attack1  0
+	frame	data/chars/players/Blaze_COP/Knife/a203.gif
+
+anim attack3
+	loop	0
+	fastattack  1
+	delay	8
+	offset	83 111
+	fastattack 1
+	bbox	67 39 21 51
+        Sound	data/sounds/golpes/Chut.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	cancel	0 9 0 b A freespecial7
+		Attack1  0
+		Sound  data/sounds/golpes/Chut.wav
+		hitfx  data/sounds/armas/corte.wav
+		cancel  0  9  0  b  A  freespecial7
+	frame  data/chars/players/Blaze_COP/Knife/a300.gif
+		offset  69  111
+		attack1  33  41  90  36  15  1  0  0  0  15
+	frame  data/chars/players/Blaze_COP/Knife/a301.gif
+	frame  data/chars/players/Blaze_COP/Knife/a302.gif
+		Attack1  0
+		delay  15
+	frame  data/chars/players/Blaze_COP/Knife/a303.gif
+
+anim run
+        loop    1
+        delay  9
+	offset	66 111
+	bbox	70 47 30 40
+        frame	data/chars/players/Blaze_COP/Knife/run00.gif
+        frame	data/chars/players/Blaze_COP/Knife/run01.gif
+        frame	data/chars/players/Blaze_COP/Knife/run02.gif
+        frame	data/chars/players/Blaze_COP/Knife/run03.gif
+        frame	data/chars/players/Blaze_COP/Knife/run04.gif
+        frame	data/chars/players/Blaze_COP/Knife/run05.gif
+
+
+
+
+anim special2
+        energycost 0 1
+        MpOnly 1
+	loop	0
+	delay	5
+        custknife Knifet
+        throwframe 4 45
+	offset	76 109
+        hitfx	data/sounds/golpes/forte.wav
+	frame	data/chars/players/Blaze_COP/Knife/a400.gif
+		offset  76  113
+	frame	data/chars/players/Blaze_COP/Knife/a401.gif
+		offset  71  110
+	frame	data/chars/players/Blaze_COP/Knife/a402.gif
+	frame  data/chars/players/Blaze_COP/Knife/a101.gif
+		offset  74  110
+		delay  20
+	frame	data/chars/players/Blaze_COP/Knife/a403.gif
+
+
+
+
+anim runattack
+ 	loop	0
+ 	delay	8
+	fastattack 1
+ 	offset	68 109
+ 	bbox	71 44 25 38
+		move  0
+        hitfx	data/sounds/armas/corte.wav
+		Attack1  0
+ 	frame	data/chars/players/Blaze_COP/Knife/ra100.gif
+		offset  75  107
+ 	frame	data/chars/players/Blaze_COP/Knife/ra101.gif
+		attack3  57  47  46  54  5  0  0  0  0  15
+		bbox  0
+		offset  70  102
+ 	frame	data/chars/players/Blaze_COP/Knife/ra102.gif
+	Sound	data/chars/players/Blaze_/a2.wav
+		Attack1  0
+		offset  67  104
+ 	frame	data/chars/players/Blaze_COP/Knife/ra103.gif
+		offset  63  122
+		attack2  49  21  55  94  15  1  0  0  0  20
+ 	frame	data/chars/players/Blaze_COP/Knife/ra104.gif
+		offset  71  123
+ 	frame	data/chars/players/Blaze_COP/Knife/ra105.gif
+		offset  85  118
+ 	frame	data/chars/players/Blaze_COP/Knife/ra106.gif
+		delay  8
+		offset  85  121
+		Attack1  0
+	frame  data/chars/players/Blaze_COP/Knife/ra107.gif
+

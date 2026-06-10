@@ -1,0 +1,135 @@
+name	Blaze_CopKunai
+health	100
+mp 20
+#mprate 1
+riseinv				0.4 1
+speed	14
+type	None
+gfxshadow	1
+candamage			enemy npc obstacle
+antigrab 2
+JUMPHEIGHT 1 1
+Jumpheight 3
+atchain    1 1 2 3
+weapons				Blaze_Knife Blaze_Sword Blaze_pipe Blaze_Kunai	Blaze_bike
+icon	data/chars/players/Blaze_COP/icon.gif 1
+diesound data/chars/players/Blaze/death.wav
+running	24	3	2	1	1
+#onblockwscript	data/scripts/bounceF.c
+animationscript		data/scripts/drago.c
+#ondrawscript 		data/scripts/player_ondrawscript.c
+
+
+Load KunaiT
+
+Com d d freespecial5
+Com u u freespecial6
+com b A freespecial3
+
+remap data/chars/players/Blaze_COP/idle00.gif data/chars/players/Blaze_COP/map01.gif
+remap data/chars/players/Blaze_COP/idle00.gif data/chars/players/Blaze_COP/map02.gif
+remap data/chars/players/Blaze_COP/idle00.gif data/chars/players/Blaze_COP/map03.gif
+remap data/chars/players/Blaze_COP/idle00.gif data/chars/players/Blaze_COP/map04.gif
+
+
+
+
+anim idle
+	loop	1
+	delay	18
+	offset	70 112
+	bbox	62 36 24 77
+	frame   data/chars/players/Blaze_COP/Kunai/idle00.gif
+@cmd  depost  0
+@cmd  throw  25  5  2  2  0  -1
+@cmd  clearL
+	frame   data/chars/players/Blaze_COP/Kunai/idle01.gif
+		offset  70  111
+	frame   data/chars/players/Blaze_COP/Kunai/idle02.gif
+		offset  70  112
+	frame   data/chars/players/Blaze_COP/Kunai/idle01.gif
+
+
+
+anim walk
+	loop	1
+	delay	12
+	offset	69 114
+	bbox	63 36 19 58
+	frame	data/chars/players/Blaze_COP/Kunai/walk00.gif
+@cmd  depost  0
+@cmd  throw  25  5  2  2  0  -1
+@cmd  clearL
+	frame	data/chars/players/Blaze_COP/Kunai/walk01.gif
+	frame	data/chars/players/Blaze_COP/Kunai/walk02.gif
+	frame	data/chars/players/Blaze_COP/Kunai/walk03.gif
+	frame	data/chars/players/Blaze_COP/Kunai/walk04.gif
+	frame	data/chars/players/Blaze_COP/Kunai/walk05.gif
+
+
+
+
+anim jump
+	loop	0
+	delay	20
+	offset	70 109
+	bbox	60 42 33 58
+	frame	data/chars/players/Blaze_COP/Kunai/jump00.gif
+	frame	data/chars/players/Blaze_COP/Kunai/jump00.gif
+	frame	data/chars/players/Blaze_COP/Kunai/jump00.gif
+
+
+
+
+
+anim attack1
+	loop	0
+	delay	5
+	offset	76 110
+	bbox	73 45 14 63
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/armas/corte.wav
+	cancel	0 9 0 b A freespecial7
+	frame	data/chars/players/Blaze_COP/Kunai/a100.gif
+		attack1  83  59  43  10  15  1  0  0  0  15
+		offset  70  109
+	frame	data/chars/players/Blaze_COP/Kunai/a101.gif
+
+
+
+
+anim run
+        loop    1
+        delay  9
+	offset	66 111
+	bbox	70 47 30 40
+        frame	data/chars/players/Blaze_COP/Kunai/run00.gif
+        frame	data/chars/players/Blaze_COP/Kunai/run01.gif
+        frame	data/chars/players/Blaze_COP/Kunai/run02.gif
+        frame	data/chars/players/Blaze_COP/Kunai/run03.gif
+        frame	data/chars/players/Blaze_COP/Kunai/run04.gif
+        frame	data/chars/players/Blaze_COP/Kunai/run05.gif
+
+
+
+
+anim special2
+        energycost 0 1
+        MpOnly 1
+	loop	0
+	delay	8
+        custknife Kunait
+        throwframe 3 40
+	offset	76 109
+        hitfx	data/sounds/golpes/forte.wav
+	frame	data/chars/players/Blaze_COP/Kunai/a200.gif
+		offset  76  113
+	frame	data/chars/players/Blaze_COP/Kunai/a201.gif
+		offset  71  110
+	frame	data/chars/players/Blaze_COP/Kunai/a202.gif
+	frame  data/chars/players/Blaze_COP/Kunai/a101.gif
+		offset  74  110
+		delay  20
+	frame	data/chars/players/Blaze_COP/Kunai/a203.gif
+

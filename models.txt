@@ -131,7 +131,13 @@ know    Tiro03P		data/chars/Enemys/MRX/Tiro03P.txt
 know    Tiro04P		data/chars/Enemys/MRX/Tiro04P.txt
 know    Tiro05P		data/chars/Enemys/MRX/Tiro05P.txt
 
-load	BlazeCop	data/chars/Players/BlazeCop/BlazeCop.txt
+load	Blaze_Cop	data/chars/Players/Blaze_Cop/Blaze_Cop.txt
+know	Blaze_CopKnife	data/chars/Players/Blaze_Cop/Blaze_CopKnife.txt
+know	Blaze_CopKunai	data/chars/Players/Blaze_Cop/Blaze_CopKunai.txt
+know	Blaze_CopPipe	data/chars/Players/Blaze_Cop/Blaze_CopPipe.txt
+know	Blaze_CopSword	data/chars/Players/Blaze_Cop/Blaze_CopSword.txt
+know	Blaze_CopSP1	data/chars/Players/Blaze_Cop/Blaze_CopSP1.txt
+know	Blaze_CopSP2	data/chars/Players/Blaze_Cop/Blaze_CopSP2.txt
 
 know	T00	data/chars/Players/T00.txt
 

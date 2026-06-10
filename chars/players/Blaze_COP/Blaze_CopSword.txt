@@ -1,0 +1,153 @@
+name	Blaze_CopSword
+health	100
+mp 20
+#mprate 1
+riseinv				0.4 1
+speed	14
+type	None
+gfxshadow	1
+candamage			enemy npc obstacle
+antigrab 2
+JUMPHEIGHT 1 1
+Jumpheight 3
+atchain    1 1 2 3
+weapons				Blaze_Knife Blaze_Sword Blaze_pipe Blaze_Kunai	Blaze_bike
+icon	data/chars/players/Blaze_COP/icon.gif 1
+diesound data/chars/players/Blaze/death.wav
+running	24	3	2	1	1
+#onblockwscript	data/scripts/bounceF.c
+animationscript		data/scripts/drago.c
+#ondrawscript 		data/scripts/player_ondrawscript.c
+
+Load Swordt
+
+Com d d freespecial5
+Com u u freespecial6
+com b A freespecial3
+
+remap data/chars/players/Blaze_COP/idle00.gif data/chars/players/Blaze_COP/map01.gif
+remap data/chars/players/Blaze_COP/idle00.gif data/chars/players/Blaze_COP/map02.gif
+remap data/chars/players/Blaze_COP/idle00.gif data/chars/players/Blaze_COP/map03.gif
+remap data/chars/players/Blaze_COP/idle00.gif data/chars/players/Blaze_COP/map04.gif
+
+
+
+
+anim idle
+	loop	1
+	delay	18
+	offset	70 112
+	bbox	62 36 24 77
+	frame   data/chars/players/Blaze_COP/Sword/idle00.gif
+@cmd  depost  0
+@cmd  throw  25  5  2  2  0  -1
+@cmd  clearL
+	frame   data/chars/players/Blaze_COP/Sword/idle01.gif
+	frame   data/chars/players/Blaze_COP/Sword/idle02.gif
+	frame   data/chars/players/Blaze_COP/Sword/idle01.gif
+
+
+
+anim walk
+	loop	1
+	delay	12
+	offset	69 114
+	bbox	63 36 19 58
+	frame	data/chars/players/Blaze_COP/Sword/walk00.gif
+@cmd  depost  0
+@cmd  throw  25  5  2  2  0  -1
+@cmd  clearL
+	frame	data/chars/players/Blaze_COP/Sword/walk01.gif
+	frame	data/chars/players/Blaze_COP/Sword/walk02.gif
+	frame	data/chars/players/Blaze_COP/Sword/walk03.gif
+	frame	data/chars/players/Blaze_COP/Sword/walk04.gif
+	frame	data/chars/players/Blaze_COP/Sword/walk05.gif
+
+
+
+
+anim jump
+	loop	0
+	delay	20
+	offset	70 109
+	bbox	60 42 33 58
+	frame	data/chars/players/Blaze_COP/Sword/jump00.gif
+	frame	data/chars/players/Blaze_COP/Sword/jump01.gif
+	frame	data/chars/players/Blaze_COP/Sword/jump01.gif
+
+
+
+
+
+anim attack1
+	loop	0
+	delay	5
+	offset	76 112
+	bbox	73 45 14 63
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/armas/corte.wav
+	cancel	0 9 0 b A freespecial7
+	frame	data/chars/players/Blaze_COP/Sword/a100.gif
+		offset  76  111
+	frame	data/chars/players/Blaze_COP/Sword/a101.gif
+		offset  67  110
+		attack1  74  53  73  12  20  1  0  0  0  15
+		delay  20
+	frame	data/chars/players/Blaze_COP/Sword/a102.gif
+
+
+
+
+anim run
+        loop    1
+        delay  9
+	offset	66 111
+	bbox	70 47 30 40
+        frame	data/chars/players/Blaze_COP/Sword/run00.gif
+        frame	data/chars/players/Blaze_COP/Sword/run01.gif
+        frame	data/chars/players/Blaze_COP/Sword/run02.gif
+        frame	data/chars/players/Blaze_COP/Sword/run03.gif
+        frame	data/chars/players/Blaze_COP/Sword/run04.gif
+        frame	data/chars/players/Blaze_COP/Sword/run05.gif
+
+
+
+
+anim special2
+        energycost 0 1
+        MpOnly 1
+	loop	0
+	delay	8
+        custknife Swordt
+        throwframe 2 40
+	offset	76 112
+        hitfx	data/sounds/golpes/forte.wav
+	frame	data/chars/players/Blaze_COP/Sword/a100.gif
+	frame	data/chars/players/Blaze_COP/Sword/a101.gif
+		offset  71  110
+	frame	data/chars/players/Blaze_COP/Sword/a102.gif
+		offset  72  108
+		delay  20
+	frame	data/chars/players/Blaze_COP/Sword/a103.gif
+
+
+
+
+anim runattack
+ 	loop	0
+ 	delay	8
+	fastattack 1
+ 	offset	68 109
+ 	bbox	80 59 15 23
+        hitfx	data/sounds/armas/corte.wav
+		Attack1  63  42  40  49  15  1  0  0  0  20
+ 	frame	data/chars/players/Blaze_COP/Sword/ra100.gif
+ 	frame	data/chars/players/Blaze_COP/Sword/ra101.gif
+	Sound	data/chars/players/Blaze_/a2.wav
+ 	frame	data/chars/players/Blaze_COP/Sword/ra102.gif
+		Attack1  0
+ 	frame	data/chars/players/Blaze_COP/Sword/ra101.gif
+		attack2  49  21  55  94  15  1  0  0  0  20
+ 	frame	data/chars/players/Blaze_COP/Sword/ra100.gif
+
