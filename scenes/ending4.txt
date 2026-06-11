@@ -3,5 +3,5 @@
 	silence					# stop music
 
 #music	        data/music/.bor
-music	        data/music/start.bor
-animation	data/scenes/Ending4.gif 0
+music	        data/scenes/end01/ending.ogg
+animation	data/scenes/end04/end.gif 0

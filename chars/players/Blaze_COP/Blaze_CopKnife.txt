@@ -180,26 +180,27 @@ anim special2
 
 anim runattack
  	loop	0
- 	delay	8
+ 	delay	4
 	fastattack 1
  	offset	68 109
  	bbox	71 44 25 38
 		move  0
+	jumpframe  4  2.5  1  0
         hitfx	data/sounds/armas/corte.wav
 		Attack1  0
  	frame	data/chars/players/Blaze_COP/Knife/ra100.gif
 		offset  75  107
  	frame	data/chars/players/Blaze_COP/Knife/ra101.gif
-		attack3  57  47  46  54  5  0  0  0  0  15
+		attack2  57  47  46  54  15  1  0  0  0  20
 		bbox  0
 		offset  70  102
  	frame	data/chars/players/Blaze_COP/Knife/ra102.gif
 	Sound	data/chars/players/Blaze_/a2.wav
-		Attack1  0
 		offset  67  104
  	frame	data/chars/players/Blaze_COP/Knife/ra103.gif
 		offset  63  122
-		attack2  49  21  55  94  15  1  0  0  0  20
+		attack2  71  27  38  99  15  1  0  0  0  20
+		delay  8
  	frame	data/chars/players/Blaze_COP/Knife/ra104.gif
 		offset  71  123
  	frame	data/chars/players/Blaze_COP/Knife/ra105.gif

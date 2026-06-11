@@ -1,6 +1,7 @@
 name	Blaze_Cop
 health	100
 mp 20
+secret				0 1
 #mprate 1
 riseinv				0.4 1
 speed	14
@@ -11,7 +12,7 @@ antigrab 2
 JUMPHEIGHT 1 1
 Jumpheight 3
 atchain    1 1 2 3
-weapons				Blaze_CopKnife Blaze_CopSword Blaze_Coppipe Blaze_CopKunai	Blaze_bike
+weapons				Blaze_CopKnife Blaze_CopSword Blaze_Coppipe Blaze_CopKunai	Blaze_COPbike
 icon	data/chars/players/Blaze_COP/icon.gif 1
 diesound data/chars/players/Blaze/death.wav
 running	24	3	2	1	1
@@ -29,7 +30,7 @@ Load Blaze_COPKnife
 Load Blaze_COPPipe
 Load Blaze_COPKunai
 Load Blaze_COPSword
-Load Blaze_Bike
+Load Blaze_COPBike
 
 Com d d freespecial5
 Com u u freespecial6
@@ -214,13 +215,12 @@ anim attack2
 
 anim attack3
 	loop	0
-		fastattack  1
-		jumpframe  0  2.5  0  0
+
 	delay	6
 	offset	69 98
 	fastattack 1
-	bbox	52 54 27 31
 	jumpframe  0  2.5  0  0
+	bbox	52 54 27 31
         Sound	data/sounds/golpes/Chut.wav
         hitfx	data/sounds/golpes/Forte.wav
 	cancel	0 9 0 b A freespecial7

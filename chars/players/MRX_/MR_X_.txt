@@ -2,6 +2,7 @@ name	MR_X_
 Secret  0 1
 health	100
 mp 20
+secret				0 1
 #mprate 1
 riseinv				0.4 1
 speed	12

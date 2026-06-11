@@ -735,7 +735,11 @@ z	150 270
 
 file	data/levels/St408E.txt
 
+Scene      data/scenes/ending3.txt
 
+Scene      data/scenes/Unl.txt
+
+end
 
 
 
@@ -756,4 +760,25 @@ script continue data/scripts/continue.c
 z 185 270
 
 file	data/levels/T.txt
+
+#4A - Corrida Deserto
+
+z	180 255
+
+file	data/levels/St404b.txt
+
+
+#4A - Corrida Caminhão
+
+z	180 255
+
+file	data/levels/St404c.txt
+
+
+Scene      data/scenes/ending3.txt
+
+Scene      data/scenes/Unl.txt
+
+end
+
 

@@ -156,18 +156,18 @@ spawn  Lixo01
 	at  0
 
 spawn  Galsia
-health 40
+health 30
 	coords  600  220 150
 	at  200
 
 spawn  Donovan
 map 1
-health 40
+health 30
 	coords  600  220 150
 	at  220
 
 spawn  Signal
-health 40
+health 30
 	coords  600  220 150
 	at  300
 
@@ -183,12 +183,12 @@ item  Cash
 	at  395
 
 spawn  Galsia
-health 40
+health 30
 	coords  600  220 150
 	at  400
 
 spawn  Donovan
-health 40
+health 30
 	coords  600  250 150
 	at  400
 
@@ -202,7 +202,7 @@ group		5 5
 at		650
 
 spawn  Donovan
-health 40
+health 30
 	coords  -100  250 150
 	at  650
 
@@ -213,7 +213,7 @@ health 50
 	at  650
 
 spawn  Signal
-health 40
+health 30
 	coords  -100  250 150
 	at  650
 
@@ -222,18 +222,18 @@ spawn  Knife
 	at  650
 
 spawn  Galsia
-health 40
+health 30
 	coords  600  220 150
 	at  650
 
 spawn  Signal
-health 40
+health 30
 	coords  -100  250 150
 	at  650
 
 spawn  Signal
 Map 1
-health 40
+health 30
 	coords  600  250 150
 	at  650
 
@@ -266,7 +266,7 @@ spawn  Knife
 	at  1250
 
 spawn  Galsia
-health 40
+health 30
 	coords  600  205 150
 	at  1250
 
@@ -278,23 +278,23 @@ group		4 4
 at		1485
 
 spawn  Donovan
-health 40
+health 30
 	coords  -100  205 150
 	at  1485
 
 spawn  Vice
-health 40
+health 30
 	coords  -150  220 150
 	at  1485
 
 spawn  Signal
-health 40
+health 30
 	coords  -100  250 150
 	at  1485
 
 
 spawn  Slum 
-health 40
+health 30
 	coords  600  250 150
 	at  1485
 
@@ -329,12 +329,12 @@ health 50
 	at  1745
 
 spawn  Galsia
-health 40
+health 30
 	coords  600  220 150
 	at  1780
 
 spawn  Donovan
-health 40
+health 30
 	coords  600  250 150
 	at  1780
 
@@ -343,7 +343,7 @@ spawn  Pipe
 	at  1850
 
 spawn  Donovan
-health 40
+health 30
 	coords  600  230 150
 	at  1900
 
@@ -354,7 +354,7 @@ health 50
 	at  1950
 
 spawn  Donovan
-health 40
+health 30
 	coords  600  230 150
 	at  2000
 

@@ -136,12 +136,13 @@ anim special2
 
 anim runattack
  	loop	0
- 	delay	8
+ 	delay	9
 	fastattack 1
  	offset	68 109
  	bbox	80 59 15 23
         hitfx	data/sounds/armas/corte.wav
 		Attack1  63  42  40  49  15  1  0  0  0  20
+       @cmd dasher 2 0 0
  	frame	data/chars/players/Blaze_COP/Sword/ra100.gif
  	frame	data/chars/players/Blaze_COP/Sword/ra101.gif
 	Sound	data/chars/players/Blaze_/a2.wav

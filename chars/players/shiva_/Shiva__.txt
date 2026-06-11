@@ -1,7 +1,7 @@
 name	Shiva__
 health	100
 mp 20
-#Secret 0 1
+Secret 0 1
 #mprate 1
 riseinv				0.4 1
 speed	14

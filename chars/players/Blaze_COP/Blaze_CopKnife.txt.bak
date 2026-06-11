@@ -91,7 +91,7 @@ anim attack1
         hitfx	data/sounds/armas/corte.wav
 	cancel	0 9 0 b A freespecial7
 	frame	data/chars/players/Blaze_COP/Knife/a100.gif
-		attack2  83  59  43  10  8  0  0  0  0  15
+		attack1  83  59  43  10  8  0  0  0  0  15
 		offset  70  109
 	frame	data/chars/players/Blaze_COP/Knife/a101.gif
 
@@ -110,7 +110,7 @@ anim attack2
 		offset  66  111
 	frame	data/chars/players/Blaze_COP/Knife/a201.gif
 		offset  69  123
-		attack1  81  31  32  91  7  0  0  0  0  15
+		attack2  81  31  32  91  7  0  0  0  0  15
 	frame	data/chars/players/Blaze_COP/Knife/a202.gif
 		delay  7
 		bbox  50  39  17  69
@@ -185,6 +185,7 @@ anim runattack
  	offset	68 109
  	bbox	71 44 25 38
 		move  0
+	jumpframe  4  2.5  1  0
         hitfx	data/sounds/armas/corte.wav
 		Attack1  0
  	frame	data/chars/players/Blaze_COP/Knife/ra100.gif
