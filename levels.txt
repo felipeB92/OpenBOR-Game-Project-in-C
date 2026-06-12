@@ -563,171 +563,172 @@ file	data/levels/St401B.txt
 #1C - Restaurante Chines
 z	205 270
 
-#file	data/levels/St401C.txt
+file	data/levels/St401C.txt
 
-#Next
+Next
 
 #2A - Teto Bar Kunukle
-#z	175 230
+z	175 230
 
-#file	data/levels/St402A.txt
+file	data/levels/St402A.txt
 
 #2B - Teto do metro
-#z	195 240
+z	195 240
 
-#file	data/levels/St402B.txt
+file	data/levels/St402B.txt
 
 
 
 #2C - Interior Metro
-#z	218 260
+z	218 260
 
-#file	data/levels/St402c.txt
+file	data/levels/St402c.txt
 
 #2D - Estação Metro
-#z	222 275
+z	222 275
 
-#file	data/levels/St402D.txt
+file	data/levels/St402D.txt
 
 
-#Next
+Next
 
 #3A - Passarela das Fontes
-#z	225 275
+z	225 275
 
-#file	data/levels/St403A.txt
+file	data/levels/St403A.txt
 
 #3B - Ponte
-#z	220 275
+z	220 275
 
-#file	data/levels/St403B.txt
+file	data/levels/St403B.txt
 
 
 #3C - Rua comercial
-#z	230 275
+z	230 275
 
-#file	data/levels/St403C.txt
+file	data/levels/St403C.txt
 
+Next
 
 #4A - Corrida Ponte
 
-#z	180 255
+z	180 255
 
-#file	data/levels/St404A.txt
-
-
-#4A - Corrida Deserto
-
-#z	180 255
-
-#file	data/levels/St404b.txt
+file	data/levels/St404A.txt
 
 
-#4A - Corrida Caminhão
+#4B - Corrida Deserto
 
-#z	180 255
+z	180 255
 
-#file	data/levels/St404c.txt
-
-#4A - Pier
-
-#z	200 275
-
-#file	data/levels/St404D.txt
+file	data/levels/St404b.txt
 
 
+#4C - Corrida Caminhão
 
+z	180 255
+
+file	data/levels/St404c.txt
+
+#4D - Pier
+
+z	200 275
+
+file	data/levels/St404D.txt
+
+
+Next
 
 
 #5A - saguão Aeroporto
 
-#z	230 275
+z	230 275
 
-#file	data/levels/St405A.txt
+file	data/levels/St405A.txt
 
 
 #5B - Pista de Pouso
 
-#z	220 275
+z	220 275
 
-#file	data/levels/St405B.txt
+file	data/levels/St405B.txt
 
 #5C - interior Avião
 
-#z	170 275
+z	170 275
 
-#file	data/levels/St405C.txt
+file	data/levels/St405C.txt
 
-#Next
+Next
 
 #6A - Entrada Floresta
 
-#z	210 275
+z	210 275
 
-#file	data/levels/St406A.txt
+file	data/levels/St406A.txt
 
 #6B - BAnboo Garden
 
-#z	208 255
+z	208 255
 
-#file	data/levels/St406B.txt
+file	data/levels/St406B.txt
 
-
+Next
 
 #7A - Entrada do Hotel
 
-#z	225 270
+z	225 270
 
-#file	data/levels/St407A.txt
+file	data/levels/St407A.txt
 
 #7B - Hotel
 
-#z	230 270
+z	230 270
 
-#file	data/levels/St407B.txt
+file	data/levels/St407B.txt
 
 #7C- Elevador
 
-#z	170 270
+z	170 270
 
-#file	data/levels/St407C.txt
+file	data/levels/St407C.txt
 
 
 #7D - Salas ADM
 
 #z	215 240
 
-#file	data/levels/St407D.txt
+file	data/levels/St407D.txt
 
 #7D - Salas Chefe
 
-#z	180 275
+z	180 275
 
-#file	data/levels/St407E.txt
+file	data/levels/St407E.txt
 
 #8A - Fabrica
 
-#z	215 275
+z	215 275
 
-#file	data/levels/St408A.txt
+file	data/levels/St408A.txt
 
 #8B - Fabrica2
 
-#z	215 275
+z	215 275
 
-#file	data/levels/St408B.txt
+file	data/levels/St408B.txt
 
 #8C - Fabrica/Armazem
 
-#z	215 275
+z	215 275
 
-#file	data/levels/St408C.txt
+file	data/levels/St408C.txt
 
 #8C - Fabrica/Elevador
 
-#z	90 250
+z	90 250
 
-#file	data/levels/St408D.txt
+file	data/levels/St408D.txt
 
 #8C - Fabrica/Sala Chefe
 
@@ -735,50 +736,11 @@ z	150 270
 
 file	data/levels/St408E.txt
 
-Scene      data/scenes/ending3.txt
+Scene      data/scenes/ending4.txt
 
 Scene      data/scenes/Unl.txt
 
 end
 
-
-
-#------------------
-
-set	    T
-lives         5
-credits       99
-nosame	      1 1
-continuescore 2
-canSave       2
-script continue data/scripts/continue.c
-
-
-#------------------
-
-#Treino
-z 185 270
-
-file	data/levels/T.txt
-
-#4A - Corrida Deserto
-
-z	180 255
-
-file	data/levels/St404b.txt
-
-
-#4A - Corrida Caminhão
-
-z	180 255
-
-file	data/levels/St404c.txt
-
-
-Scene      data/scenes/ending3.txt
-
-Scene      data/scenes/Unl.txt
-
-end
 
 

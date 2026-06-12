@@ -28,7 +28,7 @@ spawn  Time01
         Flip 1
 	at  0
 
-Wall  2827  271  -209  0  40  80  106  999
+Wall  2827  271  -209  0  40  80  106  350
 
 spawn  b401b
 Flip   1

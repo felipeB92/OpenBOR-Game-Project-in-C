@@ -24,7 +24,7 @@ spawn  Time01
         Flip 1
 	at  0
 
-wall		711 238 -12 0 1000 1000 31 10000
+wall		711 238 -12 0 1000 1000 31 350
 
 spawn  parque01a
 flip   1
