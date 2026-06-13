@@ -85,7 +85,7 @@ health 40
 	at  350
 
 spawn  Antonio
-Map 4
+Map 3
 	coords  600  260 150
 	at  350
 

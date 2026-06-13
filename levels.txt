@@ -696,7 +696,7 @@ file	data/levels/St407C.txt
 
 #7D - Salas ADM
 
-#z	215 240
+z	215 240
 
 file	data/levels/St407D.txt
 
@@ -705,6 +705,8 @@ file	data/levels/St407D.txt
 z	180 275
 
 file	data/levels/St407E.txt
+
+Next
 
 #8A - Fabrica
 

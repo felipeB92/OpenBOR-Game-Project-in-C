@@ -15,7 +15,7 @@ anim idle
 	loop	0
 	delay	100
 	offset	100 167
-	bbox	81 95 37 75 0
+	bbox	86 99 29 70 -1 0
 	platform 76 171 0 0 50 50 7 1000
 	frame	data/chars/Objetos/bin02.gif
 

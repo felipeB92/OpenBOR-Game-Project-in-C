@@ -6,7 +6,7 @@ health	1
 nolife 1
 noname 1
 type	obstacle
-gfxshadow	1
+gfxshadow	0
 #icon	data/chars/misc/charicon.gif
 diesound		data/sounds/Iron.wav
 noatflash	1
@@ -14,14 +14,15 @@ noatflash	1
 anim idle
 	loop	0
 	delay	100
-	offset	28 72
-	bbox	3 1 48 73
+	offset	100 167
+	bbox	84 99 32 70 -1 0
+	platform 74 171 0 0 53 53 7 1000
 	frame	data/chars/Objetos/bin00.gif
 
 
 anim fall
 	loop	1
 	delay	1000
-	offset	28 72
+	offset	100 167
 	frame	data/chars/Objetos/bin01.gif
 

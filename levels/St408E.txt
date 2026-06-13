@@ -110,13 +110,13 @@ health 40
 	at  2
 
 
-spawn  Donovan
+spawn  Jonny
 Map 4
 health 40
 	coords  600  230 150
 	at  2
 
-spawn  Galsia
+spawn  Ralf
 Map 4
 health 40
 	coords  -100  200 150
@@ -135,117 +135,13 @@ health 40
 	at  2
 
 
-spawn  Donovan
+spawn  Jonny
 Map 4
 health 40
 	coords  600  230 150
 	at  2
 
-spawn  Galsia
-Map 4
-health 40
-	coords  -100  200 150
-	at  2
-
-
-spawn  Donovan
-Map 4
-health 40
-	coords  600  200 150
-	at  2
-
-spawn  Galsia
-Map 4
-health 40
-	coords  -100  240 150
-	at  2
-
-
-spawn  Donovan
-Map 4
-health 40
-	coords  600  230 150
-	at  2
-
-spawn  Galsia
-Map 4
-health 40
-	coords  -100  200 150
-	at  2
-
-
-spawn  Donovan
-Map 4
-health 40
-	coords  600  200 150
-	at  2
-
-spawn  Galsia
-Map 4
-health 40
-	coords  -100  240 150
-	at  2
-
-
-spawn  Donovan
-Map 4
-health 40
-	coords  600  230 150
-	at  2
-
-spawn  Galsia
-Map 4
-health 40
-	coords  -100  200 150
-	at  2
-
-
-spawn  Donovan
-Map 4
-health 40
-	coords  600  200 150
-	at  2
-
-spawn  Galsia
-Map 4
-health 40
-	coords  -100  240 150
-	at  2
-
-
-spawn  Donovan
-Map 4
-health 40
-	coords  600  230 150
-	at  2
-
-spawn  Galsia
-Map 4
-health 40
-	coords  -100  200 150
-	at  2
-
-
-spawn  Donovan
-Map 4
-health 40
-	coords  600  200 150
-	at  2
-
-spawn  Galsia
-Map 4
-health 40
-	coords  -100  240 150
-	at  2
-
-
-spawn  Donovan
-Map 4
-health 40
-	coords  600  230 150
-	at  2
-
-spawn  Galsia
+spawn  Ralf
 Map 4
 health 40
 	coords  -100  200 150
@@ -264,13 +160,37 @@ health 40
 	at  2
 
 
-spawn  Donovan
+spawn  Jonny
 Map 4
 health 40
 	coords  600  230 150
 	at  2
 
+spawn  Ralf
+Map 4
+health 40
+	coords  -100  200 150
+	at  2
+spawn  Donovan
+Map 4
+health 40
+	coords  600  200 150
+	at  2
+
 spawn  Galsia
+Map 4
+health 40
+	coords  -100  240 150
+	at  2
+
+
+spawn  Jonny
+Map 4
+health 40
+	coords  600  230 150
+	at  2
+
+spawn  Ralf
 Map 4
 health 40
 	coords  -100  200 150
@@ -289,17 +209,19 @@ health 40
 	at  2
 
 
-spawn  Donovan
+spawn  Jonny
 Map 4
 health 40
 	coords  600  230 150
 	at  2
 
-spawn  Galsia
+spawn  Ralf
 Map 4
 health 40
 	coords  -100  200 150
 	at  2
+
+
 
 
 spawn  Donovan
@@ -315,13 +237,69 @@ health 40
 	at  2
 
 
-spawn  Donovan
+spawn  Jonny
 Map 4
 health 40
 	coords  600  230 150
 	at  2
 
+spawn  Ralf
+Map 4
+health 40
+	coords  -100  200 150
+	at  2
+
+
+
+spawn  Donovan
+Map 4
+health 40
+	coords  600  200 150
+	at  2
+
 spawn  Galsia
+Map 4
+health 40
+	coords  -100  240 150
+	at  2
+
+
+spawn  Jonny
+Map 4
+health 40
+	coords  600  230 150
+	at  2
+
+spawn  Ralf
+Map 4
+health 40
+	coords  -100  200 150
+	at  2
+
+
+
+
+
+spawn  Donovan
+Map 4
+health 40
+	coords  600  200 150
+	at  2
+
+spawn  Galsia
+Map 4
+health 40
+	coords  -100  240 150
+	at  2
+
+
+spawn  Jonny
+Map 4
+health 40
+	coords  600  230 150
+	at  2
+
+spawn  Ralf
 Map 4
 health 40
 	coords  -100  200 150
@@ -341,13 +319,65 @@ health 40
 	at  2
 
 
-spawn  Donovan
+spawn  Jonny
 Map 4
 health 40
 	coords  600  230 150
 	at  2
 
+spawn  Ralf
+Map 4
+health 40
+	coords  -100  200 150
+	at  2
+
+
+
+spawn  Donovan
+Map 4
+health 40
+	coords  600  200 150
+	at  2
+
 spawn  Galsia
+Map 4
+health 40
+	coords  -100  240 150
+	at  2
+
+
+spawn  Jonny
+Map 4
+health 40
+	coords  600  230 150
+	at  2
+
+spawn  Ralf
+Map 4
+health 40
+	coords  -100  200 150
+	at  2
+
+spawn  Donovan
+Map 4
+health 40
+	coords  600  200 150
+	at  2
+
+spawn  Galsia
+Map 4
+health 40
+	coords  -100  240 150
+	at  2
+
+
+spawn  Jonny
+Map 4
+health 40
+	coords  600  230 150
+	at  2
+
+spawn  Ralf
 Map 4
 health 40
 	coords  -100  200 150
@@ -367,13 +397,13 @@ health 40
 	at  2
 
 
-spawn  Donovan
+spawn  Jonny
 Map 4
 health 40
 	coords  600  230 150
 	at  2
 
-spawn  Galsia
+spawn  Ralf
 Map 4
 health 40
 	coords  -100  200 150
@@ -393,13 +423,13 @@ health 40
 	at  2
 
 
-spawn  Donovan
+spawn  Jonny
 Map 4
 health 40
 	coords  600  230 150
 	at  2
 
-spawn  Galsia
+spawn  Ralf
 Map 4
 health 40
 	coords  -100  200 150
@@ -407,4 +437,120 @@ health 40
 
 
 
+
+
+spawn  Donovan
+Map 4
+health 40
+	coords  600  200 150
+	at  2
+
+spawn  Galsia
+Map 4
+health 40
+	coords  -100  240 150
+	at  2
+
+
+spawn  Jonny
+Map 4
+health 40
+	coords  600  230 150
+	at  2
+
+spawn  Ralf
+Map 4
+health 40
+	coords  -100  200 150
+	at  2
+
+
+
+
+
+
+
+spawn  Donovan
+Map 4
+health 40
+	coords  600  200 150
+	at  2
+
+spawn  Galsia
+Map 4
+health 40
+	coords  -100  240 150
+	at  2
+
+
+spawn  Jonny
+Map 4
+health 40
+	coords  600  230 150
+	at  2
+
+spawn  Ralf
+Map 4
+health 40
+	coords  -100  200 150
+	at  2
+
+
+
+
+
+spawn  Donovan
+Map 4
+health 40
+	coords  600  200 150
+	at  2
+
+spawn  Galsia
+Map 4
+health 40
+	coords  -100  240 150
+	at  2
+
+
+spawn  Jonny
+Map 4
+health 40
+	coords  600  230 150
+	at  2
+
+spawn  Ralf
+Map 4
+health 40
+	coords  -100  200 150
+	at  2
+
+
+
+
+
+
+spawn  Donovan
+Map 4
+health 40
+	coords  600  200 150
+	at  2
+
+spawn  Galsia
+Map 4
+health 40
+	coords  -100  240 150
+	at  2
+
+
+spawn  Jonny
+Map 4
+health 40
+	coords  600  230 150
+	at  2
+
+spawn  Ralf
+Map 4
+health 40
+	coords  -100  200 150
+	at  2
 

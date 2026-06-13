@@ -15,7 +15,7 @@ anim idle
 	loop	0
 	delay	100
 	offset	100 167
-	bbox	85 99 31 70 2 0
+	bbox	81 95 37 75 0
 	platform 75 171 0 0 52 52 10 1000
 	frame	data/chars/Objetos/trash00.gif
 
