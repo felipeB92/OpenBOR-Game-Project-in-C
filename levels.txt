@@ -101,6 +101,7 @@ script continue data/scripts/continue.c
 
 #------------------
 
+
 #1 - Ruas da Cidade
 z 160 260
 
@@ -549,6 +550,7 @@ script continue data/scripts/continue.c
 
 
 #-------------------
+
 
 #1A - Rua em chamas 
 z	195 270

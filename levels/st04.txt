@@ -2,14 +2,10 @@ music		data/bgs/St04/Keep-the-Groovin.ogg
 bossmusic	data/music/boss1.ogg
 scrollspeed 0.5#1
 stagenumber 4
-background	data/bgs/st04/Back01.gif
+background	data/bgs/st04/back01.gif	0.3 1 0 0 0 0 -1 1 0 0 0 0 0 0 0
+bglayer		data/bgs/st04/back01b.gif	0.3 1 0 0 0 0 -1 1 1 0 1 3 10 0.3
 panel		data/bgs/St04/Pn01.gif
-#frontpanel      data/bgs/St01/Front01.gif
-#bglayer           data/bgs/11lvl/liberty_statue.gif 0.3 0.1   60    -40 180 1 1 1 1  0
-#bglayer           data/bgs/11lvl/0x.gif 0.5 0.1   60    -40 180 1 1 1 1  0
-#fglayer         data/bgs/11lvl/fondo3.gif 1500 -0.1 0 0 0 0 0 1 1 1
-#fglayer         data/bgs/11lvl/sun.gif 500 0 0 0 -5 1 1 1 1 1 1
-#fglayer         data/bgs/11lvl/light2.gif 2500 0 0 0 -5 1 1 1 1 1 1
+
 cameratype 1
 cameraoffset 0 -30
 #levelscript @script
