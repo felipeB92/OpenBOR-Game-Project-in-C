@@ -147,6 +147,8 @@ anim Upper
 anim Riseattack
 	loop	0
 	delay	8
+        energycost 20 1
+        MpOnly 1
 	offset	144 196#	135 192
 	bbox	131 129 34 69
 	frame	data/chars/Enemys/MonaLisa/evade00.gif

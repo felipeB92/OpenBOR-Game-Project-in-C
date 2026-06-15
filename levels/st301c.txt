@@ -119,12 +119,12 @@ at     450
 Group  1  1
 at     450
 
-music     data/music/boss3.bor
+music     data/music/boss3.ogg
 	at 450
 
 
 spawn  _Shiva
-health 300
+health 200
 	coords  500 230
 	at  450
 

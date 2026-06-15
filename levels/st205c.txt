@@ -25,9 +25,9 @@ cameratype 1
 notime          1
 noslow          1
 order		a
-spawn1  	60 20 50
-spawn2  	65 25 50
-spawn3  	70 30 50
+spawn1  	100 20 50
+spawn2  	110 25 50
+spawn3  	120 30 50
 
 wall		0 285 -1000 -1000 65 65 80 350
 

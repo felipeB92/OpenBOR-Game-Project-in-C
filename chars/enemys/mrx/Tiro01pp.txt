@@ -12,18 +12,9 @@ anim idle
 	loop	1
 	delay	5
 	offset	25 27
-                Followcond 1
-                followanim 1
 	fastattck 1
         hitfx	data/sounds/golpes/forte.wav
 		attack1  16  24  14  8  15  1  0  0  0  15
 	frame	data/chars/Enemys/Mrx/p01.gif
 
-anim follow1
-	loop	1
-	delay	5
-	offset	25 27
-	frame	data/chars/Enemys/Mrx/empty.gif
-	@cmd killentity getlocalvar("self")
-	frame	data/chars/Enemys/Mrx/empty.gif
 

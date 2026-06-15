@@ -255,7 +255,6 @@ health 50
 	at  2750
 
 spawn  knife
-health 50
 	coords  500  230
 	at  2750
 

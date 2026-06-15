@@ -322,6 +322,8 @@ anim Upper
 anim Riseattack
 	loop	0
 	delay	6
+        energycost 20 1
+        MpOnly 1
 	offset	130 192
 		Attack1  0
         hitfx	data/sounds/golpes/Forte.wav

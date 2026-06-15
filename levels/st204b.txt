@@ -13,9 +13,9 @@ settime         99
 notime          0
 noslow          1
 order		a
-spawn1  	50 20
-spawn2  	55 35
-spawn3  	60 50
+spawn1  	90 40
+spawn2  	60 45
+spawn3  	70 50
 
 wall		0 275 -1000 -1000 157 -3 80 350
 
