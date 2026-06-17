@@ -1,4 +1,4 @@
-name	RobotX
+name	RobotX_
 health	250
 speed	16
 aimove				chase
@@ -35,10 +35,11 @@ remap data/chars/Enemys/RobotX/idle00.gif data/chars/Enemys/RobotX/alter3.gif
 
 anim	spawn
 	loop	0
-	delay	10
+	delay	200
 	offset	136 176
+	frame   data/chars/Enemys/RobotX/laugh02.gif
+	delay	10
         sound	data/voices/Bigben1.wav
-	@cmd  spawn01  "MX302"  0  0  0
 	frame   data/chars/Enemys/RobotX/laugh02.gif
 	frame   data/chars/Enemys/RobotX/laugh03.gif
 	frame   data/chars/Enemys/RobotX/laugh02.gif
@@ -70,6 +71,7 @@ anim	spawn
         sound	data/voices/Robotx1.wav
 	frame   data/chars/Enemys/RobotX/laugh01.gif
 	frame   data/chars/Enemys/RobotX/laugh00.gif
+	delay	100
 	frame   data/chars/Enemys/RobotX/laugh01.gif
 
 

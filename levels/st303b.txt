@@ -91,6 +91,7 @@ health 50
 	coords  500 260
 	at  250
 
+
 spawn  galsia
 map    2
 health 50
@@ -108,16 +109,6 @@ map    2
 health 40
 	coords  540 270
 	at  300
-
-spawn  Bloqueio02
-item   Chicken
-	coords  500 230
-	at  301
-
-spawn  Bloqueio02
-2pitem   Chicken
-	coords  520 230
-	at  301
 
 
 wait
@@ -161,14 +152,14 @@ at  601
 
 spawn  Bloqueio02
 2pitem   Chicken
-	coords  -500 220
-	at  700
+	coords  -250 220
+	at  601
 
 
 spawn  Bloqueio02
-2pitem   Chicken
-	coords  -505 265
-	at  700
+item   Chicken
+	coords  -300 265
+	at  601
 
 group 4  4
 at  1300

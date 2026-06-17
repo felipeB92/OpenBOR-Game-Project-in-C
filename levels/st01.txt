@@ -49,7 +49,6 @@ spawn  L07
         Flip 1
 	at  0
 
-
 spawn  Galsia_
 map 1
 health 30

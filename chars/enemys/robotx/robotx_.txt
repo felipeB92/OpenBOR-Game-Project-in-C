@@ -286,7 +286,7 @@ anim attack1
 	bbox	122 88 32 93
         hitfx	data/sounds/golpes/Medio.wav
 	frame	data/chars/Enemys/RobotX/a100.gif
-		attack1  152  111  48  17  10  0  0  0  0  20
+		attack1  152  111  48  17  10  0  0  0  0  15
 	frame	data/chars/Enemys/RobotX/a101.gif
 		Attack1  0
 	frame	data/chars/Enemys/RobotX/a100.gif

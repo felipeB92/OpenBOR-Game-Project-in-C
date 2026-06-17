@@ -101,7 +101,6 @@ script continue data/scripts/continue.c
 
 #------------------
 
-
 #1 - Ruas da Cidade
 z 160 260
 

@@ -18,8 +18,8 @@ cameraoffset 0 -30
 notime          1
 noslow          1
 order		a
-spawn1  	50 20 50
-spawn2  	55 35 50 
+spawn1  	50 60 50
+spawn2  	55 55 50 
 spawn3  	60 50 50
 
 light		128 -128
