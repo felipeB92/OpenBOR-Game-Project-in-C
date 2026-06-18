@@ -17,9 +17,9 @@ cameraoffset 0 -30
 notime          1
 noslow          1
 order		a
-spawn1  	50 70  50
-spawn2  	55 85  50
-spawn3  	60 105 50
+spawn1  	175 10  50
+spawn2  	170 20  50
+spawn3  	172 15 50
 
 light		128 -128
 at			0
@@ -58,7 +58,7 @@ spawn  shiva
 map    2
 health 300
 BOss 1
-	coords  400 220 200
+	coords  240 220 300
 	at  100
 
 

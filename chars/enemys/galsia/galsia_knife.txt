@@ -6,8 +6,8 @@ type	Enemy
 gfxshadow	1
 hostile				player npc
 candamage			player npc obstacle
-JUMPHEIGHT 1 1
-Jumpheight 3
+Jumpheight 1
+jumpspeed 2
 icon	data/chars/Enemys/galsia/icon.gif
 diesound data/sounds/axeldie.wav
 running	20	3	3	1	1

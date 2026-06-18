@@ -8,8 +8,8 @@ hostile				player npc
 candamage			player npc obstacle
 type	Enemy
 gfxshadow	1
-JUMPHEIGHT 1 1
-Jumpheight 3
+Jumpheight 1
+jumpspeed 2
 atchain    1 1 2
 #weapons				none none Signal_pipe none
 icon	data/chars/Enemys/Signal/icon.gif 1

@@ -1,5 +1,6 @@
 name	Robot
 health	150
+lifespan 60
 speed	16
 aimove				chase
 #aggression 99

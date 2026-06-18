@@ -1,4 +1,5 @@
 name	Robotz
+lifespan 90
 health	250
 speed	16
 aimove				chase

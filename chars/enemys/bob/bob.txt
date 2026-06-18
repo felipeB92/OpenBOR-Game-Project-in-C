@@ -9,8 +9,8 @@ Noblink 0
 falldie 2
 type	Enemy
 gfxshadow	1
-JUMPHEIGHT 1 1
-Jumpheight 3
+Jumpheight 1
+jumpspeed 2
 mp			        60
 mprate  			5
 icon	data/chars/Enemys/Bob/icon.gif 1

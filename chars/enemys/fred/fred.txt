@@ -5,14 +5,13 @@ riseinv				0.4 1
 hostile				player npc
 candamage			player npc obstacle
 Noblink 0
-falldie 2
+Jumpheight 1
+jumpspeed 2
 escapehits			2
 mp			        70
 mprate  			5
 type	Enemy
 gfxshadow	1
-JUMPHEIGHT 1 1
-Jumpheight 3
 risetime  5
 atchain    1 2
 icon	data/chars/Enemys/Fred/icon.gif 1

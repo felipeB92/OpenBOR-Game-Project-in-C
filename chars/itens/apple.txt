@@ -13,6 +13,7 @@ anim spawn
 	bbox	44 47 15 16
 	jumpframe  0  1  0  0
 	frame	data/chars/Itens/Apple00.gif
+	frame	data/chars/Itens/Apple00.gif
 
 anim idle
 	loop	1

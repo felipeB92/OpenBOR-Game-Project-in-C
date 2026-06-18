@@ -26,27 +26,11 @@ spawn1  	190 20 50
 spawn2  	210 35 50
 spawn3  	220 50 50
 
-Wall  237  211  67  0  271  213  33  0.001
-Wall  167  258  67  0  271  213  33  0.001
-Wall  1503  211  67  0  271  213  33  0.001
-Wall  1428  257  67  0  271  213  33  0.001
-Wall  3357  211  67  0  271  213  33  0.001
-Wall  3284  257  67  0  271  213  33  0.001
-
 Wall  1021  199  -66  0  96  102  45  155
 Wall  1830  201  -66  0  96  102  45  155
 Wall  4034  199  -66  0  273  269  45  155
 Wall  3773  202  -66  0  96  102  45  155
 Wall  2954  203  -66  0  96  102  45  155
-
-light		128 -128
-at			0
-
-spawn  Time01
-	coords  0  0
-        Flip 1
-	at  0
-
 
 light		128 -128
 at			0
@@ -379,13 +363,13 @@ item   Chicken
 
 spawn  Box
 item   1up
-	coords  600  210 250
+	coords  600  210 1
 	at  2801
 
 
 spawn  Box
 item   Pipe
-	coords  670  245 200
+	coords  650  260 2
 	at  2801
 
 spawn  Esteira01
@@ -516,4 +500,13 @@ spawn  fred
 boss   1
 	coords  550  200
 	at  4300
+
+
+
+
+
+
+
+
+
 

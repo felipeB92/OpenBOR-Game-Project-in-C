@@ -15,6 +15,7 @@ anim spawn
 	bbox	44 47 15 16
 	jumpframe  0  2  0  0
 	frame	data/chars/Itens/Cash00.gif
+	frame	data/chars/Itens/Cash00.gif
 
 anim idle
 	loop	1

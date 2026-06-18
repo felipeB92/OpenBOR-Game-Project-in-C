@@ -6,7 +6,8 @@ type	Enemy
 gfxshadow	1
 hostile				player npc
 candamage			player npc obstacle
-Jumpheight 3
+Jumpheight 1
+jumpspeed 2
 falldie 2
 atchain    1 1 2
 weapons				galsia_knife none None none
@@ -61,7 +62,7 @@ anim get
 
 anim jump
 	loop	0
-	delay	30
+	delay	5
 	offset	76 118
 	bbox	62 48 44 68
 	frame	data/chars/Enemys/galsia/jump00.gif
