@@ -23,18 +23,6 @@ spawn3  	60 50
 light		128 -128
 at			0
 
-Wall  210  244  67  0  273  214  35  0.001
-Wall  939  245  67  0  273  214  37  0.001
-Wall  1201  274  67  0  273  214  34  0.001
-Wall  1420  244  67  0  273  214  38  0.001
-Wall  1545  277  67  0  273  214  34  0.001
-Wall  1851  275  136  0  293  169  68  0.001
-Wall  2140  276  134  0  417  392  73  0.001
-
-spawn  Time01
-	coords  0  0
-        Flip 1
-	at  0
 spawn  Time01
 	coords  0  0
         Flip 1
@@ -324,10 +312,4 @@ health 150
 
 
 
-
-spawn  Kusanagi
-map    4
-health 150
-	coords  417  184 150
-	at  2000
 

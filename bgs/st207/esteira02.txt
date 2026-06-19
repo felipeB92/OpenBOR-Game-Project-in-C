@@ -9,95 +9,45 @@ load			Esteira02s
 
 anim idle
 	loop	1
-	forcedirection 1
-	forcedirection 1
-	forcedirection 1
-	forcedirection 1
-	forcedirection 1
-	forcedirection 1
-	forcedirection 1
-	forcedirection 1
-	forcedirection -1
-	forcedirection -1
-	forcedirection -1
-	forcedirection -1
-	forcedirection -1
-	forcedirection -1
-	forcedirection -1
-	forcedirection -1
-	forcedirection -1
 	delay	14
 	offset	0 65
 	fastattack 1
         hitfx	data/sounds/efeitos/silencio.wav
 	@cmd  spawn01  "Esteira02s"  0  0  0
 	frame	data/bgs/St207/machine03.gif
-		attack8  3  55  18  11  0  0  0  0  0  70
 	frame	data/bgs/St207/machine04.gif
-		attack8  11  49  20  11  0  0  0  0  0  70
 	frame	data/bgs/St207/machine05.gif
 	@cmd  spawn01  "Esteira02s"  0  0  0
-	forcedirection 1
-		attack8  24  44  16  10  0  0  0  0  0  70
 	frame	data/bgs/St207/machine03.gif
-		attack8  36  38  17  10  0  0  0  0  0  70
 	frame	data/bgs/St207/machine04.gif
-		attack8  48  32  18  10  0  0  0  0  0  70
 	frame	data/bgs/St207/machine05.gif
 	@cmd  spawn01  "Esteira02s"  0  0  0
-	forcedirection 1
-		attack8  60  23  17  13  0  0  0  0  0  70
 	frame	data/bgs/St207/machine03.gif
-		attack8  72  17  16  13  0  0  0  0  0  70
 	frame	data/bgs/St207/machine04.gif
-		attack8  83  10  19  15  0  0  0  0  0  70
 	frame	data/bgs/St207/machine05.gif
 	@cmd  spawn01  "Esteira02s"  0  0  0
-	forcedirection 1
-		attack8  95  6  19  11  0  0  0  0  0  70
 	frame	data/bgs/St207/machine03.gif
-		attack8  107  0  16  9  0  0  0  0  0  70
 	frame	data/bgs/St207/machine04.gif
-		attack8  110  -5  28  10  0  0  0  0  0  70
 	frame	data/bgs/St207/machine05.gif
 	@cmd  spawn01  "Esteira02s"  0  0  0
-		Attack1  0
 	frame	data/bgs/St207/machine03.gif
-		attack8  272  -2  14  10  0  0  0  0  0  70
 	frame	data/bgs/St207/machine04.gif
-		attack8  254  7  14  12  0  0  0  0  0  70
 	frame	data/bgs/St207/machine05.gif
 	@cmd  spawn01  "Esteira02s"  0  0  0
-	forcedirection -1
-		attack8  245  13  12  11  0  0  0  0  0  70
 	frame	data/bgs/St207/machine03.gif
-		attack8  238  18  10  12  0  0  0  0  0  70
 	frame	data/bgs/St207/machine04.gif
-		attack8  230  21  11  12  0  0  0  0  0  70
 	frame	data/bgs/St207/machine05.gif
 	@cmd  spawn01  "Esteira02s"  0  0  0
-	forcedirection -1
-		attack8  222  26  11  13  0  0  0  0  0  70
 	frame	data/bgs/St207/machine03.gif
-		attack8  210  30  14  12  0  0  0  0  0  70
 	frame	data/bgs/St207/machine04.gif
-		attack8  199  36  16  9  0  0  0  0  0  70
 	frame	data/bgs/St207/machine05.gif
 	@cmd  spawn01  "Esteira02s"  0  0  0
-	forcedirection -1
-		attack8  192  40  9  9  0  0  0  0  0  70
 	frame	data/bgs/St207/machine03.gif
-		attack8  181  44  15  11  0  0  0  0  0  70
 	frame	data/bgs/St207/machine04.gif
-		attack8  173  51  12  9  0  0  0  0  0  70
 	frame	data/bgs/St207/machine05.gif
 	@cmd  spawn01  "Esteira02s"  0  0  0
-	forcedirection -1
-		attack8  161  56  17  9  0  0  0  0  0  70
 	frame	data/bgs/St207/machine03.gif
-		attack8  155  58  16  11  0  0  0  0  0  70
 	frame	data/bgs/St207/machine04.gif
-		Attack1  0
 	frame	data/bgs/St207/machine05.gif
 	@cmd  spawn01  "Esteira02s"  0  0  0
 	frame	data/bgs/St207/machine03.gif

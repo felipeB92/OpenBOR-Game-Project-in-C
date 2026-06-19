@@ -1,0 +1,63 @@
+music		data/bgs/St207/BacktotheIndustry.ogg
+bossmusic	data/music/boss2.ogg
+scrollspeed 0.5#1
+stagenumber 7
+background	data/bgs/st207/back00.gif	        1 1 0 0 0 0 -1 1 0
+bglayer		data/bgs/st207/bg00.gif		0.6 1 0 0 0 0 -1 1 1 0  0 0 0 0 0
+bglayer		data/bgs/st207/bg01.gif		0.4 1 0 0 0 0 -1 1 1 0  0 0 0 0 1.5
+bglayer		data/bgs/st207/bg02.gif		0.2 1 0 0 0 0 -1 1 1 0  0 0 0 0 3
+panel		data/bgs/st207/pn00.gif		none	none
+#fglayer			data/bgs/st201/fpn00.gif 0 -0.8 0.6 0 0 0 0 1 1 1
+frontpanel      data/bgs/st05/Front02.gif
+cameratype 1
+bgspeed 1 0
+cameraoffset 	0 -60
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	50 20
+spawn2  	55 35
+spawn3  	60 50
+
+light		128 -128
+at			0
+
+spawn  Time01
+	coords  0  0
+        Flip 1
+	at  0
+
+
+
+
+
+spawn  Kusanagi
+map    4
+health 150
+	coords  250  230 150
+	at  2000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

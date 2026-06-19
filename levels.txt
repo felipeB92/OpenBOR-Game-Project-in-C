@@ -98,6 +98,10 @@ continuescore 2
 canSave       2
 script continue data/scripts/continue.c
 
+#7A - Fabrica
+z	215 275
+
+file	data/levels/St207a.txt
 
 #------------------
 

@@ -8,8 +8,8 @@ escapehits			2
 hostile				player npc
 candamage			player npc obstacle
 gfxshadow	1
-JUMPHEIGHT 1 1
-Jumpheight 3
+Jumpheight 1
+jumpspeed 2
 atchain    1 2 3
 icon	data/chars/Enemys/Electra/icon.gif 1
 diesound data/voices/die3.wav

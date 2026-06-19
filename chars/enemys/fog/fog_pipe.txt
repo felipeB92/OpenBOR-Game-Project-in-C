@@ -4,8 +4,8 @@ speed	6
 lifespan 40
 type	Enemy
 gfxshadow	1
-JUMPHEIGHT 1 1
-Jumpheight 3
+Jumpheight 1
+jumpspeed 2
 icon	data/chars/Enemys/Fog/icon.gif
 diesound data/sounds/axeldie.wav
 running	20	3	3	1	1

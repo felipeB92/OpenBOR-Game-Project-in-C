@@ -6,8 +6,8 @@ type	Enemy
 hostile				player npc
 candamage			player npc obstacle
 gfxshadow	1
-JUMPHEIGHT 1 1
-Jumpheight 3
+Jumpheight 1
+jumpspeed 2
 hostile				player npc obstacle
 candamage			player npc obstacle
 icon	data/chars/Enemys/Donovan/icon.gif

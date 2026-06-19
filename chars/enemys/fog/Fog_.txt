@@ -5,8 +5,8 @@ falldie 2
 type	Enemy
 lifespan 40
 gfxshadow	1
-JUMPHEIGHT 1 1
-Jumpheight 3
+Jumpheight 1
+jumpspeed 2
 hostile				player npc
 candamage			player npc obstacle
 atchain    1 1 2
