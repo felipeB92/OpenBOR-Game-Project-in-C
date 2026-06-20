@@ -1,5 +1,5 @@
 music		data/bgs/St207/Expander.ogg
-bossmusic	data/music/boss2.bor
+bossmusic	data/music/boss2.ogg
 scrollspeed 0.5#1
 stagenumber 7
 background	data/bgs/st207/back03.gif

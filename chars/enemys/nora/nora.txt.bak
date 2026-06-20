@@ -7,8 +7,8 @@ hostile				player npc
 candamage			player npc obstacle
 type	Enemy
 gfxshadow	1
-JUMPHEIGHT 1 1
-Jumpheight 3
+Jumpheight 1
+jumpspeed 2
 atchain    1 2 3
 icon	data/chars/Enemys/Nora/icon.gif 1
 diesound data/voices/die3.wav
@@ -65,13 +65,17 @@ anim jump
 	bbox	115 108 29 84
 	frame	data/chars/Enemys/Nora/jump00.gif
 
-anim jumpattack
+anim Freespecial
 	loop	0
 	delay	30
+	jumpframe  1  3  1  0
         Range 100 150
-	offset	130 197
-	bbox	93 136 52 45
+	offset	130 192
+	bbox	115 108 29 84
+	frame	data/chars/Enemys/Nora/a200.gif
+	frame	data/chars/Enemys/Nora/jump00.gif
         hitfx	data/sounds/golpes/Forte.wav
+	delay	30
 		attack1  124  160  51  34  7  1  0  0  0  20
 	frame	data/chars/Enemys/Nora/ja101.gif
 
@@ -253,7 +257,7 @@ anim fall4
 
 anim fall5
 	loop	0
-	offset	50 77
+	offset	44 68
 	delay	10
 		Attack1  0
 	frame	data/chars/Enemys/Nora/fall300.gif

@@ -10,78 +10,44 @@ anim idle
 	loop	1
 	delay	40
 	offset	1 116
-	fastattack 1
         hitfx	data/sounds/efeitos/silencio.wav
 	@cmd spawn01 "Esteira04s" 0 0 0
-	forcedirection 1
-		attack8  19  -2  49  24  0  0  0  0  0  100
-	frame	data/bgs/st308/empty.gif
-	forcedirection 1
-	@cmd spawn01 "Esteira04s" 0 0 0
-	forcedirection 1
-		attack8  29  11  38  25  0  0  0  0  0  100
 	frame	data/bgs/st308/empty.gif
 	@cmd spawn01 "Esteira04s" 0 0 0
-	forcedirection 1
-		attack8  53  21  43  32  0  0  0  0  0  100
 	frame	data/bgs/st308/empty.gif
 	@cmd spawn01 "Esteira04s" 0 0 0
-	forcedirection 1
-		attack8  89  40  38  31  0  0  0  0  0  100
 	frame	data/bgs/st308/empty.gif
 	@cmd spawn01 "Esteira04s" 0 0 0
-	forcedirection 1
-		attack8  120  54  32  31  0  0  0  0  0  100
 	frame	data/bgs/st308/empty.gif
 	@cmd spawn01 "Esteira04s" 0 0 0
-	forcedirection 1
-		attack8  141  68  35  22  0  0  0  0  0  100
 	frame	data/bgs/st308/empty.gif
 	@cmd spawn01 "Esteira04s" 0 0 0
-	forcedirection 1
-		attack8  170  83  34  22  0  0  0  0  0  100
 	frame	data/bgs/st308/empty.gif
 	@cmd spawn01 "Esteira04s" 0 0 0
-	forcedirection 1
-		attack8  194  89  53  31  0  0  0  0  0  100
 	frame	data/bgs/st308/empty.gif
 	@cmd spawn01 "Esteira04s" 0 0 0
-		Attack1  0
+	frame	data/bgs/st308/empty.gif
+	@cmd spawn01 "Esteira04s" 0 0 0
 	frame	data/bgs/st308/empty.gif
 		@cmd  spawn01  "Esteira04s"  0  0  0
-		attack8  498
 	frame  data/bgs/st308/empty.gif
 		@cmd  spawn01  "Esteira04s"  0  0  0
-	forcedirection -1
-		attack8  471  76  50  30  0  0  0  0  0  100
 	frame  data/bgs/st308/empty.gif
 		@cmd  spawn01  "Esteira04s"  0  0  0
-	forcedirection -1
-		attack8  459  63  30  31  0  0  0  0  0  100
 	frame  data/bgs/st308/empty.gif
 		@cmd  spawn01  "Esteira04s"  0  0  0
-	forcedirection -1
-		attack8  428  49  36  28  0  0  0  0  0  100
 	frame  data/bgs/st308/empty.gif
 		@cmd  spawn01  "Esteira04s"  0  0  0
 		attack8  413
 	frame  data/bgs/st308/empty.gif
 		@cmd  spawn01  "Esteira04s"  0  0  0
-	forcedirection -1
-		attack8  391  31  40  30  0  0  0  0  0  100
 	frame  data/bgs/st308/empty.gif
 		@cmd  spawn01  "Esteira04s"  0  0  0
-		attack8  368
 	frame  data/bgs/st308/empty.gif
 		@cmd  spawn01  "Esteira04s"  0  0  0
-	forcedirection -1
-		attack8  348  11  37  30  0  0  0  0  0  100
 	frame  data/bgs/st308/empty.gif
 		@cmd  spawn01  "Esteira04s"  0  0  0
-		attack8  317
 	frame  data/bgs/st308/empty.gif
-	forcedirection -1
 		@cmd  spawn01  "Esteira04s"  0  0  0
-		Attack1  0
 	frame  data/bgs/st308/empty.gif
 

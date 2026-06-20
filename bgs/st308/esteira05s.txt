@@ -9,7 +9,7 @@ anim idle
 	delay	128
 	offset	1 116
 	@cmd dasher -0.2 0 0
-	platform 0 240 346 586 116 0.001
+	platform 0 240 346 586 116 0.002
 	frame	data/bgs/st308/machine01.gif
 	@cmd killentity getlocalvar("self")
 	frame	data/bgs/st308/machine01.gif

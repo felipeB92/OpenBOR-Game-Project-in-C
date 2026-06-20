@@ -10,8 +10,8 @@ mp			        60
 mprate  			5
 type	Enemy
 gfxshadow	1
-JUMPHEIGHT 1 1
-Jumpheight 3
+Jumpheight 1
+jumpspeed 2
 risetime  5
 atchain    1 2
 icon	data/chars/Enemys/p1/icon.gif 1

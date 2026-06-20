@@ -10,8 +10,8 @@ Noblink 0
 type	Enemy
 falldie 2
 gfxshadow	1
-JUMPHEIGHT 1 1
-Jumpheight 3
+Jumpheight 1
+jumpspeed 2
 atchain    1 1 2
 icon	data/chars/Enemys/Jet_Jr/icon.gif 1
 diesound data/voices/bossdie2.wav
@@ -62,6 +62,16 @@ anim walk
 	bbox	143 96 38 83
 	frame	data/chars/Enemys/Jet_Jr/walk00.gif
 	frame	data/chars/Enemys/Jet_Jr/walk01.gif
+
+anim Jump
+	loop	0
+	delay	3
+	offset	155 220
+	bbox	138 102 38 80
+	frame   data/chars/Enemys/Jet_Jr/idle00.gif
+	frame   data/chars/Enemys/Jet_Jr/idle01.gif
+	frame   data/chars/Enemys/Jet_Jr/idle00.gif
+	frame   data/chars/Enemys/Jet_Jr/idle01.gif
 
 
 

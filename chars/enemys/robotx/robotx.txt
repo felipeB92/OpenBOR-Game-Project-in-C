@@ -12,8 +12,8 @@ mp			        60
 mprate  			5
 type	Enemy
 gfxshadow	1
-JUMPHEIGHT 1 1
-Jumpheight 3
+Jumpheight 1
+jumpspeed 2
 atchain    1 1 2
 icon	data/chars/Enemys/RobotX/icon.gif 1
 diesound data/voices/bossdie1.wav

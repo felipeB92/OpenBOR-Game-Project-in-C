@@ -7,8 +7,8 @@ type	Enemy
 gfxshadow	1
 hostile				player npc
 candamage			player npc obstacle
-JUMPHEIGHT 1 1
-Jumpheight 3
+Jumpheight 1
+jumpspeed 2
 atchain    1 1 2
 icon	data/chars/Enemys/haku_oh/icon.gif 1
 diesound data/voices/die2.wav
@@ -64,13 +64,16 @@ anim jump
 	bbox	62 48 44 68
 	frame	data/chars/Enemys/haku_oh/jump00.gif
 
-anim jumpattack
+anim Freespecial5
 	loop	0
 	delay	6
+	jumpframe  1  3  2  0
         range   70 80
 	offset	76 118
 	bbox	62 48 44 68
         hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/Enemys/haku_oh/Rise02.gif
+	frame	data/chars/Enemys/haku_oh/jump00.gif
 	frame	data/chars/Enemys/haku_oh/jumpatk00.gif
 	delay	30
 		attack1  73  52  41  44  10  1  0  0  0  20
@@ -277,7 +280,7 @@ anim fall4
 
 anim fall5
 	loop	0
-	offset	50 77
+	offset	37 69
 	delay	10
 		Attack1  0
 	frame	data/chars/Enemys/haku_oh/fall300.gif
@@ -289,7 +292,7 @@ anim fall5
 	frame	data/chars/Enemys/haku_oh/fall300.gif
 	frame	data/chars/Enemys/haku_oh/fall301.gif
 	frame	data/chars/Enemys/haku_oh/fall302.gif
-		offset  76  120
+		offset  76  118
 	frame	data/chars/Enemys/haku_oh/fall102.gif
 
 anim fall8

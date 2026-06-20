@@ -8,8 +8,8 @@ type	Enemy
 gfxshadow	1
 hostile				player npc
 candamage			player npc obstacle
-JUMPHEIGHT 1 1
-Jumpheight 3
+Jumpheight 1
+jumpspeed 2
 atchain    1 1 2
 icon	data/chars/Enemys/McBride/icon.gif 1
 diesound data/voices/die2.wav

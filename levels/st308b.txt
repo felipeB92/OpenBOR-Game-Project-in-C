@@ -21,8 +21,13 @@ spawn1  	50 70  50
 spawn2  	55 85  50
 spawn3  	60 105 50
 
+Wall  544  277  -226  0  91  336  121  0.001
+Wall  1057  274  -239  0  132  369  120  0.001
+
 light		128 -128
 at			0
+
+
 
 spawn  Time01
 	coords  0  0
@@ -284,19 +289,4 @@ spawn  P1
 health 60
 	coords  500 190 5
 	at  1200
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

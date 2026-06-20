@@ -1,0 +1,53 @@
+music		data/bgs/St308/Cycle_II.ogg
+bossmusic	data/music/Boss3.ogg
+scrollspeed 0.5#1
+stagenumber 8
+background	data/bgs/st308/back01.gif	0.6 1 0 0 0 0 -1 1 1
+panel		data/bgs/st308/pn01.gif		none	none
+#fglayer		data/bgs/st05/Front02.gif 			1000 1 1 0 0 0 0 -1 -1 1 2
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	50 70  50
+spawn2  	55 85  50
+spawn3  	60 105 50
+
+light		128 -128
+at			0
+
+spawn  Time01
+	coords  0  0
+        Flip 1
+	at  0
+
+
+
+spawn  P1
+health 60
+	coords  500 190 5
+	at  1200
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
