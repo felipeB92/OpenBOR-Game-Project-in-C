@@ -161,7 +161,7 @@ health 50
 
 spawn  Signal_
 health 50
-	coords  480 180
+	coords  460 180
 	at  450
 
 spawn  Signal_
@@ -184,7 +184,7 @@ at  500
 
 spawn  Signal
 health 50
-	coords  500 180
+	coords  500 260
 	at  500
 
 
@@ -196,7 +196,7 @@ health 50
 
 spawn  Signal
 health 50
-	coords  500 180
+	coords  500 240 300
 	at  500
 
 spawn  Signal
@@ -233,7 +233,7 @@ health 50
 
 spawn  Signal
 health 50
-	coords  500 180
+	coords  500 260 300
 	at  500
 
 spawn  Signal
