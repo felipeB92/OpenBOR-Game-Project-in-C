@@ -37,6 +37,11 @@ spawn  Luz08
 	coords  0  0
 	at  0
 
+spawn  St_1
+	coords  0  0
+        Flip 1
+	at  0
+
 spawn  1Up
 	coords  10  260
 	at  0

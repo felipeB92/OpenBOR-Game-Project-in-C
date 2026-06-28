@@ -31,6 +31,11 @@ spawn  Time01
         Flip 1
 	at  0
 
+spawn  St_2
+	coords  0  0
+        Flip 1
+	at  0
+
 light		128 -128
 at			0
 

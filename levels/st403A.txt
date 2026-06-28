@@ -164,6 +164,11 @@ spawn  Bonte403C
         Flip 1
 	at  0
 
+spawn  St_3
+	coords  0  0
+        Flip 1
+	at  0
+
 
 spawn  Bloqueio
 Flip 1

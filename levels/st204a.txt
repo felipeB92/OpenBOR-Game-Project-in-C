@@ -24,6 +24,11 @@ spawn  Time01
         Flip 1
 	at  0
 
+spawn  St_4
+	coords  0  0
+        Flip 1
+	at  0
+
 
 
 spawn  Lixo01

@@ -24,6 +24,11 @@ spawn  Time01
         Flip 1
 	at  0
 
+spawn  St_7
+	coords  0  0
+        Flip 1
+	at  0
+
 spawn  Vaso02
 Item Knife
 	coords  500  235

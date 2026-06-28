@@ -41,6 +41,11 @@ flip   1
 	coords  0  0
 	at  0
 
+spawn  St_3
+	coords  0  0
+        Flip 1
+	at  0
+
 spawn  Lixo01
 item   Knife
 	coords  395  180

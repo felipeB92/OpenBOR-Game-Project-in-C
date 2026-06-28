@@ -45,6 +45,11 @@ flip   1
 	coords  0 0
 	at  0
 
+spawn  St_7
+	coords  0  0
+        Flip 1
+	at  0
+
 spawn  Lixo03
 Item   Gold
 	coords  200 220

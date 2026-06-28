@@ -635,6 +635,16 @@ know	1up		data/chars/Itens/1up.txt
 load	Flash		data/chars/Objetos/flash.txt
 load	Time01		data/Sprites/Time01.txt
 
+#LV_ST
+know	ST_1		data/scenes/ST_1.txt
+know	ST_2		data/scenes/ST_2.txt
+know	ST_3		data/scenes/ST_3.txt
+know	ST_4		data/scenes/ST_4.txt
+know	ST_5		data/scenes/ST_5.txt
+know	ST_6		data/scenes/ST_6.txt
+know	ST_7		data/scenes/ST_7.txt
+know	ST_8		data/scenes/ST_8.txt
+
 
 
 

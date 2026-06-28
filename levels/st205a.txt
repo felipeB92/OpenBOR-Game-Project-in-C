@@ -46,7 +46,10 @@ Flip   1
 	coords  0  10
 	at  0
 
-
+spawn  St_5
+	coords  0  0
+        Flip 1
+	at  0
 
 
 spawn  Box03

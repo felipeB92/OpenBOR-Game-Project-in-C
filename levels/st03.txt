@@ -39,6 +39,11 @@ spawn  Onda
 	coords  0  10
 	at  0
 
+spawn  St_3
+	coords  0  0
+        Flip 1
+	at  0
+
 
 spawn  chuva
        Flip 1

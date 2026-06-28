@@ -1,0 +1,61 @@
+name	St_3
+type	Text
+subtype	noskip
+setlayer 999
+
+
+
+anim	idle
+	loop	0
+		offset  0  0
+		delay  4
+    frame   data/scenes/StageStart/3/s00.gif
+    frame   data/scenes/StageStart/3/s01.gif
+    frame   data/scenes/StageStart/3/s02.gif
+    frame   data/scenes/StageStart/3/s03.gif
+    frame   data/scenes/StageStart/3/s04.gif
+    frame   data/scenes/StageStart/3/s05.gif
+    frame   data/scenes/StageStart/3/s06.gif
+    frame   data/scenes/StageStart/3/s07.gif
+    frame   data/scenes/StageStart/3/s08.gif
+    frame   data/scenes/StageStart/3/s09.gif
+    frame   data/scenes/StageStart/3/s10.gif
+    frame   data/scenes/StageStart/3/s11.gif
+    frame   data/scenes/StageStart/3/s12.gif
+    frame   data/scenes/StageStart/3/s13.gif
+    frame   data/scenes/StageStart/3/s14.gif
+    frame   data/scenes/StageStart/3/s15.gif
+    frame   data/scenes/StageStart/3/s16.gif
+    frame   data/scenes/StageStart/3/s17.gif
+    frame   data/scenes/StageStart/3/s18.gif
+    frame   data/scenes/StageStart/3/s19.gif
+    frame   data/scenes/StageStart/3/s20.gif
+    frame   data/scenes/StageStart/3/s21.gif
+    frame   data/scenes/StageStart/3/s22.gif
+    frame   data/scenes/StageStart/3/s23.gif
+    frame   data/scenes/StageStart/3/s24.gif
+    frame   data/scenes/StageStart/3/s25.gif
+    frame   data/scenes/StageStart/3/s26.gif
+    frame   data/scenes/StageStart/3/s27.gif
+    frame   data/scenes/StageStart/3/s28.gif
+    frame   data/scenes/StageStart/3/s29.gif
+		delay  100
+    frame   data/scenes/StageStart/3/s30.gif
+		delay  4
+    frame   data/scenes/StageStart/3/s31.gif
+    frame   data/scenes/StageStart/3/s32.gif
+    frame   data/scenes/StageStart/3/s33.gif
+    frame   data/scenes/StageStart/3/s34.gif
+    frame   data/scenes/StageStart/3/s35.gif
+    frame   data/scenes/StageStart/3/s36.gif
+    frame   data/scenes/StageStart/3/s37.gif
+    frame   data/scenes/StageStart/3/s38.gif
+    frame   data/scenes/StageStart/3/s39.gif
+    frame   data/scenes/StageStart/3/s40.gif
+    frame   data/scenes/StageStart/3/s41.gif
+    frame   data/scenes/StageStart/3/s42.gif
+    frame   data/scenes/StageStart/3/s43.gif
+    frame   data/scenes/StageStart/3/s44.gif
+	@cmd killentity getlocalvar("self")
+    frame   data/scenes/StageStart/3/s44.gif
+

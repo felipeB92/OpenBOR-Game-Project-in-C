@@ -26,6 +26,11 @@ spawn  Time01
         Flip 1
 	at  0
 
+spawn  St_8
+	coords  0  0
+        Flip 1
+	at  0
+
 spawn  Vaso
 Item   apple
 	coords  500  210

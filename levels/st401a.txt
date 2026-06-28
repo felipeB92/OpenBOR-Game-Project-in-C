@@ -24,6 +24,11 @@ spawn  Time01
         Flip 1
 	at  0
 
+spawn  St_1
+	coords  0  0
+        Flip 1
+	at  0
+
 
 spawn  B401
 flip 1
@@ -87,6 +92,7 @@ spawn  Gota
 flip 1
 	coords  997  113
 	at  0
+
 
 
 

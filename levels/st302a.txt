@@ -54,6 +54,11 @@ Flip   1
 	coords  0 0
 	at  0
 
+spawn  St_2
+	coords  0  0
+        Flip 1
+	at  0
+
 spawn  Bloqueio02
 Flip   1
 item   Knife

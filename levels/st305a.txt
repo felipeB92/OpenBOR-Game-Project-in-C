@@ -40,6 +40,11 @@ flip   1
 	coords  0  0
 	at  0
 
+spawn  St_5
+	coords  0  0
+        Flip 1
+	at  0
+
 Group 4  4
 at 0
 

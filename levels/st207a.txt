@@ -35,11 +35,11 @@ spawn  Time01
 	coords  0  0
         Flip 1
 	at  0
-spawn  Time01
+
+spawn  St_7
 	coords  0  0
         Flip 1
 	at  0
-
 
 spawn  Esteira01
 flip   1

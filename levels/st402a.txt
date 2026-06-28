@@ -37,6 +37,11 @@ spawn  Bar402
         Flip 1
 	at  0
 
+spawn  St_2
+	coords  0  0
+        Flip 1
+	at  0
+
 Wait
 	at  0
 

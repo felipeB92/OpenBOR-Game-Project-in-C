@@ -28,6 +28,11 @@ spawn  Time01
         Flip 1
 	at  0
 
+spawn  St_8
+	coords  0  0
+        Flip 1
+	at  0
+
 spawn  Lata03
 Item Cash
 	coords  250  217

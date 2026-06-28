@@ -48,16 +48,10 @@ spawn  Time01
 	at  0
 
 
-light		128 -128
-at			0
-
-spawn  Time01
+spawn  St_6
 	coords  0  0
         Flip 1
 	at  0
-
-
-
 
 spawn  Esteira01
 flip   1

@@ -33,6 +33,11 @@ flip   1
 	coords  0  0
 	at  0
 
+spawn  St_6
+	coords  0  0
+        Flip 1
+	at  0
+
 
 
 spawn  Kusanagi

@@ -40,6 +40,11 @@ spawn  e00
 	coords  0  250 1000
 	at  0
 
+spawn  St_7
+	coords  0  0
+        Flip 1
+	at  0
+
 light		128 -128
 at			0
 

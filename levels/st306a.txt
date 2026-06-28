@@ -51,6 +51,11 @@ flip   1
 	coords  31 254
 	at  0
 
+spawn  St_6
+	coords  0  0
+        Flip 1
+	at  0
+
 Wait 
 at  0
 

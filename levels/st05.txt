@@ -37,6 +37,11 @@ spawn  Time01
         Flip 1
 	at  0
 
+spawn  St_5
+	coords  0  0
+        Flip 1
+	at  0
+
 
 spawn  Galsia
 	coords  500  191

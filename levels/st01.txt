@@ -34,6 +34,11 @@ spawn  Time01
         Flip 1
 	at  0
 
+spawn  St_1
+	coords  0  0
+        Flip 1
+	at  0
+
 spawn  L01
 	coords  0  28
         Flip 1
