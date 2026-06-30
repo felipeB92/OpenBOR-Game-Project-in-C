@@ -55,6 +55,7 @@ spawn  L07
 	at  0
 
 
+
 spawn  Galsia_
 map 1
 health 30
