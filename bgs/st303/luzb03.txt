@@ -3,7 +3,7 @@ type			panel
 shadow			0
 speed			5
 scroll			-1.13
-setlayer		1010
+setlayer		700
 
 anim idle
 	loop	1
